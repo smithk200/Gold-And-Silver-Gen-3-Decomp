@@ -246,11 +246,48 @@
 #define OBJ_EVENT_GFX_POKE_BALL                  239
 #define OBJ_EVENT_GFX_OW_MON                     240
 #define OBJ_EVENT_GFX_LIGHT_SPRITE               241
+#define OBJ_EVENT_GFX_PROF_ELM		242
+#define OBJ_EVENT_GFX_WILL		243
+#define OBJ_EVENT_GFX_ROCKER		244
+#define OBJ_EVENT_GFX_FIREBREATHER		245
+#define OBJ_EVENT_GFX_SAGE		246
+#define OBJ_EVENT_GFX_BLAINE		247
+#define OBJ_EVENT_GFX_BROCK		248
+#define OBJ_EVENT_GFX_MISTY		249
+#define OBJ_EVENT_GFX_ERIKA		250
+#define OBJ_EVENT_GFX_SURGE		251
+#define OBJ_EVENT_GFX_JANINE		252
+#define OBJ_EVENT_GFX_SABRINA		253
+#define OBJ_EVENT_GFX_SHINY_GYARADOS		254
+#define OBJ_EVENT_GFX_KOGA		255
+#define OBJ_EVENT_GFX_BRUNO		256
+#define OBJ_EVENT_GFX_KAREN		257
+#define OBJ_EVENT_GFX_FALKNER		258
+#define OBJ_EVENT_GFX_BUGSY		259
+#define OBJ_EVENT_GFX_WHITNEY		260
+#define OBJ_EVENT_GFX_MORTY		261
+#define OBJ_EVENT_GFX_JASMINE		262
+#define OBJ_EVENT_GFX_CHUCK		263
+#define OBJ_EVENT_GFX_BLUE		264
+#define OBJ_EVENT_GFX_PRYCE		265
+#define OBJ_EVENT_GFX_LANCE		266
+#define OBJ_EVENT_GFX_SILVER		267
+#define OBJ_EVENT_GFX_PROTON                     268
+#define OBJ_EVENT_GFX_ARCHER                      269
+#define OBJ_EVENT_GFX_WHIRLPOOL                     270
+#define OBJ_EVENT_GFX_CLAIR                       271
+#define OBJ_EVENT_GFX_KIMONO_GIRL             272
+#define OBJ_EVENT_GFX_ROCKET_M              273
+#define OBJ_EVENT_GFX_ROCKET_F              274
+#define OBJ_EVENT_GFX_PETREL             275
+#define OBJ_EVENT_GFX_ARIANA             276
+#define OBJ_EVENT_GFX_BURGLAR             277
+#define OBJ_EVENT_GFX_KURT                 278
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        242
+#define NUM_OBJ_EVENT_GFX                        279
 
 
 // These are dynamic object gfx ids.
@@ -380,6 +417,30 @@
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
 #define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x1124
+#define OBJ_EVENT_PAL_TAG_ROCKET_1                 0x1125
+#define OBJ_EVENT_PAL_TAG_ROCKET_2                 0x1126
+#define OBJ_EVENT_PAL_TAG_ROCKET_3                 0x1127
+#define OBJ_EVENT_PAL_TAG_ROCKET_4                0x1128
+#define OBJ_EVENT_PAL_TAG_FALKNER                 0x1129
+#define OBJ_EVENT_PAL_TAG_BUGSY                 0x112A
+#define OBJ_EVENT_PAL_TAG_WHITNEY                 0x112B
+#define OBJ_EVENT_PAL_TAG_MORTY                 0x112C
+#define OBJ_EVENT_PAL_TAG_JASMINE                 0x112D
+#define OBJ_EVENT_PAL_TAG_CHUCK                 0x112E
+#define OBJ_EVENT_PAL_TAG_PRYCE                 0x112F
+#define OBJ_EVENT_PAL_TAG_JANINE                 0x1130
+#define OBJ_EVENT_PAL_TAG_WILL                 0x1131
+#define OBJ_EVENT_PAL_TAG_KAREN                 0x1132
+#define OBJ_EVENT_PAL_TAG_LANCE                 0x1133
+#define OBJ_EVENT_PAL_TAG_SILVER                 0x1134
+#define OBJ_EVENT_PAL_TAG_EUSINE                 0x1135
+#define OBJ_EVENT_PAL_TAG_ELM                    0x1136
+#define OBJ_EVENT_PAL_TAG_SAGE                   0x1137
+#define OBJ_EVENT_PAL_TAG_CLAIR                   0x1138
+#define OBJ_EVENT_PAL_TAG_SHINY_GYARADOS          0x1139
+#define OBJ_EVENT_PAL_TAG_WHIRLPOOL               0x113A
+#define OBJ_EVENT_PAL_TAG_KIMONO               0x113B
+
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

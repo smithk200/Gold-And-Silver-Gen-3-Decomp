@@ -66,13 +66,14 @@ EverGrandeCity_SidneysRoom_EventScript_Defeated::
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech:
 	.string "Welcome, challenger!\n"
-	.string "I'm SIDNEY of the ELITE FOUR.\p"
-	.string "I like that look you're giving me.\n"
-	.string "I guess you'll give me a good match.\l"
-	.string "That's good! Looking real good!\p"
-	.string "All right! You and me, let's enjoy\n"
-	.string "a battle that can only be staged\l"
-	.string "here in the POKéMON LEAGUE!$"
+	.string "I'm Will of the Elite Four.\p"
+	.string "I train in Psychic-type Pokémon.\p"
+	.string "We Psychics have mastered the art\n"
+	.string "of training our Pokémon to the\l"
+	.string "furthest, pushing our Pokémon to\l"
+	.string "their greatest potential.\p"
+	.string "Are you ready?\n"
+	.string "Here we go!$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat:
 	.string "Well, how do you like that? I lost!\n"
@@ -84,4 +85,3 @@ EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
 	.string "You've got what it takes to go far.\n"
 	.string "Now, go on to the next room and enjoy\l"
 	.string "your next battle!$"
-

@@ -4595,45 +4595,61 @@ Double Battle: No
 AI: Basic Trainer / Force Setup First Turn
 Mugshot: Purple
 
-Mightyena
+Xatu @ Sitrus Berry  
 Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Roar
-- Double Edge
-- Sand Attack
-- Crunch
+Ability: Synchronize
+Nature: Modest  
+EVs: 252 HP / 252 SpA / 4 Spe  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Psychic  
+- Air Slash  
+- Shadow Ball  
+- Confuse Ray  
 
-Shiftry
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Torment
-- Double Team
-- Swagger
-- Extrasensory
+Jynx @ Focus Sash  
+Level: 46  
+Ability: Forewarn
+Nature: Timid  
+EVs: 4 HP / 252 SpA / 252 Spe  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Psychic  
+- Ice Beam  
+- Lovely Kiss  
+- Energy Ball  
 
-Cacturne
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Leech Seed
-- Feint Attack
-- Needle Arm
-- Cotton Spore
+Slowbro @ Leftovers  
+Level: 46  
+Ability: Own Tempo
+Nature: Bold  
+EVs: 252 HP / 252 Def / 4 SpA  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Psychic  
+- Surf  
+- Slack Off  
+- Amnesia  
 
-Crawdaunt
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Surf
-- Swords Dance
-- Strength
-- Facade
+Exeggutor @ Lum Berry  
+Level: 46  
+Ability: Chlorophyll
+Nature: Modest  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Psychic  
+- SolarBeam  
+- Hypnosis  
+- AncientPower  
 
-Absol @ Sitrus Berry
-Level: 49
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Rock Slide
-- Swords Dance
-- Slash
+Xatu @ Lum Berry  
+Level: 48  
+Ability: Synchronize
+Nature: Modest  
+EVs: 252 HP / 252 SpA / 4 Spe  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Psychic  
+- Air Slash  
+- Ominous Wind  
+- Me First
+
 
 === TRAINER_PHOEBE ===
 Name: PHOEBE
