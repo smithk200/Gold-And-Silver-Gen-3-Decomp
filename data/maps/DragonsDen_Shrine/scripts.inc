@@ -19,8 +19,8 @@ DragonsDen_Shrine_EventScript_Elder::
 
 DragonsDen_Shrine_Trigger_ElderQuizLeft::
 	lock
-	applymovement2 OBJ_EVENT_ID_PLAYER, DragonsDen_Shrine_Movement_PlayerWalkToElderLeft
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, DragonsDen_Shrine_Movement_MonWalkToElderLeft
+	applymovement OBJ_EVENT_ID_PLAYER, DragonsDen_Shrine_Movement_PlayerWalkToElderLeft
+	applymovement OBJ_EVENT_ID_FOLLOWER, DragonsDen_Shrine_Movement_MonWalkToElderLeft
 	waitmovement OBJ_EVENT_ID_FOLLOWER
 	waitmovement OBJ_EVENT_ID_PLAYER
 	delay 10
@@ -29,8 +29,8 @@ DragonsDen_Shrine_Trigger_ElderQuizLeft::
 
 DragonsDen_Shrine_Trigger_ElderQuizTop::
 	lock
-	applymovement2 OBJ_EVENT_ID_PLAYER, DragonsDen_Shrine_Movement_PlayerWalkToElderTop
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, DragonsDen_Shrine_Movement_PlayerWalkToElderTop
+	applymovement OBJ_EVENT_ID_PLAYER, DragonsDen_Shrine_Movement_PlayerWalkToElderTop
+	applymovement OBJ_EVENT_ID_FOLLOWER, DragonsDen_Shrine_Movement_PlayerWalkToElderTop
 	waitmovement OBJ_EVENT_ID_FOLLOWER
 	waitmovement OBJ_EVENT_ID_PLAYER
 	delay 10
@@ -39,8 +39,8 @@ DragonsDen_Shrine_Trigger_ElderQuizTop::
 
 DragonsDen_Shrine_Trigger_ElderQuizRight::
 	lock
-	applymovement2 OBJ_EVENT_ID_PLAYER, DragonsDen_Shrine_Movement_PlayerWalkToElderRight
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, DragonsDen_Shrine_Movement_MonWalkToElderRight
+	applymovement OBJ_EVENT_ID_PLAYER, DragonsDen_Shrine_Movement_PlayerWalkToElderRight
+	applymovement OBJ_EVENT_ID_FOLLOWER, DragonsDen_Shrine_Movement_MonWalkToElderRight
 	waitmovement OBJ_EVENT_ID_FOLLOWER
 	waitmovement OBJ_EVENT_ID_PLAYER
 	delay 10
@@ -231,30 +231,30 @@ DragonsDen_Shrine_EventScript_ClairEnter::
 	playse SE_DOOR
 	delay 40
 	playse SE_PIN
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	delay 20
 	turnobject OBJ_EVENT_ID_FOLLOWER, DIR_SOUTH
-	applymovement2 LOCALID_DRAGONSDEN3_CLAIR, DragonsDen_Shrine_Movement_ClairEnter
+	applymovement LOCALID_DRAGONSDEN3_CLAIR, DragonsDen_Shrine_Movement_ClairEnter
 	waitmovement 0
 	turnobject LOCALID_DRAGONSDEN3_ELDER, DIR_WEST	
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
 	turnobject OBJ_EVENT_ID_FOLLOWER, DIR_NORTH
 	msgbox DragonsDen_Shrine_Text_ClairYouPassed, MSGBOX_DEFAULT
-	applymovement2 LOCALID_DRAGONSDEN3_CLAIR, DragonsDen_Shrine_Movement_ClairBackup1
+	applymovement LOCALID_DRAGONSDEN3_CLAIR, DragonsDen_Shrine_Movement_ClairBackup1
 	waitmovement 0
 	msgbox DragonsDen_Shrine_Text_ClairThatCantBe, MSGBOX_DEFAULT
-	applymovement2 LOCALID_DRAGONSDEN3_CLAIR, DragonsDen_Shrine_Movement_ClairBackup2
+	applymovement LOCALID_DRAGONSDEN3_CLAIR, DragonsDen_Shrine_Movement_ClairBackup2
 	waitmovement 0
 	msgbox DragonsDen_Shrine_Text_ClairYoureLying, MSGBOX_DEFAULT
-	applymovement2 LOCALID_DRAGONSDEN3_ELDER, DragonsDen_Shrine_Movement_ElderWalkToClair
+	applymovement LOCALID_DRAGONSDEN3_ELDER, DragonsDen_Shrine_Movement_ElderWalkToClair
 	waitmovement 0
 	turnobject LOCALID_DRAGONSDEN3_CLAIR, DIR_NORTH
 	msgbox DragonsDen_Shrine_Text_MustIInformLance, MSGBOX_DEFAULT
 	playse SE_PIN
-	applymovement2 LOCALID_DRAGONSDEN3_CLAIR, Common_Movement_ExclamationMark
+	applymovement LOCALID_DRAGONSDEN3_CLAIR, Common_Movement_ExclamationMark
 	msgbox DragonsDen_Shrine_Text_IUnderstand, MSGBOX_DEFAULT
-	applymovement2 LOCALID_DRAGONSDEN3_CLAIR, DragonsDen_Shrine_Movement_ClairReturnToPlayer
+	applymovement LOCALID_DRAGONSDEN3_CLAIR, DragonsDen_Shrine_Movement_ClairReturnToPlayer
 	waitmovement 0
 	msgbox DragonsDen_Shrine_Text_HereRisingBadge, MSGBOX_DEFAULT
 
@@ -266,7 +266,7 @@ DragonsDen_Shrine_EventScript_ClairEnter::
 	setflag FLAG_DEFEATED_BLACKTHORN_GYM
 	addvar VAR_NUM_BADGES, 1
 
-	applymovement2 LOCALID_DRAGONSDEN3_ELDER, DragonsDen_Shrine_Movement_ElderReturnToPlayer
+	applymovement LOCALID_DRAGONSDEN3_ELDER, DragonsDen_Shrine_Movement_ElderReturnToPlayer
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	turnobject LOCALID_DRAGONSDEN3_CLAIR, DIR_NORTH
@@ -275,7 +275,7 @@ DragonsDen_Shrine_EventScript_ClairEnter::
 	delay 20
 	msgbox DragonsDen_Shrine_Text_Speechless, MSGBOX_DEFAULT
 	closemessage
-	applymovement2 LOCALID_DRAGONSDEN3_CLAIR, DragonsDen_Shrine_Movement_ClairLeave
+	applymovement LOCALID_DRAGONSDEN3_CLAIR, DragonsDen_Shrine_Movement_ClairLeave
 	waitmovement 0
 	playse SE_EXIT
 	setflag FLAG_HIDE_DRAGONS_DEN_SHRINE_CLAIR

@@ -5,7 +5,12 @@
 VermilionCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, VermilionCity_MapScript_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
+	map_script MAP_SCRIPT_ON_LOAD, VermilionCity_OnLoad
 	.byte 0
+
+VermilionCity_OnLoad::
+	setrespawn HEAL_LOCATION_VERMILION_CITY
+	end
 
 VermilionCity_MapScript_OnTransition::
 	setflag FLAG_VISITED_VERMILION_CITY
@@ -26,10 +31,10 @@ VermilionCity_EventScript_OldSeaMap::
 VermilionCity_TriggerSuicuneTop::
 	lock
 	playse SE_PIN
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 	delay 60
 	playmoncry SPECIES_SUICUNE, CRY_MODE_NORMAL
-	applymovement2 LOCALID_VERMILION_SUICUNE, VermilionCity_Movement_Suicune1
+	applymovement LOCALID_VERMILION_SUICUNE, VermilionCity_Movement_Suicune1
 	playse SE_LEDGE
 	waitse
 	playse SE_LEDGE
@@ -37,19 +42,19 @@ VermilionCity_TriggerSuicuneTop::
 	playse SE_LEDGE
 	waitse
 	waitmovement 0
-	applymovement2 OBJ_EVENT_ID_PLAYER, VermilionCity_Movement_PlayerWalkToRailTop
+	applymovement OBJ_EVENT_ID_PLAYER, VermilionCity_Movement_PlayerWalkToRailTop
 	delay 60
-	applymovement2 LOCALID_VERMILION_EUSINE, VermilionCity_Movement_EusineWalkToRail
+	applymovement LOCALID_VERMILION_EUSINE, VermilionCity_Movement_EusineWalkToRail
 	waitmovement LOCALID_VERMILION_EUSINE
 	waitmovement OBJ_EVENT_ID_PLAYER
 	goto VermilionCity_EventScript_SuicuneEpisode
 VermilionCity_TriggerSuicuneMid::
 	lock
 	playse SE_PIN
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 	delay 60
 	playmoncry SPECIES_SUICUNE, CRY_MODE_NORMAL
-	applymovement2 LOCALID_VERMILION_SUICUNE, VermilionCity_Movement_Suicune1
+	applymovement LOCALID_VERMILION_SUICUNE, VermilionCity_Movement_Suicune1
 	playse SE_LEDGE
 	waitse
 	playse SE_LEDGE
@@ -57,30 +62,30 @@ VermilionCity_TriggerSuicuneMid::
 	playse SE_LEDGE
 	waitse
 	waitmovement 0
-	applymovement2 OBJ_EVENT_ID_PLAYER, VermilionCity_Movement_PlayerWalkToRailMid
+	applymovement OBJ_EVENT_ID_PLAYER, VermilionCity_Movement_PlayerWalkToRailMid
 	delay 60
-	applymovement2 LOCALID_VERMILION_EUSINE, VermilionCity_Movement_EusineWalkToRail
+	applymovement LOCALID_VERMILION_EUSINE, VermilionCity_Movement_EusineWalkToRail
 	waitmovement LOCALID_VERMILION_EUSINE
 	waitmovement OBJ_EVENT_ID_PLAYER
 	goto VermilionCity_EventScript_SuicuneEpisode
 VermilionCity_TriggerSuicuneBot::
 	lock
 	playse SE_PIN
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 	delay 60
 	playmoncry SPECIES_SUICUNE, CRY_MODE_NORMAL
-	applymovement2 LOCALID_VERMILION_SUICUNE, VermilionCity_Movement_Suicune1
+	applymovement LOCALID_VERMILION_SUICUNE, VermilionCity_Movement_Suicune1
 	waitmovement 0
-	applymovement2 OBJ_EVENT_ID_PLAYER, VermilionCity_Movement_PlayerWalkToRailBot
+	applymovement OBJ_EVENT_ID_PLAYER, VermilionCity_Movement_PlayerWalkToRailBot
 	delay 60
-	applymovement2 LOCALID_VERMILION_EUSINE, VermilionCity_Movement_EusineWalkToRail
+	applymovement LOCALID_VERMILION_EUSINE, VermilionCity_Movement_EusineWalkToRail
 	waitmovement LOCALID_VERMILION_EUSINE
 	waitmovement OBJ_EVENT_ID_PLAYER
 	goto VermilionCity_EventScript_SuicuneEpisode
 
 VermilionCity_EventScript_SuicuneEpisode::
 	playmoncry SPECIES_SUICUNE, CRY_MODE_NORMAL
-	applymovement2 LOCALID_VERMILION_SUICUNE, VermilionCity_Movement_SuicuneLeave
+	applymovement LOCALID_VERMILION_SUICUNE, VermilionCity_Movement_SuicuneLeave
 	playse SE_LEDGE
 	waitse
 	playse SE_LEDGE
@@ -95,7 +100,7 @@ VermilionCity_EventScript_SuicuneEpisode::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	msgbox VermilionCity_Text_Eusine2, MSGBOX_DEFAULT
 	closemessage
-	applymovement2 LOCALID_VERMILION_EUSINE, VermilionCity_Movement_EusineLeave
+	applymovement LOCALID_VERMILION_EUSINE, VermilionCity_Movement_EusineLeave
 	waitmovement 0
 	removeobject LOCALID_VERMILION_EUSINE
 	removeobject LOCALID_VERMILION_SUICUNE

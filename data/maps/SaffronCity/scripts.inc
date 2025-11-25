@@ -1,10 +1,15 @@
 SaffronCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SaffronCity_EventScript_CityEnter
+	map_script MAP_SCRIPT_ON_LOAD, SaffronCity_OnLoad
 	.byte 0
 
 SaffronCity_OnFrame::
 	map_script_2 VAR_SAFFRON_CITY_STATE, 0,  SaffronCity_EventScript_BaobaCall
 	.2byte 0
+
+SaffronCity_OnLoad::
+	setrespawn HEAL_LOCATION_SAFFRON_CITY
+	end
 
 SaffronCity_EventScript_CityEnter::
 	setflag FLAG_VISITED_SAFFRON_CITY

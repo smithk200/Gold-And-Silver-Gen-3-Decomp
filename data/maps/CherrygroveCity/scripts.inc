@@ -2,12 +2,17 @@
 .set LOCALID_CHERRYGROVE_SILVER, 14
 
 CherrygroveCity_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, CherryGroveCity_OnTransition
+	map_script MAP_SCRIPT_ON_TRANSITION, CherrygroveCity_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
+	map_script MAP_SCRIPT_ON_LOAD, CherrygroveCity_OnLoad
 	.byte 0
 
-CherryGroveCity_OnTransition::
+CherrygroveCity_OnTransition::
 	callnative SetTimeBasedEncounters
+	end
+
+CherrygroveCity_OnLoad::
+	setrespawn HEAL_LOCATION_CHERRYGROVE_CITY
 	end
 
 CherryGroveCity_EventScript_TriggerGent_Top::

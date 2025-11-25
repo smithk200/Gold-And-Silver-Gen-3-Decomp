@@ -15,7 +15,15 @@ Debug_CheatStart::
 	givemon SPECIES_UMBREON, 100, ITEM_NONE
 	givemon SPECIES_JOLTEON, 100, ITEM_NONE
 	givemon SPECIES_GLACEON, 100, ITEM_NONE
-	setflag FLAG_HIDE_INDIGO_PLATEAU_SILVER
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	giveitem ITEM_HM_SURF
 	special SetUnlockedPokedexFlags
 	special EnableNationalPokedex
 	additem ITEM_ACRO_BIKE
@@ -242,7 +250,7 @@ Debug_Follower_NPC_Test_Message:
 	.string "This is a Follower NPC test.$"
 
 Debug_EventScript_Steven_Multi::
-	call MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle
+	call RocketHideout_B2F_EventScript_ChoosePartyForMultiBattle
 	release
 	end
 

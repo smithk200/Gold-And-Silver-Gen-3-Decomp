@@ -3,7 +3,7 @@ SaffronCity_FightingDojoVIP_MapScripts::
 
 SaffronCity_FightingDojoVIP_EventScript_Declined::
 	closemessage
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -15,7 +15,7 @@ SaffronCity_FightingDojoVIP_EventScript_Falkner::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_FALKNER_2, SaffronCity_FightingDojoVIP_Text_Falkner_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -30,7 +30,7 @@ SaffronCity_FightingDojoVIP_EventScript_Bugsy::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_BUGSY_2, SaffronCity_FightingDojoVIP_Text_Bugsy_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -45,7 +45,7 @@ SaffronCity_FightingDojoVIP_EventScript_Whitney::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_WHITNEY_2, SaffronCity_FightingDojoVIP_Text_Whitney_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -60,7 +60,7 @@ SaffronCity_FightingDojoVIP_EventScript_Morty::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_MORTY_2, SaffronCity_FightingDojoVIP_Text_Morty_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -75,7 +75,7 @@ SaffronCity_FightingDojoVIP_EventScript_Chuck::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_CHUCK_2, SaffronCity_FightingDojoVIP_Text_Chuck_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -90,7 +90,7 @@ SaffronCity_FightingDojoVIP_EventScript_Jasmine::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_JASMINE_2, SaffronCity_FightingDojoVIP_Text_Jasmine_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -105,7 +105,7 @@ SaffronCity_FightingDojoVIP_EventScript_Pryce::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_PRYCE_2, SaffronCity_FightingDojoVIP_Text_Pryce_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -120,7 +120,7 @@ SaffronCity_FightingDojoVIP_EventScript_Clair::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_CLAIR_2, SaffronCity_FightingDojoVIP_Text_Clair_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -135,7 +135,7 @@ SaffronCity_FightingDojoVIP_EventScript_Brock::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_BROCK, SaffronCity_FightingDojoVIP_Text_Brock_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -150,7 +150,7 @@ SaffronCity_FightingDojoVIP_EventScript_Misty::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_MISTY, SaffronCity_FightingDojoVIP_Text_Misty_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -165,7 +165,7 @@ SaffronCity_FightingDojoVIP_EventScript_Surge::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_LTSURGE, SaffronCity_FightingDojoVIP_Text_Surge_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -180,7 +180,7 @@ SaffronCity_FightingDojoVIP_EventScript_Erika::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_ERIKA, SaffronCity_FightingDojoVIP_Text_Erika_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -195,7 +195,7 @@ SaffronCity_FightingDojoVIP_EventScript_Janine::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_JANINE, SaffronCity_FightingDojoVIP_Text_Janine_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -210,7 +210,7 @@ SaffronCity_FightingDojoVIP_EventScript_Sabrina::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_SABRINA, SaffronCity_FightingDojoVIP_Text_Sabrina_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -225,7 +225,7 @@ SaffronCity_FightingDojoVIP_EventScript_Blaine::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_BLAINE, SaffronCity_FightingDojoVIP_Text_Blaine_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -240,7 +240,7 @@ SaffronCity_FightingDojoVIP_EventScript_Blue::
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojoVIP_EventScript_Declined
 	closemessage
 	trainerbattle_no_intro TRAINER_BLUE, SaffronCity_FightingDojoVIP_Text_Blue_RematchDefeat
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	givebp 10
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_DEFAULT
@@ -257,7 +257,7 @@ SaffronCity_FightingDojoVIP_EventScript_Scizor::
 	playmoncry SPECIES_SCIZOR, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Scizor, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -271,7 +271,7 @@ SaffronCity_FightingDojoVIP_EventScript_Miltank::
 	playmoncry SPECIES_MILTANK, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Miltank, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -285,7 +285,7 @@ SaffronCity_FightingDojoVIP_EventScript_Poliwhirl::
 	playmoncry SPECIES_POLIWHIRL, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Poliwhirl, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -299,7 +299,7 @@ SaffronCity_FightingDojoVIP_EventScript_Dewgong::
 	playmoncry SPECIES_DEWGONG, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Dewgong, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -313,7 +313,7 @@ SaffronCity_FightingDojoVIP_EventScript_Steelix::
 	playmoncry SPECIES_STEELIX, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Steelix, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -327,7 +327,7 @@ SaffronCity_FightingDojoVIP_EventScript_Kingdra::
 	playmoncry SPECIES_KINGDRA, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Kingdra, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -341,7 +341,7 @@ SaffronCity_FightingDojoVIP_EventScript_Onix::
 	playmoncry SPECIES_ONIX, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Onix, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -355,7 +355,7 @@ SaffronCity_FightingDojoVIP_EventScript_Starmie::
 	playmoncry SPECIES_STARMIE, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Starmie, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -369,7 +369,7 @@ SaffronCity_FightingDojoVIP_EventScript_Victreebel::
 	playmoncry SPECIES_VICTREEBEL, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Victreebel, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -383,7 +383,7 @@ SaffronCity_FightingDojoVIP_EventScript_Muk::
 	playmoncry SPECIES_MUK, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Muk, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -397,7 +397,7 @@ SaffronCity_FightingDojoVIP_EventScript_Kadabra::
 	playmoncry SPECIES_KADABRA, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Kadabra, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -411,7 +411,7 @@ SaffronCity_FightingDojoVIP_EventScript_Magmar::
 	playmoncry SPECIES_MAGMAR, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Magmar, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -425,7 +425,7 @@ SaffronCity_FightingDojoVIP_EventScript_Raichu::
 	playmoncry SPECIES_RAICHU, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Raichu, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -439,7 +439,7 @@ SaffronCity_FightingDojoVIP_EventScript_Machamp::
 	playmoncry SPECIES_MACHAMP, CRY_MODE_NORMAL
 	msgbox SaffronCity_FightingDojoVIP_Text_Machamp, MSGBOX_DEFAULT
 	waitmoncry
-	applymovement2 VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end

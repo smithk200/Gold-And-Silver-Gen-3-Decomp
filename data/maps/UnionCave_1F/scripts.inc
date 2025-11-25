@@ -4,27 +4,27 @@ UnionCave_1F_MapScripts::
 
 UnionCave_1F_Trigger_Monview::
 	special SpawnCameraObject
-	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight1
+	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight1
 	waitmovement 0
-	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight1
+	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight1
 	waitmovement 0
-	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight1
+	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight1
 	waitmovement 0
-	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight1
+	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkRight1
 	waitmovement 0
 	message Route29_Text_PressAorB
 	waitbuttonpress
 	closemessage
-	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft1
+	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft1
 	waitmovement 0
-	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft1
+	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft1
 	waitmovement 0
-	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft1
+	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft1
 	waitmovement 0
-	applymovement2 OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft1
+	applymovement OBJ_EVENT_ID_CAMERA, Common_Movement_WalkLeft1
 	waitmovement 0
 	special RemoveCameraObject
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft1
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft1
 	waitmovement 0
 	end
 

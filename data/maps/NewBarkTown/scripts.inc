@@ -5,7 +5,12 @@ NewBarkTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, NewBarkTown_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, NewBarkTown_OnFrame
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
+	map_script MAP_SCRIPT_ON_LOAD, NewBarkTown_OnLoad
 	.byte 0
+
+NewBarkTown_OnLoad::
+	setrespawn HEAL_LOCATION_NEW_BARK_TOWN
+	end
 
 NewBarkTown_OnFrame::
 	map_script_2 VAR_NEWBARK_TOWN_STATE, 6, NewBarkTown_EventScript_ElmCallAfterLeague

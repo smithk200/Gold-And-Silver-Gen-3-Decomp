@@ -379,6 +379,10 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_JUGGLER] = {_("Juggler")},
     [TRAINER_CLASS_PSYCHIC_M] = {_("Psychic")},
     [TRAINER_CLASS_POLICEMAN] = {_("Officer")},
+    [TRAINER_CLASS_TEAM_ROCKET] = {_("Team Rocket")},
+    [TRAINER_CLASS_ROCKET_ADMIN] = {_("Rocket Admin")},
+    [TRAINER_CLASS_PHILIP] = {_("Philip")},
+    [TRAINER_CLASS_ROCKETA] = {_("Rocket Admin")},
 };
 
 static void (*const sTurnActionsFuncsTable[])(void) =

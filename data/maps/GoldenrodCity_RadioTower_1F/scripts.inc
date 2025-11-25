@@ -8,7 +8,7 @@ RadioTower1F_EventScript_Grunt::
 	trainerbattle_no_intro TRAINER_GRUNT_2,  RadioTower1F_Text_GruntM3Beaten
 	msgbox RadioTower1F_Text_GruntM3After, MSGBOX_AUTOCLOSE
 	turnobject LOCALID_GOLDENROD_RADIOTOWER_GRUNT, DIR_EAST
-	applymovement2 LOCALID_GOLDENROD_RADIOTOWER_GRUNT, RadioTower1F_Movement_Rocket
+	applymovement LOCALID_GOLDENROD_RADIOTOWER_GRUNT, RadioTower1F_Movement_Rocket
 	waitmovement 0
 	playse SE_EXIT
 	removeobject LOCALID_GOLDENROD_RADIOTOWER_GRUNT
@@ -134,7 +134,7 @@ RadioTower1F_EventScript_ReceptionGiveRadio::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
 	msgbox RadioTower1F_Text_Whitney2, MSGBOX_DEFAULT
 	closemessage
-	applymovement2 LOCALID_GOLDENROD_RADIOTOWER_WHITNEY, GoldenrodCity_RadioTower_4F_Movement_WhitneyLeave
+	applymovement LOCALID_GOLDENROD_RADIOTOWER_WHITNEY, GoldenrodCity_RadioTower_4F_Movement_WhitneyLeave
 	waitmovement 0
 	playse SE_EXIT
 	removeobject LOCALID_GOLDENROD_RADIOTOWER_WHITNEY

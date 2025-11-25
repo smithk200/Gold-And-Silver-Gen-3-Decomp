@@ -38,7 +38,7 @@ ReceptionGate_Trigger::
     delay 20
     goto_if_lt VAR_ECRUTEAK_CITY_THEATER, 7, ReceptionGate_EventScript_Kimono
     msgbox VictoryRoadGate_Text_Officer, MSGBOX_DEFAULT
-    goto_if_unset FLAG_GARBAGEFLAG, ReceptionGate_EventScript_NotEnough
+    goto_if_unset FLAG_BADGE08_GET, ReceptionGate_EventScript_NotEnough
     msgbox VictoryRoadGate_Text_EightBadges, MSGBOX_DEFAULT
     closemessage
     setvar VAR_ROUTE27_STATE, 2

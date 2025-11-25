@@ -5,6 +5,7 @@ VioletCity_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, VioletCity_OnFrame
 	map_script MAP_SCRIPT_ON_TRANSITION, VioletCity_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
+	map_script MAP_SCRIPT_ON_LOAD, VioletCity_OnLoad
 	.byte 0
 
 VioletCity_OnFrame::
@@ -14,6 +15,10 @@ VioletCity_OnFrame::
 
 VioletCity_OnTransition::
 	callnative SetTimeBasedEncounters
+	end
+
+VioletCity_OnLoad::
+	setrespawn HEAL_LOCATION_VIOLET_CITY
 	end
 
 VioletCity_EventScript_Trigger::

@@ -1,13 +1,21 @@
 SafariZone_EventScript_OutOfBallsMidBattle::
 	setvar VAR_SAFARI_ZONE_STATE, 1
 	special ExitSafariMode
-	setwarp MAP_ROUTE121_SAFARI_ZONE_ENTRANCE, 2, 5
+	goto_if_set FLAG_IN_KANTO_SAFARI_ZONE, SafariZone_EventScript_ExitKanto
+	setwarp MAP_SAFARI_ZONE_GATE_SAFARI_ZONE_ENTRANCE, 9, 3
 	end
 
 SafariZone_EventScript_Exit::
 	setvar VAR_SAFARI_ZONE_STATE, 1
 	special ExitSafariMode
-	warp MAP_ROUTE121_SAFARI_ZONE_ENTRANCE, 2, 5
+	goto_if_set FLAG_IN_KANTO_SAFARI_ZONE, SafariZone_EventScript_ExitKanto
+	warp MAP_SAFARI_ZONE_GATE_SAFARI_ZONE_ENTRANCE, 9, 3
+	waitstate
+	end
+
+SafariZone_EventScript_ExitKanto::
+	clearflag FLAG_IN_KANTO_SAFARI_ZONE
+	warp MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE, 5, 6
 	waitstate
 	end
 

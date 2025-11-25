@@ -1,9 +1,14 @@
 ViridianCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, ViridianCity_EventScript_CityEnter
+	map_script MAP_SCRIPT_ON_LOAD, ViridianCity_OnLoad
 	.byte 0
 
 ViridianCity_EventScript_CityEnter::
 	setflag FLAG_VISITED_VIRIDIAN_CITY
+	end
+
+ViridianCity_OnLoad::
+	setrespawn HEAL_LOCATION_VIRIDIAN_CITY
 	end
 
 ViridianCity_EventScript_Gramps::

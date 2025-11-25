@@ -2,10 +2,15 @@
 
 CeladonCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, CeladonCity_EventScript_CityEnter
+	map_script MAP_SCRIPT_ON_LOAD, CeladonCity_OnLoad
 	.byte 0
 
 CeladonCity_EventScript_CityEnter::
 	setflag FLAG_VISITED_CELADON_CITY
+	end
+
+CeladonCity_OnLoad::
+	setrespawn HEAL_LOCATION_CELADON_CITY
 	end
 
 CeladonCity_EventScript_Erika::

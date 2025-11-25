@@ -1,7 +1,12 @@
 .set LOCALID_GOLDENROD_ROCKET_SCOUT, 11
 
 GoldenrodCity_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, GoldenrodCity_OnLoad
 	.byte 0
+
+GoldenrodCity_OnLoad::
+	setrespawn HEAL_LOCATION_GOLDENROD_CITY
+	end
 
 GoldenrodCity_EventScript_Trigger:: @flagheap
 	call_if_unset FLAG_SHOWN_ELM_TOGEPI, GoldenrodCity_Elm_Togepi_Call

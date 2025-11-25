@@ -3548,5 +3548,6 @@ extern const u32 gItemIcon_TidalBell[];
 extern const u16 gItemIcon_Palette_TidalBell[];
 
 extern const u32 gItemIcon_Radio[];
+extern const u16 gItemIcon_Palette_Radio[];
 
 #endif //GUARD_GRAPHICS_H

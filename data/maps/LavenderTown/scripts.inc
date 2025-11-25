@@ -1,9 +1,14 @@
 LavenderTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LavenderTown_EventScript_CityEnter
+	map_script MAP_SCRIPT_ON_LOAD, LavenderTown_OnLoad
 	.byte 0
 
 LavenderTown_EventScript_CityEnter::
 	setflag FLAG_VISITED_LAVENDER_TOWN
+	end
+
+LavenderTown_OnLoad::
+	setrespawn HEAL_LOCATION_LAVENDER_TOWN
 	end
 
 LavenderTown_EventScript_PokefanM::

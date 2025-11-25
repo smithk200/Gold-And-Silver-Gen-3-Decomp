@@ -1,5 +1,6 @@
 FuchsiaCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, FuchsiaCity_EventScript_CityEnter
+	map_script MAP_SCRIPT_ON_LOAD, FuchsiaCity_OnLoad
 	.byte 0
 
 FuchsiaCity_OnFrame::
@@ -8,6 +9,10 @@ FuchsiaCity_OnFrame::
 
 FuchsiaCity_EventScript_CityEnter::
 	setflag FLAG_VISITED_FUCHSIA_CITY
+	end
+
+FuchsiaCity_OnLoad::
+	setrespawn HEAL_LOCATION_FUCHSIA_CITY
 	end
 
 FuchsiaCity_EventScript_BaobaCall::

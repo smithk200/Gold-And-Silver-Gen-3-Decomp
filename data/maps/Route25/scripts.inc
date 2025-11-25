@@ -102,11 +102,11 @@ Route25_Trigger_MistyRight::
 	delay 40
 	turnobject LOCALID_ROUTE25_MAN, DIR_SOUTH
 	playse SE_PIN
-	applymovement2 LOCALID_ROUTE25_MAN, Common_Movement_ExclamationMark
+	applymovement LOCALID_ROUTE25_MAN, Common_Movement_ExclamationMark
 	delay 60
-	applymovement2 LOCALID_ROUTE25_MAN, Route25_Movement_ManLeaveRight
+	applymovement LOCALID_ROUTE25_MAN, Route25_Movement_ManLeaveRight
 	waitmovement 0
-	applymovement2 LOCALID_ROUTE25_MISTY, Route25_Movement_MistyWalkToPlayerRight
+	applymovement LOCALID_ROUTE25_MISTY, Route25_Movement_MistyWalkToPlayerRight
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
 	goto Route25_EventScript_Misty
@@ -116,18 +116,18 @@ Route25_Trigger_MistyLeft::
 	delay 40
 	turnobject LOCALID_ROUTE25_MAN, DIR_SOUTH
 	playse SE_PIN
-	applymovement2 LOCALID_ROUTE25_MAN, Common_Movement_ExclamationMark
+	applymovement LOCALID_ROUTE25_MAN, Common_Movement_ExclamationMark
 	delay 60
-	applymovement2 LOCALID_ROUTE25_MAN, Route25_Movement_ManLeaveLeft
+	applymovement LOCALID_ROUTE25_MAN, Route25_Movement_ManLeaveLeft
 	waitmovement 0
-	applymovement2 LOCALID_ROUTE25_MISTY, Route25_Movement_MistyWalkToPlayerLeft
+	applymovement LOCALID_ROUTE25_MISTY, Route25_Movement_MistyWalkToPlayerLeft
 	waitmovement 0
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
 	goto Route25_EventScript_Misty
 Route25_EventScript_Misty::
 	msgbox Route25_Text_MistyDate, MSGBOX_DEFAULT
 	closemessage
-	applymovement2 LOCALID_ROUTE25_MISTY, Route25_Movement_MistyLeave
+	applymovement LOCALID_ROUTE25_MISTY, Route25_Movement_MistyLeave
 	waitmovement 0
 	removeobject LOCALID_ROUTE25_MISTY
 	removeobject LOCALID_ROUTE25_MAN
@@ -241,7 +241,7 @@ Route25_EventScript_Suicune::
 	turnobject LOCALID_ROUTE25_EUSINE, DIR_NORTH
 	msgbox Route25_Text_Eusine3, MSGBOX_DEFAULT
 	closemessage
-	applymovement2 LOCALID_ROUTE25_EUSINE, Route25_Movement_EusineLeave
+	applymovement LOCALID_ROUTE25_EUSINE, Route25_Movement_EusineLeave
 	waitmovement 0
 	removeobject LOCALID_ROUTE25_EUSINE
 	setflag FLAG_HIDE_ROUTE25_EUSINE

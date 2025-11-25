@@ -4,11 +4,16 @@
 CinnabarIsland_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, CinnabarIsland_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
+	map_script MAP_SCRIPT_ON_LOAD, CinnabarIsland_OnLoad
 	.byte 0
 	
 CinnabarIsland_OnTransition:
 	setflag FLAG_VISITED_CINNABAR_ISLAND
 	callnative SetTimeBasedEncounters
+	end
+	
+CinnabarIsland_OnLoad::
+	setrespawn HEAL_LOCATION_CINNABAR_ISLAND
 	end
 
 CinnabarIsland_EventScript_Blaine::

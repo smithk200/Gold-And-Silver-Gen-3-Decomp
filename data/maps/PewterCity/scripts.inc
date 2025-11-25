@@ -1,9 +1,14 @@
 PewterCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PewterCity_EventScript_CityEnter
+	map_script MAP_SCRIPT_ON_LOAD, PewterCity_OnLoad
 	.byte 0
 
 PewterCity_EventScript_CityEnter::
 	setflag FLAG_VISITED_PEWTER_CITY
+	end
+
+PewterCity_OnLoad::
+	setrespawn HEAL_LOCATION_PEWTER_CITY
 	end
 
 PewterCity_EventScript_CooltrainerF::

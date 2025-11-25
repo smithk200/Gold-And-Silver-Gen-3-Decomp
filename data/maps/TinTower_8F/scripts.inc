@@ -12,3 +12,4 @@ TinTower_8F_EventScript_SetWarpDay::
 	setdynamicwarp MAP_TIN_TOWER_ROOF_DAY, 10, 14
 	release
 	end
+	

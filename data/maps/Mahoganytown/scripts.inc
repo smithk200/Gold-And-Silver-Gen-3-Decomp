@@ -7,6 +7,7 @@ Mahoganytown_MapScripts::
 
 Mahoganytown_OnLoad::
 	call_if_ge VAR_MAHOGANY_TOWN_STATE, 13, MahoganyTown_EventScript_FixTree
+	setrespawn HEAL_LOCATION_MAHOGANYTOWN
 	end
 
 MahoganyTown_EventScript_FixTree::

@@ -27,6 +27,7 @@ CianwoodCity_EventScript_InitializeSuicune::
 	goto_if_ge VAR_SUICUNE_ENCOUNTERS, 2, CianwoodCity_EventScript_InitializeNothing
 	clearflag FLAG_HIDE_CIANWOOD_SUICUNE
 	setflag FLAG_HIDE_CIANWOOD_EUSINE
+	setrespawn HEAL_LOCATION_CIANWOOD_CITY
 	setvar VAR_TEMP_0, 1
 	end
 

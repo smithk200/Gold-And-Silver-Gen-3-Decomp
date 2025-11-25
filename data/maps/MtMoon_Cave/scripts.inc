@@ -20,11 +20,11 @@ MtMoon_Cave_EventScript_Silver::
 	lock
 	playbgm MUS_HG_ENCOUNTER_RIVAL, TRUE
 	playse SE_PIN
-	applymovement2 LOCALID_MTMOON_SILVER, Common_Movement_ExclamationMark
+	applymovement LOCALID_MTMOON_SILVER, Common_Movement_ExclamationMark
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
 	delay 60
-	applymovement2 LOCALID_MTMOON_SILVER MtMoon_Cave_Movement_WalkToPlayer
-	applymovement2 OBJ_EVENT_ID_PLAYER Common_Movement_WalkRight1
+	applymovement LOCALID_MTMOON_SILVER MtMoon_Cave_Movement_WalkToPlayer
+	applymovement OBJ_EVENT_ID_PLAYER Common_Movement_WalkRight1
 	waitmovement LOCALID_MTMOON_SILVER
 	waitmovement OBJ_EVENT_ID_PLAYER
 	msgbox MtMoon_Cave_Text_Rival_Before, MSGBOX_DEFAULT
@@ -50,7 +50,7 @@ MtMoon_Cave_EventScript_SilverAfterBattle::
 	playbgm MUS_HG_RIVAL_EXIT, TRUE
 	msgbox MtMoon_Cave_Text_Rival_After, MSGBOX_DEFAULT
 	closemessage
-	applymovement2 LOCALID_MTMOON_SILVER, MtMoon_Cave_Movement_SilverLeave
+	applymovement LOCALID_MTMOON_SILVER, MtMoon_Cave_Movement_SilverLeave
 	waitmovement 0
 	removeobject LOCALID_MTMOON_SILVER
 	setflag FLAG_HIDE_MTMOON_SILVER

@@ -112,26 +112,28 @@
 #define METATILE_BrendansMaysHouse_MovingBox_Open    0x270
 
 // gTileset_Building
-#define METATILE_Building_PC_Off  0x004
-#define METATILE_Building_PC_On   0x005
-#define METATILE_Building_TV_Off  0x002
-#define METATILE_Building_TV_On   0x003
+#define METATILE_Building_PC_Off  0x062
+#define METATILE_Building_PC_On   0x063
+#define METATILE_Building_TV_Off  0x035
+#define METATILE_Building_TV_On   0x061
 
 // gTileset_Cave
-#define METATILE_Cave_CrackedFloor                       0x22F
-#define METATILE_Cave_CrackedFloor_Hole                  0x206
-#define METATILE_Cave_EntranceCover                      0x229
-#define METATILE_Cave_SealedChamberBraille_Mid           0x235
-#define METATILE_Cave_SealedChamberEntrance_BottomLeft   0x232
-#define METATILE_Cave_SealedChamberEntrance_BottomMid    0x233
-#define METATILE_Cave_SealedChamberEntrance_BottomRight  0x234
-#define METATILE_Cave_SealedChamberEntrance_TopLeft      0x22A
-#define METATILE_Cave_SealedChamberEntrance_TopMid       0x22B
-#define METATILE_Cave_SealedChamberEntrance_TopRight     0x22C
-#define METATILE_Cave_ShoalCave_BlueStone_Large          0x359
-#define METATILE_Cave_ShoalCave_BlueStone_Small          0x35B
-#define METATILE_Cave_ShoalCave_DirtPile_Large           0x358
-#define METATILE_Cave_ShoalCave_DirtPile_Small           0x35A
+#define METATILE_Cave_CrackedFloor                         0x39E
+#define METATILE_Cave_CrackedFloor_Hole                    0x39F
+#define METATILE_Cave_EntranceCover                        0x229
+#define METATILE_Cave_Ice_METATILE_Cave_CrackedFloor       0x39E
+#define METATILE_Cave_Ice_METATILE_Cave_CrackedFloor_Hole  0x39F
+#define METATILE_Cave_SealedChamberBraille_Mid             0x235
+#define METATILE_Cave_SealedChamberEntrance_BottomLeft     0x232
+#define METATILE_Cave_SealedChamberEntrance_BottomMid      0x233
+#define METATILE_Cave_SealedChamberEntrance_BottomRight    0x234
+#define METATILE_Cave_SealedChamberEntrance_TopLeft        0x22A
+#define METATILE_Cave_SealedChamberEntrance_TopMid         0x22B
+#define METATILE_Cave_SealedChamberEntrance_TopRight       0x22C
+#define METATILE_Cave_ShoalCave_BlueStone_Large            0x359
+#define METATILE_Cave_ShoalCave_BlueStone_Small            0x35B
+#define METATILE_Cave_ShoalCave_DirtPile_Large             0x358
+#define METATILE_Cave_ShoalCave_DirtPile_Small             0x35A
 
 // gTileset_Contest
 #define METATILE_Contest_CounterFlap_Bottom  0x2D9
@@ -263,6 +265,9 @@
 #define METATILE_InsideShip_IntactDoor_Bottom_Interior  0x297
 #define METATILE_InsideShip_IntactDoor_Bottom_Locked    0x233
 #define METATILE_InsideShip_IntactDoor_Bottom_Unlocked  0x22B
+
+// gTileset_Johto_Building
+#define METATILE_Johto_Building_METATILE_Building_PC_On  0x063
 
 // gTileset_Johto_General
 #define METATILE_Johto_General_CalmWater       0x12B

@@ -1,0 +1,12 @@
+Marts are bugged. (FIXED: Uses "shop items by badge count")
+Proton's first battle has him as "Team Rocket Proton" instead of "Rocket Admin Proton". FIXED: "RocketA" takes the place of "Rocket Admin", for some reason. Tested this with "Philip Sawyer"
+Goldenrod City tower tiles are bugged after you answer the quiz questions. (Possible fix...?)
+Day Care tileset is bugged.
+FIXED: Gyarados on Lake of Rage OW has incorrect graphics. (Bugfix: was able to make Gyarados shiny in battle!)
+Mahogany Gym is corrupted. (FIXED)
+Petrel, Ariana, and Archer OW sprites use incorrect palettes. So does Clair.
+Blackthorn City's door anims are bugged
+Whirlpool in Dragons' Den does not work properly, has incorrect graphics. FIXED: Some graphics do not look correct, whirlpools look fine.
+
+python.exe triple_layer_converter.py --tsroot C:\decomps\HNSPort\data\tilesets
+Command for converting to triple layer metatiles

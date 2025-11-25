@@ -527,9 +527,9 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
 
     {gObjectEventPal_Rocket1,                OBJ_EVENT_PAL_TAG_ROCKET_1},
-    {gObjectEventPal_Rocket2,      OBJ_EVENT_PAL_TAG_ROCKET_1},
-    {gObjectEventPal_Rocket3,                  OBJ_EVENT_PAL_TAG_ROCKET_1},
-    {gObjectEventPal_Rocket4,                 OBJ_EVENT_PAL_TAG_ROCKET_1},
+    {gObjectEventPal_Rocket2,      OBJ_EVENT_PAL_TAG_ROCKET_2},
+    {gObjectEventPal_Rocket3,                  OBJ_EVENT_PAL_TAG_ROCKET_3},
+    {gObjectEventPal_Rocket4,                 OBJ_EVENT_PAL_TAG_ROCKET_4},
     {gObjectEventPal_Falkner,   OBJ_EVENT_PAL_TAG_FALKNER},
     {gObjectEventPal_Bugsy,       OBJ_EVENT_PAL_TAG_BUGSY},
     {gObjectEventPal_Whitney,                OBJ_EVENT_PAL_TAG_WHITNEY},
@@ -537,6 +537,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Jasmine,                  OBJ_EVENT_PAL_TAG_JASMINE},
     {gObjectEventPal_Chuck,                 OBJ_EVENT_PAL_TAG_CHUCK},
     {gObjectEventPal_Pryce,   OBJ_EVENT_PAL_TAG_PRYCE},
+    {gObjectEventPal_Clair,                 OBJ_EVENT_PAL_TAG_CLAIR},
     {gObjectEventPal_Janine,                 OBJ_EVENT_PAL_TAG_JANINE},
     {gObjectEventPal_Will,   OBJ_EVENT_PAL_TAG_WILL},
     {gObjectEventPal_Karen,       OBJ_EVENT_PAL_TAG_KAREN},
@@ -550,6 +551,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Kimono,                  OBJ_EVENT_PAL_TAG_KIMONO},
     {gObjectEventPal_Slowpoke,                  OBJ_EVENT_PAL_TAG_SLOWPOKE},
     {gObjectEventPal_ScientistF,                  OBJ_EVENT_PAL_TAG_SCIENTIST_F},
+    {gObjectEventPal_Proton,                  OBJ_EVENT_PAL_TAG_PROTON},
     
 
 #if OW_FOLLOWERS_POKEBALLS

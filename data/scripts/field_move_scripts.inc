@@ -478,14 +478,14 @@ Text_CantRockClimb:
 @HnS
 EventScript_Whirlpool::
 	lockall
-	goto_if_unset FLAG_GARBAGEFLAG, EventScript_CantWhirlpool
-	@checkpartymove MOVE_WHIRLPOOL @checkpartymove doesn't work for the 8th hm i guess.
-	@goto_if_eq FLAG_GARBAGEFLAG, FALSE, EventScript_CantWhirlpool
+	goto_if_unset FLAG_BADGE07_GET, EventScript_CantWhirlpool
+	checkfieldmove MOVE_WHIRLPOOL @checkpartymove doesn't work for the 8th hm i guess.
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantWhirlpool
 	playse SE_M_WATERFALL
-	goto_if_eq FLAG_GARBAGEFLAG, DIR_NORTH, EventScript_WhirlpoolGoNorth
-	goto_if_eq FLAG_GARBAGEFLAG, DIR_SOUTH, EventScript_WhirlpoolGoSouth
-	goto_if_eq FLAG_GARBAGEFLAG, DIR_EAST, EventScript_WhirlpoolGoEast
-	goto_if_eq FLAG_GARBAGEFLAG, DIR_WEST, EventScript_WhirlpoolGoWest
+	goto_if_eq VAR_FACING, DIR_NORTH, EventScript_WhirlpoolGoNorth
+	goto_if_eq VAR_FACING, DIR_SOUTH, EventScript_WhirlpoolGoSouth
+	goto_if_eq VAR_FACING, DIR_EAST, EventScript_WhirlpoolGoEast
+	goto_if_eq VAR_FACING, DIR_WEST, EventScript_WhirlpoolGoWest
 	releaseall
 	end
 

@@ -190,6 +190,11 @@ Route42_EventScript_MortarSign::
 	release
 	end
 
+Route42_EventScript_Philip::
+	trainerbattle_single TRAINER_SAWYER_1 Route42_Text_SawyerIntro, Route42_Text_SawyerDefeat
+	msgbox Route42_Text_SawyerPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 Route42_EventScript_Item_SuperPotion::
 	finditem ITEM_SUPER_POTION
 	end
@@ -199,6 +204,18 @@ Route42_EventScript_Item_Mint::
 Route42_EventScript_Item_UltraBall::
 	finditem ITEM_ULTRA_BALL
 	end
+
+Route42_Text_SawyerIntro:
+	.string "If this crashes the game,\n"
+	.string "I will be very disappointed.$"
+
+Route42_Text_SawyerDefeat:
+	.string "Wow!\n"
+	.string "You're almost as good as Elite Four Joy!$"
+
+Route42_Text_SawyerPostBattle:
+	.string "Wait a minute...\n"
+	.string "You're cheating! You can't be!!!$"
 
 Route42_Text_FisherTullySeen:
 	.string "Let me demonstrate the power\n"

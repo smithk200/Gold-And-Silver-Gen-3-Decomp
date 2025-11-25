@@ -4,7 +4,12 @@ OlivineCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OlivineCity_MapScript_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, OlivineCity_OnFrame
+	map_script MAP_SCRIPT_ON_LOAD, OlivineCity_OnLoad
 	.byte 0
+
+OlivineCity_OnLoad::
+	setrespawn HEAL_LOCATION_OLIVINE_CITY
+	end
 
 OlivineCity_MapScript_OnTransition::
 	callnative SetTimeBasedEncounters

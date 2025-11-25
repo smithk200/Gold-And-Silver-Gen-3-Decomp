@@ -99,8 +99,10 @@ LakeOfRage_EventScript_Gyarados::
 	playmoncry SPECIES_GYARADOS, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattleshiny SPECIES_GYARADOS, 30
+	setflag FLAG_SET_SHINY
+	setwildbattle SPECIES_GYARADOS, 30
 	dowildbattle
+	clearflag FLAG_SET_SHINY
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, LakeOfRage_EventScript_Defeated_Gyarados
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, LakeOfRage_EventScript_Ran_Gyarados

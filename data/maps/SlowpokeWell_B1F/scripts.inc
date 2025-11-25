@@ -43,9 +43,38 @@ SlowpokeWell_B1F_EventScript_Eto::
 SlowpokeWell_B1F_EventScript_Proton::
 	lock
 	faceplayer
-	msgbox SlowpokeWell_B1F_Text_ProtonSeen, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_PROTON_1, SlowpokeWell_B1F_Text_ProtonSeen, SlowpokeWell_B1F_Text_ProtonBeaten
+	msgbox SlowpokeWell_B1F_Text_ProtonAfter, MSGBOX_AUTOCLOSE
 	closemessage
-	trainerbattle_no_intro TRAINER_PROTON_1, SlowpokeWell_B1F_Text_ProtonBeaten
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_HIDE_AZALEA_TOWN_ROCKETS
+	clearflag FLAG_HIDE_KURT_1
+	addobject LOCALID_WELL_KURT
+	removeobject 11
+	removeobject 12
+	removeobject 13
+	delay 120
+	fadescreen FADE_FROM_BLACK
+	special DrawWholeMapView
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
+	applymovement LOCALID_WELL_KURT, SlowpokeWell_B1F_Movement_Kurt
+	waitmovement 0
+	msgbox SlowpokeWell_B1F_Text_KurtAfter, MSGBOX_DEFAULT
+	closemessage
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_HIDE_SLOWPOKE_WELL_KURT
+	setflag FLAG_HIDE_KURT_1
+	clearflag FLAG_HIDE_KURT_2
+	clearflag FLAG_HIDE_AZALEA_TOWN_SLOWPOKE
+	setvar VAR_AZALEA_TOWN_STATE, 3
+	warp MAP_AZALEA_TOWN_KURTS_HOUSE, 15, 4
+	release
+	end
+
+SlowpokeWell_B1F_EventScript_Proton2::
+	lock
+	faceplayer
+	trainerbattle_single TRAINER_PROTON_1, SlowpokeWell_B1F_Text_ProtonSeen, SlowpokeWell_B1F_Text_ProtonBeaten
 	msgbox SlowpokeWell_B1F_Text_ProtonAfter, MSGBOX_AUTOCLOSE
 	closemessage
 	fadescreen FADE_TO_BLACK

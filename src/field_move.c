@@ -25,17 +25,17 @@ static bool32 IsFieldMoveUnlocked_RockSmash(void)
 
 static bool32 IsFieldMoveUnlocked_Strength(void)
 {
-    return FlagGet(FLAG_BADGE04_GET);
+    return FlagGet(FLAG_BADGE06_GET);
 }
 
 static bool32 IsFieldMoveUnlocked_Surf(void)
 {
-    return FlagGet(FLAG_BADGE05_GET);
+    return FlagGet(FLAG_BADGE04_GET);
 }
 
 static bool32 IsFieldMoveUnlocked_Fly(void)
 {
-    return FlagGet(FLAG_BADGE06_GET);
+    return FlagGet(FLAG_BADGE05_GET);
 }
 
 static bool32 IsFieldMoveUnlocked_Dive(void)

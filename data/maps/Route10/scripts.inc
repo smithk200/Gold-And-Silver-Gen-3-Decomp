@@ -3,11 +3,24 @@
 
 Route10_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route10_OnTransition
+	map_script MAP_SCRIPT_ON_LOAD, Route10_OnLoad
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
 
 Route10_OnTransition: 
 	callnative SetTimeBasedEncounters
+	end
+
+Route10_OnLoad::
+	goto_if_set FLAG_VISITED_ROUTE10, Route10_OnLoad2
+	end
+
+Route10_OnLoad2::
+	setrespawn HEAL_LOCATION_ROUTE10
+	end
+
+Route10_Trigger::
+	setflag FLAG_VISITED_ROUTE10
 	end
 
 Route10_EventScript_Surge::

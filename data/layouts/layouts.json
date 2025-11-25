@@ -8750,6 +8750,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/Route121_SafariZoneGate_SafariZoneEntrance/border.bin",
       "blockdata_filepath": "data/layouts/Route121_SafariZoneGate_SafariZoneEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAHOGANY_TOWN_GYM2",
+      "name": "MahoganyTownGym2",
+      "width": 34,
+      "height": 27,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_MahoganyTownGym",
+      "border_filepath": "data/layouts/MahoganyTownGym2/border.bin",
+      "blockdata_filepath": "data/layouts/MahoganyTownGym2/map.bin"
     }
   ]
 }

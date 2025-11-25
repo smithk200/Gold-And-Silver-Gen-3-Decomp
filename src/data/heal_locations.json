@@ -354,6 +354,120 @@
       "map": "MAP_ROUTE26NORTH",
       "x": 12,
       "y": 6
+    },
+    {
+      "id": "HEAL_LOCATION_INDIGO_PLATEAU_POKEMON_CENTER",
+      "map": "MAP_INDIGO_PLATEAU_POKEMON_CENTER",
+      "x": 19,
+      "y": 12
+    },
+    {
+      "id": "HEAL_LOCATION_AZALEA_TOWN_POKEMON_CENTER",
+      "map": "MAP_AZALEA_TOWN_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_BLACKTHORN_CITY_POKEMON_CENTER",
+      "map": "MAP_BLACKTHORN_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_CELADON_CITY_POKEMON_CENTER",
+      "map": "MAP_CELADON_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_CERULEAN_CITY_POKEMON_CENTER",
+      "map": "MAP_CERULEAN_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_CHERRYGROVE_CITY_POKEMON_CENTER",
+      "map": "MAP_CHERRYGROVE_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_CINNABAR_ISLAND_POKEMON_CENTER",
+      "map": "MAP_CINNABAR_ISLAND_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_ECRUTEAK_CITY_POKEMON_CENTER",
+      "map": "MAP_ECRUTEAK_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_FUCHSIA_CITY_POKEMON_CENTER",
+      "map": "MAP_FUCHSIA_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_GOLDENROD_CITY_POKEMON_CENTER",
+      "map": "MAP_GOLDENROD_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_LAVENDER_TOWN_POKEMON_CENTER",
+      "map": "MAP_LAVENDER_TOWN_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_MAHOGANY_TOWN_POKEMON_CENTER",
+      "map": "MAP_MAHOGANY_TOWN_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_OLIVINE_CITY_POKEMON_CENTER",
+      "map": "MAP_OLIVINE_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_PEWTER_CITY_POKEMON_CENTER",
+      "map": "MAP_PEWTER_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_SAFFRON_CITY_POKEMON_CENTER",
+      "map": "MAP_SAFFRON_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_VERMILION_CITY_POKEMON_CENTER",
+      "map": "MAP_VERMILION_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_VIOLET_CITY_POKEMON_CENTER",
+      "map": "MAP_VIOLET_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_VIRIDIAN_CITY_POKEMON_CENTER",
+      "map": "MAP_VIRIDIAN_CITY_POKEMON_CENTER",
+      "x": 7,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE10",
+      "map": "MAP_ROUTE10",
+      "x": 21,
+      "y": 21
     }
   ]
 }

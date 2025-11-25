@@ -46,20 +46,20 @@ Route22_EventScript_TriggerMid::
 
 Route22_EventScript_Scene::
 	lock
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, Route22_Movement_CelebiBegin
+	applymovement OBJ_EVENT_ID_FOLLOWER, Route22_Movement_CelebiBegin
 	playse SE_LEDGE
 	waitse
 	playse SE_LEDGE
 	waitse
 	waitmovement 0
 	playse SE_PIN
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 	delay 60
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
 	playse SE_PIN
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_QuestionMark
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_QuestionMark
 	delay 60
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, Route22_Movement_CelebiSpin1
+	applymovement OBJ_EVENT_ID_FOLLOWER, Route22_Movement_CelebiSpin1
 	playse SE_LEDGE
 	waitse
 	playse SE_LEDGE
@@ -83,90 +83,90 @@ Route22_EventScript_Scene::
 	delay 50
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	special SpawnCameraObject
-	applymovement2 OBJ_EVENT_ID_CAMERA, Route22_Movement_CameraPanLeft
+	applymovement OBJ_EVENT_ID_CAMERA, Route22_Movement_CameraPanLeft
 	waitmovement 0
 	delay 30
-	applymovement2 LOCALID_ROUTE22_SILVER, Common_Movement_WalkLeft1
+	applymovement LOCALID_ROUTE22_SILVER, Common_Movement_WalkLeft1
 	waitmovement 0
 	msgbox Route22_Text_Silver1, MSGBOX_DEFAULT
 	closemessage
 	delay 30
-	applymovement2 LOCALID_ROUTE22_GIOVANNI, Route22_Movement_WalkInPlaceRight
+	applymovement LOCALID_ROUTE22_GIOVANNI, Route22_Movement_WalkInPlaceRight
 	waitmovement 0
 	msgbox Route22_Text_Giovanni1, MSGBOX_DEFAULT
 	closemessage
 	delay 30
-	applymovement2 LOCALID_ROUTE22_SILVER, Route22_Movement_WalkInPlaceLeft
+	applymovement LOCALID_ROUTE22_SILVER, Route22_Movement_WalkInPlaceLeft
 	waitmovement 0
 	msgbox Route22_Text_Silver2, MSGBOX_DEFAULT
 	closemessage
 	delay 30
-	applymovement2 LOCALID_ROUTE22_GIOVANNI, Route22_Movement_WalkInPlaceRight
+	applymovement LOCALID_ROUTE22_GIOVANNI, Route22_Movement_WalkInPlaceRight
 	waitmovement 0
 	msgbox Route22_Text_Giovanni2, MSGBOX_DEFAULT
 	closemessage
 	delay 10
-	applymovement2 LOCALID_ROUTE22_SILVER, Common_Movement_WalkLeft1
+	applymovement LOCALID_ROUTE22_SILVER, Common_Movement_WalkLeft1
 	waitmovement 0
 	msgbox Route22_Text_Silver3, MSGBOX_DEFAULT
 	closemessage
 	delay 30
-	applymovement2 LOCALID_ROUTE22_GIOVANNI, Route22_Movement_WalkInPlaceLeft
+	applymovement LOCALID_ROUTE22_GIOVANNI, Route22_Movement_WalkInPlaceLeft
 	waitmovement 0
 	msgbox Route22_Text_Giovanni3, MSGBOX_DEFAULT
 	closemessage
 	delay 30
-	applymovement2 LOCALID_ROUTE22_GIOVANNI, Route22_Movement_GiovanniLeave
+	applymovement LOCALID_ROUTE22_GIOVANNI, Route22_Movement_GiovanniLeave
 	waitmovement 0
 	msgbox Route22_Text_Silver4, MSGBOX_DEFAULT
 	closemessage
 	delay 30
-	applymovement2 LOCALID_ROUTE22_SILVER, Common_Movement_WalkLeft1
+	applymovement LOCALID_ROUTE22_SILVER, Common_Movement_WalkLeft1
 	waitmovement 0
 	msgbox Route22_Text_Silver5, MSGBOX_DEFAULT
 	closemessage
 	delay 20
 	playbgm MUS_HG_ENCOUNTER_RIVAL, TRUE
-	applymovement2 LOCALID_ROUTE22_SILVER, Route22_Movement_SilverStartLeave
-	applymovement2 OBJ_EVENT_ID_CAMERA, Route22_Movement_CameraPanRight
+	applymovement LOCALID_ROUTE22_SILVER, Route22_Movement_SilverStartLeave
+	applymovement OBJ_EVENT_ID_CAMERA, Route22_Movement_CameraPanRight
 	waitmovement LOCALID_ROUTE22_SILVER
 	waitmovement OBJ_EVENT_ID_CAMERA
 	special RemoveCameraObject
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
 	playse SE_PIN
-	applymovement2 LOCALID_ROUTE22_SILVER, Common_Movement_ExclamationMark
+	applymovement LOCALID_ROUTE22_SILVER, Common_Movement_ExclamationMark
 	delay 60
 	msgbox Route22_Text_Silver6, MSGBOX_DEFAULT
 	closemessage
-	applymovement2 LOCALID_ROUTE22_SILVER, Common_Movement_WalkRight1
-	applymovement2 OBJ_EVENT_ID_PLAYER, Route22_Movement_PlayerPushed
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, Route22_Movement_CelebiPush
+	applymovement LOCALID_ROUTE22_SILVER, Common_Movement_WalkRight1
+	applymovement OBJ_EVENT_ID_PLAYER, Route22_Movement_PlayerPushed
+	applymovement OBJ_EVENT_ID_FOLLOWER, Route22_Movement_CelebiPush
 	playse SE_LEDGE
 	waitmovement LOCALID_ROUTE22_SILVER
 	waitmovement OBJ_EVENT_ID_PLAYER
 	waitmovement OBJ_EVENT_ID_FOLLOWER
 	waitse
-	applymovement2 LOCALID_ROUTE22_SILVER, Route22_Movement_SilverFinishLeave
+	applymovement LOCALID_ROUTE22_SILVER, Route22_Movement_SilverFinishLeave
 	waitmovement 0
 	setflag FLAG_HIDE_ROUTE22_GIOVANNI_SILVER
 	removeobject LOCALID_ROUTE22_SILVER
 	removeobject LOCALID_ROUTE22_GIOVANNI
 
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, Route22_Movement_CelebiBegin
+	applymovement OBJ_EVENT_ID_FOLLOWER, Route22_Movement_CelebiBegin
 	playse SE_LEDGE
 	waitse
 	playse SE_LEDGE
 	waitse
 	waitmovement 0
 	playse SE_PIN
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 	delay 60
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
 	delay 20
 	playse SE_PIN
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_QuestionMark
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_QuestionMark
 	delay 60
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, Route22_Movement_CelebiSpin1
+	applymovement OBJ_EVENT_ID_FOLLOWER, Route22_Movement_CelebiSpin1
 	playse SE_LEDGE
 	waitse
 	playse SE_LEDGE

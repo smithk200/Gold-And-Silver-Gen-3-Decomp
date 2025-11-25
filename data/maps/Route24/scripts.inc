@@ -51,11 +51,11 @@ Route24_EventScript_ManAfterRocket::
 Route24_Trigger_GruntScene::
 	lock
 	playse SE_PIN
-	applymovement2 LOCALID_ROUTE24_GRUNT Common_Movement_ExclamationMark
+	applymovement LOCALID_ROUTE24_GRUNT Common_Movement_ExclamationMark
 	delay 60
-	applymovement2 LOCALID_ROUTE24_GRUNT, Route24_Movement_GruntHide
+	applymovement LOCALID_ROUTE24_GRUNT, Route24_Movement_GruntHide
 	delay 10
-	applymovement2 LOCALID_ROUTE24_WOMAN, Route24_Movement_WomanMove
+	applymovement LOCALID_ROUTE24_WOMAN, Route24_Movement_WomanMove
 	waitmovement 0
 	turnobject LOCALID_ROUTE24_MAN, DIR_SOUTH
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 4
@@ -83,7 +83,7 @@ Route24_EventScript_Grunt::
 	msgbox Route24_Text_RocketAfter, MSGBOX_DEFAULT
 	closemessage
 	playse SE_PIN
-	applymovement2 FLAG_HIDE_CERULEAN_CAPE_ROCKET, Common_Movement_QuestionMark
+	applymovement FLAG_HIDE_CERULEAN_CAPE_ROCKET, Common_Movement_QuestionMark
 	delay 50
 	msgbox Route24_Text_RocketDisappears, MSGBOX_DEFAULT
 	closemessage

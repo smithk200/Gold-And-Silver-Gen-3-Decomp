@@ -729,7 +729,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PROTON_2 ===
 Name: Proton
-Class: Rocket Admin
+Class: RocketA
 Pic: Proton
 Gender: Male
 Music: Rocket
@@ -779,7 +779,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PROTON_1 ===
 Name: Proton
-Class: Rocket Admin
+Class: RocketA
 Pic: Proton
 Gender: Male
 Music: Rocket
@@ -858,7 +858,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GIOVANNI ===
 Name: Giovanni
-Class: Rocket Admin
+Class: RocketA
 Pic: Giovanni
 Gender: Male
 Music: Male
@@ -1322,7 +1322,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PETREL_2 ===
 Name: Petrel
-Class: Rocket Admin
+Class: RocketA
 Pic: Petrel
 Gender: Male
 Music: Rocket
@@ -1364,7 +1364,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PETREL_1 ===
 Name: Petrel
-Class: Rocket Admin
+Class: RocketA
 Pic: Petrel
 Gender: Male
 Music: Rocket
@@ -1571,7 +1571,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ARIANA_2 ===
 Name: Ariana
-Class: Rocket Admin
+Class: RocketA
 Pic: Ariana
 Gender: Male
 Music: Rocket
@@ -1621,7 +1621,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ARIANA_1 ===
 Name: Ariana
-Class: Rocket Admin
+Class: RocketA
 Pic: Ariana
 Gender: Male
 Music: Rocket
@@ -1730,7 +1730,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ARCHER ===
 Name: Archer
-Class: Rocket Admin
+Class: RocketA
 Pic: Archer
 Gender: Male
 Music: Rocket
@@ -4509,7 +4509,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ARCHER_5 ===
 Name: Archer
-Class: Rocket Admin
+Class: RocketA
 Pic: Archer
 Gender: Male
 Music: Rocket
@@ -4796,7 +4796,7 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LTSURGE ===
-Name: Ltsurge
+Name: Lt. Surge
 Class: Leader
 Pic: Leader Surge
 Gender: Male
@@ -5060,15 +5060,15 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAWYER_1 ===
 Name: Sawyer
-Class: Hiker
-Pic: Hiker
+Class: Philip
+Pic: Burglar
 Gender: Male
 Music: Hg Boy 2
 Double Battle: No
 AI: Basic Trainer
 
-Geodude
-Level: 21
+Cloyster
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RYAN ===
@@ -9360,7 +9360,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ARCHER_1 ===
 Name: Archer
-Class: Rocket Admin
+Class: RocketA
 Pic: Archer
 Gender: Male
 Music: Rocket
@@ -10753,7 +10753,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ARCHER_4 ===
 Name: Archer
-Class: Rocket Admin
+Class: RocketA
 Pic: Archer
 Gender: Male
 Music: Rocket

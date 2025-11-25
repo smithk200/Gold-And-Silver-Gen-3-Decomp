@@ -310,6 +310,16 @@ RocketHideout_B2F_EventScript_ChoosePartyForMultiBattle::
 	goto RocketHideout_B2F_EventScript_ReadyForBattlePrompt
 
 RocketHideout_B2F_EventScript_DoLanceMultiBattle::
+	multi_2_vs_2 TRAINER_ARIANA_1, RocketHideout_B2F_Text_ArianaLoss, TRAINER_GRUNT_23, RocketHideout_B2F_Text_GruntLoss, PARTNER_STEVEN
+	switch VAR_RESULT
+	case 1, RocketHideout_B2F_EventScript_DefeatedAriana
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_HIDE_ROCKETHIDEOUT2_LANCE_DRAGONITE
+	setflag FLAG_HIDE_ROCKETHIDEOUT2_ARIANA_AND_GRUNT
+	special SetCB2WhiteOut
+	waitstate
+
+RocketHideout_B2F_EventScript_DoLanceMultiBattle2::
 	special ReducePlayerPartyToSelectedMons
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	setvar VAR_0x8004, SPECIAL_BATTLE_LANCE
@@ -716,8 +726,8 @@ RocketHideout_B2F_EventScript_Lance::
 	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox RocketHideout_B2F_Text_LanceHeals2, MSGBOX_DEFAULT
 	closemessage
-	applymovement2 LOCALID_ROCKETHIDEOUT2_LANCE, RocketHideout_B2F_Movement_LanceGoDeeper
-	applymovement2 LOCALID_ROCKETHIDEOUT2_DRAGONITE, RocketHideout_B2F_Movement_DragoniteGoDeeper
+	applymovement LOCALID_ROCKETHIDEOUT2_LANCE, RocketHideout_B2F_Movement_LanceGoDeeper
+	applymovement LOCALID_ROCKETHIDEOUT2_DRAGONITE, RocketHideout_B2F_Movement_DragoniteGoDeeper
 	waitmovement LOCALID_ROCKETHIDEOUT2_LANCE
 	waitmovement LOCALID_ROCKETHIDEOUT2_DRAGONITE
 	setflag FLAG_HIDE_ROCKETHIDEOUT2_LANCE_DRAGONITE

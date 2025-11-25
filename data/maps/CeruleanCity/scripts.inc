@@ -3,10 +3,15 @@
 
 CeruleanCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, CeruleanCity_EventScript_CityEnter
+	map_script MAP_SCRIPT_ON_LOAD, CeruleanCity_OnLoad
 	.byte 0
 
 CeruleanCity_EventScript_CityEnter::
 	setflag FLAG_VISITED_CERULEAN_CITY
+	end
+
+CeruleanCity_OnLoad::
+	setrespawn HEAL_LOCATION_CERULEAN_CITY
 	end
 
 CeruleanCity_EventScript_CooltrainerM1::
@@ -75,7 +80,7 @@ CeruleanCity_EventScript_SlowbroWoman::
 	msgbox CeruleanCity_Text_CooltrainerF2, MSGBOX_DEFAULT
 	delay 20
 	playmoncry SPECIES_SLOWBRO, CRY_MODE_NORMAL
-	applymovement2 LOCALID_CERULEAN_SLOWBRO, Common_Movement_QuestionMark
+	applymovement LOCALID_CERULEAN_SLOWBRO, Common_Movement_QuestionMark
 	turnobject LOCALID_CERULEAN_SLOWBRO DIR_WEST
 	delay 30
 	turnobject LOCALID_CERULEAN_SLOWBRO, DIR_EAST

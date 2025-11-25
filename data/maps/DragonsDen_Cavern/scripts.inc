@@ -31,10 +31,10 @@ DragonsDen_Text_Clair:
 DragonsDen_Cavern_Trigger_ClairLeft::
 	lock 
 	playse SE_PIN
-	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_ExclamationMark
+	applymovement LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_ExclamationMark
 	delay 60
 	call DragonsDen_Cavern_EventScript_Clair
-	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, DragonsDen_Cavern_Movement_ClairLeaveLeft
+	applymovement LOCALID_DRAGONSDEN2_CLAIR, DragonsDen_Cavern_Movement_ClairLeaveLeft
 	waitmovement 0
 	setflag FLAG_HIDE_DRAGONS_DEN_CAVERN_CLAIR
 	removeobject LOCALID_DRAGONSDEN2_CLAIR
@@ -47,11 +47,11 @@ DragonsDen_Cavern_Trigger_ClairLeft::
 DragonsDen_Cavern_Trigger_ClairMid::
 	lock 
 	playse SE_PIN
-	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_ExclamationMark
+	applymovement LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_ExclamationMark
 	delay 60
-	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_WalkRight1
+	applymovement LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_WalkRight1
 	call DragonsDen_Cavern_EventScript_Clair
-	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, DragonsDen_Cavern_Movement_ClairLeaveMid
+	applymovement LOCALID_DRAGONSDEN2_CLAIR, DragonsDen_Cavern_Movement_ClairLeaveMid
 	waitmovement 0
 	setflag FLAG_HIDE_DRAGONS_DEN_CAVERN_CLAIR
 	removeobject LOCALID_DRAGONSDEN2_CLAIR
@@ -63,13 +63,13 @@ DragonsDen_Cavern_Trigger_ClairMid::
 DragonsDen_Cavern_Trigger_ClairRight::
 	lock 
 	playse SE_PIN
-	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_ExclamationMark
+	applymovement LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_ExclamationMark
 	delay 60
-	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_WalkRight1
+	applymovement LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_WalkRight1
 	waitmovement 0
-	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_WalkRight1
+	applymovement LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_WalkRight1
 	call DragonsDen_Cavern_EventScript_Clair
-	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, DragonsDen_Cavern_Movement_ClairLeaveRight
+	applymovement LOCALID_DRAGONSDEN2_CLAIR, DragonsDen_Cavern_Movement_ClairLeaveRight
 	waitmovement 0
 	setflag FLAG_HIDE_DRAGONS_DEN_CAVERN_CLAIR
 	removeobject LOCALID_DRAGONSDEN2_CLAIR

@@ -1,9 +1,14 @@
 PalletTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PalletTown_EventScript_CityEnter
+	map_script MAP_SCRIPT_ON_LOAD, PalletTown_OnLoad
 	.byte 0
 
 PalletTown_EventScript_CityEnter::
 	setflag FLAG_VISITED_PALLET_TOWN
+	end
+
+PalletTown_OnLoad::
+	setrespawn HEAL_LOCATION_PALLET_TOWN
 	end
 
 PalletTown_EventScript_Woman::

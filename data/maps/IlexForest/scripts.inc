@@ -365,14 +365,14 @@ IlexForest_EventScript_Kimono::
 	playbgm MUS_HG_KIMONO_GIRL, TRUE
 	playse SE_PIN
 	turnobject OBJ_EVENT_ID_FOLLOWER, DIR_NORTH
-	applymovement2 LOCALID_ILEX_FOREST_KIMONO, Common_Movement_ExclamationMark
+	applymovement LOCALID_ILEX_FOREST_KIMONO, Common_Movement_ExclamationMark
 	delay 60
-	applymovement2 LOCALID_ILEX_FOREST_KIMONO, IlexForest_Movement_Kimono_Girl1
+	applymovement LOCALID_ILEX_FOREST_KIMONO, IlexForest_Movement_Kimono_Girl1
 	waitmovement 0
 	msgbox IlexForest_Text_Kimono_Girl1, MSGBOX_DEFAULT
 	closemessage
 	playse SE_M_PETAL_DANCE
-	applymovement2 LOCALID_ILEX_FOREST_KIMONO, IlexForest_Movement_Kimono_Girl_Spin
+	applymovement LOCALID_ILEX_FOREST_KIMONO, IlexForest_Movement_Kimono_Girl_Spin
 	waitmovement 0
 	turnobject LOCALID_ILEX_FOREST_KIMONO, DIR_SOUTH
 	msgbox IlexForest_Text_Kimono_Girl2, MSGBOX_YESNO
@@ -380,7 +380,7 @@ IlexForest_EventScript_Kimono::
 	msgbox IlexForest_Text_Kimono_Girl3, MSGBOX_DEFAULT
 	closemessage
 	playfirstmoncry
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, IlexForest_Movement_Follower1
+	applymovement OBJ_EVENT_ID_FOLLOWER, IlexForest_Movement_Follower1
 	waitmovement 0
 	playfirstmoncry
 	turnobject LOCALID_ILEX_FOREST_KIMONO DIR_WEST
@@ -392,8 +392,8 @@ IlexForest_EventScript_Kimono::
 	closemessage
 	delay 16
 	playfirstmoncry
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, IlexForest_Movement_Follower2
-	applymovement2 LOCALID_ILEX_FOREST_KIMONO, IlexForest_Movement_Kimono_Girl2
+	applymovement OBJ_EVENT_ID_FOLLOWER, IlexForest_Movement_Follower2
+	applymovement LOCALID_ILEX_FOREST_KIMONO, IlexForest_Movement_Kimono_Girl2
 	waitmovement 0
 	waitmovement 0
 	fadedefaultbgm

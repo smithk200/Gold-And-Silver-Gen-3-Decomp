@@ -21,7 +21,7 @@ Route27_EventScript_FirstSteps::
     lock
     playse SE_PIN
     setflag FLAG_VISITED_KANTO
-    applymovement2 LOCALID_ROUTE27_FATMAN, Common_Movement_ExclamationMark
+    applymovement LOCALID_ROUTE27_FATMAN, Common_Movement_ExclamationMark
     turnobject LOCALID_ROUTE27_FATMAN, DIR_WEST
     delay 30
     getplayerxy VAR_TEMP_0, VAR_TEMP_1
@@ -47,11 +47,11 @@ Route27_EventScript_FirstSteps::
     end
 
 Route27_EventScript_FirstStepsWalkTop::
-    applymovement2 LOCALID_ROUTE27_FATMAN, Route27_Movement_WalkTop
+    applymovement LOCALID_ROUTE27_FATMAN, Route27_Movement_WalkTop
     waitmovement 0
     return
 Route27_EventScript_FirstStepsWalkBot::
-    applymovement2 LOCALID_ROUTE27_FATMAN, Route27_Movement_WalkBot
+    applymovement LOCALID_ROUTE27_FATMAN, Route27_Movement_WalkBot
     waitmovement 0
     return
 

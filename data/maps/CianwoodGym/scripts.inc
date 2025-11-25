@@ -32,7 +32,7 @@ CianwoodGym_EventScript_Chuck::
 	lock
 	faceplayer
 	goto_if_unset FLAG_HIDE_DOJO_CHUCK, CianwoodGym_EventScript_ChuckAtDojo
-	goto_if_set FLAG_GARBAGEFLAG, CianwoodGym_EventScript_ChuckGotoDojo
+	goto_if_set FLAG_VISITED_VERMILION_CITY, CianwoodGym_EventScript_ChuckGotoDojo
 	goto_if_set FLAG_DEFEATED_CIANWOOD_GYM, CianwoodGym_EventScript_Chuck_Defeated
 	msgbox CianwoodGym_Text_ChuckIntro1, MSGBOX_DEFAULT
 	applymovement LOCALID_CIANWOOD_CHUCK, CianwoodGym_Movement_ChuckLeft

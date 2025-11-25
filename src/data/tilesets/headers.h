@@ -1853,3 +1853,13 @@ const struct Tileset gTileset_SeaCottage =
     .metatileAttributes = gMetatileAttributes_SeaCottage,
     .callback = NULL,
 };
+const struct Tileset gTileset_MahoganyTownGym =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_MahoganyTownGym,
+    .palettes = gTilesetPalettes_Mahogany_TownGym,
+    .metatiles = gMetatiles_MahoganyTownGym,
+    .metatileAttributes = gMetatileAttributes_MahoganyTownGym,
+    .callback = NULL,
+};

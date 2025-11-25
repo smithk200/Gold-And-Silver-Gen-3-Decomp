@@ -70,9 +70,9 @@ Route10_PowerPlantEntrance_EventScript_Engineer3Done::
 Route10_PowerPlantEntrance_Trigger_Cop::
 	lock
 	playse SE_POKENAV_CALL
-	applymovement2 LOCALID_POWERPLANT_COP, Common_Movement_ExclamationMark
+	applymovement LOCALID_POWERPLANT_COP, Common_Movement_ExclamationMark
 	waitse
-	applymovement2 LOCALID_POWERPLANT_COP, Route10_PowerPlantEntrance_Movement_WalkToPlayer
+	applymovement LOCALID_POWERPLANT_COP, Route10_PowerPlantEntrance_Movement_WalkToPlayer
 	waitmovement 0
 	turnobject LOCALID_POWERPLANT_ENGINEER, DIR_SOUTH
 	msgbox Route10_PowerPlantEntrance_Text_Officer1CeruleanShadyCharacter, MSGBOX_DEFAULT
@@ -82,7 +82,7 @@ Route10_PowerPlantEntrance_Trigger_Cop::
 	delay 30
 	msgbox Route10_PowerPlantEntrance_Text_Officer1CouldIAskForYourCooperation, MSGBOX_DEFAULT
 	closemessage
-	applymovement2 LOCALID_POWERPLANT_COP, Route10_PowerPlantEntrance_Movement_WalkBack
+	applymovement LOCALID_POWERPLANT_COP, Route10_PowerPlantEntrance_Movement_WalkBack
 	waitmovement 0
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 2
 	clearflag FLAG_HIDE_CERULEAN_GYM_ROCKET

@@ -494,8 +494,8 @@ EcruteakCity_Theater_Text_FancyPanel:
 
 EcruteakCity_Theater_Trigger_PreBattleCutsceneLeft::
 	lock
-	applymovement2 OBJ_EVENT_ID_PLAYER, EcruteakCity_Theater_Movement_PlayerWalkToZukiLeft
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, EcruteakCity_Theater_Movement_MonWalkToZukiLeft
+	applymovement OBJ_EVENT_ID_PLAYER, EcruteakCity_Theater_Movement_PlayerWalkToZukiLeft
+	applymovement OBJ_EVENT_ID_FOLLOWER, EcruteakCity_Theater_Movement_MonWalkToZukiLeft
 	waitmovement OBJ_EVENT_ID_FOLLOWER
 	waitmovement OBJ_EVENT_ID_PLAYER
 	delay 10
@@ -504,8 +504,8 @@ EcruteakCity_Theater_Trigger_PreBattleCutsceneLeft::
 
 EcruteakCity_Theater_Trigger_PreBattleCutsceneTop::
 	lock
-	applymovement2 OBJ_EVENT_ID_PLAYER, EcruteakCity_Theater_Movement_PlayerWalkToZukiTop
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, EcruteakCity_Theater_Movement_MonWalkToZukiTop
+	applymovement OBJ_EVENT_ID_PLAYER, EcruteakCity_Theater_Movement_PlayerWalkToZukiTop
+	applymovement OBJ_EVENT_ID_FOLLOWER, EcruteakCity_Theater_Movement_MonWalkToZukiTop
 	waitmovement OBJ_EVENT_ID_FOLLOWER
 	waitmovement OBJ_EVENT_ID_PLAYER
 	delay 10
@@ -514,8 +514,8 @@ EcruteakCity_Theater_Trigger_PreBattleCutsceneTop::
 
 EcruteakCity_Theater_Trigger_PreBattleCutsceneRight::
 	lock
-	applymovement2 OBJ_EVENT_ID_PLAYER, EcruteakCity_Theater_Movement_PlayerWalkToZukiRight
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, EcruteakCity_Theater_Movement_MonWalkToZukiRight
+	applymovement OBJ_EVENT_ID_PLAYER, EcruteakCity_Theater_Movement_PlayerWalkToZukiRight
+	applymovement OBJ_EVENT_ID_FOLLOWER, EcruteakCity_Theater_Movement_MonWalkToZukiRight
 	waitmovement OBJ_EVENT_ID_FOLLOWER
 	waitmovement OBJ_EVENT_ID_PLAYER
 	delay 10
@@ -697,7 +697,7 @@ EcruteakCity_Theater_EventScript_LegendaryCutscene::
 	closemessage
 	delay 20
 	playse SE_M_PETAL_DANCE
-	applymovement2 LOCALID_ECRUTEAK_ZUKI, EcruteakCity_Theater_Movement_KimonoSpin
+	applymovement LOCALID_ECRUTEAK_ZUKI, EcruteakCity_Theater_Movement_KimonoSpin
 	waitmovement 0
 	setvar VAR_ECRUTEAK_CITY_THEATER, 6
 EcruteakCity_Theater_EventScript_ZukiBattle::
@@ -707,50 +707,50 @@ EcruteakCity_Theater_EventScript_ZukiBattle::
 	call_if_eq VAR_FACING, DIR_WEST, EcruteakCity_Theater_Movement_WestCorrection
 	call_if_eq VAR_FACING, DIR_EAST, EcruteakCity_Theater_Movement_EastCorrection
 	trainerbattle_no_intro TRAINER_ZUKI, EcruteakCity_Theater_Text_KimonoGirlBeaten
-	applymovement2 LOCALID_ECRUTEAK_ZUKI, EcruteakCity_Theater_Movement_ZukiWalkUp
+	applymovement LOCALID_ECRUTEAK_ZUKI, EcruteakCity_Theater_Movement_ZukiWalkUp
 	waitmovement 0
 EcruteakCity_Theater_EventScript_NaokoBattle::
 	playse SE_M_PETAL_DANCE
-	applymovement2 LOCALID_ECRUTEAK_NAOKO, EcruteakCity_Theater_Movement_KimonoSpin
+	applymovement LOCALID_ECRUTEAK_NAOKO, EcruteakCity_Theater_Movement_KimonoSpin
 	waitmovement 0
-	applymovement2 LOCALID_ECRUTEAK_NAOKO, EcruteakCity_Theater_Movement_NaokoWalkToPlayer
+	applymovement LOCALID_ECRUTEAK_NAOKO, EcruteakCity_Theater_Movement_NaokoWalkToPlayer
 	waitmovement 0
 	msgbox EcruteakCity_Theater_Text_NaokoSeen, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_NAOKO, EcruteakCity_Theater_Text_KimonoGirlBeaten
-	applymovement2 LOCALID_ECRUTEAK_NAOKO, EcruteakCity_Theater_Movement_NaokoWalkBack
+	applymovement LOCALID_ECRUTEAK_NAOKO, EcruteakCity_Theater_Movement_NaokoWalkBack
 	waitmovement 0
 EcruteakCity_Theater_EventScript_MikiBattle::
 	playse SE_M_PETAL_DANCE
-	applymovement2 LOCALID_ECRUTEAK_MIKI, EcruteakCity_Theater_Movement_KimonoSpin
+	applymovement LOCALID_ECRUTEAK_MIKI, EcruteakCity_Theater_Movement_KimonoSpin
 	waitmovement 0
-	applymovement2 LOCALID_ECRUTEAK_MIKI, EcruteakCity_Theater_Movement_MikiWalkToPlayer
+	applymovement LOCALID_ECRUTEAK_MIKI, EcruteakCity_Theater_Movement_MikiWalkToPlayer
 	waitmovement 0
 	msgbox EcruteakCity_Theater_Text_MikiSeen, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_MIKI, EcruteakCity_Theater_Text_KimonoGirlBeaten
-	applymovement2 LOCALID_ECRUTEAK_MIKI, EcruteakCity_Theater_Movement_MikiWalkBack
+	applymovement LOCALID_ECRUTEAK_MIKI, EcruteakCity_Theater_Movement_MikiWalkBack
 	waitmovement 0
 EcruteakCity_Theater_EventScript_SayoBattle::
 	playse SE_M_PETAL_DANCE
-	applymovement2 LOCALID_ECRUTEAK_SAYO, EcruteakCity_Theater_Movement_KimonoSpin
+	applymovement LOCALID_ECRUTEAK_SAYO, EcruteakCity_Theater_Movement_KimonoSpin
 	waitmovement 0
-	applymovement2 LOCALID_ECRUTEAK_SAYO, EcruteakCity_Theater_Movement_SayoWalkToPlayer
+	applymovement LOCALID_ECRUTEAK_SAYO, EcruteakCity_Theater_Movement_SayoWalkToPlayer
 	waitmovement 0
 	msgbox EcruteakCity_Theater_Text_SayoSeen, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_SAYO, EcruteakCity_Theater_Text_KimonoGirlBeaten
-	applymovement2 LOCALID_ECRUTEAK_SAYO, EcruteakCity_Theater_Movement_SayoWalkBack
+	applymovement LOCALID_ECRUTEAK_SAYO, EcruteakCity_Theater_Movement_SayoWalkBack
 	waitmovement 0
 EcruteakCity_Theater_EventScript_KuniBattle::
 	playse SE_M_PETAL_DANCE
-	applymovement2 LOCALID_ECRUTEAK_KUNI, EcruteakCity_Theater_Movement_KimonoSpin
+	applymovement LOCALID_ECRUTEAK_KUNI, EcruteakCity_Theater_Movement_KimonoSpin
 	waitmovement 0
-	applymovement2 LOCALID_ECRUTEAK_KUNI, EcruteakCity_Theater_Movement_KuniWalkToPlayer
+	applymovement LOCALID_ECRUTEAK_KUNI, EcruteakCity_Theater_Movement_KuniWalkToPlayer
 	waitmovement 0
 	msgbox EcruteakCity_Theater_Text_KuniSeen, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_KUNI, EcruteakCity_Theater_Text_KimonoGirlBeaten
-	applymovement2 LOCALID_ECRUTEAK_KUNI, EcruteakCity_Theater_Movement_KuniWalkBack
+	applymovement LOCALID_ECRUTEAK_KUNI, EcruteakCity_Theater_Movement_KuniWalkBack
 	waitmovement 0
 EcruteakCity_Theater_EventScript_BeatGauntlet::
-	applymovement2 LOCALID_ECRUTEAK_ZUKI, Common_Movement_WalkDown1
+	applymovement LOCALID_ECRUTEAK_ZUKI, Common_Movement_WalkDown1
 	waitmovement 0
 	msgbox EcruteakCity_Theater_Text_ZukiDone, MSGBOX_DEFAULT
 	goto_if_eq VAR_LUGIA_OR_HOOH, 1, EcruteakCity_Theater_EventScript_Lugia
@@ -798,7 +798,7 @@ EcruteakCity_Theater_EventScript_Lugia::
 	special ShakeCamera
 	waitstate
 	addobject LOCALID_ECRUTEAK_SISTER
-	applymovement2 LOCALID_ECRUTEAK_SISTER, EcruteakCity_Theater_Movement_Sister
+	applymovement LOCALID_ECRUTEAK_SISTER, EcruteakCity_Theater_Movement_Sister
 	waitmovement 0
 	turnobject LOCALID_ECRUTEAK_ZUKI, DIR_WEST
 	msgbox EcruteakCity_Theater_Text_GirlLugia, MSGBOX_DEFAULT
@@ -844,7 +844,7 @@ EcruteakCity_Theater_EventScript_Hooh::
 	special ShakeCamera
 	waitstate
 	addobject LOCALID_ECRUTEAK_SISTER
-	applymovement2 LOCALID_ECRUTEAK_SISTER, EcruteakCity_Theater_Movement_Sister
+	applymovement LOCALID_ECRUTEAK_SISTER, EcruteakCity_Theater_Movement_Sister
 	waitmovement 0
 	msgbox EcruteakCity_Theater_Text_GirlHooh, MSGBOX_DEFAULT
 	closemessage

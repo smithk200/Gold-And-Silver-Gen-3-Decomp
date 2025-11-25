@@ -2491,4 +2491,21 @@ extern const u8 gText_Easy[];
 extern const u8 gText_Hard[];
 extern const u8 gText_Modern[];
 extern const u8 gText_Classic[];
+
+extern const u8 gText_OakTalk_Clefairy[];
+extern const u8 gText_OakTalk_Lapras[];
+extern const u8 gText_OakTalk_Ampharos[];
+extern const u8 gText_OakTalk_Sudowoodo[];
+extern const u8 gText_OakTalk_RedGyarados[];
+extern const u8 gText_OakTalk_Unown[];
+extern const u8 gText_OakTalk_Snubbull[];
+extern const u8 gText_OakTalk_Slowpoke[];
+extern const u8 gText_OakTalk_LavenderTower[];
+extern const u8 gText_OakTalk_TentacruelWhirl[];
+
+
+extern const u8 gText_RocketRadio[];
+extern const u8 gText_RadioNoSignal[];
+extern const u8 gText_RadioKantoPokeFlute[];
+extern const u8 gText_UnownMessage[];
 #endif // GUARD_STRINGS_H

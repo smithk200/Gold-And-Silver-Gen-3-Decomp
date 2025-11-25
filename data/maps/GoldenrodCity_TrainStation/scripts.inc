@@ -322,3 +322,4 @@ GoldenrodCity_TrainStation_Text_Boy:
 
 GoldenrodCity_TrainStation_Text_Psychic:
 	.string "I thought you had it!$"
+	

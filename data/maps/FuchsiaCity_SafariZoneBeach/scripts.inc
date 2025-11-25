@@ -34,7 +34,7 @@ SafariZoneFuchsia_Trigger1::
 	lock
 	turnobject LOCALID_SAFARIATTENDANT_1, DIR_SOUTH
 	msgbox SafariZoneFuchsia_Text_Attendant1, MSGBOX_NPC
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight1
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight1
 	waitmovement 0
 	release
 	end
@@ -43,7 +43,7 @@ SafariZoneFuchsia_Trigger2::
 	lock
 	turnobject LOCALID_SAFARIATTENDANT_2, DIR_EAST
 	msgbox SafariZoneFuchsia_Text_Attendant2, MSGBOX_NPC
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
 	waitmovement 0
 	turnobject LOCALID_SAFARIATTENDANT_2, DIR_SOUTH
 	release
@@ -54,7 +54,7 @@ SafariZoneFuchsia_Trigger3::
 	turnobject LOCALID_SAFARIATTENDANT_3, DIR_EAST
 	turnobject LOCALID_SAFARIATTENDANT_4, DIR_EAST
 	msgbox SafariZoneFuchsia_Text_Attendant3, MSGBOX_NPC
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
 	waitmovement 0
 	turnobject LOCALID_SAFARIATTENDANT_3, DIR_SOUTH
 	turnobject LOCALID_SAFARIATTENDANT_4, DIR_SOUTH

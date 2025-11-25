@@ -4,10 +4,15 @@
 EcruteakCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, EcruteakCity_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
+	map_script MAP_SCRIPT_ON_LOAD, EcruteakCity_OnLoad
 	.byte 0
 
 EcruteakCity_OnTransition::
 	callnative SetTimeBasedEncounters
+	end
+
+EcruteakCity_OnLoad::
+	setrespawn HEAL_LOCATION_ECRUTEAK_CITY
 	end
 
 EcruteakCity_Test_Lugia::

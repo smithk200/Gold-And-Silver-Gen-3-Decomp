@@ -18,7 +18,7 @@ VictoryRoadKanto_1F_Trigger::
 	playbgm MUS_HG_ENCOUNTER_RIVAL, TRUE
 	delay 5
 	playse SE_PIN
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 	delay 60
 	addobject LOCALID_VICTORYROAD_SILVER
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
@@ -32,7 +32,7 @@ VictoryRoadKanto_1F_Trigger::
 	playbgm MUS_HG_RIVAL_EXIT, TRUE
 	msgbox VictoryRoad_Text_RivalAfter, MSGBOX_DEFAULT
 	closemessage
-	applymovement2 LOCALID_VICTORYROAD_SILVER, VictoryRoadKanto_1F_Movement_SilverLeave
+	applymovement LOCALID_VICTORYROAD_SILVER, VictoryRoadKanto_1F_Movement_SilverLeave
 	waitmovement 0
 	removeobject LOCALID_VICTORYROAD_SILVER
 	fadedefaultbgm
@@ -41,23 +41,23 @@ VictoryRoadKanto_1F_Trigger::
 	end
 
 VictoryRoadKanto_1F_EventScript_SilverEnterLeft::
-	applymovement2 LOCALID_VICTORYROAD_SILVER, VictoryRoadKanto_1F_Movement_SilverEnterLeft
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkUp1
+	applymovement LOCALID_VICTORYROAD_SILVER, VictoryRoadKanto_1F_Movement_SilverEnterLeft
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkUp1
 	waitmovement LOCALID_VICTORYROAD_SILVER
 	return
 
 VictoryRoadKanto_1F_EventScript_SilverEnterMid::
-	applymovement2 LOCALID_VICTORYROAD_SILVER, VictoryRoadKanto_1F_Movement_SilverEnterMid
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkUp1
+	applymovement LOCALID_VICTORYROAD_SILVER, VictoryRoadKanto_1F_Movement_SilverEnterMid
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkUp1
 	waitmovement LOCALID_VICTORYROAD_SILVER
 	return
 
 VictoryRoadKanto_1F_EventScript_SilverEnterRight::
-	applymovement2 LOCALID_VICTORYROAD_SILVER, VictoryRoadKanto_1F_Movement_SilverEnterRight
-	applymovement2 OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
-	applymovement2 OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkUp1
+	applymovement LOCALID_VICTORYROAD_SILVER, VictoryRoadKanto_1F_Movement_SilverEnterRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown1
+	applymovement OBJ_EVENT_ID_FOLLOWER, Common_Movement_WalkUp1
 	waitmovement LOCALID_VICTORYROAD_SILVER
 	return
 

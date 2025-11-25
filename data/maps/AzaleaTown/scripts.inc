@@ -1,7 +1,12 @@
 AzaleaTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, AzaleaTown_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, AzaleaTown_OnFrame
+	map_script MAP_SCRIPT_ON_LOAD, AzaleaTown_OnLoad
 	.byte 0
+
+AzaleaTown_OnLoad::
+	setrespawn HEAL_LOCATION_AZALEA_TOWN
+	end
 
 AzaleaTown_OnTransition::
 	goto_if_eq VAR_AZALEA_TOWN_STATE, 5, AzaleaTown_MapScript_Hide_Silver

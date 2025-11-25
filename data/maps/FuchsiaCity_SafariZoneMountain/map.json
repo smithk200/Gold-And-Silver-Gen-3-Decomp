@@ -153,7 +153,5 @@
       "script": "SafariZoneFuchsia_Trigger3"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }

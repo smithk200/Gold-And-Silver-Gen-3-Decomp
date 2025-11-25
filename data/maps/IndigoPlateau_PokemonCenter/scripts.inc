@@ -4,7 +4,12 @@
 IndigoPlateau_PokemonCenter_MapScripts::
 	@map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, IndigoPlateau_PokemonCenter_OnFrame 
+	map_script MAP_SCRIPT_ON_LOAD, IndigoPlateau_PokemonCenter_OnLoad
 	.byte 0
+
+IndigoPlateau_PokemonCenter_OnLoad::
+	setrespawn HEAL_LOCATION_INDIGO_PLATEAU_POKEMON_CENTER
+	end
 
 IndigoPlateau_PokemonCenter_OnFrame::
 	map_script_2 VAR_LEAGUE_STATE, 0, IndigoPlateau_PokemonCenter_Enter
@@ -120,7 +125,7 @@ IndigoPlateau_EventScript_PsychicTeleport::
 	playbgm MUS_HG_NEW_BARK, TRUE
 	delay 60
 	playmoncry SPECIES_ABRA, CRY_MODE_NORMAL
-	applymovement2 LOCALID_INDIGOPLATEAU_ABRA, IndigoPLateau_Movement_Abra
+	applymovement LOCALID_INDIGOPLATEAU_ABRA, IndigoPLateau_Movement_Abra
 	waitmovement 0
 	fadescreen FADE_TO_WHITE
 	warpteleport MAP_NEW_BARK_TOWN, 20, 12

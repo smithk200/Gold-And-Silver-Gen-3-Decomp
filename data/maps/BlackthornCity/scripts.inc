@@ -12,6 +12,7 @@ BlackthornCity_OnLoad::
 	goto_if_unset FLAG_BADGE05_GET, BlackThornCity_EventScript_MoveGymBoy
 	goto_if_unset FLAG_BADGE06_GET, BlackThornCity_EventScript_MoveGymBoy
 	goto_if_unset FLAG_BADGE07_GET, BlackThornCity_EventScript_MoveGymBoy
+	setrespawn HEAL_LOCATION_BLACKTHORN_CITY
 	end
 
 BlackThornCity_EventScript_MoveGymBoy::

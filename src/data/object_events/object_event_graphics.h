@@ -497,6 +497,7 @@ const u16 gObjectEventPal_Whirlpool[] = INCBIN_U16("graphics/object_events/palet
 const u16 gObjectEventPal_Snorlax[] = INCBIN_U16("graphics/object_events/palettes/snorlax.gbapal");
 const u16 gObjectEventPal_Slowpoke[] = INCBIN_U16("graphics/object_events/palettes/slowpoke.gbapal");
 const u16 gObjectEventPal_Lapras[] = INCBIN_U16("graphics/object_events/palettes/lapras.gbapal");
+const u16 gObjectEventPal_Proton[] = INCBIN_U16("graphics/object_events/palettes/proton.gbapal");
 
 #if OW_FOLLOWERS_POKEBALLS
 const u32 gObjectEventPic_MasterBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_master.4bpp");

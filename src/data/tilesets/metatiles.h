@@ -489,3 +489,6 @@ const u16 gMetatileAttributes_CyclingRoad[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_SeaCottage[] = INCBIN_U16("data/tilesets/secondary/sea_cottage/metatiles.bin");
 const u16 gMetatileAttributes_SeaCottage[] = INCBIN_U16("data/tilesets/secondary/sea_cottage/metatile_attributes.bin");
+
+const u16 gMetatiles_MahoganyTownGym[] = INCBIN_U16("data/tilesets/secondary/mahogany_town_gym/metatiles.bin");
+const u16 gMetatileAttributes_MahoganyTownGym[] = INCBIN_U16("data/tilesets/secondary/mahogany_town_gym/metatile_attributes.bin");
