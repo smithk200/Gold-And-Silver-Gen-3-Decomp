@@ -10,3 +10,42 @@ Whirlpool in Dragons' Den does not work properly, has incorrect graphics. FIXED:
 
 python.exe triple_layer_converter.py --tsroot C:\decomps\HNSPort\data\tilesets
 Command for converting to triple layer metatiles
+
+======OPTIONS PLUS=========
+EXP. Share
+Auto-HMs
+Followers
+Physical/Special Split
+Modern backgrounds
+Modern music
+Quick run away in battles.
+
+    MENUITEM_BATTLE_EXP_SHARE,
+    MENUITEM_BATTLE_AUTO_HMS,
+    MENUITEM_BATTLE_FOLLOWERS,
+    MENUITEM_BATTLE_SPLIT,
+    MENUITEM_BATTLE_TERRAIN,
+    MENUITEM_BATTLE_MUSIC,
+    MENUITEM_BATTLE_RUN,
+    MENUITEM_BATTLE_DIFFICULTY,
+    MENUITEM_CUSTOM_FONT,
+
+sText_ExpShare,
+sText_AutoHMs,
+sText_Followers,
+sText_Split,
+sText_Terrain,
+sText_Music,
+sText_RunOption,
+sText_Difficulty,
+
+DrawChoices_ExpShare
+DrawChoices_AutoHMs
+DrawChoices_Followers
+DrawChoices_Split
+DrawChoices_Terrain
+DrawChoices_Music
+DrawChoices_Run
+DrawChoices_Difficulty
+DrawChoices_FrameType
+DrawChoices_MatchCall

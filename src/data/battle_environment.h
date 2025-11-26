@@ -158,6 +158,15 @@ const u32 gBattleTerrainAnimTilemap_Rayquaza_2[] = INCBIN_U32("graphics/battle_e
     .palette = gBattleEnvironmentPalette_##background,          \
 }
 
+#define TERRAIN_BACKGROUND(background)                      \
+{                                                               \
+    .tileset = gBattleTerrainTiles_##background,            \
+    .tilemap = gBattleTerrainTilemap_##background,          \
+    .entryTileset = gBattleTerrainAnimTiles_##background,   \
+    .entryTilemap = gBattleTerrainAnimTilemap_##background, \
+    .palette = gBattleTerrainPalette_##background,          \
+}
+
 const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] =
 {
     [BATTLE_ENVIRONMENT_GRASS] =
@@ -488,6 +497,431 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
                 .entryTileset = gBattleEnvironmentAnimTiles_Building,
                 .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
                 .palette = gBattleEnvironmentPalette_StadiumKaren,
+            },
+        },
+
+    [BATTLE_ENVIRONMENT_SOARING] =
+    {
+        .naturePower = MOVE_AIR_SLASH,
+        .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
+        .camouflageType = TYPE_FLYING,
+    },
+
+    [BATTLE_ENVIRONMENT_SKY_PILLAR] =
+    {
+        .naturePower = MOVE_AIR_SLASH,
+        .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
+        .camouflageType = TYPE_FLYING,
+    },
+
+    [BATTLE_ENVIRONMENT_BURIAL_GROUND] =
+    {
+        .naturePower = MOVE_SHADOW_BALL,
+        .secretPowerEffect = MOVE_EFFECT_FLINCH,
+        .camouflageType = TYPE_GHOST,
+    },
+
+    [BATTLE_ENVIRONMENT_PUDDLE] =
+    {
+        .naturePower = MOVE_MUD_BOMB,
+        .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_5 ? MOVE_EFFECT_SPD_MINUS_1 : MOVE_EFFECT_ACC_MINUS_1,
+        .camouflageType = TYPE_GROUND,
+    },
+
+    [BATTLE_ENVIRONMENT_MARSH] =
+    {
+        .naturePower = MOVE_MUD_BOMB,
+        .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
+        .camouflageType = TYPE_GROUND,
+    },
+
+    [BATTLE_ENVIRONMENT_SWAMP] =
+    {
+        .naturePower = MOVE_MUD_BOMB,
+        .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
+        .camouflageType = TYPE_GROUND,
+    },
+
+    [BATTLE_ENVIRONMENT_SNOW] =
+    {
+    #if B_NATURE_POWER_MOVES >= GEN_7
+        .naturePower = MOVE_ICE_BEAM,
+    #elif B_NATURE_POWER_MOVES >= GEN_6
+        .naturePower = MOVE_FROST_BREATH,
+    #else
+        .naturePower = MOVE_BLIZZARD,
+    #endif
+        .secretPowerEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+        .camouflageType = TYPE_ICE,
+    },
+
+    [BATTLE_ENVIRONMENT_ICE] =
+    {
+        .naturePower = MOVE_ICE_BEAM,
+        .secretPowerEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+        .camouflageType = TYPE_ICE,
+    },
+
+    [BATTLE_ENVIRONMENT_VOLCANO] =
+    {
+        .naturePower = MOVE_LAVA_PLUME,
+        .secretPowerEffect = MOVE_EFFECT_BURN,
+        .camouflageType = TYPE_FIRE,
+    },
+
+    [BATTLE_ENVIRONMENT_DISTORTION_WORLD] =
+    {
+        .naturePower = MOVE_TRI_ATTACK,
+        .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
+        .camouflageType = TYPE_NORMAL,
+    },
+
+    [BATTLE_ENVIRONMENT_SPACE] =
+    {
+        .naturePower = MOVE_DRACO_METEOR,
+        .secretPowerEffect = MOVE_EFFECT_FLINCH,
+        .camouflageType = TYPE_DRAGON,
+    },
+
+    [BATTLE_ENVIRONMENT_ULTRA_SPACE] =
+    {
+        .naturePower = MOVE_PSYSHOCK,
+        .secretPowerEffect = MOVE_EFFECT_DEF_MINUS_1,
+        .camouflageType = TYPE_PSYCHIC,
+    },
+};
+
+
+const struct BattleEnvironment gBattleEnvironmentInfo2[BATTLE_ENVIRONMENT_COUNT] =
+{
+    [BATTLE_ENVIRONMENT_GRASS] =
+    {
+    #if B_NATURE_POWER_MOVES >= GEN_6
+        .naturePower = MOVE_ENERGY_BALL,
+    #elif B_NATURE_POWER_MOVES >= GEN_4
+        .naturePower = MOVE_SEED_BOMB,
+    #else
+        .naturePower = MOVE_STUN_SPORE,
+    #endif
+        .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_4 ? MOVE_EFFECT_SLEEP : MOVE_EFFECT_POISON,
+        .camouflageType = TYPE_GRASS,
+        .background = TERRAIN_BACKGROUND(TallGrass_2),
+    },
+
+    [BATTLE_ENVIRONMENT_LONG_GRASS] =
+    {
+    #if B_NATURE_POWER_MOVES >= GEN_6
+        .naturePower = MOVE_ENERGY_BALL,
+    #elif B_NATURE_POWER_MOVES >= GEN_4
+        .naturePower = MOVE_SEED_BOMB,
+    #else
+        .naturePower = MOVE_RAZOR_LEAF,
+    #endif
+        .secretPowerEffect = MOVE_EFFECT_SLEEP,
+        .camouflageType = TYPE_GRASS,
+        .background = TERRAIN_BACKGROUND(LongGrass_2),
+    },
+
+    [BATTLE_ENVIRONMENT_SAND] =
+    {
+        .naturePower = B_NATURE_POWER_MOVES >= GEN_6 ? MOVE_EARTH_POWER : MOVE_EARTHQUAKE,
+        .secretPowerEffect = MOVE_EFFECT_ACC_MINUS_1,
+        .camouflageType = TYPE_GROUND,
+        .background = TERRAIN_BACKGROUND(Sand_2),
+    },
+
+    [BATTLE_ENVIRONMENT_UNDERWATER] =
+    {
+        .naturePower = MOVE_HYDRO_PUMP,
+        .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_6 ? MOVE_EFFECT_ATK_MINUS_1 : MOVE_EFFECT_DEF_MINUS_1,
+        .camouflageType = TYPE_WATER,
+        .background = TERRAIN_BACKGROUND(Underwater_2),
+    },
+
+    [BATTLE_ENVIRONMENT_WATER] =
+    {
+        .naturePower = B_NATURE_POWER_MOVES >= GEN_4 ? MOVE_HYDRO_PUMP : MOVE_SURF,
+        .secretPowerEffect = MOVE_EFFECT_ATK_MINUS_1,
+        .camouflageType = TYPE_WATER,
+        .background = TERRAIN_BACKGROUND(Water_2),
+    },
+
+    [BATTLE_ENVIRONMENT_POND] =
+    {
+        .naturePower = B_NATURE_POWER_MOVES >= GEN_4 ? MOVE_HYDRO_PUMP : MOVE_BUBBLE_BEAM,
+        .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_4 ? MOVE_EFFECT_ATK_MINUS_1 : MOVE_EFFECT_SPD_MINUS_1,
+        .camouflageType = TYPE_WATER,
+        .background = TERRAIN_BACKGROUND(PondWater_2),
+    },
+
+    [BATTLE_ENVIRONMENT_MOUNTAIN] =
+    {
+    #if B_NATURE_POWER_MOVES >= GEN_6
+        .naturePower = MOVE_EARTH_POWER,
+    #elif B_NATURE_POWER_MOVES >= GEN_5
+        .naturePower = MOVE_EARTHQUAKE,
+    #else
+        .naturePower = MOVE_ROCK_SLIDE,
+    #endif
+    #if B_SECRET_POWER_EFFECT >= GEN_5
+        .secretPowerEffect = MOVE_EFFECT_ACC_MINUS_1,
+    #elif B_SECRET_POWER_EFFECT >= GEN_4
+        .secretPowerEffect = MOVE_EFFECT_FLINCH,
+    #else
+        .secretPowerEffect = MOVE_EFFECT_CONFUSION,
+    #endif
+        .camouflageType = B_CAMOUFLAGE_TYPES >= GEN_5 ? TYPE_GROUND : TYPE_ROCK,
+        .background = TERRAIN_BACKGROUND(Rock_2),
+    },
+
+    [BATTLE_ENVIRONMENT_CAVE] =
+    {
+    #if B_NATURE_POWER_MOVES >= GEN_6
+        .naturePower = MOVE_EARTH_POWER,
+    #elif B_NATURE_POWER_MOVES >= GEN_5
+        .naturePower = MOVE_EARTHQUAKE,
+    #elif B_NATURE_POWER_MOVES >= GEN_4
+        .naturePower = MOVE_ROCK_SLIDE,
+    #else
+        .naturePower = MOVE_SHADOW_BALL,
+    #endif
+        .secretPowerEffect = MOVE_EFFECT_FLINCH,
+        .camouflageType = TYPE_ROCK,
+        .background = TERRAIN_BACKGROUND(Cave_2),
+    },
+
+    [BATTLE_ENVIRONMENT_BUILDING] =
+    {
+        .naturePower = B_NATURE_POWER_MOVES >= GEN_4 ? MOVE_TRI_ATTACK : MOVE_SWIFT,
+        .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
+        .camouflageType = TYPE_NORMAL,
+        .background = TERRAIN_BACKGROUND(Building_2),
+    },
+
+    [BATTLE_ENVIRONMENT_PLAIN] =
+    {
+    #if B_NATURE_POWER_MOVES >= GEN_6
+        .naturePower = MOVE_TRI_ATTACK,
+    #elif B_NATURE_POWER_MOVES >= GEN_4
+        .naturePower = MOVE_EARTHQUAKE,
+    #else
+        .naturePower = MOVE_SWIFT,
+    #endif
+        .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
+        .camouflageType = B_CAMOUFLAGE_TYPES >= GEN_4 ? TYPE_GROUND : TYPE_NORMAL,
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Building_2,
+            .tilemap = gBattleTerrainTilemap_Building_2,
+            .entryTileset = gBattleTerrainAnimTiles_Building_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+            .palette = gBattleTerrainPalette_Plain_2,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_FRONTIER] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Building_2,
+            .tilemap = gBattleTerrainTilemap_Building_2,
+            .entryTileset = gBattleTerrainAnimTiles_Building_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+            .palette = gBattleEnvironmentPalette_Frontier,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_GYM] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Building_2,
+            .tilemap = gBattleTerrainTilemap_Building_2,
+            .entryTileset = gBattleTerrainAnimTiles_Building_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+            .palette = gBattleTerrainPalette_Building_2,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_LEADER] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Blue_Building_2,
+            .tilemap = gBattleTerrainTilemap_Blue_Building_2,
+            .entryTileset = gBattleTerrainAnimTiles_Blue_Building_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Blue_Building_2,
+            .palette = gBattleTerrainPalette_Blue_Building_2,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_MAGMA] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Stadium_2,
+            .tilemap = gBattleTerrainTilemap_Stadium_2,
+            .entryTileset = gBattleTerrainAnimTiles_Building_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+            .palette = gBattleTerrainPalette_StadiumMagma,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_AQUA] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Stadium_2,
+            .tilemap = gBattleTerrainTilemap_Stadium_2,
+            .entryTileset = gBattleTerrainAnimTiles_Building_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+            .palette = gBattleTerrainPalette_StadiumAqua,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_SIDNEY] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Stadium_2,
+            .tilemap = gBattleTerrainTilemap_Stadium_2,
+            .entryTileset = gBattleTerrainAnimTiles_Building_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+            .palette = gBattleTerrainPalette_StadiumSidney,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_PHOEBE] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Stadium_2,
+            .tilemap = gBattleTerrainTilemap_Stadium_2,
+            .entryTileset = gBattleTerrainAnimTiles_Building_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+            .palette = gBattleTerrainPalette_StadiumPhoebe,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_GLACIA] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Stadium_2,
+            .tilemap = gBattleTerrainTilemap_Stadium_2,
+            .entryTileset = gBattleTerrainAnimTiles_Building_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+            .palette = gBattleTerrainPalette_StadiumGlacia,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_DRAKE] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Stadium_2,
+            .tilemap = gBattleTerrainTilemap_Stadium_2,
+            .entryTileset = gBattleTerrainAnimTiles_Building_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+            .palette = gBattleTerrainPalette_StadiumDrake,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_CHAMPION] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Stadium_2,
+            .tilemap = gBattleTerrainTilemap_Stadium_2,
+            .entryTileset = gBattleTerrainAnimTiles_Building_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+            .palette = gBattleTerrainPalette_StadiumWallace,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_GROUDON] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Cave_2,
+            .tilemap = gBattleTerrainTilemap_Cave_2,
+            .entryTileset = gBattleTerrainAnimTiles_Cave_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Cave_2,
+            .palette = gBattleTerrainPalette_Groudon_2,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_KYOGRE] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Water_2,
+            .tilemap = gBattleTerrainTilemap_Water_2,
+            .entryTileset = gBattleTerrainAnimTiles_Underwater_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Underwater_2,
+            .palette = gBattleTerrainPalette_Kyogre_2,
+        },
+    },
+
+    [BATTLE_ENVIRONMENT_RAYQUAZA] =
+    {
+        .background =
+        {
+            .tileset = gBattleTerrainTiles_Rayquaza_2,
+            .tilemap = gBattleTerrainTilemap_Rayquaza_2,
+            .entryTileset = gBattleTerrainAnimTiles_Rayquaza_2,
+            .entryTilemap = gBattleTerrainAnimTilemap_Rayquaza_2,
+            .palette = gBattleTerrainPalette_Rayquaza_2,
+        },
+    },
+    [BATTLE_ENVIRONMENT_WILL] =
+        {
+            .background =
+            {
+                .tileset = gBattleTerrainTiles_Stadium_2,
+                .tilemap = gBattleTerrainTilemap_Stadium_2,
+                .entryTileset = gBattleTerrainAnimTiles_Building_2,
+                .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+                .palette = gBattleTerrainPalette_StadiumWill_2,
+            },
+        },
+
+
+    [BATTLE_ENVIRONMENT_KOGA] =
+        {
+            .background =
+            {
+                .tileset = gBattleTerrainTiles_Stadium_2,
+                .tilemap = gBattleTerrainTilemap_Stadium_2,
+                .entryTileset = gBattleTerrainAnimTiles_Building_2,
+                .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+                .palette = gBattleTerrainPalette_StadiumKoga_2,
+            },
+        },
+
+
+    [BATTLE_ENVIRONMENT_BRUNO] =
+        {
+            .background =
+            {
+                .tileset = gBattleTerrainTiles_Stadium_2,
+                .tilemap = gBattleTerrainTilemap_Stadium_2,
+                .entryTileset = gBattleTerrainAnimTiles_Building_2,
+                .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+                .palette = gBattleTerrainPalette_StadiumBruno_2,
+            },
+        },
+
+
+    [BATTLE_ENVIRONMENT_KAREN] =
+        {
+            .background =
+            {
+                .tileset = gBattleTerrainTiles_Stadium_2,
+                .tilemap = gBattleTerrainTilemap_Stadium_2,
+                .entryTileset = gBattleTerrainAnimTiles_Building_2,
+                .entryTilemap = gBattleTerrainAnimTilemap_Building_2,
+                .palette = gBattleTerrainPalette_StadiumKaren_2,
             },
         },
 

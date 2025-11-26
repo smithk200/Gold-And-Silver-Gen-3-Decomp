@@ -2405,8 +2405,8 @@ extern const u8 gText_PkmnsNickname[];
 extern const u8 gText_TellHimTheWords[];
 
 // Exp. Share
-extern const u8 gText_ExpShareOn[];
-extern const u8 gText_ExpShareOff[];
+extern const u8 gText_EXPShareOn[];
+extern const u8 gText_EXPShareOff[];
 
 extern const u8 gText_BasePointsResetToZero[];
 
@@ -2508,4 +2508,27 @@ extern const u8 gText_RocketRadio[];
 extern const u8 gText_RadioNoSignal[];
 extern const u8 gText_RadioKantoPokeFlute[];
 extern const u8 gText_UnownMessage[];
+
+extern const u8 gText_TerrainModern[];
+extern const u8 gText_TerrainGeneric[];
+
+extern const u8 gText_RunOptionDisabled[];
+extern const u8 gText_RunOptionEnabled1[];
+extern const u8 gText_RunOptionEnabled2[];
+
+extern const u8 gText_SmallDot[];
+extern const u8 gText_LargeDot[];
+extern const u8 gText_PageNav[];
+extern const u8 gText_EXPShare[];
+extern const u8 gText_AutoHMs[];
+extern const u8 gText_OptionFontEmerald[];
+extern const u8 gText_OptionFontFireRed[];
+extern const u8 gText_Font[];
+extern const u8 gText_EXPShare[];
+extern const u8 gText_AutoHMs[];
+extern const u8 gText_Followers[];
+extern const u8 gText_PSS[];
+extern const u8 gText_Terrain[];
+extern const u8 gText_RunType[];
+extern const u8 gText_Difficulty[];
 #endif // GUARD_STRINGS_H

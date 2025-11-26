@@ -1,8 +1,6 @@
 NewBarkTown_PlayersHouse_2F_MapScripts::
 	.byte 0
 
-
-
 NewBarkTown_PlayersHouse_2F_Script_ClockSetupTrigger1::
     lock
 	playse SE_PIN

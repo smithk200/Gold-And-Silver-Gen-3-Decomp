@@ -627,23 +627,46 @@ static u8 GetBattleEnvironmentByMapScene(u8 mapBattleScene)
 // Loads the initial battle terrain.
 static void LoadBattleEnvironmentGfx(u16 terrain)
 {
-    if (terrain >= NELEMS(gBattleEnvironmentInfo))
-        terrain = BATTLE_ENVIRONMENT_PLAIN;  // If higher than the number of entries in gBattleEnvironmentInfo, use the default.
-    // Copy to bg3
-    DecompressDataWithHeaderVram(gBattleEnvironmentInfo[terrain].background.tileset, (void *)(BG_CHAR_ADDR(2)));
-    DecompressDataWithHeaderVram(gBattleEnvironmentInfo[terrain].background.tilemap, (void *)(BG_SCREEN_ADDR(26)));
-    LoadPalette(gBattleEnvironmentInfo[terrain].background.palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+    if (gSaveBlock2Ptr->optionsTerrain == TRUE)
+    {
+        if (terrain >= NELEMS(gBattleEnvironmentInfo))
+            terrain = BATTLE_ENVIRONMENT_PLAIN;  // If higher than the number of entries in gBattleEnvironmentInfo, use the default.
+        // Copy to bg3
+        DecompressDataWithHeaderVram(gBattleEnvironmentInfo[terrain].background.tileset, (void *)(BG_CHAR_ADDR(2)));
+        DecompressDataWithHeaderVram(gBattleEnvironmentInfo[terrain].background.tilemap, (void *)(BG_SCREEN_ADDR(26)));
+        LoadPalette(gBattleEnvironmentInfo[terrain].background.palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+    }
+    else
+    {
+        if (terrain >= NELEMS(gBattleEnvironmentInfo2))
+            terrain = BATTLE_ENVIRONMENT_PLAIN;  // If higher than the number of entries in gBattleEnvironmentInfo2, use the default.
+        // Copy to bg3
+        DecompressDataWithHeaderVram(gBattleEnvironmentInfo2[terrain].background.tileset, (void *)(BG_CHAR_ADDR(2)));
+        DecompressDataWithHeaderVram(gBattleEnvironmentInfo2[terrain].background.tilemap, (void *)(BG_SCREEN_ADDR(26)));
+        LoadPalette(gBattleEnvironmentInfo2[terrain].background.palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+    }
 }
 
 // Loads the entry associated with the battle terrain.
 // This can be the grass moving on the screen at the start of a wild encounter in tall grass.
 static void LoadBattleEnvironmentEntryGfx(u16 terrain)
 {
-    if (terrain >= NELEMS(gBattleEnvironmentInfo))
+    if (gSaveBlock2Ptr->optionsTerrain == TRUE)
+    {
+        if (terrain >= NELEMS(gBattleEnvironmentInfo))
         terrain = BATTLE_ENVIRONMENT_PLAIN;
     // Copy to bg1
     DecompressDataWithHeaderVram(gBattleEnvironmentInfo[terrain].background.entryTileset, (void *)BG_CHAR_ADDR(1));
     DecompressDataWithHeaderVram(gBattleEnvironmentInfo[terrain].background.entryTilemap, (void *)BG_SCREEN_ADDR(28));
+    }
+    else
+    {
+        if (terrain >= NELEMS(gBattleEnvironmentInfo2))
+        terrain = BATTLE_ENVIRONMENT_PLAIN;
+    // Copy to bg1
+    DecompressDataWithHeaderVram(gBattleEnvironmentInfo2[terrain].background.entryTileset, (void *)BG_CHAR_ADDR(1));
+    DecompressDataWithHeaderVram(gBattleEnvironmentInfo2[terrain].background.entryTilemap, (void *)BG_SCREEN_ADDR(28));
+    }
 }
 
 static u8 GetBattleEnvironmentOverride(void)
@@ -1052,8 +1075,16 @@ void DrawBattleEntryBackground(void)
             LoadBattleEnvironmentEntryGfx(BATTLE_ENVIRONMENT_RAYQUAZA);
             break;
         default:
-            DecompressDataWithHeaderVram(gBattleEnvironmentInfo[gBattleEnvironment].background.entryTileset, (void *)(BG_CHAR_ADDR(1)));
-            DecompressDataWithHeaderVram(gBattleEnvironmentInfo[gBattleEnvironment].background.entryTilemap, (void *)(BG_SCREEN_ADDR(28)));
+            if (gSaveBlock2Ptr->optionsTerrain == TRUE)
+            {
+                DecompressDataWithHeaderVram(gBattleEnvironmentInfo[gBattleEnvironment].background.entryTileset, (void *)(BG_CHAR_ADDR(1)));
+                DecompressDataWithHeaderVram(gBattleEnvironmentInfo[gBattleEnvironment].background.entryTilemap, (void *)(BG_SCREEN_ADDR(28)));
+            }
+            else
+            {
+                DecompressDataWithHeaderVram(gBattleEnvironmentInfo2[gBattleEnvironment].background.entryTileset, (void *)(BG_CHAR_ADDR(1)));
+                DecompressDataWithHeaderVram(gBattleEnvironmentInfo2[gBattleEnvironment].background.entryTilemap, (void *)(BG_SCREEN_ADDR(28)));
+            }
             break;
         }
     }
@@ -1102,13 +1133,34 @@ bool8 LoadChosenBattleElement(u8 caseId)
         LoadPalette(gBattleTextboxPalette, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
         break;
     case 3:
+        if (gSaveBlock2Ptr->optionsTerrain == TRUE)
+        {
         DecompressDataWithHeaderVram(gBattleEnvironmentInfo[GetBattleEnvironmentOverride()].background.tileset, (void *)(BG_CHAR_ADDR(2)));
+        }
+        else
+        {
+        DecompressDataWithHeaderVram(gBattleEnvironmentInfo2[GetBattleEnvironmentOverride()].background.tileset, (void *)(BG_CHAR_ADDR(2))); 
+        }
         break;
     case 4:
+        if (gSaveBlock2Ptr->optionsTerrain == TRUE)
+        {
         DecompressDataWithHeaderVram(gBattleEnvironmentInfo[GetBattleEnvironmentOverride()].background.tilemap, (void *)(BG_SCREEN_ADDR(26)));
+        }
+        else
+        {
+        DecompressDataWithHeaderVram(gBattleEnvironmentInfo2[GetBattleEnvironmentOverride()].background.tilemap, (void *)(BG_SCREEN_ADDR(26)));
+        }
         break;
     case 5:
+        if (gSaveBlock2Ptr->optionsTerrain == TRUE)
+        {
         LoadPalette(gBattleEnvironmentInfo[GetBattleEnvironmentOverride()].background.palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        }
+        else
+        {
+        LoadPalette(gBattleEnvironmentInfo2[GetBattleEnvironmentOverride()].background.palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        }
         break;
     case 6:
         LoadBattleMenuWindowGfx();

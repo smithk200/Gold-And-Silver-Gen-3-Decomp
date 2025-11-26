@@ -102,6 +102,15 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SHIFT;
     gSaveBlock2Ptr->optionsBattleSceneOff = FALSE;
     gSaveBlock2Ptr->regionMapZoom = FALSE;
+    gSaveBlock2Ptr->optionsEXPShare = FALSE;
+    gSaveBlock2Ptr->optionsAutoHMs = FALSE;
+    gSaveBlock2Ptr->optionsFollowers = FALSE;
+    gSaveBlock2Ptr->optionsPSS = FALSE;
+    gSaveBlock2Ptr->optionsTerrain = FALSE;
+    gSaveBlock2Ptr->optionsRunType = 0;
+    gSaveBlock2Ptr->optionsDifficulty = 0;
+    gSaveBlock2Ptr->optionsFont = 0;
+               
 }
 
 static void ClearPokedexFlags(void)

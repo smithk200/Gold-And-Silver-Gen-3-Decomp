@@ -10521,6 +10521,8 @@ enum DamageCategory GetBattleMoveCategory(u32 move)
 
     if (B_PHYSICAL_SPECIAL_SPLIT <= GEN_4)
         return gTypesInfo[GetBattleMoveType(move)].damageCategory;
+    if (gSaveBlock2Ptr->optionsPSS == FALSE)
+        return gTypesInfo[GetBattleMoveType(move)].damageCategory;
 
     return GetMoveCategory(move);
 }
@@ -11083,6 +11085,9 @@ bool32 IsGen6ExpShareEnabled(void)
 {
     if (I_EXP_SHARE_FLAG <= TEMP_FLAGS_END)
         return FALSE;
+
+    if (gSaveBlock2Ptr->optionsEXPShare == FALSE)
+        return TRUE;
 
     return FlagGet(I_EXP_SHARE_FLAG);
 }

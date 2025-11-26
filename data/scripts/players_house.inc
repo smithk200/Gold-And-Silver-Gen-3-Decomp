@@ -1,5 +1,4 @@
 @ Local IDs are the same for both players houses
-.set LOCALID_MOM, 1
 .set LOCALID_DAD, 5
 .set LOCALID_MOM_2F, 14
 

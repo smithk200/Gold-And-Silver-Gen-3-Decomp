@@ -705,8 +705,8 @@
 #define FLAG_HIDE_DOJO_BLUE  0x291 
 #define FLAG_SET_SHINY  0x293 //shiny flag/ red Gyarados
 #define FLAG_VISITED_ROUTE10  0x294 //no collision
-#define FLAG_UNUSED_0x295  0x295 // Unused Flag
-#define FLAG_UNUSED_0x296  0x296 // Unused Flag
+#define FLAG_AUTO_HMS  0x295 // auto hms
+#define FLAG_EXP_SHARE_OPTION  0x296 // exp. share
 #define FLAG_UNUSED_0x297  0x297 // Unused Flag
 #define FLAG_UNUSED_0x298  0x298 // Unused Flag
 #define FLAG_UNUSED_0x299  0x299 // Unused Flag
