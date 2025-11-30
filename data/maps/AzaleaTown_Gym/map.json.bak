@@ -106,7 +106,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ARIADOS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARIADOS"),
       "x": 6,
       "y": 33,
       "elevation": 0,
@@ -119,7 +119,7 @@
       "flag": "FLAG_HIDE_AZALEA_ARIADOS_LEFT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ARIADOS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARIADOS"),
       "x": 11,
       "y": 33,
       "elevation": 0,
@@ -132,7 +132,7 @@
       "flag": "FLAG_HIDE_AZALEA_ARIADOS_MID"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ARIADOS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARIADOS"),
       "x": 16,
       "y": 33,
       "elevation": 0,
@@ -145,7 +145,7 @@
       "flag": "FLAG_HIDE_AZALEA_ARIADOS_RIGHT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ARIADOS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARIADOS"),
       "x": 6,
       "y": 17,
       "elevation": 0,
@@ -158,7 +158,7 @@
       "flag": "FLAG_HIDE_AZALEA_ARIADOS_LEFT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ARIADOS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARIADOS"),
       "x": 11,
       "y": 17,
       "elevation": 0,
@@ -171,7 +171,7 @@
       "flag": "FLAG_HIDE_AZALEA_ARIADOS_MID"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ARIADOS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARIADOS"),
       "x": 16,
       "y": 17,
       "elevation": 0,

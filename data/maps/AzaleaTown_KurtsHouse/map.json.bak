@@ -54,7 +54,7 @@
       "flag": "FLAG_HIDE_KURT_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SLOWPOKE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SLOWPOKE"),
       "x": 9,
       "y": 4,
       "elevation": 0,

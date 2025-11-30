@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOOTHOOT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOOTHOOT"),
       "x": 22,
       "y": 22,
       "elevation": 0,
@@ -39,7 +39,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MEOWTH",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEOWTH"),
       "x": 35,
       "y": 3,
       "elevation": 0,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEY"),
       "x": 23,
       "y": 22,
       "elevation": 0,
@@ -65,7 +65,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MEOWTH",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEOWTH"),
       "x": 11,
       "y": 23,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flag": "FLAG_RETURNED_MACHINE_PART"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SPINDA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPINDA"),
       "x": 38,
       "y": 33,
       "elevation": 0,

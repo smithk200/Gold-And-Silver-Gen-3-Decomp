@@ -21,7 +21,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SUICUNE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SUICUNE"),
       "x": 17,
       "y": 20,
       "elevation": 0,
@@ -99,7 +99,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KRABBY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KRABBY"),
       "x": 26,
       "y": 54,
       "elevation": 0,
@@ -112,7 +112,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KRABBY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KRABBY"),
       "x": 32,
       "y": 58,
       "elevation": 0,
@@ -125,7 +125,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KRABBY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KRABBY"),
       "x": 25,
       "y": 55,
       "elevation": 0,
@@ -138,7 +138,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SHUCKLE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SHUCKLE"),
       "x": 5,
       "y": 57,
       "elevation": 0,
@@ -151,7 +151,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SHUCKLE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SHUCKLE"),
       "x": 5,
       "y": 48,
       "elevation": 0,
@@ -164,7 +164,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GEODUDE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GEODUDE"),
       "x": 6,
       "y": 34,
       "elevation": 0,
@@ -177,7 +177,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GEODUDE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GEODUDE"),
       "x": 5,
       "y": 17,
       "elevation": 0,
@@ -190,7 +190,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEOTTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEOTTO"),
       "x": 15,
       "y": 49,
       "elevation": 0,

@@ -83,7 +83,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEY"),
       "x": 58,
       "y": 0,
       "elevation": 0,
@@ -96,7 +96,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_EKANS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(EKANS"),
       "x": 72,
       "y": 13,
       "elevation": 0,
@@ -122,7 +122,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SEVIPER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SEVIPER"),
       "x": 83,
       "y": 0,
       "elevation": 0,
@@ -135,7 +135,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ZANGOOSE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZANGOOSE"),
       "x": 30,
       "y": 16,
       "elevation": 0,

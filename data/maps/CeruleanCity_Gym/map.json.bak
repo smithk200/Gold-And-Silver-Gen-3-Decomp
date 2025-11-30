@@ -93,7 +93,7 @@
       "flag": "FLAG_HIDE_CERULEAN_GYM_TRAINERS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CHINCHOU",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHINCHOU"),
       "x": 4,
       "y": 12,
       "elevation": 0,
@@ -106,7 +106,7 @@
       "flag": "FLAG_HIDE_CERULEAN_GYM_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_STARYU",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STARYU"),
       "x": 9,
       "y": 13,
       "elevation": 0,
@@ -119,7 +119,7 @@
       "flag": "FLAG_HIDE_CERULEAN_GYM_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CORSOLA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORSOLA"),
       "x": 5,
       "y": 8,
       "elevation": 0,

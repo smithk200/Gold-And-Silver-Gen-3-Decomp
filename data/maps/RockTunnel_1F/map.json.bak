@@ -158,7 +158,7 @@
       "flag": "FLAG_TEMP_5"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MAROWAK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAROWAK"),
       "x": 42,
       "y": 33,
       "elevation": 0,
@@ -171,7 +171,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KANGASKHAN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KANGASKHAN"),
       "x": 3,
       "y": 43,
       "elevation": 0,
@@ -184,7 +184,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ONIX",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ONIX"),
       "x": 6,
       "y": 26,
       "elevation": 0,
@@ -197,7 +197,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MAWILE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAWILE"),
       "x": 20,
       "y": 8,
       "elevation": 0,
@@ -210,7 +210,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLBAT"),
       "x": 56,
       "y": 30,
       "elevation": 0,

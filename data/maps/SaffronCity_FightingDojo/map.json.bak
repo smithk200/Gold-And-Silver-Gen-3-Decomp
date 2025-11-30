@@ -15,7 +15,7 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_LICKILICKY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LICKILICKY"),
       "x": 3,
       "y": 6,
       "elevation": 0,
@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MACHAMP",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MACHAMP"),
       "x": 25,
       "y": 6,
       "elevation": 0,
@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_STEELIX",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STEELIX"),
       "x": 7,
       "y": 9,
       "elevation": 0,
@@ -54,7 +54,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ALAKAZAM",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ALAKAZAM"),
       "x": 21,
       "y": 9,
       "elevation": 0,
@@ -67,7 +67,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SLOWKING",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SLOWKING"),
       "x": 3,
       "y": 12,
       "elevation": 0,
@@ -80,7 +80,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RAICHU",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RAICHU"),
       "x": 25,
       "y": 12,
       "elevation": 0,

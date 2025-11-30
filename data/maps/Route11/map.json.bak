@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DROWZEE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DROWZEE"),
       "x": 21,
       "y": 31,
       "elevation": 0,
@@ -104,7 +104,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HYPNO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HYPNO"),
       "x": 37,
       "y": 1,
       "elevation": 0,
@@ -117,7 +117,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MEOWTH",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEOWTH"),
       "x": 40,
       "y": 1,
       "elevation": 0,
@@ -130,7 +130,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MEOWTH",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEOWTH"),
       "x": 41,
       "y": 1,
       "elevation": 0,
@@ -143,7 +143,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HYPNO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HYPNO"),
       "x": 44,
       "y": 1,
       "elevation": 0,
@@ -169,7 +169,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MAGNEMITE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGNEMITE"),
       "x": 52,
       "y": 29,
       "elevation": 0,
@@ -182,7 +182,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MAGNEMITE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGNEMITE"),
       "x": 57,
       "y": 29,
       "elevation": 0,
@@ -195,7 +195,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOPPIP",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOPPIP"),
       "x": 13,
       "y": 10,
       "elevation": 0,
@@ -208,7 +208,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SLAKOTH",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SLAKOTH"),
       "x": 24,
       "y": 2,
       "elevation": 0,

@@ -28,7 +28,7 @@
       "flag": "FLAG_HIDE_MAHOGANY_ROCKETS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DRAGONITE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DRAGONITE"),
       "x": 25,
       "y": 18,
       "elevation": 0,
@@ -184,7 +184,7 @@
       "flag": "FLAG_HIDE_MAHOGANY_ROCKETS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MURKROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MURKROW"),
       "x": 8,
       "y": 2,
       "elevation": 0,
@@ -223,7 +223,7 @@
       "flag": "FLAG_HIDE_ROCKETHIDEOUT3_GIOVANNI"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MURKROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MURKROW"),
       "x": 29,
       "y": 3,
       "elevation": 0,

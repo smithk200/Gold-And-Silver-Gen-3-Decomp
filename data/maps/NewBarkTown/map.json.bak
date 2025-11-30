@@ -65,7 +65,7 @@
       "flag": "FLAG_HIDE_SILVER_NEWBARKTOWN"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_WOOPER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(WOOPER"),
       "x": 10,
       "y": 23,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PINECO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PINECO"),
       "x": 27,
       "y": 21,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PINECO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PINECO"),
       "x": -2,
       "y": 23,
       "elevation": 0,
@@ -104,7 +104,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PINECO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PINECO"),
       "x": 16,
       "y": 4,
       "elevation": 0,
@@ -117,7 +117,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PINECO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PINECO"),
       "x": 10,
       "y": 27,
       "elevation": 0,
@@ -130,7 +130,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PINECO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PINECO"),
       "x": 7,
       "y": 2,
       "elevation": 0,

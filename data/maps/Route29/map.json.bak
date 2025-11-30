@@ -135,7 +135,7 @@
       "flag": "FLAG_ITEM_ROUTE_29_POTION"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEY"),
       "x": 39,
       "y": 10,
       "elevation": 0,
@@ -148,7 +148,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RATTATA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA"),
       "x": 15,
       "y": 23,
       "elevation": 0,
@@ -161,7 +161,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOOTHOOT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOOTHOOT"),
       "x": 62,
       "y": 5,
       "elevation": 0,
@@ -174,7 +174,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOPPIP",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOPPIP"),
       "x": 30,
       "y": 18,
       "elevation": 0,
@@ -187,7 +187,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RATTATA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA"),
       "x": 23,
       "y": 29,
       "elevation": 0,
@@ -200,7 +200,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOOTHOOT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOOTHOOT"),
       "x": 58,
       "y": 29,
       "elevation": 0,
@@ -213,7 +213,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SENTRET",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SENTRET"),
       "x": 2,
       "y": 4,
       "elevation": 0,
@@ -239,7 +239,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SENTRET",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SENTRET"),
       "x": 6,
       "y": 7,
       "elevation": 0,

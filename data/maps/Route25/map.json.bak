@@ -164,7 +164,7 @@
       "flag": "FLAG_HIDE_ROUTE25_MISTY"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SWABLU",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SWABLU"),
       "x": 0,
       "y": 3,
       "elevation": 0,
@@ -177,7 +177,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SPEAROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPEAROW"),
       "x": 51,
       "y": 5,
       "elevation": 0,
@@ -216,7 +216,7 @@
       "flag": "FLAG_HIDE_ROUTE25_EUSINE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SUICUNE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SUICUNE"),
       "x": 66,
       "y": 7,
       "elevation": 0,
@@ -229,7 +229,7 @@
       "flag": "FLAG_HIDE_ROUTE25_SUICUNE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_LUVDISC",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LUVDISC"),
       "x": 73,
       "y": 22,
       "elevation": 0,
@@ -242,7 +242,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_LUVDISC",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LUVDISC"),
       "x": 74,
       "y": 23,
       "elevation": 0,
@@ -255,7 +255,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_BUTTERFREE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BUTTERFREE"),
       "x": 20,
       "y": 19,
       "elevation": 0,

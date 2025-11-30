@@ -80,7 +80,7 @@
       "flag": "FLAG_HIDE_FAN_CLUB_CLEFAIRY_DOLL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_BAYLEEF",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BAYLEEF"),
       "x": 7,
       "y": 6,
       "elevation": 0,

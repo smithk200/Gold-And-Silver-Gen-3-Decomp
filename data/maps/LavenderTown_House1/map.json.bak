@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MAROWAK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAROWAK"),
       "x": 10,
       "y": 2,
       "elevation": 0,

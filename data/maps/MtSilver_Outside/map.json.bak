@@ -21,7 +21,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_QUAGSIRE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(QUAGSIRE"),
       "x": 5,
       "y": 26,
       "elevation": 0,
@@ -34,7 +34,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_VENUSAUR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VENUSAUR"),
       "x": 34,
       "y": 8,
       "elevation": 0,
@@ -47,7 +47,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CHARIZARD",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHARIZARD"),
       "x": 8,
       "y": 20,
       "elevation": 0,
@@ -60,7 +60,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLEM",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLEM"),
       "x": 4,
       "y": 8,
       "elevation": 0,
@@ -73,7 +73,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_URSARING",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(URSARING"),
       "x": 16,
       "y": 4,
       "elevation": 0,
@@ -86,7 +86,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DONPHAN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DONPHAN"),
       "x": 7,
       "y": 11,
       "elevation": 0,
@@ -99,7 +99,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_BLASTOISE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BLASTOISE"),
       "x": 32,
       "y": 26,
       "elevation": 0,
@@ -112,7 +112,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_QUAGSIRE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(QUAGSIRE"),
       "x": 4,
       "y": 27,
       "elevation": 0,
@@ -125,7 +125,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOUNDOOM",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOUNDOOM"),
       "x": 8,
       "y": 18,
       "elevation": 0,
@@ -138,7 +138,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOUNDOOM",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOUNDOOM"),
       "x": 7,
       "y": 19,
       "elevation": 0,
@@ -151,7 +151,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CROBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CROBAT"),
       "x": 4,
       "y": 11,
       "elevation": 0,
@@ -164,7 +164,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CROBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CROBAT"),
       "x": 7,
       "y": 8,
       "elevation": 0,
@@ -177,7 +177,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SKARMORY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SKARMORY"),
       "x": 24,
       "y": 11,
       "elevation": 0,

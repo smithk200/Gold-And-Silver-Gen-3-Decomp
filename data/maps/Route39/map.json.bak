@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MILTANK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MILTANK"),
       "x": 16,
       "y": 24,
       "elevation": 0,
@@ -104,7 +104,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MILTANK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MILTANK"),
       "x": 17,
       "y": 27,
       "elevation": 0,
@@ -117,7 +117,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MILTANK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MILTANK"),
       "x": 23,
       "y": 23,
       "elevation": 0,
@@ -130,7 +130,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MILTANK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MILTANK"),
       "x": 24,
       "y": 27,
       "elevation": 0,
@@ -156,7 +156,7 @@
       "flag": "FLAG_ITEM_ROUTE39_TM_BRICK_BREAK"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PONYTA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PONYTA"),
       "x": 8,
       "y": 14,
       "elevation": 0,
@@ -169,7 +169,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PONYTA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PONYTA"),
       "x": 8,
       "y": 17,
       "elevation": 0,
@@ -182,7 +182,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_NOCTOWL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(NOCTOWL"),
       "x": 31,
       "y": 41,
       "elevation": 0,
@@ -195,7 +195,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MAGNEMITE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGNEMITE"),
       "x": 9,
       "y": 36,
       "elevation": 0,
@@ -208,7 +208,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MAGNEMITE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGNEMITE"),
       "x": 10,
       "y": 38,
       "elevation": 0,

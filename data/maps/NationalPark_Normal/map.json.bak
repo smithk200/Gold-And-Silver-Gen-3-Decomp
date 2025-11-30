@@ -67,7 +67,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PERSIAN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PERSIAN"),
       "x": 31,
       "y": 42,
       "elevation": 0,
@@ -184,7 +184,7 @@
       "flag": "FLAG_ITEM_NATIONAL_PARK_SOOTHE_BELL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_NIDORAN_M",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(NIDORAN_M"),
       "x": 9,
       "y": 35,
       "elevation": 0,
@@ -197,7 +197,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SUNKERN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SUNKERN"),
       "x": 25,
       "y": 44,
       "elevation": 0,
@@ -210,7 +210,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SUNKERN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SUNKERN"),
       "x": 29,
       "y": 44,
       "elevation": 0,
@@ -223,7 +223,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PSYDUCK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PSYDUCK"),
       "x": 24,
       "y": 20,
       "elevation": 0,
@@ -236,7 +236,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_NIDORAN_F",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(NIDORAN_F"),
       "x": 10,
       "y": 35,
       "elevation": 0,
@@ -249,7 +249,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MURKROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MURKROW"),
       "x": 14,
       "y": 51,
       "elevation": 0,
@@ -262,7 +262,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MURKROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MURKROW"),
       "x": 42,
       "y": 16,
       "elevation": 0,
@@ -275,7 +275,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SCYTHER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SCYTHER"),
       "x": 36,
       "y": 3,
       "elevation": 0,
@@ -288,7 +288,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SCYTHER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SCYTHER"),
       "x": 41,
       "y": 3,
       "elevation": 0,
@@ -301,7 +301,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_VENONAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VENONAT"),
       "x": 26,
       "y": 49,
       "elevation": 0,
@@ -314,7 +314,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_WEEDLE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(WEEDLE"),
       "x": 38,
       "y": 35,
       "elevation": 0,
@@ -327,7 +327,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CATERPIE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CATERPIE"),
       "x": 8,
       "y": 40,
       "elevation": 0,
@@ -340,7 +340,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_WEEDLE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(WEEDLE"),
       "x": 41,
       "y": 32,
       "elevation": 0,
@@ -353,7 +353,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEY"),
       "x": 13,
       "y": 51,
       "elevation": 0,

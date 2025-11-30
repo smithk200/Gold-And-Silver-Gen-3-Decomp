@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_WOOPER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(WOOPER"),
       "x": 17,
       "y": 24,
       "elevation": 0,
@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_QUAGSIRE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(QUAGSIRE"),
       "x": 19,
       "y": 26,
       "elevation": 0,

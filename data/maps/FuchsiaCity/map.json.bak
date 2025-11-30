@@ -31,7 +31,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KABUTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KABUTO"),
       "x": 10,
       "y": 20,
       "elevation": 0,
@@ -44,7 +44,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KABUTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KABUTO"),
       "x": 14,
       "y": 20,
       "elevation": 0,
@@ -57,7 +57,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DRATINI",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DRATINI"),
       "x": 34,
       "y": 14,
       "elevation": 0,
@@ -70,7 +70,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DRATINI",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DRATINI"),
       "x": 39,
       "y": 15,
       "elevation": 0,
@@ -83,7 +83,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KANGASKHAN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KANGASKHAN"),
       "x": 33,
       "y": 8,
       "elevation": 0,
@@ -96,7 +96,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CUBONE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CUBONE"),
       "x": 40,
       "y": 9,
       "elevation": 0,
@@ -109,7 +109,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_OMANYTE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(OMANYTE"),
       "x": 8,
       "y": 9,
       "elevation": 0,
@@ -122,7 +122,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_OMANYTE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(OMANYTE"),
       "x": 15,
       "y": 8,
       "elevation": 0,
@@ -135,7 +135,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KANGASKHAN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KANGASKHAN"),
       "x": 32,
       "y": 9,
       "elevation": 0,

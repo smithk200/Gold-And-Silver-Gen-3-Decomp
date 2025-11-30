@@ -105,6 +105,30 @@ BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow::
 	.string "It says it likes to be sneaky even\l"
 	.string "if it has a lot of ouchies!$"
 
+BattleFrontier_Lounge5_Text_NatureGirlCalm::
+	.string "Hmhm…\p"
+	.string "This one says it looks after itself!\n"
+	.string "It says it worries about itself even\l"
+	.string "if it has a lot of ouchies!$"
+
+BattleFrontier_Lounge5_Text_NatureGirlGentle::
+	.string "Hmhm…\p"
+	.string "This one says it looks after itself!\n"
+	.string "But if it gets enough ouchies,\l"
+	.string "it will hit back!$"
+
+BattleFrontier_Lounge5_Text_NatureGirlSassy::
+	.string "Hmhm…\p"
+	.string "This one says it likes to battle!\n"
+	.string "But if it gets enough ouchies,\l"
+	.string "it will turn sneaky!$"
+
+BattleFrontier_Lounge5_Text_NatureGirlCareful::
+	.string "Hmhm…\p"
+	.string "This one says it looks after itself!\n"
+	.string "But if it gets enough ouchies,\l"
+	.string "it will turn sneaky!$"
+
 BattleFrontier_Lounge5_Text_NatureGirlEgg::
 	.string "That's silly! An EGG is asleep!\n"
 	.string "I can't talk to it!$"

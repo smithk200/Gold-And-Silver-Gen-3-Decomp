@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SEEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SEEL"),
       "x": 57,
       "y": 3,
       "elevation": 0,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SEEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SEEL"),
       "x": 48,
       "y": 17,
       "elevation": 0,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SEEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SEEL"),
       "x": 71,
       "y": 12,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DEWGONG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DEWGONG"),
       "x": 72,
       "y": 9,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SEEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SEEL"),
       "x": 83,
       "y": 3,
       "elevation": 0,
@@ -104,7 +104,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SEEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SEEL"),
       "x": 42,
       "y": 9,
       "elevation": 0,
@@ -117,7 +117,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DEWGONG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DEWGONG"),
       "x": 44,
       "y": 10,
       "elevation": 0,
@@ -130,7 +130,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DEWGONG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DEWGONG"),
       "x": 34,
       "y": 5,
       "elevation": 0,
@@ -143,7 +143,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DEWGONG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DEWGONG"),
       "x": 12,
       "y": 14,
       "elevation": 0,
@@ -156,7 +156,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DEWGONG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DEWGONG"),
       "x": 116,
       "y": 5,
       "elevation": 0,
@@ -169,7 +169,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CLAMPERL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLAMPERL"),
       "x": 88,
       "y": 19,
       "elevation": 0,

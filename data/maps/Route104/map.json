@@ -485,13 +485,6 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 5,
-      "y": 18,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE104_PRETTY_PETAL_FLOWER_SHOP",
-      "dest_warp_id": "0"
-    },
-    {
       "x": 10,
       "y": 30,
       "elevation": 3,

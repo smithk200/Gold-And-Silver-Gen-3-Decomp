@@ -6,14 +6,38 @@
 const struct Tileset gTileset_General =
 {
     .isCompressed = TRUE,
+    //.swapPalettes = SWAP_PAL(4),
     .isSecondary = FALSE,
     .tiles = gTilesetTiles_General,
     .palettes = gTilesetPalettes_General,
     .metatiles = gMetatiles_General,
     .metatileAttributes = gMetatileAttributes_General,
-    .callback = InitTilesetAnim_General,
+    .callback = InitTilesetAnim_HoennGeneral,
 };
 
+const struct Tileset gTileset_General_Frontier_East =
+{
+    .isCompressed = TRUE,
+    //.swapPalettes = SWAP_PAL(4),
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_General_Frontier_East,
+    .palettes = gTilesetPalettes_General_Frontier_East,
+    .metatiles = gMetatiles_General_Frontier_East,
+    .metatileAttributes = gMetatileAttributes_General_Frontier_East,
+    .callback = InitTilesetAnim_HoennGeneral,
+};
+
+const struct Tileset gTileset_General_Frontier_West =
+{
+    .isCompressed = TRUE,
+    //.swapPalettes = SWAP_PAL(4),
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_General_Frontier_West,
+    .palettes = gTilesetPalettes_General_Frontier_West,
+    .metatiles = gMetatiles_General_Frontier_West,
+    .metatileAttributes = gMetatileAttributes_General_Frontier_West,
+    .callback = InitTilesetAnim_HoennGeneral,
+};
 const struct Tileset gTileset_Petalburg =
 {
     .isCompressed = TRUE,
@@ -1810,17 +1834,6 @@ const struct Tileset gTileset_BattleTower_Outside =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_BattleTowerInner =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_BattleTowerInner,
-    .palettes = gTilesetPalettes_BattleTowerInner,
-    .metatiles = gMetatiles_BattleTowerInner,
-    .metatileAttributes = gMetatileAttributes_BattleTowerInner,
-    .callback = NULL,
-};
-
 const struct Tileset gTileset_RuinsOfAlphWriting =
 {
     .isCompressed = TRUE,
@@ -1861,5 +1874,149 @@ const struct Tileset gTileset_MahoganyTownGym =
     .palettes = gTilesetPalettes_Mahogany_TownGym,
     .metatiles = gMetatiles_MahoganyTownGym,
     .metatileAttributes = gMetatileAttributes_MahoganyTownGym,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_TrainerHill_Courtyard =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_TrainerHill_Courtyard,
+    .palettes = gTilesetPalettes_TrainerHill_Courtyard,
+    .metatiles = gMetatiles_TrainerHill_Courtyard,
+    .metatileAttributes = gMetatileAttributes_TrainerHill_Courtyard,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_BattleTowerInner =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_BattleTowerInner,
+    .palettes = gTilesetPalettes_BattleTowerInner,
+    .metatiles = gMetatiles_BattleTowerInner,
+    .metatileAttributes = gMetatileAttributes_BattleTowerInner,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Building_TrainerHill =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_InsideBuilding_TrainerHill,
+    .palettes = gTilesetPalettes_TrainerHill,
+    .metatiles = gMetatiles_InsideBuilding_TrainerHill,
+    .metatileAttributes = gMetatileAttributes_InsideBuilding_TrainerHill,
+    .callback = InitTilesetAnim_Building,
+};
+
+const struct Tileset gTileset_Building_Frontier =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_InsideBuilding_Frontier,
+    .palettes = gTilesetPalettes_InsideBuilding,
+    .metatiles = gMetatiles_InsideBuilding,
+    .metatileAttributes = gMetatileAttributes_InsideBuilding,
+    .callback = InitTilesetAnim_Building,
+};
+
+const struct Tileset gTileset_Building_Frontier_Ranking =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_InsideBuilding_Frontier_Ranking,
+    .palettes = gTilesetPalettes_BattleFrontierRankingHall_New,
+    .metatiles = gMetatiles_InsideBuilding,
+    .metatileAttributes = gMetatileAttributes_InsideBuilding,
+    .callback = InitTilesetAnim_Building,
+};
+
+const struct Tileset gTileset_Building_Dome =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_InsideBuilding_Dome,
+    .palettes = gTilesetPalettes_InsideBuilding,
+    .metatiles = gMetatiles_InsideBuilding,
+    .metatileAttributes = gMetatileAttributes_InsideBuilding,
+    .callback = InitTilesetAnim_Building,
+};
+
+
+const struct Tileset gTileset_Building_Arena =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_InsideBuilding_Arena,
+    .palettes = gTilesetPalettes_InsideBuilding,
+    .metatiles = gMetatiles_InsideBuilding,
+    .metatileAttributes = gMetatileAttributes_InsideBuilding,
+    .callback = InitTilesetAnim_Building,
+};
+
+const struct Tileset gTileset_Building_Palace =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_InsideBuilding_Palace,
+    .palettes = gTilesetPalettes_BattlePalace_New,
+    .metatiles = gMetatiles_InsideBuilding,
+    .metatileAttributes = gMetatileAttributes_InsideBuilding,
+    .callback = InitTilesetAnim_Building,
+};
+
+const struct Tileset gTileset_Building_Factory =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_InsideBuilding_Factory,
+    .palettes = gTilesetPalettes_BattleFactory_New,
+    .metatiles = gMetatiles_InsideBuilding,
+    .metatileAttributes = gMetatileAttributes_InsideBuilding,
+    .callback = InitTilesetAnim_Building,
+};
+
+const struct Tileset gTileset_Building_Pike =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_InsideBuilding_Pike,
+    .palettes = gTilesetPalettes_BattlePike_New,
+    .metatiles = gMetatiles_InsideBuilding,
+    .metatileAttributes = gMetatileAttributes_InsideBuilding,
+    .callback = InitTilesetAnim_Building,
+};
+
+const struct Tileset gTileset_Building_Pyramid =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_InsideBuilding_Pyramid,
+    .palettes = gTilesetPalettes_BattlePyramid_New,
+    .metatiles = gMetatiles_InsideBuilding,
+    .metatileAttributes = gMetatileAttributes_InsideBuilding,
+    .callback = InitTilesetAnim_Building,
+};
+
+const struct Tileset gTileset_Building_Contest =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_InsideBuilding_Contest,
+    .palettes = gTilesetPalettes_InsideBuilding_Contest,
+    .metatiles = gMetatiles_InsideBuilding_Contest,
+    .metatileAttributes = gMetatileAttributes_InsideBuilding_Contest,
+    .callback = InitTilesetAnim_Building,
+};
+
+const struct Tileset gTileset_Cave_MtMoon =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Cave_MtMoon,
+    .palettes = gTilesetPalettes_Cave_MtMoon,
+    .metatiles = gMetatiles_Cave_MtMoon,
+    .metatileAttributes = gMetatileAttributes_Cave_MtMoon,
     .callback = NULL,
 };

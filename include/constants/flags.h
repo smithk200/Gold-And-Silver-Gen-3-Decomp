@@ -707,12 +707,12 @@
 #define FLAG_VISITED_ROUTE10  0x294 //no collision
 #define FLAG_AUTO_HMS  0x295 // auto hms
 #define FLAG_EXP_SHARE_OPTION  0x296 // exp. share
-#define FLAG_UNUSED_0x297  0x297 // Unused Flag
-#define FLAG_UNUSED_0x298  0x298 // Unused Flag
-#define FLAG_UNUSED_0x299  0x299 // Unused Flag
-#define FLAG_UNUSED_0x29A  0x29A // Unused Flag
-#define FLAG_UNUSED_0x29B  0x29B // Unused Flag
-#define FLAG_UNUSED_0x29C  0x29C // Unused Flag
+#define FLAG_WONDERTRADE1  0x297 // Unused Flag
+#define FLAG_WONDERTRADE2  0x298 // Unused Flag
+#define FLAG_WONDERTRADE3  0x299 // Unused Flag
+#define FLAG_VISITED_BATTLE_FRONTIER  0x29A // Unused Flag
+#define FLAG_FRONTIER_SECOND_CLERK  0x29B // Unused Flag
+#define FLAG_HIDE_BATTLE_FRONTIER_RECEPTION_GATE_SCOTT  0x29C // Unused Flag
 #define FLAG_UNUSED_0x29D  0x29D // Unused Flag
 #define FLAG_UNUSED_0x29E  0x29E // Unused Flag
 #define FLAG_UNUSED_0x29F  0x29F // Unused Flag

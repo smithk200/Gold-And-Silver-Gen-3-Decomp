@@ -119,7 +119,7 @@
       "flag": "FLAG_HIDE_ECRUTEAK_CITY_THEATER_NPCS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PSYDUCK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PSYDUCK"),
       "x": 13,
       "y": 9,
       "elevation": 0,

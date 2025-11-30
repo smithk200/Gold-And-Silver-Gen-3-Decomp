@@ -15,7 +15,7 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ENTEI",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ENTEI"),
       "x": 18,
       "y": 8,
       "elevation": 0,
@@ -28,7 +28,7 @@
       "flag": "FLAG_HIDE_BURNED_TOWER_BEASTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RAIKOU",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RAIKOU"),
       "x": 14,
       "y": 8,
       "elevation": 0,
@@ -41,7 +41,7 @@
       "flag": "FLAG_HIDE_BURNED_TOWER_BEASTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SUICUNE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SUICUNE"),
       "x": 16,
       "y": 9,
       "elevation": 0,
@@ -80,7 +80,7 @@
       "flag": "FLAG_ITEM_BURNED_TOWER_B1F_TM_TAUNT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KOFFING",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KOFFING"),
       "x": 23,
       "y": 0,
       "elevation": 0,
@@ -93,7 +93,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KOFFING",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KOFFING"),
       "x": 20,
       "y": 0,
       "elevation": 0,
@@ -106,7 +106,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MISDREAVUS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MISDREAVUS"),
       "x": 8,
       "y": 0,
       "elevation": 0,
@@ -119,7 +119,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MAGMAR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGMAR"),
       "x": 25,
       "y": 17,
       "elevation": 0,

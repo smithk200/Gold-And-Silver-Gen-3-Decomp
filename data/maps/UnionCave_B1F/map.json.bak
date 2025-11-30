@@ -106,7 +106,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ONIX",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ONIX"),
       "x": 1,
       "y": 5,
       "elevation": 0,
@@ -119,7 +119,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GEODUDE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GEODUDE"),
       "x": 23,
       "y": 21,
       "elevation": 0,
@@ -132,7 +132,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ZUBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZUBAT"),
       "x": 5,
       "y": 33,
       "elevation": 0,
@@ -145,7 +145,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ZUBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZUBAT"),
       "x": 21,
       "y": -1,
       "elevation": 0,
@@ -158,7 +158,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ONIX",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ONIX"),
       "x": 14,
       "y": 44,
       "elevation": 0,
@@ -171,7 +171,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MARILL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MARILL"),
       "x": 6,
       "y": 18,
       "elevation": 0,

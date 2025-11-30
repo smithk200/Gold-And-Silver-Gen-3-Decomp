@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_FEAROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FEAROW"),
       "x": 24,
       "y": 5,
       "elevation": 0,
@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SPEAROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPEAROW"),
       "x": 15,
       "y": 6,
       "elevation": 0,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PONYTA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PONYTA"),
       "x": 28,
       "y": 23,
       "elevation": 0,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DODUO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DODUO"),
       "x": 34,
       "y": 13,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TAILLOW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAILLOW"),
       "x": 4,
       "y": 22,
       "elevation": 0,

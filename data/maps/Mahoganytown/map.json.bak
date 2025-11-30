@@ -83,7 +83,7 @@
       "flag": "FLAG_HIDE_MAHOGANY_TOWN_FATMAN"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_AIPOM",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AIPOM"),
       "x": 27,
       "y": 6,
       "elevation": 0,
@@ -96,7 +96,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_AIPOM",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AIPOM"),
       "x": 29,
       "y": 17,
       "elevation": 0,
@@ -109,7 +109,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_AIPOM",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AIPOM"),
       "x": 24,
       "y": 17,
       "elevation": 0,
@@ -122,7 +122,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_AIPOM",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AIPOM"),
       "x": 6,
       "y": 2,
       "elevation": 0,
@@ -135,7 +135,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DELIBIRD",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DELIBIRD"),
       "x": 8,
       "y": 16,
       "elevation": 0,

@@ -39,7 +39,7 @@
       "flag": "FLAG_HIDE_CERULEAN_CAPE_ROCKET"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ABRA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ABRA"),
       "x": 14,
       "y": 1,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SURSKIT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SURSKIT"),
       "x": 23,
       "y": 28,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SPOINK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPOINK"),
       "x": 2,
       "y": 34,
       "elevation": 0,

@@ -106,7 +106,7 @@
       "flag": "FLAG_HIDE_WHIRL_ISLANDS_KIMONO_GIRLS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_LUGIA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LUGIA"),
       "x": 32,
       "y": 27,
       "elevation": 0,
@@ -119,7 +119,7 @@
       "flag": "FLAG_HIDE_LUGIA"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DEWGONG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DEWGONG"),
       "x": 61,
       "y": 15,
       "elevation": 0,
@@ -132,7 +132,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SEEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SEEL"),
       "x": 62,
       "y": 13,
       "elevation": 0,
@@ -145,7 +145,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ZUBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZUBAT"),
       "x": 13,
       "y": 4,
       "elevation": 0,
@@ -158,7 +158,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLBAT"),
       "x": 14,
       "y": 6,
       "elevation": 0,
@@ -171,7 +171,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLBAT"),
       "x": 5,
       "y": 5,
       "elevation": 0,
@@ -184,7 +184,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLBAT"),
       "x": 73,
       "y": 7,
       "elevation": 0,
@@ -197,7 +197,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ZUBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZUBAT"),
       "x": 67,
       "y": 7,
       "elevation": 0,
@@ -210,7 +210,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLBAT"),
       "x": 81,
       "y": 28,
       "elevation": 0,
@@ -223,7 +223,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLBAT"),
       "x": 80,
       "y": 27,
       "elevation": 0,
@@ -236,7 +236,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLBAT"),
       "x": 85,
       "y": 37,
       "elevation": 0,

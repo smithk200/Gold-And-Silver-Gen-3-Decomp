@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_BUTTERFREE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BUTTERFREE"),
       "x": 9,
       "y": 5,
       "elevation": 0,

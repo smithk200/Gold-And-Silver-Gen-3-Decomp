@@ -145,7 +145,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MARILL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MARILL"),
       "x": 25,
       "y": 16,
       "elevation": 0,
@@ -158,7 +158,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MACHOP",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MACHOP"),
       "x": 28,
       "y": 35,
       "elevation": 0,
@@ -171,7 +171,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RHYHORN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RHYHORN"),
       "x": 5,
       "y": 36,
       "elevation": 0,
@@ -184,7 +184,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLBAT"),
       "x": 35,
       "y": 2,
       "elevation": 0,
@@ -197,7 +197,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLBAT"),
       "x": 3,
       "y": 26,
       "elevation": 0,

@@ -182,7 +182,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DITTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DITTO"),
       "x": 46,
       "y": 34,
       "elevation": 0,
@@ -195,7 +195,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_JIGGLYPUFF",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(JIGGLYPUFF"),
       "x": 34,
       "y": 35,
       "elevation": 0,
@@ -208,7 +208,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GRIMER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRIMER"),
       "x": 38,
       "y": 18,
       "elevation": 0,
@@ -221,7 +221,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MANKEY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MANKEY"),
       "x": 54,
       "y": 52,
       "elevation": 0,
@@ -234,7 +234,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GRIMER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRIMER"),
       "x": 38,
       "y": 11,
       "elevation": 0,
@@ -247,7 +247,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DROWZEE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DROWZEE"),
       "x": 53,
       "y": 54,
       "elevation": 0,
@@ -260,7 +260,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DROWZEE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DROWZEE"),
       "x": 50,
       "y": 51,
       "elevation": 0,
@@ -273,7 +273,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SNUBBULL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SNUBBULL"),
       "x": 26,
       "y": 43,
       "elevation": 0,
@@ -286,7 +286,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ABRA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ABRA"),
       "x": 52,
       "y": 40,
       "elevation": 0,
@@ -299,7 +299,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACRUEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACRUEL"),
       "x": 11,
       "y": 65,
       "elevation": 0,
@@ -312,7 +312,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACOOL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACOOL"),
       "x": 9,
       "y": 46,
       "elevation": 0,
@@ -338,7 +338,7 @@
       "flag": "FLAG_ITEM_ROUTE34_SUPERPOTION"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SNUBBULL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SNUBBULL"),
       "x": 24,
       "y": 45,
       "elevation": 0,
@@ -351,7 +351,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MANKEY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MANKEY"),
       "x": 53,
       "y": 52,
       "elevation": 0,

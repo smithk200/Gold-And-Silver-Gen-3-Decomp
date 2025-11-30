@@ -62,7 +62,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SLOWBRO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SLOWBRO"),
       "x": 28,
       "y": 29,
       "elevation": 0,
@@ -127,7 +127,7 @@
       "flag": "FLAG_HIDE_CERULEANCAVE_GUARD"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PSYDUCK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PSYDUCK"),
       "x": 37,
       "y": 18,
       "elevation": 0,
@@ -140,7 +140,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SPEAROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPEAROW"),
       "x": 37,
       "y": 9,
       "elevation": 0,

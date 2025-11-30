@@ -75,7 +75,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MACHOP",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MACHOP"),
       "x": 45,
       "y": 11,
       "elevation": 0,
@@ -114,7 +114,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SPEAROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPEAROW"),
       "x": 27,
       "y": 14,
       "elevation": 0,
@@ -296,7 +296,7 @@
       "flag": "FLAG_TEMP_9"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RAICHU",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RAICHU"),
       "x": 19,
       "y": 20,
       "elevation": 0,
@@ -322,7 +322,7 @@
       "flag": "FLAG_ITEM_VERMILION_OLD_SEA_MAP"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SUICUNE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SUICUNE"),
       "x": 55,
       "y": 28,
       "elevation": 0,

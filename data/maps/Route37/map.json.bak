@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_NOCTOWL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(NOCTOWL"),
       "x": 17,
       "y": 7,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_LEDIAN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LEDIAN"),
       "x": 4,
       "y": 17,
       "elevation": 0,
@@ -104,7 +104,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_STANTLER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STANTLER"),
       "x": 41,
       "y": 21,
       "elevation": 0,
@@ -117,7 +117,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_STANTLER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STANTLER"),
       "x": 41,
       "y": 26,
       "elevation": 0,
@@ -130,7 +130,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ARIADOS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARIADOS"),
       "x": 4,
       "y": 17,
       "elevation": 0,
@@ -143,7 +143,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_VULPIX",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VULPIX"),
       "x": 23,
       "y": 33,
       "elevation": 0,
@@ -156,7 +156,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEOTTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEOTTO"),
       "x": 18,
       "y": 7,
       "elevation": 0,
@@ -169,7 +169,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_STANTLER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STANTLER"),
       "x": 43,
       "y": 24,
       "elevation": 0,
@@ -182,7 +182,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ARIADOS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARIADOS"),
       "x": 29,
       "y": 14,
       "elevation": 0,

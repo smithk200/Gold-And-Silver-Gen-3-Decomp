@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GRIMER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRIMER"),
       "x": 1,
       "y": 3,
       "elevation": 0,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MURKROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MURKROW"),
       "x": 24,
       "y": 11,
       "elevation": 0,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SHUPPET",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SHUPPET"),
       "x": 35,
       "y": 1,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ROSELIA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ROSELIA"),
       "x": 45,
       "y": 3,
       "elevation": 0,

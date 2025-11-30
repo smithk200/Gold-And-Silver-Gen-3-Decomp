@@ -171,7 +171,7 @@
       "flag": "FLAG_TEMP_9"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PARASECT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PARASECT"),
       "x": 39,
       "y": 21,
       "elevation": 0,
@@ -184,7 +184,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PARASECT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PARASECT"),
       "x": 40,
       "y": 23,
       "elevation": 0,
@@ -197,7 +197,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PRIMEAPE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PRIMEAPE"),
       "x": 17,
       "y": 2,
       "elevation": 0,
@@ -210,7 +210,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MACHAMP",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MACHAMP"),
       "x": 20,
       "y": 2,
       "elevation": 0,
@@ -223,7 +223,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MAGNETON",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGNETON"),
       "x": 4,
       "y": 23,
       "elevation": 0,
@@ -236,7 +236,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ELECTRODE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE"),
       "x": 3,
       "y": 24,
       "elevation": 0,
@@ -249,7 +249,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DITTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DITTO"),
       "x": 3,
       "y": 3,
       "elevation": 0,
@@ -262,7 +262,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLBAT"),
       "x": 6,
       "y": 5,
       "elevation": 0,

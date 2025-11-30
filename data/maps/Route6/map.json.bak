@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MAGNEMITE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGNEMITE"),
       "x": 54,
       "y": 17,
       "elevation": 0,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MAGNEMITE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGNEMITE"),
       "x": 48,
       "y": 31,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GRANBULL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRANBULL"),
       "x": 28,
       "y": 16,
       "elevation": 0,
@@ -104,7 +104,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SNUBBULL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SNUBBULL"),
       "x": 28,
       "y": 18,
       "elevation": 0,
@@ -130,7 +130,7 @@
       "flag": "FLAG_RETURNED_MACHINE_PART"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PLUSLE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PLUSLE"),
       "x": 29,
       "y": 28,
       "elevation": 0,
@@ -143,7 +143,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MINUN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MINUN"),
       "x": 28,
       "y": 29,
       "elevation": 0,

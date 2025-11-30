@@ -132,7 +132,7 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MACHOP",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MACHOP"),
       "x": 10,
       "y": 35,
       "elevation": 0,
@@ -145,7 +145,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CUBONE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CUBONE"),
       "x": 27,
       "y": 33,
       "elevation": 0,
@@ -158,7 +158,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MACHOKE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MACHOKE"),
       "x": 0,
       "y": 1,
       "elevation": 0,
@@ -171,7 +171,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SABLEYE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SABLEYE"),
       "x": 57,
       "y": 17,
       "elevation": 0,

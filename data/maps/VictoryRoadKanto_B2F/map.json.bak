@@ -54,7 +54,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RHYDON",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RHYDON"),
       "x": 11,
       "y": 28,
       "elevation": 0,
@@ -67,7 +67,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLBAT"),
       "x": -2,
       "y": 34,
       "elevation": 0,
@@ -80,7 +80,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_STEELIX",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STEELIX"),
       "x": 3,
       "y": 22,
       "elevation": 0,
@@ -93,7 +93,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLEM",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLEM"),
       "x": 23,
       "y": 10,
       "elevation": 0,
@@ -106,7 +106,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SANDSLASH",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SANDSLASH"),
       "x": 25,
       "y": 31,
       "elevation": 0,

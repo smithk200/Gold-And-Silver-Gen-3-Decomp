@@ -182,7 +182,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_URSARING",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(URSARING"),
       "x": 21,
       "y": 61,
       "elevation": 0,
@@ -195,7 +195,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GRAVELER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRAVELER"),
       "x": 45,
       "y": 7,
       "elevation": 0,
@@ -208,7 +208,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_URSARING",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(URSARING"),
       "x": 1,
       "y": 9,
       "elevation": 0,
@@ -221,7 +221,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DONPHAN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DONPHAN"),
       "x": 29,
       "y": 23,
       "elevation": 0,
@@ -234,7 +234,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GLIGAR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GLIGAR"),
       "x": 5,
       "y": 38,
       "elevation": 0,
@@ -247,7 +247,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GLIGAR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GLIGAR"),
       "x": 7,
       "y": 32,
       "elevation": 0,
@@ -260,7 +260,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SKARMORY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SKARMORY"),
       "x": 30,
       "y": 74,
       "elevation": 0,
@@ -273,7 +273,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SKARMORY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SKARMORY"),
       "x": 37,
       "y": 80,
       "elevation": 0,
@@ -299,7 +299,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_REMORAID",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(REMORAID"),
       "x": 23,
       "y": 59,
       "elevation": 0,
@@ -312,7 +312,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_REMORAID",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(REMORAID"),
       "x": 30,
       "y": 97,
       "elevation": 0,
@@ -325,7 +325,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_REMORAID",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(REMORAID"),
       "x": 20,
       "y": 3,
       "elevation": 0,

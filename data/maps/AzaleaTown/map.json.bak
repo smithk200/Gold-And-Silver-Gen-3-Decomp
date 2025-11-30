@@ -99,7 +99,7 @@
       "flag": "FLAG_HIDE_AZALEA_TOWN_SILVER"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_EKANS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(EKANS"),
       "x": 57,
       "y": 7,
       "elevation": 0,
@@ -112,7 +112,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_EKANS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(EKANS"),
       "x": 45,
       "y": 21,
       "elevation": 0,
@@ -177,7 +177,7 @@
       "flag": "FLAG_HIDE_AZALEA_TOWN_SLOWPOKE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SCYTHER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SCYTHER"),
       "x": 22,
       "y": 21,
       "elevation": 0,
@@ -190,7 +190,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_EKANS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(EKANS"),
       "x": 9,
       "y": 23,
       "elevation": 0,
@@ -203,7 +203,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HAUNTER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HAUNTER"),
       "x": 5,
       "y": 7,
       "elevation": 0,
@@ -255,7 +255,7 @@
       "flag": "FLAG_HIDE_AZALEA_TOWN_KURT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HERACROSS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HERACROSS"),
       "x": 1,
       "y": 1,
       "elevation": 0,

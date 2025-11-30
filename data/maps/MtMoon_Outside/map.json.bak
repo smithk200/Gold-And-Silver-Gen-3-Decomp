@@ -21,7 +21,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CLEFAIRY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY"),
       "x": 16,
       "y": 8,
       "elevation": 0,
@@ -34,7 +34,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CLEFAIRY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY"),
       "x": 16,
       "y": 14,
       "elevation": 0,
@@ -47,7 +47,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CLEFAIRY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY"),
       "x": 10,
       "y": 14,
       "elevation": 0,
@@ -60,7 +60,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CLEFAIRY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY"),
       "x": 10,
       "y": 8,
       "elevation": 0,
@@ -73,7 +73,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CLEFAIRY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY"),
       "x": 10,
       "y": 11,
       "elevation": 0,
@@ -86,7 +86,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CLEFAIRY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY"),
       "x": 13,
       "y": 14,
       "elevation": 0,
@@ -99,7 +99,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CLEFAIRY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY"),
       "x": 16,
       "y": 11,
       "elevation": 0,
@@ -112,7 +112,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CLEFAIRY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY"),
       "x": 13,
       "y": 8,
       "elevation": 0,

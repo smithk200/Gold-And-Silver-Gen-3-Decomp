@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TAUROS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS"),
       "x": 39,
       "y": 11,
       "elevation": 0,
@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GROWLITHE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GROWLITHE"),
       "x": 41,
       "y": 18,
       "elevation": 0,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_VULPIX",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VULPIX"),
       "x": 42,
       "y": 24,
       "elevation": 0,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GLOOM",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GLOOM"),
       "x": 11,
       "y": 19,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SKIPLOOM",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SKIPLOOM"),
       "x": 43,
       "y": 13,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GIRAFARIG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GIRAFARIG"),
       "x": 18,
       "y": 28,
       "elevation": 0,

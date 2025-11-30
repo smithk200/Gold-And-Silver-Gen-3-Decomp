@@ -41,7 +41,7 @@
       "flag": "FLAG_HIDE_AZALEA_TOWN_FARFETCHD"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_FARFETCHD",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FARFETCHD"),
       "x": 6,
       "y": 4,
       "elevation": 0,

@@ -1,7 +1,7 @@
 {
   "id": "MAP_ROUTE104_PROTOTYPE_PRETTY_PETAL_FLOWER_SHOP",
   "name": "Route104_PrototypePrettyPetalFlowerShop",
-  "layout": "LAYOUT_ROUTE104_PRETTY_PETAL_FLOWER_SHOP",
+  "layout": "LAYOUT_MT_MOON_CAVE",
   "music": "MUS_ROUTE104",
   "region_map_section": "MAPSEC_NONE",
   "requires_flash": false,

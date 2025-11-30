@@ -339,17 +339,14 @@ gStdScripts_End::
 	.include "data/maps/EverGrandeCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/EverGrandeCity_PokemonLeague_2F/scripts.inc"
 	.include "data/maps/Route104_MrBrineysHouse/scripts.inc"
-	.include "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc"
 	.include "data/maps/Route111_WinstrateFamilysHouse/scripts.inc"
 	.include "data/maps/Route111_OldLadysRestStop/scripts.inc"
 	.include "data/maps/Route112_CableCarStation/scripts.inc"
 	.include "data/maps/MtChimney_CableCarStation/scripts.inc"
 	.include "data/maps/Route114_FossilManiacsHouse/scripts.inc"
 	.include "data/maps/Route114_FossilManiacsTunnel/scripts.inc"
-	.include "data/maps/Route114_LanettesHouse/scripts.inc"
 	.include "data/maps/Route116_TunnelersRestHouse/scripts.inc"
 	.include "data/maps/Route117_PokemonDayCare/scripts.inc"
-	.include "data/maps/Route121_SafariZoneEntrance/scripts.inc"
 	.include "data/maps/MeteorFalls_1F_1R/scripts.inc"
 	.include "data/maps/MeteorFalls_1F_2R/scripts.inc"
 	.include "data/maps/MeteorFalls_B1F_1R/scripts.inc"
@@ -559,6 +556,7 @@ gStdScripts_End::
 	.include "data/maps/NavelRock_Down11/scripts.inc"
 	.include "data/maps/NavelRock_Bottom/scripts.inc"
 	.include "data/maps/TrainerHill_Elevator/scripts.inc"
+	.include "data/maps/TrainerHill_Courtyard/scripts.inc"
 	.include "data/maps/Route104_Prototype/scripts.inc"
 	.include "data/maps/Route104_PrototypePrettyPetalFlowerShop/scripts.inc"
 	.include "data/maps/Route109_SeashoreHouse/scripts.inc"
@@ -2036,10 +2034,6 @@ Common_Text_ReceivedMon:
 
 	.include "data/maps/TinTower_RoofNight/scripts.inc"
 
-	.include "data/maps/BattleTower_Outside/scripts.inc"
-
-	.include "data/maps/Gate_Route40_BattleTowerOutside/scripts.inc"
-
 	.include "data/maps/RuinsOfAlph_WordsRoom1/scripts.inc"
 
 	.include "data/maps/RuinsOfAlph_WordsRoom2/scripts.inc"
@@ -2071,3 +2065,13 @@ Common_Text_ReceivedMon:
 	.include "data/maps/MtSilver_SummitNight/scripts.inc"
 	.include "data/maps/Route19_Cave/scripts.inc"
 	.include "data/scripts/bug_contest.inc"
+
+	.include "data/maps/WhirlIslands_LugiaChamber/scripts.inc"
+
+	.include "data/maps/WhirlIslands_Descent/scripts.inc"
+
+	.include "data/maps/WhirlIslands_B3F/scripts.inc"
+
+	.include "data/maps/WhirlIslands_B1F_Inner/scripts.inc"
+	
+	.include "data/maps/Gate_Route40_TrainerHill_Courtyard/scripts.inc"

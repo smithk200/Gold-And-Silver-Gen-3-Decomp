@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PONYTA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PONYTA"),
       "x": 5,
       "y": 26,
       "elevation": 0,
@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_YANMA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(YANMA"),
       "x": 4,
       "y": 15,
       "elevation": 0,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_YANMA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(YANMA"),
       "x": 1,
       "y": 13,
       "elevation": 0,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SCYTHER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SCYTHER"),
       "x": 1,
       "y": 7,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_EKANS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(EKANS"),
       "x": 26,
       "y": 26,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KANGASKHAN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KANGASKHAN"),
       "x": 12,
       "y": 16,
       "elevation": 0,
@@ -104,7 +104,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PINSIR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PINSIR"),
       "x": 22,
       "y": 2,
       "elevation": 0,

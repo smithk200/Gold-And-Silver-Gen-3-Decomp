@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DITTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DITTO"),
       "x": 12,
       "y": 4,
       "elevation": 0,
@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_EEVEE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(EEVEE"),
       "x": 12,
       "y": 4,
       "elevation": 0,

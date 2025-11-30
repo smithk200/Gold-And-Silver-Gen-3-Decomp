@@ -156,7 +156,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CHINCHOU",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHINCHOU"),
       "x": 18,
       "y": 12,
       "elevation": 0,
@@ -169,7 +169,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_LANTURN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LANTURN"),
       "x": 5,
       "y": 12,
       "elevation": 0,
@@ -182,7 +182,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MANTINE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MANTINE"),
       "x": 53,
       "y": 16,
       "elevation": 0,
@@ -195,7 +195,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HORSEA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HORSEA"),
       "x": 68,
       "y": 26,
       "elevation": 0,
@@ -208,7 +208,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MANTINE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MANTINE"),
       "x": 70,
       "y": 43,
       "elevation": 0,
@@ -221,7 +221,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACOOL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACOOL"),
       "x": 69,
       "y": 61,
       "elevation": 0,
@@ -234,7 +234,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SHELLDER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SHELLDER"),
       "x": 14,
       "y": 80,
       "elevation": 0,
@@ -247,7 +247,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACOOL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACOOL"),
       "x": 59,
       "y": 50,
       "elevation": 0,
@@ -260,7 +260,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACOOL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACOOL"),
       "x": 10,
       "y": 46,
       "elevation": 0,
@@ -273,7 +273,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACOOL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACOOL"),
       "x": 36,
       "y": 36,
       "elevation": 0,
@@ -286,7 +286,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACOOL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACOOL"),
       "x": 47,
       "y": 51,
       "elevation": 0,
@@ -299,7 +299,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACOOL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACOOL"),
       "x": 32,
       "y": 71,
       "elevation": 0,
@@ -312,7 +312,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACRUEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACRUEL"),
       "x": 0,
       "y": 88,
       "elevation": 0,
@@ -325,7 +325,7 @@
       "flag": "FLAG_HIDE_WHIRL_ISLANDS_TENTACRUEL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACRUEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACRUEL"),
       "x": 2,
       "y": 88,
       "elevation": 0,
@@ -338,7 +338,7 @@
       "flag": "FLAG_HIDE_WHIRL_ISLANDS_TENTACRUEL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACRUEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACRUEL"),
       "x": 1,
       "y": 88,
       "elevation": 0,
@@ -351,7 +351,7 @@
       "flag": "FLAG_HIDE_WHIRL_ISLANDS_TENTACRUEL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACRUEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACRUEL"),
       "x": 3,
       "y": 88,
       "elevation": 0,
@@ -364,7 +364,7 @@
       "flag": "FLAG_HIDE_WHIRL_ISLANDS_TENTACRUEL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEOTTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEOTTO"),
       "x": 38,
       "y": 51,
       "elevation": 0,
@@ -377,7 +377,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEOTTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEOTTO"),
       "x": 22,
       "y": 61,
       "elevation": 0,
@@ -390,7 +390,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEOTTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEOTTO"),
       "x": 41,
       "y": 69,
       "elevation": 0,
@@ -403,7 +403,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEOTTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEOTTO"),
       "x": 53,
       "y": 31,
       "elevation": 0,
@@ -416,7 +416,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEOTTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEOTTO"),
       "x": 24,
       "y": 34,
       "elevation": 0,
@@ -429,7 +429,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CHINCHOU",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHINCHOU"),
       "x": 31,
       "y": 87,
       "elevation": 0,
@@ -442,7 +442,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_LANTURN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LANTURN"),
       "x": 55,
       "y": 86,
       "elevation": 0,

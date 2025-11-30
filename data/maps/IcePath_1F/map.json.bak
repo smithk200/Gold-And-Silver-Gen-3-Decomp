@@ -54,7 +54,7 @@
       "flag": "FLAG_ITEM_ICEPATH1_PROTEIN"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SWINUB",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SWINUB"),
       "x": 28,
       "y": 22,
       "elevation": 0,
@@ -67,7 +67,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GOLBAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOLBAT"),
       "x": 29,
       "y": 15,
       "elevation": 0,
@@ -80,7 +80,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DELIBIRD",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DELIBIRD"),
       "x": 28,
       "y": 22,
       "elevation": 0,
@@ -93,7 +93,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DELIBIRD",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DELIBIRD"),
       "x": 4,
       "y": 6,
       "elevation": 0,
@@ -106,7 +106,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SWINUB",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SWINUB"),
       "x": 5,
       "y": 8,
       "elevation": 0,
@@ -132,7 +132,7 @@
       "flag": "FLAG_HIDE_ICE_PATH_KIMONO"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SWINUB",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SWINUB"),
       "x": 7,
       "y": 9,
       "elevation": 0,
@@ -145,7 +145,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DELIBIRD",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DELIBIRD"),
       "x": 7,
       "y": 6,
       "elevation": 0,

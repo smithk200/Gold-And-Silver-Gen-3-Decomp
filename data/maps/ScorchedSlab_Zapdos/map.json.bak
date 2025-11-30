@@ -184,7 +184,7 @@
       "flag": "FLAG_TEMP_8"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ZAPDOS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZAPDOS"),
       "x": 7,
       "y": 2,
       "elevation": 0,

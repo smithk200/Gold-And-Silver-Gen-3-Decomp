@@ -104,7 +104,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_REMORAID",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(REMORAID"),
       "x": 25,
       "y": 22,
       "elevation": 0,
@@ -117,7 +117,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_REMORAID",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(REMORAID"),
       "x": 27,
       "y": 23,
       "elevation": 0,
@@ -130,7 +130,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HERACROSS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HERACROSS"),
       "x": 49,
       "y": 21,
       "elevation": 0,
@@ -143,7 +143,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_FEAROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FEAROW"),
       "x": 31,
       "y": 4,
       "elevation": 0,
@@ -156,7 +156,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RATICATE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATICATE"),
       "x": 51,
       "y": 6,
       "elevation": 0,
@@ -169,7 +169,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ARBOK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARBOK"),
       "x": 46,
       "y": 19,
       "elevation": 0,
@@ -182,7 +182,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ARBOK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARBOK"),
       "x": 49,
       "y": 29,
       "elevation": 0,
@@ -195,7 +195,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GLIGAR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GLIGAR"),
       "x": 60,
       "y": 22,
       "elevation": 0,
@@ -208,7 +208,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GLIGAR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GLIGAR"),
       "x": 71,
       "y": 17,
       "elevation": 0,
@@ -234,7 +234,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SUICUNE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SUICUNE"),
       "x": 42,
       "y": 18,
       "elevation": 0,

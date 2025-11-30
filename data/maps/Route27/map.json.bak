@@ -156,7 +156,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CHIKORITA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHIKORITA"),
       "x": 58,
       "y": 14,
       "elevation": 0,
@@ -169,7 +169,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CYNDAQUIL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CYNDAQUIL"),
       "x": 55,
       "y": 14,
       "elevation": 0,
@@ -182,7 +182,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TOTODILE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TOTODILE"),
       "x": 58,
       "y": 16,
       "elevation": 0,
@@ -195,7 +195,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ARBOK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARBOK"),
       "x": 4,
       "y": 13,
       "elevation": 0,
@@ -208,7 +208,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MURKROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MURKROW"),
       "x": 30,
       "y": 17,
       "elevation": 0,
@@ -221,7 +221,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PONYTA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PONYTA"),
       "x": 72,
       "y": 15,
       "elevation": 0,
@@ -234,7 +234,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DODRIO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DODRIO"),
       "x": 110,
       "y": 8,
       "elevation": 0,
@@ -247,7 +247,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RAPIDASH",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RAPIDASH"),
       "x": 109,
       "y": 9,
       "elevation": 0,

@@ -96,7 +96,7 @@
       "flag": "FLAG_ITEM_ROUTE43_MAX_ETHER"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_VENOMOTH",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VENOMOTH"),
       "x": 7,
       "y": 35,
       "elevation": 0,
@@ -109,7 +109,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_VENONAT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VENONAT"),
       "x": 6,
       "y": 38,
       "elevation": 0,
@@ -122,7 +122,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_FURRET",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FURRET"),
       "x": 6,
       "y": 34,
       "elevation": 0,
@@ -135,7 +135,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SKARMORY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SKARMORY"),
       "x": 29,
       "y": 22,
       "elevation": 0,
@@ -148,7 +148,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GIRAFARIG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GIRAFARIG"),
       "x": 27,
       "y": 43,
       "elevation": 0,
@@ -161,7 +161,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GIRAFARIG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GIRAFARIG"),
       "x": 28,
       "y": 44,
       "elevation": 0,
@@ -174,7 +174,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_FARFETCHD",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FARFETCHD"),
       "x": 1,
       "y": 19,
       "elevation": 0,
@@ -187,7 +187,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_FLAAFFY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FLAAFFY"),
       "x": 6,
       "y": 5,
       "elevation": 0,
@@ -200,7 +200,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_FLAAFFY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FLAAFFY"),
       "x": 7,
       "y": 6,
       "elevation": 0,

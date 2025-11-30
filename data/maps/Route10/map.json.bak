@@ -44,7 +44,7 @@
       "flag": "FLAG_ITEM_ROUTE10_ULTRABALL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ZAPDOS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZAPDOS"),
       "x": 4,
       "y": 35,
       "elevation": 0,
@@ -83,7 +83,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ELECTABUZZ",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTABUZZ"),
       "x": 22,
       "y": 33,
       "elevation": 0,
@@ -96,7 +96,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_VOLTORB",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VOLTORB"),
       "x": 16,
       "y": 17,
       "elevation": 0,
@@ -109,7 +109,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_FEAROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FEAROW"),
       "x": 27,
       "y": 53,
       "elevation": 0,
@@ -187,7 +187,7 @@
       "flag": "FLAG_TEMP_4"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GENGAR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GENGAR"),
       "x": 28,
       "y": 78,
       "elevation": 0,
@@ -200,7 +200,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ELECTRIKE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRIKE"),
       "x": 3,
       "y": 53,
       "elevation": 0,

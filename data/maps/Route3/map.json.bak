@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SKITTY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SKITTY"),
       "x": 31,
       "y": 11,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ARBOK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARBOK"),
       "x": 51,
       "y": 11,
       "elevation": 0,
@@ -104,7 +104,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_JIGGLYPUFF",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(JIGGLYPUFF"),
       "x": 20,
       "y": 1,
       "elevation": 0,
@@ -117,7 +117,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SANDSHREW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SANDSHREW"),
       "x": 64,
       "y": 6,
       "elevation": 0,
@@ -143,7 +143,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_NINCADA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(NINCADA"),
       "x": 82,
       "y": 12,
       "elevation": 0,

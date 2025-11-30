@@ -148,7 +148,7 @@
       "flag": "FLAG_ITEM_ROUTE12_CALCIUM"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACRUEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACRUEL"),
       "x": 11,
       "y": 23,
       "elevation": 0,
@@ -161,7 +161,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TENTACRUEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TENTACRUEL"),
       "x": 9,
       "y": 72,
       "elevation": 0,
@@ -174,7 +174,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CARVANHA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CARVANHA"),
       "x": 28,
       "y": 85,
       "elevation": 0,

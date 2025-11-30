@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SANDSHREW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SANDSHREW"),
       "x": 23,
       "y": 25,
       "elevation": 0,
@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SANDSLASH",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SANDSLASH"),
       "x": 25,
       "y": 26,
       "elevation": 0,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GLIGAR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GLIGAR"),
       "x": 11,
       "y": 13,
       "elevation": 0,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_LARVITAR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LARVITAR"),
       "x": 4,
       "y": 4,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RHYHORN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RHYHORN"),
       "x": 36,
       "y": 4,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RHYHORN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RHYHORN"),
       "x": 38,
       "y": 5,
       "elevation": 0,
@@ -104,7 +104,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_FEAROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FEAROW"),
       "x": 34,
       "y": 24,
       "elevation": 0,
@@ -117,7 +117,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CUBONE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CUBONE"),
       "x": 17,
       "y": 32,
       "elevation": 0,
@@ -130,7 +130,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KANGASKHAN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KANGASKHAN"),
       "x": 18,
       "y": 32,
       "elevation": 0,

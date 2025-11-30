@@ -54,6 +54,10 @@ CeladonMansion2F_EventScript_DaniRainbow::
     msgbox CeladonMansion2F_Text_DaniRaibow, MSGBOX_NPC
     end
 
+CeladonMansion2F_EventScript_IAmAwesome2::
+    msgbox CeladonMansion2F_Text_IAmAwesome2, MSGBOX_NPC
+    end
+
 CeladonMansion2F_Text_LilDill:
 	.string "Hi all, Patch 15--\p"
 	.string "Sorry, I mean...\p"
@@ -67,7 +71,9 @@ CeladonMansion2F_Text_LilDill:
 
 CeladonMansion2F_Text_InfiniteBacon:
 	.string "We're working to rebuild this game\n"
-	.string "in pokeemerald expansion!$"
+	.string "in pokeemerald expansion!p"
+	.string "Huh?\p"
+	.string "Someone's already done that!$"
 
 CeladonMansion2F_Text_TixoRebel:
 	.string "Have you heard of THE EGGENING?\n"
@@ -100,3 +106,12 @@ CeladonMansion2F_Text_DaniRaibow:
     .string "However, DRAGONITE was moving too\n"
     .string "fast from EXTREMESPEED; it couldn't\l"
     .string "catch it!$"
+
+CeladonMansion2F_Text_IAmAwesome2:
+	.string "I was the one who remade this\n"
+	.string "in pokeemerald-expansion!\p"
+	.string "Now you can catch all POKéMON\n"
+	.string "from Generations 1-9!\p"
+	.string "I appreciate the hard work the\n"
+	.string "rest of the directors of POKéMON\l"
+	.string "HEART & SOUL put into this game!$"

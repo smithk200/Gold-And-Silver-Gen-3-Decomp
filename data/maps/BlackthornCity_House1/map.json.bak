@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DRATINI",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DRATINI"),
       "x": 8,
       "y": 7,
       "elevation": 0,

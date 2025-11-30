@@ -208,7 +208,7 @@
       "flag": "FLAG_HIDE_GOLDENROD_ROCKETS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SNUBBULL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SNUBBULL"),
       "x": 35,
       "y": 32,
       "elevation": 0,
@@ -221,7 +221,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEY"),
       "x": 22,
       "y": 27,
       "elevation": 0,
@@ -234,7 +234,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEY"),
       "x": 45,
       "y": 32,
       "elevation": 0,
@@ -247,7 +247,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEY"),
       "x": 42,
       "y": 19,
       "elevation": 0,
@@ -260,7 +260,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CLEFAIRY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY"),
       "x": 41,
       "y": 10,
       "elevation": 0,
@@ -273,7 +273,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOOTHOOT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOOTHOOT"),
       "x": 29,
       "y": 33,
       "elevation": 0,
@@ -286,7 +286,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GRIMER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRIMER"),
       "x": 18,
       "y": 44,
       "elevation": 0,
@@ -299,7 +299,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GRIMER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRIMER"),
       "x": 54,
       "y": 39,
       "elevation": 0,
@@ -312,7 +312,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GRIMER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRIMER"),
       "x": 53,
       "y": 24,
       "elevation": 0,
@@ -325,7 +325,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GRIMER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRIMER"),
       "x": 45,
       "y": 44,
       "elevation": 0,
@@ -338,7 +338,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GRIMER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRIMER"),
       "x": 53,
       "y": 15,
       "elevation": 0,
@@ -351,7 +351,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GRIMER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRIMER"),
       "x": 50,
       "y": 21,
       "elevation": 0,
@@ -364,7 +364,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SPEAROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPEAROW"),
       "x": 28,
       "y": 33,
       "elevation": 0,
@@ -377,7 +377,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MR_MIME",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MR_MIME"),
       "x": 9,
       "y": 24,
       "elevation": 0,
@@ -442,7 +442,7 @@
       "flag": "FLAG_HIDE_GOLDENROD_NPCS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HYPNO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HYPNO"),
       "x": 51,
       "y": 27,
       "elevation": 0,

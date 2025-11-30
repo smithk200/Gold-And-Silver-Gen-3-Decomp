@@ -2,8 +2,8 @@
   "id": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM",
   "name": "BattleFrontier_BattleTowerBattleRoom",
   "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM",
-  "music": "MUS_B_TOWER",
-  "region_map_section": "MAPSEC_BATTLE_FRONTIER",
+  "music": "MUS_HG_B_TOWER",
+  "region_map_section": "MAPSEC_ROUTE_40",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -15,7 +15,7 @@
   "connections": null,
   "object_events": [
     {
-      "local_id": "LOCALID_TOWER_BATTLE_OPPONENT",
+      "local_id": "LOCALID_OPPONENT",
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
       "x": 5,
       "y": 1,
@@ -29,8 +29,8 @@
       "flag": "FLAG_HIDE_BATTLE_TOWER_OPPONENT"
     },
     {
-      "local_id": "LOCALID_TOWER_BATTLE_ATTENDANT_1",
-      "graphics_id": "OBJ_EVENT_GFX_TEALA",
+      "local_id": "LOCALID_ATTENDANT_2",
+      "graphics_id": "OBJ_EVENT_GFX_WORKER_F",
       "x": 1,
       "y": 7,
       "elevation": 3,
@@ -43,8 +43,8 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_TOWER_BATTLE_ATTENDANT_2",
-      "graphics_id": "OBJ_EVENT_GFX_TEALA",
+      "local_id": "LOCALID_ATTENDANT_2",
+      "graphics_id": "OBJ_EVENT_GFX_WORKER_F",
       "x": 4,
       "y": 8,
       "elevation": 3,

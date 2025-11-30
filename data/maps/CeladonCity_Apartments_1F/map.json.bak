@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MEOWTH",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEOWTH"),
       "x": 4,
       "y": 8,
       "elevation": 0,
@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SKITTY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SKITTY"),
       "x": 6,
       "y": 9,
       "elevation": 0,

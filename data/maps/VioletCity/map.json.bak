@@ -135,7 +135,7 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_BELLSPROUT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BELLSPROUT"),
       "x": 35,
       "y": 10,
       "elevation": 0,
@@ -148,7 +148,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_BELLSPROUT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BELLSPROUT"),
       "x": 20,
       "y": 15,
       "elevation": 0,
@@ -161,7 +161,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_BELLSPROUT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BELLSPROUT"),
       "x": 26,
       "y": 10,
       "elevation": 0,
@@ -174,7 +174,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_POLIWAG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(POLIWAG"),
       "x": 36,
       "y": 27,
       "elevation": 0,
@@ -187,7 +187,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOOTHOOT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOOTHOOT"),
       "x": 41,
       "y": 34,
       "elevation": 0,
@@ -200,7 +200,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PIDGEOTTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEOTTO"),
       "x": 22,
       "y": 33,
       "elevation": 0,
@@ -213,7 +213,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_BELLSPROUT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BELLSPROUT"),
       "x": 47,
       "y": 33,
       "elevation": 0,
@@ -226,7 +226,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GASTLY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GASTLY"),
       "x": 21,
       "y": 45,
       "elevation": 0,
@@ -239,7 +239,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GASTLY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GASTLY"),
       "x": 9,
       "y": 47,
       "elevation": 0,
@@ -252,7 +252,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HAUNTER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HAUNTER"),
       "x": 19,
       "y": 9,
       "elevation": 0,
@@ -265,7 +265,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_POLIWAG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(POLIWAG"),
       "x": 44,
       "y": 21,
       "elevation": 0,
@@ -278,7 +278,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_POLIWAG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(POLIWAG"),
       "x": 45,
       "y": 23,
       "elevation": 0,
@@ -291,7 +291,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_PICHU",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PICHU"),
       "x": 35,
       "y": 49,
       "elevation": 0,
@@ -304,7 +304,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SPEAROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPEAROW"),
       "x": 43,
       "y": 9,
       "elevation": 0,
@@ -317,7 +317,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SPEAROW",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPEAROW"),
       "x": 38,
       "y": 32,
       "elevation": 0,
@@ -330,7 +330,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RATTATA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RATTATA"),
       "x": 19,
       "y": 40,
       "elevation": 0,
@@ -343,7 +343,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_BELLSPROUT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BELLSPROUT"),
       "x": 7,
       "y": 36,
       "elevation": 0,
@@ -356,7 +356,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_BELLSPROUT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BELLSPROUT"),
       "x": 34,
       "y": 16,
       "elevation": 0,
@@ -395,7 +395,7 @@
       "flag": "FLAG_ITEM_VIOLET_CITY_RARE_CANDY"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MISDREAVUS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MISDREAVUS"),
       "x": 15,
       "y": 27,
       "elevation": 0,
@@ -408,7 +408,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MISDREAVUS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MISDREAVUS"),
       "x": 45,
       "y": 41,
       "elevation": 0,

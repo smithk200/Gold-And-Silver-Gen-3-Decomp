@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GULPIN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GULPIN"),
       "x": 22,
       "y": 8,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GRIMER",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GRIMER"),
       "x": 20,
       "y": 8,
       "elevation": 0,
@@ -104,7 +104,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOUNDOUR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOUNDOUR"),
       "x": 16,
       "y": 2,
       "elevation": 0,

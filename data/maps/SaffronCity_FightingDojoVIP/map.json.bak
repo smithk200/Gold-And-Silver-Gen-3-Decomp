@@ -223,7 +223,7 @@
       "flag": "FLAG_HIDE_DOJO_PRYCE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MACHAMP",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MACHAMP"),
       "x": 22,
       "y": 20,
       "elevation": 0,
@@ -236,7 +236,7 @@
       "flag": "FLAG_HIDE_DOJO_BLUE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_POLIWHIRL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(POLIWHIRL"),
       "x": 23,
       "y": 20,
       "elevation": 0,
@@ -249,7 +249,7 @@
       "flag": "FLAG_HIDE_DOJO_CHUCK"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_RAICHU",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RAICHU"),
       "x": 21,
       "y": 18,
       "elevation": 0,
@@ -262,7 +262,7 @@
       "flag": "FLAG_HIDE_DOJO_SURGE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KINGDRA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KINGDRA"),
       "x": 22,
       "y": 18,
       "elevation": 0,
@@ -275,7 +275,7 @@
       "flag": "FLAG_HIDE_DOJO_CLAIR"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GENGAR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GENGAR"),
       "x": 0,
       "y": 3,
       "elevation": 0,
@@ -288,7 +288,7 @@
       "flag": "FLAG_HIDE_DOJO_MORTY"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_NOCTOWL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(NOCTOWL"),
       "x": 0,
       "y": 5,
       "elevation": 0,
@@ -301,7 +301,7 @@
       "flag": "FLAG_HIDE_DOJO_FALKNER"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_STARMIE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STARMIE"),
       "x": 39,
       "y": 5,
       "elevation": 0,
@@ -314,7 +314,7 @@
       "flag": "FLAG_HIDE_DOJO_MISTY"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_VICTREEBEL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VICTREEBEL"),
       "x": 35,
       "y": 37,
       "elevation": 0,
@@ -327,7 +327,7 @@
       "flag": "FLAG_HIDE_DOJO_ERIKA"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SCIZOR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SCIZOR"),
       "x": 23,
       "y": 33,
       "elevation": 0,
@@ -340,7 +340,7 @@
       "flag": "FLAG_HIDE_DOJO_BUGSY"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_STEELIX",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STEELIX"),
       "x": 22,
       "y": 33,
       "elevation": 0,
@@ -353,7 +353,7 @@
       "flag": "FLAG_HIDE_DOJO_JASMINE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KADABRA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KADABRA"),
       "x": 11,
       "y": 37,
       "elevation": 0,
@@ -366,7 +366,7 @@
       "flag": "FLAG_HIDE_DOJO_SABRINA"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_ONIX",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ONIX"),
       "x": 41,
       "y": 23,
       "elevation": 0,
@@ -379,7 +379,7 @@
       "flag": "FLAG_HIDE_DOJO_BROCK"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MILTANK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MILTANK"),
       "x": 41,
       "y": 26,
       "elevation": 0,
@@ -392,7 +392,7 @@
       "flag": "FLAG_HIDE_DOJO_WHITNEY"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MUK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MUK"),
       "x": 2,
       "y": 39,
       "elevation": 0,
@@ -444,7 +444,7 @@
       "flag": "FLAG_HIDE_DOJO_BLAINE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MAGMAR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGMAR"),
       "x": 38,
       "y": 11,
       "elevation": 0,
@@ -457,7 +457,7 @@
       "flag": "FLAG_HIDE_DOJO_BLAINE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_DEWGONG",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DEWGONG"),
       "x": 42,
       "y": 5,
       "elevation": 0,

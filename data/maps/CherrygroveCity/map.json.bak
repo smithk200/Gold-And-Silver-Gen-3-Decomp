@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CORSOLA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORSOLA"),
       "x": 25,
       "y": 9,
       "elevation": 0,
@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_STARYU",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STARYU"),
       "x": 25,
       "y": 16,
       "elevation": 0,
@@ -104,7 +104,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KRABBY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KRABBY"),
       "x": 27,
       "y": 20,
       "elevation": 0,
@@ -117,7 +117,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CORSOLA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORSOLA"),
       "x": 25,
       "y": 8,
       "elevation": 0,
@@ -130,7 +130,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_KRABBY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KRABBY"),
       "x": 29,
       "y": 19,
       "elevation": 0,
@@ -143,7 +143,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CORSOLA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORSOLA"),
       "x": 4,
       "y": 11,
       "elevation": 0,
@@ -156,7 +156,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CORSOLA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORSOLA"),
       "x": 6,
       "y": 12,
       "elevation": 0,
@@ -169,7 +169,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CORSOLA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORSOLA"),
       "x": 4,
       "y": 24,
       "elevation": 0,
@@ -182,7 +182,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_CORSOLA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORSOLA"),
       "x": 2,
       "y": 25,
       "elevation": 0,

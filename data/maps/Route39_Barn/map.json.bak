@@ -15,7 +15,7 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_TAUROS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS"),
       "x": 13,
       "y": 12,
       "elevation": 0,
@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_FLAAFFY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FLAAFFY"),
       "x": 4,
       "y": 12,
       "elevation": 0,
@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_FLAAFFY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FLAAFFY"),
       "x": 3,
       "y": 12,
       "elevation": 0,
@@ -54,7 +54,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_FARFETCHD",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FARFETCHD"),
       "x": 4,
       "y": 5,
       "elevation": 0,
@@ -67,7 +67,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_MILTANK",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MILTANK"),
       "x": 13,
       "y": 5,
       "elevation": 0,

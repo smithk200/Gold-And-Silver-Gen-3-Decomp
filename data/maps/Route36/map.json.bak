@@ -101,7 +101,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_SUDOWOODO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SUDOWOODO"),
       "x": 39,
       "y": 19,
       "elevation": 0,
@@ -114,7 +114,7 @@
       "flag": "FLAG_HIDE_SUDOWOODO"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOUNDOUR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOUNDOUR"),
       "x": 54,
       "y": 12,
       "elevation": 0,
@@ -127,7 +127,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GROWLITHE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GROWLITHE"),
       "x": 57,
       "y": 13,
       "elevation": 0,
@@ -140,7 +140,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOUNDOUR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOUNDOUR"),
       "x": 58,
       "y": 12,
       "elevation": 0,
@@ -153,7 +153,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GROWLITHE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GROWLITHE"),
       "x": 53,
       "y": 13,
       "elevation": 0,
@@ -166,7 +166,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GASTLY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GASTLY"),
       "x": 61,
       "y": 11,
       "elevation": 0,
@@ -179,7 +179,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GASTLY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GASTLY"),
       "x": 32,
       "y": 29,
       "elevation": 0,
@@ -192,7 +192,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_BELLSPROUT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BELLSPROUT"),
       "x": 19,
       "y": 9,
       "elevation": 0,
@@ -205,7 +205,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_BELLSPROUT",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BELLSPROUT"),
       "x": 20,
       "y": 9,
       "elevation": 0,
@@ -218,7 +218,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOUNDOUR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOUNDOUR"),
       "x": 44,
       "y": 7,
       "elevation": 0,
@@ -231,7 +231,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GROWLITHE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GROWLITHE"),
       "x": 44,
       "y": 7,
       "elevation": 0,
@@ -244,7 +244,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GASTLY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GASTLY"),
       "x": 29,
       "y": 9,
       "elevation": 0,
@@ -257,7 +257,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_HOUNDOUR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOUNDOUR"),
       "x": 44,
       "y": 7,
       "elevation": 0,
@@ -270,7 +270,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GROWLITHE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GROWLITHE"),
       "x": 44,
       "y": 7,
       "elevation": 0,
@@ -283,7 +283,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES+SPECIES_GASTLY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GASTLY"),
       "x": 27,
       "y": 5,
       "elevation": 0,

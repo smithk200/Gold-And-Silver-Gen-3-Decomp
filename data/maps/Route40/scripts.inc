@@ -24,6 +24,15 @@ Route40_EventScript_Randall::
 	msgbox Route40_Text_SwimmermRandallAfter, MSGBOX_AUTOCLOSE
 	end
 
+
+BattleTower_Outside_EventScript_Engineer::
+	lock
+	faceplayer
+	msgbox BattleTowerOutsideText_Closed, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 Route40_Text_SwimmermRandallSeen:
 	.string "Hey, you're young and fit!\p"
 	.string "Don't ride your POKéMON!\n"
