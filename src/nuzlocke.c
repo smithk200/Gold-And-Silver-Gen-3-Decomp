@@ -365,24 +365,22 @@ bool8 IsFirstEncounterInArea(u16 mapGroup, u16 mapNum)
 // Dead Pokemon functions
 bool8 IsMonDead(struct Pokemon *mon)
 {
-    u32 hp;
     if (!IsNuzlockeActive())
         return FALSE;
-    
-    hp = GetMonData(mon, MON_DATA_HP);
-    if (hp == 0);
+    if (GetMonData(mon, MON_DATA_HP) == 0)
         return TRUE;
+    else
+        return FALSE;
 }
 
 bool8 IsBoxMonDead(struct BoxPokemon *boxMon)
 {
-    u32 hp;
     if (!IsNuzlockeActive())
         return FALSE;
-    
-    hp = GetBoxMonData(boxMon, MON_DATA_HP);
-    if (hp == 0);
+    if (GetBoxMonData(boxMon, MON_DATA_HP) == 0)
         return TRUE;
+    else
+        return FALSE;
 }
 
 void SetMonDead(struct Pokemon *mon, bool8 isDead)

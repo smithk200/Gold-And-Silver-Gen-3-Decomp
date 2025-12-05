@@ -68,7 +68,7 @@ u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
     {
         return 0;
     }
-    else if (gSaveBlock2Ptr->optionsDifficulty == OPTIONS_DIFFICULTY_HARD)
+    else if ((gSaveBlock2Ptr->optionsDifficulty == OPTIONS_DIFFICULTY_HARD) || (FlagGet(FLAG_NUZLOCKE)))
     {
         return 0;
     }

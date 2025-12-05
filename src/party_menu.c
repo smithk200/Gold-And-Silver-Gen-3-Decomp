@@ -5689,12 +5689,6 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
         cannotUseEffect = ExecuteTableBasedItemEffect(mon, *itemPtr, gPartyMenu.slotId, 0);
         BufferMonStatsToTaskData(mon, &ptr->data[NUM_STATS]);
     }
-    if ((gSaveBlock2Ptr->optionsDifficulty == OPTIONS_DIFFICULTY_EASY) || (gSaveBlock2Ptr->optionsDifficulty == OPTIONS_DIFFICULTY_NORMAL))
-    {
-        BufferMonStatsToTaskData(mon, arrayPtr);
-        cannotUseEffect = ExecuteTableBasedItemEffect(mon, *itemPtr, gPartyMenu.slotId, 0);
-        BufferMonStatsToTaskData(mon, &ptr->data[NUM_STATS]);
-    }
     else
     {
         cannotUseEffect = TRUE;
