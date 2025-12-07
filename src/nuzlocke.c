@@ -40,6 +40,21 @@ static u8 GetNuzlockeLocationId(u8 currLocation)
     case MAPSEC_BLACKTHORN_CITY:
     case MAPSEC_INDIGO_PLATEAU:
     case MAPSEC_MT_SILVER:
+    case MAPSEC_SLOWPOKE_WELL:
+    case MAPSEC_UNION_CAVE:
+    case MAPSEC_ICE_PATH:
+    case MAPSEC_BURNED_TOWER:
+    case MAPSEC_DRAGONS_DEN:
+    case MAPSEC_WHIRL_ISLANDS:
+    case MAPSEC_TIN_TOWER:
+    case MAPSEC_TOHJO_FALLS:
+    case MAPSEC_CLIFF_CAVE:
+    case MAPSEC_SPROUT_TOWER:
+    case MAPSEC_DARK_CAVE:
+    case MAPSEC_RUINS_OF_ALPH:
+    case MAPSEC_ILEX_FOREST:
+    case MAPSEC_NATIONAL_PARK:
+    case MAPSEC_MT_MORTAR:
         return currLocation;
               
     // Routes are separate areas
@@ -280,6 +295,66 @@ bool8 HasWildPokemonBeenSeenInLocation(u8 location, bool8 setEncounteredIfFirst)
     case MAPSEC_MT_SILVER:
         varToCheck = 2;
         bitToCheck = 1;
+        break;
+    case MAPSEC_SLOWPOKE_WELL:
+    varToCheck = 2;
+    bitToCheck = 2;
+    break;
+    case MAPSEC_UNION_CAVE:
+        varToCheck = 2;
+        bitToCheck = 3;
+        break;
+    case MAPSEC_ICE_PATH:
+        varToCheck = 2;
+        bitToCheck = 4;
+        break;
+    case MAPSEC_BURNED_TOWER:
+        varToCheck = 2;
+        bitToCheck = 5;
+        break;
+    case MAPSEC_DRAGONS_DEN:
+        varToCheck = 2;
+        bitToCheck = 6;
+        break;
+    case MAPSEC_WHIRL_ISLANDS:
+        varToCheck = 2;
+        bitToCheck = 7;
+        break;
+    case MAPSEC_TIN_TOWER:
+        varToCheck = 2;
+        bitToCheck = 8;
+        break;
+    case MAPSEC_TOHJO_FALLS:
+        varToCheck = 2;
+        bitToCheck = 9;
+        break;
+    case MAPSEC_CLIFF_CAVE:
+        varToCheck = 2;
+        bitToCheck = 10;
+        break;
+    case MAPSEC_SPROUT_TOWER:
+        varToCheck = 2;
+        bitToCheck = 11;
+        break;
+    case MAPSEC_DARK_CAVE:
+        varToCheck = 2;
+        bitToCheck = 12;
+        break;
+    case MAPSEC_RUINS_OF_ALPH:
+        varToCheck = 2;
+        bitToCheck = 13;
+        break;
+    case MAPSEC_ILEX_FOREST:
+        varToCheck = 2;
+        bitToCheck = 14;
+        break;
+    case MAPSEC_NATIONAL_PARK:
+        varToCheck = 2;
+        bitToCheck = 15;
+        break;
+    case MAPSEC_MT_MORTAR:
+        varToCheck = 3;
+        bitToCheck = 0;
         break;
     default:
         return 0;
