@@ -902,6 +902,7 @@ static void UNUSED ApplyGlobalTintToPaletteSlot(u8 slot, u8 count)
 
 static const struct Tileset *const sHoennTilesets[] = //add to list if needed- define them in tilesets.h
 {
+    &gTileset_General,
     &gTileset_Slateport,
     &gTileset_Petalburg,
     &gTileset_Rustboro,
