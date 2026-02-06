@@ -11,6 +11,14 @@
 
 #define NUM_TILES_PER_METATILE 12
 
+#define NUM_TILES_IN_PRIMARY_HOENN 512
+#define NUM_TILES_TOTAL_HOENN 1024
+#define NUM_METATILES_IN_PRIMARY_HOENN 512
+#define NUM_METATILES_TOTAL_HOENN 1024
+#define NUM_PALS_IN_PRIMARY_HOENN 6
+
+#define NUM_TILES_PER_METATILE_HOENN 8
+
 // Map coordinates are offset by 7 when using the map
 // buffer because it needs to load sufficient border
 // metatiles to fill the player's view (the player has
@@ -52,6 +60,7 @@ void CopySecondaryTilesetToVram(struct MapLayout const *mapLayout);
 const struct MapHeader *const GetMapHeaderFromConnection(const struct MapConnection *connection);
 const struct MapConnection *GetMapConnectionAtPos(s16 x, s16 y);
 void MapGridSetMetatileImpassabilityAt(int x, int y, bool32 impassable);
+bool8 IsHoennTileset(struct Tileset const *tileset);
 
 // field_region_map.c
 void FieldInitRegionMap(MainCallback callback);

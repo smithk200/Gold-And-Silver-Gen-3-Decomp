@@ -230,16 +230,34 @@ static void DrawMetatileAt(const struct MapLayout *mapLayout, u16 offset, int x,
 
     if (metatileId > NUM_METATILES_TOTAL)
         metatileId = 0;
-    if (metatileId < NUM_METATILES_IN_PRIMARY)
+    if (IsHoennTileset(mapLayout->primaryTileset))
     {
-        metatiles = mapLayout->primaryTileset->metatiles;
+        if (metatileId < NUM_METATILES_IN_PRIMARY_HOENN)
+        {
+            metatiles = mapLayout->primaryTileset->metatiles;
+        }
+        else
+        {
+            metatiles = mapLayout->secondaryTileset->metatiles;
+            metatileId -= NUM_METATILES_IN_PRIMARY_HOENN;
+        }
     }
     else
     {
-        metatiles = mapLayout->secondaryTileset->metatiles;
-        metatileId -= NUM_METATILES_IN_PRIMARY;
+        if (metatileId < NUM_METATILES_IN_PRIMARY)
+        {
+            metatiles = mapLayout->primaryTileset->metatiles;
+        }
+        else
+        {
+            metatiles = mapLayout->secondaryTileset->metatiles;
+            metatileId -= NUM_METATILES_IN_PRIMARY;
+        }
     }
-    DrawMetatile(MapGridGetMetatileLayerTypeAt(x, y), metatiles + metatileId * NUM_TILES_PER_METATILE, offset);
+    if ((IsHoennTileset(mapLayout->primaryTileset)) || (IsHoennTileset(mapLayout->secondaryTileset)))
+        DrawMetatile(MapGridGetMetatileLayerTypeAt(x, y), metatiles + metatileId * NUM_TILES_PER_METATILE_HOENN, offset);
+    else
+        DrawMetatile(MapGridGetMetatileLayerTypeAt(x, y), metatiles + metatileId * NUM_TILES_PER_METATILE, offset);
 }
 
 static void DrawMetatile(s32 metatileLayerType, const u16 *tiles, u16 offset)

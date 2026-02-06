@@ -101,14 +101,17 @@ MahoganyTown_Gym_EventScript_CianwoodCheckOlivine::
 	
 MahoganyTown_Gym_EventScript_Pryce_Battle1::
 	trainerbattle_no_intro TRAINER_PRYCE_1, MahoganyTown_Gym_Text_PryceImpressed
+    setflag FLAG_RECEIVED_BADGE_5
 	goto MahoganyTown_Gym_EventScript_PryceVictory
 
 MahoganyTown_Gym_EventScript_Pryce_Battle2::
 	trainerbattle_no_intro TRAINER_PRYCE_1_2, MahoganyTown_Gym_Text_PryceImpressed
+    setflag FLAG_RECEIVED_BADGE_6
 	goto MahoganyTown_Gym_EventScript_PryceVictory
 
 MahoganyTown_Gym_EventScript_Pryce_Battle3::
 	trainerbattle_no_intro TRAINER_PRYCE_1_3, MahoganyTown_Gym_Text_PryceImpressed
+    setflag FLAG_RECEIVED_BADGE_7
 	goto MahoganyTown_Gym_EventScript_PryceVictory
 
 MahoganyTown_Gym_EventScript_Pryce_Defeated::

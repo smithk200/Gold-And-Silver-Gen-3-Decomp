@@ -718,9 +718,9 @@
 #define FLAG_RAN_FROM_BATTLE  0x29F // Unused Flag
 #define FLAG_NAMED_SILVER  0x2A0 // Unused Flag
 #define FLAG_RANDOMIZER    0x2A1 // Unused Flag
-#define FLAG_UNUSED_0x2A2  0x2A2 // Unused Flag
-#define FLAG_UNUSED_0x2A3  0x2A3 // Unused Flag
-#define FLAG_UNUSED_0x2A4  0x2A4 // Unused Flag
+#define FLAG_RECEIVED_BADGE_5  0x2A2 //general flags for "the three"
+#define FLAG_RECEIVED_BADGE_6  0x2A3 //general flags for "the three"
+#define FLAG_RECEIVED_BADGE_7  0x2A4 //general flags for "the three"
 #define FLAG_UNUSED_0x2A5  0x2A5 // Unused Flag
 #define FLAG_UNUSED_0x2A6  0x2A6 // Unused Flag
 #define FLAG_UNUSED_0x2A7  0x2A7 // Unused Flag

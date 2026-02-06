@@ -4,7 +4,14 @@
 #include "caps.h"
 #include "pokemon.h"
 
-
+/*/
+Since Chuck, Jasmine, and Pryce can be faced in any order, I set the level caps for the nuzlocke mode to
+be exactly the same. I recommend changing the flags to the ones listed below if you want to modify
+Chuck, Jasmine, and Pryce's teams to be higher.
+FLAG_RECEIVED_BADGE_5 is supposed to be set once you defeat the first gym leader of those three. FLAG_BADGE05_GET is set specifically after you defeat Chuck.
+FLAG_RECEIVED_BADGE_6 is supposed to be set once you defeat the second gym leader of those three. FLAG_BADGE06_GET is set specifically after you defeat Jasmine.
+FLAG_RECEIVED_BADGE_7 is supposed to be set once you defeat the third gym leader of those three. FLAG_BADGE07_GET is set specifically after you defeat Pryce.
+/*/
 u32 GetCurrentLevelCap(void)
 {
     static const u32 sLevelCapFlagMap[][2] =
@@ -13,9 +20,9 @@ u32 GetCurrentLevelCap(void)
         {FLAG_BADGE02_GET, 16},
         {FLAG_BADGE03_GET, 21},
         {FLAG_BADGE04_GET, 25},
-        {FLAG_BADGE05_GET, 38},
-        {FLAG_BADGE06_GET, 38},
-        {FLAG_BADGE07_GET, 38},
+        {FLAG_BADGE05_GET, 38},  //if you want different level caps replace with FLAG_RECEIVED_BADGE_5
+        {FLAG_BADGE06_GET, 38},  //if you want different level caps replace with FLAG_RECEIVED_BADGE_6
+        {FLAG_BADGE07_GET, 38},  //if you want different level caps replace with FLAG_RECEIVED_BADGE_7
         {FLAG_BADGE08_GET, 45},
         {FLAG_IS_CHAMPION, 56},
     };

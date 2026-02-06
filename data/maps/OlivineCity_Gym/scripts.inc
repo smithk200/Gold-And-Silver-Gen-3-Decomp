@@ -257,14 +257,17 @@ OlivineCity_Gym_EventScript_MahogCheckCianwood::
 	
 OlivineCity_Gym_EventScript_Jasmine_Battle1::
 	trainerbattle_no_intro TRAINER_JASMINE_1, OlivineCity_Gym_Text_JasmineBetterTrainer
+	setflag FLAG_RECEIVED_BADGE_5
 	goto OlivineCity_Gym_EventScript_JasmineVictory
 
 OlivineCity_Gym_EventScript_Jasmine_Battle2::
 	trainerbattle_no_intro TRAINER_JASMINE_1_2, OlivineCity_Gym_Text_JasmineBetterTrainer
+	setflag FLAG_RECEIVED_BADGE_6
 	goto OlivineCity_Gym_EventScript_JasmineVictory
 
 OlivineCity_Gym_EventScript_Jasmine_Battle3::
 	trainerbattle_no_intro TRAINER_JASMINE_1_3, OlivineCity_Gym_Text_JasmineBetterTrainer
+	setflag FLAG_RECEIVED_BADGE_7
 	goto OlivineCity_Gym_EventScript_JasmineVictory
 
 OlivineCity_Gym_EventScript_Jasmine_Defeated::

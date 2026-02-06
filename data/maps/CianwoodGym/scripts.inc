@@ -107,14 +107,17 @@ CianwoodGym_EventScript_MahogCheckOlivine::
 	
 CianwoodGym_EventScript_Chuck_Battle1::
 	trainerbattle_no_intro TRAINER_CHUCK_1, CianwoodGym_Text_ChuckIntro2
+	setflag FLAG_RECEIVED_BADGE_5
 	goto CianwoodGym_EventScript_ChuckVictory
 
 CianwoodGym_EventScript_Chuck_Battle2::
 	trainerbattle_no_intro TRAINER_CHUCK_1_2, CianwoodGym_Text_ChuckIntro2
+	setflag FLAG_RECEIVED_BADGE_6
 	goto CianwoodGym_EventScript_ChuckVictory
 
 CianwoodGym_EventScript_Chuck_Battle3::
 	trainerbattle_no_intro TRAINER_CHUCK_1_3, CianwoodGym_Text_ChuckIntro2
+	setflag FLAG_RECEIVED_BADGE_7
 	goto CianwoodGym_EventScript_ChuckVictory
 
 CianwoodGym_EventScript_Chuck_Defeated::
