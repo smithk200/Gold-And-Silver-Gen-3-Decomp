@@ -606,8 +606,8 @@
       "name": "PokemonCenter_1F_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_Kanto_Building",
-      "secondary_tileset": "gTileset_Kanto_PokemonCenter",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/PokemonCenter_1F/border.bin",
       "blockdata_filepath": "data/layouts/PokemonCenter_1F/map.bin"
     },
