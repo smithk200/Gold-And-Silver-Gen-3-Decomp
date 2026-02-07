@@ -325,9 +325,9 @@ static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7,
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
     {METATILE_General_Door,                                 DOOR_SOUND_NORMAL,  DOOR_SIZE_1x1, sDoorAnimTiles_General, sDoorAnimPalettes_General},
-    {METATILE_General_Door_PokeCenter,                      DOOR_SOUND_SLIDING, DOOR_SIZE_1x2, sDoorAnimTiles_PokeCenter, sDoorAnimPalettes_PokeCenter_Hoenn},
+    //{METATILE_General_Door_PokeCenter,                      DOOR_SOUND_SLIDING, DOOR_SIZE_1x2, sDoorAnimTiles_PokeCenter, sDoorAnimPalettes_PokeCenter_Hoenn},
     {METATILE_General_Door_Gym,                             DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_Gym, sDoorAnimPalettes_Gym},
-    {METATILE_General_Door_PokeMart,                        DOOR_SOUND_SLIDING, DOOR_SIZE_1x2, sDoorAnimTiles_PokeMart, sDoorAnimPalettes_PokeMart},
+    //{METATILE_General_Door_PokeMart,                        DOOR_SOUND_SLIDING, DOOR_SIZE_1x2, sDoorAnimTiles_PokeMart, sDoorAnimPalettes_PokeMart},
     {METATILE_Petalburg_Door_Littleroot,                    DOOR_SOUND_NORMAL,  DOOR_SIZE_1x1, sDoorAnimTiles_Littleroot, sDoorAnimPalettes_Littleroot},
     {METATILE_Petalburg_Door_BirchsLab,                     DOOR_SOUND_NORMAL,  DOOR_SIZE_1x1, sDoorAnimTiles_BirchsLab, sDoorAnimPalettes_BirchsLab},
     {METATILE_Rustboro_Door_Tan,                            DOOR_SOUND_NORMAL,  DOOR_SIZE_1x1, sDoorAnimTiles_RustboroTan, sDoorAnimPalettes_RustboroTan},
