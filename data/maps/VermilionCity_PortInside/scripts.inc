@@ -58,11 +58,12 @@ VermilionPort_EventScript_Sailor_After_Red::
 	multichoice 20, 0, MULTI_VERMILION_HARBOR_RED, FALSE
 	switch VAR_RESULT
 	case 0, VermilionPort_EventScript_ChoseOlivine
-	case 1, VermilionPort_EventScript_ChoseSouthernIsland
-	case 2, VermilionPort_EventScript_ChoseBirthIsland
-	case 3, VermilionPort_EventScript_ChoseFarawayIsland
-	case 4, VermilionPort_EventScript_ChoseBattleFrontier
-	case 5, VermilionPort_EventScript_Sailor_Refused
+	case 1, VermilionPort_EventScript_ChoseSlateport
+	case 2, VermilionPort_EventScript_ChoseSouthernIsland
+	case 3, VermilionPort_EventScript_ChoseBirthIsland
+	case 4, VermilionPort_EventScript_ChoseFarawayIsland
+	case 5, VermilionPort_EventScript_ChoseBattleFrontier
+	case 6, VermilionPort_EventScript_Sailor_Refused
 	case MULTI_B_PRESSED, VermilionPort_EventScript_Sailor_Refused
 	release
 	end
@@ -125,7 +126,15 @@ VermilionPort_EventScript_ChoseBattleFrontier::
 	call VermilionPort_EventScript_EnterShip
 	warpsilent MAP_BATTLE_FRONTIER_OUTSIDE_WEST, 20, 67
 	release
-	end	
+	end
+
+VermilionPort_EventScript_ChoseSlateport::
+	closemessage
+	delay 20
+	call VermilionPort_EventScript_EnterShip
+	warpsilent MAP_ROUTE109, 21, 22
+	release
+	end
 
 VermilionPort_EventScript_EnterShip::
 	msgbox VermilionPort_Text_SailorGetOnBoard, MSGBOX_DEFAULT

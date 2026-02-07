@@ -279,6 +279,114 @@ Route109_EventScript_MrBriney::
 	goto Route109_EventScript_DeliveredDevonGoods
 	end
 
+Route109_EventScript_MrBriney2::
+	message SlatePort_Text_WhereSail
+	multichoice 20, 0, MULTI_VERMILION_HARBOR_RED, FALSE
+	switch VAR_RESULT
+	case 0, SlatePort_EventScript_ChoseOlivine
+	case 1, SlatePort_EventScript_ChoseVermilion
+	case 2, SlatePort_EventScript_ChoseSouthernIsland
+	case 3, SlatePort_EventScript_ChoseBirthIsland
+	case 4, SlatePort_EventScript_ChoseFarawayIsland
+	case 5, SlatePort_EventScript_ChoseBattleFrontier
+	case 6, VermilionPort_EventScript_Sailor_Refused
+	case MULTI_B_PRESSED, VermilionPort_EventScript_Sailor_Refused
+	release
+	end
+
+SlatePort_EventScript_ChoseBattleFrontier::
+	closemessage
+	delay 20
+	call SlatePort_EventScript_EnterShip
+	warpsilent MAP_BATTLE_FRONTIER_OUTSIDE_WEST, 20, 67
+	release
+	end	
+
+SlatePort_EventScript_ChoseVermilion::
+	closemessage
+	delay 20
+	checkitem ITEM_SS_TICKET
+	bufferitemname STR_VAR_1, ITEM_SS_TICKET
+	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
+	call SlatePort_EventScript_EnterShip
+	warpsilent MAP_VERMILION_CITY_PORT_INSIDE, 8, 9
+	release
+	end
+
+SlatePort_EventScript_ChoseSouthernIsland::
+	closemessage
+	delay 20
+	checkitem ITEM_EON_TICKET
+	bufferitemname STR_VAR_1, ITEM_EON_TICKET
+	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
+	call SlatePort_EventScript_EnterShip
+	warpsilent MAP_SOUTHERN_ISLAND_EXTERIOR, 13, 22
+	release
+	end
+
+SlatePort_EventScript_ChoseBirthIsland::
+	closemessage
+	delay 20
+	checkitem ITEM_AURORA_TICKET
+	bufferitemname STR_VAR_1, ITEM_AURORA_TICKET
+	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
+	call SlatePort_EventScript_EnterShip
+	warpsilent MAP_BIRTH_ISLAND_EXTERIOR, 13, 23
+	release
+	end
+
+SlatePort_EventScript_ChoseFarawayIsland::
+	closemessage
+	delay 20
+	checkitem ITEM_OLD_SEA_MAP
+	bufferitemname STR_VAR_1, ITEM_OLD_SEA_MAP
+	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
+	call SlatePort_EventScript_EnterShip
+	warpsilent MAP_FARAWAY_ISLAND_ENTRANCE, 13, 38
+	release
+	end	
+
+SlatePort_EventScript_EnterShip::
+	msgbox OlivinePort_Text_SailorGetOnBoard, MSGBOX_DEFAULT
+	closemessage
+	delay 20
+	applymovement LOCALID_ROUTE109_BRINEY, SlatePort_Movement_SailorEnterBoat
+	waitmovement 0
+	playse SE_EXIT
+	applymovement OBJ_EVENT_ID_PLAYER, SlatePort_Movement_PlayerEnterBoat
+	waitmovement 0
+	special SpawnCameraObject
+	playse SE_EXIT
+	removeobject OBJ_EVENT_ID_PLAYER
+	delay 60
+	applymovement LOCALID_ROUTE109_BRINEY, OlivinePort_Movement_BoatLeave
+	applymovement LOCALID_ROUTE109_BOAT, OlivinePort_Movement_BoatLeave
+	waitmovement LOCALID_ROUTE109_BOAT
+	setrespawn HEAL_LOCATION_SLATEPORT_CITY
+	return
+
+SlatePort_EventScript_ChoseOlivine::
+	closemessage
+	delay 20
+	checkitem ITEM_SS_TICKET
+	bufferitemname STR_VAR_1, ITEM_SS_TICKET
+	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
+	call SlatePort_EventScript_EnterShip
+	warpsilent MAP_OLIVINE_CITY_PORT_INSIDE, 8, 16
+	release
+	end
+
+SlatePort_Movement_SailorEnterBoat:
+	walk_down
+	walk_down
+	step_end
+
+SlatePort_Movement_PlayerEnterBoat:
+	walk_down
+	walk_down
+	walk_in_place_down
+	step_end
+
 Route109_EventScript_HaveNotDeliveredDevonGood::
 	message Route109_Text_BrineySailToDewfordQuestion
 	msgbox Route109_Text_BrineySailToDewfordQuestion, MSGBOX_YESNO
@@ -560,3 +668,7 @@ Route109_Text_TrainerTipsSign:
 	.string "always have identical stats.\p"
 	.string "POKéMON raised by TRAINERS are said\n"
 	.string "to grow stronger than wild POKéMON.$"
+
+SlatePort_Text_WhereSail::
+	.string "Where do you want to\n"
+	.string "sail to, matey?$"

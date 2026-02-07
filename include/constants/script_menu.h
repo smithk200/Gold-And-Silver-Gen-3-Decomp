@@ -140,6 +140,7 @@
 #define MULTI_GAME_CORNER_DOLLS2           129
 #define MULTI_OLIVINE_HARBOR_RED           130
 #define MULTI_VERMILION_HARBOR_RED           131
+#define MULTI_SLATEPORT_HARBOR_RED           132
 
 // Lilycove SS Tidal Multichoice Selections
 #define SSTIDAL_SELECTION_SLATEPORT        0
