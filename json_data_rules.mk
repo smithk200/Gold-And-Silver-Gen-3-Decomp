@@ -20,3 +20,15 @@ $(C_BUILDDIR)/heal_location.o: c_dep += $(DATA_SRC_SUBDIR)/heal_locations.h
 AUTO_GEN_TARGETS += include/constants/heal_locations.h
 include/constants/heal_locations.h: $(DATA_SRC_SUBDIR)/heal_locations.json $(DATA_SRC_SUBDIR)/heal_locations.constants.json.txt
 	$(JSONPROC) $^ $@
+
+AUTO_GEN_TARGETS += include/constants/regions.h
+include/constants/regions.h: $(DATA_SRC_SUBDIR)/region_map/regions.json $(DATA_SRC_SUBDIR)/region_map/regions.constants.json.txt
+	$(JSONPROC) $^ $@
+
+AUTO_GEN_TARGETS += include/constants/region_strings.h
+include/constants/region_strings.h: $(DATA_SRC_SUBDIR)/region_map/regions.json $(DATA_SRC_SUBDIR)/region_map/regions.strings.header.json.txt
+	$(JSONPROC) $^ $@
+
+AUTO_GEN_TARGETS += $(DATA_SRC_SUBDIR)/region_map/region_strings.c
+$(DATA_SRC_SUBDIR)/region_map/region_strings.c: $(DATA_SRC_SUBDIR)/region_map/regions.json $(DATA_SRC_SUBDIR)/region_map/regions.strings.src.json.txt
+	$(JSONPROC) $^ $@

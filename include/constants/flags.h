@@ -1518,24 +1518,24 @@
 #define FLAG_BADGE16_GET                           (SYSTEM_FLAGS + 0x8C)
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x8D) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x8E)
-#define FLAG_SYS_PC_BILL                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
-#define FLAG_SYS_LAKE_OF_RAGE_TIDE                  (SYSTEM_FLAGS + 0x90) // Unused Flag
-#define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag
-#define FLAG_UNUSED_0x8F2                           (SYSTEM_FLAGS + 0x92) // Unused Flag
-#define FLAG_UNUSED_0x8F3                           (SYSTEM_FLAGS + 0x93) // Unused Flag
-#define FLAG_UNUSED_0x8F4                           (SYSTEM_FLAGS + 0x94) // Unused Flag
-#define FLAG_UNUSED_0x8F5                           (SYSTEM_FLAGS + 0x95) // Unused Flag
-#define FLAG_UNUSED_0x8F6                           (SYSTEM_FLAGS + 0x96) // Unused Flag
-#define FLAG_UNUSED_0x8F7                           (SYSTEM_FLAGS + 0x97) // Unused Flag
-#define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag
-#define FLAG_UNUSED_0x8F9                           (SYSTEM_FLAGS + 0x99) // Unused Flag
-#define FLAG_UNUSED_0x8FA                           (SYSTEM_FLAGS + 0x9A) // Unused Flag
-#define FLAG_UNUSED_0x8FB                           (SYSTEM_FLAGS + 0x9B) // Unused Flag
-#define FLAG_UNUSED_0x8FC                           (SYSTEM_FLAGS + 0x9C) // Unused Flag
-#define FLAG_UNUSED_0x8FD                           (SYSTEM_FLAGS + 0x9D) // Unused Flag
-#define FLAG_UNUSED_0x8FE                           (SYSTEM_FLAGS + 0x9E) // Unused Flag
-#define FLAG_UNUSED_0x8FF                           (SYSTEM_FLAGS + 0x9F) // Unused Flag
-#define FLAG_UNUSED_0x900                           (SYSTEM_FLAGS + 0xA0) // Unused Flag
+#define FLAG_SYS_PC_BILL                           (SYSTEM_FLAGS + 0x8F) 
+#define FLAG_SYS_LAKE_OF_RAGE_TIDE                  (SYSTEM_FLAGS + 0x90) 
+#define FLAG_VISITED_LITTLEROOT_TOWN                           (SYSTEM_FLAGS + 0x91) 
+#define FLAG_VISITED_OLDALE_TOWN                           (SYSTEM_FLAGS + 0x92) 
+#define FLAG_VISITED_DEWFORD_TOWN                           (SYSTEM_FLAGS + 0x93) 
+#define FLAG_VISITED_LAVARIDGE_TOWN                           (SYSTEM_FLAGS + 0x94) 
+#define FLAG_VISITED_FALLARBOR_TOWN                           (SYSTEM_FLAGS + 0x95) 
+#define FLAG_VISITED_VERDANTURF_TOWN                           (SYSTEM_FLAGS + 0x96) 
+#define FLAG_VISITED_PACIFIDLOG_TOWN                           (SYSTEM_FLAGS + 0x97) 
+#define FLAG_VISITED_PETALBURG_CITY                           (SYSTEM_FLAGS + 0x98) 
+#define FLAG_VISITED_SLATEPORT_CITY                           (SYSTEM_FLAGS + 0x99) 
+#define FLAG_VISITED_MAUVILLE_CITY                           (SYSTEM_FLAGS + 0x9A) 
+#define FLAG_VISITED_RUSTBORO_CITY                           (SYSTEM_FLAGS + 0x9B) 
+#define FLAG_VISITED_FORTREE_CITY                           (SYSTEM_FLAGS + 0x9C) 
+#define FLAG_VISITED_LILYCOVE_CITY                           (SYSTEM_FLAGS + 0x9D) 
+#define FLAG_VISITED_MOSSDEEP_CITY                           (SYSTEM_FLAGS + 0x9E) 
+#define FLAG_VISITED_SOOTOPOLIS_CITY                           (SYSTEM_FLAGS + 0x9F) 
+#define FLAG_VISITED_EVER_GRANDE_CITY                           (SYSTEM_FLAGS + 0xA0) 
 #define FLAG_UNUSED_0x901                           (SYSTEM_FLAGS + 0xA1) // Unused Flag
 #define FLAG_UNUSED_0x902                           (SYSTEM_FLAGS + 0xA2) // Unused Flag
 #define FLAG_UNUSED_0x903                           (SYSTEM_FLAGS + 0xA3) // Unused Flag

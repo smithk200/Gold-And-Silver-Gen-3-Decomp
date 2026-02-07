@@ -2555,4 +2555,17 @@ extern const u8 gText_HnS[];
 extern const u8 gText_ExpandedPlaceholder_Silver[];
 extern const u8 gText_Gen4Plus[];
 extern const u8 gText_Gen3andLower[];
+
+extern const u8 gText_Kanto[];
+extern const u8 gText_Johto[];
+extern const u8 gText_Hoenn[];
+extern const u8 gText_Sinnoh[];
+extern const u8 gText_Unova[];
+extern const u8 gText_Kalos[];
+extern const u8 gText_Alola[];
+extern const u8 gText_Galar[];
+extern const u8 gText_Hisui[];
+extern const u8 gText_Paldea[];
+extern const u8 gText_Sevii[];
+extern const u8 gText_RegionDefault[];
 #endif // GUARD_STRINGS_H

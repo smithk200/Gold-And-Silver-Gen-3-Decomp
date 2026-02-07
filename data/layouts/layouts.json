@@ -626,8 +626,8 @@
       "name": "Mart_Layout",
       "width": 11,
       "height": 9,
-      "primary_tileset": "gTileset_Kanto_Building",
-      "secondary_tileset": "gTileset_KantoMart",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/Mart/border.bin",
       "blockdata_filepath": "data/layouts/Mart/map.bin"
     },
@@ -5247,7 +5247,7 @@
       "width": 72,
       "height": 44,
       "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Lavaridge2",
       "border_filepath": "data/layouts/CinnabarIsland/border.bin",
       "blockdata_filepath": "data/layouts/CinnabarIsland/map.bin"
     },
@@ -8760,6 +8760,26 @@
       "secondary_tileset": "gTileset_WhirlIslands",
       "border_filepath": "data/layouts/WhirlIslands_B1F_Inner/border.bin",
       "blockdata_filepath": "data/layouts/WhirlIslands_B1F_Inner/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKEMON_CENTER_1F_HOENN",
+      "name": "PokemonCenter_Hoenn_1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PokemonCenter_Hoenn_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonCenter_Hoenn_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKEMON_CENTER_2F_HOENN",
+      "name": "PokemonCenter_Hoenn_2F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PokemonCenter_Hoenn_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonCenter_Hoenn_2F/map.bin"
     }
   ]
 }

@@ -126,7 +126,7 @@
 // gTileset_Building
 #define METATILE_Building_Frontier_TV_Off  0x002
 #define METATILE_Building_Frontier_TV_On   0x003
-#define METATILE_Building_PC_Off           0x062
+#define METATILE_Building_PC_Off           0x004
 #define METATILE_Building_PC_On            0x063
 #define METATILE_Building_TV_Off           0x035
 #define METATILE_Building_TV_On            0x061
@@ -477,7 +477,7 @@
 #define METATILE_PokemonCenter_Escalator1F_Tile0_Frame0  0x280
 #define METATILE_PokemonCenter_Escalator1F_Tile0_Frame1  0x282
 #define METATILE_PokemonCenter_Escalator1F_Tile0_Frame2  0x284
-#define METATILE_PokemonCenter_Escalator1F_Tile1_Frame0  0x011
+#define METATILE_PokemonCenter_Escalator1F_Tile1_Frame0  0x281
 #define METATILE_PokemonCenter_Escalator1F_Tile1_Frame1  0x283
 #define METATILE_PokemonCenter_Escalator1F_Tile1_Frame2  0x285
 #define METATILE_PokemonCenter_Escalator1F_Tile2_Frame0  0x288
@@ -490,11 +490,11 @@
 #define METATILE_PokemonCenter_Escalator2F_Tile0_Frame1  0x2A2
 #define METATILE_PokemonCenter_Escalator2F_Tile0_Frame2  0x2A4
 #define METATILE_PokemonCenter_Escalator2F_Tile1_Frame0  0x2A1
-#define METATILE_PokemonCenter_Escalator2F_Tile1_Frame1  0x000
+#define METATILE_PokemonCenter_Escalator2F_Tile1_Frame1  0x2A3
 #define METATILE_PokemonCenter_Escalator2F_Tile1_Frame2  0x2A5
 #define METATILE_PokemonCenter_Escalator2F_Tile2_Frame0  0x2A8
 #define METATILE_PokemonCenter_Escalator2F_Tile2_Frame1  0x2AA
-#define METATILE_PokemonCenter_Escalator2F_Tile2_Frame2  0x011
+#define METATILE_PokemonCenter_Escalator2F_Tile2_Frame2  0x2AC
 #define METATILE_PokemonCenter_Floor_Plain_Alt           0x2E4
 #define METATILE_PokemonCenter_Floor_ShadowTop           0x21E
 #define METATILE_PokemonCenter_Floor_ShadowTop_Alt       0x2DC

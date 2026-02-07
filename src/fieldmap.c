@@ -10,6 +10,7 @@
 #include "overworld.h"
 #include "palette.h"
 #include "pokenav.h"
+#include "regions.h"
 #include "script.h"
 #include "secret_base.h"
 #include "tilesets.h"
@@ -971,6 +972,7 @@ bool8 IsHoennTileset(struct Tileset const *tileset)
     }
     return FALSE;
 }
+
 
 static void LoadTilesetPalette(struct Tileset const *tileset, u16 destOffset, u16 size, bool8 skipFaded)
 {

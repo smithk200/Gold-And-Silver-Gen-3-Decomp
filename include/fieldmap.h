@@ -61,6 +61,7 @@ const struct MapHeader *const GetMapHeaderFromConnection(const struct MapConnect
 const struct MapConnection *GetMapConnectionAtPos(s16 x, s16 y);
 void MapGridSetMetatileImpassabilityAt(int x, int y, bool32 impassable);
 bool8 IsHoennTileset(struct Tileset const *tileset);
+bool8 IsSpecialTileset(struct Tileset const *tileset);
 
 // field_region_map.c
 void FieldInitRegionMap(MainCallback callback);

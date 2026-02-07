@@ -5,6 +5,7 @@
 #include "union_room_chat.h"
 #include "constants/flags.h"
 #include "event_data.h"
+#include "regions.h"
 
 EWRAM_DATA u8 gStringVar1[0x100] = {0};
 EWRAM_DATA u8 gStringVar2[0x100] = {0};
@@ -485,6 +486,10 @@ static const u8 *ExpandPlaceholder_RivalName(void)
     return gSaveBlock2Ptr->rivalName;
 }
 
+static const u8 *ExpandPlaceholder_RegionName(void)
+{
+    return GetCurrentRegionName();
+}
 
 static const u8 *ExpandPlaceholder_Version(void)
 {
@@ -534,6 +539,7 @@ const u8 *GetExpandedPlaceholder(u32 id)
         [PLACEHOLDER_ID_STRING_VAR_3] = ExpandPlaceholder_StringVar3,
         [PLACEHOLDER_ID_KUN]          = ExpandPlaceholder_KunChan,
         [PLACEHOLDER_ID_RIVAL]        = ExpandPlaceholder_RivalName,
+        [PLACEHOLDER_ID_REGION]       = ExpandPlaceholder_RegionName,
         [PLACEHOLDER_ID_VERSION]      = ExpandPlaceholder_Version,
         [PLACEHOLDER_ID_AQUA]         = ExpandPlaceholder_Aqua,
         [PLACEHOLDER_ID_MAGMA]        = ExpandPlaceholder_Magma,

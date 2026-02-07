@@ -336,7 +336,7 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_Petalburg_Door_Oldale,                        DOOR_SOUND_NORMAL,  DOOR_SIZE_1x1, sDoorAnimTiles_Oldale, sDoorAnimPalettes_Oldale},
     {METATILE_Mauville_Door,                                DOOR_SOUND_NORMAL,  DOOR_SIZE_1x1, sDoorAnimTiles_Mauville, sDoorAnimPalettes_Mauville},
     {METATILE_Mauville_Door_Verdanturf,                     DOOR_SOUND_NORMAL,  DOOR_SIZE_1x1, sDoorAnimTiles_Verdanturf, sDoorAnimPalettes_Verdanturf},
-    {METATILE_Slateport_Door,                               DOOR_SOUND_NORMAL,  DOOR_SIZE_1x1, sDoorAnimTiles_Slateport, sDoorAnimPalettes_Slateport},
+    {METATILE_Slateport_Door,                               DOOR_SOUND_NORMAL,  DOOR_SIZE_1x2, sDoorAnimTiles_Slateport, sDoorAnimPalettes_Slateport},
     {METATILE_Dewford_Door,                                 DOOR_SOUND_NORMAL,  DOOR_SIZE_1x1, sDoorAnimTiles_Dewford, sDoorAnimPalettes_Dewford},
     {METATILE_General_Door_Contest,                         DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_Contest, sDoorAnimPalettes_Contest},
     {METATILE_Lilycove_Door,                                DOOR_SOUND_NORMAL,  DOOR_SIZE_1x1, sDoorAnimTiles_Lilycove, sDoorAnimPalettes_Lilycove},

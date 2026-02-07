@@ -32,7 +32,6 @@ extern const struct Tileset gTileset_Pacifidlog;
 extern const struct Tileset gTileset_Sootopolis;
 extern const struct Tileset gTileset_BattleFrontierOutsideWest;
 extern const struct Tileset gTileset_BattleFrontierOutsideEast;
-extern const struct Tileset gTileset_Building;
 extern const struct Tileset gTileset_Shop;
 extern const struct Tileset gTileset_PokemonCenter;
 extern const struct Tileset gTileset_Cave;
