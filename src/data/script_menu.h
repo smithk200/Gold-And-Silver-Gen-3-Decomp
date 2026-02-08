@@ -1079,6 +1079,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_5FLOORS]                    = MULTICHOICE(MultichoiceList_5Floors),
     [MULTI_OLIVINE_HARBOR_RED]              = MULTICHOICE(MultichoiceList_OlivineHarborRed),
     [MULTI_VERMILION_HARBOR_RED]              = MULTICHOICE(MultichoiceList_VermilionHarborRed),
+    [MULTI_SLATEPORT_HARBOR_RED]              = MULTICHOICE(MultichoiceList_SlateportHarborRed),
 };
 
 const u8 *const gStdStrings[] =
