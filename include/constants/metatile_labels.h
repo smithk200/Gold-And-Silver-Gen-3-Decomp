@@ -126,8 +126,10 @@
 // gTileset_Building
 #define METATILE_Building_Frontier_TV_Off  0x002
 #define METATILE_Building_Frontier_TV_On   0x003
-#define METATILE_Building_PC_Off           0x004
+#define METATILE_Building_PC_Off           0x062
+#define METATILE_Building_PC_Off_Hoenn     0x004
 #define METATILE_Building_PC_On            0x063
+#define METATILE_Building_PC_On_Hoenn      0x005
 #define METATILE_Building_TV_Off           0x035
 #define METATILE_Building_TV_On            0x061
 

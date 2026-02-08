@@ -7,6 +7,15 @@ EventScript_PC::
 	goto EventScript_PCMainMenu
 	end
 
+EventScript_PCHoenn::
+	lockall
+	setvar VAR_0x8004, PC_LOCATION_HOENN
+	special DoPCTurnOnEffect
+	playse SE_PC_ON
+	msgbox Text_BootUpPC, MSGBOX_DEFAULT
+	goto EventScript_PCMainMenu
+	end
+
 EventScript_PCMainMenu::
 	message gText_WhichPCShouldBeAccessed
 	waitmessage
