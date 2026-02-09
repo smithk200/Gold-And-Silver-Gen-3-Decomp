@@ -49,6 +49,7 @@ bool8 MetatileBehavior_IsSlideEast(u8 metatileBehavior);
 bool8 MetatileBehavior_IsCounter(u8 metatileBehavior);
 bool8 MetatileBehavior_IsPlayerFacingTVScreen(u8 metatileBehavior, u8 playerDir);
 bool8 MetatileBehavior_IsPC(u8 metatileBehavior);
+bool8 MetatileBehavior_IsPCHoenn(u8 metatileBehavior);
 bool8 MetatileBehavior_IsCableBoxResults1(u8 metatileBehavior);
 bool8 MetatileBehavior_IsOpenSecretBaseDoor(u8 metatileBehavior);
 bool8 MetatileBehavior_IsSecretBaseCave(u8 metatileBehavior);
