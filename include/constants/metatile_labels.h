@@ -239,8 +239,6 @@
 #define METATILE_General_Door                          0x021
 #define METATILE_General_Door_Contest                  0x1DB
 #define METATILE_General_Door_Gym                      0x1CD
-#define METATILE_General_Door_PokeCenter               0x061
-#define METATILE_General_Door_PokeMart                 0x041
 #define METATILE_General_Frontier_East_MartDoor        0x041
 #define METATILE_General_Frontier_East_PokecenterDoor  0x061
 #define METATILE_General_Grass                         0x001
@@ -360,7 +358,7 @@
 // gTileset_Mauville
 #define METATILE_Mauville_DeepSand_BottomMid  0x259
 #define METATILE_Mauville_DeepSand_Center     0x251
-#define METATILE_Mauville_Door                0x000
+#define METATILE_Mauville_Door                0x2AC
 #define METATILE_Mauville_Door_BattleTent     0x3D4
 #define METATILE_Mauville_Door_CyclingRoad    0x289
 #define METATILE_Mauville_Door_Verdanturf     0x3A1

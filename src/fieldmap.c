@@ -932,7 +932,7 @@ static const struct Tileset *const sHoennTilesets[] = //add to list if needed- d
     &gTileset_PrettyPetalFlowerShop,
     &gTileset_PokemonDayCare,
     &gTileset_Facility,
-    &gTileset_BikeShop,
+    &gTileset_BikeShop_2,
     &gTileset_RusturfTunnel,
     &gTileset_SecretBaseBrownCave,
     &gTileset_SecretBaseTree,
@@ -949,6 +949,7 @@ static const struct Tileset *const sHoennTilesets[] = //add to list if needed- d
     &gTileset_Underwater,
     &gTileset_PetalburgGym,
     //&gTileset_SootopolisGym,
+    &gTileset_SootopolisGym_2,
     &gTileset_GenericBuilding,
     &gTileset_MauvilleGameCorner,
     &gTileset_RustboroGym,
@@ -961,6 +962,9 @@ static const struct Tileset *const sHoennTilesets[] = //add to list if needed- d
     &gTileset_InsideShip,
     &gTileset_SecretBase,
     &gTileset_EliteFour,
+    &gTileset_BattleFrontier_2,
+    &gTileset_PokemonDayCare_2,
+    &gTileset_BattleTent,
 };
 
 bool8 IsHoennTileset(struct Tileset const *tileset)

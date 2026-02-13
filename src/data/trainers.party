@@ -8298,6 +8298,27 @@ Butterfree
 Level: 62
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_TIANA ===
+Name: Tiana
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Obstagoon
+Level: 96
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Breloom
+Level: 96
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pelipper
+Level: 96
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_GREGG ===
 Name: Gregg
 Class: Super Nerd
@@ -10950,3 +10971,434 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cubone
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_SILVER_CHAMPION_CHIKORITA ===
+Name: {RIVAL}
+Class: Rival
+Pic: Silver
+Gender: Male
+Music: Silver
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Basic Trainer
+Mugshot: Pink
+
+Ursaluna Bloodmoon @ Chesto Berry
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Tears
+- Moonblast
+- Ancient Power
+- Rest
+
+Crobat @ Leftovers
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic
+- Double Team
+- Confuse Ray
+- Fly
+
+Milotic @ Flame Orb
+Ability: Marvel Scale
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Ice Beam
+- Recover
+- Toxic
+
+Houndoom @ Charcoal
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fire Blast
+- Iron Tail
+- Crunch
+- Sunny Day
+
+Meganium @ Miracle Seed
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Reflect
+- Giga Drain
+- Solar Beam
+- Body Slam
+
+Tyranitar @ Quick Claw
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Earthquake
+- Rock Slide
+- Fire Blast
+
+
+=== TRAINER_SILVER_CHAMPION_TOTODILE ===
+Name: {RIVAL}
+Class: Rival
+Pic: Silver
+Gender: Male
+Music: Silver
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Basic Trainer
+Mugshot: Pink
+
+Ursaluna Bloodmoon @ Chesto Berry
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Tears
+- Moonblast
+- Ancient Power
+- Rest
+
+Crobat @ Leftovers
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic
+- Double Team
+- Confuse Ray
+- Fly
+
+Victreebel @ Scope Lens
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sludge Bomb
+- Razor Leaf
+- Sleep Powder
+- Growth
+
+Camerupt @ Charcoal
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fire Blast
+- Iron Tail
+- Earthquake
+- Rock Slide
+
+Feraligatr @ Scope Lens
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ice Beam
+- Surf
+- Slash
+- Earthquake
+
+Tyranitar @ Quick Claw
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Earthquake
+- Rock Slide
+- Fire Blast
+
+=== TRAINER_SILVER_CHAMPION_CYNDAQUIL ===
+Name: {RIVAL}
+Class: Rival
+Pic: Silver
+Gender: Male
+Music: Silver
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Basic Trainer
+Mugshot: Pink
+
+Ursaluna Bloodmoon @ Chesto Berry
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Tears
+- Moonblast
+- Ancient Power
+- Rest
+
+Crobat @ Leftovers
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic
+- Double Team
+- Confuse Ray
+- Fly
+
+Octillery @ Never Melt Ice
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Ice Beam
+- Psybeam
+- Hyper Beam
+
+Ludicolo @ Scope Lens
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hydro Pump
+- Ice Beam
+- Giga Drain
+- Leech Seed
+
+Typhlosion @ Charcoal
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fire Blast
+- Earthquake
+- Iron Tail
+- Thunder Punch
+
+Tyranitar @ Quick Claw
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Earthquake
+- Rock Slide
+- Fire Blast
+
+=== TRAINER_SIDNEY_ELITE_FOUR ===
+Name: Sidney
+Class: Elite Four
+Pic: Elite Four Sidney
+Gender: Male
+Music: Elite Four
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Basic Trainer / Force Setup First Turn
+Mugshot: Purple
+
+Sharpedo @ Mystic Water
+Ability: Rough Skin
+Level: 96
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Surf
+- Ice Beam
+- Earthquake
+
+Shiftry
+Level: 96
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Extrasensory
+- Leaf Blade
+- Torment
+- Swagger
+
+Cacturne
+Level: 96
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Seed
+- Needle Arm
+- Sucker Punch
+- Cotton Spore
+
+Crawdaunt
+Level: 96
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Swords Dance
+- Crabhammer
+- Crunch
+- Brick Break
+
+Houndoom @ Charcoal
+Ability: Flash Fire
+Level: 96
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower
+- Crunch
+- Will-O-Wisp
+- Roar
+
+Absol @ Sitrus Berry
+Level: 96
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Swords Dance
+- Night Slash
+- Rock Slide
+- Aerial Ace
+
+=== TRAINER_PHOEBE ===
+Name: Phoebe
+Class: Elite Four
+Pic: Elite Four Phoebe
+Gender: Female
+Music: Elite Four
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Basic Trainer
+Mugshot: Green
+
+Sableye
+Level: 97
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Careful
+- Recover
+- Will-O-Wisp
+- Taunt
+- Knock Off
+
+Banette
+Level: 97
+Ability: Insomnia
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Shadow Claw
+- Knock Off
+- Destiny Bond
+- Will-O-Wisp
+
+Dusknoir
+Level: 97
+Ability: Pressure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Careful
+- Shadow Punch
+- Earthquake
+- Will-O-Wisp
+- Pain Split
+
+Gengar @ Life Orb
+Level: 97
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Shadow Ball
+- Sludge Bomb
+- Focus Blast
+- Thunderbolt
+
+Mismagius @ Colbur Berry
+Level: 97
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Nasty Plot
+- Shadow Ball
+- Thunderbolt
+- Taunt
+
+Spiritomb @ Dread Plate
+Level: 97
+Ability: Pressure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Careful
+- Will-O-Wisp
+- Dark Pulse
+- Rest
+- Sleep Talk
+
+=== TRAINER_GLACIA ===
+Name: Glacia
+Class: Elite Four
+Pic: Elite Four Glacia
+Gender: Female
+Music: Elite Four
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Basic Trainer
+Mugshot: Pink
+
+Dewgong
+Level: 98
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Signal Beam
+- Ice Beam
+- Hail
+- Surf
+
+Glalie
+Level: 98
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Light Screen
+- Crunch
+- Explosion
+- Ice Beam
+
+Weavile @ Muscle Band
+Level: 98
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- X Scissor
+- Night Slash
+- Swords Dance
+- Ice Punch
+
+Mamoswine
+Level: 98
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earthquake
+- Ice Fang
+- Stone Edge
+- Ice Shard
+
+Froslass @ Focus Sash
+Level: 98
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Ball
+- Destiny Bond
+- Confuse Ray
+- Ice Beam
+
+Walrein @ Leftovers
+Level: 98
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Body Slam
+- Ice Beam
+- Toxic
+
+=== TRAINER_DRAKE ===
+Name: Drake
+Class: Elite Four
+Pic: Elite Four Drake
+Gender: Male
+Music: Elite Four
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Basic Trainer
+Mugshot: Blue
+
+Tyranitar
+Level: 99
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Slide
+- Earthquake
+- Crunch
+- Double Edge
+
+Altaria
+Level: 99
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Double Edge
+- Dragon Claw
+- Dragon Dance
+- Aerial Ace
+
+Aerodactyl @ Leftovers
+Level: 99
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Rock Head
+- Rock Slide
+- Earthquake
+- Double-Edge
+- Aerial Ace
+
+Kingdra @ Wise Glasses
+Level: 99
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Dance
+- Surf
+- Ice Beam
+- Body Slam
+
+Flygon @ Sitrus Berry
+Level: 99
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower
+- Crunch
+- Dragon Claw
+- Earthquake
+
+Salamence @ Yache Berry
+Level: 99
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Claw
+- Earthquake
+- Flamethrower
+- Rock Slide

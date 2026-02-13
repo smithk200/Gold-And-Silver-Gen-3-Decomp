@@ -30,8 +30,6 @@ RusturfTunnel_EventScript_Wanda::
 RusturfTunnel_EventScript_WandasBoyfriend::
 	lock
 	faceplayer
-	goto_if_set FLAG_TEMP_1, RusturfTunnel_EventScript_AlreadySpokenTo
-	setflag FLAG_TEMP_1
 	msgbox RusturfTunnel_Text_WhyCantTheyKeepDigging, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
@@ -468,16 +466,15 @@ RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
 	.string "PEEKO: Pihyoh!$"
 
 RusturfTunnel_Text_WhyCantTheyKeepDigging:
-	.string "… …\p"
-	.string "Why can't they keep digging?\n"
-	.string "Is the bedrock too hard?\p"
-	.string "My beloved awaits me in VERDANTURF\n"
-	.string "TOWN just beyond here…\p"
-	.string "If RUSTBORO and VERDANTURF were\n"
-	.string "joined by this tunnel, I could visit\l"
-	.string "her every day…\p"
-	.string "But this…\n"
-	.string "What am I to do?$"
+	.string "I dug this tunnel with my\n"
+	.string "bare hands!\p"
+	.string "HNGRGH!\n"
+	.string "That's right!\p"
+	.string "If you defeat the Gym in\n"
+	.string "Fallarbor Town…\p"
+	.string "You'll prove to me you're strong\n"
+	.string "enough to pass through this tunnel!\p"
+	.string "Come back when you're ready, OK?$"
 
 RusturfTunnel_Text_ToGetToVerdanturf:
 	.string "To get from RUSTBORO to VERDANTURF,\n"
@@ -503,12 +500,9 @@ RusturfTunnel_Text_WandaReunion:
 	.string "Please, take some rest at my home.$"
 
 RusturfTunnel_Text_BoyfriendOnOtherSideOfRock:
-	.string "On the other side of this rock…\n"
-	.string "My boyfriend is there.\p"
-	.string "He… He's not just digging the tunnel\n"
-	.string "to come see me.\p"
-	.string "He works his hands raw and rough\n"
-	.string "for the benefit of everyone.$"
+	.string "My boyfriend dug this tunnel\n"
+	.string "with his bare hands!\p"
+	.string "He's a strong and hardworking man!$"
 
 RusturfTunnel_Text_MikeIntro:
 	.string "What do you call a wild man up in the\n"

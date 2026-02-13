@@ -897,7 +897,7 @@
       "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BikeShop",
+      "secondary_tileset": "gTileset_BikeShop_2",
       "border_filepath": "data/layouts/MauvilleCity_BikeShop/border.bin",
       "blockdata_filepath": "data/layouts/MauvilleCity_BikeShop/map.bin"
     },
@@ -1087,7 +1087,7 @@
       "width": 17,
       "height": 26,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SootopolisGym",
+      "secondary_tileset": "gTileset_SootopolisGym_2",
       "border_filepath": "data/layouts/SootopolisCity_Gym_1F/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_Gym_1F/map.bin"
     },
@@ -1097,7 +1097,7 @@
       "width": 17,
       "height": 26,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SootopolisGym",
+      "secondary_tileset": "gTileset_SootopolisGym_2",
       "border_filepath": "data/layouts/SootopolisCity_Gym_B1F/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_Gym_B1F/map.bin"
     },
@@ -1207,7 +1207,7 @@
       "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonDayCare",
+      "secondary_tileset": "gTileset_PokemonDayCare_2",
       "border_filepath": "data/layouts/Route117_PokemonDayCare/border.bin",
       "blockdata_filepath": "data/layouts/Route117_PokemonDayCare/map.bin"
     },
@@ -2707,7 +2707,7 @@
       "width": 5,
       "height": 6,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "secondary_tileset": "gTileset_BattleFrontier_2",
       "border_filepath": "data/layouts/LilycoveCity_DepartmentStoreElevator/border.bin",
       "blockdata_filepath": "data/layouts/LilycoveCity_DepartmentStoreElevator/map.bin"
     },
@@ -3816,8 +3816,8 @@
       "name": "BattleTentLobby_Layout",
       "width": 13,
       "height": 10,
-      "primary_tileset": "gTileset_Building_Dome",
-      "secondary_tileset": "gTileset_BattleDome",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleTent",
       "border_filepath": "data/layouts/BattleTentLobby/border.bin",
       "blockdata_filepath": "data/layouts/BattleTentLobby/map.bin"
     },
@@ -3826,8 +3826,8 @@
       "name": "BattleTentCorridor_Layout",
       "width": 5,
       "height": 8,
-      "primary_tileset": "gTileset_Building_Frontier",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleTent",
       "border_filepath": "data/layouts/BattleTentCorridor/border.bin",
       "blockdata_filepath": "data/layouts/BattleTentCorridor/map.bin"
     },
@@ -3836,8 +3836,8 @@
       "name": "BattleTentBattleRoom_Layout",
       "width": 10,
       "height": 9,
-      "primary_tileset": "gTileset_Building_Frontier",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleTent",
       "border_filepath": "data/layouts/BattleTentBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleTentBattleRoom/map.bin"
     },

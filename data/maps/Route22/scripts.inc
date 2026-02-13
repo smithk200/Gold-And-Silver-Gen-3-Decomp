@@ -286,7 +286,7 @@ Route22_Movement_CelebiPush:
 
 
 Route22_Text_Silver1:
-	.string "SILVER: You told me...\n"
+	.string "{RIVAL}: You told me...\n"
 	.string "you were the number one in the whole\l"
 	.string "world!\p"
 	.string "Are you gonna quit?\p"
@@ -301,7 +301,7 @@ Route22_Text_Giovanni1:
 	.string "stronger organization!$"
 
 Route22_Text_Silver2:
-	.string "SILVER: What aspect of you was\n"
+	.string "{RIVAL}: What aspect of you was\n"
 	.string "number one?\p"
 	.string "Gathering so many only to be\n"
 	.string "defeated by a mere child!$"
@@ -318,7 +318,7 @@ Route22_Text_Giovanni2:
 	.string "revival of me and my TEAM ROCKET!$"
 
 Route22_Text_Silver3:
-	.string "SILVER: I don't understand you!\p"
+	.string "{RIVAL}: I don't understand you!\p"
 	.string "You don't make any sense!$"
 
 Route22_Text_Giovanni3:
@@ -327,8 +327,8 @@ Route22_Text_Giovanni3:
 	.string "understand.$"
 
 Route22_Text_Silver4:
-	.string "SILVER: I don't want to\n"
-	.string "Understand you!\p"
+	.string "{RIVAL}: I don't want to\n"
+	.string "understand you!\p"
 	.string "I will never become someone like\n"
 	.string "you.\p"
 	.string "A coward when you're alone and\n"
@@ -342,5 +342,5 @@ Route22_Text_Silver5:
 	.string "ALL BY MYSELF!$"
 
 Route22_Text_Silver6:
-	.string "SILVER: ... What are you staring at?$"
+	.string "{RIVAL}: ... What are you staring at?$"
 

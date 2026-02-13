@@ -16,7 +16,7 @@
   "object_events": [
     {
       "local_id": "LOCALID_CHAMPIONS_ROOM_WALLACE",
-      "graphics_id": "OBJ_EVENT_GFX_WALLACE",
+      "graphics_id": "OBJ_EVENT_GFX_SILVER",
       "x": 6,
       "y": 5,
       "elevation": 3,

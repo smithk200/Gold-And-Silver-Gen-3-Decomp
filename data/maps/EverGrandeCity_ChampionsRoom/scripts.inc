@@ -40,9 +40,23 @@ EverGrandeCity_ChampionsRoom_Movement_PlayerApproachWallace:
 EverGrandeCity_ChampionsRoom_EventScript_Wallace::
 	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
 	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_ChampionsRoom_Text_Defeat
+	goto_if_eq VAR_STARTER_MON, 0, EverGrandeCity_Silver_Battle_Cyndaquil
+	goto_if_eq VAR_STARTER_MON, 1, EverGrandeCity_Silver_Battle_Totodile
+	goto_if_eq VAR_STARTER_MON, 2, EverGrandeCity_Silver_Battle_Chikorita
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
+
+EverGrandeCity_Silver_Battle_Cyndaquil::
+	trainerbattle_no_intro TRAINER_SILVER_CHAMPION_CYNDAQUIL, EverGrandeCity_ChampionsRoom_Text_Defeat
+	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
+
+EverGrandeCity_Silver_Battle_Totodile::
+	trainerbattle_no_intro TRAINER_SILVER_CHAMPION_TOTODILE, EverGrandeCity_ChampionsRoom_Text_Defeat
+	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
+
+EverGrandeCity_Silver_Battle_Chikorita::
+	trainerbattle_no_intro TRAINER_SILVER_CHAMPION_CHIKORITA, EverGrandeCity_ChampionsRoom_Text_Defeat
+	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 
 EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 	playse SE_DOOR
@@ -51,15 +65,19 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 	special DrawWholeMapView
 	msgbox EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	closemessage
-	playse SE_DOOR
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, EverGrandeCity_ChampionsRoom_EventScript_PlayMayMusic
-	call_if_eq VAR_RESULT, FEMALE, EverGrandeCity_ChampionsRoom_EventScript_PlayBrendanMusic
-	addobject LOCALID_CHAMPIONS_ROOM_RIVAL
-	call EverGrandeCity_ChampionsRoom_EventScript_RivalApproachPlayer
-	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, EverGrandeCity_ChampionsRoom_EventScript_MayAdvice
-	goto_if_eq VAR_RESULT, FEMALE, EverGrandeCity_ChampionsRoom_EventScript_BrendanAdvice
+	applymovement LOCALID_CHAMPIONS_ROOM_WALLACE, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
+	delay 20
+	applymovement LOCALID_CHAMPIONS_ROOM_WALLACE, Common_Movement_WalkInPlaceFasterDown
+	waitmovement 0
+	msgbox EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe, MSGBOX_DEFAULT
+	closemessage
+	delay 20
+	applymovement LOCALID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExit
+	waitmovement 0
+	setflag FLAG_DEFEATED_CHAMPION_HOENN
+	warp MAP_EVER_GRANDE_CITY_HALL_OF_FAME, 7, 16
+	waitstate
 	end
 
 EverGrandeCity_ChampionsRoom_EventScript_PlayMayMusic::
@@ -220,51 +238,45 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 	step_end
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
-	.string "WALLACE: Welcome, {PLAYER}{KUN}.\p"
-	.string "That incident in SOOTOPOLIS CITY…\n"
-	.string "That was superb work, putting an end\l"
-	.string "to that crisis all by yourself.\p"
-	.string "Oops!\p"
-	.string "It wouldn't be fair to say that you\n"
-	.string "alone ended the crisis.\p"
-	.string "You overcame that difficult situation\n"
-	.string "by working as one with your POKéMON.\p"
-	.string "We TRAINERS raise POKéMON by giving\n"
-	.string "them items and by teaching them new\l"
-	.string "techniques for battle.\p"
-	.string "But we ourselves also learn many\n"
-	.string "things from POKéMON.\p"
-	.string "And this is where your achievements\n"
-	.string "are put to the test against what\l"
-	.string "others like you have achieved.\p"
-	.string "Now!\p"
-	.string "Who can most elegantly dance with\n"
-	.string "their POKéMON in HOENN?\p"
-	.string "Show me right here and now!$"
+	.string "{RIVAL}: Hmph. It's you.\n"
+	.string "Haven't seen you since Mt. Moon.\p"
+	.string "I've been training my Pokémon all\n"
+	.string "across Kanto and Hoenn so that I can\l"
+	.string "be the strongest trainer I can be.\p"
+	.string "All by myself!\p"
+	.string "How about you?\p"
+	.string "How far have YOU gotten?\p"
+	.string "I suppose you haven't done a lot.\p"
+	.string "Except for defeating those Elite Four\n"
+	.string "members, I guess…\p"
+	.string "Still, you'll be no match for me\n"
+	.string "and my all-powerful,\ln"
+	.string "new-and-improved team!$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
-	.string "I, the CHAMPION, fall in defeat…\p"
-	.string "That was wonderful work.\n"
-	.string "You were elegant, infuriatingly so.\l"
-	.string "And yet it was utterly glorious!\p"
-	.string "Kudos to you, {PLAYER}{KUN}!\p"
-	.string "You are a truly noble POKéMON\n"
-	.string "TRAINER!$"
+	.string "Hmph.\p"
+	.string "After getting all of Hoenn's badges,\n"
+	.string "I've lost to you again.\p"
+	.string "Well, that's that.\p"
+	.string "Congratulations on your victory,\n"
+	.string "{PLAYER}.$"
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
-	.string "WALLACE: The POKéMON you sent into\n"
-	.string "battle…\p"
-	.string "At times they danced like a spring\n"
-	.string "breeze, and at times they struck\l"
-	.string "like lightning.\p"
-	.string "It was with light, yet surefooted,\n"
-	.string "elegance that you led your POKéMON.\p"
-	.string "Even I felt bedazzled by your\n"
-	.string "masterful performance!\p"
-	.string "You now stand at the glorious peak\n"
-	.string "of the POKéMON LEAGUE.\p"
-	.string "I now proclaim you to be the new\n"
-	.string "HOENN region…$"
+	.string "{RIVAL}: From when I first met\n"
+	.string "you in Cherrygrove,\l"
+	.string "I thought you were a weakling.\p"
+	.string "A wimp, if you will.\p"
+	.string "But you kept defeating me, time and\n"
+	.string "time again.\p"
+	.string "I kept asking myself “How does {PLAYER}\n"
+	.string "keep beating me every time?”\p"
+	.string "Now I understand…\p"
+	.string "It's not the power of Pokémon that\n"
+	.string "make one great.\p"
+	.string "It's the bond Pokémon have with their\n"
+	.string "Trainers that makes them special.\p"
+	.string "And you seemed to possess that power.\p"
+	.string "Congratulations, Champion {PLAYER}.$."
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
 	.string "MAY: {PLAYER}{KUN}!\p"
@@ -310,13 +322,14 @@ EverGrandeCity_ChampionsRoom_Text_BirchCongratulations:
 	.string "Now, go proudly into the final room!$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe:
-	.string "WALLACE: {PLAYER}{KUN}…\p"
-	.string "No, let me rephrase that properly.\p"
-	.string "The new CHAMPION!\p"
-	.string "Come with me.$"
+	.string "{RIVAL}: Hey.\n"
+	.string "Go on into that room.\p"
+	.string "Record your Pokémon in the Hall\n"
+	.string "of Fame.\p"
+	.string "You deserve it.$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
-	.string "WALLACE: I'm sorry, but…\p"
+	.string "{RIVAL}: I'm sorry, but…\p"
 	.string "From here on, only those TRAINERS who\n"
 	.string "have become CHAMPIONS may enter.\p"
 	.string "You'll have to wait outside with\n"

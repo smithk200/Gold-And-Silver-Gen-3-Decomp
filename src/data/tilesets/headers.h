@@ -357,6 +357,17 @@ const struct Tileset gTileset_PokemonDayCare =
     .callback = NULL,
 };
 
+const struct Tileset gTileset_PokemonDayCare_2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PokemonDayCare_2,
+    .palettes = gTilesetPalettes_PokemonDayCare_2,
+    .metatiles = gMetatiles_PokemonDayCare_2,
+    .metatileAttributes = gMetatileAttributes_PokemonDayCare_2,
+    .callback = NULL,
+};
+
 const struct Tileset gTileset_Facility =
 {
     .isCompressed = TRUE,
@@ -376,6 +387,17 @@ const struct Tileset gTileset_BikeShop =
     .palettes = gTilesetPalettes_BikeShop,
     .metatiles = gMetatiles_BikeShop,
     .metatileAttributes = gMetatileAttributes_BikeShop,
+    .callback = InitTilesetAnim_BikeShop,
+};
+
+const struct Tileset gTileset_BikeShop_2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_BikeShop_2,
+    .palettes = gTilesetPalettes_BikeShop_2,
+    .metatiles = gMetatiles_BikeShop_2,
+    .metatileAttributes = gMetatileAttributes_BikeShop_2,
     .callback = InitTilesetAnim_BikeShop,
 };
 
@@ -555,6 +577,17 @@ const struct Tileset gTileset_SootopolisGym =
     .callback = InitTilesetAnim_SootopolisGym,
 };
 
+const struct Tileset gTileset_SootopolisGym_2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SootopolisGym_2,
+    .palettes = gTilesetPalettes_SootopolisGym_2,
+    .metatiles = gMetatiles_SootopolisGym_2,
+    .metatileAttributes = gMetatileAttributes_SootopolisGym_2,
+    .callback = InitTilesetAnim_SootopolisGym,
+};
+
 const struct Tileset gTileset_GenericBuilding =
 {
     .isCompressed = TRUE,
@@ -698,6 +731,17 @@ const struct Tileset gTileset_BattleFrontier =
     .palettes = gTilesetPalettes_BattleFrontier,
     .metatiles = gMetatiles_BattleFrontier,
     .metatileAttributes = gMetatileAttributes_BattleFrontier,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_BattleFrontier_2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_BattleFrontier_2,
+    .palettes = gTilesetPalettes_BattleFrontier_2,
+    .metatiles = gMetatiles_BattleFrontier_2,
+    .metatileAttributes = gMetatileAttributes_BattleFrontier_2,
     .callback = NULL,
 };
 

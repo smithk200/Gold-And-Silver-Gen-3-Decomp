@@ -82,11 +82,17 @@ const u16 gMetatileAttributes_PrettyPetalFlowerShop[] = INCBIN_U16("data/tileset
 const u16 gMetatiles_PokemonDayCare[] = INCBIN_U16("data/tilesets/secondary/pokemon_day_care/metatiles.bin");
 const u16 gMetatileAttributes_PokemonDayCare[] = INCBIN_U16("data/tilesets/secondary/pokemon_day_care/metatile_attributes.bin");
 
+const u16 gMetatiles_PokemonDayCare_2[] = INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/metatiles.bin");
+const u16 gMetatileAttributes_PokemonDayCare_2[] = INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/metatile_attributes.bin");
+
 const u16 gMetatiles_Facility[] = INCBIN_U16("data/tilesets/secondary/facility/metatiles.bin");
 const u16 gMetatileAttributes_Facility[] = INCBIN_U16("data/tilesets/secondary/facility/metatile_attributes.bin");
 
 const u16 gMetatiles_BikeShop[] = INCBIN_U16("data/tilesets/secondary/bike_shop/metatiles.bin");
 const u16 gMetatileAttributes_BikeShop[] = INCBIN_U16("data/tilesets/secondary/bike_shop/metatile_attributes.bin");
+
+const u16 gMetatiles_BikeShop_2[] = INCBIN_U16("data/tilesets/secondary/bike_shop_2/metatiles.bin");
+const u16 gMetatileAttributes_BikeShop_2[] = INCBIN_U16("data/tilesets/secondary/bike_shop_2/metatile_attributes.bin");
 
 const u16 gMetatiles_RusturfTunnel[] = INCBIN_U16("data/tilesets/secondary/rusturf_tunnel/metatiles.bin");
 const u16 gMetatileAttributes_RusturfTunnel[] = INCBIN_U16("data/tilesets/secondary/rusturf_tunnel/metatile_attributes.bin");
@@ -145,6 +151,9 @@ const u16 gMetatileAttributes_MossdeepGym[] = INCBIN_U16("data/tilesets/secondar
 const u16 gMetatiles_SootopolisGym[] = INCBIN_U16("data/tilesets/secondary/sootopolis_gym/metatiles.bin");
 const u16 gMetatileAttributes_SootopolisGym[] = INCBIN_U16("data/tilesets/secondary/sootopolis_gym/metatile_attributes.bin");
 
+const u16 gMetatiles_SootopolisGym_2[] = INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/metatiles.bin");
+const u16 gMetatileAttributes_SootopolisGym_2[] = INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/metatile_attributes.bin");
+
 const u16 gMetatiles_TrickHousePuzzle[] = INCBIN_U16("data/tilesets/secondary/trick_house_puzzle/metatiles.bin");
 const u16 gMetatileAttributes_TrickHousePuzzle[] = INCBIN_U16("data/tilesets/secondary/trick_house_puzzle/metatile_attributes.bin");
 
@@ -159,6 +168,9 @@ const u16 gMetatileAttributes_EliteFour[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_BattleFrontier[] = INCBIN_U16("data/tilesets/secondary/battle_frontier/metatiles.bin");
 const u16 gMetatileAttributes_BattleFrontier[] = INCBIN_U16("data/tilesets/secondary/battle_frontier/metatile_attributes.bin");
+
+const u16 gMetatiles_BattleFrontier_2[] = INCBIN_U16("data/tilesets/secondary/battle_frontier_2/metatiles.bin");
+const u16 gMetatileAttributes_BattleFrontier_2[] = INCBIN_U16("data/tilesets/secondary/battle_frontier_2/metatile_attributes.bin");
 
 const u16 gMetatiles_BattlePalace[] = INCBIN_U16("data/tilesets/secondary/battle_palace/metatiles.bin");
 const u16 gMetatileAttributes_BattlePalace[] = INCBIN_U16("data/tilesets/secondary/battle_palace/metatile_attributes.bin");

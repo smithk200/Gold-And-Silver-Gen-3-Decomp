@@ -11,7 +11,7 @@ EverGrandeCity_SidneysRoom_OnTransition:
 	end
 
 EverGrandeCity_SidneysRoom_OnLoad:
-	call_if_set FLAG_GARBAGEFLAG, EverGrandeCity_SidneysRoom_EventScript_ResetAdvanceToNextRoom
+	call_if_set FLAG_DEFEATED_SIDNEY, EverGrandeCity_SidneysRoom_EventScript_ResetAdvanceToNextRoom
 	call_if_eq VAR_GARBAGEVAR, 1, EverGrandeCity_SidneysRoom_EventScript_CloseDoor
 	end
 
@@ -45,10 +45,10 @@ EverGrandeCity_SidneysRoom_EventScript_WalkInCloseDoor::
 EverGrandeCity_SidneysRoom_EventScript_Sidney::
 	lock
 	faceplayer
-	goto_if_set FLAG_GARBAGEFLAG, EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech
+	goto_if_set FLAG_DEFEATED_SIDNEY, EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_SIDNEY, EverGrandeCity_SidneysRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_SIDNEY_ELITE_FOUR, EverGrandeCity_SidneysRoom_Text_Defeat
 	goto EverGrandeCity_SidneysRoom_EventScript_Defeated
 	end
 
@@ -58,7 +58,7 @@ EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech::
 	end
 
 EverGrandeCity_SidneysRoom_EventScript_Defeated::
-	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_DEFEATED_SIDNEY
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	release

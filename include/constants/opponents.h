@@ -260,8 +260,8 @@
 #define TRAINER_WALTER_1                    254
 #define TRAINER_MICAH                       255
 #define TRAINER_THOMAS                      256
-#define TRAINER_WALTER_2                    257
-#define TRAINER_WALTER_3                    258
+#define TRAINER_DRAKE                       257
+#define TRAINER_SIDNEY_ELITE_FOUR           258
 #define TRAINER_WALTER_4                    259
 #define TRAINER_WALTER_5                    260
 #define TRAINER_SIDNEY                      261
@@ -357,9 +357,9 @@
 #define TRAINER_RIVAL_CYNDAQUIL_2                       351
 #define TRAINER_ANTHONY                     352
 #define TRAINER_BENJAMIN_1                  353
-#define TRAINER_BENJAMIN_2                  354
-#define TRAINER_BENJAMIN_3                  355
-#define TRAINER_BENJAMIN_4                  356
+#define TRAINER_SILVER_CHAMPION_CHIKORITA                  354
+#define TRAINER_SILVER_CHAMPION_TOTODILE                  355
+#define TRAINER_SILVER_CHAMPION_CYNDAQUIL                  356
 #define TRAINER_BENJAMIN_5                  357
 #define TRAINER_ABE                   358
 #define TRAINER_JASMINE                     359

@@ -857,6 +857,28 @@ const u16 gTilesetPalettes_PokemonDayCare[][16] =
     INCBIN_U16("data/tilesets/secondary/pokemon_day_care/palettes/15.gbapal"),
 };
 
+const u32 gTilesetTiles_PokemonDayCare_2[] = INCBIN_U32("data/tilesets/secondary/pokemon_day_care_2/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_PokemonDayCare_2[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_day_care_2/palettes/15.gbapal"),
+};
+
 const u32 gTilesetTiles_Facility[] = INCBIN_U32("data/tilesets/secondary/facility/tiles.4bpp.fastSmol");
 
 const u16 gTilesetPalettes_Facility[][16] =
@@ -899,6 +921,28 @@ const u16 gTilesetPalettes_BikeShop[][16] =
     INCBIN_U16("data/tilesets/secondary/bike_shop/palettes/13.gbapal"),
     INCBIN_U16("data/tilesets/secondary/bike_shop/palettes/14.gbapal"),
     INCBIN_U16("data/tilesets/secondary/bike_shop/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_BikeShop_2[] = INCBIN_U32("data/tilesets/secondary/bike_shop_2/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_BikeShop_2[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bike_shop_2/palettes/15.gbapal"),
 };
 
 const u32 gTilesetTiles_RusturfTunnel[] = INCBIN_U32("data/tilesets/secondary/rusturf_tunnel/tiles.4bpp.fastSmol");
@@ -1436,6 +1480,28 @@ const u16 gTilesetPalettes_SootopolisGym[][16] =
     INCBIN_U16("data/tilesets/secondary/sootopolis_gym/palettes/15.gbapal"),
 };
 
+const u32 gTilesetTiles_SootopolisGym_2[] = INCBIN_U32("data/tilesets/secondary/sootopolis_gym_2/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_SootopolisGym_2[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sootopolis_gym_2/palettes/15.gbapal"),
+};
+
 const u32 gTilesetTiles_TrickHousePuzzle[] = INCBIN_U32("data/tilesets/secondary/trick_house_puzzle/tiles.4bpp.fastSmol");
 
 const u16 gTilesetPalettes_TrickHousePuzzle[][16] =
@@ -1545,6 +1611,28 @@ const u16 gTilesetPalettes_BattleFrontier[][16] =
     INCBIN_U16("data/tilesets/secondary/battle_frontier/palettes/13.gbapal"),
     INCBIN_U16("data/tilesets/secondary/battle_frontier/palettes/14.gbapal"),
     INCBIN_U16("data/tilesets/secondary/battle_frontier/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_BattleFrontier_2[] = INCBIN_U32("data/tilesets/secondary/battle_frontier_2/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_BattleFrontier_2[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/battle_frontier_2/palettes/15.gbapal"),
 };
 
 const u32 gTilesetTiles_BattlePalace[] = INCBIN_U32("data/tilesets/secondary/battle_palace/tiles.4bpp.fastSmol");
