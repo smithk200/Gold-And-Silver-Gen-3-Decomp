@@ -539,7 +539,7 @@ Route111_EventScript_Tyron::
 	end
 
 Route111_EventScript_Celina::
-	trainerbattle_single TRAINER_NONE, Route111_Text_CelinaIntro, Route111_Text_CelinaDefeat
+	trainerbattle_single TRAINER_CELINA, Route111_Text_CelinaIntro, Route111_Text_CelinaDefeat
 	msgbox Route111_Text_CelinaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

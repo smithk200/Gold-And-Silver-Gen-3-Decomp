@@ -94,9 +94,7 @@ Route117_EventScript_RematchIsaac::
 	end
 
 Route117_EventScript_Lydia::
-	trainerbattle_single TRAINER_LYDIA_1, Route117_Text_LydiaIntro, Route117_Text_LydiaDefeat, Route117_EventScript_RegisterLydia
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchLydia
+	trainerbattle_single TRAINER_LYDIA_1, Route117_Text_LydiaIntro, Route117_Text_LydiaDefeat
 	msgbox Route117_Text_LydiaPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -114,11 +112,8 @@ Route117_EventScript_RematchLydia::
 	end
 
 Route117_EventScript_Dylan::
-	trainerbattle_single TRAINER_NONE, Route117_Text_DylanIntro, Route117_Text_DylanDefeat, Route117_EventScript_RegisterDylan
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchDylan
+	trainerbattle_single TRAINER_DYLAN, Route117_Text_DylanIntro, Route117_Text_DylanDefeat
 	msgbox Route117_Text_DylanPostBattle, MSGBOX_DEFAULT
-	release
 	end
 
 Route117_EventScript_RegisterDylan::
@@ -134,9 +129,7 @@ Route117_EventScript_RematchDylan::
 	end
 
 Route117_EventScript_Maria::
-	trainerbattle_single TRAINER_MARIA_1, Route117_Text_MariaIntro, Route117_Text_MariaDefeat, Route117_EventScript_RegisterMaria
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMaria
+	trainerbattle_single TRAINER_MARIA_1, Route117_Text_MariaIntro, Route117_Text_MariaDefeat
 	msgbox Route117_Text_MariaPostBattle, MSGBOX_DEFAULT
 	release
 	end

@@ -4799,12 +4799,80 @@ Music: Hg Boy 2
 Double Battle: No
 AI: Check Bad Move
 
-Pikachu
-Level: 22
+Raichu
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Ponyta
-Level: 22
+Rapidash
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Manectric
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_MELINA ===
+Name: Melina
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Dodrio
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Swellow
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BRANDI ===
+Name: Brandi
+Class: Psychic
+Pic: Psychic F
+Gender: Female
+Music: Intense
+Double Battle: No
+AI: Check Bad Move
+
+Gardevoir
+Level: 71
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gallade
+Level: 71
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_AISHA ===
+Name: Aisha
+Class: Battle Girl
+Pic: Battle Girl
+Gender: Female
+Music: Intense
+Double Battle: No
+AI: Check Bad Move
+
+Medicham
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Breloom
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_MARIA_1 ===
+Name: Maria
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Dodrio
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ISSAC ===
@@ -5425,6 +5493,384 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Ditto
 Level: 62
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_RICKY_1 ===
+Name: Ricky
+Class: Tuber M
+Pic: Tuber M
+Gender: Male
+Music: Hg Boy 1
+Double Battle: No
+AI: Check Bad Move
+
+Wingull
+Level: 71
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Crawdaunt
+Level: 68
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gyarados
+Level: 70
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_HAILEY ===
+Name: Hailey
+Class: Tuber F
+Pic: Tuber F
+Gender: Female
+Music: Girl
+Double Battle: No
+AI: Check Bad Move
+
+Marill
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Azumarill
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CHANDLER ===
+Name: Chandler
+Class: Tuber M
+Pic: Tuber M
+Gender: Male
+Music: Hg Boy 1
+Double Battle: No
+AI: Check Bad Move
+
+Tentacool
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tentacruel
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tentacruel
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_HUEY ===
+Name: Huey
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Pelipper
+Level: 72
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Manectric
+Level: 72
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Machamp
+Level: 72
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+=== TRAINER_KALEB ===
+Name: Kaleb
+Class: Pokefan
+Pic: Pokefan M
+Gender: Male
+Music: Twins
+Double Battle: Yes
+AI: Check Bad Move
+
+Minun @ Oran Berry
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Plusle @ Oran Berry
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ISABEL ===
+Name: Isabel
+Class: Pokefan
+Pic: Pokefan F
+Gender: Female
+Music: Twins
+Double Battle: Yes
+AI: Check Bad Move
+
+Plusle @ Oran Berry
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Minun @ Oran Berry
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ALYSSA ===
+Name: Alyssa
+Class: Triathlete
+Pic: Cycling Triathlete F
+Gender: Female
+Music: Female
+Double Battle: Yes
+AI: Check Bad Move
+
+Magnezone
+Level: 75
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ursaluna
+Level: 75
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Steelix
+Level: 75
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_TIMMY ===
+Name: Timmy
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Aggron
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Manectric
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Dudunsparce
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_EDWIN ===
+Name: Edwin
+Class: Collector
+Pic: Collector
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Check Bad Move
+
+Ludicolo
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ludicolo
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ludicolo
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ludicolo
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ludicolo
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ludicolo
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_JACOB ===
+Name: Jacob
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Voltorb
+Level: 72
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
+Electrode
+Level: 72
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
+Magnemite
+Level: 75
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Magnezone
+Level: 75
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+=== TRAINER_EDWARD_1 ===
+Name: Edward
+Class: Psychic
+Pic: Psychic M
+Gender: Male
+Music: Intense
+Double Battle: Yes
+AI: Check Bad Move
+
+Mr Mime
+Level: 71
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Alakazam
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Calm Mind
+- Psychic
+- Disable
+- Shadow Ball
+
+=== TRAINER_LYDIA_1 ===
+Name: Lydia
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Pelipper
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Breloom
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Azumarill
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roserade
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Delcatty
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Seaking
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ANNA_AND_MEG_1 ===
+Name: Anna & Meg
+Class: Sr And Jr
+Pic: Sr And Jr
+Gender: Male
+Music: Twins
+Double Battle: Yes
+AI: Check Bad Move
+
+Obstagoon
+Level: 75
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Hariyama
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Medicham
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machamp
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DYLAN ===
+Name: Dylan
+Class: Triathlete
+Pic: Running Triathlete M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Dodrio
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Swellow
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CELINA ===
+Name: Celina
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Roserade
+Level: 76
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Vileplume
+Level: 76
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_TYRON ===
+Name: Tyron
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Sandslash
+Level: 76
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Rhyperior
+Level: 76
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BIANCA ===
+Name: Bianca
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
+Music: Girl
+Double Battle: No
+AI: Check Bad Move
+
+Breloom
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Roserade
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_HAYDEN ===
+Name: Hayden
+Class: Kindler
+Pic: Kindler
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Camerupt
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Torkoal
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSHUA ===
@@ -9255,22 +9701,6 @@ Growlithe
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_HUEY ===
-Name: Huey
-Class: Sailor
-Pic: Sailor
-Gender: Male
-Music: Hg Boy 2
-Double Battle: No
-AI: Check Bad Move
-
-Poliwhirl
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Machop
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RUSS ===
 Name: Russ
@@ -10180,12 +10610,16 @@ Music: Hg Boy 2
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 11
+Golem
+Level: 71
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machop
-Level: 11
+Machamp
+Level: 71
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Steelix
+Level: 71
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DORIS ===

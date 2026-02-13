@@ -161,7 +161,7 @@ Route110_EventScript_PlayerRidingAcroBike::
 	end
 
 Route110_EventScript_Edward::
-	trainerbattle_single TRAINER_EDWARD, Route110_Text_EdwardIntro, Route110_Text_EdwardDefeated
+	trainerbattle_single TRAINER_EDWARD_1, Route110_Text_EdwardIntro, Route110_Text_EdwardDefeated
 	msgbox Route110_Text_EdwardPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -171,9 +171,7 @@ Route110_EventScript_Jaclyn::
 	end
 
 Route110_EventScript_Edwin::
-	trainerbattle_single TRAINER_NONE, Route110_Text_EdwinIntro, Route110_Text_EdwinDefeated, Route110_EventScript_EdwinRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_EdwinRematch
+	trainerbattle_single TRAINER_EDWIN, Route110_Text_EdwinIntro, Route110_Text_EdwinDefeated
 	msgbox Route110_Text_EdwinPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -186,8 +184,6 @@ Route110_EventScript_EdwinRegisterMatchCallAfterBattle::
 	end
 
 Route110_EventScript_EdwinRematch::
-	trainerbattle_rematch TRAINER_NONE, Route110_Text_EdwinRematchIntro, Route110_Text_EdwinRematchDefeated
-	msgbox Route110_Text_EdwinRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route110_EventScript_Dale::
@@ -196,7 +192,7 @@ Route110_EventScript_Dale::
 	end
 
 Route110_EventScript_Jacob::
-	trainerbattle_single TRAINER_NONE, Route110_Text_JacobIntro, Route110_Text_JacobDefeated
+	trainerbattle_single TRAINER_JACOB, Route110_Text_JacobIntro, Route110_Text_JacobDefeated
 	msgbox Route110_Text_JacobPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -251,22 +247,12 @@ Route110_EventScript_AbigailRematch::
 	end
 
 Route110_EventScript_Isabel::
-	trainerbattle_single TRAINER_NONE, Route110_Text_IsabelIntro, Route110_Text_IsabelDefeated, Route110_EventScript_IsabelRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_IsabelRematch
+	trainerbattle_single TRAINER_ISABEL, Route110_Text_IsabelIntro, Route110_Text_IsabelDefeated
 	msgbox Route110_Text_IsabelPostBattle, MSGBOX_DEFAULT
-	release
-	end
-
-Route110_EventScript_IsabelRegisterMatchCallAfterBattle::
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route110_Text_IsabelRegister, MSGBOX_DEFAULT
-	release
 	end
 
 Route110_EventScript_IsabelRematch::
-	trainerbattle_rematch TRAINER_NONE, Route110_Text_IsabelRematchIntro, Route110_Text_IsabelRematchDefeated
+	trainerbattle_rematch TRAINER_ISABEL, Route110_Text_IsabelRematchIntro, Route110_Text_IsabelRematchDefeated
 	msgbox Route110_Text_IsabelRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -289,7 +275,7 @@ Route110_EventScript_Joseph::
 	end
 
 Route110_EventScript_Alyssa::
-	trainerbattle_single TRAINER_NONE, Route110_Text_AlyssaIntro, Route110_Text_AlyssaDefeated
+	trainerbattle_single TRAINER_ALYSSA, Route110_Text_AlyssaIntro, Route110_Text_AlyssaDefeated
 	msgbox Route110_Text_AlyssaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

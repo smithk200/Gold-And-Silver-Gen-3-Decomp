@@ -308,6 +308,10 @@ SlateportCity_EventScript_NameRatersHouseSign::
 	msgbox SlateportCity_Text_NameRatersHouseSign, MSGBOX_SIGN
 	end
 
+SlateportCity_EventScript_GymSign::
+	msgbox SlateportCity_Text_GymSign, MSGBOX_SIGN
+	end
+
 SlateportCity_EventScript_Maniac::
 	lock
 	faceplayer
@@ -1310,3 +1314,8 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "After all, a tough TRAINER is\n"
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
+
+SlateportCity_Text_GymSign:
+	.string "SLATEPORT CITY GYM\n"
+	.string "LEADER: WALLACE\p"
+	.string "The graceful Water-type master!$"

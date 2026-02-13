@@ -445,6 +445,13 @@
       "elevation": 0,
       "dest_map": "MAP_SLATEPORT_CITY_HOUSE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SLATEPORT_CITY",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -569,7 +576,7 @@
       "y": 18,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "SlateportCity_EventScript_GymSign"
     }
   ]
 }
