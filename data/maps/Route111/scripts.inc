@@ -484,9 +484,7 @@ Route111_EventScript_Daisuke::
 	end
 
 Route111_EventScript_Wilton::
-	trainerbattle_single TRAINER_WILTON_1, Route111_Text_WiltonIntro, Route111_Text_WiltonDefeat, Route111_EventScript_RegisterWilton
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchWilton
+	trainerbattle_single TRAINER_WILTON_1, Route111_Text_WiltonIntro, Route111_Text_WiltonDefeat
 	msgbox Route111_Text_WiltonPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -504,11 +502,6 @@ Route111_EventScript_RematchWilton::
 	end
 
 Route111_EventScript_Brooke::
-	trainerbattle_single TRAINER_NONE, Route111_Text_BrookeIntro, Route111_Text_BrookeDefeat, Route111_EventScript_RegisterBrooke
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchBrooke
-	msgbox Route111_Text_BrookePostBattle, MSGBOX_DEFAULT
-	release
 	end
 
 Route111_EventScript_RegisterBrooke::
@@ -524,7 +517,7 @@ Route111_EventScript_RematchBrooke::
 	end
 
 Route111_EventScript_Hayden::
-	trainerbattle_single TRAINER_NONE, Route111_Text_HaydenIntro, Route111_Text_HaydenDefeat
+	trainerbattle_single TRAINER_HAYDEN, Route111_Text_HaydenIntro, Route111_Text_HaydenDefeat
 	msgbox Route111_Text_HaydenPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -560,6 +553,16 @@ Route111_EventScript_Branden::
 
 Route111_EventScript_TrainerHillSign::
 	msgbox Route111_Text_TrainerHillSign, MSGBOX_SIGN
+	end
+
+Route111_EventScript_AquaGruntM::
+	msgbox Route111_Text_AquaGruntM, MSGBOX_AUTOCLOSE
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	end
+
+Route111_EventScript_AquaGruntF::
+	msgbox Route111_Text_AquaGruntF, MSGBOX_AUTOCLOSE
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	end
 
 Route111_Text_BattleOurFamily:
@@ -716,3 +719,12 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "TRAINERS!”$"
 
+Route111_Text_AquaGruntM:
+	.string "Hey!\p"
+	.string "No one gets past the mighty\n"
+	.string "TEAM AQUA!$"
+
+Route111_Text_AquaGruntF:
+	.string "The rest of TEAM AQUA is busy\n"
+	.string "expanding the sea.\p"
+	.string "ARCHIE wants us to stand guard here.$"

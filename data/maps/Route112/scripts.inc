@@ -8,40 +8,6 @@ Route112_OnTransition:
 	end
 
 Route112_EventScript_MagmaGrunts::
-	lockall
-	delay 40
-	applymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
-	delay 20
-	msgbox Route112_Text_LeaderGoingToAwakenThing, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	delay 40
-	applymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
-	waitmovement 0
-	delay 20
-	msgbox Route112_Text_YeahWeNeedMeteorite, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	delay 40
-	applymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
-	delay 20
-	msgbox Route112_Text_OhThatsWhyCrewWentToFallarbor, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	delay 40
-	applymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
-	waitmovement 0
-	delay 20
-	msgbox Route112_Text_CantLetAnyonePassUntilTheyreBack, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	releaseall
 	end
 
 Route112_EventScript_MtChimneyCableCarSign::
@@ -61,16 +27,13 @@ Route112_EventScript_Hiker::
 	end
 
 Route112_EventScript_Brice::
-	trainerbattle_single TRAINER_NONE, Route112_Text_BriceIntro, Route112_Text_BriceDefeat
+	trainerbattle_single TRAINER_BRICE, Route112_Text_BriceIntro, Route112_Text_BriceDefeat
 	msgbox Route112_Text_BricePostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route112_EventScript_Trent::
-	trainerbattle_single TRAINER_TRENT_1, Route112_Text_TrentIntro, Route112_Text_TrentDefeat, Route112_EventScript_RegisterTrent
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route112_EventScript_RematchTrent
+	trainerbattle_single TRAINER_TRENT_1, Route112_Text_TrentIntro, Route112_Text_TrentDefeat
 	msgbox Route112_Text_TrentPostBattle, MSGBOX_DEFAULT
-	release
 	end
 
 Route112_EventScript_RegisterTrent::

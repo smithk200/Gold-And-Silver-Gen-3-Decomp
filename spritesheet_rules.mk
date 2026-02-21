@@ -5067,7 +5067,7 @@ $(OBJEVENTGFXDIR)/people/channeler.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/nurse_chansey.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 $(OBJEVENTGFXDIR)/pokemon/slowpoke_no_tail.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 $(OBJEVENTGFXDIR)/people/juggler.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 $(OBJEVENTGFXDIR)/people/cooltrainer_m.4bpp: %.4bpp: %.png

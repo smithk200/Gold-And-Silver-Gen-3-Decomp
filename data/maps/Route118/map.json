@@ -258,33 +258,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
-      "x": 17,
-      "y": 11,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route118_EventScript_Dalton",
-      "flag": "0"
-    },
-    {
-      "local_id": "LOCALID_ROUTE118_STEVEN",
-      "graphics_id": "OBJ_EVENT_GFX_STEVEN",
-      "x": 44,
-      "y": 7,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "FLAG_GARBAGEFLAG"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 69,
       "y": 7,
@@ -299,7 +272,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 7,
+      "x": 15,
       "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -327,35 +300,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 43,
-      "y": 11,
-      "elevation": 3,
-      "var": "VAR_GARBAGEVAR",
-      "var_value": "0",
-      "script": "Route118_EventScript_StevenTrigger0"
-    },
-    {
-      "type": "trigger",
-      "x": 44,
-      "y": 11,
-      "elevation": 3,
-      "var": "VAR_GARBAGEVAR",
-      "var_value": "0",
-      "script": "Route118_EventScript_StevenTrigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 45,
-      "y": 11,
-      "elevation": 3,
-      "var": "VAR_GARBAGEVAR",
-      "var_value": "0",
-      "script": "Route118_EventScript_StevenTrigger2"
-    }
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "secret_base",

@@ -126,7 +126,7 @@ Route121_EventScript_RematchJessica::
 	end
 
 Route121_EventScript_Cale::
-	trainerbattle_single TRAINER_NONE, Route121_Text_CaleIntro, Route121_Text_CaleDefeat
+	trainerbattle_single TRAINER_CALE, Route121_Text_CaleIntro, Route121_Text_CaleDefeat
 	msgbox Route121_Text_CalePostBattle, MSGBOX_AUTOCLOSE
 	end
 
