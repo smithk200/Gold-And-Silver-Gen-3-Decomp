@@ -141,6 +141,7 @@
 #define MULTI_OLIVINE_HARBOR_RED           130
 #define MULTI_VERMILION_HARBOR_RED           131
 #define MULTI_SLATEPORT_HARBOR_RED           132
+#define MULTI_ISLANDS                       133
 
 // Lilycove SS Tidal Multichoice Selections
 #define SSTIDAL_SELECTION_SLATEPORT        0

@@ -139,11 +139,32 @@ OlivinePort_EventScript_Sailor_AfterRed::
 	switch VAR_RESULT
 	case 0, OlivinePort_EventScript_ChoseVermilion
 	case 1, OlivinePort_EventScript_ChoseSlateport
-	case 2, OlivinePort_EventScript_ChoseSouthernIsland
-	case 3, OlivinePort_EventScript_ChoseBirthIsland
-	case 4, OlivinePort_EventScript_ChoseFarawayIsland
-	case 5, OlivinePort_EventScript_ChoseBattleFrontier
-	case 6, OlivinePort_EventScript_Sailor_Refused
+	case 2, OlivinePort_EventScript_ChoseBattleFrontier
+	case 3, OlivinePort_EventScript_GoToIslands
+	case 4, OlivinePort_EventScript_Sailor_Refused
+	case MULTI_B_PRESSED, OlivinePort_EventScript_Sailor_Refused
+	release
+	end
+
+OlivinePort_EventScript_GoToIslands::
+	multichoice 20, 0, MULTI_ISLANDS, FALSE
+	switch VAR_RESULT
+	case 0, OlivinePort_EventScript_ChoseSouthernIsland
+	case 1, OlivinePort_EventScript_ChoseBirthIsland
+	case 2, OlivinePort_EventScript_ChoseFarawayIsland
+	case 3, OlivinePort_EventScript_Sailor_AfterRed2
+	case MULTI_B_PRESSED, OlivinePort_EventScript_Sailor_AfterRed2
+	release
+	end
+
+OlivinePort_EventScript_Sailor_AfterRed2::
+	multichoice 20, 0, MULTI_OLIVINE_HARBOR_RED, FALSE
+	switch VAR_RESULT
+	case 0, OlivinePort_EventScript_ChoseVermilion
+	case 1, OlivinePort_EventScript_ChoseSlateport
+	case 2, OlivinePort_EventScript_ChoseBattleFrontier
+	case 3, OlivinePort_EventScript_GoToIslands
+	case 4, OlivinePort_EventScript_Sailor_Refused
 	case MULTI_B_PRESSED, OlivinePort_EventScript_Sailor_Refused
 	release
 	end

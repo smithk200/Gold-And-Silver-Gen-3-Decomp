@@ -2568,4 +2568,6 @@ extern const u8 gText_Hisui[];
 extern const u8 gText_Paldea[];
 extern const u8 gText_Sevii[];
 extern const u8 gText_RegionDefault[];
+extern const u8 gText_Next2[];
+extern const u8 gText_Return[];
 #endif // GUARD_STRINGS_H

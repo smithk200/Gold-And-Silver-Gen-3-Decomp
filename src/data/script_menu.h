@@ -506,7 +506,7 @@ static const struct MenuAction MultichoiceList_LinkServicesNoRecordBerry[] =
 
 static const struct MenuAction MultichoiceList_WirelessMinigame[] =
 {
-    {COMPOUND_STRING("POKéMON JUMP")},
+    {COMPOUND_STRING("Pokémon JUMP")},
     {COMPOUND_STRING("DODRIO BERRY-PICKING")},
     {gText_Exit},
 };
@@ -677,7 +677,7 @@ static const struct MenuAction MultichoiceList_BattlePalaceRules[] =
 
 static const struct MenuAction MultichoiceList_BattlePyramidRules[] =
 {
-    {COMPOUND_STRING("PYRAMID: POKéMON")},
+    {COMPOUND_STRING("PYRAMID: Pokémon")},
     {COMPOUND_STRING("PYRAMID: TRAINERS")},
     {COMPOUND_STRING("PYRAMID: MAZE")},
     {COMPOUND_STRING("BATTLE BAG")},
@@ -688,7 +688,7 @@ static const struct MenuAction MultichoiceList_BattlePikeRules[] =
 {
     {COMPOUND_STRING("POKéNAV AND BAG")},
     {COMPOUND_STRING("HELD ITEMS")},
-    {COMPOUND_STRING("POKéMON ORDER")},
+    {COMPOUND_STRING("Pokémon ORDER")},
     {gText_Exit},
 };
 
@@ -818,14 +818,19 @@ static const struct MenuAction MultichoiceList_OlivineHarbor[] =
     {gText_FarawayIsland},
     {gText_Exit},
 };
+static const struct MenuAction MultichoiceList_Islands[] =
+{
+    {gText_SouthernIsland},
+    {gText_BirthIsland},
+    {gText_FarawayIsland},
+    {gText_Return},
+};
 static const struct MenuAction MultichoiceList_OlivineHarborRed[] =
 {
     {gText_Vermilion},
     {COMPOUND_STRING("Slateport")},
-    {gText_SouthernIsland},
-    {gText_BirthIsland},
-    {gText_FarawayIsland},
     {gText_BattleFrontier},
+    {gText_Next2},
     {gText_Exit},
 };
 static const struct MenuAction MultichoiceList_VermilionHarbor[] =
@@ -840,10 +845,8 @@ static const struct MenuAction MultichoiceList_VermilionHarborRed[] =
 {
     {gText_Olivine},
     {COMPOUND_STRING("Slateport")},
-    {gText_SouthernIsland},
-    {gText_BirthIsland},
-    {gText_FarawayIsland},
     {gText_BattleFrontier},
+    {gText_Next2},
     {gText_Exit},
 };
 
@@ -851,10 +854,8 @@ static const struct MenuAction MultichoiceList_SlateportHarborRed[] =
 {
     {gText_Olivine},
     {gText_Vermilion}, 
-    {gText_SouthernIsland},
-    {gText_BirthIsland},
-    {gText_FarawayIsland},
     {gText_BattleFrontier},
+    {gText_Next2},
     {gText_Exit},
 };
 
@@ -1080,6 +1081,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_OLIVINE_HARBOR_RED]              = MULTICHOICE(MultichoiceList_OlivineHarborRed),
     [MULTI_VERMILION_HARBOR_RED]              = MULTICHOICE(MultichoiceList_VermilionHarborRed),
     [MULTI_SLATEPORT_HARBOR_RED]              = MULTICHOICE(MultichoiceList_SlateportHarborRed),
+    [MULTI_ISLANDS]                         = MULTICHOICE(MultichoiceList_Islands),
 };
 
 const u8 *const gStdStrings[] =

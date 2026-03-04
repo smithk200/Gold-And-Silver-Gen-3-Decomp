@@ -281,15 +281,36 @@ Route109_EventScript_MrBriney::
 
 Route109_EventScript_MrBriney2::
 	message SlatePort_Text_WhereSail
-	multichoice 20, 0, MULTI_VERMILION_HARBOR_RED, FALSE
+	multichoice 20, 0, MULTI_SLATEPORT_HARBOR_RED, FALSE
 	switch VAR_RESULT
 	case 0, SlatePort_EventScript_ChoseOlivine
 	case 1, SlatePort_EventScript_ChoseVermilion
-	case 2, SlatePort_EventScript_ChoseSouthernIsland
-	case 3, SlatePort_EventScript_ChoseBirthIsland
-	case 4, SlatePort_EventScript_ChoseFarawayIsland
-	case 5, SlatePort_EventScript_ChoseBattleFrontier
-	case 6, VermilionPort_EventScript_Sailor_Refused
+	case 2, SlatePort_EventScript_ChoseBattleFrontier
+	case 3, SlatePort_EventScript_GoToIslands
+	case 4, VermilionPort_EventScript_Sailor_Refused
+	case MULTI_B_PRESSED, VermilionPort_EventScript_Sailor_Refused
+	release
+	end
+
+SlatePort_EventScript_GoToIslands::
+	multichoice 20, 0, MULTI_ISLANDS, FALSE
+	switch VAR_RESULT
+	case 0, SlatePort_EventScript_ChoseSouthernIsland
+	case 1, SlatePort_EventScript_ChoseBirthIsland
+	case 2, SlatePort_EventScript_ChoseFarawayIsland
+	case 3, SlatePort_EventScript_Sailor_AfterRed2
+	case MULTI_B_PRESSED, SlatePort_EventScript_Sailor_AfterRed2
+	release
+	end
+
+SlatePort_EventScript_Sailor_AfterRed2::
+	multichoice 20, 0, MULTI_SLATEPORT_HARBOR_RED, FALSE
+	switch VAR_RESULT
+	case 0, SlatePort_EventScript_ChoseOlivine
+	case 1, SlatePort_EventScript_ChoseVermilion
+	case 2, SlatePort_EventScript_ChoseBattleFrontier
+	case 3, SlatePort_EventScript_GoToIslands
+	case 4, VermilionPort_EventScript_Sailor_Refused
 	case MULTI_B_PRESSED, VermilionPort_EventScript_Sailor_Refused
 	release
 	end
@@ -568,17 +589,17 @@ Route109_EventScript_Mel::
 	end
 
 Route109_EventScript_Chandler::
-	trainerbattle_single TRAINER_CHANDLER, Route109_Text_ChandlerIntro, Route109_Text_ChandlerDefeated
+	trainerbattle_single TRAINER_NONE, Route109_Text_ChandlerIntro, Route109_Text_ChandlerDefeated
 	msgbox Route109_Text_ChandlerPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route109_EventScript_Hailey::
-	trainerbattle_single TRAINER_HAILEY, Route109_Text_HaileyIntro, Route109_Text_HaileyDefeated
+	trainerbattle_single TRAINER_NONE, Route109_Text_HaileyIntro, Route109_Text_HaileyDefeated
 	msgbox Route109_Text_HaileyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route109_EventScript_Elijah::
-	trainerbattle_single TRAINER_ELIJAH, Route109_Text_ElijahIntro, Route109_Text_ElijahDefeated
+	trainerbattle_single TRAINER_NONE, Route109_Text_ElijahIntro, Route109_Text_ElijahDefeated
 	msgbox Route109_Text_ElijahPostBattle, MSGBOX_AUTOCLOSE
 	end
 

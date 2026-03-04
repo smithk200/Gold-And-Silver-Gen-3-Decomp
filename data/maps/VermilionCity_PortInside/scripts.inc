@@ -59,11 +59,32 @@ VermilionPort_EventScript_Sailor_After_Red::
 	switch VAR_RESULT
 	case 0, VermilionPort_EventScript_ChoseOlivine
 	case 1, VermilionPort_EventScript_ChoseSlateport
-	case 2, VermilionPort_EventScript_ChoseSouthernIsland
-	case 3, VermilionPort_EventScript_ChoseBirthIsland
-	case 4, VermilionPort_EventScript_ChoseFarawayIsland
-	case 5, VermilionPort_EventScript_ChoseBattleFrontier
-	case 6, VermilionPort_EventScript_Sailor_Refused
+	case 2, VermilionPort_EventScript_ChoseBattleFrontier
+	case 2, VermilionPort_EventScript_GoToIslands
+	case 4, VermilionPort_EventScript_Sailor_Refused
+	case MULTI_B_PRESSED, VermilionPort_EventScript_Sailor_Refused
+	release
+	end
+
+VermilionPort_EventScript_GoToIslands::
+	multichoice 20, 0, MULTI_ISLANDS, FALSE
+	switch VAR_RESULT
+	case 0, VermilionPort_EventScript_ChoseSouthernIsland
+	case 1, VermilionPort_EventScript_ChoseBirthIsland
+	case 2, VermilionPort_EventScript_ChoseFarawayIsland
+	case 3, VermilionPort_EventScript_Sailor_After_Red2
+	case MULTI_B_PRESSED, VermilionPort_EventScript_Sailor_After_Red2
+	release
+	end
+
+VermilionPort_EventScript_Sailor_After_Red2::
+	multichoice 20, 0, MULTI_VERMILION_HARBOR_RED, FALSE
+	switch VAR_RESULT
+	case 0, VermilionPort_EventScript_ChoseOlivine
+	case 1, VermilionPort_EventScript_ChoseSlateport
+	case 2, VermilionPort_EventScript_ChoseBattleFrontier
+	case 2, VermilionPort_EventScript_GoToIslands
+	case 4, VermilionPort_EventScript_Sailor_Refused
 	case MULTI_B_PRESSED, VermilionPort_EventScript_Sailor_Refused
 	release
 	end
