@@ -20,6 +20,7 @@
 #include "constants/items.h"
 #include "constants/songs.h"
 #include "constants/metatile_labels.h"
+#include "tilesets.h"
 
 /*  This file handles some persistent tasks that run in the overworld.
  *  - Task_RunTimeBasedEvents: Periodically updates local time and RTC events. Also triggers ambient cries.
@@ -784,7 +785,11 @@ static void AshGrassPerStepCallback(u8 taskId)
 // and hole metatiles, such as gTileset_MirageTower.
 static void SetCrackedFloorHoleMetatile(s16 x, s16 y)
 {
-    u16 metatileId = MapGridGetMetatileIdAt(x, y) == METATILE_Cave_CrackedFloor ? METATILE_Cave_CrackedFloor_Hole : METATILE_Pacifidlog_SkyPillar_CrackedFloor_Hole;
+    u16 metatileId;
+    if ((gMapHeader.mapLayout->secondaryTileset) == &gTileset_Cave_Ice)
+        metatileId = MapGridGetMetatileIdAt(x, y) == METATILE_Cave_CrackedFloor ? METATILE_Cave_Ice_CrackedFloor_Hole : METATILE_Cave_Ice_CrackedFloor_Hole;
+    else
+        metatileId = MapGridGetMetatileIdAt(x, y) == METATILE_Cave_CrackedFloor ? METATILE_Cave_CrackedFloor_Hole : METATILE_Pacifidlog_SkyPillar_CrackedFloor_Hole;
     MapGridSetMetatileIdAt(x, y, metatileId);
     CurrentMapDrawMetatileAt(x, y);
 }

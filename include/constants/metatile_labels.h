@@ -149,6 +149,9 @@
 #define METATILE_Cave_ShoalCave_DirtPile_Large           0x358
 #define METATILE_Cave_ShoalCave_DirtPile_Small           0x35A
 
+// gTileset_Cave_Ice
+#define METATILE_Cave_Ice_CrackedFloor_Hole  0x39F
+
 // gTileset_CeruleanCity
 #define METATILE_CeruleanCity_Cerulean  0x298
 

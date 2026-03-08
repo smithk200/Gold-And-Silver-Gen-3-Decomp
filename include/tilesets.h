@@ -79,4 +79,5 @@ extern const struct Tileset gTileset_InsideShip;
 extern const struct Tileset gTileset_SecretBase;
 extern const struct Tileset gTileset_EliteFour;
 extern const struct Tileset gTileset_BattleTent;
+extern const struct Tileset gTileset_Cave_Ice;
 #endif //GUARD_tilesets_H
