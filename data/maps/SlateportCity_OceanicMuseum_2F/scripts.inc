@@ -1,7 +1,7 @@
 SlateportCity_OceanicMuseum_2F_MapScripts::
 	.byte 0
 
-SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
+SlateportCity_OceanicMuseum_2F_EventScript_CaptStern_Old::
 	lock
 	faceplayer
 	msgbox SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts, MSGBOX_DEFAULT
@@ -83,6 +83,13 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	setflag FLAG_GARBAGEFLAG
 	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1
 	fadescreen FADE_FROM_BLACK
+	release
+	end
+
+SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
+	lock
+	faceplayer
+	msgbox SlateportCity_OceanicMuseum_2F_Text_ImCaptStern, MSGBOX_AUTOCLOSE
 	release
 	end
 
@@ -433,3 +440,9 @@ SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
 	.string "“S.S. ANNE\p"
 	.string "“A replica of the luxury liner that\n"
 	.string "circles the globe.”$"
+
+SlateportCity_OceanicMuseum_2F_Text_ImCaptStern:
+	.string "I'm CAPT. STERN.\p"
+	.string "I was once a SEA CAPTAIN, but now\n"
+	.string "I spend my days cataloguing these\l"
+	.string "ships here.$"

@@ -26,7 +26,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_StevensHouse_EventScript_Steven",
-      "flag": "FLAG_GARBAGEFLAG"
+      "flag": "FLAG_HIDE_STEVEN_MOSSDEEP"
     },
     {
       "local_id": "LOCALID_STEVENS_HOUSE_BALL",

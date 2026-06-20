@@ -4,15 +4,12 @@ LilycoveCity_MapScripts::
 	.byte 0
 
 LilycoveCity_OnTransition:
-	setflag FLAG_GARBAGEFLAG
-	setvar VAR_CONTEST_HALL_STATE, 0
-	setflag FLAG_GARBAGEFLAG
-	call_if_set FLAG_GARBAGEFLAG, Common_EventScript_SetAbnormalWeather
+	setflag FLAG_VISITED_LILYCOVE_CITY
 	call Common_EventScript_SetupRivalGfxId
 	end
 
 LilycoveCity_OnLoad:
-	call_if_unset FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_SetWailmerMetatiles
+	@call_if_unset FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_SetWailmerMetatiles
 	end
 
 LilycoveCity_EventScript_SetWailmerMetatiles::
@@ -74,7 +71,6 @@ LilycoveCity_EventScript_RichBoy::
 LilycoveCity_EventScript_Sailor2::
 	lock
 	faceplayer
-	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_Sailor2AquaGone
 	msgbox LilycoveCity_Text_TeamAquaBeenTrainingWailmer, MSGBOX_DEFAULT
 	release
 	end
@@ -87,8 +83,7 @@ LilycoveCity_EventScript_Sailor2AquaGone::
 LilycoveCity_EventScript_Woman2::
 	lock
 	faceplayer
-	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_Woman2AquaGone
-	msgbox LilycoveCity_Text_SomeoneStoleMyPokemon, MSGBOX_DEFAULT
+	msgbox LilycoveCity_Text_Woman2, MSGBOX_DEFAULT
 	release
 	end
 
@@ -112,7 +107,6 @@ LilycoveCity_EventScript_ExpertF::
 LilycoveCity_EventScript_ExpertM2::
 	lock
 	faceplayer
-	goto_if_set FLAG_GARBAGEFLAG, LilycoveCity_EventScript_ExpertM2AquaGone
 	msgbox LilycoveCity_Text_TeamAquaRenovatedCavern, MSGBOX_DEFAULT
 	release
 	end
@@ -603,10 +597,10 @@ LilycoveCity_Text_ImFromKanto:
 	.string "only in this area?$"
 
 LilycoveCity_Text_TeamAquaBeenTrainingWailmer:
-	.string "TEAM AQUA's been training their\n"
-	.string "WAILMER in the cove.\p"
-	.string "We SAILORS can't get our boats out\n"
-	.string "to sea with them in the way!$"
+	.string "Rumor has it, there was a POKéMON\n"
+	.string "capable of controlling the seas…\p"
+	.string "It looks like a giant whale.\p"
+	.string "I wonder if it can be found…$"
 
 LilycoveCity_Text_SomeonePuntedTeamAquaOut:
 	.string "Ahoy, did you know?\p"
@@ -615,12 +609,10 @@ LilycoveCity_Text_SomeonePuntedTeamAquaOut:
 	.string "That got the WAILMER out of the cove,\n"
 	.string "so we can get our boats out again.$"
 
-LilycoveCity_Text_SomeoneStoleMyPokemon:
+LilycoveCity_Text_Woman2:
 	.string "I was taking a relaxing snooze at the\n"
 	.string "seaside inn to the sound of waves…\p"
-	.string "When someone stole my POKéMON!\p"
-	.string "Who's the abductor?\n"
-	.string "TEAM AQUA? Is it TEAM AQUA?$"
+	.string "It's relaxing at COVE LILY, isn't it?$"
 
 LilycoveCity_Text_MissingPokemonCameBack:
 	.string "My missing POKéMON…\n"
@@ -651,10 +643,7 @@ LilycoveCity_Text_TeamAquaRenovatedCavern:
 	.string "That had been a natural formation,\n"
 	.string "but then that TEAM AQUA lot came\l"
 	.string "along and made their renovations.\p"
-	.string "They call themselves\n"
-	.string "the “nature-loving TEAM AQUA”!\p"
-	.string "But what they do and what they say\n"
-	.string "don't match at all!$"
+	.string "Well, at least they are gone now.$"
 
 LilycoveCity_Text_TeamAquaLotGoneForGood:
 	.string "That cave in the cove…\p"

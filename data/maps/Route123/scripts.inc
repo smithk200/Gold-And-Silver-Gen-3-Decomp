@@ -48,7 +48,7 @@ Route123_EventScript_Wendy::
 	end
 
 Route123_EventScript_Braxton::
-	trainerbattle_single TRAINER_NONE, Route123_Text_BraxtonIntro, Route123_Text_BraxtonDefeat
+	trainerbattle_single TRAINER_BRAXTON, Route123_Text_BraxtonIntro, Route123_Text_BraxtonDefeat
 	msgbox Route123_Text_BraxtonPostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -4,8 +4,8 @@ MossdeepCity_SpaceCenter_2F_MapScripts::
 	.byte 0
 
 MossdeepCity_SpaceCenter_2F_OnTransition:
-	call_if_eq VAR_GARBAGEVAR, 2, MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians
-	call_if_eq VAR_GARBAGEVAR, 2, MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts
+	@call_if_eq VAR_GARBAGEVAR, 2, MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians
+	@call_if_eq VAR_GARBAGEVAR, 2, MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians::
@@ -25,7 +25,8 @@ MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts::
 	return
 
 MossdeepCity_SpaceCenter_2F_OnFrame:
-	map_script_2 VAR_GARBAGEVAR, 1, MossdeepCity_SpaceCenter_2F_EventScript_ThreeMagmaGrunts
+	@map_script_2 VAR_GARBAGEVAR, 1, MossdeepCity_SpaceCenter_2F_EventScript_ThreeMagmaGrunts
+	@map_script_2 VAR_TEMP_0, 0, MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians
 	.2byte 0
 
 MossdeepCity_SpaceCenter_2F_EventScript_ThreeMagmaGrunts::
@@ -94,10 +95,7 @@ MossdeepCity_SpaceCenter_2F_Movement_Grunt7Defeated:
 MossdeepCity_SpaceCenter_2F_EventScript_Scientist::
 	lock
 	faceplayer
-	goto_if_set FLAG_GARBAGEFLAG, MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal
-	goto_if_eq VAR_GARBAGEVAR, 2, MossdeepCity_SpaceCenter_2F_EventScript_ScientistMagma
-	goto_if_lt VAR_GARBAGEVAR, 2, MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal
-	goto MossdeepCity_SpaceCenter_2F_EventScript_ScientistMagma
+	goto MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal::
@@ -113,10 +111,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_ScientistMagma::
 MossdeepCity_SpaceCenter_2F_EventScript_Gentleman::
 	lock
 	faceplayer
-	goto_if_set FLAG_GARBAGEFLAG, MossdeepCity_SpaceCenter_2F_EventScript_GentlemanNormal
-	goto_if_eq VAR_GARBAGEVAR, 2, MossdeepCity_SpaceCenter_2F_EventScript_GentlemanMagma
-	goto_if_lt VAR_GARBAGEVAR, 2, MossdeepCity_SpaceCenter_2F_EventScript_GentlemanNormal
-	goto MossdeepCity_SpaceCenter_2F_EventScript_GentlemanMagma
+	goto MossdeepCity_SpaceCenter_2F_EventScript_GentlemanNormal
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_GentlemanNormal::
@@ -132,10 +127,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_GentlemanMagma::
 MossdeepCity_SpaceCenter_2F_EventScript_RichBoy::
 	lock
 	faceplayer
-	goto_if_set FLAG_GARBAGEFLAG, MossdeepCity_SpaceCenter_2F_EventScript_RichBoyNormal
-	goto_if_eq VAR_GARBAGEVAR, 2, MossdeepCity_SpaceCenter_2F_EventScript_RichBoyMagma
-	goto_if_lt VAR_GARBAGEVAR, 2, MossdeepCity_SpaceCenter_2F_EventScript_RichBoyNormal
-	goto MossdeepCity_SpaceCenter_2F_EventScript_RichBoyMagma
+	goto MossdeepCity_SpaceCenter_2F_EventScript_RichBoyNormal
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_RichBoyNormal::

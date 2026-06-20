@@ -213,8 +213,8 @@
 #define FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F  0xBF
 #define FLAG_RECEIVED_SUN_STONE_MOSSDEEP     0xC0
 #define FLAG_WALLY_SPEECH                    0xC1
-#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_1   0xC2 // Leftover from the RS version of Puzzle Room 7, functionally unused
-#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_2   0xC3 //
+#define FLAG_TRICK_HOUSE_MECH_MAIL   0xC2 // Leftover from the RS version of Puzzle Room 7, functionally unused
+#define FLAG_SILLY_SCOPE   0xC3 //
 #define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_3   0xC4 //
 #define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_4   0xC5 //
 #define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_5   0xC6 //
@@ -293,8 +293,8 @@
 #define FLAG_RECEIVED_REVIVED_FOSSIL_MON     0x10B
 #define FLAG_SECRET_BASE_REGISTRY_ENABLED    0x10C
 #define FLAG_RECEIVED_TM_THIEF               0x10D
-#define FLAG_CONTEST_SKETCH_CREATED          0x10E  // Set but never read
-#define FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE   0x10F
+#define FLAG_HIDE_KECLEON_ROUTE_120          0x10E
+#define FLAG_HIDE_KECLEON_ROUTE_119          0x10F
 #define FLAG_RECEIVED_EXP_SHARE              0x110
 #define FLAG_POKERUS_EXPLAINED               0x111
 #define FLAG_RECEIVED_RUNNING_SHOES          0x112
@@ -330,7 +330,7 @@
 #define FLAG_ADDED_MATCH_CALL_TO_POKENAV     0x130
 #define FLAG_REGISTERED_STEVEN_POKENAV       0x131
 #define FLAG_ENABLE_NORMAN_MATCH_CALL        0x132
-#define FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN 0x133 // Set after you follow Steven to the entrance of the Cave of Origin.
+#define FLAG_VS_SEEKER_ENABLED                       0x133
 #define FLAG_MET_ARCHIE_SOOTOPOLIS           0x134
 #define FLAG_MET_MAXIE_SOOTOPOLIS            0x135
 #define FLAG_MET_SCOTT_RUSTBORO              0x136
@@ -341,8 +341,10 @@
 #define FLAG_RECEIVED_MYSTIC_TICKET          0x13B
 #define FLAG_RECEIVED_OLD_SEA_MAP            0x13C
 #define FLAG_WONDER_CARD_UNUSED_1            0x13D // These Wonder Card flags are referenced but never set
-#define FLAG_WONDER_CARD_UNUSED_2            0x13E
-#define FLAG_WONDER_CARD_UNUSED_3            0x13F
+
+//bender sez: unused flags all the way down, matey
+#define FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE            0x13E
+#define FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA            0x13F
 #define FLAG_WONDER_CARD_UNUSED_4            0x140
 #define FLAG_WONDER_CARD_UNUSED_5            0x141
 #define FLAG_WONDER_CARD_UNUSED_6            0x142
@@ -357,7 +359,7 @@
 #define FLAG_WONDER_CARD_UNUSED_15           0x14B
 #define FLAG_WONDER_CARD_UNUSED_16           0x14C
 #define FLAG_WONDER_CARD_UNUSED_17           0x14D
-#define NUM_WONDER_CARD_FLAGS                (1 + FLAG_WONDER_CARD_UNUSED_17 - FLAG_RECEIVED_AURORA_TICKET)
+#define NUM_WONDER_CARD_FLAGS                (1 + FLAG_WONDER_CARD_UNUSED_17 - FLAG_WONDER_CARD_UNUSED_16)
 
 #define FLAG_MIRAGE_TOWER_VISIBLE            0x14E
 #define FLAG_CHOSE_ROOT_FOSSIL               0x14F
@@ -460,8 +462,8 @@
 #define FLAG_REGISTERED_DRAKE                (TRAINER_REGISTERED_FLAGS_START + REMATCH_DRAKE)
 #define FLAG_REGISTERED_WALLACE              (TRAINER_REGISTERED_FLAGS_START + REMATCH_WALLACE)
 
-#define FLAG_DAILY_BEAT_SILVER                    0x1AA // Unused Flag
-#define FLAG_HIDE_ROUTE_111_NPCS                    0x1AB // Unused Flag
+#define FLAG_DAILY_BEAT_SILVER                    0x1AA
+#define FLAG_HIDE_ROUTE_111_NPCS                    0x1AB
 
 #define FLAG_DEFEATED_DEOXYS                 0x1AC //HnS
 #define FLAG_BATTLED_DEOXYS                  0x1AD //HnS
@@ -707,22 +709,22 @@
 #define FLAG_VISITED_ROUTE10  0x294 //no collision
 #define FLAG_AUTO_HMS  0x295 // auto hms
 #define FLAG_EXP_SHARE_OPTION  0x296 // exp. share
-#define FLAG_WONDERTRADE1  0x297 // Unused Flag
-#define FLAG_WONDERTRADE2  0x298 // Unused Flag
-#define FLAG_WONDERTRADE3  0x299 // Unused Flag
-#define FLAG_VISITED_BATTLE_FRONTIER  0x29A // Unused Flag
-#define FLAG_FRONTIER_SECOND_CLERK  0x29B // Unused Flag
-#define FLAG_HIDE_BATTLE_FRONTIER_RECEPTION_GATE_SCOTT  0x29C // Unused Flag
-#define FLAG_SYS_BUG_CONTEST_MODE  0x29D // Unused Flag
-#define FLAG_NUZLOCKE      0x29E // Unused Flag
-#define FLAG_RAN_FROM_BATTLE  0x29F // Unused Flag
-#define FLAG_NAMED_SILVER  0x2A0 // Unused Flag
-#define FLAG_RANDOMIZER    0x2A1 // Unused Flag
+#define FLAG_WONDERTRADE1  0x297 
+#define FLAG_WONDERTRADE2  0x298 
+#define FLAG_WONDERTRADE3  0x299 
+#define FLAG_VISITED_BATTLE_FRONTIER  0x29A 
+#define FLAG_FRONTIER_SECOND_CLERK  0x29B 
+#define FLAG_HIDE_BATTLE_FRONTIER_RECEPTION_GATE_SCOTT  0x29C 
+#define FLAG_SYS_BUG_CONTEST_MODE  0x29D 
+#define FLAG_NUZLOCKE      0x29E 
+#define FLAG_RAN_FROM_BATTLE  0x29F 
+#define FLAG_NAMED_SILVER  0x2A0 
+#define FLAG_RANDOMIZER    0x2A1 
 #define FLAG_RECEIVED_BADGE_5  0x2A2 //general flags for "the three"
 #define FLAG_RECEIVED_BADGE_6  0x2A3 //general flags for "the three"
 #define FLAG_RECEIVED_BADGE_7  0x2A4 //general flags for "the three"
-#define FLAG_UNUSED_0x2A5  0x2A5 // Unused Flag
-#define FLAG_UNUSED_0x2A6  0x2A6 // Unused Flag
+#define FLAG_HIDE_ROUTE_119_GRUNTS  0x2A5
+#define FLAG_HIDE_VS_SEEKER_NPC  0x2A6
 #define FLAG_UNUSED_0x2A7  0x2A7 // Unused Flag
 #define FLAG_UNUSED_0x2A8  0x2A8 // Unused Flag
 #define FLAG_UNUSED_0x2A9  0x2A9 // Unused Flag
@@ -1044,8 +1046,8 @@
 #define FLAG_HIDE_SSAQUA_ROOM_SSE_GRANDDAUGHTER                     0x3E1
 #define FLAG_HIDE_SSAQUA_SAILOR                                     0x3E2
 #define FLAG_HIDE_SSAQUA_CAPTAINS_ROOM_GRANDDAUGHTER                0x3E3
-#define FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA                          0x3E4//unused
-#define FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE                            0x3E5//unused
+#define FLAG_HIDE_STEVEN_MOSSDEEP                                   0x3E4
+#define FLAG_HIDE_WALLY_MAUVILLE                                    0x3E5
 #define FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON                           0x3E6//unused
 #define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7//unused
 
@@ -1077,7 +1079,7 @@
 #define FLAG_ITEM_MTMORTAR4_MAX_REVIVE                              0x400
 #define FLAG_ITEM_LIGHTHOUSE_ETHER                                  0x401
 #define FLAG_ITEM_LIGHTHOUSE_RARE_CANDY                             0x402
-#define FLAG_ITEM_LUCKY_PUNCH                                0x403
+#define FLAG_ITEM_LUCKY_PUNCH                                       0x403
 #define FLAG_ITEM_LIGHTHOUSE_HYPER_POTION                           0x404
 #define FLAG_ITEM_LIGHTHOUSE_PROTEIN                                0x405
 
@@ -1536,14 +1538,14 @@
 #define FLAG_VISITED_MOSSDEEP_CITY                           (SYSTEM_FLAGS + 0x9E) 
 #define FLAG_VISITED_SOOTOPOLIS_CITY                           (SYSTEM_FLAGS + 0x9F) 
 #define FLAG_VISITED_EVER_GRANDE_CITY                           (SYSTEM_FLAGS + 0xA0) 
-#define FLAG_BADGE_17_GET                           (SYSTEM_FLAGS + 0xA1) 
-#define FLAG_BADGE_18_GET                           (SYSTEM_FLAGS + 0xA2) 
-#define FLAG_BADGE_19_GET                           (SYSTEM_FLAGS + 0xA3) 
-#define FLAG_BADGE_20_GET                           (SYSTEM_FLAGS + 0xA4) 
-#define FLAG_BADGE_21_GET                           (SYSTEM_FLAGS + 0xA5) 
-#define FLAG_BADGE_22_GET                           (SYSTEM_FLAGS + 0xA6) 
-#define FLAG_BADGE_23_GET                           (SYSTEM_FLAGS + 0xA7) 
-#define FLAG_BADGE_24_GET                           (SYSTEM_FLAGS + 0xA8) 
+#define FLAG_BADGE_17_GET                           (SYSTEM_FLAGS + 0xA1) //wallace
+#define FLAG_BADGE_18_GET                           (SYSTEM_FLAGS + 0xA2) //wattson
+#define FLAG_BADGE_19_GET                           (SYSTEM_FLAGS + 0xA3) //winona
+#define FLAG_BADGE_20_GET                           (SYSTEM_FLAGS + 0xA4) //tate and liza
+#define FLAG_BADGE_21_GET                           (SYSTEM_FLAGS + 0xA5) //juan
+#define FLAG_BADGE_22_GET                           (SYSTEM_FLAGS + 0xA6) //flannery
+#define FLAG_BADGE_23_GET                           (SYSTEM_FLAGS + 0xA7) //roxanne
+#define FLAG_BADGE_24_GET                           (SYSTEM_FLAGS + 0xA8) //norman
 #define FLAG_UNUSED_0x909                           (SYSTEM_FLAGS + 0xA9) // Unused Flag
 #define FLAG_UNUSED_0x90A                           (SYSTEM_FLAGS + 0xAA) // Unused Flag
 #define FLAG_UNUSED_0x90B                           (SYSTEM_FLAGS + 0xAB) // Unused Flag

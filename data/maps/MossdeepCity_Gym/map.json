@@ -485,8 +485,8 @@
   ],
   "warp_events": [
     {
-      "x": 6,
-      "y": 35,
+      "x": 23,
+      "y": 8,
       "elevation": 3,
       "dest_map": "MAP_MOSSDEEP_CITY",
       "dest_warp_id": "1"
@@ -581,6 +581,13 @@
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_GYM",
       "dest_warp_id": "12"
+    },
+    {
+      "x": 6,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_MOSSDEEP_CITY",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

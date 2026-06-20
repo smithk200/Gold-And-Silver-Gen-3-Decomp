@@ -22,7 +22,7 @@ Route126_EventScript_Nikki::
 	end
 
 Route126_EventScript_Brenda::
-	trainerbattle_single TRAINER_BRENDA, Route126_Text_BrendaIntro, Route126_Text_BrendaDefeat
+	trainerbattle_single TRAINER_BRENDA_2, Route126_Text_BrendaIntro, Route126_Text_BrendaDefeat
 	msgbox Route126_Text_BrendaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -42,10 +42,8 @@ Route126_EventScript_Sienna::
 	end
 
 Route126_EventScript_Pablo::
-	trainerbattle_single TRAINER_PABLO_1, Route126_Text_PabloIntro, Route126_Text_PabloDefeat, Route126_EventScript_RegisterPablo
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route126_EventScript_RematchPablo
-	msgbox Route126_Text_PabloPostBattle, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_PABLO_1, Route126_Text_PabloIntro, Route126_Text_PabloDefeat
+	msgbox Route126_Text_PabloPostBattle, MSGBOX_AUTOCLOSE
 	release
 	end
 

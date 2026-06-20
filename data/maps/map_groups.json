@@ -576,7 +576,6 @@
     "DewfordTown_House1",
     "DewfordTown_PokemonCenter_1F",
     "DewfordTown_PokemonCenter_2F",
-    "DewfordTown_Gym",
     "DewfordTown_Hall",
     "DewfordTown_House2",
     "LavaridgeTown_HerbShop",
@@ -1045,6 +1044,7 @@
     "Route119_WeatherInstitute_1F",
     "Route119_WeatherInstitute_2F",
     "Route119_House",
-    "Route124_DivingTreasureHuntersHouse"
+    "Route124_DivingTreasureHuntersHouse",
+    "SlateportCity_Gym"
   ]
 }

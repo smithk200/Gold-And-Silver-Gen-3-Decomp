@@ -42,8 +42,17 @@ Debug_CheatStart::
 	setflag FLAG_BADGE14_GET
 	setflag FLAG_BADGE15_GET
 	setflag FLAG_BADGE16_GET
+	setflag FLAG_BADGE_17_GET
+	setflag FLAG_BADGE_18_GET
+	setflag FLAG_BADGE_19_GET
+	setflag FLAG_BADGE_20_GET
+	setflag FLAG_BADGE_21_GET
+	setflag FLAG_BADGE_22_GET
+	setflag FLAG_BADGE_23_GET
+	setflag FLAG_BADGE_24_GET
 	@giveitem ITEM_HM_SURF
 	giveitem ITEM_POKE_BALL, 100
+	giveitem ITEM_SILLY_SCOPE
 	special SetUnlockedPokedexFlags
 	special EnableNationalPokedex
 	additem ITEM_ACRO_BIKE

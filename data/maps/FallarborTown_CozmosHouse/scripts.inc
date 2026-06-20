@@ -1,13 +1,20 @@
 FallarborTown_CozmosHouse_MapScripts::
 	.byte 0
 
-FallarborTown_CozmosHouse_EventScript_ProfCozmo::
+FallarborTown_CozmosHouse_EventScript_ProfCozmo_Old::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_TM_RETURN, FallarborTown_CozmosHouse_EventScript_GaveMeteorite
 	checkitem ITEM_METEORITE
 	goto_if_eq VAR_RESULT, TRUE, FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite
 	msgbox FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow, MSGBOX_DEFAULT
+	release
+	end
+	
+FallarborTown_CozmosHouse_EventScript_ProfCozmo::
+	lock
+	faceplayer
+	msgbox FallarborTown_CozmosHouse_Text_ImProfCozmo, MSGBOX_DEFAULT
 	release
 	end
 
@@ -48,9 +55,7 @@ FallarborTown_CozmosHouse_EventScript_GaveMeteorite::
 FallarborTown_CozmosHouse_EventScript_CozmosWife::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_RETURN, FallarborTown_CozmosHouse_EventScript_CozmoIsHappy
-	goto_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, FallarborTown_CozmosHouse_EventScript_CozmoIsSad
-	msgbox FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls, MSGBOX_DEFAULT
+	msgbox FallarborTown_CozmosHouse_EventScript_CozmoIsHappy, MSGBOX_DEFAULT
 	release
 	end
 
@@ -114,5 +119,12 @@ FallarborTown_CozmosHouse_Text_FeelSorryForCozmo:
 
 FallarborTown_CozmosHouse_Text_CozmoIsSoHappy:
 	.string "Look at PROF. COZMO…\n"
-	.string "He's so happy! I think it's cute.$"
+	.string "He's a hardworking scientist, that's\l"
+	.string "for sure!$"
 
+FallarborTown_CozmosHouse_Text_ImProfCozmo:
+	.string "I'm PROF. COZMO.\p"
+	.string "I really like METEORITES.\p"
+	.string "Three years ago, I nearly inspected\n"
+	.string "one, but some dastardly villains stole\n"
+	.string "it from me.$"

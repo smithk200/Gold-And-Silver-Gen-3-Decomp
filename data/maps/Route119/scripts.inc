@@ -112,6 +112,19 @@ Route119_EventScript_GiveFlyHM::
 	setflag FLAG_RECEIVED_HM_FLY
 	return
 
+Route119_EventScript_Grunt1::
+	lock
+	faceplayer
+	msgbox Route119_Text_Grunt1, MSGBOX_AUTOCLOSE
+	release
+	end
+
+Route119_EventScript_Grunt2::
+	lock
+	faceplayer
+	msgbox Route119_Text_Grunt2, MSGBOX_AUTOCLOSE
+	release
+	end
 Route119_EventScript_RivalExitScottArrive::
 	end
 
@@ -536,3 +549,13 @@ Route119_Text_TrainerTipsDecoration:
 	.string "Pick your favorite items and create\n"
 	.string "your very own SECRET BASE exactly the\l"
 	.string "way you want.$"
+
+Route119_Text_Grunt1:
+	.string "Hey! What are you doing?\p"
+	.string "TEAM MAGMA has ordered that no one\n"
+	.string "shall pass through here!$"
+
+Route119_Text_Grunt2:
+	.string "Wonder what those SCIENTISTS at the\n"
+	.string "WEATHER INSTITUTE are doing…\p"
+	.string "My orders were to just stand guard here.$"

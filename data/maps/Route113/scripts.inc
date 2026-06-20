@@ -114,7 +114,7 @@ Route113_EventScript_Sophie::
 	end
 
 Route113_EventScript_Coby::
-	trainerbattle_single TRAINER_NONE, Route113_Text_CobyIntro, Route113_Text_CobyDefeat
+	trainerbattle_single TRAINER_COBY, Route113_Text_CobyIntro, Route113_Text_CobyDefeat
 	msgbox Route113_Text_CobyPostBattle, MSGBOX_AUTOCLOSE
 	end
 

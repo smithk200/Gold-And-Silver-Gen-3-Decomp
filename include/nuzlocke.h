@@ -13,8 +13,8 @@
 bool8 IsNuzlockeActive(void);
 
 // Official location-based encounter tracking (from pokeemerald guide)
-bool8 HasWildPokemonBeenSeenInLocation(u8 location, bool8 setEncounteredIfFirst);
-bool8 HasWildPokemonBeenCaughtInLocation(u8 location, bool8 setCaughtIfCaught);
+bool8 HasWildPokemonBeenSeenInLocation(u16 location, bool8 setEncounteredIfFirst);
+bool8 HasWildPokemonBeenCaughtInLocation(u16 location, bool8 setCaughtIfCaught);
 
 // Legacy compatibility
 bool8 IsFirstEncounterInArea(u16 mapGroup, u16 mapNum);

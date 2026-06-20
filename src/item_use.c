@@ -1728,4 +1728,27 @@ void ItemUseOutOfBattle_Radio(u8 taskId)
     DisplayRadioMessage(taskId, tUsingRegisteredKeyItem);
 }
 
+void ItemUseOutOfBattle_SillyScope(u8 taskId)
+{
+    bool8  sillyScopeOn = FlagGet(FLAG_SILLY_SCOPE);
+    if (!sillyScopeOn)
+    {
+        FlagSet(FLAG_SILLY_SCOPE);
+        PlaySE(SE_EXP_MAX);
+        if (gTasks[taskId].tUsingRegisteredKeyItem) // to account for pressing select in the overworld
+            DisplayItemMessageOnField(taskId, gText_SillyScopeTurnOn, Task_CloseCantUseKeyItemMessage);
+        else
+            DisplayItemMessage(taskId, 1, gText_SillyScopeTurnOn, CloseItemMessage);
+    }
+    else
+    {
+        FlagClear(FLAG_SILLY_SCOPE);
+        PlaySE(SE_PC_OFF);
+        if (gTasks[taskId].tUsingRegisteredKeyItem) // to account for pressing select in the overworld
+            DisplayItemMessageOnField(taskId, gText_SillyScopeTurnOff, Task_CloseCantUseKeyItemMessage);
+        else
+            DisplayItemMessage(taskId, 1, gText_SillyScopeTurnOff, CloseItemMessage);
+    }
+}
+
 #undef tUsingRegisteredKeyItem

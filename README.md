@@ -19,7 +19,7 @@ Implemented
 - Optional Nuzlocke Mode. Note that this will use a no overleveling rule. If you use ANY item during combat, the only thing that will be different is that it will show a "Nuzlocke Complete!" at the Hall of Fame screen rather than "Hardcore Nuzlocked!"
 - Options to run: Button Combo (L+A), (B), or Default. The reason why it's (L+A) is because of expansion's new feature where you select a Pokeball with the (R) button.
 
-Note: this uses 91.71% of ROM space, last I checked. I'm trying to get this down to around 90%, and this can probably be done by removing some instrument samples.
+Note: this uses 95.41% of ROM space, last I checked. I'm trying to get this down to around 90%, and this can probably be done by removing some instrument samples.
 
 ![Battle text during Nuzlocke Mode](nuzlocke_text.png)![Gym Leaders and Elite Four can use this cool transition.](mugshot_transition.png)![The new terrain and run modes from HnS have been ported over!](run_modes.png)
 ![New options from the option menu, and they all work!](new_options.png)

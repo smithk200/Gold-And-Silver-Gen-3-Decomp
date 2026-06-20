@@ -1469,12 +1469,12 @@ bool8 IsMapTypeIndoors(enum MapType mapType)
         return FALSE;
 }
 
-mapsec_u8_t GetSavedWarpRegionMapSectionId(void)
+mapsec_u16_t GetSavedWarpRegionMapSectionId(void)
 {
     return Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->dynamicWarp.mapGroup, gSaveBlock1Ptr->dynamicWarp.mapNum)->regionMapSectionId;
 }
 
-mapsec_u8_t GetCurrentRegionMapSectionId(void)
+mapsec_u16_t GetCurrentRegionMapSectionId(void)
 {
     return Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum)->regionMapSectionId;
 }
@@ -3764,6 +3764,30 @@ static const u8 sMapsecToRegion[] = {
     [MAPSEC_MOSSDEEP_CITY]              = REGION_HOENN,
     [MAPSEC_SOOTOPOLIS_CITY]            = REGION_HOENN,
     [MAPSEC_EVER_GRANDE_CITY]           = REGION_HOENN,
+    [MAPSEC_ROUTE_101]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_102]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_103]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_104]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_105]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_106]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_107]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_108]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_109]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_110]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_111]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_112]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_113]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_114]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_115]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_116]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_117]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_118]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_119]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_120]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_121]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_122]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_123]                  = REGION_HOENN,
+    [MAPSEC_ROUTE_124]                  = REGION_HOENN,
     [MAPSEC_ROUTE_125]                  = REGION_HOENN,
     [MAPSEC_ROUTE_126]                  = REGION_HOENN,
     [MAPSEC_ROUTE_127]                  = REGION_HOENN,

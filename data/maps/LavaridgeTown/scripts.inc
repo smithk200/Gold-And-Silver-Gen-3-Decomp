@@ -3,7 +3,7 @@ LavaridgeTown_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, LavaridgeTown_OnFrame
 	.byte 0
 
-LavaridgeTown_OnTransition:
+LavaridgeTown_OnTransition_Old:
 	setflag FLAG_GARBAGEFLAG
 	call_if_set FLAG_WHITEOUT_TO_LAVARIDGE, LavaridgeTown_EventScript_ClearLavaridgeWhiteOut
 	call_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, LavaridgeTown_EventScript_ShowMtChimneyTrainers
@@ -11,6 +11,10 @@ LavaridgeTown_OnTransition:
 	call Common_EventScript_SetupRivalOnBikeGfxId
 	call_if_eq VAR_GARBAGEVAR, 1, LavaridgeTown_EventScript_CheckSetRivalPos
 	call_if_eq VAR_GARBAGEVAR, 1, LavaridgeTown_EventScript_HideMapNamePopup
+	end
+
+LavaridgeTown_OnTransition:
+	setflag FLAG_VISITED_LAVARIDGE_TOWN
 	end
 
 LavaridgeTown_EventScript_ClearLavaridgeWhiteOut::

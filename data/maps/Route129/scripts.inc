@@ -25,12 +25,12 @@ Route129_OnFrame:
 	.2byte 0
 
 Route129_EventScript_Chase::
-	trainerbattle_single TRAINER_NONE, Route129_Text_ChaseIntro, Route129_Text_ChaseDefeat
+	trainerbattle_single TRAINER_CHASE, Route129_Text_ChaseIntro, Route129_Text_ChaseDefeat
 	msgbox Route129_Text_ChasePostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route129_EventScript_Allison::
-	trainerbattle_single TRAINER_NONE, Route129_Text_AllisonIntro, Route129_Text_AllisonDefeat
+	trainerbattle_single TRAINER_ALLISON, Route129_Text_AllisonIntro, Route129_Text_AllisonDefeat
 	msgbox Route129_Text_AllisonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -45,7 +45,7 @@ Route129_EventScript_Tisha::
 	end
 
 Route129_EventScript_Clarence::
-	trainerbattle_single TRAINER_NONE, Route129_Text_ClarenceIntro, Route129_Text_ClarenceDefeat
+	trainerbattle_single TRAINER_CLARENCE, Route129_Text_ClarenceIntro, Route129_Text_ClarenceDefeat
 	msgbox Route129_Text_ClarencePostBattle, MSGBOX_AUTOCLOSE
 	end
 

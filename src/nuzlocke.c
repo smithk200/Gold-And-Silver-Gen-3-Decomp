@@ -20,7 +20,7 @@ bool8 IsNuzlockeActive(void)
 }
 
 // Location conversion for Nuzlocke tracking
-static u8 GetNuzlockeLocationId(u8 currLocation)
+static u16 GetNuzlockeLocationId(u16 currLocation)
 {
     switch (currLocation)
     {
@@ -132,7 +132,7 @@ static u8 GetNuzlockeLocationId(u8 currLocation)
 }
 
 // Official Nuzlocke location tracking functions - much more robust than our map-based approach
-bool8 HasWildPokemonBeenSeenInLocation(u8 location, bool8 setEncounteredIfFirst)
+bool8 HasWildPokemonBeenSeenInLocation(u16 location, bool8 setEncounteredIfFirst)
 {
     u8 varToCheck, bitToCheck;
     u16 varValue;
@@ -382,7 +382,7 @@ bool8 HasWildPokemonBeenSeenInLocation(u8 location, bool8 setEncounteredIfFirst)
     return 0;
 }
 
-bool8 HasWildPokemonBeenCaughtInLocation(u8 location, bool8 setCaughtIfCaught)
+bool8 HasWildPokemonBeenCaughtInLocation(u16 location, bool8 setCaughtIfCaught)
 {
     u8 varToCheck, bitToCheck;
     u16 varValue;
@@ -428,7 +428,7 @@ static bool8 HasEncounteredInArea(u16 mapGroup, u16 mapNum)
     if (!IsNuzlockeActive())
         return FALSE;
     
-    u8 currentLocation = GetCurrentRegionMapSectionId();
+    u16 currentLocation = GetCurrentRegionMapSectionId();
     return HasWildPokemonBeenSeenInLocation(currentLocation, FALSE);
 }
 

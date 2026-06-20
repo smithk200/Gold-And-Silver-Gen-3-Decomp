@@ -384,6 +384,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_ROCKET_ADMIN] = {_("Rocket Admin")},
     [TRAINER_CLASS_PHILIP] = {_("Philip")},
     [TRAINER_CLASS_ROCKETA] = {_("Rocket Admin")},
+    [TRAINER_CLASS_SCIENTIST] = {_("Scientist"), 3},
 };
 
 static void (*const sTurnActionsFuncsTable[])(void) =
@@ -2736,7 +2737,10 @@ void SpriteCB_FaintOpponentMon(struct Sprite *sprite)
     species = SanitizeSpeciesId(species);
     if (species == SPECIES_UNOWN)
         species = GetUnownSpeciesId(personality);
-    yOffset = gSpeciesInfo[species].frontPicYOffset;
+    if (FlagGet(FLAG_SILLY_SCOPE)) 
+        yOffset = gSpeciesInfo[species].frontPicYOffsetGBA;
+    else
+        yOffset = gSpeciesInfo[species].frontPicYOffset;
 
     sprite->data[3] = 8 - yOffset / 8;
     sprite->data[4] = 1;

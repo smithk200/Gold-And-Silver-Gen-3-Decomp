@@ -3,7 +3,7 @@ VerdanturfTown_MapScripts::
 	.byte 0
 
 VerdanturfTown_OnTransition:
-	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_VISITED_VERDANTURF_TOWN
 	setvar VAR_CONTEST_HALL_STATE, 0
 	end
 

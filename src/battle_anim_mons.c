@@ -7,6 +7,7 @@
 #include "data.h"
 #include "decompress.h"
 #include "dma3.h"
+#include "event_data.h"
 #include "gpu_regs.h"
 #include "malloc.h"
 #include "palette.h"
@@ -168,11 +169,20 @@ u8 GetBattlerYDelta(u8 battler, u16 species)
             species = GetUnownSpeciesId(personality);
         }
     }
-
-    if (IsOnPlayerSide(battler) || IsContest())
-        ret = gSpeciesInfo[species].backPicYOffset;
+    if (FlagGet(FLAG_SILLY_SCOPE))
+    {
+        if (IsOnPlayerSide(battler) || IsContest())
+            ret = gSpeciesInfo[species].backPicYOffsetGBA;
+        else
+            ret = gSpeciesInfo[species].frontPicYOffsetGBA;
+    }
     else
-        ret = gSpeciesInfo[species].frontPicYOffset;
+    {
+        if (IsOnPlayerSide(battler) || IsContest())
+            ret = gSpeciesInfo[species].backPicYOffset;
+        else
+            ret = gSpeciesInfo[species].frontPicYOffset;
+    }
     return ret;
 }
 
@@ -183,8 +193,16 @@ u8 GetBattlerElevation(u8 battler, u16 species)
     {
         if (!IsContest())
         {
-            species = SanitizeSpeciesId(species);
-            ret = gSpeciesInfo[species].enemyMonElevation;
+            if (FlagGet(FLAG_SILLY_SCOPE))
+            {
+                species = SanitizeSpeciesId(species);
+                ret = gSpeciesInfo[species].enemyMonElevationGBA;
+            }
+            else
+            {
+                species = SanitizeSpeciesId(species);
+                ret = gSpeciesInfo[species].enemyMonElevation;
+            }
         }
     }
     return ret;

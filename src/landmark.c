@@ -377,7 +377,7 @@ static const struct LandmarkList sLandmarkLists[] =
 
 static const struct Landmark *const *GetLandmarks(mapsec_u16_t mapSection, u16 id);
 
-const u8 *GetLandmarkName(mapsec_u8_t mapSection, u16 id, u16 count)
+const u8 *GetLandmarkName(mapsec_u16_t mapSection, u16 id, u16 count)
 {
     const struct Landmark *const *landmarks = GetLandmarks(mapSection, id);
 

@@ -449,13 +449,20 @@ struct SpeciesInfo /*0xC4*/
     // Graphical Data
     u8 noFlip:1;
     u8 frontAnimDelay;
+    u8 frontAnimDelayGBA;
     u8 frontAnimId;
     u8 backAnimId;
+    u8 frontAnimIdGBA;
+    u8 backAnimIdGBA;
     const union AnimCmd *const *frontAnimFrames;
     const u32 *frontPic;
     const u32 *backPic;
+    const u32 *frontPicGBA;
+    const u32 *backPicGBA;
     const u16 *palette;
     const u16 *shinyPalette;
+    const u16 *paletteGBA;
+    const u16 *shinyPaletteGBA;
     const u8 *iconSprite;
 #if P_GENDER_DIFFERENCES
     const u32 *frontPicFemale;
@@ -472,6 +479,12 @@ struct SpeciesInfo /*0xC4*/
     u8 frontPicYOffset; // The number of pixels between the drawn pixel area and the bottom edge.
     u8 backPicSize; // The dimensions of this drawn pixel area.
     u8 backPicYOffset; // The number of pixels between the drawn pixel area and the bottom edge.
+
+    u8 frontPicSizeGBA; // The dimensions of this drawn pixel area.
+    u8 frontPicYOffsetGBA; // The number of pixels between the drawn pixel area and the bottom edge.
+    u8 backPicSizeGBA; // The dimensions of this drawn pixel area.
+    u8 backPicYOffsetGBA; // The number of pixels between the drawn pixel area and the bottom edge.
+    
 #if P_GENDER_DIFFERENCES
     u8 frontPicSizeFemale; // The dimensions of this drawn pixel area.
     u8 backPicSizeFemale; // The dimensions of this drawn pixel area.
@@ -484,6 +497,7 @@ struct SpeciesInfo /*0xC4*/
 #endif //P_GENDER_DIFFERENCES
     u8 pokemonJumpType:2; // According to the clerk, the Pokémon allowed in Pokémon Jump are all <= 28 inches/71 cm, and do not only swim, burrow, or fly.
     u8 enemyMonElevation; // This determines how much higher above the usual position the enemy Pokémon is during battle. Species that float or fly have nonzero values.
+    u8 enemyMonElevationGBA; // Like enemyMonElevation, but for GBA-style sprites.
     // Flags
     u32 isLegendary:1;
     u32 isMythical:1;

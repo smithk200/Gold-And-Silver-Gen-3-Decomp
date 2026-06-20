@@ -3,7 +3,7 @@
   "name": "Route105",
   "layout": "LAYOUT_ROUTE105",
   "music": "MUS_ROUTE104",
-  "region_map_section": "MAPSEC_HOENN_ROUTE",
+  "region_map_section": "MAPSEC_ROUTE_105",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
@@ -32,19 +32,6 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-      "x": 19,
-      "y": 60,
-      "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "6",
-      "script": "Route105_EventScript_Luis",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
       "x": 27,
       "y": 36,
       "elevation": 1,
@@ -70,19 +57,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 19,
-      "y": 9,
-      "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
-      "movement_range_x": 0,
-      "movement_range_y": 5,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route105_EventScript_Imani",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 8,
       "y": 73,
@@ -94,19 +68,6 @@
       "trainer_sight_or_berry_tree_id": "ITEM_IRON",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_GARBAGEFLAG"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 17,
-      "y": 48,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 7,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route105_EventScript_Foster",
-      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
@@ -122,16 +83,16 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 4,
-      "y": 58,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
+      "x": 19,
+      "y": 60,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
-      "movement_range_y": 2,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
-      "script": "Route105_EventScript_Andres",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "Route105_EventScript_Luis",
       "flag": "0"
     }
   ],

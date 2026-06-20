@@ -424,8 +424,8 @@ Route104_Text_DarianDefeat:
 	.string "What the…$"
 
 Route104_Text_DarianPostBattle:
-	.string "Hey, MAGIKARP, you sure don't live up\n"
-	.string "to your name, do you?$"
+	.string "Hey, MAGIKARP, you are pretty\n"
+	.string "worhtless, aren't you?$"
 
 Route105_Text_FosterIntro:
 	.string "There's supposed to be a mystical\n"

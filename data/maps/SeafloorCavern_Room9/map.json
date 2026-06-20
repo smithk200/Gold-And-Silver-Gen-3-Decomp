@@ -31,8 +31,8 @@
     {
       "local_id": "LOCALID_SEAFLOOR_CAVERN_ARCHIE",
       "graphics_id": "OBJ_EVENT_GFX_ARCHIE",
-      "x": 9,
-      "y": 42,
+      "x": -7,
+      "y": -4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -45,8 +45,8 @@
     {
       "local_id": "LOCALID_SEAFLOOR_CAVERN_MAXIE",
       "graphics_id": "OBJ_EVENT_GFX_MAXIE",
-      "x": 9,
-      "y": 42,
+      "x": -6,
+      "y": -4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -59,8 +59,8 @@
     {
       "local_id": "LOCALID_SEAFLOOR_CAVERN_GRUNT_1",
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-      "x": 8,
-      "y": 41,
+      "x": -6,
+      "y": -3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -73,8 +73,8 @@
     {
       "local_id": "LOCALID_SEAFLOOR_CAVERN_GRUNT_2",
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
-      "x": 8,
-      "y": 42,
+      "x": -7,
+      "y": -3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,

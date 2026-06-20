@@ -112,7 +112,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MauvilleCity_EventScript_Wally",
-      "flag": "FLAG_GARBAGEFLAG"
+      "flag": "FLAG_HIDE_WALLY_MAUVILLE"
     },
     {
       "local_id": "LOCALID_MAUVILLE_WALLYS_UNCLE",
@@ -126,7 +126,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MauvilleCity_EventScript_WallysUncle",
-      "flag": "FLAG_GARBAGEFLAG"
+      "flag": "FLAG_HIDE_WALLY_MAUVILLE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WATTSON",
@@ -170,8 +170,8 @@
     {
       "local_id": "LOCALID_MAUVILLE_SCOTT",
       "graphics_id": "OBJ_EVENT_GFX_SCOTT",
-      "x": 12,
-      "y": 14,
+      "x": -7,
+      "y": -4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,

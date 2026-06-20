@@ -26,7 +26,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PetalburgCity_Gym_EventScript_Norman",
-      "flag": "FLAG_GARBAGEFLAG"
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
@@ -135,8 +135,8 @@
     {
       "local_id": "LOCALID_PETALBURG_GYM_WALLY",
       "graphics_id": "OBJ_EVENT_GFX_WALLY",
-      "x": 4,
-      "y": 111,
+      "x": -6,
+      "y": 98,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,

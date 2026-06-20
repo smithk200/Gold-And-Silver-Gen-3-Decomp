@@ -4,7 +4,7 @@ PacifidlogTown_MapScripts::
 	.byte 0
 
 PacifidlogTown_OnTransition:
-	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_VISITED_PACIFIDLOG_TOWN
 	end
 
 PacifidlogTown_OnResume:

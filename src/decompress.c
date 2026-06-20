@@ -3,6 +3,7 @@
 #include "data.h"
 #include "decompress.h"
 #include "decompress_error_handler.h"
+#include "event_data.h"
 #include "pokemon.h"
 #include "pokemon_sprite_visualizer.h"
 #include "text.h"
@@ -1137,10 +1138,20 @@ void LoadSpecialPokePic(void *dest, s32 species, u32 personality, bool8 isFrontP
             DecompressDataWithHeaderWram(gSpeciesInfo[species].frontPicFemale, dest);
         else
     #endif
+    if (FlagGet(FLAG_SILLY_SCOPE))
+        {
+        if (gSpeciesInfo[species].frontPic != NULL)
+            DecompressDataWithHeaderWram(gSpeciesInfo[species].frontPicGBA, dest);
+        else
+            DecompressDataWithHeaderWram(gSpeciesInfo[SPECIES_NONE].frontPicGBA, dest);
+        }
+    else
+    {
         if (gSpeciesInfo[species].frontPic != NULL)
             DecompressDataWithHeaderWram(gSpeciesInfo[species].frontPic, dest);
         else
             DecompressDataWithHeaderWram(gSpeciesInfo[SPECIES_NONE].frontPic, dest);
+    }
     }
     else
     {
@@ -1149,10 +1160,20 @@ void LoadSpecialPokePic(void *dest, s32 species, u32 personality, bool8 isFrontP
             DecompressDataWithHeaderWram(gSpeciesInfo[species].backPicFemale, dest);
         else
     #endif
-        if (gSpeciesInfo[species].backPic != NULL)
+    if (FlagGet(FLAG_SILLY_SCOPE))
+    {
+        if (gSpeciesInfo[species].frontPic != NULL)
+            DecompressDataWithHeaderWram(gSpeciesInfo[species].backPicGBA, dest);
+        else
+            DecompressDataWithHeaderWram(gSpeciesInfo[SPECIES_NONE].backPicGBA, dest);
+    }
+    else
+    {
+        if (gSpeciesInfo[species].frontPic != NULL)
             DecompressDataWithHeaderWram(gSpeciesInfo[species].backPic, dest);
         else
             DecompressDataWithHeaderWram(gSpeciesInfo[SPECIES_NONE].backPic, dest);
+    }
     }
 
     if (species == SPECIES_SPINDA && isFrontPic)

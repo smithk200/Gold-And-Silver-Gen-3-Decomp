@@ -174,7 +174,15 @@ void ChangeAmountInMoneyBox(int amount)
 
 u32 CalculateMoneyTextHorizontalPosition(u32 amount)
 {
-    return (CountDigits(amount) > 8) ? 34 : 26;
+    if (gSaveBlock2Ptr->optionsFont == 1)
+    {
+        return (CountDigits(amount) > 8) ? 33 : 25;
+    }
+    else
+    {
+        return (CountDigits(amount) > 8) ? 34 : 26;
+    }
+    
 }
 
 void DrawMoneyBox(int amount, u8 x, u8 y)

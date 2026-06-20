@@ -2570,4 +2570,7 @@ extern const u8 gText_Sevii[];
 extern const u8 gText_RegionDefault[];
 extern const u8 gText_Next2[];
 extern const u8 gText_Return[];
+extern const u8 gText_SillyScopeTurnOn[];
+extern const u8 gText_SillyScopeTurnOff[];
+
 #endif // GUARD_STRINGS_H

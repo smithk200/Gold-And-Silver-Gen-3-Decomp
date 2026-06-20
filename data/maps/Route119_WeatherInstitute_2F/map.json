@@ -16,7 +16,7 @@
   "object_events": [
     {
       "local_id": "LOCALID_WEATHER_INSTITUTE_2F_GRUNT_1",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
       "x": 15,
       "y": 6,
       "elevation": 3,
@@ -26,11 +26,11 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route119_WeatherInstitute_2F_EventScript_Grunt2",
-      "flag": "FLAG_GARBAGEFLAG"
+      "flag": "FLAG_HIDE_ROUTE_119_GRUNTS"
     },
     {
       "local_id": "LOCALID_WEATHER_INSTITUTE_2F_GRUNT_2",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
       "x": 10,
       "y": 8,
       "elevation": 3,
@@ -40,11 +40,11 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route119_WeatherInstitute_2F_EventScript_Grunt3",
-      "flag": "FLAG_GARBAGEFLAG"
+      "flag": "FLAG_HIDE_ROUTE_119_GRUNTS"
     },
     {
       "local_id": "LOCALID_WEATHER_INSTITUTE_2F_SHELLY",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
       "x": 4,
       "y": 6,
       "elevation": 3,
@@ -54,7 +54,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route119_WeatherInstitute_2F_EventScript_Shelly",
-      "flag": "FLAG_GARBAGEFLAG"
+      "flag": "FLAG_HIDE_ROUTE_119_GRUNTS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
@@ -67,7 +67,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_GARBAGEFLAG"
+      "flag": "FLAG_HIDE_ROUTE_119_GRUNTS"
     },
     {
       "local_id": "LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST",
@@ -94,11 +94,11 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_GARBAGEFLAG"
+      "flag": "FLAG_HIDE_ROUTE_119_GRUNTS"
     },
     {
       "local_id": "LOCALID_WEATHER_INSTITUTE_2F_GRUNT_3",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
       "x": 16,
       "y": 6,
       "elevation": 3,
@@ -108,11 +108,11 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_GARBAGEFLAG"
+      "flag": "FLAG_HIDE_ROUTE_119_GRUNTS"
     },
     {
       "local_id": "LOCALID_WEATHER_INSTITUTE_2F_GRUNT_4",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
       "x": 19,
       "y": 6,
       "elevation": 3,
@@ -122,7 +122,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route119_WeatherInstitute_2F_EventScript_Grunt5",
-      "flag": "FLAG_GARBAGEFLAG"
+      "flag": "FLAG_HIDE_ROUTE_119_GRUNTS"
     }
   ],
   "warp_events": [

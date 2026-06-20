@@ -85,8 +85,8 @@
     {
       "local_id": "LOCALID_ROUTE118_GABBY_1",
       "graphics_id": "OBJ_EVENT_GFX_REPORTER_F",
-      "x": 33,
-      "y": 8,
+      "x": 34,
+      "y": -3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -100,7 +100,7 @@
       "local_id": "LOCALID_ROUTE118_TY_1",
       "graphics_id": "OBJ_EVENT_GFX_CAMERAMAN",
       "x": 34,
-      "y": 8,
+      "y": -4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -126,8 +126,8 @@
     {
       "local_id": "LOCALID_ROUTE118_GABBY_2",
       "graphics_id": "OBJ_EVENT_GFX_REPORTER_F",
-      "x": 33,
-      "y": 8,
+      "x": 34,
+      "y": -4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -140,8 +140,8 @@
     {
       "local_id": "LOCALID_ROUTE118_TY_2",
       "graphics_id": "OBJ_EVENT_GFX_CAMERAMAN",
-      "x": 34,
-      "y": 8,
+      "x": 36,
+      "y": -3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -154,8 +154,8 @@
     {
       "local_id": "LOCALID_ROUTE118_GABBY_3",
       "graphics_id": "OBJ_EVENT_GFX_REPORTER_F",
-      "x": 33,
-      "y": 8,
+      "x": 34,
+      "y": -3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -168,8 +168,8 @@
     {
       "local_id": "LOCALID_ROUTE118_TY_3",
       "graphics_id": "OBJ_EVENT_GFX_CAMERAMAN",
-      "x": 34,
-      "y": 8,
+      "x": 35,
+      "y": -2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -181,8 +181,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 38,
-      "y": 8,
+      "x": 35,
+      "y": -5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -203,19 +203,6 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route118_EventScript_GoodRodFisherman",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
-      "x": 7,
-      "y": 12,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
-      "script": "Route118_EventScript_Rose",
       "flag": "0"
     },
     {
@@ -242,19 +229,6 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route118_EventScript_Chester",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
-      "x": 39,
-      "y": 15,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "2",
-      "script": "Route118_EventScript_Barny",
       "flag": "0"
     },
     {

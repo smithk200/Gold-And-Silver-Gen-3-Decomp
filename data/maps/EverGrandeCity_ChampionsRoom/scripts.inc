@@ -239,23 +239,23 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "{RIVAL}: Hmph. It's you.\n"
-	.string "Haven't seen you since Mt. Moon.\p"
-	.string "I've been training my Pokémon all\n"
-	.string "across Kanto and Hoenn so that I can\l"
+	.string "Haven't seen you since MT. MOON.\p"
+	.string "I've been training my POKéMON all\n"
+	.string "across KANTO and HOENN so that I can\l"
 	.string "be the strongest trainer I can be.\p"
 	.string "All by myself!\p"
 	.string "How about you?\p"
 	.string "How far have YOU gotten?\p"
 	.string "I suppose you haven't done a lot.\p"
-	.string "Except for defeating those Elite Four\n"
+	.string "Except for defeating those ELITE FOUR\n"
 	.string "members, I guess…\p"
 	.string "Still, you'll be no match for me\n"
-	.string "and my all-powerful,\ln"
+	.string "and my all-powerful,\l"
 	.string "new-and-improved team!$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
 	.string "Hmph.\p"
-	.string "After getting all of Hoenn's badges,\n"
+	.string "After getting all of HOENN'S badges,\n"
 	.string "I've lost to you again.\p"
 	.string "Well, that's that.\p"
 	.string "Congratulations on your victory,\n"
@@ -263,7 +263,7 @@ EverGrandeCity_ChampionsRoom_Text_Defeat:
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "{RIVAL}: From when I first met\n"
-	.string "you in Cherrygrove,\l"
+	.string "you in CHERRYGROVE,\l"
 	.string "I thought you were a weakling.\p"
 	.string "A wimp, if you will.\p"
 	.string "But you kept defeating me, time and\n"
@@ -271,12 +271,12 @@ EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "I kept asking myself “How does {PLAYER}\n"
 	.string "keep beating me every time?”\p"
 	.string "Now I understand…\p"
-	.string "It's not the power of Pokémon that\n"
+	.string "It's not the power of POKéMON that\n"
 	.string "make one great.\p"
-	.string "It's the bond Pokémon have with their\n"
+	.string "It's the bond POKéMON have with their\n"
 	.string "Trainers that makes them special.\p"
 	.string "And you seemed to possess that power.\p"
-	.string "Congratulations, Champion {PLAYER}.$."
+	.string "Congratulations, CHAMPION {PLAYER}.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
 	.string "MAY: {PLAYER}{KUN}!\p"

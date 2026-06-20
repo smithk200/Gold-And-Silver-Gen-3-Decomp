@@ -37,6 +37,7 @@
 #include "pokemon_storage_system.h"
 #include "random.h"
 #include "recorded_battle.h"
+#include "regions.h"
 #include "rtc.h"
 #include "sound.h"
 #include "string_util.h"
@@ -5835,6 +5836,7 @@ bool32 IsSpeciesInHoennDex(u16 species)
 
 u16 GetBattleBGM(void)
 {
+    u16 region = GetCurrentRegion();
     if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
     {
         switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
@@ -5893,6 +5895,8 @@ u16 GetBattleBGM(void)
                 return MUS_DP_VS_GALACTIC_BOSS;
             return MUS_VS_AQUA_MAGMA;
         case TRAINER_CLASS_LEADER:
+            if (region == REGION_HOENN)
+                return MUS_VS_GYM_LEADER;
             if (gSaveBlock2Ptr->optionsMusic == 0)
                 return MUS_HG_VS_GYM_LEADER;
             if (gSaveBlock2Ptr->optionsMusic == 1)
@@ -5915,6 +5919,8 @@ u16 GetBattleBGM(void)
                 return MUS_VS_TRAINER;
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
+            if (region == REGION_HOENN)
+                return MUS_VS_ELITE_FOUR;
             if (gSaveBlock2Ptr->optionsMusic == 0)
                 return MUS_HG_VS_GYM_LEADER;
             if (gSaveBlock2Ptr->optionsMusic == 1)
@@ -6012,10 +6018,20 @@ const u16 *GetMonSpritePalFromSpecies(u16 species, bool32 isShiny, bool32 isFema
             return gSpeciesInfo[species].shinyPaletteFemale;
         else
     #endif
-        if (gSpeciesInfo[species].shinyPalette != NULL)
-            return gSpeciesInfo[species].shinyPalette;
-        else
-            return gSpeciesInfo[SPECIES_NONE].shinyPalette;
+    if (FlagGet(FLAG_SILLY_SCOPE))
+        {
+            if (gSpeciesInfo[species].shinyPaletteGBA != NULL)
+                return gSpeciesInfo[species].shinyPaletteGBA;
+            else
+                return gSpeciesInfo[SPECIES_NONE].shinyPaletteGBA;
+        }
+    else
+        {
+            if (gSpeciesInfo[species].shinyPalette != NULL)
+                return gSpeciesInfo[species].shinyPalette;
+            else
+                return gSpeciesInfo[SPECIES_NONE].shinyPalette;
+        }
     }
     else
     {
@@ -6024,10 +6040,20 @@ const u16 *GetMonSpritePalFromSpecies(u16 species, bool32 isShiny, bool32 isFema
             return gSpeciesInfo[species].paletteFemale;
         else
     #endif
-        if (gSpeciesInfo[species].palette != NULL)
-            return gSpeciesInfo[species].palette;
-        else
-            return gSpeciesInfo[SPECIES_NONE].palette;
+        if (FlagGet(FLAG_SILLY_SCOPE))
+        {
+            if (gSpeciesInfo[species].paletteGBA != NULL)
+                return gSpeciesInfo[species].paletteGBA;
+            else
+                return gSpeciesInfo[SPECIES_NONE].paletteGBA;
+        }
+    else
+        {
+            if (gSpeciesInfo[species].palette != NULL)
+                return gSpeciesInfo[species].palette;
+            else
+                return gSpeciesInfo[SPECIES_NONE].palette;
+        }
     }
 }
 
@@ -6311,13 +6337,19 @@ void DoMonFrontSpriteAnimation(struct Sprite *sprite, u16 species, bool8 noCry, 
             // Animation has delay, start delay task
             u8 taskId = CreateTask(Task_AnimateAfterDelay, 0);
             STORE_PTR_IN_TASK(sprite, taskId, 0);
-            gTasks[taskId].sAnimId = gSpeciesInfo[species].frontAnimId;
+            if (FlagGet(FLAG_SILLY_SCOPE))
+                gTasks[taskId].sAnimId = gSpeciesInfo[species].frontAnimIdGBA;
+            else
+                gTasks[taskId].sAnimId = gSpeciesInfo[species].frontAnimId;
             gTasks[taskId].sAnimDelay = gSpeciesInfo[species].frontAnimDelay;
         }
         else
         {
             // No delay, start animation
-            LaunchAnimationTaskForFrontSprite(sprite, gSpeciesInfo[species].frontAnimId);
+            if (FlagGet(FLAG_SILLY_SCOPE))
+                LaunchAnimationTaskForFrontSprite(sprite, gSpeciesInfo[species].frontAnimIdGBA);
+            else
+                LaunchAnimationTaskForFrontSprite(sprite, gSpeciesInfo[species].frontAnimId);
         }
         sprite->callback = SpriteCallbackDummy_2;
     }
@@ -6332,7 +6364,10 @@ void PokemonSummaryDoMonAnimation(struct Sprite *sprite, u16 species, bool8 oneF
         // Animation has delay, start delay task
         u8 taskId = CreateTask(Task_PokemonSummaryAnimateAfterDelay, 0);
         STORE_PTR_IN_TASK(sprite, taskId, 0);
-        gTasks[taskId].sAnimId = gSpeciesInfo[species].frontAnimId;
+        if (FlagGet(FLAG_SILLY_SCOPE))
+            gTasks[taskId].sAnimId = gSpeciesInfo[species].frontAnimIdGBA;
+        else
+            gTasks[taskId].sAnimId = gSpeciesInfo[species].frontAnimId;
         gTasks[taskId].sAnimDelay = gSpeciesInfo[species].frontAnimDelay;
         SummaryScreen_SetAnimDelayTaskId(taskId);
         SetSpriteCB_MonAnimDummy(sprite);
@@ -6340,7 +6375,10 @@ void PokemonSummaryDoMonAnimation(struct Sprite *sprite, u16 species, bool8 oneF
     else
     {
         // No delay, start animation
-        StartMonSummaryAnimation(sprite, gSpeciesInfo[species].frontAnimId);
+        if (FlagGet(FLAG_SILLY_SCOPE))
+            StartMonSummaryAnimation(sprite, gSpeciesInfo[species].frontAnimIdGBA);
+        else
+            StartMonSummaryAnimation(sprite, gSpeciesInfo[species].frontAnimId);
     }
 }
 

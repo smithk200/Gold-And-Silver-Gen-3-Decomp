@@ -3,8 +3,8 @@ MauvilleCity_Gym_MapScripts::
 	.byte 0
 
 MauvilleCity_Gym_OnLoad:
-	goto_if_set FLAG_GARBAGEFLAG, MauvilleCity_Gym_EventScript_DeactivatePuzzle
-	switch VAR_GARBAGEVAR
+	goto_if_set FLAG_BADGE_18_GET, MauvilleCity_Gym_EventScript_DeactivatePuzzle
+	switch VAR_MAUVILLE_GYM_STATE
 	case 0, MauvilleCity_Gym_EventScript_UpdateBarriers
 	case 1, MauvilleCity_Gym_EventScript_Switch1Pressed
 	case 2, MauvilleCity_Gym_EventScript_Switch2Pressed
@@ -84,16 +84,11 @@ MauvilleCity_Gym_EventScript_Wattson::
 	end
 
 MauvilleCity_Gym_EventScript_WattsonDefeated::
+	setflag FLAG_BADGE_18_GET
 	message MauvilleCity_Gym_Text_ReceivedDynamoBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis, MSGBOX_DEFAULT
-	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 3
-	clearflag FLAG_GARBAGEFLAG
-	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_GARBAGEFLAG
-	addvar VAR_GARBAGEVAR, 1
-	call_if_eq VAR_GARBAGEVAR, 6, Common_EventScript_ReadyPetalburgGymForBattle
 	setvar VAR_0x8008, 3
 	call Common_EventScript_SetGymTrainers
 	special MauvilleGymDeactivatePuzzle
@@ -101,13 +96,6 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	playse SE_UNLOCK
 	call MauvilleCity_Gym_EventScript_GiveShockWave
 	closemessage
-	delay 30
-	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox MauvilleCity_Gym_Text_RegisteredWattson, MSGBOX_DEFAULT
-	waitfanfare
-	closemessage
-	delay 30
-	setflag FLAG_ENABLE_WATTSON_MATCH_CALL
 	release
 	end
 
@@ -138,36 +126,36 @@ MauvilleCity_Gym_EventScript_WattsonRematch::
 
 MauvilleCity_Gym_EventScript_Switch1::
 	lockall
-	goto_if_set FLAG_GARBAGEFLAG, MauvilleCity_Gym_EventScript_SwitchDoNothing
-	goto_if_eq VAR_GARBAGEVAR, 1, MauvilleCity_Gym_EventScript_SwitchDoNothing
-	setvar VAR_GARBAGEVAR, 1
+	goto_if_set FLAG_BADGE_18_GET, MauvilleCity_Gym_EventScript_SwitchDoNothing
+	goto_if_eq VAR_TEMP_1, 1, MauvilleCity_Gym_EventScript_SwitchDoNothing
+	setvar VAR_TEMP_1, 1
 	setvar VAR_0x8004, 0
 	goto MauvilleCity_Gym_EventScript_PressFloorSwitch
 	end
 
 MauvilleCity_Gym_EventScript_Switch2::
 	lockall
-	goto_if_set FLAG_GARBAGEFLAG, MauvilleCity_Gym_EventScript_SwitchDoNothing
-	goto_if_eq VAR_GARBAGEVAR, 2, MauvilleCity_Gym_EventScript_SwitchDoNothing
-	setvar VAR_GARBAGEVAR, 2
+	goto_if_set FLAG_BADGE_18_GET, MauvilleCity_Gym_EventScript_SwitchDoNothing
+	goto_if_eq VAR_TEMP_1, 2, MauvilleCity_Gym_EventScript_SwitchDoNothing
+	setvar VAR_TEMP_1, 2
 	setvar VAR_0x8004, 1
 	goto MauvilleCity_Gym_EventScript_PressFloorSwitch
 	end
 
 MauvilleCity_Gym_EventScript_Switch3::
 	lockall
-	goto_if_set FLAG_GARBAGEFLAG, MauvilleCity_Gym_EventScript_SwitchDoNothing
-	goto_if_eq VAR_GARBAGEVAR, 3, MauvilleCity_Gym_EventScript_SwitchDoNothing
-	setvar VAR_GARBAGEVAR, 3
+	goto_if_set FLAG_BADGE_18_GET, MauvilleCity_Gym_EventScript_SwitchDoNothing
+	goto_if_eq VAR_TEMP_1, 3, MauvilleCity_Gym_EventScript_SwitchDoNothing
+	setvar VAR_TEMP_1, 3
 	setvar VAR_0x8004, 2
 	goto MauvilleCity_Gym_EventScript_PressFloorSwitch
 	end
 
 MauvilleCity_Gym_EventScript_Switch4::
 	lockall
-	goto_if_set FLAG_GARBAGEFLAG, MauvilleCity_Gym_EventScript_SwitchDoNothing
-	goto_if_eq VAR_GARBAGEVAR, 4, MauvilleCity_Gym_EventScript_SwitchDoNothing
-	setvar VAR_GARBAGEVAR, 4
+	goto_if_set FLAG_BADGE_18_GET, MauvilleCity_Gym_EventScript_SwitchDoNothing
+	goto_if_eq VAR_TEMP_1, 4, MauvilleCity_Gym_EventScript_SwitchDoNothing
+	setvar VAR_TEMP_1, 4
 	setvar VAR_0x8004, 3
 	goto MauvilleCity_Gym_EventScript_PressFloorSwitch
 	end
@@ -224,7 +212,7 @@ MauvilleCity_Gym_EventScript_Angelo::
 MauvilleCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
-	goto_if_set FLAG_GARBAGEFLAG, MauvilleCity_Gym_EventScript_GymGuidePostVictory
+	goto_if_set FLAG_BADGE_18_GET, MauvilleCity_Gym_EventScript_GymGuidePostVictory
 	msgbox MauvilleCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
 	release
 	end
@@ -236,13 +224,13 @@ MauvilleCity_Gym_EventScript_GymGuidePostVictory::
 
 MauvilleCity_Gym_EventScript_LeftGymStatue::
 	lockall
-	goto_if_set FLAG_GARBAGEFLAG, MauvilleCity_Gym_EventScript_GymStatueCertified
+	goto_if_set FLAG_BADGE_18_GET, MauvilleCity_Gym_EventScript_GymStatueCertified
 	goto MauvilleCity_Gym_EventScript_GymStatue
 	end
 
 MauvilleCity_Gym_EventScript_RightGymStatue::
 	lockall
-	goto_if_set FLAG_GARBAGEFLAG, MauvilleCity_Gym_EventScript_GymStatueCertified
+	goto_if_set FLAG_BADGE_18_GET, MauvilleCity_Gym_EventScript_GymStatueCertified
 	goto MauvilleCity_Gym_EventScript_GymStatue
 	end
 
@@ -356,11 +344,7 @@ MauvilleCity_Gym_Text_ReceivedDynamoBadge:
 	.string "from WATTSON.$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
-	.string "With the DYNAMO BADGE, POKéMON can\n"
-	.string "use ROCK SMASH out of battle.\p"
-	.string "And, it will make your POKéMON a little\n"
-	.string "bit faster, too.\p"
-	.string "Hmm…\n"
+	.string "Congratulations on getting the DYNAMO BADGE!\n"
 	.string "You should take this, too!$"
 
 MauvilleCity_Gym_Text_ExplainShockWave:

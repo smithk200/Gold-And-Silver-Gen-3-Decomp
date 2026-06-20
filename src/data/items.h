@@ -202,6 +202,11 @@ static const u8 sRadioDesc[] = _(
     "A shiny new radio\n"
     "that plays music.");
 
+static const u8 sSillyScopeDesc[] = _(
+    "A scope that lets\n"
+    "you see the Pokémon\n"
+    "of yore.");
+
 const struct Item gItemsInfo[] =
 {
     [ITEM_NONE] =
@@ -12358,9 +12363,23 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_HM_DIVE] =
+    [ITEM_HM_WHIRLPOOL] =
     {
         .name = ITEM_NAME("HM08"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Traps and hurts the\n"
+            "foe in a whirlpool\n"
+            "for 2 to 5 turns."),
+        .importance = 1,
+        .pocket = POCKET_TM_HM,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+    },
+
+    [ITEM_HM_DIVE] =
+    {
+        .name = ITEM_NAME("HM09"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Dives underwater\n"
@@ -14780,6 +14799,18 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Radio,
         .iconPic = gItemIcon_Radio,
         .iconPalette = gItemIcon_Palette_Radio,
+    },
+    [ITEM_SILLY_SCOPE] =
+    {
+        .name = ITEM_NAME("Silly Scope"),
+        .price = 0,
+        .description = sSillyScopeDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_SillyScope,
+        .iconPic = gItemIcon_SilphScope,
+        .iconPalette = gItemIconPalette_SilphScope,
     }, 
 };
 

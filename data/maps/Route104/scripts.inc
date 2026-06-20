@@ -5,7 +5,12 @@ Route104_MapScripts::
 
 Route104_OnFrame:
 	map_script_2 VAR_GARBAGEVAR, 1, Route104_EventScript_StartSailToDewford
+	map_script_2 VAR_TEMP_0, 0, Route104_EventScript_RenderRoute104Text
 	.2byte 0
+
+Route104_EventScript_RenderRoute104Text::
+	bufferstring STR_VAR_3, Text_104
+	end
 
 Route104_EventScript_StartSailToDewford::
 	lockall
@@ -853,13 +858,8 @@ Route104_EventScript_Billy::
 	end
 
 Route104_EventScript_Haley::
-	trainerbattle_single TRAINER_NONE, Route104_Text_HaleyIntro, Route104_Text_HaleyDefeat, Route104_EventScript_TryRegisterHaleyAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route104_EventScript_RematchHaley
-	specialvar VAR_RESULT, IsTrainerRegistered
-	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterHaley
-	msgbox Route104_Text_HaleyPostBattle, MSGBOX_DEFAULT
-	release
+	trainerbattle_single TRAINER_HALEY, Route104_Text_HaleyIntro, Route104_Text_HaleyDefeat
+	msgbox Route104_Text_HaleyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route104_EventScript_TryRegisterHaleyAfterBattle::
@@ -982,7 +982,6 @@ Route104_EventScript_Mia::
 	end
 
 Route104_EventScript_Darian::
-	trainerbattle_single TRAINER_NONE, Route104_Text_DarianIntro, Route104_Text_DarianDefeat
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -1158,3 +1157,6 @@ Route104_Text_BrendanPostBattle:
 	.string "making POKéMON battle.\p"
 	.string "Like MR. BRINEY, it's important to\n"
 	.string "become friends with your POKéMON.$"
+
+Text_104:
+	.string "104$"

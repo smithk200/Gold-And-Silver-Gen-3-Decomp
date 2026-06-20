@@ -225,6 +225,9 @@ EventScript_ResetAllMapFlags::
 	setvar VAR_TOHJO_FALLS_GIOVANNI_STATE, 0
 	setvar VAR_ROUTE22_GIOVANNI_STATE, 0
 	setvar VAR_ROUTE27_BAOBA_CALL, 0
+	clearflag FLAG_SILLY_SCOPE
+	@giveitem ITEM_SILLY_SCOPE
+	setflag FLAG_VS_SEEKER_ENABLED
 
 	call EventScript_ResetAllBerries
 	end

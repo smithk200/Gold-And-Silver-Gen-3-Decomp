@@ -6,7 +6,7 @@ Route120_MapScripts::
 	.byte 0
 
 Route120_OnResume:
-	call_if_set FLAG_GARBAGEFLAG, Route120_EventScript_RemoveKecleonObject
+	call_if_set FLAG_HIDE_KECLEON_ROUTE_120, Route120_EventScript_RemoveKecleonObject
 	end
 
 Route120_EventScript_RemoveKecleonObject::

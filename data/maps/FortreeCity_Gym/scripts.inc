@@ -5,7 +5,7 @@ FortreeCity_Gym_MapScripts::
 
 FortreeCity_Gym_OnTransition:
 	special RotatingGate_InitPuzzle
-	setflag FLAG_GARBAGEFLAG @ Hide follower bc of rotating gates
+	setflag FLAG_TEMP_HIDE_FOLLOWER @ Hide follower bc of rotating gates
 	end
 
 FortreeCity_Gym_OnWarp:
@@ -31,8 +31,7 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT
-	setflag FLAG_GARBAGEFLAG
-	setflag FLAG_GARBAGEFLAG
+	setflag FLAG_BADGE_19_GET
 	setvar VAR_0x8008, 6
 	call Common_EventScript_SetGymTrainers
 	call FortreeCity_Gym_EventScript_GiveAerialAce
@@ -44,8 +43,8 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_WINONA_MATCH_CALL
-	setvar VAR_SCOTT_FORTREE_CALL_STEP_COUNTER, 0
-	setflag FLAG_SCOTT_CALL_FORTREE_GYM
+	@setvar VAR_SCOTT_FORTREE_CALL_STEP_COUNTER, 0
+	@setflag FLAG_SCOTT_CALL_FORTREE_GYM
 	release
 	end
 
@@ -102,7 +101,7 @@ FortreeCity_Gym_EventScript_Darius::
 FortreeCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
-	goto_if_set FLAG_GARBAGEFLAG, FortreeCity_Gym_EventScript_GymGuidePostVictory
+	goto_if_set FLAG_BADGE_19_GET, FortreeCity_Gym_EventScript_GymGuidePostVictory
 	msgbox FortreeCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
 	release
 	end

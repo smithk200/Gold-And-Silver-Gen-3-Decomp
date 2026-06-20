@@ -1044,8 +1044,14 @@ static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y)
             StringCopy(gStringVar4, gText_SoldOut);
         else
             StringExpandPlaceholders(gStringVar4, gText_PokedollarVar1);
-        x = GetStringRightAlignXOffset(FONT_NARROW, gStringVar4, 120);
-        AddTextPrinterParameterized4(windowId, FONT_NARROW, x, y, 0, 0, sShopBuyMenuTextColors[COLORID_ITEM_LIST], TEXT_SKIP_DRAW, gStringVar4);
+        if (gSaveBlock2Ptr->optionsFont == 1)
+            x = GetStringRightAlignXOffset(FONT_SHORT, gStringVar4, 120);
+        else
+            x = GetStringRightAlignXOffset(FONT_NARROW, gStringVar4, 120);
+        if (gSaveBlock2Ptr->optionsFont == 1)
+            AddTextPrinterParameterized4(windowId, FONT_SHORT, x, y, 0, 0, sShopBuyMenuTextColors[COLORID_ITEM_LIST], TEXT_SKIP_DRAW, gStringVar4);
+        else
+            AddTextPrinterParameterized4(windowId, FONT_NARROW, x, y, 0, 0, sShopBuyMenuTextColors[COLORID_ITEM_LIST], TEXT_SKIP_DRAW, gStringVar4);
     }
 }
 

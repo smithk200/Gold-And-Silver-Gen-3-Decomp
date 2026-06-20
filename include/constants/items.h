@@ -1008,10 +1008,13 @@
 #define ITEM_TIDAL_BELL 838
 #define ITEM_RADIO 839
 
+#define ITEM_HM09 840
+#define ITEM_SILLY_SCOPE    841
+
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 840
+#define ITEMS_COUNT 842
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

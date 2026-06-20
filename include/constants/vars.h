@@ -176,7 +176,7 @@
 #define VAR_NEW_MAUVILLE_STATE                           0x409C
 #define VAR_BRAVO_TRAINER_BATTLE_TOWER_ON                0x409D 
 #define VAR_JAGGED_PASS_ASH_WEATHER                      0x409E
-#define VAR_METEOR_FALLS_STATE                           0x409F// HnS Vars end
+#define VAR_MAUVILLE_GYM_STATE                           0x409F// HnS Vars end
 #define VAR_SLATEPORT_HARBOR_STATE                       0x40A0
 #define VAR_GLASS_WORKSHOP_STATE                         0x40A1 
 #define VAR_SEAFLOOR_CAVERN_STATE                        0x40A2
@@ -236,7 +236,7 @@
 #define VAR_SOOTOPOLIS_WALLACE_STATE                     0x40D8
 #define VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT 0x40D9
 #define VAR_REGISTER_BIRCH_STATE                         0x40DA
-#define VAR_UNUSED_0x40DB                                0x40DB // Unused Var
+#define VAR_ROUTE_NUMBER                                0x40DB // Unused Var
 #define VAR_UNUSED_0x40DC                                0x40DC // Unused Var
 #define VAR_GIFT_PICHU_SLOT                              0x40DD
 #define VAR_GIFT_UNUSED_1                                0x40DE // Var is written to, but never read

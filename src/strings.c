@@ -1546,3 +1546,5 @@ const u8 gText_Gen4Plus[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Gen IV+");
 const u8 gText_Gen3andLower[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Gen I-III");
 const u8 gText_Next2[] = _("Next");
 const u8 gText_Return[] = _("Return");
+const u8 gText_SillyScopeTurnOn[] = _("Turned on the Silly Scope.\pPOKéMON designs will look like\nthat of the original GBA games.{PAUSE_UNTIL_PRESS}");
+const u8 gText_SillyScopeTurnOff[] = _("Turned off the Silly Scope.\pPOKéMON designs will look\nlike that of the newer games.{PAUSE_UNTIL_PRESS}");

@@ -111,7 +111,7 @@ static const u8 sMovementScript_Wait48[] = {
 };
 
 static const u8 sMovementScript_TrainerUnfought[] = {
-    MOVEMENT_ACTION_EMOTE_EXCLAMATION_MARK,
+    //MOVEMENT_ACTION_EMOTE_EXCLAMATION_MARK,
     MOVEMENT_ACTION_STEP_END
 };
 
@@ -122,7 +122,7 @@ static const u8 sMovementScript_TrainerNoRematch[] = {
 
 static const u8 sMovementScript_TrainerRematch[] = {
     MOVEMENT_ACTION_WALK_IN_PLACE_FASTER_DOWN,
-    MOVEMENT_ACTION_EMOTE_DOUBLE_EXCL_MARK,
+    //MOVEMENT_ACTION_EMOTE_DOUBLE_EXCL_MARK,
     MOVEMENT_ACTION_STEP_END
 };
 
@@ -751,8 +751,18 @@ static u32 GetRematchableTrainerLocalId(void)
     {
         if (IsTrainerVisibleOnScreen(&sVsSeeker->trainerInfo[i]) == 1)
         {
-            if (HasTrainerBeenFought(sVsSeeker->trainerInfo[i].trainerIdx) != 1 || GetRematchTrainerIdFromTable(gRematchTable, sVsSeeker->trainerInfo[i].trainerIdx))
+            if (HasTrainerBeenFought(sVsSeeker->trainerInfo[i].trainerIdx) != 1 || GetRematchTrainerIdFromTable(gRematchTable, sVsSeeker->trainerInfo[i].trainerIdx)) //refer to "sVsSeekerData" in the pokefirered version of this file
+            {    
+                u32 trainer = sVsSeeker->trainerInfo[i].trainerIdx;
+                u32 flag = FlagGet(TRAINER_FLAGS_START);
+                u16 rand = Random() % 100;
+                if (rand < 70) // 70% chance to trigger a rematch
+                {
+                    flag = (flag + trainer);
+                    ClearTrainerFlag(flag);
+                }
                 return sVsSeeker->trainerInfo[i].localId;
+            }
         }
     }
 
