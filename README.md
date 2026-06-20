@@ -21,7 +21,8 @@ Implemented
 - An item that makes the Pokémon sprites look like their GBA-era sprites. It's called the Silly Scope. It's based on DS Sounds from BDSP.
 - Also, VS Seeker functionality has been implemented.
 
-Note: this uses 95.41% of ROM space, last I checked. Rendering both the GBA-styled sprites and the modern sprites took up more ROM space than I though. I'm trying to get this down to around 90%, and this can probably be done by removing some instrument samples.
+Note: this uses 95.41% of ROM space, last I checked. Rendering both the GBA-styled sprites and the modern sprites took up more ROM space than I thought. Whoops.
+I'm trying to get this down to around 90%, and this can probably be done by removing some instrument samples.
 
 ![Battle text during Nuzlocke Mode](nuzlocke_text.png)![Gym Leaders and Elite Four can use this cool transition.](mugshot_transition.png)![The new terrain and run modes from HnS have been ported over!](run_modes.png)
 ![New options from the option menu, and they all work!](new_options.png)
