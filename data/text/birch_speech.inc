@@ -66,7 +66,7 @@ gText_Birch_NuzlockeChallenge::
 	.string "to battle and must be released.\p"
 	.string "Also, you may only catch the first\n"
 	.string "POKéMON you encounter in each area.\p"
-	.string "These rules test a TRAINER’s bond\n"
+	.string "These rules test a TRAINER’S bond\n"
 	.string "with their team.\p"
 	.string "Every choice matters!\p"
 	.string "So, would you like to play the\n"
