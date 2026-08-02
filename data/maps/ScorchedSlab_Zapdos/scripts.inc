@@ -40,7 +40,7 @@ ScorchedSlab_Zapdos_EventScript_Zapdos::
 	setflag FLAG_GARBAGEFLAG
 	call_if_set FLAG_GARBAGEFLAG, ScorchedSlab_Zapdos_EventScript_Zapdos_Stats
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_GARBAGEFLAG
 	calculatemonstats
 	specialvar VAR_RESULT, GetBattleOutcome

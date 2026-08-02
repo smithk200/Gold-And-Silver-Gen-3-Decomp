@@ -48,9 +48,9 @@ Route9_Text_CamperDeanBeaten:
 	.string "Whoa! Danger, man.$"
 
 Route9_Text_CamperDeanAfter:
-	.string "My POKéMON were hurt before even\n"
+	.string "My Pokémon were hurt before even\n"
 	.string "entering ROCK TUNNEL.\p"
-	.string "I'd better take them to a POKéMON\n"
+	.string "I'd better take them to a Pokémon\n"
 	.string "CENTER right away.$"
 
 Route9_Text_PicnickerHeidiSeen:

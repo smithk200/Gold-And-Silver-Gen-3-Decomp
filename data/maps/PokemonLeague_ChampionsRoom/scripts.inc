@@ -74,7 +74,7 @@ PokemonLeague_WillsRoom_EventScript_LanceOnDefeatJohto::
 	setvar VAR_0x8006, 4  @ num shakes
 	setvar VAR_0x8007, 4  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	special DrawWholeMapView
 	playse SE_PIN
 	applymovement LOCALID_LEAGUE_LANCE, Common_Movement_ExclamationMark
@@ -126,7 +126,7 @@ PokemonLeague_WillsRoom_EventScript_LanceOnDefeatJohto::
 	closemessage
 	setvar VAR_LEAGUE_STATE, 6
 	warpsilent MAP_POKEMON_LEAGUE_HALL_OF_FAME, 0
-	releaseall
+	@releaseall
 	end
 
 PokemonLeague_WillsRoom_EventScript_LanceOnDefeatKanto::
@@ -141,7 +141,7 @@ PokemonLeague_WillsRoom_EventScript_LanceOnDefeatKanto::
 	setvar VAR_0x8006, 4  @ num shakes
 	setvar VAR_0x8007, 4  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	special DrawWholeMapView
 	playse SE_PIN
 	applymovement LOCALID_LEAGUE_LANCE, Common_Movement_ExclamationMark
@@ -193,7 +193,7 @@ PokemonLeague_WillsRoom_EventScript_LanceOnDefeatKanto::
 	closemessage
 	setvar VAR_LEAGUE_STATE, 6
 	warpsilent MAP_POKEMON_LEAGUE_HALL_OF_FAME, 0
-	releaseall
+	@releaseall
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_AdjustPlayerFacingEast::
@@ -338,7 +338,7 @@ PokemonLeague_ChampionsRoom_Text_BattleIntro:
     .string "We will battle to determine who is\n"
     .string "the stronger of the two of us.\p"
     .string "As the most powerful trainer and as\n"
-    .string "the POKéMON LEAGUE CHAMPION…\p"
+    .string "the Pokémon LEAGUE CHAMPION…\p"
     .string "I, LANCE the dragon master, accept\n"
     .string "your challenge!$"
 
@@ -354,10 +354,10 @@ PokemonLeague_ChampionsRoom_Text_BattleAfter:
     .string "…Whew.\p"
     .string "You have become truly powerful,\n"
     .string "{PLAYER}.\p"
-    .string "Your POKéMON have responded to your\n"
+    .string "Your Pokémon have responded to your\n"
     .string "strong and upstanding nature.\p"
     .string "As a trainer, you will continue to\n"
-    .string "grow strong with your POKéMON.$"
+    .string "grow strong with your Pokémon.$"
 
 PokemonLeague_ChampionsRoom_Text_MaryOhNoOak:
     .string "MARY: Oh, no! It's all over!\p"
@@ -370,8 +370,8 @@ PokemonLeague_ChampionsRoom_Text_OakCongratulations:
     .string "Your conquest of the JOHTO LEAGUE\n"
     .string "is just fantastic!\p"
     .string "Your dedication, trust and love for\n"
-    .string "your POKéMON made this happen.\p"
-    .string "Your POKéMON were outstanding too.\p"
+    .string "your Pokémon made this happen.\p"
+    .string "Your Pokémon were outstanding too.\p"
     .string "Because they believed in you as a\n"
     .string "trainer, they persevered.\p"
     .string "Congratulations, {PLAYER}!$"
@@ -386,7 +386,7 @@ PokemonLeague_ChampionsRoom_Text_RematchOakCongratulations:
     .string "Conquering both the JOHTO and now\n"
     .string "the KANTO LEAGUE is no small feat.\p"
     .string "You've truly outdone yourself!\p"
-    .string "It's clear that your POKéMON trust\n"
+    .string "It's clear that your Pokémon trust\n"
     .string "you immensely,\p"
     .string "and that trust has been the\n"
     .string "foundation of your success.\p"

@@ -43,7 +43,7 @@ Route12_House_Text_GaveSuperRod:
 	.string "Try your hand at fishing wherever\n"
 	.string "there is water.\p"
 	.string "Remember--you can catch different\n"
-	.string "POKéMON using different RODS.$"
+	.string "Pokémon using different RODS.$"
 
 Route12_House_Text_DontWantSuperRod:
 	.string "Huh? My own eyes deceived me?$"

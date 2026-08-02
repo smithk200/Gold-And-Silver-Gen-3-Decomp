@@ -44,7 +44,7 @@ VictoryRoad_Moltres2_EventScript_Moltres::
 	setflag FLAG_GARBAGEFLAG
 	call_if_set FLAG_GARBAGEFLAG, VictoryRoad_Moltres2_EventScript_Moltres_Stats
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_GARBAGEFLAG
 	calculatemonstats
 	specialvar VAR_RESULT, GetBattleOutcome

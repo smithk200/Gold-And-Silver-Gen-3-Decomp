@@ -24,5 +24,5 @@ EventScript_GotoTrainerScript::
 EventScript_ObjectApproachPlayer::
 	lock
 	special DoTrainerApproach
-	waitstate
+	@waitstate
 	gotonative LoadTrainerObjectScript

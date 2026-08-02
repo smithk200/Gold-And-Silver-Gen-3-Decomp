@@ -49,13 +49,13 @@ MirageTower_4F_EventScript_CollapseMirageTower::
 	setvar VAR_0x8006, 32  @ num shakes
 	setvar VAR_0x8007, 2   @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	special DoMirageTowerCeilingCrumble
-	waitstate
+	@waitstate
 	setvar VAR_MIRAGE_TOWER_STATE, 1
 	clearflag FLAG_LANDMARK_MIRAGE_TOWER
 	warp MAP_ROUTE111, 19, 59
-	waitstate
+	@waitstate
 	release
 	end
 

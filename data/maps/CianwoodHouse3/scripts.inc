@@ -74,31 +74,31 @@ CianwoodCity_Text_ManiacAskShuckle:
 	.string "A guy about your age with piercing\n"
 	.string "eyes and long hair came in.\p"
 	.string "He scared me into giving him my\n"
-	.string "prized POKéMON!\p"
+	.string "prized Pokémon!\p"
 	.string "I still have one left, but what if\n"
 	.string "he comes back?\p"
 	.string "You look strong. Could you look\n"
-	.string "after my POKéMON for a while?$"
+	.string "after my Pokémon for a while?$"
 
 CianwoodCity_Text_ManiacTakeCareShuckle:
 	.string "Oh, thank you!\p"
 	.string "Take good care of it, please!$"
 
 CianwoodCity_Text_ManiacGotShuckle:
-	.string "{PLAYER} received a POKéMON.$"
+	.string "{PLAYER} received a Pokémon.$"
 
 CianwoodCity_Text_ManiacPartyFull:
-	.string "Your POKéMON party is full.$"
+	.string "Your Pokémon party is full.$"
 
 CianwoodCity_Text_ManiacIfHeComesBack:
 	.string "Oh, no… What'll I do if he comes\n"
 	.string "back?$"
 
 CianwoodCity_Text_ManiacHowsdoing:
-	.string "Hi! How's my POKéMON?$"
+	.string "Hi! How's my Pokémon?$"
 
 CianwoodCity_Text_ManiacAskReturn:
-	.string "Hi! How's my POKéMON?\p"
+	.string "Hi! How's my Pokémon?\p"
 	.string "I think I'm safe now, so may I\n"
 	.string "have it back?$"
 
@@ -106,11 +106,11 @@ CianwoodCity_Text_ManiacThankYou:
 	.string "Thank you!$"
 
 CianwoodCity_Text_ManiacShuckleNotThere:
-	.string "Hey, you don't have my POKéMON\n"
+	.string "Hey, you don't have my Pokémon\n"
 	.string "with you.$"
 
 CianwoodCity_Text_ManiacShuckleLikesYou:
-	.string "My POKéMON has come to like you.\p"
+	.string "My Pokémon has come to like you.\p"
 	.string "All right, you should keep it.\p"
 	.string "But promise to be good to it!$"
 
@@ -122,11 +122,11 @@ CianwoodCity_Text_ManiacRobbed2:
 	.string "being robbed.$"
 
 CianwoodCity_Text_ManiacHappinessSpeech:
-	.string "For POKéMON, happiness is being\n"
+	.string "For Pokémon, happiness is being\n"
 	.string "with a person who treats them well.$"
 
 CianwoodCity_Text_ManiacLastMon:
-	.string "If I take my POKéMON back,\n"
+	.string "If I take my Pokémon back,\n"
 	.string "what are you going to use\n"
 	.string "in battle?$"
 

@@ -147,7 +147,7 @@ NewMauville_Inside_Raikou_RaikouBattle::
 	setflag FLAG_GARBAGEFLAG
 	call_if_set FLAG_GARBAGEFLAG, NewMauville_Inside_Raikou_RaikouBattle_3_Stats
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_GARBAGEFLAG
 	calculatemonstats
 	specialvar VAR_RESULT, GetBattleOutcome

@@ -33,7 +33,7 @@ PalletTown_House2_EventScript_DaisyGrooming::
 	goto_if_eq VAR_RESULT, FALSE, PalletTown_House2_EventScript_DaisyDeclineGrooming
 	msgbox PalletTown_House2_Text_WhichMon, MSGBOX_DEFAULT
 	special ChoosePartyMon
-	waitstate
+	@waitstate
 	lock
 	faceplayer
 	bufferpartymonnick STR_VAR_1, VAR_0x8004
@@ -66,7 +66,7 @@ PalletTown_House2_Text_OfferGrooming:
 	.string "DAISY: Hi! Good timing. I'm about\n"
 	.string "to have some tea.\p"
 	.string "Would you like to join me?\p"
-	.string "Oh, your POKéMON are a bit dirty.\p"
+	.string "Oh, your Pokémon are a bit dirty.\p"
 	.string "Would you like me to groom one?$"
 
 PalletTown_House2_Text_WhichMon:
@@ -80,7 +80,7 @@ PalletTown_House2_Text_AllDone:
 	.string "DAISY: There you go! All done.\p"
 	.string "See? Doesn't {STR_VAR_1} look\n"
 	.string "nice?\p"
-	.string "It's such a cute POKéMON.$"
+	.string "It's such a cute Pokémon.$"
 
 PalletTown_House2_Text_AlreadyGroomed:
 	.string "DAISY: I always have tea around\n"

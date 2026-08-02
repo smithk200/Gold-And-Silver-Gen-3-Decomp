@@ -105,7 +105,7 @@ Route15_Text_SchoolboyBillyBeaten:
 	.string "Oh, no! How could I lose?$"
 
 Route15_Text_SchoolboyBillyAfterBattle:
-	.string "If POKéMON were a subject at\n"
+	.string "If Pokémon were a subject at\n"
 	.string "school, I'd be the best!$"
 
 Route15_Text_Sign:

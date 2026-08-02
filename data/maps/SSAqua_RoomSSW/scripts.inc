@@ -30,5 +30,5 @@ SSAqua_RoomSSW_Text_BugCatcherKenBeaten:
     .string "Ooh, wow. You're tough!$"
 
 SSAqua_RoomSSW_Text_BugCatcherKenAfterBattle:
-    .string "You can find lots of POKéMON\n"
+    .string "You can find lots of Pokémon\n"
     .string "in the trees of JOHTO!$"

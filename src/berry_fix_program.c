@@ -38,14 +38,14 @@ static void BerryFix_HideScene(void);
 static const u8 sText_BerryProgramUpdate[] = _("Berry Program Update");
 static const u8 sText_RubySapphire[] = _("Ruby/Sapphire");
 static const u8 sText_Emerald[] = _("Emerald");
-static const u8 sText_BerryProgramWillBeUpdatedPressA[] = _("The Berry Program on your POKéMON\n"
+static const u8 sText_BerryProgramWillBeUpdatedPressA[] = _("The Berry Program on your Pokémon\n"
                                                             "Ruby/Sapphire Game Pak will be updated.\n"
                                                             "{COLOR RED}{SHADOW LIGHT_RED}Press the A Button.");
 static const u8 sText_EnsureGBAConnectionMatches[] = _("Please ensure the connection of your\n"
                                                        "Game Boy Advance system matches this.\n"
                                                        "{COLOR RED}{SHADOW LIGHT_RED}YES: Press the A Button.\n"
                                                        "NO: Turn off the power and try again.");
-static const u8 sText_TurnOffPowerHoldingStartSelect[] = _("Please turn on the power of POKéMON\n"
+static const u8 sText_TurnOffPowerHoldingStartSelect[] = _("Please turn on the power of Pokémon\n"
                                                            "Ruby/Sapphire while holding START and\n"
                                                            "SELECT simultaneously. Then, ensure\n"
                                                            "the picture above appears.");
@@ -53,7 +53,7 @@ static const u8 sText_TransmittingPleaseWait[] = _("Transmitting. Please wait.\n
                                                    "{COLOR RED}{SHADOW LIGHT_RED}Please do not turn off the power or\n"
                                                    "unplug the Game Boy Advance Game\nLink Cable.");
 static const u8 sText_PleaseFollowInstructionsOnScreen[] = _("Please follow the instructions on your\n"
-                                                             "POKéMON Ruby/Sapphire screen.");
+                                                             "Pokémon Ruby/Sapphire screen.");
 static const u8 sText_TransmissionFailureTryAgain[] = _("Transmission failure.\n"
                                                         "{COLOR RED}{SHADOW LIGHT_RED}Please try again.");
 
@@ -118,7 +118,7 @@ static const struct WindowTemplate sBerryFixWindowTemplates[] = {
     DUMMY_WIN_TEMPLATE
 };
 
-static const u16 ALIGNED(4) sText_Pal[] = INCBIN_U16("graphics/berry_fix/text.gbapal");
+static const u16 ALIGNED(4) sText_Pal[] = INCGFX_U16("graphics/berry_fix/text.pal", ".gbapal");
 static const u8 sBerryProgramTextColors[] = {TEXT_DYNAMIC_COLOR_1, TEXT_DYNAMIC_COLOR_2, TEXT_DYNAMIC_COLOR_3};
 static const u8 sGameTitleTextColors[] = { TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_1, TEXT_DYNAMIC_COLOR_4};
 
@@ -214,63 +214,63 @@ static void BerryFix_Main(void)
 {
     switch (sBerryFix->state)
     {
-        case MAINSTATE_INIT:
-            BerryFix_GpuSet();
-            sBerryFix->state = MAINSTATE_BEGIN;
-            break;
-        case MAINSTATE_BEGIN:
-            if (TryScene(SCENE_BEGIN) && JOY_NEW(A_BUTTON))
-                sBerryFix->state = MAINSTATE_CONNECT;
-            break;
-        case MAINSTATE_CONNECT:
-            if (TryScene(SCENE_ENSURE_CONNECT) && JOY_NEW(A_BUTTON))
-                sBerryFix->state = MAINSTATE_INIT_MULTIBOOT;
-            break;
-        case MAINSTATE_INIT_MULTIBOOT:
-            if (TryScene(SCENE_TURN_OFF_POWER))
-            {
-                sBerryFix->mb.masterp = gMultiBootProgram_BerryGlitchFix_Start;
-                sBerryFix->mb.server_type = 0;
-                MultiBootInit(&sBerryFix->mb);
-                sBerryFix->timer = 0;
-                sBerryFix->state = MAINSTATE_MULTIBOOT;
-            }
-            break;
-        case MAINSTATE_MULTIBOOT:
+    case MAINSTATE_INIT:
+        BerryFix_GpuSet();
+        sBerryFix->state = MAINSTATE_BEGIN;
+        break;
+    case MAINSTATE_BEGIN:
+        if (TryScene(SCENE_BEGIN) && JOY_NEW(A_BUTTON))
+            sBerryFix->state = MAINSTATE_CONNECT;
+        break;
+    case MAINSTATE_CONNECT:
+        if (TryScene(SCENE_ENSURE_CONNECT) && JOY_NEW(A_BUTTON))
+            sBerryFix->state = MAINSTATE_INIT_MULTIBOOT;
+        break;
+    case MAINSTATE_INIT_MULTIBOOT:
+        if (TryScene(SCENE_TURN_OFF_POWER))
+        {
+            sBerryFix->mb.masterp = gMultiBootProgram_BerryGlitchFix_Start;
+            sBerryFix->mb.server_type = 0;
+            MultiBootInit(&sBerryFix->mb);
+            sBerryFix->timer = 0;
+            sBerryFix->state = MAINSTATE_MULTIBOOT;
+        }
+        break;
+    case MAINSTATE_MULTIBOOT:
+        MultiBootMain(&sBerryFix->mb);
+        if (sBerryFix->mb.probe_count != 0 || (!(sBerryFix->mb.response_bit & 2) || !(sBerryFix->mb.client_bit & 2)))
+        {
+            sBerryFix->timer = 0;
+        }
+        else if (++sBerryFix->timer > 180)
+        {
+            MultiBootStartMaster(&sBerryFix->mb,
+                                 gMultiBootProgram_BerryGlitchFix_Start + ROM_HEADER_SIZE,
+                                 (u32)(gMultiBootProgram_BerryGlitchFix_End - (gMultiBootProgram_BerryGlitchFix_Start + ROM_HEADER_SIZE)),
+                                 4,
+                                 1);
+            sBerryFix->state = MAINSTATE_TRANSMIT;
+        }
+        break;
+    case MAINSTATE_TRANSMIT:
+        if (TryScene(SCENE_TRANSMITTING))
+        {
             MultiBootMain(&sBerryFix->mb);
-            if (sBerryFix->mb.probe_count != 0 || (!(sBerryFix->mb.response_bit & 2) || !(sBerryFix->mb.client_bit & 2)))
-            {
-                sBerryFix->timer = 0;
-            }
-            else if (++sBerryFix->timer > 180)
-            {
-                MultiBootStartMaster(&sBerryFix->mb,
-                                     gMultiBootProgram_BerryGlitchFix_Start + ROM_HEADER_SIZE,
-                                     (u32)(gMultiBootProgram_BerryGlitchFix_End - (gMultiBootProgram_BerryGlitchFix_Start + ROM_HEADER_SIZE)),
-                                     4,
-                                     1);
-                sBerryFix->state = MAINSTATE_TRANSMIT;
-            }
-            break;
-        case MAINSTATE_TRANSMIT:
-            if (TryScene(SCENE_TRANSMITTING))
-            {
-                MultiBootMain(&sBerryFix->mb);
 
-                if (MultiBootCheckComplete(&sBerryFix->mb))
-                    sBerryFix->state = MAINSTATE_EXIT;
-                else if (!(sBerryFix->mb.client_bit & 2))
-                    sBerryFix->state = MAINSTATE_FAILED;
-            }
-            break;
-        case MAINSTATE_EXIT:
-            if (TryScene(SCENE_FOLLOW_INSTRUCT) && JOY_NEW(A_BUTTON))
-                DoSoftReset();
-            break;
-        case MAINSTATE_FAILED:
-            if (TryScene(SCENE_TRANSMIT_FAILED) && JOY_NEW(A_BUTTON))
-                sBerryFix->state = MAINSTATE_BEGIN;
-            break;
+            if (MultiBootCheckComplete(&sBerryFix->mb))
+                sBerryFix->state = MAINSTATE_EXIT;
+            else if (!(sBerryFix->mb.client_bit & 2))
+                sBerryFix->state = MAINSTATE_FAILED;
+        }
+        break;
+    case MAINSTATE_EXIT:
+        if (TryScene(SCENE_FOLLOW_INSTRUCT) && JOY_NEW(A_BUTTON))
+            DoSoftReset();
+        break;
+    case MAINSTATE_FAILED:
+        if (TryScene(SCENE_TRANSMIT_FAILED) && JOY_NEW(A_BUTTON))
+            sBerryFix->state = MAINSTATE_BEGIN;
+        break;
     }
 }
 

@@ -69,7 +69,7 @@ SafariZoneGate_SafariZoneEntrance_EventScript_BaobaBeach::
 	msgbox SafariZoneGate_SafariZoneEntrance_Text_BaobaBeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, SafariZoneGate_SafariZoneEntrance_EventScript_BaobaDeclined
 	special ChoosePartyMon
-	waitstate
+	@waitstate
 	lockall
 	copyvar VAR_0x800A, VAR_0x8004
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, SafariZoneGate_SafariZoneEntrance_EventScript_BaobaDeclined
@@ -92,7 +92,7 @@ SafariZoneGate_SafariZoneEntrance_EventScript_BaobaBrush::
 	msgbox SafariZoneGate_SafariZoneEntrance_Text_BaobaBrush, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, SafariZoneGate_SafariZoneEntrance_EventScript_BaobaDeclined
 	special ChoosePartyMon
-	waitstate
+	@waitstate
 	lockall
 	copyvar VAR_0x800A, VAR_0x8004
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, SafariZoneGate_SafariZoneEntrance_EventScript_BaobaDeclined
@@ -115,7 +115,7 @@ SafariZoneGate_SafariZoneEntrance_EventScript_BaobaMountain::
 	msgbox SafariZoneGate_SafariZoneEntrance_Text_BaobaMountain, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, SafariZoneGate_SafariZoneEntrance_EventScript_BaobaDeclined
 	special ChoosePartyMon
-	waitstate
+	@waitstate
 	lockall
 	copyvar VAR_0x800A, VAR_0x8004
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, SafariZoneGate_SafariZoneEntrance_EventScript_BaobaDeclined
@@ -138,7 +138,7 @@ SafariZoneGate_SafariZoneEntrance_EventScript_BaobaCave::
 	msgbox SafariZoneGate_SafariZoneEntrance_Text_BaobaCave, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, SafariZoneGate_SafariZoneEntrance_EventScript_BaobaDeclined
 	special ChoosePartyMon
-	waitstate
+	@waitstate
 	lockall
 	copyvar VAR_0x800A, VAR_0x8004
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, SafariZoneGate_SafariZoneEntrance_EventScript_BaobaDeclined
@@ -185,21 +185,21 @@ SafariZoneGate_SafariZoneEntrance_Text_BaobaBeachDone:
 	.string "Thank you, {PLAYER}!\n"
 	.string "Here, take this money to upgrade\l"
 	.string "your SAFARI LEVEL and show me an\l"
-	.string "exotic POKéMON from the BRUSH area\l"
+	.string "exotic Pokémon from the BRUSH area\l"
 	.string "next!$"
 	
 SafariZoneGate_SafariZoneEntrance_Text_BaobaBrushDone:
 	.string "Thank you, {PLAYER}!\n"
 	.string "Here, take this money to upgrade\l"
 	.string "your SAFARI LEVEL and show me an\l"
-	.string "exotic POKéMON from the MOUNTAIN\l"
+	.string "exotic Pokémon from the MOUNTAIN\l"
 	.string "area next!$"
 
 SafariZoneGate_SafariZoneEntrance_Text_BaobaMountainDone:
 	.string "Thank you, {PLAYER}!\n"
 	.string "Here, take this money to upgrade\l"
 	.string "your SAFARI LEVEL and show me an\l"
-	.string "exotic POKéMON from the CAVE area\l"
+	.string "exotic Pokémon from the CAVE area\l"
 	.string "next!$"
 
 SafariZoneGate_SafariZoneEntrance_Text_BaobaCaveDone:
@@ -215,25 +215,25 @@ SafariZoneGate_SafariZoneEntrance_Text_BaobaWrong:
 
 SafariZoneGate_SafariZoneEntrance_Text_BaobaBeach:
 	.string "Ah, {PLAYER}!\p"
-	.string "Did you bring an exotic POKéMON\n"
+	.string "Did you bring an exotic Pokémon\n"
 	.string "from the BEACH area of the FUCHSIA\l"
 	.string "SAFARI ZONE to show me?$"
 
 SafariZoneGate_SafariZoneEntrance_Text_BaobaBrush:
 	.string "Ah, {PLAYER}!\p"
-	.string "Did you bring an exotic POKéMON\n"
+	.string "Did you bring an exotic Pokémon\n"
 	.string "from the BRUSH area of the FUCHSIA\l"
 	.string "SAFARI ZONE to show me?$"
 
 SafariZoneGate_SafariZoneEntrance_Text_BaobaMountain:
 	.string "Ah, {PLAYER}!\p"
-	.string "Did you bring an exotic POKéMON\n"
+	.string "Did you bring an exotic Pokémon\n"
 	.string "from the MOUNTAIN area of the\l"
 	.string "FUCHSIA SAFARI ZONE to show me?$"
 
 SafariZoneGate_SafariZoneEntrance_Text_BaobaCave:
 	.string "Ah, {PLAYER}!\p"
-	.string "Did you bring an exotic POKéMON\n"
+	.string "Did you bring an exotic Pokémon\n"
 	.string "from the CAVE area of the FUCHSIA\l"
 	.string "SAFARI ZONE to show me?$"
 
@@ -242,7 +242,7 @@ SafariZoneGate_SafariZoneEntrance_Text_BaobaDeclined:
 	.string "We'll never keep up with DEVON!$"
 
 SafariZoneGate_SafariZoneEntrance_Text_BaobaLastMon:
-	.string "I can't take your last POKéMON!$"
+	.string "I can't take your last Pokémon!$"
 
 SafariZoneGate_SafariZoneEntrance_Text_BaobaDone:
 	.string "Ah, {PLAYER}!\p"
@@ -286,7 +286,7 @@ SafariZoneGate_SafariZoneEntrance_EventScript_TryEnterSafariZone::
 	setvar VAR_SAFARI_ZONE_STATE, 2
 	clearflag FLAG_GOOD_LUCK_SAFARI_ZONE
 	warp MAP_SAFARI_ZONE_ENTERANCE, 0
-	waitstate
+	@waitstate
 	end
 
 SafariZoneGate_SafariZoneEntrance_EventScript_CheckHasRoomForPokemon::

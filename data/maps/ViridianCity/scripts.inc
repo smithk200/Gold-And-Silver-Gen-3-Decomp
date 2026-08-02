@@ -69,7 +69,7 @@ ViridianCity_Text_CoffeeGramps_Question:
 	.string "I need to talk to someone, so you'll\n"
 	.string "have to do!\p"
 	.string "I might not look like much now, but\n"
-	.string "I was an expert at catching POKéMON.\p"
+	.string "I was an expert at catching Pokémon.\p"
 	.string "Do you believe me?$"
 
 ViridianCity_Text_CoffeeGramps_Believed:
@@ -127,7 +127,7 @@ ViridianCity_Text_Sign:
 	.string "The Eternally Green Paradise$"
 
 ViridianCity_Text_GymSign:
-	.string "VIRIDIAN CITY POKéMON GYM\n"
+	.string "VIRIDIAN CITY Pokémon GYM\n"
 	.string "LEADER: …\p"
 	.string "The rest of the text is illegible…$"
 

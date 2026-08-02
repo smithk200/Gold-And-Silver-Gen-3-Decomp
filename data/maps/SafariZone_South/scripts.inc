@@ -90,7 +90,7 @@ SafariZone_South_EventScript_ExitEarlyEast::
 SafariZone_South_EventScript_Exit::
 	setvar VAR_SAFARI_ZONE_STATE, 1
 	special ExitSafariMode
-	waitstate
+	@waitstate
 	end
 
 SafariZone_South_Movement_PlayerExitNorth:

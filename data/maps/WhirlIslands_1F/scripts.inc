@@ -207,7 +207,7 @@ WhirlIslands_1F_EventScript_Lugia::
 	seteventmon SPECIES_LUGIA, 50
 	setflag FLAG_GARBAGEFLAG
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_GARBAGEFLAG
 	setvar VAR_LAST_TALKED, LOCALID_LUGIA
 	specialvar VAR_RESULT, GetBattleOutcome
@@ -234,7 +234,7 @@ WhirlIslands_1F_EventScript_LugiaPostgame::
 	seteventmon SPECIES_LUGIA, 70
 	setflag FLAG_GARBAGEFLAG
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_GARBAGEFLAG
 	setvar VAR_LAST_TALKED, LOCALID_LUGIA
 	specialvar VAR_RESULT, GetBattleOutcome

@@ -318,7 +318,7 @@ GoldenrodCity_GameCorner_Text_CooltrainerF:
     .string "I won't quit until I win!$"
 
 GoldenrodCity_GameCorner_Text_Gentleman:
-    .string "I taught BLIZZARD to my POKéMON.\p"
+    .string "I taught BLIZZARD to my Pokémon.\p"
     .string "It was hard to get enough coins for\n"
     .string "it, but it was worth it.$"
 

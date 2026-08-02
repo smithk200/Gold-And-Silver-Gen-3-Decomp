@@ -111,7 +111,7 @@ BattleFrontier_BattlePikeThreePathRoom_EventScript_WarpNPCRoom::
 	waitmovement 0
 	call BattleFrontier_BattlePike_EventScript_CloseCurtain
 	warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_NORMAL, 4, 7
-	waitstate
+	@waitstate
 	end
 
 BattleFrontier_BattlePikeThreePathRoom_EventScript_WarpWildMonRoom::
@@ -119,7 +119,7 @@ BattleFrontier_BattlePikeThreePathRoom_EventScript_WarpWildMonRoom::
 	waitmovement 0
 	call BattleFrontier_BattlePike_EventScript_CloseCurtain
 	warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS, 4, 19
-	waitstate
+	@waitstate
 	end
 
 BattleFrontier_BattlePikeThreePathRoom_EventScript_SetEnteredRoom::
@@ -163,7 +163,7 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_Exit::
 	pike_isfinalroom
 	call_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePikeRoom_EventScript_WarpToFinalRoom
 	call_if_eq VAR_RESULT, FALSE, BattleFrontier_BattlePikeRoom_EventScript_WarpToThreePathRoom
-	waitstate
+	@waitstate
 	end
 
 BattleFrontier_BattlePikeRoom_EventScript_DisableHealing::
@@ -202,7 +202,7 @@ BattleFrontier_BattlePikeRoomWildMons_EventScript_Exit::
 	pike_isfinalroom
 	call_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePikeRoom_EventScript_WarpToFinalRoom
 	call_if_eq VAR_RESULT, FALSE, BattleFrontier_BattlePikeRoom_EventScript_WarpToThreePathRoom
-	waitstate
+	@waitstate
 	end
 
 BattleFrontier_BattlePikeRoomWildMons_EventScript_SetEnteredRoom::
@@ -222,7 +222,7 @@ BattleFrontier_BattlePikeRoomWildMons_EventScript_NoTurningBack::
 BattleFrontier_BattlePike_EventScript_Retire::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS CHALLENGE_STATUS_LOST
 	warp MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY, 5, 6
-	waitstate
+	@waitstate
 	end
 
 BattleFrontier_BattlePikeRoom_OnResume:

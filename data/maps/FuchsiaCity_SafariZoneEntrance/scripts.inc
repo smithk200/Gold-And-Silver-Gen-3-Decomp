@@ -40,7 +40,7 @@ FuchsiaCity_SafariZoneEntrance_EventScript_ReenterSafari::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp1
 	waitmovement 0
 	warp MAP_FUCHSIA_CITY_SAFARI_ZONE_BEACH, 0
-	waitstate
+	@waitstate
 	end
 
 FuchsiaCity_SafariZoneEntrance_EventScript_MeetSteven::
@@ -140,7 +140,7 @@ FuchsiaCity_SafariZoneEntrance_EventScript_TryEnterSafariZone::
 	setvar VAR_SAFARI_ZONE_STATE, 2
 	clearflag FLAG_GOOD_LUCK_SAFARI_ZONE
 	warp MAP_FUCHSIA_CITY_SAFARI_ZONE_BEACH, 1
-	waitstate
+	@waitstate
 	end
 
 FuchsiaCity_SafariZoneEntrance_EventScript_CorrectionRight::
@@ -227,7 +227,7 @@ FuchsiaCity_SafariZoneEntrance_Text_StevenWelcome:
 	.string "company recently purchased this\l"
 	.string "SAFARI ZONE, and we've made many\l"
 	.string "improvements.\p"
-	.string "You'll find very exotic POKéMON\n"
+	.string "You'll find very exotic Pokémon\n"
 	.string "here. Especially if you increase\l"
 	.string "your SAFARI LEVEL.\p"
 	.string "Just speak to the attendant here\n"

@@ -25,5 +25,5 @@ EcruteakMart_Text_SuperNerd:
 	.string "our EEVEE in the same way…$"
 
 EcruteakMart_Text_Granny:
-	.string "If you use REVIVE, a POKéMON that's\n"
+	.string "If you use REVIVE, a Pokémon that's\n"
 	.string "fainted will wake right up.$"

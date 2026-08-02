@@ -108,7 +108,7 @@ Route34_Text_YoungsterSamuel_After:
 
 Route34_Text_YoungsterIan_Seen:
 	.string "I'm the best in my class at\n"
-	.string "POKéMON.$"
+	.string "Pokémon.$"
 
 Route34_Text_YoungsterIan_Beaten:
 	.string "No! There are better trainers…$"
@@ -119,7 +119,7 @@ Route34_Text_YoungsterIan_After:
 
 Route34_Text_CamperTodd_Seen:
 	.string "I'm confident in my ability to\n"
-	.string "raise POKéMON.\p"
+	.string "raise Pokémon.\p"
 	.string "Want to see?$"
 
 Route34_Text_CamperTodd_Beaten:
@@ -156,7 +156,7 @@ Route34_Text_OfficerKeith_Daytime:
 	.string "individuals.$"
 
 Route34_Text_PokefanBrandon_Seen:
-	.string "I just got my POKéMON back from\n"
+	.string "I just got my Pokémon back from\n"
 	.string "DAY-CARE.\p"
 	.string "Let's see how much stronger it got!$"
 
@@ -164,7 +164,7 @@ Route34_Text_PokefanBrandon_Beaten:
 	.string "Why does it end this way?$"
 
 Route34_Text_PokefanBrandon_After:
-	.string "My POKéMON came back with new moves.\p"
+	.string "My Pokémon came back with new moves.\p"
 	.string "That confounded me to no end!$"
 
 Route34_Text_Sign_IlexForest:
@@ -232,4 +232,4 @@ Route34_Text_CooltrainerKate_After:
 
 Route34_Text_Sign_DayCare:
 	.string "DAY-CARE\p"
-	.string "LET US RAISE YOUR POKéMON FOR YOU!$"
+	.string "LET US RAISE YOUR Pokémon FOR YOU!$"

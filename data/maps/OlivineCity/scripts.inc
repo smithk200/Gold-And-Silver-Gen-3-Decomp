@@ -163,11 +163,11 @@ OlivineCity_Text_SilverEncounter:
 	.string "Speaking of weaklings, the\n"
 	.string "city's Gym Leader isn't here,\l"
 	.string "and is supposedly taking care\l"
-	.string "of a sick POKéMON at the\l"
+	.string "of a sick Pokémon at the\l"
 	.string "Lighthouse.\p"
 	.string "Humph! Boo-hoo!\n"
-	.string "Just let sick POKéMON go!\p"
-	.string "A POKéMON that can't battle\n"
+	.string "Just let sick Pokémon go!\p"
+	.string "A Pokémon that can't battle\n"
 	.string "is worthless!\p"
 	.string "Why don't you go train at the\n"
 	.string "Lighthouse?\p"
@@ -307,7 +307,7 @@ OlivineCity_Text_Sailor2:
 	.string "Hah! That's a load of crud.\p"
 	.string "There's no way PRYCE could\n"
 	.string "hurt JASMINE's Steel-type\l"
-	.string "POKéMON!\p"
+	.string "Pokémon!\p"
 	.string "Bureaucracy if you ask me.\p"
 	.string "She's something to be feared,\n"
 	.string "that's for sure!$"
@@ -321,7 +321,7 @@ OlivineCity_Text_PortSign:
 	.string "FAST SHIP PIER$"
 
 OlivineCity_Text_GymSign:
-	.string "OLIVINE CITY POKéMON GYM\n"
+	.string "OLIVINE CITY Pokémon GYM\n"
 	.string "LEADER: JASMINE\p"
 	.string "The Steel-Clad Defense Girl$"
 

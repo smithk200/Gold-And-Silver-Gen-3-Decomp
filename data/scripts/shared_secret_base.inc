@@ -28,7 +28,7 @@ SecretBase_EventScript_PC::
 	playse SE_PC_LOGIN
 	message SecretBase_Text_BootUpPC
 	dofieldeffect FLDEFF_PCTURN_ON
-	waitstate
+	@waitstate
 	waitmessage
 	waitbuttonpress
 	playse SE_SELECT
@@ -87,7 +87,7 @@ SecretBase_EventScript_RecordMixingPC::
 	message SecretBase_Text_BootUpPC
 	playse SE_PC_LOGIN
 	dofieldeffect FLDEFF_PCTURN_ON
-	waitstate
+	@waitstate
 	waitmessage
 	waitbuttonpress
 	playse SE_SELECT
@@ -174,7 +174,7 @@ SecretBase_EventScript_FurnitureTop::
 SecretBase_EventScript_SandOrnament::
 	special CheckInteractedWithFriendsSandOrnament
 	dofieldeffect FLDEFF_SAND_PILLAR
-	waitstate
+	@waitstate
 	end
 
 SecretBase_EventScript_ShieldOrToyTV::

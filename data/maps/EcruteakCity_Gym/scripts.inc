@@ -77,19 +77,19 @@ EcruteakCity_Gym_EventScript_Statue2::
 	end
 
 EcruteakCity_Gym_Text_GymStatue:
-	.string "ECRUTEAK CITY POKéMON GYM$"
+	.string "ECRUTEAK CITY Pokémon GYM$"
 
 EcruteakCity_Gym_Text_GymStatueCertified:
-	.string "ECRUTEAK CITY POKéMON GYM\p"
+	.string "ECRUTEAK CITY Pokémon GYM\p"
 	.string "MORTY'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
 MortyIntroText:
 	.string "Good of you to have come.\p"
-	.string "Here in ECRUTEAK, POKéMON have\n"
+	.string "Here in ECRUTEAK, Pokémon have\n"
 	.string "always been revered.\p"
 	.string "It's said that a rainbow-colored\n"
-	.string "POKéMON will come down to\l"
+	.string "Pokémon will come down to\l"
 	.string "appear before a true Trainer.\p"
 	.string "I believed that tale, so I've\n"
 	.string "trained here in secret.\p"
@@ -98,7 +98,7 @@ MortyIntroText:
 	.string "Just a bit more...\p"
 	.string "With a little more, I could see\n"
 	.string "a future where I meet the\l"
-	.string "rainbow-colored POKéMON.\p"
+	.string "rainbow-colored Pokémon.\p"
 	.string "You're going to help me reach\n"
 	.string "that level!$"
 
@@ -110,9 +110,9 @@ Text_ReceivedFogBadge:
 	.string "{PLAYER} received the FOGBADGE.$"
 
 MortyText_FogBadgeSpeech:
-	.string "With the FOGBADGE, POKéMON up\n"
+	.string "With the FOGBADGE, Pokémon up\n"
 	.string "to Level 50 will obey you.\p"
-	.string "Also, any POKéMON that knows\n"
+	.string "Also, any Pokémon that knows\n"
 	.string "SURF will be able to use it\l"
 	.string "anytime.\p"
 	.string "I want you to have this too.$"
@@ -138,7 +138,7 @@ MortyRematchText:
 	.string "but have you grown since we\l"
 	.string "last battled?\p"
 	.string "I've trained with my GHOST-type\n"
-	.string "POKéMON ever since.\p"
+	.string "Pokémon ever since.\p"
 	.string "Let's see if you can overcome\n"
 	.string "the shadows again.\p"
 	.string "Want to have a rematch?$"
@@ -151,7 +151,7 @@ Morty_RematchDefeatText:
 
 SageJeffreySeenText:
 	.string "I spent the spring with my\n"
-	.string "POKéMON.\p"
+	.string "Pokémon.\p"
 	.string "Then summer, fall, and winter...\p"
 	.string "Then spring came again.\n"
 	.string "We've been together a long time.$"
@@ -161,17 +161,17 @@ SageJeffreyBeatenText:
 	.string "them both.$"
 
 SageJeffreyAfterBattleText:
-	.string "Where did POKéMON come from?$"
+	.string "Where did Pokémon come from?$"
 
 SagePingSeenText:
 	.string "Can you inflict any damage\n"
-	.string "on our POKéMON?$"
+	.string "on our Pokémon?$"
 
 SagePingBeatenText:
 	.string "Ah! Well done!$"
 
 SagePingAfterBattleText:
-	.string "We use GHOST-type POKéMON.\p"
+	.string "We use GHOST-type Pokémon.\p"
 	.string "No NORMAL-type attacks can\n"
 	.string "harm them!$"
 
@@ -202,7 +202,7 @@ EcruteakCity_GymGuideText:
 	.string "Hey CHAMP! You're almost\n"
 	.string "halfway there!\p"
 	.string "Trainers here use GHOST- and\n"
-	.string "DARK-type POKéMON.\p"
+	.string "DARK-type Pokémon.\p"
 	.string "While MORTY is a GHOST-type\n"
 	.string "expert, be wary of his mystic\l"
 	.string "deer.\p"

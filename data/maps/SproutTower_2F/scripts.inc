@@ -50,5 +50,5 @@ SproutTower_Text_SageEdmond_AfterBattle:
 	.string "But I didn't train well enough.$"
 
 SproutTower_Text_2F_Statue:
-	.string "A POKéMON statue…\p"
+	.string "A Pokémon statue…\p"
 	.string "It looks very distinguished.$"

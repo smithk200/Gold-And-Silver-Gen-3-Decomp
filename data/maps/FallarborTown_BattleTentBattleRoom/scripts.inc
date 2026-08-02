@@ -65,7 +65,7 @@ FallarborTown_BattleTentBattleRoom_EventScript_WarpToLobbyLost::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST
 	special LoadPlayerParty
 	warp MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY, 6, 6
-	waitstate
+	@waitstate
 
 FallarborTown_BattleTentBattleRoom_EventScript_DefeatedOpponent::
 	applymovement LOCALID_FALLARBOR_TENT_BATTLE_ATTENDANT, FallarborTown_BattleTentBattleRoom_Movement_AttendantJump
@@ -127,14 +127,14 @@ FallarborTown_BattleTentBattleRoom_EventScript_ContinueChallenge::
 	applymovement LOCALID_FALLARBOR_TENT_BATTLE_PLAYER, FallarborTown_BattleTentBattleRoom_Movement_PlayerFaceBattle
 	waitmovement 0
 	goto FallarborTown_BattleTentBattleRoom_EventScript_NextOpponentEnter
-	waitstate
+	@waitstate
 
 FallarborTown_BattleTentBattleRoom_EventScript_WarpToLobbyWon::
 	delay 60
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_WON
 	special LoadPlayerParty
 	warp MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY, 6, 6
-	waitstate
+	@waitstate
 
 @ Unreachable code block? The flow into the next block also doesnt make sense
 	arena_get ARENA_DATA_WIN_STREAK

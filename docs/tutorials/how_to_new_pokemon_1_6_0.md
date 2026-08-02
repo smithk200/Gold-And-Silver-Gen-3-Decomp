@@ -25,13 +25,13 @@ The main things that the Expansion changes are listed here.
   * [5. Delimit the moveset](#5-delimit-the-moveset)
   * [6. Define its cry](#6-define-its-cry)
   * [7. Define the Evolutions](#7-define-the-evolutions)
-  * [8. Easy Chat about your Pokémon](#8-easy-chat-about-your-pokémon)
+  * [8. Easy Chat about your Pokémon](#8-easy-chat-about-your-Pokémon)
   * [9. Make it appear!](#9-make-it-appear)
 * [Appendix](#appendix)
   * [Available Front Animations](#available-front-animations)
   * [Available Back Animations](#available-back-animations)
-  * [Pokémon ordered by height](#pokémon-ordered-by-height)
-  * [Pokémon ordered by weight](#pokémon-ordered-by-weight)
+  * [Pokémon ordered by height](#Pokémon-ordered-by-height)
+  * [Pokémon ordered by weight](#Pokémon-ordered-by-weight)
   * [Making this easier](#making-this-easier)
 
 
@@ -525,7 +525,7 @@ Edit [src/data/pokemon/pokedex_entries.h](https://github.com/rh-hideout/pokeemer
 
 The values `pokemonScale`, `pokemonOffset`, `trainerScale` and `trainerOffset` are used for the height comparison figure in the Pokédex. Height and weight are specified in meters and kilograms respectively, while the last digit is the first decimal place.
 
-In Pokémon Emerald, you can sort the Pokédex by name, height or weight. Apparently, the Pokémon order is hardcoded in the game files and not calculated from their data. Therefore we have to include our new Pokémon species at the right places. While the correct position for the alphabetical order is easy to find, it can become quite tedious for height and weight. To find the right position for your Pokémon, you may look at the tables sorted by [height](#pokémon-ordered-by-height) and [weight](#pokémon-ordered-by-weight) respectively in the appendix.
+In Pokémon Emerald, you can sort the Pokédex by name, height or weight. Apparently, the Pokémon order is hardcoded in the game files and not calculated from their data. Therefore we have to include our new Pokémon species at the right places. While the correct position for the alphabetical order is easy to find, it can become quite tedious for height and weight. To find the right position for your Pokémon, you may look at the tables sorted by [height](#Pokémon-ordered-by-height) and [weight](#Pokémon-ordered-by-weight) respectively in the appendix.
 
 Edit [src/data/pokemon/pokedex_orders.h](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/src/data/pokemon/pokedex_orders.h):
 

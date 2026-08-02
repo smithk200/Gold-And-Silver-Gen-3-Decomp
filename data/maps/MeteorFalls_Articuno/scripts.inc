@@ -40,7 +40,7 @@ MeteorFalls_Articuno_EventScript_Articuno::
 	setflag FLAG_GARBAGEFLAG
 	call_if_set FLAG_GARBAGEFLAG, MeteorFalls_Articuno_EventScript_Articuno_Stats
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_GARBAGEFLAG
 	calculatemonstats
 	specialvar VAR_RESULT, GetBattleOutcome

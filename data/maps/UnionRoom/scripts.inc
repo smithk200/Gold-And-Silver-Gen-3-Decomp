@@ -31,7 +31,7 @@ UnionRoom_EventScript_Player1::
 	lock
 	faceplayer
 	setvar VAR_RESULT, UR_INTERACT_PLAYER_1
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -39,7 +39,7 @@ UnionRoom_EventScript_Player2::
 	lock
 	faceplayer
 	setvar VAR_RESULT, UR_INTERACT_PLAYER_2
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -47,7 +47,7 @@ UnionRoom_EventScript_Player3::
 	lock
 	faceplayer
 	setvar VAR_RESULT, UR_INTERACT_PLAYER_3
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -55,7 +55,7 @@ UnionRoom_EventScript_Player4::
 	lock
 	faceplayer
 	setvar VAR_RESULT, UR_INTERACT_PLAYER_4
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -63,7 +63,7 @@ UnionRoom_EventScript_Player5::
 	lock
 	faceplayer
 	setvar VAR_RESULT, UR_INTERACT_PLAYER_5
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -71,7 +71,7 @@ UnionRoom_EventScript_Player6::
 	lock
 	faceplayer
 	setvar VAR_RESULT, UR_INTERACT_PLAYER_6
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -79,7 +79,7 @@ UnionRoom_EventScript_Player7::
 	lock
 	faceplayer
 	setvar VAR_RESULT, UR_INTERACT_PLAYER_7
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -87,7 +87,7 @@ UnionRoom_EventScript_Player8::
 	lock
 	faceplayer
 	setvar VAR_RESULT, UR_INTERACT_PLAYER_8
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -95,13 +95,13 @@ UnionRoom_EventScript_Attendant::
 	lock
 	faceplayer
 	setvar VAR_RESULT, UR_INTERACT_ATTENDANT
-	waitstate
+	@waitstate
 	release
 	end
 
 UnionRoom_EventScript_Unused::
 	lockall
 	setvar VAR_RESULT, UR_INTERACT_UNUSED
-	waitstate
+	@waitstate
 	releaseall
 	end

@@ -91,7 +91,7 @@ Route39_Text_FarmerMSickCow:
 Route39_Text_FarmerMBuyMilk:
 	.string "How'd you like my MOOMOO MILK?\p"
 	.string "It's my pride and joy, there.\p"
-	.string "Give it to POKéMON to restore HP!\p"
+	.string "Give it to Pokémon to restore HP!\p"
 	.string "I'll give it to ya fer just\n"
 	.string "¥500.$"
 
@@ -133,9 +133,9 @@ Route39_Text_FarmerFHealedMiltank:
 Route39_Text_FarmerFSnatchSpeech:
 	.string "That there's SNATCH.\p"
 	.string "It's a tricky move that lets\n"
-	.string "a POKéMON steal a foe's move\l"
+	.string "a Pokémon steal a foe's move\l"
 	.string "right before it's used.\p"
-	.string "If more than one POKéMON use\n"
+	.string "If more than one Pokémon use\n"
 	.string "SNATCH, only the slowest one\l"
 	.string "will end up stealing the move.\p"
 	.string "Use it smart, hon. Timing is\n"

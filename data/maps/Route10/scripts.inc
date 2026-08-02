@@ -74,7 +74,7 @@ Route10_EventScript_Zapdos::
 	waitmoncry
 	seteventmon SPECIES_ZAPDOS, 50
 	special BattleSetup_StartLegendaryBattle
-waitstate
+@waitstate
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route10_EventScript_ZapdosRan
 	fadescreenswapbuffers FADE_TO_BLACK
@@ -100,14 +100,14 @@ Route10_Text_HikerJimAfter:
 	.string "Ahahah-CHOO!$"
 
 Route10_Text_PokefanmRobertSeen:
-	.string "You like POKéMON, don't you?\p"
+	.string "You like Pokémon, don't you?\p"
 	.string "Me too!$"
 
 Route10_Text_PokefanmRobertBeaten:
 	.string "I'd have to say that's my loss.$"
 
 Route10_Text_PokefanmRobertAfter:
-	.string "Look what you did to my POKéMON…\p"
+	.string "Look what you did to my Pokémon…\p"
 	.string "I won't forget this…$"
 
 Route10_Text_PowerPlant:

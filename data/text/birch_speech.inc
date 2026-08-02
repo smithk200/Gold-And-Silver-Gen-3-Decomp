@@ -62,10 +62,10 @@ gText_Birch_NuzlockeChallenge::
 	.string "makes your adventure more difficult\l"
 	.string "and more meaningful.\p"
 	.string "Under these rules, if one of your\n"
-	.string "POKéMON faints, it’s considered unable\l"
+	.string "Pokémon faints, it’s considered unable\l"
 	.string "to battle and must be released.\p"
 	.string "Also, you may only catch the first\n"
-	.string "POKéMON you encounter in each area.\p"
+	.string "Pokémon you encounter in each area.\p"
 	.string "These rules test a TRAINER’S bond\n"
 	.string "with their team.\p"
 	.string "Every choice matters!\p"
@@ -89,7 +89,7 @@ gText_Birch_YesNuzlocke::
 	.string "You’re looking for a real challenge!\p"
 	.string "I’ll enable the NUZLOCKE CHALLENGE\n"
 	.string "for your adventure.\p"
-	.string "Take good care of your POKéMON.\n"
+	.string "Take good care of your Pokémon.\n"
 	.string "Every one of them will be important!\p"
 	.string "$"
 
@@ -100,3 +100,24 @@ gText_Birch_Farewell::
 	.string "with Pokémon awaits! Let's go!\p"
 	.string "I'll be seeing you later!\p"
 	.string "$"
+
+gText_Birch_Difficulty::
+	.string "Aha…\p"
+	.string "And… How do you think this\n"
+	.string "adventure is going to be?$"
+
+gText_Birch_LockDifficulty::
+	.string "If you need to change the DIFFICULTY\n"
+	.string "you can open the OPTIONS MENU and\l"
+	.string "change it from there.\p"
+	.string "You can also lock it, if you want.\n"
+	.string "Do you want to lock the\l"
+	.string "chosen DIFFICULTY?\p"
+	.string "This cannot be changed later.$"
+
+gText_Birch_Challenge::
+	.string "Oh, is that so?\p"
+	.string "All right, with that clear…\n"
+	.string "Do you expect any CHALLENGE\l"
+	.string "in your journey?\p"
+	.string "And what's your name?$"

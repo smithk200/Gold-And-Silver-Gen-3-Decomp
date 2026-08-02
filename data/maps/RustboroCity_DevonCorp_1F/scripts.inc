@@ -139,6 +139,6 @@ RustboroCity_DevonCorp_1F_Text_ProductDisplay:
 	.string "DEVON now markets sundries and\l"
 	.string "pharmaceuticals for better lifestyles.\p"
 	.string "“Recently, DEVON has begun marketing\n"
-	.string "tools for POKéMON TRAINERS, including\l"
-	.string "POKé BALLS and POKéNAV systems.”$"
+	.string "tools for Pokémon TRAINERS, including\l"
+	.string "Poké Balls and POKéNAV systems.”$"
 

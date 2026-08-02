@@ -87,21 +87,21 @@ VioletCity_PokeCenter_Text_ElmsAideFavor:
 	.string "{PLAYER}, long time, no see.\p"
 	.string "PROF.ELM asked me to find you.\p"
 	.string "He has another favor to ask.\p"
-	.string "Would you take the POKéMON EGG?$"
+	.string "Would you take the Pokémon EGG?$"
 
 VioletCity_PokeCenter_Text_ElmsAideNoRoom:
 	.string "{PLAYER}, long time, no see.\p"
 	.string "PROF.ELM asked me to find you.\p"
 	.string "He has another favor to ask.\p"
-	.string "Would you take the POKéMON EGG?\p"
+	.string "Would you take the Pokémon EGG?\p"
 	.string "Oh, wait... You need to make room\n"
 	.string "in your party first.$"
 
 VioletCity_PokeCenter_Text_ElmsAideGiveEgg:
-	.string "We discovered that a POKéMON won't\n"
+	.string "We discovered that a Pokémon won't\n"
 	.string "hatch until it grows in the EGG.\p"
 	.string "It also has to be with other\n"
-	.string "active POKéMON to hatch.\p"
+	.string "active Pokémon to hatch.\p"
 	.string "{PLAYER}, you're the only person\n"
 	.string "we can rely on.$"
 
@@ -110,7 +110,7 @@ VioletCity_PokeCenter_Text_ElmsAideGiveItem:
 
 VioletCity_PokeCenter_Text_ElmsAideFullParty:
 	.string "Oh, no. You can't carry any more\n"
-	.string "POKéMON with you.\p"
+	.string "Pokémon with you.\p"
 	.string "I'll wait here while you make\n"
 	.string "room for the EGG.$"
 
@@ -131,17 +131,17 @@ VioletCity_PokeCenter_Text_MobileAdapter:
 
 VioletCity_PokeCenter_Text_GameboyKid:
 	.string "A guy named BILL made the\n"
-	.string "POKéMON PC storage system.$"
+	.string "Pokémon PC storage system.$"
 
 VioletCity_PokeCenter_Text_Gentleman:
 	.string "It was around three years ago.\p"
 	.string "TEAM ROCKET was up to no good\n"
-	.string "with POKéMON.\p"
+	.string "with Pokémon.\p"
 	.string "But justice prevailed--a young\n"
 	.string "kid broke 'em up.$"
 
 VioletCity_PokeCenter_Text_Youngster:
-	.string "POKéMON are smart. They won't\n"
+	.string "Pokémon are smart. They won't\n"
 	.string "obey a trainer they don't respect.\p"
 	.string "Without the right GYM BADGES,\n"
 	.string "they will just do as they please.$"

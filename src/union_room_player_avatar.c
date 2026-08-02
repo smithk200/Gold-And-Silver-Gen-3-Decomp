@@ -39,8 +39,8 @@ static const u16 sUnionRoomObjGfxIds[GENDER_COUNT][NUM_UNION_ROOM_CLASSES] = {
         OBJ_EVENT_GFX_WOMAN_5,
         OBJ_EVENT_GFX_HEX_MANIAC,
         OBJ_EVENT_GFX_PICNICKER,
-        OBJ_EVENT_GFX_FR_LASS,
-        OBJ_EVENT_GFX_FR_LASS,
+        OBJ_EVENT_GFX_LASS,
+        OBJ_EVENT_GFX_LASS,
         OBJ_EVENT_GFX_GIRL_3,
         OBJ_EVENT_GFX_WOMAN_2,
         OBJ_EVENT_GFX_BEAUTY
@@ -426,7 +426,7 @@ void SetTilesAroundUnionRoomPlayersPassable(void)
     }
 }
 
-static u8 GetNewFacingDirectionForUnionRoomPlayer(u32 memberId, u32 leaderId, struct RfuGameData *gameData)
+static enum Direction GetNewFacingDirectionForUnionRoomPlayer(u32 memberId, u32 leaderId, struct RfuGameData *gameData)
 {
     if (memberId) // If not leader
         return sMemberFacingDirections[memberId];

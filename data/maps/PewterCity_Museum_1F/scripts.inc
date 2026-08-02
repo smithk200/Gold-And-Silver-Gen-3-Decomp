@@ -72,4 +72,4 @@ PewterCity_Museum_1F_Text_Oldman:
 
 PewterCity_Museum_1F_Text_Bones:
 	.string "Bones of an ancient dragon\n"
-	.string "POKéMON.$"
+	.string "Pokémon.$"

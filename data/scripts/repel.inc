@@ -107,7 +107,7 @@ EventScript_ChooseWhichSpray::
 	message Text_SprayWoreOffAskUseAnother
 	waitmessage
 	callnative DrawSprayMenu
-	waitstate
+	@waitstate
 	compare VAR_RESULT, MULTI_B_PRESSED
 	goto_if_ne EventScript_ChooseWhichSpray_3
 EventScript_ChooseWhichSpray_1:

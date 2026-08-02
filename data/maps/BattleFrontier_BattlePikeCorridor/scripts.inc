@@ -26,7 +26,7 @@ BattleFrontier_BattlePikeCorridor_EventScript_EnterCorridor::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 99
 	call BattleFrontier_BattlePike_EventScript_CloseCurtain
 	warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_THREE_PATH_ROOM, 6, 10
-	waitstate
+	@waitstate
 	end
 
 BattleFrontier_BattlePikeCorridor_OnWarp:

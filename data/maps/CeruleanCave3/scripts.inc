@@ -37,7 +37,7 @@ CeruleanCave3_EventScript_Mewtwo::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	call_if_set FLAG_DIFFICULTY_HARD, CeruleanCave3_EventScript_Mewtwo_Hard_Stats
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	calculatemonstats
 	specialvar VAR_RESULT, GetBattleOutcome

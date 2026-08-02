@@ -46,10 +46,10 @@ OlivineLighthouse_Text_1FSailor:
 	.string "the trainers waiting inside.$"
 
 OlivineLighthouse_Text_1FPokefanF:
-	.string "In the past, POKéMON used to light\n"
+	.string "In the past, Pokémon used to light\n"
 	.string "the sea around OLIVINE at night.\p"
 	.string "The LIGHTHOUSE was built in honor\n"
-	.string "of those noble POKéMON.$"
+	.string "of those noble Pokémon.$"
 
 @2nd floor==============================================================================================================================
 
@@ -84,7 +84,7 @@ OlivineLighthouse_Text_GentlemanAlfredBeaten:
 	.string "serious.$"
 
 OlivineLighthouse_Text_GentlemanAlfredAfter:
-	.string "Up top is a POKéMON that keeps\n"
+	.string "Up top is a Pokémon that keeps\n"
 	.string "the LIGHTHOUSE lit.\p"
 	.string "But I hear that it's sick now,\n"
 	.string "and can't be cured normally.$"
@@ -113,11 +113,11 @@ OlivineLighthouse_Text_BirdKeeperTheoSeen:
 
 OlivineLighthouse_Text_BirdKeeperTheoBeaten:
 	.string "You really are concerned about\n"
-	.string "the sick POKéMON…$"
+	.string "the sick Pokémon…$"
 
 OlivineLighthouse_Text_BirdKeeperTheoAfter:
 	.string "How the heck do you go up?\p"
-	.string "I want to visit the sick POKéMON,\n"
+	.string "I want to visit the sick Pokémon,\n"
 	.string "but I can't get up there…$"
 
 OlivineLighthouse_Text_SailorTerrellSeen:
@@ -130,19 +130,19 @@ OlivineLighthouse_Text_SailorTerrellBeaten:
 OlivineLighthouse_Text_SailorTerrellAfter:
 	.string "Every time I return to OLIVINE,\n"
 	.string "I visit the GYM.\p"
-	.string "The GYM LEADER’s POKéMON type\n"
+	.string "The GYM LEADER’s Pokémon type\n"
 	.string "changed without me noticing.$"
 
 OlivineLighthouse_Text_GentlemanPrestonSeen:
 	.string "I travel the world to train my\n"
-	.string "POKéMON. I wish to battle you.$"
+	.string "Pokémon. I wish to battle you.$"
 
 OlivineLighthouse_Text_GentlemanPrestonBeaten:
 	.string "…sigh… I must train some more…$"
 
 OlivineLighthouse_Text_GentlemanPrestonAfter:
 	.string "JASMINE used to use rock-type\n"
-	.string "POKéMON like ONIX.$"
+	.string "Pokémon like ONIX.$"
 
 @4th floor==============================================================================================================================
 
@@ -159,7 +159,7 @@ OlivineLighthouse_EventScript_LassConnie::
 
 OlivineLighthouse_Text_SailorKentSeen:
 	.string "JASMINE must be worried sick about\n"
-	.string "the POKéMON here.\p"
+	.string "the Pokémon here.\p"
 	.string "She won't even smile these days.$"
 
 OlivineLighthouse_Text_SailorKentBeaten:
@@ -175,12 +175,12 @@ OlivineLighthouse_Text_LassConnieSeen:
 	.string "Nobody had better get in my way!$"
 
 OlivineLighthouse_Text_LassConnieBeaten:
-	.string "Aaack! My POKéMON!$"
+	.string "Aaack! My Pokémon!$"
 
 OlivineLighthouse_Text_LassConnieAfter:
 	.string "Right. Anybody would be worried if\n"
-	.string "his or her own POKéMON were hurt.\p"
-	.string "I'll pray for the POKéMON here, so\n"
+	.string "his or her own Pokémon were hurt.\p"
+	.string "I'll pray for the Pokémon here, so\n"
 	.string "JASMINE can come back to the GYM.$"
 
 @5th floor==============================================================================================================================
@@ -211,13 +211,13 @@ OlivineLighthouse_Text_SailorErnestAfter:
 
 OlivineLighthouse_Text_BirdKeeperDenisSeen:
 	.string "We're pretty high up here. My bird\n"
-	.string "POKéMON are in prime form.$"
+	.string "Pokémon are in prime form.$"
 
 OlivineLighthouse_Text_BirdKeeperDenisBeaten:
 	.string "Oops… They crashed…$"
 
 OlivineLighthouse_Text_BirdKeeperDenisAfter:
-	.string "My POKéMON learned how to use FLY in\n"
+	.string "My Pokémon learned how to use FLY in\n"
 	.string "CIANWOOD.\p"
 	.string "Well, since I'm a loser, I'll FLY\n"
 	.string "across the sea…$"
@@ -266,7 +266,7 @@ OlivineLighthouse_EventScript_AmpharosSick::
 	end
 
 OlivineLighthouse_Text_JasmineCianwoodPharmacy:
-	.string "JASMINE: …This POKéMON always kept\n"
+	.string "JASMINE: …This Pokémon always kept\n"
 	.string "the sea lit at night.\p"
 	.string "…But it suddenly got sick… It's\n"
 	.string "gasping for air…\p"

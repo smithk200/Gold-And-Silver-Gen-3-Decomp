@@ -23,7 +23,7 @@ BattleFrontier_BattleArenaCorridor_EventScript_WalkToBattleRoom::
 	waitmovement 0
 	setvar VAR_0x8006, 0
 	warp MAP_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM, 7, 5
-	waitstate
+	@waitstate
 	end
 
 BattleFrontier_BattleArenaCorridor_Movement_PlayerWalkToDoor:

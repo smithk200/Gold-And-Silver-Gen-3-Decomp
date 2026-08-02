@@ -272,8 +272,8 @@
   ],
   "warp_events": [
     {
-      "x": 52,
-      "y": 7,
+      "x": 53,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_SLOWPOKE_WELL_B1F",
       "dest_warp_id": "0"
@@ -318,6 +318,13 @@
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_AZALEA_TOWN_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 52,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_SLOWPOKE_WELL_B1F",
       "dest_warp_id": "0"
     }
   ],

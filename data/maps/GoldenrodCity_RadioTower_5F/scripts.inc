@@ -372,7 +372,7 @@ GoldenrodCity_RadioTower_5F_Text_RocketBossAfter:
 GoldenrodCity_RadioTower_5F_Text_DirectorThanks:
 	.string "DIRECTOR: {PLAYER}, thank you!\p"
 	.string "Your courageous actions have saved\n"
-	.string "POKéMON nationwide.\p"
+	.string "Pokémon nationwide.\p"
 	.string "I know it's not much, but please\n"
 	.string "take this.$"
 
@@ -384,7 +384,7 @@ GoldenrodCity_RadioTower_5F_Text_DirectorClearWingExplanation:
 	.string "TOWER.\p"
 	.string "We dug up that wing during\n"
 	.string "construction.\p"
-	.string "I heard that all sorts of POKéMON\n"
+	.string "I heard that all sorts of Pokémon\n"
 	.string "lived in GOLDENROD in the past.\p"
 	.string "Perhaps…\p"
 	.string "That wing has some connection to the\n"
@@ -399,7 +399,7 @@ GoldenrodCity_RadioTower_5F_Text_DirectorTidalWingExplanation:
 	.string "TOWER.\p"
 	.string "We dug up that wing during\n"
 	.string "construction.\p"
-	.string "I heard that all sorts of POKéMON\n"
+	.string "I heard that all sorts of Pokémon\n"
 	.string "lived in GOLDENROD in the past.\p"
 	.string "Perhaps…\p"
 	.string "That wing has some connection to the\n"
@@ -411,8 +411,8 @@ GoldenrodCity_RadioTower_5F_Text_DirectorLegendary:
 	.string "That reminds me…\p"
 	.string "That wing I gave you... I think\n"
 	.string "it's related to the LEGENDARY\l"
-	.string "POKéMON.\p"
-	.string "But! The LEGENDARY POKéMON won't\n"
+	.string "Pokémon.\p"
+	.string "But! The LEGENDARY Pokémon won't\n"
 	.string "appear with just that wing...\p"
 	.string "Apparently there is something else\n"
 	.string "you need... Or something like that.\p"
@@ -427,9 +427,9 @@ GoldenrodCity_RadioTower_5F_Text_DirectorFakeout:
 
 GoldenrodCity_RadioTower_5F_Text_DirectorIntro:
 	.string "DIRECTOR: Hello, {PLAYER}!\p"
-	.string "You know, I love POKéMON.\p"
+	.string "You know, I love Pokémon.\p"
 	.string "I built this RADIO TOWER so I could\n"
-	.string "express my love of POKéMON.\p"
+	.string "express my love of Pokémon.\p"
 	.string "It would be nice if people enjoyed\n"
 	.string "our programs.$"
 

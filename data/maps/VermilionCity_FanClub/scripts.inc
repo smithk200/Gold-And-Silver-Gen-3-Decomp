@@ -82,13 +82,13 @@ VermilionCity_FanClub_EventScript_Bayleef::
 
 
 PokemonFanClub_Text_Chairman_Intro:
-	.string "I'm the CHAIRMAN of the POKéMON\n"
+	.string "I'm the CHAIRMAN of the Pokémon\n"
 	.string "FAN CLUB.\p"
-	.string "I've raised over 150 POKéMON.\p"
+	.string "I've raised over 150 Pokémon.\p"
 	.string "I'm very fussy when it comes to\n"
-	.string "POKéMON.\p"
+	.string "Pokémon.\p"
 	.string "Did you visit just to hear about\n"
-	.string "my POKéMON?$"
+	.string "my Pokémon?$"
 
 PokemonFanClub_Text_Chairman_Rapidash:
 	.string "Good! Then listen up!\p"
@@ -113,15 +113,15 @@ PokemonFanClub_Text_Chairman_Gift:
 
 PokemonFanClub_Text_Chairman_Candy:
 	.string "It's a RARE CANDY that makes\n"
-	.string "POKéMON stronger.\p"
-	.string "I prefer making my POKéMON\n"
+	.string "Pokémon stronger.\p"
+	.string "I prefer making my Pokémon\n"
 	.string "stronger by battling, so you\l"
 	.string "can have it.$"
 
 PokemonFanClub_Text_Chairman_MoreTales:
 	.string "Hello, {PLAYER}!\p"
 	.string "Did you come see me about my\n"
-	.string "POKéMON again?\p"
+	.string "Pokémon again?\p"
 	.string "No? Oh… I had more tales to\n"
 	.string "tell…$"
 
@@ -131,7 +131,7 @@ PokemonFanClub_Text_Chairman_Disappointed:
 
 PokemonFanClub_Text_Receptionist:
 	.string "Our CHAIRMAN is very vocal when\n"
-	.string "it comes to POKéMON…$"
+	.string "it comes to Pokémon…$"
 
 @=Clefairy=Guy=========================================================================================================
 PokemonFanClub_Text_ClefairyGuy_Adorable:

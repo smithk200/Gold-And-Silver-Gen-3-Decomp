@@ -30,7 +30,7 @@ FarawayIsland_Entrance_EventScript_Sailor::
 	setvar VAR_0x8004, LOCALID_FARAWAY_ISLAND_SS_TIDAL
 	call Common_EventScript_FerryDepartIsland
 	warp MAP_LILYCOVE_CITY_HARBOR, 8, 11
-	waitstate
+	@waitstate
 	release
 	end
 

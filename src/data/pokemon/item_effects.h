@@ -397,6 +397,11 @@ const u8 gItemEffect_SitrusBerry[7] = {
 #endif
 };
 
+const u8 gItemEffect_SitrusBerryOld[7] = {
+    [4] = ITEM4_HEAL_HP,
+    [6] = 30, // Amount of HP to recover
+};
+
 #define EV_BERRY_FRIENDSHIP_CHANGE          \
     [7] = 10, /* Friendship change, low */  \
     [8] = 5,  /* Friendship change, mid */  \

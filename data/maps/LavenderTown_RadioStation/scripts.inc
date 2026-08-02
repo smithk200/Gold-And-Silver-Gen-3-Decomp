@@ -120,12 +120,12 @@ LavenderTown_RadioStation_Text_Directory:
 	.string "5F DIRECTOR'S OFFICE$"
 
 LavenderTown_RadioStation_Text_PokeFluteSign:
-	.string "Perk Up POKéMON with Mellow\n"
+	.string "Perk Up Pokémon with Mellow\n"
 	.string "Sounds of the POKé FLUTE on\l"
 	.string "CHANNEL 20$"
 
 LavenderTown_RadioStation_Text_ReferenceLibrary:
-	.string "Wow! A full rack of POKéMON CDs\n"
+	.string "Wow! A full rack of Pokémon CDs\n"
 	.string "and videos.\p"
 	.string "This must be the reference\n"
 	.string "library.$"

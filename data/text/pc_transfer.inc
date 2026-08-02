@@ -1,6 +1,6 @@
 gText_PkmnTransferredSomeonesPC::
 	.string "{STR_VAR_2} was transferred to\n"
-	.string "SOMEONE'S PC.\p"
+	.string "the Pokémon Boxes.\p"
 	.string "It was placed in \n"
 	.string "BOX “{STR_VAR_1}.”$"
 
@@ -11,8 +11,8 @@ gText_PkmnTransferredLanettesPC::
 	.string "BOX “{STR_VAR_1}.”$"
 
 gText_PkmnTransferredSomeonesPCBoxFull::
-	.string "BOX “{STR_VAR_3}” on\n"
-	.string "SOMEONE'S PC was full.\p"
+	.string "BOX “{STR_VAR_3}” in the\n"
+	.string "Pokémon Boxes was full.\p"
 	.string "{STR_VAR_2} was transferred to\n"
 	.string "BOX “{STR_VAR_1}.”$"
 
@@ -29,8 +29,8 @@ gText_PkmnSentToPCAfterCatch::
 	.string "BOX “{STR_VAR_1}”.$"
 
 gText_NoMoreRoomForPokemon::
-	.string "There's no more room for POKéMON!\p"
-	.string "The POKéMON BOXES are full and\n"
+	.string "There's no more room for Pokémon!\p"
+	.string "The Pokémon Boxes are full and\n"
 	.string "can't accept any more!$"
 
 gText_NicknameThisPokemon::

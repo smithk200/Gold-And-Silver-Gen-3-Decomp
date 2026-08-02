@@ -53,11 +53,11 @@ LavenderTown_Text_Teacher:
 LavenderTown_Text_Gramps:
 	.string "People come from all over to pay\n"
 	.string "their respects to the departed\l"
-	.string "souls of POKéMON.$"
+	.string "souls of Pokémon.$"
 
 LavenderTown_Text_Youngster:
 	.string "You need a POKé FLUTE to wake\n"
-	.string "sleeping POKéMON.\p"
+	.string "sleeping Pokémon.\p"
 	.string "Every trainer has to know that!$"
 
 LavenderTown_Text_Sign:
@@ -70,10 +70,10 @@ LavenderTown_Text_KantoRadioStationSign:
 	.string "Around the Clock!$"
 
 LavenderTown_Text_VolunteerPokemonHouseSign:
-	.string "LAVENDER VOLUNTEER POKéMON\n"
+	.string "LAVENDER VOLUNTEER Pokémon\n"
 	.string "HOUSE$"
 
 LavenderTown_Text_SoulHouseSign:
 	.string "SOUL HOUSE\p"
-	.string "May the Souls of POKéMON Rest\n"
+	.string "May the Souls of Pokémon Rest\n"
 	.string "Easy$"

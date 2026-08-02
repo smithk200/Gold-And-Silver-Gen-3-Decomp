@@ -14,7 +14,7 @@ DOUBLE_BATTLE_TEST("Doodle gives the target's ability to user and ally")
         OPPONENT(SPECIES_TORCHIC) { Ability(ABILITY_BLAZE); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft);  }
+        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DOODLE, playerLeft);
         MESSAGE("Wynaut copied the opposing Torchic's Ability!");
@@ -33,7 +33,7 @@ DOUBLE_BATTLE_TEST("Doodle can't copy a banned ability")
         OPPONENT(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft);  }
+        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft); }
     } SCENE {
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_DOODLE, playerLeft);
@@ -54,7 +54,7 @@ DOUBLE_BATTLE_TEST("Doodle fails if user has a banned Ability")
         OPPONENT(SPECIES_TORCHIC) { Ability(ABILITY_BLAZE); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft);  }
+        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_DOODLE, playerLeft);
         MESSAGE("But it failed!");
@@ -72,7 +72,7 @@ DOUBLE_BATTLE_TEST("Doodle fails if partner has a banned Ability")
         OPPONENT(SPECIES_TORCHIC) { Ability(ABILITY_BLAZE); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft);  }
+        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_DOODLE, playerLeft);
         MESSAGE("But it failed!");
@@ -84,7 +84,8 @@ DOUBLE_BATTLE_TEST("Doodle fails if partner has a banned Ability")
 
 DOUBLE_BATTLE_TEST("Doodle fails if ally's ability can't be suppressed")
 {
-    u32 species, ability;
+    u32 species;
+    enum Ability ability;
 
     PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_MULTITYPE; }
     PARAMETRIZE { species = SPECIES_DARMANITAN; ability = ABILITY_ZEN_MODE; }
@@ -101,17 +102,19 @@ DOUBLE_BATTLE_TEST("Doodle fails if ally's ability can't be suppressed")
     PARAMETRIZE { species = SPECIES_CALYREX_ICE; ability = ABILITY_AS_ONE_ICE_RIDER; }
     PARAMETRIZE { species = SPECIES_CALYREX_SHADOW; ability = ABILITY_AS_ONE_SHADOW_RIDER; }
     PARAMETRIZE { species = SPECIES_PALAFIN_ZERO; ability = ABILITY_ZERO_TO_HERO; }
-    PARAMETRIZE { species = SPECIES_TATSUGIRI; ability = ABILITY_COMMANDER; }
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
         PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
-        OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
+        OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_SHADOW_TAG); }
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_DOODLE, target: playerLeft); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_DOODLE, opponentLeft);
         MESSAGE("But it failed!");
+    } THEN {
+        EXPECT(opponentLeft->ability == ABILITY_SHADOW_TAG);
+        EXPECT(opponentRight->ability == ability);
     }
 }

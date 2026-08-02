@@ -45,7 +45,7 @@ EliteFourRoom_CloseDoor::
 	setvar VAR_0x8006, 4  @ num shakes
 	setvar VAR_0x8007, 4  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	special DrawWholeMapView
 	setvar VAR_TEMP_0, 1
 	release
@@ -81,7 +81,7 @@ PokemonLeague_WillsRoom_EventScript_WillOnDefeat::
 	setvar VAR_0x8006, 4  @ num shakes
 	setvar VAR_0x8007, 4  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	special DrawWholeMapView
 	setvar VAR_LEAGUE_STATE, 2
 	release
@@ -94,13 +94,13 @@ PokemonLeague_WillsRoom_EventScript_WillDefeated::
 	end
 
 PokemonLeague_WillsRoom_Text_Before:
-    .string "Welcome to POKéMON LEAGUE,\n"
+    .string "Welcome to Pokémon LEAGUE,\n"
     .string "{PLAYER}.\p"
     .string "Allow me to introduce myself.\n"
     .string "I am WILL.\p"
     .string "I have trained all around the\n"
     .string "world, making my psychic\l"
-    .string "POKéMON powerful.\p"
+    .string "Pokémon powerful.\p"
     .string "And, at last, I've been accepted\n"
     .string "into the ELITE FOUR.\p"
     .string "I can only keep getting better!\p"
@@ -121,7 +121,7 @@ PokemonLeague_WillsRoom_Text_Defeat:
 PokemonLeague_WillsRoom_Text_RematchBefore:
     .string "WILL: Ah, welcome back.\p"
     .string "I have foreseen this encounter.\p"
-    .string "My psychic POKéMON and I have\n"
+    .string "My psychic Pokémon and I have\n"
     .string "evolved,\l"
     .string "developing new tactics.\p"
     .string "Prepare yourself for a battle of\n"

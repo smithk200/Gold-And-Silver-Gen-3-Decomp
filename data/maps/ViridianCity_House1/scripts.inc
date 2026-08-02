@@ -32,7 +32,7 @@ ViridianCity_House1_EventScript_Rattey::
 
 ViridianCity_House1_Text_PokefanM:
 	.string "Do you put a lot of thought into\n"
-	.string "naming your POKéMON?\p"
+	.string "naming your Pokémon?\p"
 	.string "Giving them good nicknames adds to\n"
 	.string "the fun of trading with others.$"
 

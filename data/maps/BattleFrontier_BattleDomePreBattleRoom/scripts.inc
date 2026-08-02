@@ -98,14 +98,14 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ShowOpponentInfo::
 	msgbox BattleFrontier_BattleDomePreBattleRoom_Text_PlayersNextOpponentIsTrainer, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
 	dome_showopponentinfo
-	waitstate
+	@waitstate
 	goto BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound
 
 BattleFrontier_BattleDomePreBattleRoom_EventScript_ShowTourneyTree::
 	call BattleFrontier_BattleDomePreBattleRoom_EventScript_ShowRoundMessage
 	fadescreen FADE_TO_BLACK
 	dome_showtourneytree
-	waitstate
+	@waitstate
 	goto BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound
 
 BattleFrontier_BattleDomePreBattleRoom_EventScript_ShowRoundMessage::
@@ -142,7 +142,7 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ContinueChallenge::
 	copyvar VAR_0x8004, VAR_RESULT
 	setvar VAR_0x8005, DOME_BATTLE_PARTY_SIZE  @ 2 of the 3 party mons are selected for battle
 	special ChoosePartyForBattleFrontier
-	waitstate
+	@waitstate
 	frontier_resetsketch
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound
 	dome_set DOME_DATA_SELECTED_MONS
@@ -162,7 +162,7 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ContinueChallenge::
 	waitdooranim
 	warp MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM, 9, 5
 	setvar VAR_TEMP_0, 0
-	waitstate
+	@waitstate
 	end
 
 BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForNextRoundMessage::
@@ -227,7 +227,7 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ReturnFromBattle::
 	call BattleFrontier_BattleDomePreBattleRoom_EventScript_RoundCompleteMessage
 	fadescreen FADE_TO_BLACK
 	dome_showstatictourneytree
-	waitstate
+	@waitstate
 	goto BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound
 
 BattleFrontier_BattleDomePreBattleRoom_EventScript_RoundCompleteMessage::
@@ -288,7 +288,7 @@ BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForFinals:
 	.string "Are you ready?$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ChooseTwoMons:
-	.string "Please choose the two POKéMON\n"
+	.string "Please choose the two Pokémon\n"
 	.string "that are to appear in battle.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_RightThisWay:
@@ -296,7 +296,7 @@ BattleFrontier_BattleDomePreBattleRoom_Text_RightThisWay:
 
 BattleFrontier_BattleDomePreBattleRoom_Text_RestoreMonsToFullHealth:
 	.string "Thank you for competing!\p"
-	.string "I'll restore your POKéMON to\n"
+	.string "I'll restore your Pokémon to\n"
 	.string "full health.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_Round1Complete:

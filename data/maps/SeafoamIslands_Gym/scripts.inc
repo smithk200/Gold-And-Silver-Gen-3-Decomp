@@ -55,13 +55,13 @@ SeafoamIslands_Gym_EventScript_GymStatuePostVictory::
 	end
 
 SeafoamIslands_Gym_Text_GymStatue::
-    .string "CINNABAR POKéMON GYM\n"
+    .string "CINNABAR Pokémon GYM\n"
     .string "LEADER: BLAINE\p"
 	.string "WINNING TRAINERS:\n"
 	.string "BLUE, RED$"
 
 SeafoamIslands_Gym_Text_GymStatuePlayerWon::
-    .string "CINNABAR POKéMON GYM\n"
+    .string "CINNABAR Pokémon GYM\n"
     .string "LEADER: BLAINE\p"
     .string "WINNING TRAINERS:\n"
 	.string "BLUE, RED, {PLAYER}$"
@@ -74,7 +74,7 @@ SeafoamIslands_Gym_Text_TM:
 SeafoamIslands_Gym_Text_BlaineIntro:
 	.string "BLAINE: Waaah!\p"
 	.string "My GYM in CINNABAR burned down.\p"
-	.string "My fire-breathing POKéMON and I are\n"
+	.string "My fire-breathing Pokémon and I are\n"
 	.string "homeless because of the volcano.\p"
 	.string "Waaah!\p"
 	.string "But I'm back in business as a GYM\n"
@@ -97,7 +97,7 @@ SeafoamIslands_Gym_Text_BlaineAfterBattle:
 	.string "we'll have to have a rematch.$"
 
 SeafoamIslands_Gym_Text_BlaineFightDone:
-	.string "BLAINE: My fire POKéMON will be\n"
+	.string "BLAINE: My fire Pokémon will be\n"
 	.string "even stronger.\p"
 	.string "Just you watch!$"
 
@@ -125,6 +125,6 @@ SeafoamIslands_Gym_Text_GymGuideWin:
 	.string "without my advice. I knew you'd win!$"
 
 SeafoamIslands_Gym_Text_GymGuideWin2:
-	.string "A POKéMON GYM can be anywhere as\n"
+	.string "A Pokémon GYM can be anywhere as\n"
 	.string "long as the GYM LEADER is there.\p"
 	.string "There's no need for a building.$"

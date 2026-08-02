@@ -78,7 +78,7 @@ Gate_GoldenrodCity_Route35_EventScript_Fisher::
 Route35GoldenrodGate_Text_RandyAskFavor:
 	.string "Excuse me, kid! Can you do a guy\n"
 	.string "a favor?\p"
-	.string "Can you take this POKéMON with MAIL\n"
+	.string "Can you take this Pokémon with MAIL\n"
 	.string "to my friend?\p"
 	.string "He's on ROUTE 31.$"
 
@@ -89,7 +89,7 @@ Route35GoldenrodGate_Text_RandyThanks:
 	.string "You'll recognize him right away!$"
 
 Route35GoldenrodGate_Text_ReceivedMonWithMail:
-	.string "{PLAYER} received a POKéMON with MAIL.$"
+	.string "{PLAYER} received a Pokémon with MAIL.$"
 
 Route35GoldenrodGate_Text_RandyWeirdTree:
 	.string "Make sure to put it at the front of\n"
@@ -100,7 +100,7 @@ Route35GoldenrodGate_Text_RandyWeirdTree:
 	.string "I wonder if it's been cleared?$"
 
 Route35GoldenrodGate_Text_CantCarryMoreMon:
-	.string "You can't carry another POKéMON…$"
+	.string "You can't carry another Pokémon…$"
 
 Route35GoldenrodGate_Text_RandyNeverMind:
 	.string "Oh… Never mind, then…$"
@@ -121,11 +121,11 @@ Route35GoldenrodGate_Text_PokefanF_TreeBlocking:
 	.string "watered it with a SQUIRTBOTTLE.$"
 
 Route35GoldenrodGate_Text_PokefanF_Lullaby:
-	.string "I like the POKéMON Lullaby they play\n"
+	.string "I like the Pokémon Lullaby they play\n"
 	.string "on the radio.$"
 
 Route35GoldenrodGate_Text_Fisher:
-	.string "I wonder how many kinds of POKéMON\n"
+	.string "I wonder how many kinds of Pokémon\n"
 	.string "there are in the world.\p"
 	.string "Three years ago, PROF.OAK said that\n"
 	.string "there were 150 different kinds.\p"

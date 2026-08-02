@@ -39,7 +39,7 @@ PokemonLeague_KogasRoom_EventScript_KogaOnDefeat::
 	setvar VAR_0x8006, 4  @ num shakes
 	setvar VAR_0x8007, 4  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	special DrawWholeMapView
 	setvar VAR_LEAGUE_STATE, 3
 	release
@@ -71,7 +71,7 @@ PokemonLeague_KogasRoom_Text_Before:
     .string "Prepare to be the victim of my\n"
     .string "sinister technique!\p"
     .string "Fwahahahaha!\p"
-    .string "POKéMON is not merely about brute\n"
+    .string "Pokémon is not merely about brute\n"
     .string "force--you shall see soon enough!$"
 
 PokemonLeague_KogasRoom_Text_Beaten:

@@ -299,7 +299,7 @@ MahoganyTown_Text_RagecandybarSign:
     .string "a RAGECANDYBAR!$"
 
 MahoganyTown_Text_GymSign:
-    .string "MAHOGANY TOWN POKéMON GYM\p"
+    .string "MAHOGANY TOWN Pokémon GYM\p"
     .string "LEADER: PRYCE\p"
     .string "The Teacher of Winter's Harshness$"
 

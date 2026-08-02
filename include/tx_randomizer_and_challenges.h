@@ -1,5 +1,5 @@
-#ifndef GUARD_DIFFICULTY_H
-#define GUARD_DIFFICULTY_H
+#ifndef GUARD_TX_RAC_H
+#define GUARD_TX_RAC_H
 //tx_randomizer_and_challenges
 
 // default options set by the dev
@@ -99,6 +99,7 @@ u8 GetMaxPartySize(void);
 u8 GetCurrentPartyLevelCap(void);
 u8 GetCurrentTrainerIVs(void);
 u8 GetCurrentTrainerEVs(void);
+u8 GetCurrentBadgeCount(void);
 
 void PrintTXSaveData(void);
 void TestRandomizerValues(u8 type);
@@ -113,4 +114,4 @@ extern struct tx_challenges_OptionsMenu *sChallengesOptions;
 
 #define TX_NUZLOCKE_CEMETERY_ICON_GRAY TRUE
 
-#endif // GUARD_DIFFICULTY_H
+#endif // GUARD_TX_RAC_H

@@ -312,7 +312,7 @@ GoldenrodMagnetTrainStation_Text_OfficerNoRailPass:
 GoldenrodMagnetTrainStation_Text_GentlemanPresident:
     .string "I'm the PRESIDENT.\p"
     .string "My dream was to build a train that\n"
-    .string "is faster than any POKéMON.\p"
+    .string "is faster than any Pokémon.\p"
     .string "It really brings JOHTO much closer\n"
     .string "to KANTO.$"
 

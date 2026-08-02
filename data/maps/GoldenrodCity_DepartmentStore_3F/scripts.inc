@@ -29,7 +29,7 @@ GoldenrodDeptStore3_EventScript_Rocker::
 GoldenrodDeptStore_Text_3FSuperNerd:
     .string "I, I, I'm really impatient!\p"
     .string "I use X SPEED in battle to speed up\n"
-    .string "my POKéMON.$"
+    .string "my Pokémon.$"
 
 GoldenrodDeptStore_Text_3FRocker:
     .string "Hey! When you battle, do you use X\n"

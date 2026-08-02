@@ -52,7 +52,7 @@ BurnedTower_Movement_Eusine2:
 
 BurnedTower_1FEusineIntroText:
 	.string "EUSINE: My name's EUSINE.\p"
-	.string "I'm on the trail of a POKéMON\n"
+	.string "I'm on the trail of a Pokémon\n"
 	.string "called SUICUNE.\p"
 	.string "And you are...?\p"
 	.string "{PLAYER}? Glad to meet you!\p"
@@ -94,7 +94,7 @@ BurnedTower_1FEusineText:
 BurnedTower_1FMortyText:
 	.string "MORTY: ECRUTEAK's GYM LEADER\n"
 	.string "has to study what are said to\l"
-	.string "be the legendary POKéMON--\l"
+	.string "be the legendary Pokémon--\l"
 	.string "SUICUNE, ENTEI and RAIKOU.\p"
 	.string "EUSINE is here, so I've\n"
 	.string "decided to investigate the\l"
@@ -121,7 +121,7 @@ BurnedTower_1F_EventScript_Silver::
 	setvar VAR_0x8006, 20  @ num shakes
 	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	playse SE_CLICK
 	setmetatile 16, 12, 0x37E, FALSE
 	special DrawWholeMapView
@@ -154,7 +154,7 @@ BurnedTowerSilver_BeforeText:
 	.string "..............................\p"
 	.string "...Oh, it's you.\p"
 	.string "I came looking for some\n"
-	.string "legendary POKéMON they say\l"
+	.string "legendary Pokémon they say\l"
 	.string "roost here.\p"
 	.string "But there's nothing here!\p"
 	.string "Nothing, after all the effort\n"
@@ -165,13 +165,13 @@ BurnedTowerSilver_BeforeText:
 BurnedTowerSilver_WinText:
 	.string "...Humph!\p"
 	.string "I only lost because my\n"
-	.string "POKéMON are incredibly weak.\p"
+	.string "Pokémon are incredibly weak.\p"
 	.string "How pathetic.$"
 
 BurnedTowerSilver_AfterText1:
 	.string "...Aw, whatever.\p"
 	.string "You'd never be able to catch\n"
-	.string "a legendary POKéMON anyway.$"
+	.string "a legendary Pokémon anyway.$"
 
 BurnedTowerSilver_LossText:
 	.string "...Humph!\p"

@@ -48,14 +48,14 @@ SecretBase_EventScript_Cave::
 	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
 	closemessage
 	dofieldeffect FLDEFF_USE_SECRET_POWER_CAVE
-	waitstate
+	@waitstate
 	goto SecretBase_EventScript_CaveEnter
 	end
 
 SecretBase_EventScript_CaveUseSecretPower::
 	lockall
 	dofieldeffect FLDEFF_USE_SECRET_POWER_CAVE
-	waitstate
+	@waitstate
 	goto SecretBase_EventScript_CaveEnter
 	end
 
@@ -78,14 +78,14 @@ SecretBase_EventScript_Tree::
 	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
 	closemessage
 	dofieldeffect FLDEFF_USE_SECRET_POWER_TREE
-	waitstate
+	@waitstate
 	goto SecretBase_EventScript_TreeEnter
 	end
 
 SecretBase_EventScript_TreeUseSecretPower::
 	lockall
 	dofieldeffect FLDEFF_USE_SECRET_POWER_TREE
-	waitstate
+	@waitstate
 	goto SecretBase_EventScript_TreeEnter
 	end
 
@@ -108,14 +108,14 @@ SecretBase_EventScript_Shrub::
 	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
 	closemessage
 	dofieldeffect FLDEFF_USE_SECRET_POWER_SHRUB
-	waitstate
+	@waitstate
 	goto SecretBase_EventScript_ShrubEnter
 	end
 
 SecretBase_EventScript_ShrubUseSecretPower::
 	lockall
 	dofieldeffect FLDEFF_USE_SECRET_POWER_SHRUB
-	waitstate
+	@waitstate
 	goto SecretBase_EventScript_ShrubEnter
 	end
 
@@ -140,7 +140,7 @@ SecretBase_EventScript_InitSecretBase::
 	setvar VAR_0x8005, 0
 	special InitSecretBaseDecorationSprites
 	setvar VAR_SECRET_BASE_INITIALIZED, 1
-	waitstate
+	@waitstate
 	end
 
 SecretBase_EventScript_FirstEntrance::
@@ -158,7 +158,7 @@ SecretBase_EventScript_SetAsBase::
 	closemessage
 	setflag FLAG_RECEIVED_SECRET_POWER
 	special EnterNewlyCreatedSecretBase
-	waitstate
+	@waitstate
 	end
 
 SecretBase_Movement_EnterBase:
@@ -175,14 +175,14 @@ SecretBase_EventScript_Enter::
 	clearflag FLAG_HIDE_SECRET_BASE_TRAINER
 	special EnterSecretBase
 	setvar VAR_SECRET_BASE_INITIALIZED, 0
-	waitstate
+	@waitstate
 	end
 
 SecretBase_EventScript_EnterPlayersBase::
 	setflag FLAG_HIDE_SECRET_BASE_TRAINER
 	special EnterSecretBase
 	setvar VAR_SECRET_BASE_INITIALIZED, 0
-	waitstate
+	@waitstate
 	end
 
 SecretBase_EventScript_AlreadyHasSecretBase::
@@ -641,7 +641,7 @@ SecretBase_EventScript_BattleTrainer::
 	setvar VAR_0x8004, SPECIAL_BATTLE_SECRET_BASE
 	setvar VAR_0x8005, 0
 	special DoSpecialTrainerBattle
-	waitstate
+	@waitstate
 	call_if_eq VAR_RESULT, B_OUTCOME_DREW, SecretBase_EventScript_DrewSecretBaseBattle
 	call_if_eq VAR_RESULT, B_OUTCOME_WON, SecretBase_EventScript_WonSecretBaseBattle
 	call_if_eq VAR_RESULT, B_OUTCOME_LOST, SecretBase_EventScript_LostSecretBaseBattle

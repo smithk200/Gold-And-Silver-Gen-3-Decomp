@@ -196,7 +196,7 @@ Route119_WeatherInstitute_2F_EventScript_WeatherScientist::
 	end
 
 Route119_WeatherInstitute_2F_Text_Grunt2Intro:
-	.string "We created a new POKéMON that is\n"
+	.string "We created a new Pokémon that is\n"
 	.string "capable of controlling the weather!\p"
 	.string "Pretty cool, right?$"
 
@@ -210,7 +210,7 @@ Route119_WeatherInstitute_2F_Text_Grunt2PostBattle:
 
 Route119_WeatherInstitute_2F_Text_Grunt3Intro:
 	.string "Hey, you!\n"
-	.string "Trespasser! Terspasser!$"
+	.string "Trespasser! Trespasser!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
 	.string "You got me!$"
@@ -226,7 +226,7 @@ Route119_WeatherInstitute_2F_Text_Grunt5Intro:
 	.string "Why are you breaking in?$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Defeat:
-	.string "Oh, will you look at my POKéMON?$"
+	.string "Oh, will you look at my Pokémon?$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5PostBattle:
 	.string "Waargh!\p"
@@ -265,18 +265,18 @@ Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon:
 	.string "Thanks!\n"
 	.string "Thanks to you, we're safe!\p"
 	.string "It might be an odd way of thanking you,\n"
-	.string "but take this POKéMON.$"
+	.string "but take this Pokémon.$"
 
 @ Unused
 Route119_WeatherInstitute_2F_Text_NoRoomForPokemon:
 	.string "Hm? You don't seem to have any room\n"
-	.string "for this POKéMON.$"
+	.string "for this Pokémon.$"
 
 Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform:
 	.string "{PLAYER} received CASTFORM!$"
 
 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
-	.string "That POKéMON changes shape according\n"
+	.string "That Pokémon changes shape according\n"
 	.string "to the weather conditions.\p"
 	.string "There're plenty of them in the\n"
 	.string "INSTITUTE--go ahead and take it.$"

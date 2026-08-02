@@ -28,8 +28,8 @@ enum
 
 typedef struct MatchCallTextDataStruct {
     const u8 *text;
-    u16 flag;
-    u16 flag2;
+    u16 availabilityFlag;
+    u16 flagToSetOnCompletion;
 } match_call_text_data_t;
 
 struct MatchCallStructCommon {
@@ -157,44 +157,44 @@ static void MatchCall_BufferCallMessageText(const match_call_text_data_t *, u8 *
 static void MatchCall_BufferCallMessageTextByRematchTeam(const match_call_text_data_t *, u16, u8 *);
 static void MatchCall_GetNameAndDescByRematchIdx(u32, const u8 **, const u8 **);
 
-// .rodata
+// Special flag ID that indicates the start of a section of match calls
+// related to a gym leader's rematch. It's expected that there will be
+// exactly 3 calls after the call associated with this flag, with text
+// that follows this format:
+// - Call 1: A basic 'preparing for a rematch' call.
+//           Remains active until the player beats the game (FLAG_SYS_GAME_CLEAR).
+// - Call 2: Congratulating the player on their success, still preparing.
+//           Remains active until the gym leader is ready for a rematch.
+// - Call 3: Requesting the rematch. Active whenever the gym leader is ready.
+// - Call 4: Expressing their admiration of the player. Active after defeating
+//           them in a rematch and if they're not ready yet for another battle.
+#define REMATCH_CALL_START 0xFFFE
 
-static const match_call_text_data_t sMrStoneTextScripts[] = {
-    { MatchCall_Text_MrStone1,  0xFFFF,                              FLAG_ENABLE_MR_STONE_POKENAV },
-    { MatchCall_Text_MrStone2,  FLAG_ENABLE_MR_STONE_POKENAV,        0xFFFF },
-    { MatchCall_Text_MrStone3,  FLAG_DELIVERED_STEVEN_LETTER,        0xFFFF },
-    { MatchCall_Text_MrStone4,  FLAG_RECEIVED_EXP_SHARE,             0xFFFF },
-    { MatchCall_Text_MrStone5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
-    { MatchCall_Text_MrStone6,  FLAG_DEFEATED_CIANWOOD_GYM,         0xFFFF },
-    { MatchCall_Text_MrStone7,  FLAG_RECEIVED_CASTFORM,              0xFFFF },
-    { MatchCall_Text_MrStone8,  FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, 0xFFFF },
-    { MatchCall_Text_MrStone9,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
-    { MatchCall_Text_MrStone10, FLAG_DEFEATED_BLACKTHORN_GYM,        0xFFFF },
-    { MatchCall_Text_MrStone11, FLAG_SYS_GAME_CLEAR,                 0xFFFF },
-    { NULL,                     0xFFFF,                              0xFFFF }
-};
+#define ALWAYS_AVAILABLE FLAG_GARBAGEFLAG
+#define NO_FLAG_TO_SET   FLAG_GARBAGEFLAG
+#define MATCH_CALL_TEXT_END {NULL, ALWAYS_AVAILABLE, FLAG_GARBAGEFLAG}
+
+// .rodata
 
 static const struct MatchCallStructNPC sMrStoneMatchCallHeader =
 {
     .type = MC_TYPE_NPC,
     .mapSec = MAPSEC_RUSTBORO_CITY,
-    .flag = 0xFFFF,
+    .flag = FLAG_GARBAGEFLAG,
     .desc = COMPOUND_STRING("DEVON PRES"),
     .name = COMPOUND_STRING("MR. STONE"),
-    .textData = sMrStoneTextScripts
-};
-
-static const match_call_text_data_t sNormanTextScripts[] = {
-    { MatchCall_Text_Norman1, FLAG_ENABLE_NORMAN_MATCH_CALL, 0xFFFF },
-    { MatchCall_Text_Norman2, FLAG_DEFEATED_AZALEA_TOWN_GYM,     0xFFFF },
-    { MatchCall_Text_Norman3, FLAG_DEFEATED_ECRUTEAK_CITY_GYM,   0xFFFF },
-    { MatchCall_Text_Norman4, FLAG_DEFEATED_CIANWOOD_GYM,   0xFFFF },
-    { MatchCall_Text_Norman5, FLAG_RECEIVED_RED_OR_BLUE_ORB, 0xFFFF },
-    { MatchCall_Text_Norman6, 0xFFFE,                        0xFFFF },
-    { MatchCall_Text_Norman7, FLAG_SYS_GAME_CLEAR,           0xFFFF },
-    { MatchCall_Text_Norman8, FLAG_SYS_GAME_CLEAR,           0xFFFF },
-    { MatchCall_Text_Norman9, FLAG_SYS_GAME_CLEAR,           0xFFFF },
-    { NULL,                   0xFFFF,                        0xFFFF }
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_MrStone1,  ALWAYS_AVAILABLE,                    FLAG_ENABLE_MR_STONE_POKENAV },
+        { MatchCall_Text_MrStone2,  FLAG_ENABLE_MR_STONE_POKENAV,        FLAG_GARBAGEFLAG },
+        { MatchCall_Text_MrStone3,  FLAG_DELIVERED_STEVEN_LETTER,        FLAG_GARBAGEFLAG },
+        { MatchCall_Text_MrStone4,  FLAG_RECEIVED_EXP_SHARE,             FLAG_GARBAGEFLAG },
+        { MatchCall_Text_MrStone5,  FLAG_RECEIVED_HM_STRENGTH,           FLAG_GARBAGEFLAG },
+        { MatchCall_Text_MrStone7,  FLAG_RECEIVED_CASTFORM,              FLAG_GARBAGEFLAG },
+        { MatchCall_Text_MrStone8,  FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, FLAG_GARBAGEFLAG },
+        { MatchCall_Text_MrStone9,  FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, FLAG_GARBAGEFLAG },
+        { MatchCall_Text_MrStone11, FLAG_SYS_GAME_CLEAR,                 FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructTrainer sNormanMatchCallHeader =
@@ -205,7 +205,10 @@ static const struct MatchCallStructTrainer sNormanMatchCallHeader =
     .rematchTableIdx = REMATCH_NORMAN,
     .desc = COMPOUND_STRING("RELIABLE ONE"),
     .name = COMPOUND_STRING("DAD"),
-    .textData = sNormanTextScripts
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Norman1, FLAG_ENABLE_NORMAN_MATCH_CALL, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallBirch sProfBirchMatchCallHeader =
@@ -218,31 +221,25 @@ static const struct MatchCallBirch sProfBirchMatchCallHeader =
 };
 
 static const match_call_text_data_t sMomTextScripts[] = {
-    { MatchCall_Text_Mom3, 0xFFFF,                      0xFFFF },
-    { MatchCall_Text_Mom3, FLAG_DEFEATED_CIANWOOD_GYM, 0xFFFF },
-    { MatchCall_Text_Mom3, FLAG_SYS_GAME_CLEAR,         0xFFFF },
-    { NULL,                0xFFFF,                      0xFFFF }
+    { MatchCall_Text_Mom3, FLAG_GARBAGEFLAG,                      FLAG_GARBAGEFLAG },
+    { MatchCall_Text_Mom3, FLAG_DEFEATED_CIANWOOD_GYM, FLAG_GARBAGEFLAG },
+    { MatchCall_Text_Mom3, FLAG_SYS_GAME_CLEAR,         FLAG_GARBAGEFLAG },
+    { NULL,                FLAG_GARBAGEFLAG,                      FLAG_GARBAGEFLAG }
 };
 
 static const struct MatchCallStructNPC sMomMatchCallHeader =
 {
     .type = MC_TYPE_NPC,
-    .mapSec = MAPSEC_NEW_BARK_TOWN,
-    .flag = 0xFFFF,
+    .mapSec = MAPSEC_LITTLEROOT_TOWN,
+    .flag = FLAG_ENABLE_MOM_MATCH_CALL,
     .desc = COMPOUND_STRING("Smithk200's Mom Isn't Kind"),
-    .name = COMPOUND_STRING("Mom"),
-    .textData = sMomTextScripts
-};
-
-static const match_call_text_data_t sStevenTextScripts[] = {
-    { MatchCall_Text_Steven1, 0xFFFF,                              0xFFFF },
-    { MatchCall_Text_Steven2, FLAG_RUSTURF_TUNNEL_OPENED,          0xFFFF },
-    { MatchCall_Text_Steven3, FLAG_RECEIVED_RED_OR_BLUE_ORB,       0xFFFF },
-    { MatchCall_Text_Steven4, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
-    { MatchCall_Text_Steven5, FLAG_DEFEATED_MAHOGANY_TOWN_GYM,          0xFFFF },
-    { MatchCall_Text_Steven6, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, 0xFFFF },
-    { MatchCall_Text_Steven7, FLAG_SYS_GAME_CLEAR,                 0xFFFF },
-    { NULL,                   0xFFFF,                              0xFFFF },
+    .name = COMPOUND_STRING("MOM"),
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Mom1, ALWAYS_AVAILABLE,            FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Mom2, FLAG_DEFEATED_CIANWOOD_GYM, FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Mom3, FLAG_SYS_GAME_CLEAR,         FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructNPC sStevenMatchCallHeader =
@@ -252,57 +249,37 @@ static const struct MatchCallStructNPC sStevenMatchCallHeader =
     .flag = FLAG_REGISTERED_STEVEN_POKENAV,
     .desc = COMPOUND_STRING("HARD AS ROCK"),
     .name = COMPOUND_STRING("STEVEN"),
-    .textData = sStevenTextScripts
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Steven1, ALWAYS_AVAILABLE,                    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Steven2, FLAG_RUSTURF_TUNNEL_OPENED,          FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Steven3, FLAG_RECEIVED_RED_OR_BLUE_ORB,       FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Steven4, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Steven5, FLAG_RECEIVED_RED_OR_BLUE_ORB,          FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Steven6, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Steven7, FLAG_SYS_GAME_CLEAR,                 FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END,
+    }
 };
 
 static const u8 gText_MayBrendanMatchCallDesc[] = _("RAD NEIGHBOR");
 
 static const match_call_text_data_t sMayTextScripts[] = {
-    { MatchCall_Text_May1,  0xFFFF,                              0xFFFF },
-    { MatchCall_Text_May2,  FLAG_DEFEATED_AZALEA_TOWN_GYM,           0xFFFF },
-    { MatchCall_Text_May3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
-    { MatchCall_Text_May4,  FLAG_GARBAGEFLAG,       0xFFFF },
-    { MatchCall_Text_May5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
-    { MatchCall_Text_May6,  FLAG_DEFEATED_ECRUTEAK_CITY_GYM,         0xFFFF },
-    { MatchCall_Text_May7,  FLAG_DEFEATED_CIANWOOD_GYM,         0xFFFF },
-    { MatchCall_Text_May8,  FLAG_RECEIVED_CASTFORM,              0xFFFF },
-    { MatchCall_Text_May9,  FLAG_RECEIVED_RED_OR_BLUE_ORB,       0xFFFF },
-    { MatchCall_Text_May10, FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, 0xFFFF },
-    { MatchCall_Text_May11, FLAG_MET_TEAM_AQUA_HARBOR,           0xFFFF },
-    { MatchCall_Text_May12, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
-    { MatchCall_Text_May13, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, 0xFFFF },
-    { MatchCall_Text_May14, FLAG_DEFEATED_BLACKTHORN_GYM,        0xFFFF },
-    { MatchCall_Text_May15, FLAG_SYS_GAME_CLEAR,                 0xFFFF },
-    { NULL,                 0xFFFF,                              0xFFFF }
-};
-
-static const struct MatchCallRival sMayMatchCallHeader =
-{
-    .type = MC_TYPE_RIVAL,
-    .playerGender = MALE,
-    .flag = FLAG_ENABLE_RIVAL_MATCH_CALL,
-    .desc = gText_MayBrendanMatchCallDesc,
-    .name = gText_ExpandedPlaceholder_May,
-    .textData = sMayTextScripts
-};
-
-static const match_call_text_data_t sBrendanTextScripts[] = {
-    { MatchCall_Text_Brendan1,  0xFFFF,                              0xFFFF },
-    { MatchCall_Text_Brendan2,  FLAG_DEFEATED_AZALEA_TOWN_GYM,           0xFFFF },
-    { MatchCall_Text_Brendan3,  FLAG_DELIVERED_DEVON_GOODS,          0xFFFF },
-    { MatchCall_Text_Brendan4,  FLAG_GARBAGEFLAG,       0xFFFF },
-    { MatchCall_Text_Brendan5,  FLAG_RECEIVED_HM_STRENGTH,           0xFFFF },
-    { MatchCall_Text_Brendan6,  FLAG_DEFEATED_ECRUTEAK_CITY_GYM,         0xFFFF },
-    { MatchCall_Text_Brendan7,  FLAG_DEFEATED_CIANWOOD_GYM,         0xFFFF },
-    { MatchCall_Text_Brendan8,  FLAG_RECEIVED_CASTFORM,              0xFFFF },
-    { MatchCall_Text_Brendan9,  FLAG_RECEIVED_RED_OR_BLUE_ORB,       0xFFFF },
-    { MatchCall_Text_Brendan10, FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, 0xFFFF },
-    { MatchCall_Text_Brendan11, FLAG_MET_TEAM_AQUA_HARBOR,           0xFFFF },
-    { MatchCall_Text_Brendan12, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
-    { MatchCall_Text_Brendan13, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, 0xFFFF },
-    { MatchCall_Text_Brendan14, FLAG_DEFEATED_BLACKTHORN_GYM,        0xFFFF },
-    { MatchCall_Text_Brendan15, FLAG_SYS_GAME_CLEAR,                 0xFFFF },
-    { NULL,                     0xFFFF,                              0xFFFF }
+    { MatchCall_Text_May1,  FLAG_GARBAGEFLAG,                              FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May2,  FLAG_DEFEATED_AZALEA_TOWN_GYM,           FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May3,  FLAG_DELIVERED_DEVON_GOODS,          FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May4,  FLAG_GARBAGEFLAG,       FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May5,  FLAG_RECEIVED_HM_STRENGTH,           FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May6,  FLAG_DEFEATED_ECRUTEAK_CITY_GYM,         FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May7,  FLAG_DEFEATED_CIANWOOD_GYM,         FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May8,  FLAG_RECEIVED_CASTFORM,              FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May9,  FLAG_RECEIVED_RED_OR_BLUE_ORB,       FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May10, FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May11, FLAG_MET_TEAM_AQUA_HARBOR,           FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May12, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May13, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May14, FLAG_DEFEATED_BLACKTHORN_GYM,        FLAG_GARBAGEFLAG },
+    { MatchCall_Text_May15, FLAG_SYS_GAME_CLEAR,                 FLAG_GARBAGEFLAG },
+    { NULL,                 FLAG_GARBAGEFLAG,                              FLAG_GARBAGEFLAG }
 };
 
 static const struct MatchCallRival sBrendanMatchCallHeader =
@@ -312,27 +289,16 @@ static const struct MatchCallRival sBrendanMatchCallHeader =
     .flag = FLAG_ENABLE_RIVAL_MATCH_CALL,
     .desc = gText_MayBrendanMatchCallDesc,
     .name = gText_ExpandedPlaceholder_Brendan,
-    .textData = sBrendanTextScripts
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Brendan1,  ALWAYS_AVAILABLE,                    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Brendan9,  FLAG_RECEIVED_RED_OR_BLUE_ORB,       FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Brendan10, FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Brendan11, FLAG_MET_TEAM_AQUA_HARBOR,           FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Brendan12, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Brendan13, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
-
-static const match_call_text_data_t sWallyTextScripts[] = {
-    { MatchCall_Text_Wally1, 0xFFFF,                              0xFFFF },
-    { MatchCall_Text_Wally2, FLAG_RUSTURF_TUNNEL_OPENED,          0xFFFF },
-    { MatchCall_Text_Wally3, FLAG_DEFEATED_ECRUTEAK_CITY_GYM,         0xFFFF },
-    { MatchCall_Text_Wally4, FLAG_RECEIVED_CASTFORM,              0xFFFF },
-    { MatchCall_Text_Wally5, FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, 0xFFFF },
-    { MatchCall_Text_Wally6, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, 0xFFFF },
-    { MatchCall_Text_Wally7, FLAG_DEFEATED_WALLY_VICTORY_ROAD,    0xFFFF },
-    { NULL,                  0xFFFF,                              0xFFFF }
-};
-
-static const struct MatchCallLocationOverride sWallyLocationData[] = {
-    { FLAG_GARBAGEFLAG,          MAPSEC_OLIVINE_CITY },
-    { FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT,    MAPSEC_NONE },
-    { FLAG_GARBAGEFLAG,  MAPSEC_VICTORY_ROAD },
-    { 0xFFFF,                                 MAPSEC_NONE }
-};
-
 
 static const struct MatchCallWally sWallyMatchCallHeader =
 {
@@ -341,21 +307,19 @@ static const struct MatchCallWally sWallyMatchCallHeader =
     .flag = FLAG_ENABLE_WALLY_MATCH_CALL,
     .rematchTableIdx = REMATCH_WALLY_VR,
     .desc = COMPOUND_STRING("{PKMN} LOVER"),
-    .textData = sWallyTextScripts,
-    .locationData = sWallyLocationData
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Wally1, ALWAYS_AVAILABLE,                    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Wally2, FLAG_RUSTURF_TUNNEL_OPENED,          FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Wally4, FLAG_RECEIVED_CASTFORM,              FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Wally5, FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Wally6, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Wally7, FLAG_DEFEATED_WALLY_VICTORY_ROAD,    FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    },
+    .locationData = (const struct MatchCallLocationOverride[]) {
+        { ALWAYS_AVAILABLE,                       MAPSEC_NONE }
+    }
 };
-
-static const match_call_text_data_t sScottTextScripts[] = {
-    { MatchCall_Text_Scott1, 0xFFFF,                              0xFFFF },
-    { MatchCall_Text_Scott2, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY,  0xFFFF },
-    { MatchCall_Text_Scott3, FLAG_RECEIVED_CASTFORM,              0xFFFF },
-    { MatchCall_Text_Scott4, FLAG_RECEIVED_RED_OR_BLUE_ORB,       0xFFFF },
-    { MatchCall_Text_Scott5, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, 0xFFFF },
-    { MatchCall_Text_Scott6, FLAG_DEFEATED_BLACKTHORN_GYM,        0xFFFF },
-    { MatchCall_Text_Scott7, FLAG_SYS_GAME_CLEAR,                 0xFFFF },
-    { NULL,                  0xFFFF,                              0xFFFF }
-};
-
 
 static const struct MatchCallStructNPC sScottMatchCallHeader =
 {
@@ -364,15 +328,15 @@ static const struct MatchCallStructNPC sScottMatchCallHeader =
     .flag = FLAG_ENABLE_SCOTT_MATCH_CALL,
     .desc = COMPOUND_STRING("ELUSIVE EYES"),
     .name = COMPOUND_STRING("SCOTT"),
-    .textData = sScottTextScripts
-};
-
-static const match_call_text_data_t sRoxanneTextScripts[] = {
-    { MatchCall_Text_Roxanne1, 0xFFFE,              0xFFFF },
-    { MatchCall_Text_Roxanne2, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Roxanne3, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Roxanne4, FLAG_SYS_GAME_CLEAR, 0xFFFF },
-    { NULL,                    0xFFFF,              0xFFFF }
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Scott1, ALWAYS_AVAILABLE,                    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Scott2, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY,  FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Scott3, FLAG_RECEIVED_CASTFORM,              FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Scott4, FLAG_RECEIVED_RED_OR_BLUE_ORB,       FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Scott5, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Scott7, FLAG_SYS_GAME_CLEAR,                 FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructTrainer sRoxanneMatchCallHeader =
@@ -383,15 +347,13 @@ static const struct MatchCallStructTrainer sRoxanneMatchCallHeader =
     .rematchTableIdx = REMATCH_ROXANNE,
     .desc = COMPOUND_STRING("ROCKIN' WHIZ"),
     .name = NULL,
-    .textData = sRoxanneTextScripts
-};
-
-static const match_call_text_data_t sBrawlyTextScripts[] = {
-    { MatchCall_Text_Brawly1, 0xFFFE,              0xFFFF },
-    { MatchCall_Text_Brawly2, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Brawly3, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Brawly4, FLAG_SYS_GAME_CLEAR, 0xFFFF },
-    { NULL,                   0xFFFF,              0xFFFF }
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Roxanne_Preparing,         REMATCH_CALL_START,  FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Roxanne_PreparingPostGame, ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Roxanne_RematchReady,      ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Roxanne_PostRematch,       FLAG_SYS_GAME_CLEAR, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructTrainer sBrawlyMatchCallHeader =
@@ -402,15 +364,13 @@ static const struct MatchCallStructTrainer sBrawlyMatchCallHeader =
     .rematchTableIdx = REMATCH_BRAWLY,
     .desc = COMPOUND_STRING("THE BIG HIT"),
     .name = NULL,
-    .textData = sBrawlyTextScripts
-};
-
-static const match_call_text_data_t sWattsonTextScripts[] = {
-    { MatchCall_Text_Wattson1, 0xFFFE,              0xFFFF },
-    { MatchCall_Text_Wattson2, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Wattson3, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Wattson4, FLAG_SYS_GAME_CLEAR, 0xFFFF },
-    { NULL,                    0xFFFF,              0xFFFF }
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Brawly_Preparing,         REMATCH_CALL_START,  FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Brawly_PreparingPostGame, ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Brawly_RematchReady,      ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Brawly_PostRematch,       FLAG_SYS_GAME_CLEAR, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructTrainer sWattsonMatchCallHeader =
@@ -421,15 +381,13 @@ static const struct MatchCallStructTrainer sWattsonMatchCallHeader =
     .rematchTableIdx = REMATCH_WATTSON,
     .desc = COMPOUND_STRING("SWELL SHOCK"),
     .name = NULL,
-    .textData = sWattsonTextScripts
-};
-
-static const match_call_text_data_t sFlanneryTextScripts[] = {
-    { MatchCall_Text_Flannery1, 0xFFFE,              0xFFFF },
-    { MatchCall_Text_Flannery2, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Flannery3, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Flannery4, FLAG_SYS_GAME_CLEAR, 0xFFFF },
-    { NULL,                     0xFFFF,              0xFFFF }
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Wattson_Preparing,         REMATCH_CALL_START,  FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Wattson_PreparingPostGame, ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Wattson_RematchReady,      ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Wattson_PostRematch,       FLAG_SYS_GAME_CLEAR, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructTrainer sFlanneryMatchCallHeader =
@@ -440,15 +398,13 @@ static const struct MatchCallStructTrainer sFlanneryMatchCallHeader =
     .rematchTableIdx = REMATCH_FLANNERY,
     .desc = COMPOUND_STRING("PASSION BURN"),
     .name = NULL,
-    .textData = sFlanneryTextScripts
-};
-
-static const match_call_text_data_t sWinonaTextScripts[] = {
-    { MatchCall_Text_Winona1, 0xFFFE,              0xFFFF },
-    { MatchCall_Text_Winona2, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Winona3, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Winona4, FLAG_SYS_GAME_CLEAR, 0xFFFF },
-    { NULL,                   0xFFFF,              0xFFFF }
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Flannery_Preparing,         REMATCH_CALL_START,  FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Flannery_PreparingPostGame, ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Flannery_RematchReady,      ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Flannery_PostRematch,       FLAG_SYS_GAME_CLEAR, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructTrainer sWinonaMatchCallHeader =
@@ -459,15 +415,13 @@ static const struct MatchCallStructTrainer sWinonaMatchCallHeader =
     .rematchTableIdx = REMATCH_WINONA,
     .desc = COMPOUND_STRING("SKY TAMER"),
     .name = NULL,
-    .textData = sWinonaTextScripts
-};
-
-static const match_call_text_data_t sTateLizaTextScripts[] = {
-    { MatchCall_Text_TateLiza1, 0xFFFE,              0xFFFF },
-    { MatchCall_Text_TateLiza2, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_TateLiza3, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_TateLiza4, FLAG_SYS_GAME_CLEAR, 0xFFFF },
-    { NULL,                     0xFFFF,              0xFFFF }
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Winona_Preparing,         REMATCH_CALL_START,  FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Winona_PreparingPostGame, ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Winona_RematchReady,      ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Winona_PostRematch,       FLAG_SYS_GAME_CLEAR, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructTrainer sTateLizaMatchCallHeader =
@@ -478,15 +432,13 @@ static const struct MatchCallStructTrainer sTateLizaMatchCallHeader =
     .rematchTableIdx = REMATCH_TATE_AND_LIZA,
     .desc = COMPOUND_STRING("MYSTIC DUO"),
     .name = NULL,
-    .textData = sTateLizaTextScripts
-};
-
-static const match_call_text_data_t sJuanTextScripts[] = {
-    { MatchCall_Text_Juan1, 0xFFFE,              0xFFFF },
-    { MatchCall_Text_Juan2, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Juan3, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Juan4, FLAG_SYS_GAME_CLEAR, 0xFFFF },
-    { NULL,                 0xFFFF,              0xFFFF }
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_TateLiza_Preparing,         REMATCH_CALL_START,  FLAG_GARBAGEFLAG },
+        { MatchCall_Text_TateLiza_PreparingPostGame, ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_TateLiza_RematchReady,      ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_TateLiza_PostRematch,       FLAG_SYS_GAME_CLEAR, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructTrainer sJuanMatchCallHeader =
@@ -497,15 +449,16 @@ static const struct MatchCallStructTrainer sJuanMatchCallHeader =
     .rematchTableIdx = REMATCH_JUAN,
     .desc = COMPOUND_STRING("DANDY CHARM"),
     .name = NULL,
-    .textData = sJuanTextScripts
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Juan_Preparing,         REMATCH_CALL_START,  FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Juan_PreparingPostGame, ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Juan_RematchReady,      ALWAYS_AVAILABLE,    FLAG_GARBAGEFLAG },
+        { MatchCall_Text_Juan_PostRematch,       FLAG_SYS_GAME_CLEAR, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const u8 gText_EliteFourMatchCallDesc[] = _("ELITE FOUR");
-
-static const match_call_text_data_t sSidneyTextScripts[] = {
-    { MatchCall_Text_Sidney, 0xFFFF, 0xFFFF },
-    { NULL,                  0xFFFF, 0xFFFF }
-};
 
 static const struct MatchCallStructTrainer sSidneyMatchCallHeader =
 {
@@ -515,12 +468,10 @@ static const struct MatchCallStructTrainer sSidneyMatchCallHeader =
     .rematchTableIdx = REMATCH_SIDNEY,
     .desc = gText_EliteFourMatchCallDesc,
     .name = NULL,
-    .textData = sSidneyTextScripts
-};
-
-static const match_call_text_data_t sPhoebeTextScripts[] = {
-    { MatchCall_Text_Phoebe, 0xFFFF, 0xFFFF },
-    { NULL,                  0xFFFF, 0xFFFF }
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Sidney, ALWAYS_AVAILABLE, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructTrainer sPhoebeMatchCallHeader =
@@ -531,12 +482,10 @@ static const struct MatchCallStructTrainer sPhoebeMatchCallHeader =
     .rematchTableIdx = REMATCH_PHOEBE,
     .desc = gText_EliteFourMatchCallDesc,
     .name = NULL,
-    .textData = sPhoebeTextScripts
-};
-
-static const match_call_text_data_t sGlaciaTextScripts[] = {
-    { MatchCall_Text_Glacia, 0xFFFF, 0xFFFF },
-    { NULL,                  0xFFFF, 0xFFFF }
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Phoebe, ALWAYS_AVAILABLE, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructTrainer sGlaciaMatchCallHeader =
@@ -547,12 +496,10 @@ static const struct MatchCallStructTrainer sGlaciaMatchCallHeader =
     .rematchTableIdx = REMATCH_GLACIA,
     .desc = gText_EliteFourMatchCallDesc,
     .name = NULL,
-    .textData = sGlaciaTextScripts
-};
-
-static const match_call_text_data_t sDrakeTextScripts[] = {
-    { MatchCall_Text_Drake, 0xFFFF, 0xFFFF },
-    { NULL,                 0xFFFF, 0xFFFF }
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Glacia, ALWAYS_AVAILABLE, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructTrainer sDrakeMatchCallHeader =
@@ -563,12 +510,10 @@ static const struct MatchCallStructTrainer sDrakeMatchCallHeader =
     .rematchTableIdx = REMATCH_DRAKE,
     .desc = gText_EliteFourMatchCallDesc,
     .name = NULL,
-    .textData = sDrakeTextScripts
-};
-
-static const match_call_text_data_t sWallaceTextScripts[] = {
-    { MatchCall_Text_Wallace, 0xFFFF, 0xFFFF },
-    { NULL,                   0xFFFF, 0xFFFF }
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Drake, ALWAYS_AVAILABLE, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const struct MatchCallStructTrainer sWallaceMatchCallHeader =
@@ -579,14 +524,17 @@ static const struct MatchCallStructTrainer sWallaceMatchCallHeader =
     .rematchTableIdx = REMATCH_WALLACE,
     .desc = COMPOUND_STRING("CHAMPION"),
     .name = NULL,
-    .textData = sWallaceTextScripts
+    .textData = (const match_call_text_data_t[]) {
+        { MatchCall_Text_Wallace, ALWAYS_AVAILABLE, FLAG_GARBAGEFLAG },
+        MATCH_CALL_TEXT_END
+    }
 };
 
 static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_MR_STONE]   = {.npc    = &sMrStoneMatchCallHeader},
     [MC_HEADER_PROF_BIRCH] = {.birch  = &sProfBirchMatchCallHeader},
     [MC_HEADER_BRENDAN]    = {.rival  = &sBrendanMatchCallHeader},
-    [MC_HEADER_MAY]        = {.rival  = &sMayMatchCallHeader},
+    [MC_HEADER_MAY]        = {.rival  = &sBrendanMatchCallHeader},
     [MC_HEADER_WALLY]      = {.wally  = &sWallyMatchCallHeader},
     [MC_HEADER_NORMAN]     = {.leader = &sNormanMatchCallHeader},
     [MC_HEADER_MOM]        = {.npc    = &sMomMatchCallHeader},
@@ -663,23 +611,23 @@ static void (*const sMatchCall_GetNameAndDescFunctions[])(match_call_t, const u8
 };
 
 static const u8 gText_MatchCallSteven_Strategy[] = _("Attack the weak points!");
-static const u8 gText_MatchCallSteven_Pokemon[] = _("Ultimate STEEL POKéMON.");
+static const u8 gText_MatchCallSteven_Pokemon[] = _("Ultimate STEEL Pokémon.");
 
 static const u8 gText_MatchCallBrendan_Strategy[] = _("Battle with knowledge!");
-static const u8 gText_MatchCallBrendan_Pokemon[] = _("I will use various POKéMON.");
-static const u8 gText_MatchCallBrendan_Intro1[] = _("I'll be a better POKéMON");
+static const u8 gText_MatchCallBrendan_Pokemon[] = _("I will use various Pokémon.");
+static const u8 gText_MatchCallBrendan_Intro1[] = _("I'll be a better Pokémon");
 static const u8 gText_MatchCallBrendan_Intro2[] = _("prof than my father is!");
 
 static const u8 gText_MatchCallMay_Strategy[] = _("I'm not so good at battles.");
-static const u8 gText_MatchCallMay_Pokemon[] = _("I'll use any POKéMON!");
-static const u8 gText_MatchCallMay_Intro1[] = _("My POKéMON and I help");
+static const u8 gText_MatchCallMay_Pokemon[] = _("I'll use any Pokémon!");
+static const u8 gText_MatchCallMay_Intro1[] = _("My Pokémon and I help");
 static const u8 gText_MatchCallMay_Intro2[] = _("my father's research.");
 
 static const struct MatchCallCheckPageOverride sCheckPageOverrides[] = {
     {
         .idx = MC_HEADER_STEVEN,
         .facilityClass = FACILITY_CLASS_STEVEN,
-        .flag = 0xFFFF,
+        .flag = FLAG_GARBAGEFLAG,
         .flavorTexts = {
             [CHECK_PAGE_STRATEGY] = gText_MatchCallSteven_Strategy,
             [CHECK_PAGE_POKEMON]  = gText_MatchCallSteven_Pokemon,
@@ -690,7 +638,7 @@ static const struct MatchCallCheckPageOverride sCheckPageOverrides[] = {
     {
         .idx = MC_HEADER_STEVEN,
         .facilityClass = FACILITY_CLASS_STEVEN,
-        .flag = FLAG_DEFEATED_MAHOGANY_TOWN_GYM,
+        .flag = FLAG_GARBAGEFLAG,
         .flavorTexts = {
             [CHECK_PAGE_STRATEGY] = gText_MatchCallSteven_Strategy,
             [CHECK_PAGE_POKEMON]  = gText_MatchCallSteven_Pokemon,
@@ -701,13 +649,13 @@ static const struct MatchCallCheckPageOverride sCheckPageOverrides[] = {
     {
         .idx = MC_HEADER_BRENDAN,
         .facilityClass = FACILITY_CLASS_BRENDAN,
-        .flag = 0xFFFF,
+        .flag = FLAG_GARBAGEFLAG,
         .flavorTexts = MCFLAVOR(Brendan)
     },
     {
         .idx = MC_HEADER_MAY,
         .facilityClass = FACILITY_CLASS_MAY,
-        .flag = 0xFFFF,
+        .flag = FLAG_GARBAGEFLAG,
         .flavorTexts = MCFLAVOR(May)
     }
 };
@@ -718,18 +666,18 @@ static u32 MatchCallGetFunctionIndex(match_call_t matchCall)
 {
     switch (matchCall.common->type)
     {
-        default:
-        case MC_TYPE_NPC:
-            return 0;
-        case MC_TYPE_TRAINER:
-        case MC_TYPE_LEADER:
-            return 1;
-        case MC_TYPE_WALLY:
-            return 2;
-        case MC_TYPE_RIVAL:
-            return 3;
-        case MC_TYPE_BIRCH:
-            return 4;
+    default:
+    case MC_TYPE_NPC:
+        return 0;
+    case MC_TYPE_TRAINER:
+    case MC_TYPE_LEADER:
+        return 1;
+    case MC_TYPE_WALLY:
+        return 2;
+    case MC_TYPE_RIVAL:
+        return 3;
+    case MC_TYPE_BIRCH:
+        return 4;
     }
 }
 
@@ -764,21 +712,21 @@ bool32 MatchCall_GetEnabled(u32 idx)
 
 static bool32 MatchCall_GetEnabled_NPC(match_call_t matchCall)
 {
-    if (matchCall.npc->flag == 0xFFFF)
+    if (matchCall.npc->flag == FLAG_GARBAGEFLAG)
         return TRUE;
     return FlagGet(matchCall.npc->flag);
 }
 
 static bool32 MatchCall_GetEnabled_Trainer(match_call_t matchCall)
 {
-    if (matchCall.trainer->flag == 0xFFFF)
+    if (matchCall.trainer->flag == FLAG_GARBAGEFLAG)
         return TRUE;
     return FlagGet(matchCall.trainer->flag);
 }
 
 static bool32 MatchCall_GetEnabled_Wally(match_call_t matchCall)
 {
-    if (matchCall.wally->flag == 0xFFFF)
+    if (matchCall.wally->flag == FLAG_GARBAGEFLAG)
         return TRUE;
     return FlagGet(matchCall.wally->flag);
 }
@@ -787,7 +735,7 @@ static bool32 MatchCall_GetEnabled_Rival(match_call_t matchCall)
 {
     if (matchCall.rival->playerGender != gSaveBlock2Ptr->playerGender)
         return FALSE;
-    if (matchCall.rival->flag == 0xFFFF)
+    if (matchCall.rival->flag == FLAG_GARBAGEFLAG)
         return TRUE;
     return FlagGet(matchCall.rival->flag);
 }
@@ -823,7 +771,7 @@ static mapsec_u16_t MatchCall_GetMapSec_Wally(match_call_t matchCall)
 {
     s32 i;
 
-    for (i = 0; matchCall.wally->locationData[i].flag != 0xFFFF; i++)
+    for (i = 0; matchCall.wally->locationData[i].flag != FLAG_GARBAGEFLAG; i++)
     {
         if (!FlagGet(matchCall.wally->locationData[i].flag))
             break;
@@ -1019,12 +967,12 @@ static void MatchCall_BufferCallMessageText(const match_call_text_data_t *textDa
         i--;
     while (i)
     {
-        if (textData[i].flag != 0xFFFF && FlagGet(textData[i].flag) == TRUE)
+        if (textData[i].availabilityFlag != ALWAYS_AVAILABLE && FlagGet(textData[i].availabilityFlag) == TRUE)
             break;
         i--;
     }
-    if (textData[i].flag2 != 0xFFFF)
-        FlagSet(textData[i].flag2);
+    if (textData[i].flagToSetOnCompletion != FLAG_GARBAGEFLAG)
+        FlagSet(textData[i].flagToSetOnCompletion);
     StringExpandPlaceholders(dest, textData[i].text);
 }
 
@@ -1034,17 +982,17 @@ static void MatchCall_BufferCallMessageTextByRematchTeam(const match_call_text_d
     u32 i;
     for (i = 0; textData[i].text != NULL; i++)
     {
-        if (textData[i].flag == 0xFFFE)
+        if (textData[i].availabilityFlag == REMATCH_CALL_START)
             break;
-        if (textData[i].flag != 0xFFFF && !FlagGet(textData[i].flag))
+        if (textData[i].availabilityFlag != ALWAYS_AVAILABLE && !FlagGet(textData[i].availabilityFlag))
             break;
     }
-    if (textData[i].flag != 0xFFFE)
+    if (textData[i].availabilityFlag != REMATCH_CALL_START)
     {
         if (i)
             i--;
-        if (textData[i].flag2 != 0xFFFF)
-            FlagSet(textData[i].flag2);
+        if (textData[i].flagToSetOnCompletion != FLAG_GARBAGEFLAG)
+            FlagSet(textData[i].flagToSetOnCompletion);
         StringExpandPlaceholders(dest, textData[i].text);
     }
     else
@@ -1053,15 +1001,17 @@ static void MatchCall_BufferCallMessageTextByRematchTeam(const match_call_text_d
         {
             do
             {
-                if (gSaveBlock1Ptr->trainerRematches[idx])
-                    i += 2;
-                else if (CountBattledRematchTeams(idx) >= 2)
-                    i += 3;
-                else
-                    i++;
+                // If the rematch is ready, advance to the rematch call.
+                if (gSaveBlock1Ptr->trainerRematches[idx]) i += 2;
+                // No rematch ready, but if the player has defeated them in
+                // a rematch before, advance to the final call.
+                // Note: The 2 "rematch" teams battled includes the first non-rematch battle.
+                else if (CountBattledRematchTeams(idx) >= 2) i += 3; 
+                // No rematch ready and never defeated in a rematch, advance to congratulations call.
+                else i++;
             } while (0);
         }
-
+        // If the game hasn't been cleared yet, the index remains on the basic "preparing for rematch" call.
         StringExpandPlaceholders(dest, textData[i].text);
     }
 #endif //FREE_MATCH_CALL

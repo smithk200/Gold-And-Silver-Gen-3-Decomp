@@ -7,14 +7,12 @@ void UpdateTilesetAnimations(void);
 void TransferTilesetAnimsBuffer(void);
 
 void InitTilesetAnim_General(void);
-void InitTilesetAnim_HoennGeneral(void);
 void InitTilesetAnim_Petalburg(void);
 void InitTilesetAnim_Rustboro(void);
 void InitTilesetAnim_Dewford(void);
 void InitTilesetAnim_Slateport(void);
 void InitTilesetAnim_Mauville(void);
 void InitTilesetAnim_Lavaridge(void);
-void InitTilesetAnim_Lavaridge2(void);
 void InitTilesetAnim_Fallarbor(void);
 void InitTilesetAnim_Fortree(void);
 void InitTilesetAnim_Lilycove(void);
@@ -33,10 +31,19 @@ void InitTilesetAnim_MauvilleGym(void);
 void InitTilesetAnim_EliteFour(void);
 void InitTilesetAnim_BattleDome(void);
 void InitTilesetAnim_BattlePyramid(void);
+
+// FRLG
+void InitTilesetAnim_General_Frlg(void);
+void InitTilesetAnim_CeladonCity(void);
+void InitTilesetAnim_VermilionGym(void);
+void InitTilesetAnim_CeladonGym(void);
 void InitTilesetAnim_SilphCo(void);
+void InitTilesetAnim_MtEmber(void);
+
+//HnS
 void InitTilesetAnim_NationalPark(void);
 void InitTilesetAnim_ecruteak_theater(void);
 void InitTilesetAnim_AzaleaTown_Gym(void);
 void InitTilesetAnim_CeladonCity(void);
-
+void InitTilesetAnim_HoennGeneral(void);
 #endif // GUARD_TILESET_ANIMS_H

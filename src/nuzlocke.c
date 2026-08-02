@@ -6,6 +6,7 @@
 #include "constants/vars.h"
 #include "constants/region_map_sections.h"
 #include "pokemon_storage_system.h"
+#include "pokemon.h"
 #include "sprite.h"
 #include "battle.h"
 #include "battle_interface.h"
@@ -16,7 +17,17 @@
 // Check if Nuzlocke mode is active
 bool8 IsNuzlockeActive(void)
 {
-    return FlagGet(FLAG_NUZLOCKE);
+    //return FlagGet(FLAG_NUZLOCKE);
+    if (!FlagGet(FLAG_SYS_POKEMON_GET))     //Nuzlocke has not started
+        return FALSE;
+    if (!FlagGet(FLAG_ADVENTURE_STARTED))   //Nuzlocke has not started
+        return FALSE;
+    if (FlagGet(FLAG_IS_CHAMPION))          //Player is champion and Nuzlocke stopped
+        return FALSE;
+
+    if (gSaveBlock1Ptr->tx_Challenges_Nuzlocke == 1)
+        return TRUE;
+    return FALSE;
 }
 
 // Location conversion for Nuzlocke tracking
@@ -145,7 +156,7 @@ bool8 HasWildPokemonBeenSeenInLocation(u16 location, bool8 setEncounteredIfFirst
     
     location = GetNuzlockeLocationId(location);
     
-    if (!FlagGet(FLAG_NUZLOCKE) || !FlagGet(FLAG_RECEIVED_FIRST_BALLS))
+    if (!IsNuzlockeActive())
     {
         // Clear all encounter tracking if Nuzlocke not active
         VarSet(VAR_NUZLOCKE_ENCOUNTERS_1, 0);
@@ -297,9 +308,9 @@ bool8 HasWildPokemonBeenSeenInLocation(u16 location, bool8 setEncounteredIfFirst
         bitToCheck = 1;
         break;
     case MAPSEC_SLOWPOKE_WELL:
-    varToCheck = 2;
-    bitToCheck = 2;
-    break;
+        varToCheck = 2;
+        bitToCheck = 2;
+        break;
     case MAPSEC_UNION_CAVE:
         varToCheck = 2;
         bitToCheck = 3;
@@ -395,7 +406,12 @@ bool8 HasWildPokemonBeenCaughtInLocation(u16 location, bool8 setCaughtIfCaught)
     
     location = GetNuzlockeLocationId(location);
     
+    /*
     if (!FlagGet(FLAG_NUZLOCKE) || !FlagGet(FLAG_RECEIVED_FIRST_BALLS))
+        return 0;
+    */
+    
+    if (!(IsNuzlockeActive()))
         return 0;
     
     // Map location to variable index and bit position
@@ -464,7 +480,7 @@ void SetMonDead(struct Pokemon *mon, bool8 isDead)
         return;
     
     u32 deadFlag = isDead ? 1 : 0;
-    SetMonData(mon, MON_DATA_IS_DEAD, &deadFlag);
+    //SetMonData(mon, MON_DATA_IS_DEAD, &deadFlag);
 }
 
 void SetBoxMonDead(struct BoxPokemon *boxMon, bool8 isDead)
@@ -473,7 +489,7 @@ void SetBoxMonDead(struct BoxPokemon *boxMon, bool8 isDead)
         return;
     
     u32 deadFlag = isDead ? 1 : 0;
-    SetBoxMonData(boxMon, MON_DATA_IS_DEAD, &deadFlag);
+    //SetBoxMonData(boxMon, MON_DATA_IS_DEAD, &deadFlag);
 }
 
 // Species checking for duplicate clause
@@ -483,11 +499,15 @@ bool8 PlayerOwnsSpecies(u16 species)
     
     if (!IsNuzlockeActive())
         return FALSE;
+
+    if ((gSaveBlock1Ptr->tx_Nuzlocke_SpeciesClause == 1) && IsNuzlockeActive()) //Player disabled species clause for some reason
+        return FALSE;
+
     
     // Check party
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        u16 partySpecies = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES);
+        u16 partySpecies = GetMonData(gParties[B_TRAINER_PLAYER], MON_DATA_SPECIES);
         if (partySpecies != SPECIES_NONE && partySpecies == species)
             return TRUE;
     }
@@ -543,7 +563,7 @@ void NuzlockeHandleWhiteout(void)
     // Mark all party Pokemon as dead
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        struct Pokemon *mon = &gPlayerParty[i];
+        struct Pokemon *mon = gParties[B_TRAINER_PLAYER];
         if (GetMonData(mon, MON_DATA_SPECIES) != SPECIES_NONE && 
             !GetMonData(mon, MON_DATA_SANITY_IS_EGG))
         {
@@ -562,12 +582,13 @@ bool8 NuzlockeCanCatchPokemon(u16 species, u32 personality, u32 otId)
     }
     
     currentLocation = GetCurrentRegionMapSectionId();
+    DebugPrintf("Nuzlocke active");
     
     // Shiny clause: always allow shiny Pokemon regardless of other rules
     u32 shinyValue = ((personality >> 16) ^ (personality & 0xFFFF)) ^ ((otId >> 16) ^ (otId & 0xFFFF));
-    bool8 isShiny = (shinyValue < 8);
+    bool8 isShiny = (shinyValue < GetShinyOdds());
     
-    if (isShiny)
+    if (isShiny && (gSaveBlock1Ptr->tx_Nuzlocke_ShinyClause == 0))
     {
         return TRUE;
     }
@@ -580,7 +601,7 @@ bool8 NuzlockeCanCatchPokemon(u16 species, u32 personality, u32 otId)
     }
     
     // This is a potential first encounter - check duplicate clause
-    if (PlayerOwnsSpecies(species))
+    if ((PlayerOwnsSpecies(species) && gSaveBlock1Ptr->tx_Nuzlocke_SpeciesClause == 0)) //if the player decides to enable species clause
     {
         return FALSE; // Don't catch, but this encounter doesn't count - keep hunting
     }
@@ -602,9 +623,9 @@ void NuzlockeOnBattleEnd(void)
         if (!alreadyEncountered)
         {
             // Get wild Pokemon info
-            u16 wildSpecies = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES);
-            u32 wildPersonality = GetMonData(&gEnemyParty[0], MON_DATA_PERSONALITY);
-            u32 wildOtId = GetMonData(&gEnemyParty[0], MON_DATA_OT_ID);
+            u16 wildSpecies = GetMonData(gParties[B_TRAINER_OPPONENT_A], MON_DATA_SPECIES);
+            u32 wildPersonality = GetMonData(gParties[B_TRAINER_OPPONENT_A], MON_DATA_PERSONALITY);
+            u32 wildOtId = GetMonData(gParties[B_TRAINER_OPPONENT_A], MON_DATA_OT_ID);
             
             // Check if it's a shiny - shiny clause means it doesn't consume the encounter
             u32 shinyValue = ((wildPersonality >> 16) ^ (wildPersonality & 0xFFFF)) ^ ((wildOtId >> 16) ^ (wildOtId & 0xFFFF));

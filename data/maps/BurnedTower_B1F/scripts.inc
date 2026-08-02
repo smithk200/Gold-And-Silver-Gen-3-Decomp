@@ -200,7 +200,7 @@ BurnedTowerB1FEusineText:
 	.string "{PLAYER}, I owe this all to you!\p"
 	.string "Thank you!\p"
 	.string "I heard that the legendary\n"
-	.string "POKéMON of ECRUTEAK test\l"
+	.string "Pokémon of ECRUTEAK test\l"
 	.string "chosen humans by allowing them\l"
 	.string "to get close.\p"
 	.string "I'm going to track SUICUNE.\p"

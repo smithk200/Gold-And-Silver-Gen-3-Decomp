@@ -28,7 +28,7 @@ Route47_EventScript_Camper::
 Route47_Text_CamperSeen::
 	.string "I'm not good with large crowds, so\n"
 	.string "I'm camping out here with my\l"
-	.string "POKéMON!$"
+	.string "Pokémon!$"
 
 Route47_Text_CamperBeaten::
 	.string "I should be headed deeper into the\n"

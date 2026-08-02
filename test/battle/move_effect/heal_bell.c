@@ -3,9 +3,9 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_HEAL_BELL].effect == EFFECT_HEAL_BELL);
-    ASSUME(gMovesInfo[MOVE_AROMATHERAPY].effect == EFFECT_HEAL_BELL);
-    ASSUME(MoveHasAdditionalEffect(MOVE_SPARKLY_SWIRL, MOVE_EFFECT_AROMATHERAPY));
+    ASSUME(GetMoveEffect(MOVE_HEAL_BELL) == EFFECT_HEAL_BELL);
+    ASSUME(GetMoveEffect(MOVE_AROMATHERAPY) == EFFECT_HEAL_BELL);
+    ASSUME(MoveHasAdditionalEffectSelf(MOVE_SPARKLY_SWIRL, MOVE_EFFECT_AROMATHERAPY));
 }
 
 DOUBLE_BATTLE_TEST("Sparkly Swirl cures the entire party")
@@ -30,7 +30,7 @@ DOUBLE_BATTLE_TEST("Sparkly Swirl cures the entire party")
         STATUS_ICON(playerRight, none: TRUE);
         NOT MESSAGE("Wobbuffet was hurt by its poisoning!");
         for (i = 0; i < PARTY_SIZE; i++)
-            EXPECT_EQ(GetMonData(&gPlayerParty[i], MON_DATA_STATUS), STATUS1_NONE);
+            EXPECT_EQ(GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_STATUS), STATUS1_NONE);
     }
 }
 
@@ -80,13 +80,14 @@ DOUBLE_BATTLE_TEST("Heal Bell/Aromatherapy cures the entire party of the user fr
         case STATUS1_FROSTBITE:    STATUS_ICON(playerLeft, frostbite: FALSE); STATUS_ICON(playerRight, frostbite: FALSE); break;
         }
         for (j = 0; j < PARTY_SIZE; j++)
-            EXPECT_EQ(GetMonData(&gPlayerParty[j], MON_DATA_STATUS), STATUS1_NONE);
+            EXPECT_EQ(GetMonData(&gParties[B_TRAINER_PLAYER][j], MON_DATA_STATUS), STATUS1_NONE);
     }
 }
 
 DOUBLE_BATTLE_TEST("Heal Bell does not cure Soundproof partners (Gen 4, Gen 6+)")
 {
-    u32 ability, config;
+    enum Ability ability;
+    u32 config;
 
     PARAMETRIZE { ability = ABILITY_SCRAPPY;    config = GEN_4; }
     PARAMETRIZE { ability = ABILITY_SOUNDPROOF; config = GEN_4; }
@@ -95,7 +96,7 @@ DOUBLE_BATTLE_TEST("Heal Bell does not cure Soundproof partners (Gen 4, Gen 6+)"
 
     GIVEN {
         ASSUME(IsSoundMove(MOVE_HEAL_BELL));
-        WITH_CONFIG(GEN_CONFIG_HEAL_BELL_SOUNDPROOF, config);
+        WITH_CONFIG(B_HEAL_BELL_SOUNDPROOF, config);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_EXPLOUD) { Ability(ability); Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_WYNAUT);
@@ -114,7 +115,8 @@ DOUBLE_BATTLE_TEST("Heal Bell does not cure Soundproof partners (Gen 4, Gen 6+)"
 
 SINGLE_BATTLE_TEST("Heal Bell cures inactive Soundproof Pokemon (Gen5+)")
 {
-    u32 config, ability;
+    u32 config;
+    enum Ability ability;
 
     PARAMETRIZE { config = GEN_4, ability = ABILITY_SCRAPPY; }
     PARAMETRIZE { config = GEN_4, ability = ABILITY_SOUNDPROOF; }
@@ -122,7 +124,7 @@ SINGLE_BATTLE_TEST("Heal Bell cures inactive Soundproof Pokemon (Gen5+)")
 
     GIVEN {
         ASSUME(IsSoundMove(MOVE_HEAL_BELL));
-        WITH_CONFIG(GEN_CONFIG_HEAL_BELL_SOUNDPROOF, config);
+        WITH_CONFIG(B_HEAL_BELL_SOUNDPROOF, config);
         PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
         PLAYER(SPECIES_EXPLOUD) { Ability(ability); Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_WYNAUT);
@@ -150,7 +152,7 @@ SINGLE_BATTLE_TEST("Heal Bell cures a Soundproof user (Gen5, Gen8+)")
     PARAMETRIZE { config = GEN_8; }
     GIVEN {
         ASSUME(IsSoundMove(MOVE_HEAL_BELL));
-        WITH_CONFIG(GEN_CONFIG_HEAL_BELL_SOUNDPROOF, config);
+        WITH_CONFIG(B_HEAL_BELL_SOUNDPROOF, config);
         PLAYER(SPECIES_EXPLOUD) { Ability(ABILITY_SOUNDPROOF); Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
@@ -162,5 +164,75 @@ SINGLE_BATTLE_TEST("Heal Bell cures a Soundproof user (Gen5, Gen8+)")
         } else {
             MESSAGE("Exploud was hurt by its poisoning!");
         }
+    }
+}
+
+DOUBLE_BATTLE_TEST("Aromatherapy cure Soundproof battlers regardless of config")
+{
+    enum Ability ability;
+    u32 config;
+
+    PARAMETRIZE { ability = ABILITY_SOUNDPROOF; config = GEN_4; }
+    PARAMETRIZE { ability = ABILITY_SOUNDPROOF; config = GEN_5; }
+    PARAMETRIZE { ability = ABILITY_SOUNDPROOF; config = GEN_6; }
+    PARAMETRIZE { ability = ABILITY_SOUNDPROOF; config = GEN_8; }
+
+    GIVEN {
+        ASSUME(!IsSoundMove(MOVE_AROMATHERAPY));
+        WITH_CONFIG(B_HEAL_BELL_SOUNDPROOF, config);
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ability); Status1(STATUS1_POISON); }
+        PLAYER(SPECIES_EXPLOUD) { Ability(ability); Status1(STATUS1_POISON); }
+        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WYNAUT);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_AROMATHERAPY, target: playerLeft); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_AROMATHERAPY, playerLeft);
+        NONE_OF {
+            MESSAGE("Exploud was hurt by its poisoning!");
+            MESSAGE("Wobbuffet was hurt by its poisoning!");
+        }
+    }
+}
+
+SINGLE_BATTLE_TEST("Aromatherapy cures inactive Soundproof Pokemon regardless of config")
+{
+    u32 config, ability;
+
+    PARAMETRIZE { config = GEN_4, ability = ABILITY_SOUNDPROOF; }
+    PARAMETRIZE { config = GEN_5, ability = ABILITY_SOUNDPROOF; }
+
+    GIVEN {
+        ASSUME(!IsSoundMove(MOVE_AROMATHERAPY));
+        WITH_CONFIG(B_HEAL_BELL_SOUNDPROOF, config);
+        PLAYER(SPECIES_WOBBUFFET) { }
+        PLAYER(SPECIES_EXPLOUD) { Ability(ability); Status1(STATUS1_POISON); }
+        OPPONENT(SPECIES_WYNAUT);
+    } WHEN {
+        TURN { MOVE(player, MOVE_AROMATHERAPY, target: player); }
+        TURN { SWITCH(player, 1); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_AROMATHERAPY, player);
+        SEND_IN_MESSAGE("Exploud");
+        NOT MESSAGE("Exploud was hurt by its poisoning!");
+    }
+}
+
+DOUBLE_BATTLE_TEST("Aromatherapy will be blocked on ally by Sap Sipper but not user")
+{
+    GIVEN {
+        ASSUME(GetMoveType(MOVE_AROMATHERAPY) == TYPE_GRASS);
+        PLAYER(SPECIES_MARILL) { Ability(ABILITY_SAP_SIPPER); }
+        PLAYER(SPECIES_MARILL) { Ability(ABILITY_SAP_SIPPER); }
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_AROMATHERAPY); }
+    } SCENE {
+        ABILITY_POPUP(playerRight, ABILITY_SAP_SIPPER);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
+        MESSAGE("Marill's Attack rose!");
+    } THEN {
+        EXPECT_EQ(playerRight->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 1);
     }
 }

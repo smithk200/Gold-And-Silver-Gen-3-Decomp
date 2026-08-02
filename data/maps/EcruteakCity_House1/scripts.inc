@@ -20,11 +20,11 @@ EcruteakCity_House1_EventScript_Youngster::
 EcruteakLugiaSpeechHouse_Text_Gramps:
 	.string "This happened when I was young.\p"
 	.string "The sky suddenly turned black. A\n"
-	.string "giant flying POKéMON was blocking\l"
+	.string "giant flying Pokémon was blocking\l"
 	.string "out the sun.\p"
-	.string "I wonder what that POKéMON was?\p"
+	.string "I wonder what that Pokémon was?\p"
 	.string "It was like a bird and a dragon.$"
 
 EcruteakLugiaSpeechHouse_Text_Youngster:
-	.string "Is there really a POKéMON that big?\p"
+	.string "Is there really a Pokémon that big?\p"
 	.string "If it exists, it must be powerful.$"

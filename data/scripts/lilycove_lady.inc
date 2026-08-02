@@ -67,7 +67,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_ChooseFavorItem::
 	fadescreen FADE_TO_BLACK
 	setvar VAR_RESULT, 0
 	special Script_FavorLadyOpenBagMenu
-	waitstate
+	@waitstate
 	goto_if_eq VAR_RESULT, 0, LilycoveCity_PokemonCenter_1F_EventScript_AskQuitChooseFavorItem
 	goto_if_eq VAR_RESULT, 1, LilycoveCity_PokemonCenter_1F_EventScript_GiveFavorItem
 	end
@@ -189,13 +189,13 @@ LilycoveCity_PokemonCenter_1F_EventScript_CheckQuizTakingState::
 
 LilycoveCity_PokemonCenter_1F_EventScript_ShowQuestion::
 	special QuizLadyShowQuizQuestion
-	waitstate
+	@waitstate
 	goto LilycoveCity_PokemonCenter_1F_EventScript_CheckQuizTakingState
 	end
 
 LilycoveCity_PokemonCenter_1F_EventScript_GetAnswer::
 	special QuizLadyGetPlayerAnswer
-	waitstate
+	@waitstate
 	goto LilycoveCity_PokemonCenter_1F_EventScript_CheckQuizTakingState
 	end
 
@@ -287,7 +287,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_PickPrize::
 	fadescreen FADE_TO_BLACK
 	setvar VAR_RESULT, 0
 	special Script_QuizLadyOpenBagMenu
-	waitstate
+	@waitstate
 	goto_if_eq VAR_RESULT, 0, LilycoveCity_PokemonCenter_1F_EventScript_AskQuitChoosingPrize
 	goto_if_eq VAR_RESULT, 1, LilycoveCity_PokemonCenter_1F_EventScript_WriteQuiz
 	end
@@ -306,7 +306,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_WriteQuiz::
 LilycoveCity_PokemonCenter_1F_EventScript_WriteQuizQuestion::
 	fadescreen FADE_TO_BLACK
 	special QuizLadySetCustomQuestion
-	waitstate
+	@waitstate
 	goto_if_eq VAR_RESULT, 0, LilycoveCity_PokemonCenter_1F_EventScript_AskQuitWritingQuizQuestion
 	goto LilycoveCity_PokemonCenter_1F_EventScript_FinishMakingQuiz
 	end
@@ -364,7 +364,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_DeclineGivePokeblock::
 LilycoveCity_PokemonCenter_1F_EventScript_ChoosePokeblock::
 	fadescreen FADE_TO_BLACK
 	special OpenPokeblockCaseForContestLady
-	waitstate
+	@waitstate
 	goto_if_eq VAR_RESULT, 0xFFFF, LilycoveCity_PokemonCenter_1F_EventScript_AskQuitGivingPokeblock
 	goto_if_ne VAR_RESULT, 0xFFFF, LilycoveCity_PokemonCenter_1F_EventScript_GivePokeblock
 	end
@@ -747,7 +747,7 @@ LilycoveCity_PokemonCenter_1F_Text_WhatACheapskate:
 LilycoveCity_PokemonCenter_1F_Text_IllUseYourPokeblock:
 	.string "Yay!\n"
 	.string "Thank you!\p"
-	.string "I'll feed my POKéMON your {POKEBLOCK}\n"
+	.string "I'll feed my Pokémon your {POKEBLOCK}\n"
 	.string "right away.$"
 
 LilycoveCity_PokemonCenter_1F_Text_NoChangeThanks:

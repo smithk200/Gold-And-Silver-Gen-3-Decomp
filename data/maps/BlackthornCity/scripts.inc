@@ -211,7 +211,7 @@ BlackBeltText_VoicesInMyHead:
 	.string "Huh? I'm listening to my radio!$"
 
 BlackthornCooltrainerF1Text:
-	.string "Are you going to make your POKéMON\n"
+	.string "Are you going to make your Pokémon\n"
 	.string "remember some moves?$"
 
 BlackthornYoungsterText:
@@ -249,9 +249,9 @@ BlackthornCitySignText:
 	.string "A Quiet Mountain Retreat$"
 
 BlackthornGymSignText:
-	.string "BLACKTHORN CITY POKéMON GYM\n"
+	.string "BLACKTHORN CITY Pokémon GYM\n"
 	.string "LEADER: CLAIR\p"
-	.string "The Blessed User of Dragon POKéMON$"
+	.string "The Blessed User of Dragon Pokémon$"
 
 BlackthornCity_Text_MoveDeletersHouseSign:
 	.string "MOVE BROS' HOUSE$"

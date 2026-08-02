@@ -38,7 +38,7 @@ EverGrandeCity_HallOfFame_EventScript_GameClearMale::
 	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
 	fadescreenspeed FADE_TO_BLACK, 24
 	special GameClear
-	waitstate
+	@waitstate
 	releaseall
 	end
 
@@ -46,7 +46,7 @@ EverGrandeCity_HallOfFame_EventScript_GameClearFemale::
 	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F
 	fadescreenspeed FADE_TO_BLACK, 24
 	special GameClear
-	waitstate
+	@waitstate
 	releaseall
 	end
 
@@ -70,7 +70,7 @@ EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame2:
 EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions:
 	.string "WALLACE: This room…\p"
 	.string "This is where we keep records of\n"
-	.string "POKéMON that prevailed through\l"
+	.string "Pokémon that prevailed through\l"
 	.string "harsh battles.\p"
 	.string "It is here that the LEAGUE CHAMPIONS\n"
 	.string "are honored.$"
@@ -78,6 +78,6 @@ EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions:
 EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames:
 	.string "WALLACE: Come on, let's record your\n"
 	.string "name as a TRAINER who triumphed over\l"
-	.string "the POKéMON LEAGUE, and the names of\l"
+	.string "the Pokémon LEAGUE, and the names of\l"
 	.string "the partners who battled with you.$"
 

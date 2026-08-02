@@ -9,12 +9,68 @@ Debug_ShowFieldMessageStringVar4::
 	goto Debug_MessageEnd
 
 Debug_CheatStart::
-	givemon SPECIES_MEGANIUM, 100, ITEM_NONE
-	givemon SPECIES_TYPHLOSION, 100, ITEM_NONE
-	givemon SPECIES_FERALIGATR, 100, ITEM_NONE
-	givemon SPECIES_UMBREON, 100, ITEM_NONE
-	givemon SPECIES_GLACEON, 100, ITEM_NONE
-	givemon SPECIES_JOLTEON, 100, ITEM_NONE
+	givemon SPECIES_TYPHLOSION, 95, ITEM_NONE, 1, NATURE_MODEST, 1, 1, 6, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_FLAMETHROWER, MOVE_AERIAL_ACE, MOVE_SLASH, MOVE_DIG 
+	givemon SPECIES_FERALIGATR, 95, ITEM_NONE, 1, NATURE_ADAMANT, 1, 1, 6, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SURF, MOVE_BITE, MOVE_WATERFALL, MOVE_DIVE 
+	givemon SPECIES_MEGANIUM, 95, ITEM_NONE, 1, NATURE_MODEST, 1, 1, 6, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_POISON_POWDER, MOVE_BODY_SLAM
+	givemon SPECIES_UMBREON, 95, ITEM_NONE, 1, NATURE_ADAMANT, 1, 1, 6, 252, 0, 0, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_CRUNCH, MOVE_DIG, MOVE_MOONLIGHT, MOVE_CONFUSE_RAY
+	givemon SPECIES_SALAMENCE, 95, ITEM_NONE, 1, NATURE_ADAMANT, 1, 1, 6, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_FLY, MOVE_DRAGON_CLAW, MOVE_CRUNCH, MOVE_DRAGON_DANCE
+	givemon SPECIES_JOLTEON, 95, ITEM_NONE, 1, NATURE_MODEST, 1, 1, 6, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_THUNDERBOLT, MOVE_BITE, MOVE_BABY_DOLL_EYES, MOVE_DOUBLE_KICK
+	givemon SPECIES_GLACEON, 95, ITEM_NONE, 1, NATURE_MODEST, 1, 1, 6, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_ICE_BEAM, MOVE_ALLURING_VOICE, MOVE_BABY_DOLL_EYES, MOVE_DIG
+	@setvar VAR_NEWBARKTOWN_LABSTATE, 4
+	setvar VAR_NEWBARK_TOWN_STATE, 8
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_RECEIVED_FIRST_BALLS
+	@setflag FLAG_RANDOMIZER
+	setflag FLAG_RECEIVED_RUNNING_SHOES
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_HIDE_MOMS_FRIEND
+	setflag FLAG_RECEIVED_FIRST_BALLS
+	setflag FLAG_RECEIVED_POKENAV
+	setflag FLAG_ADVENTURE_STARTED
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	setflag FLAG_BADGE09_GET
+	setflag FLAG_BADGE10_GET
+	setflag FLAG_BADGE11_GET
+	setflag FLAG_BADGE12_GET
+	setflag FLAG_BADGE13_GET
+	setflag FLAG_BADGE14_GET
+	setflag FLAG_BADGE15_GET
+	setflag FLAG_BADGE16_GET
+	setflag FLAG_BADGE_17_GET
+	setflag FLAG_BADGE_18_GET
+	setflag FLAG_BADGE_19_GET
+	setflag FLAG_BADGE_20_GET
+	setflag FLAG_BADGE_21_GET
+	setflag FLAG_BADGE_22_GET
+	setflag FLAG_BADGE_23_GET
+	setflag FLAG_BADGE_24_GET
+	@giveitem ITEM_HM_SURF
+	@giveitem ITEM_HM_DIVE
+	giveitem ITEM_MASTER_BALL, 100
+
+	special SetUnlockedPokedexFlags
+	special EnableNationalPokedex
+	additem ITEM_ACRO_BIKE
+	release
+	end
+
+
+Debug_CheatStartFrlg::
+	@species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, shinyMode, gmaxFactor, teraType, dmaxLevel
+	givemon SPECIES_CHARIZARD, 95, ITEM_NONE, 1, NATURE_MODEST, 1, 1, 6, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_FLAMETHROWER, MOVE_AERIAL_ACE, MOVE_SLASH, MOVE_FLY 
+	givemon SPECIES_BLASTOISE, 95, ITEM_NONE, 1, NATURE_ADAMANT, 1, 1, 6, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_WAVE_CRASH, MOVE_BITE, MOVE_DIG, MOVE_ROCK_SLIDE 
+	givemon SPECIES_VENUSAUR, 95, ITEM_NONE, 1, NATURE_MODEST, 1, 1, 6, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_POISON_POWDER, MOVE_VENOSHOCK
+	givemon SPECIES_UMBREON, 95, ITEM_NONE
+	givemon SPECIES_GLACEON, 95, ITEM_NONE
+	givemon SPECIES_JOLTEON, 95, ITEM_NONE
 	@setvar VAR_NEWBARKTOWN_LABSTATE, 4
 	setvar VAR_NEWBARK_TOWN_STATE, 5
 	setflag FLAG_SYS_POKEMON_GET
@@ -52,12 +108,13 @@ Debug_CheatStart::
 	setflag FLAG_BADGE_24_GET
 	@giveitem ITEM_HM_SURF
 	giveitem ITEM_POKE_BALL, 100
-	giveitem ITEM_SILLY_SCOPE
+
 	special SetUnlockedPokedexFlags
 	special EnableNationalPokedex
 	additem ITEM_ACRO_BIKE
 	release
 	end
+
 
 Debug_FlagsNotSetOverworldConfigMessage::
 	message Debug_FlagsNotSetOverworldConfigMessage_Text
@@ -77,6 +134,15 @@ Debug_FlagsNotSetBattleConfigMessage_Text:
 	.string "Please define a usable flag in:\l"
 	.string "'include/config/battle.h'!$"
 
+Debug_VarsNotSetBattleConfigMessage::
+	message Debug_VarsNotSetBattleConfigMessage_Text
+	goto Debug_MessageEnd
+
+Debug_VarsNotSetBattleConfigMessage_Text:
+	.string "Feature unavailable!\n"
+	.string "Please define a usable var in:\l"
+	.string "'include/config/battle.h'!$"
+
 Debug_BoxFilledMessage::
 	message Debug_BoxFilledMessage_Text
 	goto Debug_MessageEnd
@@ -87,10 +153,9 @@ Debug_BoxFilledMessage_Text:
 Debug_EventScript_CheckEVs::
 	lockall
 	getpartysize
-	goto_if_eq FLAG_GARBAGEFLAG, 0, Debug_NoPokemon
+	goto_if_eq VAR_RESULT, 0, Debug_NoPokemon
 	special ChoosePartyMon
-	waitstate
-	goto_if_ge FLAG_GARBAGEFLAG, PARTY_SIZE, Debug_EventScript_CheckEVs_End
+	goto_if_ge VAR_0x8004, PARTY_SIZE, Debug_EventScript_CheckEVs_End
 	callnative Script_GetChosenMonOffensiveEVs
 	msgbox Debug_EventScript_Text_OffensiveEVs, MSGBOX_DEFAULT
 	callnative Script_GetChosenMonDefensiveEVs
@@ -108,10 +173,9 @@ Debug_EventScript_Text_DefensiveEVs:
 Debug_EventScript_CheckIVs::
 	lockall
 	getpartysize
-	goto_if_eq FLAG_GARBAGEFLAG, 0, Debug_NoPokemon
+	goto_if_eq VAR_RESULT, 0, Debug_NoPokemon
 	special ChoosePartyMon
-	waitstate
-	goto_if_ge FLAG_GARBAGEFLAG, PARTY_SIZE, Debug_EventScript_CheckIVs_End
+	goto_if_ge VAR_0x8004, PARTY_SIZE, Debug_EventScript_CheckIVs_End
 	callnative Script_GetChosenMonOffensiveIVs
 	msgbox Debug_EventScript_Text_OffensiveIVs, MSGBOX_DEFAULT
 	callnative Script_GetChosenMonDefensiveIVs
@@ -127,8 +191,18 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-	release
-	end
+    dynmultichoice 0, 0, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, EventScript_ExampleScript_Text_1, EventScript_ExampleScript_Text_2, EventScript_ExampleScript_Text_3
+    releaseall
+    end
+
+EventScript_ExampleScript_Text_1::
+    .string "Choice 1$"
+
+EventScript_ExampleScript_Text_2::
+    .string "Choice 2$"
+
+EventScript_ExampleScript_Text_3::
+    .string "Choice 3$"
 
 Debug_EventScript_Script_2::
 	release
@@ -199,14 +273,12 @@ Debug_ROMSize::
 Debug_HatchAnEgg::
 	lockall
 	getpartysize
-	goto_if_eq FLAG_GARBAGEFLAG, 0, Debug_NoPokemon
+	goto_if_eq VAR_RESULT, 0, Debug_NoPokemon
 	special ChoosePartyMon
-	waitstate
-	goto_if_ge FLAG_GARBAGEFLAG, PARTY_SIZE, Debug_HatchAnEgg_End
-	specialvar FLAG_GARBAGEFLAG, ScriptGetPartyMonSpecies
-	goto_if_ne FLAG_GARBAGEFLAG, SPECIES_EGG, DebugScript_HatchAnEgg_CantForceHatch
+	goto_if_ge VAR_0x8004, PARTY_SIZE, Debug_HatchAnEgg_End
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+	goto_if_ne VAR_RESULT, SPECIES_EGG, DebugScript_HatchAnEgg_CantForceHatch
 	special EggHatch
-	waitstate
 Debug_HatchAnEgg_End::
 	releaseall
 	end
@@ -279,7 +351,15 @@ Debug_Follower_NPC_Test_Message:
 	.string "This is a Follower NPC test.$"
 
 Debug_EventScript_Steven_Multi::
-	call RocketHideout_B2F_EventScript_ChoosePartyForMultiBattle
+	call MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle
+	release
+	end
+
+Debug_EventScript_WallyTutorial::
+	special SavePlayerParty
+	special LoadWallyZigzagoon
+	special StartWallyTutorialBattle
+	special LoadPlayerParty
 	release
 	end
 
@@ -304,12 +384,12 @@ DebugText_BerryWeedsDisabled:
 Debug_EventScript_InflictStatus1::
 	lockall
 	getpartysize
-	goto_if_eq FLAG_GARBAGEFLAG, 0, Debug_NoPokemon
+	goto_if_eq VAR_RESULT, 0, Debug_NoPokemon
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Single, 0
 	dynmultipush Debug_EventScript_InflictStatus1_Text_PartyWide, 1
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Close, 2
 	dynmultistack 0, 0, FALSE, 3 FALSE, 0, NULL
-	switch FLAG_GARBAGEFLAG
+	switch VAR_RESULT
 	case 0, Debug_EventScript_InflictStatus1_Single
 	case 1, Debug_EventScript_InflictStatus1_Party
 	case 2, Debug_EventScript_InflictStatus1_Close
@@ -319,10 +399,9 @@ Debug_EventScript_InflictStatus1_Close:
 
 Debug_EventScript_InflictStatus1_Single:
 	special ChoosePartyMon
-	waitstate
-	goto_if_ge FLAG_GARBAGEFLAG, PARTY_SIZE, Debug_EventScript_InflictStatus1_Close
-	specialvar FLAG_GARBAGEFLAG, ScriptGetPartyMonSpecies
-	goto_if_eq FLAG_GARBAGEFLAG, SPECIES_EGG, Debug_EventScript_InflictStatus1_Close
+	goto_if_ge VAR_0x8004, PARTY_SIZE, Debug_EventScript_InflictStatus1_Close
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+	goto_if_eq VAR_RESULT, SPECIES_EGG, Debug_EventScript_InflictStatus1_Close
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Poison, 0
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Paralysis, 1
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Sleep, 2
@@ -331,7 +410,7 @@ Debug_EventScript_InflictStatus1_Single:
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Frostbite, 5
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Close, 6
 	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
-	switch FLAG_GARBAGEFLAG
+	switch VAR_RESULT
 	case 0, Debug_EventScript_InflictStatus1_Single_Poison
 	case 1, Debug_EventScript_InflictStatus1_Single_Paralysis
 	case 2, Debug_EventScript_InflictStatus1_Single_Sleep
@@ -343,12 +422,20 @@ Debug_EventScript_InflictStatus1_Single:
 	releaseall
 	end
 
+Debug_EventScript_KoPokemon::
+	special ChoosePartyMon
+	goto_if_ge VAR_0x8004, PARTY_SIZE, Debug_EventScript_InflictStatus1_Close
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+	goto_if_eq VAR_RESULT, SPECIES_EGG, Debug_EventScript_InflictStatus1_Close
+	setko VAR_0x8004
+	releaseall
+	end
+
 Debug_EventScript_SetHiddenNature::
 	special ChoosePartyMon
-	waitstate
-	goto_if_ge FLAG_GARBAGEFLAG, PARTY_SIZE, Debug_EventScript_InflictStatus1_Close
-	specialvar FLAG_GARBAGEFLAG, ScriptGetPartyMonSpecies
-	goto_if_eq FLAG_GARBAGEFLAG, SPECIES_EGG, Debug_EventScript_InflictStatus1_Close
+	goto_if_ge VAR_0x8004, PARTY_SIZE, Debug_EventScript_InflictStatus1_Close
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+	goto_if_eq VAR_RESULT, SPECIES_EGG, Debug_EventScript_InflictStatus1_Close
 	dynmultipush Debug_EventScript_ChangeNature_Text_Hardy, 0
 	dynmultipush Debug_EventScript_ChangeNature_Text_Lonely, 1
 	dynmultipush Debug_EventScript_ChangeNature_Text_Brave, 2
@@ -375,39 +462,65 @@ Debug_EventScript_SetHiddenNature::
 	dynmultipush Debug_EventScript_ChangeNature_Text_Careful, 23
 	dynmultipush Debug_EventScript_ChangeNature_Text_Quirky, 24
 	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
-	switch FLAG_GARBAGEFLAG
+	switch VAR_RESULT
 	case MULTI_B_PRESSED, Debug_EventScript_InflictStatus1_Close
-    special SetHiddenNature
+	special SetHiddenNature
+	releaseall
+	end
+
+Debug_EventScript_SetAbility::
+	special ChoosePartyMon
+	callnative DebugNative_GetAbilityNames
+	dynmultipush gStringVar1, 0
+	dynmultipush gStringVar2, 1
+	dynmultipush gStringVar3, 2
+	dynmultistack 0, 0, FALSE, 3 FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, Debug_EventScript_SetAbilityClose
+	special SetAbility
+Debug_EventScript_SetAbilityClose:
+	releaseall
+	end
+
+Debug_EventScript_SetFriendship::
+	special ChoosePartyMon
+	callnative DebugNative_Party_SetFriendship
+	releaseall
+	end
+
+Debug_EventScript_GivePokerus::
+	special ChoosePartyMon
+	callnative DebugNative_Party_SetPokerus
 	releaseall
 	end
 
 Debug_EventScript_InflictStatus1_Single_Poison:
-	setstatus1 STATUS1_POISON, FLAG_GARBAGEFLAG
+	setstatus1 STATUS1_POISON, VAR_0x8004
 	releaseall
 	end
 
 Debug_EventScript_InflictStatus1_Single_Paralysis:
-	setstatus1 STATUS1_PARALYSIS, FLAG_GARBAGEFLAG
+	setstatus1 STATUS1_PARALYSIS, VAR_0x8004
 	releaseall
 	end
 
 Debug_EventScript_InflictStatus1_Single_Sleep:
-	setstatus1 STATUS1_SLEEP, FLAG_GARBAGEFLAG
+	setstatus1 STATUS1_SLEEP, VAR_0x8004
 	releaseall
 	end
 
 Debug_EventScript_InflictStatus1_Single_Burn:
-	setstatus1 STATUS1_BURN, FLAG_GARBAGEFLAG
+	setstatus1 STATUS1_BURN, VAR_0x8004
 	releaseall
 	end
 
 Debug_EventScript_InflictStatus1_Single_Freeze:
-	setstatus1 STATUS1_FREEZE, FLAG_GARBAGEFLAG
+	setstatus1 STATUS1_FREEZE, VAR_0x8004
 	releaseall
 	end
 
 Debug_EventScript_InflictStatus1_Single_Frostbite:
-	setstatus1 STATUS1_FROSTBITE, FLAG_GARBAGEFLAG
+	setstatus1 STATUS1_FROSTBITE, VAR_0x8004
 	releaseall
 	end
 
@@ -420,7 +533,7 @@ Debug_EventScript_InflictStatus1_Party:
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Frostbite, 5
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Close, 6
 	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
-	switch FLAG_GARBAGEFLAG
+	switch VAR_RESULT
 	case 0, Debug_EventScript_InflictStatus1_Party_Poison
 	case 1, Debug_EventScript_InflictStatus1_Party_Paralysis
 	case 2, Debug_EventScript_InflictStatus1_Party_Sleep
@@ -488,6 +601,9 @@ Debug_EventScript_InflictStatus1_Text_Freeze:
 
 Debug_EventScript_InflictStatus1_Text_Frostbite:
 	.string "Frostbite$"
+
+Debug_EventScript_InflictStatus1_Text_KO:
+	.string "KO$"
 
 Debug_EventScript_ChangeNature_Text_Hardy:
 	.string "Hardy$"
@@ -669,12 +785,12 @@ Debug_PrintFontTest::
 Debug_EventScript_FontTest::
 	lockall
 	goto Debug_PrintFontTest
-@	goto_if_eq FLAG_GARBAGEFLAG, 0, Debug_NoPokemon
+@	goto_if_eq VAR_RESULT, 0, Debug_NoPokemon
 @	dynmultipush Debug_EventScript_InflictStatus1_Text_Single, 0
 @	dynmultipush Debug_EventScript_InflictStatus1_Text_PartyWide, 1
 @	dynmultipush Debug_EventScript_InflictStatus1_Text_Close, 2
 @	dynmultistack 0, 0, FALSE, 3 FALSE, 0, NULL
-@	switch FLAG_GARBAGEFLAG
+@	switch VAR_RESULT
 @	case 0, Debug_EventScript_InflictStatus1_Single
 @	case 1, Debug_EventScript_InflictStatus1_Party
 @	case 2, Debug_EventScript_InflictStatus1_Close
@@ -685,22 +801,19 @@ Debug_EventScript_FontTest::
 Debug_EventScript_TellTheTime::
 	callnative DebugMenu_CalculateTime
 	msgbox Debug_EventScript_TellTheTime_Text_0, MSGBOX_DEFAULT
-	waitmessage
-	closemessage
+	releaseall
 	end
 
 Debug_EventScript_PrintTimeOfDay::
 	callnative DebugMenu_CalculateTimeOfDay
 	msgbox DebugEventScript_PrintWeekday_Text_0, MSGBOX_DEFAULT
-	waitmessage
-	closemessage
+	releaseall
 	end
 
 Debug_EventScript_FakeRTCNotEnabled::
 	msgbox Debug_EventScript_FakeRTCNotEnabled_Text_0, MSGBOX_DEFAULT
-	waitmessage
-	closemessage
-	return
+	releaseall
+	end
 
 Debug_EventScript_FakeRTCNotEnabled_Text_0:
 	.string "You currently do not have Fake RTC\nenabled. Please enable it in include/\lconfig/overworld.h$"

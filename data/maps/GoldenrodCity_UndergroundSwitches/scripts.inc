@@ -498,14 +498,14 @@ GoldenrodUnderground_Text_SilverBefore:
 
 GoldenrodUnderground_Text_SilverWin:
     .string "…Why… Why do I lose?\p"
-    .string "I've assembled the toughest POKéMON.\p"
+    .string "I've assembled the toughest Pokémon.\p"
     .string "I didn't ease up on the gas.\p"
     .string "So why do I lose?$"
 
 GoldenrodUnderground_Text_SilverAfter:
     .string "…I don't understand…\p"
     .string "Is what that LANCE guy said true?\p"
-    .string "That I don't treat POKéMON properly?\p"
+    .string "That I don't treat Pokémon properly?\p"
     .string "Love…\p"
     .string "Trust…\p"
     .string "Are they really what I lack?\p"
@@ -514,7 +514,7 @@ GoldenrodUnderground_Text_SilverAfter:
     .string "But it's not going to end here.\p"
     .string "Not now. Not because of this.\p"
     .string "I won't give up my dream of becoming\n"
-    .string "the world's best POKéMON trainer!$"
+    .string "the world's best Pokémon trainer!$"
 
 GoldenrodUnderground_Text_SilverLoss:
     .string "Humph. This is my real power, wimp.\p"

@@ -22,7 +22,7 @@ Route111_OldLadysRestStop_EventScript_Rest::
 
 Route111_OldLadysRestStop_Text_RestUpHere:
 	.string "Oh, dear, dear.\n"
-	.string "Aren't your POKéMON exhausted?\p"
+	.string "Aren't your Pokémon exhausted?\p"
 	.string "You should take a rest.$"
 
 Route111_OldLadysRestStop_Text_TakeYourTimeRestUp:
@@ -31,5 +31,5 @@ Route111_OldLadysRestStop_Text_TakeYourTimeRestUp:
 
 Route111_OldLadysRestStop_Text_PokemonAreFullyRestedNow:
 	.string "There you go, dear!\p"
-	.string "All your POKéMON are fully rested\n"
+	.string "All your Pokémon are fully rested\n"
 	.string "now!$"

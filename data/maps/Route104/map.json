@@ -517,8 +517,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 17,
-      "y": 51,
+      "x": -4,
+      "y": 39,
       "elevation": 3,
       "var": "VAR_GARBAGEVAR",
       "var_value": "1",

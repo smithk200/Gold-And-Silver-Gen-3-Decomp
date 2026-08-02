@@ -33,7 +33,7 @@ FarawayIsland_Entrance_EventScript_Sailor::
 	setvar VAR_0x8004, LOCALID_SS_TIDAL
 	call Common_EventScript_FerryDepartIsland
 	warpsilent MAP_OLIVINE_CITY_PORT_INSIDE, 8, 16
-	waitstate
+	@waitstate
 	release
 	end
 

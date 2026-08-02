@@ -158,38 +158,38 @@ Route29_EventScript_ItemPotion::
 	end
 
 Route29_Text_OldMan1:
-	.string "POKéMON hide in the grass.\n"
+	.string "Pokémon hide in the grass.\n"
 	.string "Who knows when they'll pop out…$"
 
 Route29_Text_OldMan2:
 	.string "I've seen you a couple times.\n"
-	.string "How many POKéMON have you caught?\p"
+	.string "How many Pokémon have you caught?\p"
 	.string "Would you like me to tell you\n"
-	.string "how to catch POKéMON?$"
+	.string "how to catch Pokémon?$"
 
 Route29_Text_OldManExplanation:
 	.string "If you weaken them first,\n"
-	.string "POKéMON are easier to catch.\p"
+	.string "Pokémon are easier to catch.\p"
 	.string "Then, throw a ball at them from\n"
 	.string "your bag! Any ball will do.\p"
 	.string "If you want to learn more,\n"
 	.string "go to the ACADEMY in VIOLET CITY!\p"
 	.string "The students there know a lot\n"
-	.string "about POKéMON.$"
+	.string "about Pokémon.$"
 
 Route29_Text_OldManDeclined:
 	.string "Oh. Fine, then.\p"
 	.string "Check every route to find\n"
-	.string "different types of POKéMON.\p"
+	.string "different types of Pokémon.\p"
 	.string "Your POKéDEX shows where you can\n"
 	.string "find them too!\p"
 	.string "If you want to learn more,\n"
 	.string "go to the ACADEMY in VIOLET CITY!\p"
 	.string "The students know a lot about\n"
-	.string "POKéMON.$"
+	.string "Pokémon.$"
 
 Route29_Text_Youngster:
-	.string "Yo. How are your POKéMON?\p"
+	.string "Yo. How are your Pokémon?\p"
 	.string "If they're weak and not ready\n"
 	.string "for battle, keep out of the grass.$"
 
@@ -204,11 +204,11 @@ Route29_Text_Girl:
 	.string "so I saved to record my progress.$"
 
 Route29_Text_Boy_WaitingForDay:
-	.string "I'm waiting for POKéMON that\n"
+	.string "I'm waiting for Pokémon that\n"
 	.string "appear only later in the day.$"
 
 Route29_Text_Boy_WaitingForNight:
-	.string "I'm waiting for POKéMON that\n"
+	.string "I'm waiting for Pokémon that\n"
 	.string "appear only at night.$"
 
 Route29_Text_MeetTuscany:

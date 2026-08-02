@@ -83,6 +83,7 @@ Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry::
 Route104_PrettyPetalFlowerShop_EventScript_MintOwner::
 	lock
 	faceplayer
+	goto_if_unset FLAG_MINTS_ENABLED, Route104_PrettyPetalFlowerShop_EventScript_NoSellMints2
 	goto_if_unset FLAG_BADGE04_GET, Route104_PrettyPetalFlowerShop_EventScript_NoSellMints
 	msgbox Route104_PrettyPetalFlowerShop_Text_Mints1, MSGBOX_DEFAULT
 	waitmessage
@@ -100,6 +101,11 @@ Route104_PrettyPetalFlowerShop_Text_Mints2:
 	.string "to buy NATURE MINTS, you should have\l"
 	.string "come earlier. I just sold the last one.\n"
 	.string "Come back later.$"
+
+Route104_PrettyPetalFlowerShop_Text_Mints3:
+	.string "Were you looking to buy NATURE MINTS?\n"
+	.string "Unfortunately, we don't sell those\l"
+	.string "here.$"
 
 	.align 2
 Route104_PrettyPetalFlowerShop_MintShop:
@@ -130,6 +136,11 @@ Route104_PrettyPetalFlowerShop_MintShop:
 
 Route104_PrettyPetalFlowerShop_EventScript_NoSellMints::
 	msgbox Route104_PrettyPetalFlowerShop_Text_Mints2, MSGBOX_DEFAULT
+	release
+	end
+
+Route104_PrettyPetalFlowerShop_EventScript_NoSellMints2::
+	msgbox Route104_PrettyPetalFlowerShop_Text_Mints3, MSGBOX_DEFAULT
 	release
 	end
 
@@ -195,4 +206,4 @@ GoldenrodCity_FlowerShop_Text_FloriaYouBeatWhitney:
     .string "Wow, you beat WHITNEY? Cool!$"
 
 GoldenrodCity_FlowerShop_Text_FloriaItWasAMon:
-    .string "So it really was a POKéMON!$"
+    .string "So it really was a Pokémon!$"

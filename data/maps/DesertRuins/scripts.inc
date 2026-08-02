@@ -64,7 +64,7 @@ DesertRuins_EventScript_Regirock::
 	setwildbattle SPECIES_REGIROCK, 40
 	setflag FLAG_GARBAGEFLAG
 	special StartRegiBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_GARBAGEFLAG
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, DesertRuins_EventScript_DefeatedRegirock

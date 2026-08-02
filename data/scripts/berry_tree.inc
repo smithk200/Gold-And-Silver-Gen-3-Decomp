@@ -64,7 +64,7 @@ BerryTree_EventScript_ChooseMulchToUse::
 	fadescreen FADE_TO_BLACK
 	closemessage
 	special Bag_ChooseMulch
-	waitstate
+	@waitstate
 	goto_if_eq VAR_ITEM_ID, 0, BerryTree_EventScript_CancelPlanting
 	removeitem VAR_ITEM_ID
 	call BerryTree_EventScript_UseMulch
@@ -74,7 +74,7 @@ BerryTree_EventScript_ChooseBerryToPlant::
 	fadescreen FADE_TO_BLACK
 	closemessage
 	special Bag_ChooseBerry
-	waitstate
+	@waitstate
 	goto_if_eq VAR_ITEM_ID, 0, BerryTree_EventScript_CancelPlanting
 	removeitem VAR_ITEM_ID
 	call BerryTree_EventScript_PlantBerry
@@ -239,7 +239,7 @@ BerryTree_EventScript_WaterBerry::
 	waitmessage
 	special ObjectEventInteractionWaterBerryTree
 	special DoWateringBerryTreeAnim
-	waitstate
+	@waitstate
 	message BerryTree_Text_PlantIsDelighted
 	waitmessage
 	waitbuttonpress

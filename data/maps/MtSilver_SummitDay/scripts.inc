@@ -46,7 +46,7 @@ MtSilver_SummitDay_EventScript_Red::
 	setflag FLAG_DEFEATED_RED
 	clearflag FLAG_HIDE_MTSILVER_RED
 	special GameClear
-	waitstate
+	@waitstate
 	releaseall
 	end
 

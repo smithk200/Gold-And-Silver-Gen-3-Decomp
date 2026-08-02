@@ -103,13 +103,13 @@ RuinsOfAlph_PuzzleAndRewardChambers_EventScript_KabutoPuzzle::
 	goto_if_set FLAG_COMPLETED_KABUTO_PUZZLE, RuinsOfAlph_PuzzleAndRewardChambers_EventScript_KabutoPuzzleCompleted
 	setvar VAR_0x8005, FALSE // or TRUE if you want to display the solved puzzle
 	special DoSlidingPuzzle
-	waitstate
+	@waitstate
 	goto_if_eq VAR_RESULT, TRUE, RuinsOfAlph_PuzzleAndRewardChambers_MapScript_KabutoSuccess
 	end
 RuinsOfAlph_PuzzleAndRewardChambers_EventScript_KabutoPuzzleCompleted::
 	setvar VAR_0x8005, TRUE // or TRUE if you want to display the solved puzzle
 	special DoSlidingPuzzle
-	waitstate
+	@waitstate
 	end
 RuinsOfAlph_PuzzleAndRewardChambers_MapScript_KabutoSuccess::
 	setflag FLAG_COMPLETED_KABUTO_PUZZLE
@@ -118,7 +118,7 @@ RuinsOfAlph_PuzzleAndRewardChambers_MapScript_KabutoSuccess::
 	setvar VAR_0x8006, 20  @ num shakes
 	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	setmetatile 20, 5, 0x302, FALSE
 	setmetatile 21, 5, 0x303, FALSE
 	playse SE_CLICK
@@ -149,13 +149,13 @@ RuinsOfAlph_PuzzleAndRewardChambers_EventScript_OmanytePuzzle::
 	goto_if_set FLAG_COMPLETED_OMANYTE_PUZZLE, RuinsOfAlph_PuzzleAndRewardChambers_EventScript_OmanytePuzzleCompleted
 	setvar VAR_0x8005, FALSE // or TRUE if you want to display the solved puzzle
 	special DoSlidingPuzzle
-	waitstate
+	@waitstate
 	goto_if_eq VAR_RESULT, TRUE, RuinsOfAlph_PuzzleAndRewardChambers_MapScript_OmanyteSuccess
 	end
 RuinsOfAlph_PuzzleAndRewardChambers_EventScript_OmanytePuzzleCompleted::
 	setvar VAR_0x8005, TRUE // or TRUE if you want to display the solved puzzle
 	special DoSlidingPuzzle
-	waitstate
+	@waitstate
 	end
 RuinsOfAlph_PuzzleAndRewardChambers_MapScript_OmanyteSuccess::
 	setflag FLAG_COMPLETED_OMANYTE_PUZZLE
@@ -164,7 +164,7 @@ RuinsOfAlph_PuzzleAndRewardChambers_MapScript_OmanyteSuccess::
 	setvar VAR_0x8006, 20  @ num shakes
 	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	setmetatile 4, 22, 0x302, FALSE
 	setmetatile 5, 22, 0x303, FALSE
 	playse SE_CLICK
@@ -188,13 +188,13 @@ RuinsOfAlph_PuzzleAndRewardChambers_EventScript_AerodactylPuzzle::
 	goto_if_set FLAG_COMPLETED_AERODACTYL_PUZZLE, RuinsOfAlph_PuzzleAndRewardChambers_EventScript_AerodactylPuzzleCompleted
 	setvar VAR_0x8005, FALSE // or TRUE if you want to display the solved puzzle
 	special DoSlidingPuzzle
-	waitstate
+	@waitstate
 	goto_if_eq VAR_RESULT, TRUE, RuinsOfAlph_PuzzleAndRewardChambers_MapScript_AerodactylSuccess
 	end
 RuinsOfAlph_PuzzleAndRewardChambers_EventScript_AerodactylPuzzleCompleted::
 	setvar VAR_0x8005, TRUE // or TRUE if you want to display the solved puzzle
 	special DoSlidingPuzzle
-	waitstate
+	@waitstate
 	end
 RuinsOfAlph_PuzzleAndRewardChambers_MapScript_AerodactylSuccess::
 	setflag FLAG_COMPLETED_AERODACTYL_PUZZLE
@@ -203,7 +203,7 @@ RuinsOfAlph_PuzzleAndRewardChambers_MapScript_AerodactylSuccess::
 	setvar VAR_0x8006, 20  @ num shakes
 	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	setmetatile 20, 22, 0x302, FALSE
 	setmetatile 21, 22, 0x303, FALSE
 	playse SE_CLICK
@@ -227,13 +227,13 @@ RuinsOfAlph_PuzzleAndRewardChambers_EventScript_HooHPuzzle::
 	goto_if_set FLAG_COMPLETED_HOOH_PUZZLE, RuinsOfAlph_PuzzleAndRewardChambers_EventScript_HoohPuzzleCompleted
 	setvar VAR_0x8005, FALSE // or TRUE if you want to display the solved puzzle
 	special DoSlidingPuzzle
-	waitstate
+	@waitstate
 	goto_if_eq VAR_RESULT, TRUE, RuinsOfAlph_PuzzleAndRewardChambers_MapScript_HoohSuccess
 	end
 RuinsOfAlph_PuzzleAndRewardChambers_EventScript_HoohPuzzleCompleted::
 	setvar VAR_0x8005, TRUE // or TRUE if you want to display the solved puzzle
 	special DoSlidingPuzzle
-	waitstate
+	@waitstate
 	end
 RuinsOfAlph_PuzzleAndRewardChambers_MapScript_HoohSuccess::
 	setflag FLAG_COMPLETED_HOOH_PUZZLE
@@ -242,7 +242,7 @@ RuinsOfAlph_PuzzleAndRewardChambers_MapScript_HoohSuccess::
 	setvar VAR_0x8006, 20  @ num shakes
 	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	setmetatile 4, 5, 0x302, FALSE
 	setmetatile 5, 5, 0x303, FALSE
 	playse SE_CLICK
@@ -274,7 +274,7 @@ RuinsOfAlph_PuzzleAndRewardChambers_EventScript_RewardHooh::
 	setvar VAR_0x8006, 20  @ num shakes
 	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	msgbox RuinsOfAlph_PuzzleAndRewardChambers_Text_Reward, MSGBOX_DEFAULT
 	closemessage
 	playse SE_CLICK
@@ -299,7 +299,7 @@ RuinsOfAlph_PuzzleAndRewardChambers_EventScript_RewardAerodactyl::
 	setvar VAR_0x8006, 20  @ num shakes
 	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	msgbox RuinsOfAlph_PuzzleAndRewardChambers_Text_Reward, MSGBOX_DEFAULT
 	closemessage
 	playse SE_CLICK
@@ -324,7 +324,7 @@ RuinsOfAlph_PuzzleAndRewardChambers_EventScript_RewardKabuto::
 	setvar VAR_0x8006, 20  @ num shakes
 	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	msgbox RuinsOfAlph_PuzzleAndRewardChambers_Text_Reward, MSGBOX_DEFAULT
 	closemessage
 	playse SE_CLICK
@@ -349,7 +349,7 @@ RuinsOfAlph_PuzzleAndRewardChambers_EventScript_RewardOmanyte::
 	setvar VAR_0x8006, 20  @ num shakes
 	setvar VAR_0x8007, 6  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	msgbox RuinsOfAlph_PuzzleAndRewardChambers_Text_Reward, MSGBOX_DEFAULT
 	closemessage
 	playse SE_CLICK
@@ -379,11 +379,11 @@ RuinsOfAlph_PuzzleAndRewardChambers_Text_Solved:
 RuinsOfAlph_PuzzleAndRewardChambers_Text_Receptionist1:
 	.string "Welcome to this chamber.\p"
 	.string "There are sliding panels that depict\n"
-	.string "a POKéMON drawn by the ancients.\p"
+	.string "a Pokémon drawn by the ancients.\p"
 	.string "Slide the panels around to form\n"
 	.string "the picture.\p"
 	.string "To the left is a description of\n"
-	.string "the POKéMON.\p"
+	.string "the Pokémon.\p"
 	.string "Scientists in the lab are examin-\n"
 	.string "-ing some newly found patterns.$"
 
@@ -397,7 +397,7 @@ RuinsOfAlph_PuzzleAndRewardChambers_Text_Receptionist3:
 
 
 RuinsOfAlph_PuzzleAndRewardChambers_Text_Kabuto:
-	.string "A POKéMON that hid on the sea floor.\n"
+	.string "A Pokémon that hid on the sea floor.\n"
 	.string "Eyes on its back scanned the area.$"
 
 RuinsOfAlph_PuzzleAndRewardChambers_Text_UnownText:
@@ -405,18 +405,18 @@ RuinsOfAlph_PuzzleAndRewardChambers_Text_UnownText:
 
 RuinsOfAlph_PuzzleAndRewardChambers_Text_Statue:
 	.string "It's a replica of an ancient\n"
-	.string "POKéMON.$"
+	.string "Pokémon.$"
 
 RuinsOfAlph_PuzzleAndRewardChambers_Text_Aerodactyl:
-	.string "This flying POKéMON attacked its\n"
+	.string "This flying Pokémon attacked its\n"
 	.string "prey with saw-like fangs.$"
 
 RuinsOfAlph_PuzzleAndRewardChambers_Text_Omanyte:
-	.string "This POKéMON drifted in the sea\n"
+	.string "This Pokémon drifted in the sea\n"
 	.string "by twisting its ten tentacles.$"
 
 RuinsOfAlph_PuzzleAndRewardChambers_Text_Hooh:
-	.string "A POKéMON that flew gracefully on\n"
+	.string "A Pokémon that flew gracefully on\n"
 	.string "rainbow-colored wings.$"
 
 @==========================================================================================================================================================

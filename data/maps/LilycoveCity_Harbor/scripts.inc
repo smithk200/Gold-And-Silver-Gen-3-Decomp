@@ -37,7 +37,7 @@ LilycoveCity_Harbor_EventScript_NoFirstTimeEventTickets::
 LilycoveCity_Harbor_EventScript_FerryRegularLocationSelect::
 	setvar VAR_0x8004, 0
 	special ScriptMenu_CreateLilycoveSSTidalMultichoice
-	waitstate
+	@waitstate
 	special GetLilycoveSSTidalSelection
 	switch VAR_RESULT
 	case 0, LilycoveCity_Harbor_EventScript_GoToSlateport
@@ -53,28 +53,28 @@ LilycoveCity_Harbor_EventScript_FerryRegularLocationSelect::
 LilycoveCity_Harbor_EventScript_GoToSouthernIsland::
 	call LilycoveCity_Harbor_EventScript_BoardFerry
 	warp MAP_SOUTHERN_ISLAND_EXTERIOR, 13, 22
-	waitstate
+	@waitstate
 	release
 	end
 
 LilycoveCity_Harbor_EventScript_GoToNavelRock::
 	call LilycoveCity_Harbor_EventScript_BoardFerry
 	warp MAP_NAVEL_ROCK_HARBOR, 8, 4
-	waitstate
+	@waitstate
 	release
 	end
 
 LilycoveCity_Harbor_EventScript_GoToBirthIsland::
 	call LilycoveCity_Harbor_EventScript_BoardFerry
 	warp MAP_BIRTH_ISLAND_HARBOR, 8, 4
-	waitstate
+	@waitstate
 	release
 	end
 
 LilycoveCity_Harbor_EventScript_GoToFarawayIsland::
 	call LilycoveCity_Harbor_EventScript_BoardFerry
 	warp MAP_FARAWAY_ISLAND_ENTRANCE, 13, 38
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -84,7 +84,7 @@ LilycoveCity_Harbor_EventScript_GoToSlateport::
 	setvar VAR_SS_TIDAL_STATE, SS_TIDAL_BOARD_LILYCOVE
 	call LilycoveCity_Harbor_EventScript_BoardFerry
 	warp MAP_SS_TIDAL_CORRIDOR, 1, 10
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -93,7 +93,7 @@ LilycoveCity_Harbor_EventScript_GoToBattleFrontier::
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_Harbor_EventScript_FerryDestinationChangeMind
 	call LilycoveCity_Harbor_EventScript_BoardFerry
 	warp MAP_BATTLE_FRONTIER_OUTSIDE_WEST, 19, 67
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -198,7 +198,7 @@ LilycoveCity_Harbor_EventScript_GoToSouthernIslandFirstTime::
 	closemessage
 	call LilycoveCity_Harbor_EventScript_BoardFerryWithSailor
 	warp MAP_SOUTHERN_ISLAND_EXTERIOR, 13, 22
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -215,7 +215,7 @@ LilycoveCity_Harbor_EventScript_GoToBirthIslandFirstTime::
 	closemessage
 	call LilycoveCity_Harbor_EventScript_BoardFerryWithSailor
 	warp MAP_BIRTH_ISLAND_HARBOR, 8, 4
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -248,7 +248,7 @@ LilycoveCity_Harbor_EventScript_OldSeaMapFirstTime::
 	setvar VAR_0x8004, LOCALID_LILYCOVE_HARBOR_SS_TIDAL
 	call Common_EventScript_FerryDepart
 	warp MAP_FARAWAY_ISLAND_ENTRANCE, 13, 38
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -256,7 +256,7 @@ LilycoveCity_Harbor_EventScript_GoToFarawayIslandFirstTime::
 	closemessage
 	call LilycoveCity_Harbor_EventScript_BoardFerryWithSailor
 	warp MAP_FARAWAY_ISLAND_ENTRANCE, 13, 38
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -273,7 +273,7 @@ LilycoveCity_Harbor_EventScript_GoToNavelRockFirstTime::
 	closemessage
 	call LilycoveCity_Harbor_EventScript_BoardFerryWithSailor
 	warp MAP_NAVEL_ROCK_HARBOR, 8, 4
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -285,7 +285,7 @@ LilycoveCity_Harbor_EventScript_MultipleEventTicketsFirstTime::
 	waitmessage
 	setvar VAR_0x8004, 1
 	special ScriptMenu_CreateLilycoveSSTidalMultichoice
-	waitstate
+	@waitstate
 	special GetLilycoveSSTidalSelection
 	switch VAR_RESULT
 	case 2, LilycoveCity_Harbor_EventScript_GoToSouthernIslandFirstTime
@@ -363,7 +363,7 @@ LilycoveCity_Harbor_EventScript_GoToSlateportUnused::
 	setvar VAR_SS_TIDAL_STATE, SS_TIDAL_BOARD_LILYCOVE
 	call LilycoveCity_Harbor_EventScript_BoardFerry
 	warp MAP_SS_TIDAL_CORRIDOR, 1, 10
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -373,7 +373,7 @@ LilycoveCity_Harbor_EventScript_GoToBattleFrontierUnused::
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_Harbor_EventScript_FerryDestinationChangeMind
 	call LilycoveCity_Harbor_EventScript_BoardFerry
 	warp MAP_BATTLE_FRONTIER_OUTSIDE_WEST, 19, 67
-	waitstate
+	@waitstate
 	release
 	end
 

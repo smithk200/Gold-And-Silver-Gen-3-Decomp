@@ -64,7 +64,7 @@ AncientTomb_EventScript_Registeel::
 	setwildbattle SPECIES_REGISTEEL, 40
 	setflag FLAG_GARBAGEFLAG
 	special StartRegiBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_GARBAGEFLAG
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, AncientTomb_EventScript_DefeatedRegisteel

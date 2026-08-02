@@ -13,5 +13,5 @@ CherrygroveCity_GuideHouse_Text_GuideGent:
 	.string "When I was a wee lad, I was a\n"
 	.string "hotshot trainer!\p"
 	.string "Here's a word of advice:\n"
-	.string "Catch lots of POKéMON!\p"
+	.string "Catch lots of Pokémon!\p"
 	.string "Treat them all with kindness!$"

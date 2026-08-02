@@ -93,7 +93,7 @@ ShoalCave_LowTideIceRoom_Suicune_SuicuneBattle1_Movement:
 	step_end
 
 ShoalCave_LowTideIceRoom_Suicune_SuicuneBattle1_Text:
-	.string "The POKéMON swiftly ran away!$"
+	.string "The Pokémon swiftly ran away!$"
 
 @@Second encounter with Suicune. Level 80. High defenses
 
@@ -169,7 +169,7 @@ ShoalCave_LowTideIceRoom_Suicune_SuicuneFinalBattle::
 	setflag FLAG_GARBAGEFLAG
 	call_if_set FLAG_GARBAGEFLAG, ShoalCave_LowTideIceRoom_Suicune_SuicuneBattle3_Stats
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_GARBAGEFLAG
 	calculatemonstats
 	specialvar VAR_RESULT, GetBattleOutcome

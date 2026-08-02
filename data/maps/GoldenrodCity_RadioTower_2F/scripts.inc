@@ -109,7 +109,7 @@ GoldenrodCity_RadioTower_2F_Text_Policeman:
 
 GoldenrodCity_RadioTower_2F_Text_Teacher:
 	.string "Lullabies on the radio may make\n"
-	.string "POKéMON sleep.$"
+	.string "Pokémon sleep.$"
 
 GoldenrodCity_RadioTower_2F_Text_TeacherRockets:
 	.string "Why would they want to take over\n"
@@ -144,7 +144,7 @@ GoldenrodCity_RadioTower_2F_Text_GruntM4After:
 
 GoldenrodCity_RadioTower_2F_Text_GruntM5Seen:
 	.string "We're TEAM ROCKET, the exploiters\n"
-	.string "of POKéMON!\p"
+	.string "of Pokémon!\p"
 	.string "We love being evil! Scared?$"
 
 GoldenrodCity_RadioTower_2F_Text_GruntM5Beaten:
@@ -187,8 +187,8 @@ GoldenrodCity_RadioTower_2F_Text_SalesSign:
 	.string "2F SALES$"
 
 GoldenrodCity_RadioTower_2F_Text_OakTalkSign:
-	.string "PROF.OAK'S POKéMON TALK\p"
+	.string "PROF.OAK'S Pokémon TALK\p"
 	.string "The Hottest Show on the Air!$"
 
 GoldenrodCity_RadioTower_2F_Text_PokemonRadioSign:
-	.string "Anywhere, Anytime POKéMON Radio$"
+	.string "Anywhere, Anytime Pokémon Radio$"

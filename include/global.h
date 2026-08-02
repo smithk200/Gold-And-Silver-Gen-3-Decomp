@@ -5,6 +5,7 @@
 #include <limits.h>
 #include "config/general.h" // we need to define config before gba headers as print stuff needs the functions nulled before defines.
 #include "gba/gba.h"
+#include "assertf.h"
 #include "gametypes.h"
 #include "siirtc.h"
 #include "fpmath.h"
@@ -14,12 +15,15 @@
 #include "constants/vars.h"
 #include "constants/species.h"
 #include "constants/pokedex.h"
+#include "constants/apricorn_tree.h"
 #include "constants/berry.h"
 #include "constants/maps.h"
 #include "constants/pokemon.h"
 #include "constants/easy_chat.h"
 #include "constants/trainer_hill.h"
+#include "constants/trainer_tower.h"
 #include "constants/items.h"
+#include "constants/moves.h"
 #include "config/save.h"
 
 // Prevent cross-jump optimization.
@@ -38,14 +42,17 @@
 // We define these when using certain IDEs to fool preproc
 #define _(x)        {x}
 #define __(x)       {x}
+#define COMPOUND_STRING(x) 0
 #define INCBIN(...) {0}
 #define INCBIN_U8   INCBIN
 #define INCBIN_U16  INCBIN
 #define INCBIN_U32  INCBIN
-#define INCBIN_S8   INCBIN
-#define INCBIN_S16  INCBIN
-#define INCBIN_S32  INCBIN
 #define INCBIN_COMP INCBIN
+#define INCGFX(...) {0}
+#define INCGFX_U8   INCGFX
+#define INCGFX_U16  INCGFX
+#define INCGFX_U32  INCGFX
+#define INCGFX_COMP INCGFX
 #endif // IDE support
 
 #define ARRAY_COUNT(array) (size_t)(sizeof(array) / sizeof((array)[0]))
@@ -83,6 +90,11 @@
 // if n is changed to a value that isn't a power of 2 then a&(n-1) is unlikely to work as
 // intended, and a%n for powers of 2 isn't always optimized to use &.
 #define MOD(a, n) (((n) & ((n)-1)) ? ((a) % (n)) : ((a) & ((n)-1)))
+
+// Increments 'a' by 1, wrapping back to 0 when it reaches 'n'. If 'n' is a power of two,
+// the wrap is implemented using a bit mask: (a + 1) & (n - 1), which is slightly faster.
+// This is intended to be used when 'n' is known at compile time.
+#define INCREMENT_OR_WRAP(a, n) ((IS_POW_OF_TWO(n)) ? (((a) + 1) & ((n) - 1)) : (((a) + 1) >= (n) ? 0 : ((a) + 1)))
 
 // Extracts the upper 16 bits of a 32-bit number
 #define HIHALF(n) (((n) & 0xFFFF0000) >> 16)
@@ -122,7 +134,7 @@
 ({                           \
     s16 v = (val);           \
     float f = (float)v;      \
-    if(v < 0) f += 65536.0f; \
+    if (v < 0) f += 65536.0f;\
     f;                       \
 })
 
@@ -134,11 +146,15 @@
 #define NUM_FLAG_BYTES ROUND_BITS_TO_BYTES(FLAGS_COUNT)
 #define NUM_TRENDY_SAYING_BYTES ROUND_BITS_TO_BYTES(NUM_TRENDY_SAYINGS)
 
+#define NUM_APRICORN_TREE_BYTES ROUND_BITS_TO_BYTES(APRICORN_TREE_COUNT)
+
 // This produces an error at compile-time if expr is zero.
 // It looks like file.c:line: size of array `id' is negative
 #define STATIC_ASSERT(expr, id) typedef char id[(expr) ? 1 : -1];
 
 #define FEATURE_FLAG_ASSERT(flag, id) STATIC_ASSERT(flag > TEMP_FLAGS_END || flag == 0, id)
+
+#define READ_OTID_FROM_SAVE T1_READ_32(gSaveBlock2Ptr->playerTrainerId)
 
 // NOTE: This uses hardware timers 2 and 3; this will not work during active link connections or with the eReader
 static inline void CycleCountStart()
@@ -219,9 +235,9 @@ struct NPCFollower
 {
     u8 inProgress:1;
     u8 warpEnd:1;
-    u8 createSurfBlob:3;
+    u8 createSurfBlob:2;
     u8 comeOutDoorStairs:2;
-    u8 forcedMovement:1;
+    u8 forcedMovement:2;
     u8 objId;
     u8 currentSprite;
     u8 delayedState;
@@ -239,9 +255,9 @@ struct NPCFollower
 
 struct SaveBlock3
 {
-#if OW_USE_FAKE_RTC
+//#if OW_USE_FAKE_RTC
     struct SiiRtcInfo fakeRTC;
-#endif
+//#endif
 #if FNPC_ENABLE_NPC_FOLLOWERS
     struct NPCFollower NPCfollower;
 #endif
@@ -252,6 +268,9 @@ struct SaveBlock3
     u8 dexNavSearchLevels[NUM_SPECIES];
 #endif
     u8 dexNavChain;
+#if APRICORN_TREE_COUNT > 0
+    u8 apricornTrees[NUM_APRICORN_TREE_BYTES];
+#endif
 }; /* max size 1624 bytes */
 
 extern struct SaveBlock3 *gSaveBlock3Ptr;
@@ -297,7 +316,7 @@ struct BerryPickingResults
 
 struct PyramidBag
 {
-    u16 itemId[FRONTIER_LVL_MODE_COUNT][PYRAMID_BAG_ITEMS_COUNT];
+    enum Item itemId[FRONTIER_LVL_MODE_COUNT][PYRAMID_BAG_ITEMS_COUNT];
 #if MAX_PYRAMID_BAG_ITEM_CAPACITY > 255
     u16 quantity[FRONTIER_LVL_MODE_COUNT][PYRAMID_BAG_ITEMS_COUNT];
 #else
@@ -314,9 +333,9 @@ struct BerryCrush
 
 struct ApprenticeMon
 {
-    u16 species;
-    u16 moves[MAX_MON_MOVES];
-    u16 item;
+    enum Species species;
+    enum Move moves[MAX_MON_MOVES];
+    enum Item item;
 };
 
 // This is for past players Apprentices or Apprentices received via Record Mix.
@@ -339,9 +358,9 @@ struct Apprentice
 
 struct BattleTowerPokemon
 {
-    u16 species;
-    u16 heldItem;
-    u16 moves[MAX_MON_MOVES];
+    enum Species species;
+    enum Item heldItem;
+    enum Move moves[MAX_MON_MOVES];
     u8 level;
     u8 ppBonuses;
     u8 hpEV;
@@ -382,8 +401,8 @@ struct EmeraldBattleTowerRecord
 
 struct BattleTowerInterview
 {
-    u16 playerSpecies;
-    u16 opponentSpecies;
+    enum Species playerSpecies;
+    enum Species opponentSpecies;
     u8 opponentName[PLAYER_NAME_LENGTH + 1];
     u8 opponentMonNickname[VANILLA_POKEMON_NAME_LENGTH + 1];
     u8 opponentLanguage;
@@ -406,7 +425,7 @@ struct BattleTowerEReaderTrainer
 // For displaying party information on the player's Battle Dome tourney page
 struct DomeMonData
 {
-    u16 moves[MAX_MON_MOVES];
+    enum Move moves[MAX_MON_MOVES];
     u8 evs[NUM_STATS];
     u8 nature;
     //u8 padding;
@@ -582,18 +601,39 @@ struct SaveBlock2
              u16 optionsBattleStyle:1; // OPTIONS_BATTLE_STYLE_[SHIFT/SET]
              u16 optionsBattleSceneOff:1; // whether battle animations are disabled
              u16 regionMapZoom:1; // whether the map is zoomed in
+            //HnS New Options
+             u16 optionsfollowerEnable:1;
              u16 optionsEXPShare:1;
              u16 optionsAutoHMs:1;
-             u16 optionsFollowers:1;
-             u16 optionsPSS:1;
-             u16 optionsTerrain:1;
-             u16 optionsRunType:3;
-             u16 optionsDifficulty:3; //0 = easy, 1 = normal, 2 = hard
-             u16 optionsFont:2; //0 = emerald, 1 = fire red
-             u16 optionsMusic:3; //0 = johto, 1 = sinnoh, 2 = hoenn
-             u8 rivalName[PLAYER_NAME_LENGTH + 1];
+             bool8 optionsautoRun;
+             u16 optionsDisableMatchCall:1;
+             u16 optionStyle:1;
+             u16 optionsDifficulty:2;
+             u16 optionTypeEffective:1;
+             u16 optionsFishing:1;
+             u16 optionsFastIntro:1;
+             u16 optionsfollowerLargeEnable:1;
+             u16 optionsFastBattle:1;
+             u16 optionsEvenFasterJoy:1;
+             u16 optionsBikeMusic:1;
+             u16 optionsSurfMusic:1;
+             u16 optionsWildBattleMusic:5;
+             u16 optionsTrainerBattleMusic:5;
+             u16 optionsFrontierTrainerBattleMusic:5;
+             u16 optionsSoundEffects:2;
+             u16 optionsSkipIntro:1;
+             u16 optionsLRtoRun:1;
+             u16 optionsBallPrompt:1;
+             u16 optionsUnitSystem:1;
+             u16 optionsMusicOnOff:1;
+             u16 optionsNewBackgrounds:1;
+            u16 optionsRunType:3;
+            u16 optionsAutorunSurf:1;
+            u16 optionsAutorunDive:1;
+            u16 optionsFont:1;
              //u16 padding1:4;
              //u16 padding2;
+             u8 rivalName[PLAYER_NAME_LENGTH + 1];
     /*0x18*/ struct Pokedex pokedex;
     /*0x90*/ u8 filler_90[0x8];
     /*0x98*/ struct Time localTimeOffset;
@@ -622,9 +662,9 @@ extern u8 UpdateSpritePaletteWithTime(u8);
 struct SecretBaseParty
 {
     u32 personality[PARTY_SIZE];
-    u16 moves[PARTY_SIZE * MAX_MON_MOVES];
-    u16 species[PARTY_SIZE];
-    u16 heldItems[PARTY_SIZE];
+    enum Move moves[PARTY_SIZE * MAX_MON_MOVES];
+    enum Species species[PARTY_SIZE];
+    enum Item heldItems[PARTY_SIZE];
     u8 levels[PARTY_SIZE];
     u8 EVs[PARTY_SIZE];
 };
@@ -665,7 +705,7 @@ struct WarpData
 
 struct ItemSlot
 {
-    u16 itemId;
+    enum Item itemId;
     u16 quantity;
 };
 
@@ -684,7 +724,7 @@ struct Roamer
 {
     /*0x00*/ u32 ivs;
     /*0x04*/ u32 personality;
-    /*0x08*/ u16 species;
+    /*0x08*/ enum Species species;
     /*0x0A*/ u16 hp;
     /*0x0C*/ u8 level;
     /*0x0D*/ u8 statusA;
@@ -817,7 +857,7 @@ struct RecordMixingGiftData
 {
     u8 unk0;
     u8 quantity;
-    u16 itemId;
+    enum Item itemId;
     u8 filler4[8];
 };
 
@@ -831,7 +871,7 @@ struct ContestWinner
 {
     u32 personality;
     u32 trainerId;
-    u16 species;
+    enum Species species;
     u8 contestCategory;
     u8 monName[VANILLA_POKEMON_NAME_LENGTH + 1];
     u8 trainerName[PLAYER_NAME_LENGTH + 1];
@@ -845,8 +885,8 @@ struct Mail
     /*0x00*/ u16 words[MAIL_WORDS_COUNT];
     /*0x12*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
     /*0x1A*/ u8 trainerId[TRAINER_ID_LENGTH];
-    /*0x1E*/ u16 species;
-    /*0x20*/ u16 itemId;
+    /*0x1E*/ enum Species species;
+    /*0x20*/ enum Item itemId;
 };
 
 struct DaycareMail
@@ -897,7 +937,7 @@ struct LilycoveLadyFavor
     /*0x004*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
     /*0x00C*/ u8 favorId;
     /*0x00D*/ //u8 padding1;
-    /*0x00E*/ u16 itemId;
+    /*0x00E*/ enum Item itemId;
     /*0x010*/ u16 bestItem;
     /*0x012*/ u8 language;
     /*0x013*/ //u8 padding2;
@@ -956,6 +996,20 @@ struct TrainerHillSave
                //u16 padding:8;
 };
 
+struct TrainerTower
+{
+    u32 timer;
+    u32 bestTime;
+    u8 floorsCleared;
+    u8 unk9;
+    bool8 receivedPrize:1;
+    bool8 checkedFinalTime:1;
+    bool8 spokeToOwner:1;
+    bool8 hasLost:1;
+    bool8 unkA_4:1;
+    bool8 validated:1;
+};
+
 struct WonderNewsMetadata
 {
     u8 newsType:2;
@@ -977,7 +1031,7 @@ struct WonderNews
 struct WonderCard
 {
     u16 flagId; // Event flag (sReceivedGiftFlags) + WONDER_CARD_FLAG_OFFSET
-    u16 iconSpecies;
+    enum Species iconSpecies;
     u32 idNumber;
     u8 type:2; // CARD_TYPE_*
     u8 bgType:4;
@@ -996,7 +1050,7 @@ struct WonderCardMetadata
     u16 battlesWon;
     u16 battlesLost;
     u16 numTrades;
-    u16 iconSpecies;
+    enum Species iconSpecies;
     u16 stampData[2][MAX_STAMP_CARD_STAMPS]; // First element is STAMP_SPECIES, second is STAMP_ID
 };
 
@@ -1097,7 +1151,8 @@ struct SaveBlock1
     /*0x988*/ u8 filler1[0x34]; // Previously Dex Flags, feel free to remove.
 #endif //FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK1
     /*0x9BC*/ u16 berryBlenderRecords[3];
-    /*0x9C2*/ u8 unused_9C2[6];
+    /*0x9C2*/ u8 unused_9C2[2];
+              u32 dailySeed;
 #if FREE_MATCH_CALL == FALSE
     /*0x9C8*/ u16 trainerRematchStepCounter;
     /*0x9CA*/ u8 trainerRematches[MAX_REMATCH_ENTRIES];
@@ -1123,7 +1178,7 @@ struct SaveBlock1
     /*0x27CC*/ TVShow tvShows[TV_SHOWS_COUNT];
     /*0x27CA*/ //u8 padding4[2];
     /*0x2B50*/ PokeNews pokeNews[POKE_NEWS_COUNT];
-    /*0x2B90*/ u16 outbreakPokemonSpecies;
+    /*0x2B90*/ enum Species outbreakPokemonSpecies;
     /*0x2B92*/ u8 outbreakLocationMapNum;
     /*0x2B93*/ u8 outbreakLocationMapGroup;
     /*0x2B94*/ u8 outbreakPokemonLevel;
@@ -1148,7 +1203,8 @@ struct SaveBlock1
 #if FREE_LINK_BATTLE_RECORDS == FALSE
     /*0x3150*/ struct LinkBattleRecords linkBattleRecords;
 #endif //FREE_LINK_BATTLE_RECORDS
-    /*0x31A8*/ u8 giftRibbons[GIFT_RIBBONS_COUNT];
+    /*0x31A8*/ u8 giftRibbons[NUM_GIFT_RIBBONS];
+               u8 padding[4];
     /*0x31B3*/ struct ExternalEventData externalEventData;
     /*0x31C7*/ struct ExternalEventFlags externalEventFlags;
     /*0x31DC*/ struct Roamer roamer[ROAMER_COUNT];
@@ -1176,7 +1232,74 @@ struct SaveBlock1
     /*0x3???*/ struct TrainerHillSave trainerHill;
 #endif //FREE_TRAINER_HILL
     /*0x3???*/ struct WaldaPhrase waldaPhrase;
+#if FREE_TRAINER_TOWER == FALSE && IS_FRLG
+    u32 towerChallengeId;
+    struct TrainerTower trainerTower[NUM_TOWER_CHALLENGE_TYPES];
+#endif //FREE_TRAINER_TOWER 
+    //struct DaycareMon route5DayCareMon;
     // sizeof: 0x3???
+    /*0x3D88*/ u8 NuzlockeEncounterFlags[9]; //tx_randomizer_and_challenges
+        u8 tx_Random_Chaos:1;
+        u8 tx_Random_WildPokemon:1;
+        u8 tx_Random_Similar:1;
+        u8 tx_Random_MapBased:1;
+        u8 tx_Random_IncludeLegendaries:1;
+        u8 tx_Random_Type:1;
+        u8 tx_Random_TypeEffectiveness:1;
+        u8 tx_Random_Abilities:1;
+        //
+        u8 tx_Random_Moves:1;
+        u8 tx_Random_Trainer:1;
+        u8 tx_Random_Evolutions:1;
+        u8 tx_Random_EvolutionMethods:1;
+        u8 tx_Challenges_EvoLimit:2;
+        u8 tx_Challenges_Nuzlocke:1;
+        u8 tx_Challenges_NuzlockeHardcore:1;
+        //
+        u8 tx_Challenges_OneTypeChallenge:5;
+        u8 tx_Challenges_PartyLimit:3;
+        //
+        u8 tx_Challenges_NoItemPlayer:1;
+        u8 tx_Challenges_NoItemTrainer:1;
+        u8 tx_Challenges_PkmnCenter:2;
+        u8 tx_Random_OneForOne:1; //unused
+        u8 tx_Challenges_BaseStatEqualizer:2;
+        u8 tx_Challenges_LevelCap:2;
+        u8 tx_Challenges_ExpMultiplier:2;
+        u8 tx_Random_Items:1;
+        u8 tx_Nuzlocke_SpeciesClause:1;
+        u8 tx_Nuzlocke_ShinyClause:1;
+        u8 tx_Nuzlocke_Nicknaming:1;
+        u8 tx_Challenges_Mirror:1;
+        u8 tx_Challenges_Mirror_Thief:1;
+        u8 tx_Random_Static:1;
+        u8 tx_Challenges_NoEVs:1;
+        u8 tx_Challenges_TrainerScalingIVs:2;
+        u8 tx_Challenges_TrainerScalingEVs:2;
+        u8 tx_Nuzlocke_Deletion:1;
+        u8 tx_Random_Starter:1;
+        u8 tx_Challenges_MaxPartyIVs:2;
+        u8 tx_Mode_InfiniteTMs:1;
+        u8 tx_Mode_PoisonSurvive:1;
+        u8 tx_Features_EasierFeebas:1;
+        u8 tx_Features_PkmnDeath:1;
+        u8 tx_Challenges_PCHeal:1;
+        u8 tx_Features_RTCType:1;
+        u8 tx_Mode_AlternateSpawns:1;
+        u8 tx_Features_LimitDifficulty:1;
+        u8 tx_Features_ShinyChance:4;
+        u8 tx_Features_WildMonDropItems:1;
+        u8 tx_Features_Unlimited_WT:1;
+        u8 tx_Mode_Synchronize:1;
+        u8 tx_Mode_Mints:1;
+        u8 tx_Mode_New_Citrus:1;
+        u8 tx_Mode_Modern_Types:1;
+        u8 tx_Mode_Fairy_Types:1;
+        u8 tx_Mode_New_Stats:1;
+        u8 tx_Mode_Sturdy:1;
+        u8 tx_Mode_Modern_Moves:1;
+        u8 tx_Mode_Legendary_Abilities:1;
+        u8 tx_Mode_New_Legendaries:1;
 };
 
 extern struct SaveBlock1 *gSaveBlock1Ptr;
@@ -1188,8 +1311,10 @@ struct MapPosition
     s8 elevation;
 };
 
-#if T_SHOULD_RUN_MOVE_ANIM
+#if TESTING
 extern bool32 gLoadFail;
-#endif // T_SHOULD_RUN_MOVE_ANIM
+extern bool32 gCountAllocs;
+extern s32 gSpriteAllocs;
+#endif // TESTING
 
 #endif // GUARD_GLOBAL_H

@@ -31,13 +31,13 @@ PalletTown_EventScript_OaksLabSign::
 	end	
 
 PalletTown_Text_Teacher:
-	.string "I'm raising POKéMON too.\p"
+	.string "I'm raising Pokémon too.\p"
 	.string "They serve as my private\n"
 	.string "guards.$"
 
 PalletTown_Text_Fisher:
 	.string "Technology is incredible!\p"
-	.string "You can now trade POKéMON\n"
+	.string "You can now trade Pokémon\n"
 	.string "across time like e-mail.$"
 
 PalletTown_Text_Sign:
@@ -49,7 +49,7 @@ PalletTown_Text_RedsHouseSign:
 	.string "RED'S HOUSE$"
 
 PalletTown_Text_OaksLabSign:
-	.string "OAK POKéMON\n"
+	.string "OAK Pokémon\n"
 	.string "RESEARCH LAB$"
 
 PalletTown_Text_BluesHouseSign:

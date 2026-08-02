@@ -319,7 +319,7 @@ LilycoveCity_ContestLobby_EventScript_ContestReceptionist::
 	call LilycoveCity_ContestLobby_EventScript_SetPlayerGfx
 	call LilycoveCity_ContestLobby_EventScript_SetContestType
 	call LilycoveCity_ContestLobby_EventScript_WarpToContestHall
-	waitstate
+	@waitstate
 	end
 
 LilycoveCity_ContestLobby_EventScript_SetContestType::
@@ -349,7 +349,7 @@ LilycoveCity_ContestLobby_EventScript_SetMasterContestType::
 @ Functionally unused
 LilycoveCity_ContestLobby_EventScript_SetDebug::
 	setflag FLAG_GARBAGEFLAG
-	copyvar VAR_GARBAGEVAR, 1
+	setvar VAR_GARBAGEVAR, 1
 	additem ITEM_CONTEST_PASS
 	setvar VAR_0x800B, 8
 	setvar VAR_CONTEST_RANK, CONTEST_RANK_MASTER
@@ -370,31 +370,31 @@ LilycoveCity_ContestLobby_EventScript_WarpToContestHall::
 LilycoveCity_ContestLobby_EventScript_WarpToCoolContestHall::
 	setwarp MAP_CONTEST_HALL_COOL, 7, 5
 	special DoContestHallWarp
-	waitstate
+	@waitstate
 	return
 
 LilycoveCity_ContestLobby_EventScript_WarpToBeautyContestHall::
 	setwarp MAP_CONTEST_HALL_BEAUTY, 7, 5
 	special DoContestHallWarp
-	waitstate
+	@waitstate
 	return
 
 LilycoveCity_ContestLobby_EventScript_WarpToCuteContestHall::
 	setwarp MAP_CONTEST_HALL_CUTE, 7, 5
 	special DoContestHallWarp
-	waitstate
+	@waitstate
 	return
 
 LilycoveCity_ContestLobby_EventScript_WarpToSmartContestHall::
 	setwarp MAP_CONTEST_HALL_SMART, 7, 5
 	special DoContestHallWarp
-	waitstate
+	@waitstate
 	return
 
 LilycoveCity_ContestLobby_EventScript_WarpToToughContestHall::
 	setwarp MAP_CONTEST_HALL_TOUGH, 7, 5
 	special DoContestHallWarp
-	waitstate
+	@waitstate
 	return
 
 LilycoveCity_ContestLobby_EventScript_LeadToContestHall::
@@ -758,12 +758,12 @@ LilycoveCity_ContestLobby_EventScript_TrySetUpLinkContest::
 
 LilycoveCity_ContestLobby_EventScript_TryLinkEMode::
 	special TryContestEModeLinkup
-	waitstate
+	@waitstate
 	return
 
 LilycoveCity_ContestLobby_EventScript_TryLinkGMode::
 	special TryContestGModeLinkup
-	waitstate
+	@waitstate
 	return
 
 LilycoveCity_ContestLobby_EventScript_CancelLinkDifferentContest::
@@ -871,12 +871,12 @@ LilycoveCity_ContestLobby_EventScript_TryJoinGroup::
 
 LilycoveCity_ContestLobby_EventScript_TryBecomeLinkLeader::
 	special TryBecomeLinkLeader
-	waitstate
+	@waitstate
 	return
 
 LilycoveCity_ContestLobby_EventScript_TryJoinLinkGroup::
 	special TryJoinLinkGroup
-	waitstate
+	@waitstate
 	return
 
 LilycoveCity_ContestLobby_EventScript_LinkLeaderDecided::
@@ -988,9 +988,9 @@ LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries:
 
 LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint:
 	.string "Congratulations!\p"
-	.string "I did a painting of your POKéMON to\n"
+	.string "I did a painting of your Pokémon to\n"
 	.string "commemorate its victory…\p"
-	.string "Well, your POKéMON's appeals were\n"
+	.string "Well, your Pokémon's appeals were\n"
 	.string "so fantastic, it spurred me into\l"
 	.string "painting better than I usually do.\l"
 	.string "Look, see?$"
@@ -1016,7 +1016,7 @@ LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum:
 LilycoveCity_ContestLobby_Text_TakeMementoOfPainting:
 	.string "Oh, that's right!\p"
 	.string "As a memento of me painting your\n"
-	.string "POKéMON, please take this.$"
+	.string "Pokémon, please take this.$"
 
 LilycoveCity_ContestLobby_Text_ReceivedARibbon:
 	.string "{PLAYER} received a RIBBON.$"
@@ -1044,20 +1044,20 @@ LilycoveCity_ContestLobby_Text_MasterRankHereICome:
 	.string "Hoo, boy… Master Rank CONTESTS,\n"
 	.string "here I come.\p"
 	.string "The world will know that my dearest\n"
-	.string "POKéMON is the cutest being in all\l"
+	.string "Pokémon is the cutest being in all\l"
 	.string "existence. The time has come!\l"
 	.string "Uheheheh.$"
 
 LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere:
 	.string "You can see a whole variety of\n"
-	.string "POKéMON here.\p"
+	.string "Pokémon here.\p"
 	.string "That's why I make this place a regular\n"
 	.string "part of my daily stroll.$"
 
 LilycoveCity_ContestLobby_Text_ContestFeastForEyes:
 	.string "Wow, coming out to a CONTEST is\n"
 	.string "a feast for these eyes!\p"
-	.string "Would you look at all the POKéMON\n"
+	.string "Would you look at all the Pokémon\n"
 	.string "that just scream to be painted?$"
 
 LilycoveCity_ContestLobby_Text_ToughContestIsExtreme:
@@ -1068,7 +1068,7 @@ LilycoveCity_ContestLobby_Text_ToughContestIsExtreme:
 
 LilycoveCity_ContestLobby_Text_LavishedCareOnMon:
 	.string "Day in and day out, I lavished my care\n"
-	.string "on this POKéMON.\p"
+	.string "on this Pokémon.\p"
 	.string "Its condition is peaking.\n"
 	.string "Today, victory is mine!$"
 

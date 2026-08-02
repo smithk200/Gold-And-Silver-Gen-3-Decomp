@@ -74,15 +74,15 @@ SafariZone_Text_Kangaskhan:
 
 SafariZone_Text_JigglypuffTrainer:
 	.string "This SAFARI ZONE is great!\n"
-	.string "I just kept going after POKéMON!\p"
+	.string "I just kept going after Pokémon!\p"
 	.string "That made my JIGGLYPUFF upset though.$"
 
 SafariZone_Text_FirstCatch:
 	.string "I have always wanted to catch my first\n"
-	.string "POKéMON at the SAFARI ZONE.$"
+	.string "Pokémon at the SAFARI ZONE.$"
 
 SafariZone_Text_SlowpokeFan:
-	.string "There are many POKéMON to choose from,\n"
+	.string "There are many Pokémon to choose from,\n"
 	.string "but nothing beats the cuteness of\l"
 	.string "SLOWPOKE.\p"
 	.string "People often say that I look like one!$"

@@ -63,7 +63,7 @@ Route45_EventScript_Item_Nugget::
 
 Route45_Text_HikerErikSeen:
     .string "Be prepared for anything!\p"
-    .string "Let me see if your POKéMON have\n"
+    .string "Let me see if your Pokémon have\n"
     .string "been raised properly!$"
 
 Route45_Text_HikerErikBeaten:
@@ -80,15 +80,15 @@ Route45_Text_HikerMichaelSeen:
     .string "spunkiness, I'm the man!$"
 
 Route45_Text_HikerMichaelBeaten:
-    .string "My POKéMON weren't spunky enough!$"
+    .string "My Pokémon weren't spunky enough!$"
 
 Route45_Text_HikerMichaelAfter:
     .string "Boy, do I love HP UP! Mmmm, yum!\p"
-    .string "I keep drinking my POKéMON's!\p"
+    .string "I keep drinking my Pokémon's!\p"
     .string "I can't help it!$"
 
 Route45_Text_HikerParrySeen:
-    .string "My POKéMON are power packed!$"
+    .string "My Pokémon are power packed!$"
 
 Route45_Text_HikerParryBeaten:
     .string "Wahahah! I'm the big loser!$"
@@ -102,7 +102,7 @@ Route45_Text_HikerParryAfter:
 Route45_Text_HikerTimothySeen:
     .string "Why do I climb mountains?\p"
     .string "Because they're there.\p"
-    .string "Why do I train POKéMON?\p"
+    .string "Why do I train Pokémon?\p"
     .string "Because they're there!$"
 
 Route45_Text_HikerTimothyBeaten:
@@ -110,7 +110,7 @@ Route45_Text_HikerTimothyBeaten:
 
 Route45_Text_HikerTimothyAfter:
     .string "The best thing to ever happen to\n"
-    .string "me was discovering POKéMON.$"
+    .string "me was discovering Pokémon.$"
 
 Route45_Text_HikerParryGivesIron:
     .string "I just can't find a way to win!\p"
@@ -142,13 +142,13 @@ Route45_Text_BlackbeltKenjiNight:
 
 Route45_Text_CooltrainermRyanSeen:
     .string "What are your thoughts on\n"
-    .string "raising POKéMON?$"
+    .string "raising Pokémon?$"
 
 Route45_Text_CooltrainermRyanBeaten:
     .string "You've won my respect.$"
 
 Route45_Text_CooltrainermRyanAfter:
-    .string "I see you're raising your POKéMON\n"
+    .string "I see you're raising your Pokémon\n"
     .string "with care.\p"
     .string "The bond you build will save you\n"
     .string "in tough situations.$"
@@ -165,7 +165,7 @@ Route45_Text_CooltrainerfKellyAfter:
     .string "I'm not in favor of overly\n"
     .string "powerful moves.\p"
     .string "I want to win, but I also don't\n"
-    .string "want to harm POKéMON.$"
+    .string "want to harm Pokémon.$"
 
 Route45_Text_CamperQuentinSeen:
     .string "I'm really, really tough!$"

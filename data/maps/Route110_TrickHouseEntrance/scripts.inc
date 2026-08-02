@@ -244,7 +244,7 @@ Route110_TrickHouseEntrance_EventScript_FoundTrickMaster::
 	closemessage
 	setvar VAR_TRICK_HOUSE_FOUND_TRICK_MASTER, 1
 	warpsilent MAP_ROUTE110_TRICK_HOUSE_ENTRANCE, 6, 2
-	waitstate
+	@waitstate
 	releaseall
 	end
 
@@ -486,49 +486,49 @@ Route110_TrickHouseEntrance_Movement_EnterRoom:
 
 Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom1::
 	warp MAP_ROUTE110_TRICK_HOUSE_PUZZLE1, 0, 21
-	waitstate
+	@waitstate
 	releaseall
 	end
 
 Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom2::
 	warp MAP_ROUTE110_TRICK_HOUSE_PUZZLE2, 0, 21
-	waitstate
+	@waitstate
 	releaseall
 	end
 
 Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom3::
 	warp MAP_ROUTE110_TRICK_HOUSE_PUZZLE3, 0, 21
-	waitstate
+	@waitstate
 	releaseall
 	end
 
 Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom4::
 	warp MAP_ROUTE110_TRICK_HOUSE_PUZZLE4, 0, 21
-	waitstate
+	@waitstate
 	releaseall
 	end
 
 Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom5::
 	warp MAP_ROUTE110_TRICK_HOUSE_PUZZLE5, 0, 21
-	waitstate
+	@waitstate
 	releaseall
 	end
 
 Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom6::
 	warp MAP_ROUTE110_TRICK_HOUSE_PUZZLE6, 0, 21
-	waitstate
+	@waitstate
 	releaseall
 	end
 
 Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom7::
 	warp MAP_ROUTE110_TRICK_HOUSE_PUZZLE7, 0, 21
-	waitstate
+	@waitstate
 	releaseall
 	end
 
 Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom8::
 	warp MAP_ROUTE110_TRICK_HOUSE_PUZZLE8, 0, 21
-	waitstate
+	@waitstate
 	releaseall
 	end
 

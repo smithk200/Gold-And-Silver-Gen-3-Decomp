@@ -42,7 +42,7 @@ MagmaHideout_3F_1R_EntranceTrigger_Text:
 	.string "A big roar echoes around MAGMA\n"
 	.string "HIDEOUT.\p"
 	.string "It seems that the echoing roars\n"
-	.string "come from a menacing POKéMON.\p"
+	.string "come from a menacing Pokémon.\p"
 	.string "However... It looks distressed.\n"
 	.string "Is it scared?\p"
 	.string "Catching it may be impossible without\n"
@@ -111,7 +111,7 @@ MagmaHideout_3F_1R_EnteiBattle1_Movement:
 	step_end
 
 MagmaHideout_3F_1R_EnteiBattle1_Text:
-	.string "The POKéMON ran away!$"
+	.string "The Pokémon ran away!$"
 
 @@Second encounter with Entei. Has 750HP and is now level 50. Atk and Sp.Atk are getting stronger.
 
@@ -174,7 +174,7 @@ MagmaHideout_3F_1R_EnteiBattle2_Movement:
 	step_end
 
 MagmaHideout_3F_1R_EnteiBattle2_Text:
-	.string "The POKéMON ran away, but not\n"
+	.string "The Pokémon ran away, but not\n"
 	.string "as fast as before.$"
 
 @@Third and last encounter with Entei before catching it. Has 800HP and is now level 60, and it's sunny. More atk and sp.atk.
@@ -241,7 +241,7 @@ MagmaHideout_3F_1R_EnteiBattle3_Movement:
 	step_end
 
 MagmaHideout_3F_1R_EnteiBattle3_Text:
-	.string "The POKéMON ran away. However it's\n"
+	.string "The Pokémon ran away. However it's\n"
 	.string "way slower than before.\l"
 	.string "Is it getting tired?$"
 
@@ -276,7 +276,7 @@ MagmaHideout_3F_1R_Entei_EnteiFinalBattle::
 	setflag FLAG_GARBAGEFLAG
 	call_if_set FLAG_GARBAGEFLAG, MagmaHideout_3F_1R_Entei_EnteiBattle4_Stats
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	calculatemonstats
 	specialvar VAR_RESULT, GetBattleOutcome

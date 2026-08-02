@@ -2,6 +2,7 @@
 #define GUARD_CONSTANTS_OPPONENTS_H
 
 #include "constants/battle_partner.h"
+#include "constants/opponents_frlg.h"
 
 #define TRAINER_NONE                          0
 #define TRAINER_SAWYER_1                      1
@@ -137,8 +138,8 @@
 #define TRAINER_TIFFANY                     131
 #define TRAINER_ARIANA_2                   132
 #define TRAINER_JODY_2                   133
-#define TRAINER_OLIVIA_2                   134
-#define TRAINER_JESSICA_5                   135 //used in Hoenn
+#define TRAINER_UNUSED_1                   134
+#define TRAINER_JESSICA_5                   135
 #define TRAINER_WINSTON_1                   136
 #define TRAINER_MOLLIE                      137
 #define TRAINER_GARRET                      138
@@ -153,7 +154,7 @@
 #define TRAINER_HALEY                     147
 #define TRAINER_COBY                     148
 #define TRAINER_BRAXTON                     149
-#define TRAINER_STEVE_5                     150
+#define TRAINER_BETHANY_2                     150
 #define TRAINER_LUIS                        151
 #define TRAINER_KENNY                     152
 #define TRAINER_DOUGLAS                     153
@@ -188,9 +189,9 @@
 #define TRAINER_KOICHI                      182
 #define TRAINER_NOB_1                       183
 #define TRAINER_DARCY                       184
-#define TRAINER_NOB_3                       185
-#define TRAINER_NOB_4                       186
-#define TRAINER_NOB_5                       187
+#define TRAINER_CONNIE_2                       185
+#define TRAINER_OLIVIA_2                       186
+#define TRAINER_TIFFANY_2                       187
 #define TRAINER_YUJI                        188
 #define TRAINER_JED                     189
 #define TRAINER_CINDY                     190
@@ -399,7 +400,7 @@
 #define TRAINER_NICOLAS_2                   393
 #define TRAINER_NICOLAS_3                   394
 #define TRAINER_NICOLAS_4                   395
-#define TRAINER_NICOLAS_5                   396
+#define TRAINER_ANTHONY_2                   396
 #define TRAINER_AARON                       397
 #define TRAINER_PERRY                       398
 #define TRAINER_HUGH                        399
@@ -443,9 +444,9 @@
 #define TRAINER_MADELINE_2                  437
 #define TRAINER_MADELINE_3                  438
 #define TRAINER_MADELINE_4                  439
-#define TRAINER_MADELINE_5                  440
+#define TRAINER_ALLEN_2                     440
 #define TRAINER_BEVERLY                     441
-#define TRAINER_CHUCK_1_2                       442
+#define TRAINER_CHUCK_1_2                   442
 #define TRAINER_KYLA                        443
 #define TRAINER_DENISE                      444
 #define TRAINER_BETH                        445
@@ -803,8 +804,8 @@
 #define TRAINER_TATE_AND_LIZA_5             797
 #define TRAINER_JUAN_2                      798
 #define TRAINER_JUAN_3                      799
-#define TRAINER_JUAN_4                      800
-#define TRAINER_JUAN_5                      801
+#define TRAINER_ANABEL                      800
+#define TRAINER_GRETA                      801
 #define TRAINER_CARLENE                      802
 #define TRAINER_JIN                      803
 #define TRAINER_STEVEN                      804
@@ -868,12 +869,20 @@
 #define TRAINER_PROTON_1                     862 //85E
 #define TRAINER_KIP2                      863 //85F
 
-// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
+// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 0 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      864
-#define MAX_TRAINERS_COUNT                  864
+#define TRAINERS_COUNT_EMERALD     864
+#define MAX_TRAINERS_COUNT_EMERALD 864
+
+#if IS_FRLG
+#define TRAINERS_COUNT                      TRAINERS_COUNT_FRLG
+#define MAX_TRAINERS_COUNT                  MAX_TRAINERS_COUNT_FRLG
+#else
+#define TRAINERS_COUNT                      TRAINERS_COUNT_EMERALD
+#define MAX_TRAINERS_COUNT                  MAX_TRAINERS_COUNT_EMERALD
+#endif
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

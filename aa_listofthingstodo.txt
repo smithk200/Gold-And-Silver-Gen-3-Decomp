@@ -1,0 +1,16 @@
+1. Items
+2. Incorporate Odd Egg
+3. Music
+4. Trainer Classes
+5. Options
+6. Vs. Seeker Functionality
+7. Update OW sprites to match that of that one Emerald remix
+8. Options
+9. Shiny Gyarados
+
+
+== DARK GOLD ONLY ==
+- Magic Muffler
+- Updated trainer images/classes
+- Updated object events
+- Item limits in battle

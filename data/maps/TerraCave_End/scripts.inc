@@ -36,7 +36,7 @@ TerraCave_End_EventScript_Groudon::
 	setwildbattle SPECIES_GROUDON, 70
 	setflag FLAG_GARBAGEFLAG
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_GARBAGEFLAG
 	setvar VAR_TEMP_1, 0
 	specialvar VAR_RESULT, GetBattleOutcome

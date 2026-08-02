@@ -59,7 +59,7 @@ Route20_EventScript_Headlocker::
 	end
 
 Route20_Text_Headlocker:
-	.string "There's a rare POKéMON on this\n"
+	.string "There's a rare Pokémon on this\n"
 	.string "route.\p"
 	.string "And sometimes it carries a rare\n"
 	.string "evolution item.\p"

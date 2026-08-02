@@ -137,7 +137,7 @@ Route39_EventScript_BaobaIntro::
 
 Route39_Text_ChooseLegend::
 	.string "BAOBA: GOOD HEAVENS! Did that\n"
-	.string "shadow belong to a POKéMON?\p"
+	.string "shadow belong to a Pokémon?\p"
 	.string "Did you get a good look at it?\n"
 	.string "I can't tell what color it was...$"
 
@@ -244,13 +244,13 @@ Route39_EventScript_Eugene::
 
 Route39_Text_SailorEugeneSeen:
 	.string "I just got back to OLIVINE.\p"
-	.string "So how about a POKéMON battle?$"
+	.string "So how about a Pokémon battle?$"
 
 Route39_Text_SailorEugeneBeaten:
 	.string "Awaaargh!$"
 
 Route39_Text_SailorEugeneAfter:
-	.string "My POKéMON were caught and\n"
+	.string "My Pokémon were caught and\n"
 	.string "raised overseas.\p"
 	.string "They're my companions on\n"
 	.string "those long voyages.$"
@@ -280,8 +280,8 @@ Route39_EventScript_Ruth::
 	end
 
 Route39_Text_PokefanFRuthSeen:
-	.string "Such darling POKéMON.\p"
-	.string "Let's show our POKéMON\n"
+	.string "Such darling Pokémon.\p"
+	.string "Let's show our Pokémon\n"
 	.string "together at the same time.$"
 
 Route39_Text_PokefanFRuthBeaten:
@@ -289,7 +289,7 @@ Route39_Text_PokefanFRuthBeaten:
 
 Route39_Text_PokefanFRuthAfter:
 	.string "Do you know about baby\n"
-	.string "POKéMON?\p"
+	.string "Pokémon?\p"
 	.string "I bet they're just adorable!$"
 
 Route39_EventScript_Norman::
@@ -299,14 +299,14 @@ Route39_EventScript_Norman::
 
 Route39_Text_PsychicNormanSeen:
 	.string "Let me see what your\n"
-	.string "POKéMON are capable of.$"
+	.string "Pokémon are capable of.$"
 
 Route39_Text_PsychicNormanBeaten:
-	.string "Ooh, your POKéMON have\n"
+	.string "Ooh, your Pokémon have\n"
 	.string "potential.$"
 
 Route39_Text_PsychicNormanAfter:
-	.string "You know how POKéMON have\n"
+	.string "You know how Pokémon have\n"
 	.string "different abilities?\p"
 	.string "People are like that too.\n"
 	.string "Everyone has different\l"
@@ -367,8 +367,8 @@ Route39_EventScript_Sign3::
 Route39_Text_TrainerTips:
 	.string "TRAINER TIPS\p"
 	.string "Use HEADBUTT on trees to shake\n"
-	.string "POKéMON out.\p"
-	.string "Different kinds of POKéMON\n"
+	.string "Pokémon out.\p"
+	.string "Different kinds of Pokémon\n"
 	.string "drop out of trees.\p"
 	.string "Use HEADBUTT on any tree\n"
 	.string "you see!$"

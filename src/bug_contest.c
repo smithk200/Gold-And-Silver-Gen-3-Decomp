@@ -17,15 +17,23 @@
 #include "field_screen_effect.h"
 #include "pokemon.h"
 #include "string_util.h"
+#include "constants/party_menu.h"
+
 extern const struct SpeciesInfo gSpeciesInfo[];
 static bool32 IsPlayerDefeated(u32 battleOutcome);
 static u32 sBugContestStartTime;
 static bool8 sBugContestTimerActive;
+static u32 sBugContestLeadPersonality;
+static u32 sBugContestLeadOtId;
 
 
 bool32 GetBugContestFlag(void)
 {
     return FlagGet(FLAG_SYS_BUG_CONTEST_MODE);
+    sBugContestStartTime = gMain.vblankCounter1;
+    sBugContestTimerActive = TRUE;
+    sBugContestLeadPersonality = GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_PERSONALITY);
+    sBugContestLeadOtId = GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_OT_ID);
 }
 
 
@@ -45,6 +53,8 @@ void ExitBugContestMode(void)
 {
     FlagClear(FLAG_SYS_BUG_CONTEST_MODE);
     sBugContestTimerActive = FALSE;
+    sBugContestLeadPersonality = 0;
+    sBugContestLeadOtId = 0;
 }
 
 bool8 BugContestCheckTimeLimit(void)
@@ -68,7 +78,7 @@ bool8 BugContestCheckTimeLimit(void)
 bool8 TransferBugContestMon(void)
 {
     u8 monIndex = VarGet(VAR_0x8004);
-    struct Pokemon *mon = &gPlayerParty[monIndex];
+    struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][monIndex];
     struct BoxPokemon *boxMon = &mon->box;
     u8 boxId, boxPos;
 
@@ -101,8 +111,8 @@ bool8 JudgeBugContestMon(void)
     //paras min hp:33
 
     u16 monIndex = VarGet(VAR_0x8004);
-    u16 UNUSED species = GetMonData(&gPlayerParty[monIndex], MON_DATA_SPECIES);
-    u8 maxHP = GetMonData(&gPlayerParty[monIndex], MON_DATA_MAX_HP); //change to MON_DATA_HP for a more authentic johto experience
+    u16 UNUSED species = GetMonData(&gParties[B_TRAINER_PLAYER][monIndex], MON_DATA_SPECIES);
+    u8 maxHP = GetMonData(&gParties[B_TRAINER_PLAYER][monIndex], MON_DATA_MAX_HP); //change to MON_DATA_HP for a more authentic johto experience
     u16 rand = Random() % 100;
     u16 placement;
 
@@ -180,7 +190,7 @@ void CB2_EndBugContestBattle(void)
     u8 partyCount = 0;
     for (u8 i = 0; i < PARTY_SIZE; i++)
     {
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE)
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES) != SPECIES_NONE)
             partyCount++;
     }
 
@@ -218,7 +228,7 @@ bool8 RemoveSafariBalls(void)
 bool8 ShowBugContestChosenMon(void)
 {
     u16 monIndex = VarGet(VAR_0x8004);
-    u16 species = GetMonData(&gPlayerParty[monIndex], MON_DATA_SPECIES);
+    u16 species = GetMonData(&gParties[B_TRAINER_PLAYER][monIndex], MON_DATA_SPECIES);
 
     // Set species name into STR_VAR_1 properly
     GetSpeciesName(species); // gStringVar1, 
@@ -260,5 +270,24 @@ bool8 ShowBugContestChosenMon(void)
         break;
     }
 
+    return FALSE;
+}
+
+bool8 ValidateBugContestSelectedMon(void)
+{
+    u16 monIndex = VarGet(VAR_0x8004);
+    u32 personality;
+    u32 otId;
+
+    if (monIndex == PARTY_NOTHING_CHOSEN || monIndex >= PARTY_SIZE)
+    {
+        gSpecialVar_Result = FALSE;
+        return FALSE;
+    }
+
+    personality = GetMonData(&gParties[B_TRAINER_PLAYER][monIndex], MON_DATA_PERSONALITY);
+    otId = GetMonData(&gParties[B_TRAINER_PLAYER][monIndex], MON_DATA_OT_ID);
+
+    gSpecialVar_Result = !(personality == sBugContestLeadPersonality && otId == sBugContestLeadOtId);
     return FALSE;
 }

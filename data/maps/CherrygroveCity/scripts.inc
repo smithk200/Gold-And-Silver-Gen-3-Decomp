@@ -294,25 +294,25 @@ CherrygroveCity_Text_GuideGentTourStart:
 	.string "Follow me!$"
 
 CherrygroveCity_Text_GuideGentPokecenter:
-	.string "This is a POKéMON CENTER.\p"
-	.string "They heal your POKéMON in no\n"
+	.string "This is a Pokémon CENTER.\p"
+	.string "They heal your Pokémon in no\n"
 	.string "time at all.\p"
 	.string "You'll be relying on them a lot,\n"
 	.string "so you better learn about them.$"
 
 CherrygroveCity_Text_GuideGentMart:
-	.string "This is a POKéMON MART.\p"
+	.string "This is a Pokémon MART.\p"
 	.string "They sell BALLS for catching wild\n"
-	.string "POKéMON and other useful items.$"
+	.string "Pokémon and other useful items.$"
 
 CherrygroveCity_Text_GuideGentRoute30:
 	.string "ROUTE 30 is out this way.\p"
 	.string "Trainers will be battling\n"
-	.string "their prized POKéMON there.$"
+	.string "their prized Pokémon there.$"
 
 CherrygroveCity_Text_GuideGentSea:
 	.string "This is the sea, as you can see.\p"
-	.string "Some POKéMON are found only in\n"
+	.string "Some Pokémon are found only in\n"
 	.string "in water.$"
 
 CherrygroveCity_Text_GuideGentMap:
@@ -331,12 +331,12 @@ CherrygroveCity_Text_GuideGentDecline:
 
 CherrygroveCity_Text_RivalSeen:
 	.string "… … … … … … … …\p"
-	.string "You got a POKéMON at the LAB.\p"
+	.string "You got a Pokémon at the LAB.\p"
 	.string "What a waste.\n"
 	.string "A wimp like you.\p"
 	.string "… … … … … … … …\p"
 	.string "Don't you get what I'm saying?\n"
-	.string "Well, I too, have a good POKéMON.\p"
+	.string "Well, I too, have a good Pokémon.\p"
 	.string "I'll show you what I mean!$"
 
 CherrygroveCity_Text_SilverWin:
@@ -346,7 +346,7 @@ CherrygroveCity_Text_RivalAfter:
 	.string "… … … … … … … …\p"
 	.string "Do you want to know who I am?\p"
 	.string "I'm going to be the world's\n"
-	.string "greatest POKéMON trainer.$"
+	.string "greatest Pokémon trainer.$"
 
 CherrygroveCity_Text_RivalID:
 	.string "Give it back!\n"
@@ -355,22 +355,22 @@ CherrygroveCity_Text_RivalID:
 	.string "You saw my name...$"
 
 CherrygroveCity_Text_TeacherHaveMapCard:
-	.string "When you're with POKéMON,\n"
+	.string "When you're with Pokémon,\n"
 	.string "going anywhere is fun.$"
 
 CherrygroveCity_Text_YoungsterNoPokedex:
-	.string "MR. POKéMON's house is still\n"
+	.string "MR. Pokémon's house is still\n"
 	.string "farther up ahead.$"
 
 CherrygroveCity_Text_YoungsterHavePokedex:
 	.string "I battled the trainers on the\n"
 	.string "road.\p"
-	.string "My POKéMON lost. They're a\n"
+	.string "My Pokémon lost. They're a\n"
 	.string "mess! I must take them to a\l"
-	.string "POKéMON CENTER.$"
+	.string "Pokémon CENTER.$"
 
 CherrygroveCity_Text_MysticWaterGuyBefore:
-	.string "A POKéMON I caught had an\n"
+	.string "A Pokémon I caught had an\n"
 	.string "item.\p"
 	.string "I think it's MYSTIC WATER.\p"
 	.string "I don't need it, so do you\n"

@@ -21,10 +21,10 @@ CianwoodGym_EventScript_Statue2::
 	end
 
 CianwoodGym_Text_GymStatue:
-	.string "CIANWOOD CITY POKéMON GYM$"
+	.string "CIANWOOD CITY Pokémon GYM$"
 
 CianwoodGym_Text_GymStatueCertified:
-	.string "CIANWOOD CITY POKéMON GYM\p"
+	.string "CIANWOOD CITY Pokémon GYM\p"
 	.string "CHUCK'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
@@ -138,7 +138,7 @@ CianwoodGym_Text_ChuckIntro1:
 	.string "WAHAHAH!\p"
 	.string "So you've come this far!\p"
 	.string "Let me tell you, I'm tough!\p"
-	.string "My POKéMON will crush stones and\n"
+	.string "My Pokémon will crush stones and\n"
 	.string "shatter bones!\p"
 	.string "Watch this!$"
 
@@ -150,7 +150,7 @@ CianwoodGym_Text_ChuckIntro2:
 CianwoodGym_Text_ChuckIntro3:
 	.string "There! Scared now, are you?\p"
 	.string "What? It has nothing to do with\n"
-	.string "POKéMON?\p"
+	.string "Pokémon?\p"
 	.string "That's true!\p"
 	.string "Come on. We shall do battle!$"
 
@@ -163,9 +163,9 @@ CianwoodGym_Text_GetStormBadge:
 	.string "{PLAYER} received STORMBADGE.$"
 
 CianwoodGym_Text_ChuckBadgeSpeech:
-	.string "STORMBADGE makes all POKéMON up to\n"
+	.string "STORMBADGE makes all Pokémon up to\n"
 	.string "L70 obey, even traded ones.\p"
-	.string "It also lets your POKéMON use FLY\n"
+	.string "It also lets your Pokémon use FLY\n"
 	.string "when you're not in a battle.\p"
 	.string "Here, take this too!$"
 
@@ -196,7 +196,7 @@ CianwoodGym_EventScript_Yoshi::
 	end
 
 CianwoodGym_Text_BlackbeltYoshiSeen:
-	.string "My POKéMON and I are bound togeth-\n"
+	.string "My Pokémon and I are bound togeth-\n"
 	.string "er by friendship.\p"
 	.string "Our bond will never be broken!$"
 
@@ -205,7 +205,7 @@ CianwoodGym_Text_BlackbeltYoshiBeaten:
 
 CianwoodGym_Text_BlackbeltYoshiAfter:
 	.string "You seem to have a strong bond\n"
-	.string "with your POKéMON too!$"
+	.string "with your Pokémon too!$"
 
 CianwoodGym_EventScript_Lao::
 	trainerbattle_single TRAINER_LAO CianwoodGym_Text_BlackbeltLaoSeen, CianwoodGym_Text_BlackbeltLaoBeaten
@@ -219,7 +219,7 @@ CianwoodGym_Text_BlackbeltLaoBeaten:
 	.string "That's shocking!$"
 
 CianwoodGym_Text_BlackbeltLaoAfter:
-	.string "Fighting POKéMON are afraid of\n"
+	.string "Fighting Pokémon are afraid of\n"
 	.string "psychics…$"
 
 
@@ -245,12 +245,12 @@ CianwoodGym_EventScript_Lung::
 
 CianwoodGym_Text_BlackbeltLungSeen:
 	.string "My raging fists will shatter your\n"
-	.string "POKéMON!$"
+	.string "Pokémon!$"
 
 CianwoodGym_Text_BlackbeltLungBeaten:
 	.string "I got shattered!$"
 
 CianwoodGym_Text_BlackbeltLungAfter:
-	.string "My POKéMON lost…\n"
+	.string "My Pokémon lost…\n"
 	.string "My… my pride is shattered…$"
 

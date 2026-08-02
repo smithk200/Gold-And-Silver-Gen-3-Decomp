@@ -68,7 +68,7 @@ SlowpokeWell_B1F_EventScript_Proton::
 	clearflag FLAG_HIDE_AZALEA_TOWN_SLOWPOKE
 	setvar VAR_AZALEA_TOWN_STATE, 3
 	warp MAP_AZALEA_TOWN_KURTS_HOUSE, 15, 4
-	release
+	@release
 	end
 
 SlowpokeWell_B1F_EventScript_Proton2::
@@ -99,7 +99,7 @@ SlowpokeWell_B1F_EventScript_Proton2::
 	clearflag FLAG_HIDE_AZALEA_TOWN_SLOWPOKE
 	setvar VAR_AZALEA_TOWN_STATE, 3
 	warp MAP_AZALEA_TOWN_KURTS_HOUSE, 15, 4
-	release
+	@release
 	end
 
 SlowpokeWell_B1F_Movement_Kurt:
@@ -119,7 +119,7 @@ SlowpokeWell_B1F_Text_KurtIntro:
 	.string "the WELL.\p"
 	.string "I slammed down hard on my back,\n"
 	.string "so I can't move.\p"
-	.string "Rats! If I were fit, my POKéMON\n"
+	.string "Rats! If I were fit, my Pokémon\n"
 	.string "would've punished them…\p"
 	.string "Ah, it can't be helped.\p"
 	.string "{PLAYER}, show them how gutsy\n"

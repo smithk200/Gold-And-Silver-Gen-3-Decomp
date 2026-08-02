@@ -33,7 +33,7 @@ Route8_EventScript_Tom::
 	end
 
 Route8_Text_BikerDwayneSeen:
-	.string "We're the KANTO POKéMON FEDERATION\n"
+	.string "We're the KANTO Pokémon FEDERATION\n"
 	.string "trainer group.\p"
 	.string "We'll drive you under our wheels!$"
 
@@ -41,7 +41,7 @@ Route8_Text_BikerDwayneBeaten:
 	.string "S-sorry!$"
 
 Route8_Text_BikerDwayneAfter:
-	.string "The KANTO POKéMON FEDERATION will\n"
+	.string "The KANTO Pokémon FEDERATION will\n"
 	.string "never fall!$"
 
 Route8_Text_BikerHarrisSeen:
@@ -57,7 +57,7 @@ Route8_Text_BikerHarrisAfter:
 	.string "JOHTO…$"
 
 Route8_Text_BikerZekeSeen:
-	.string "We're the KANTO POKéMON FEDERA-\n"
+	.string "We're the KANTO Pokémon FEDERA-\n"
 	.string "TION!\n"
 	.string "Right on!$"
 

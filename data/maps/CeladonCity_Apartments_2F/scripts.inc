@@ -22,7 +22,7 @@ CeladonMansion2F_Text_Computer:
 	.string "…I hope you'll come visit KANTO.\p"
 	.string "I think you'll be surprised at\n"
 	.string "how much things have changed here.\p"
-	.string "You'll also see many POKéMON that\n"
+	.string "You'll also see many Pokémon that\n"
 	.string "aren't native to JOHTO.\p"
 	.string "To the PRODUCER\p"
 	.string "…$"
@@ -67,7 +67,7 @@ CeladonMansion2F_Text_LilDill:
 	.string "But I couldn't have done it without\n"
 	.string "the other devs and the playtesters.\p"
 	.string "Thank you for playing! I hope you've\n"
-	.string "enjoyed POKéMON HEART & SOUL.$"
+	.string "enjoyed Pokémon HEART & SOUL.$"
 
 CeladonMansion2F_Text_InfiniteBacon:
 	.string "We're working to rebuild this game\n"
@@ -78,7 +78,7 @@ CeladonMansion2F_Text_InfiniteBacon:
 CeladonMansion2F_Text_TixoRebel:
 	.string "Have you heard of THE EGGENING?\n"
 	.string "It was a bug from the playtest\l"
-	.string "that randomly changed POKéMON into\l"
+	.string "that randomly changed Pokémon into\l"
 	.string "EGGs!\p"
 	.string "I developed the fix for it!$"
 
@@ -92,7 +92,7 @@ CeladonMansion2F_Text_Phant:
 
 CeladonMansion2F_Text_Exclsior:
 	.string "I implemented the unique surfing\n"
-	.string "surfing sprites for each POKéMON!\p"
+	.string "surfing sprites for each Pokémon!\p"
 	.string "Since the project is OPEN SOURCE,\n"
 	.string "you can add your own features too!$"
 
@@ -110,8 +110,8 @@ CeladonMansion2F_Text_DaniRaibow:
 CeladonMansion2F_Text_IAmAwesome2:
 	.string "I was the one who remade this\n"
 	.string "in pokeemerald-expansion!\p"
-	.string "Now you can catch all POKéMON\n"
+	.string "Now you can catch all Pokémon\n"
 	.string "from Generations 1-9!\p"
 	.string "I appreciate the hard work the\n"
-	.string "rest of the directors of POKéMON\l"
+	.string "rest of the directors of Pokémon\l"
 	.string "HEART & SOUL put into this game!$"

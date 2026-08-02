@@ -123,7 +123,7 @@ SSTidalCorridor_EventScript_ExitLilycove::
 	msgbox SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT
 	call_if_set FLAG_RECEIVED_TM_SNATCH, SSTidalCorridor_EventScript_HideSnatchGiver
 	warp MAP_LILYCOVE_CITY_HARBOR, 8, 11
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -132,7 +132,7 @@ SSTidalCorridor_EventScript_ExitSlateport::
 	msgbox SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT
 	call_if_set FLAG_RECEIVED_TM_SNATCH, SSTidalCorridor_EventScript_HideSnatchGiver
 	warp MAP_SLATEPORT_CITY_HARBOR, 8, 11
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -150,7 +150,7 @@ SSTidalCorridor_EventScript_Porthole::
 
 SSTidalCorridor_EventScript_LookThroughPorthole::
 	special LookThroughPorthole
-	waitstate
+	@waitstate
 	end
 
 SSTidalCorridor_EventScript_Sailor::

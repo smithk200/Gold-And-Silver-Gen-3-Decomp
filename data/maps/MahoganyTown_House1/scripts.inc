@@ -25,7 +25,7 @@ MahoganyRedGyaradosHouse_Text_BlackBelt:
 
 MahoganyRedGyaradosHouse_Text_Teacher:
     .string "My favorite radio program? I'd say\n"
-    .string "POKéMON MUSIC.$"
+    .string "Pokémon MUSIC.$"
 
 MahoganyRedGyaradosHouse_Text_Teacher_Rockets:
     .string "I've been hearing laughter on the\n"

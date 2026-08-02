@@ -117,18 +117,18 @@ GoldenrodCity_Gym_EventScript_Statue2::
 	end
 
 GoldenrodCity_Gym_Text_GymStatue:
-	.string "GOLDENROD POKéMON GYM$"
+	.string "GOLDENROD Pokémon GYM$"
 
 GoldenrodCity_Gym_Text_GymStatueCertified:
-	.string "GOLDENROD TOWN POKéMON GYM\p"
+	.string "GOLDENROD TOWN Pokémon GYM\p"
 	.string "WHITNEY'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
 GoldenrodCity_Gym_Text_WhitneyBefore:
     .string "Hi! I'm WHITNEY!\p"
-    .string "Everyone was into POKéMON, so I got\n"
+    .string "Everyone was into Pokémon, so I got\n"
     .string "into it too!\p"
-    .string "POKéMON are super-cute!\p"
+    .string "Pokémon are super-cute!\p"
     .string "You want to battle? I'm warning\n"
     .string "you- I'm good!$"
 
@@ -153,15 +153,15 @@ GoldenrodCity_Gym_Text_PlayerReceivedPlainBadge:
     .string "{PLAYER} received PLAINBADGE.$"
 
 GoldenrodCity_Gym_Text_WhitneyPlainBadge:
-    .string "PLAINBADGE lets your POKéMON use\n"
+    .string "PLAINBADGE lets your Pokémon use\n"
     .string "STRENGTH outside of battle.\p"
-    .string "It also boosts your POKéMON's\n"
+    .string "It also boosts your Pokémon's\n"
 	.string "DEFENSE.\p"
     .string "Oh, you can have this too!$"
 
 GoldenrodCity_Gym_Text_WhitneyAttract:
     .string "It's ATTRACT! It makes full use of a\n"
-    .string "POKéMON's charm.\p"
+    .string "Pokémon's charm.\p"
     .string "Isn't it just perfect for a cutie\n"
     .string "like me?$"
 
@@ -181,7 +181,7 @@ GoldenrodCity_Gym_Text_WhitneyRematchDefeat:
     .string "…Snivel, hic… …You meanie!$"
 
 GoldenrodCity_Gym_Text_LassCarrieSeen:
-    .string "Don't let my POKéMON's cute looks\n"
+    .string "Don't let my Pokémon's cute looks\n"
     .string "fool you.\p"
     .string "They can whip you!$"
 
@@ -189,12 +189,12 @@ GoldenrodCity_Gym_Text_LassCarrieBeaten:
     .string "Darn… I thought you were weak…$"
 
 GoldenrodCity_Gym_Text_LassCarrieAfter:
-    .string "Do my POKéMON think I'm cute?$"
+    .string "Do my Pokémon think I'm cute?$"
 
 GoldenrodCity_Gym_Text_LassBridgetSeen:
-    .string "I like cute POKéMON better than\n"
-    .string "strong POKéMON.\p"
-    .string "But I have strong and cute POKéMON!$"
+    .string "I like cute Pokémon better than\n"
+    .string "strong Pokémon.\p"
+    .string "But I have strong and cute Pokémon!$"
 
 GoldenrodCity_Gym_Text_LassBridgetBeaten:
     .string "Oh, no, no, no!$"
@@ -235,9 +235,9 @@ GoldenrodCity_Gym_Text_BeautySamanthaAfter:
 GoldenrodCity_Gym_Text_GymGuide:
     .string "Yo! CHAMP in making!\p"
     .string "This GYM is home to WHITNEY, the\n"
-    .string "master of NORMAL-type POKéMON.\p"
+    .string "master of NORMAL-type Pokémon.\p"
     .string "Be cautious of her cute team.\p"
-    .string "Some of the POKéMON in this gym\n"
+    .string "Some of the Pokémon in this gym\n"
     .string "have the newly discovered FAIRY\l"
     .string "type as well.\p"
     .string "Check ROUTE 34 if you need a\n"

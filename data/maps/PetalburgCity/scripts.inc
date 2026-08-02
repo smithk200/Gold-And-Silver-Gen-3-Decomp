@@ -9,6 +9,7 @@ PetalburgCity_OnTransition_Old:
 
 PetalburgCity_OnTransition:
 	setflag FLAG_VISITED_PETALBURG_CITY
+	cleartrainerflag TRAINER_NORMAN_2
 	end
 
 PetalburgCity_EventScript_MoveGymBoyToWestEntrance::
@@ -36,7 +37,7 @@ PetalburgCity_EventScript_WallyTutorial::
 	waitmovement 0
 	msgbox Route102_Text_WatchMeCatchPokemon, MSGBOX_DEFAULT
 	special StartWallyTutorialBattle
-	waitstate
+	@waitstate
 	msgbox Route102_Text_WallyIDidIt, MSGBOX_DEFAULT
 	applymovement LOCALID_PETALBURG_WALLY, Common_Movement_WalkInPlaceFasterLeft, MAP_PETALBURG_CITY
 	waitmovement LOCALID_PETALBURG_WALLY, MAP_PETALBURG_CITY
@@ -49,7 +50,7 @@ PetalburgCity_EventScript_WallyTutorial::
 	special LoadPlayerParty
 	setvar VAR_GARBAGEVAR, 1
 	warp MAP_PETALBURG_CITY_GYM, 4, 108
-	waitstate
+	@waitstate
 	releaseall
 	end
 
@@ -74,7 +75,7 @@ PetalburgCity_EventScript_WalkToWallyHouse::
 	fadedefaultbgm
 	clearflag FLAG_GARBAGEFLAG
 	warp MAP_PETALBURG_CITY_WALLYS_HOUSE, 2, 4
-	waitstate
+	@waitstate
 	releaseall
 	end
 
@@ -704,7 +705,7 @@ PetalburgCity_Text_WhereIsWally:
 PetalburgCity_Text_AreYouRookieTrainer:
 	.string "Hiya! Are you maybe…\n"
 	.string "A rookie TRAINER?\p"
-	.string "Do you know what POKéMON TRAINERS\n"
+	.string "Do you know what Pokémon TRAINERS\n"
 	.string "do when they reach a new town?\p"
 	.string "They first check what kind of GYM\n"
 	.string "is in the town.$"
@@ -724,13 +725,13 @@ PetalburgCity_Text_WaterReflection:
 	.string "What do you see reflected in your face?$"
 
 PetalburgCity_Text_FullPartyExplanation:
-	.string "Let's say you have six POKéMON.\n"
+	.string "Let's say you have six Pokémon.\n"
 	.string "If you catch another one…\p"
 	.string "It is automatically sent to a STORAGE\n"
 	.string "BOX over a PC connection.$"
 
 PetalburgCity_Text_GymSign:
-	.string "PETALBURG CITY POKéMON GYM\n"
+	.string "PETALBURG CITY Pokémon GYM\n"
 	.string "LEADER: NORMAN\l"
 	.string "“A man in pursuit of power!”$"
 
@@ -744,7 +745,7 @@ PetalburgCity_Text_WallyHouseSign:
 PetalburgCity_Text_AreYouATrainer:
 	.string "Excuse me!\p"
 	.string "Let me guess, from the way you're\n"
-	.string "dressed, are you a POKéMON TRAINER?$"
+	.string "dressed, are you a Pokémon TRAINER?$"
 
 PetalburgCity_Text_WellMaybeNot:
 	.string "… … … … … …\p"

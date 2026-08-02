@@ -138,7 +138,7 @@ DewfordTown_EventScript_SailToPetalburg::
 	resetobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN
 	warp MAP_ROUTE104_MR_BRINEYS_HOUSE, 5, 4
 	copyvar VAR_GARBAGEVAR, VAR_0x8008
-	waitstate
+	@waitstate
 	release
 	end
 
@@ -637,7 +637,7 @@ DewfordTown_Text_TownSign:
 	.string "“A tiny island in the blue sea.”$"
 
 DewfordTown_Text_GymSign:
-	.string "DEWFORD TOWN POKéMON GYM\p"
+	.string "DEWFORD TOWN Pokémon GYM\p"
 	.string "Closed permanently due\n"
 	.string "to LEAGUE regulations.$"
 

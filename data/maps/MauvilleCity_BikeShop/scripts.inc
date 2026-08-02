@@ -195,8 +195,9 @@ MauvilleCity_BikeShop_Text_GuessYouDontNeedBike:
 MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne:
 	.string "RYDEL: Hm, hm… … … … …\p"
 	.string "You're saying that you came all this\n"
-	.string "way from LITTLEROOT?\p"
+	.string "way from NEW BARK TOWN?\p"
 	.string "My goodness!\n"
+	.string "All the way from the JOHTO region?\p"
 	.string "That's ridiculously far!\p"
 	.string "If you had one of my BIKES, you could\n"
 	.string "go anywhere easily while feeling the\l"

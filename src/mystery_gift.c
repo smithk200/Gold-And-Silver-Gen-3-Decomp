@@ -4,7 +4,7 @@
 #include "event_data.h"
 #include "easy_chat.h"
 #include "script.h"
-#include "battle_tower.h"
+#include "battle_special.h"
 #include "wonder_news.h"
 #include "string_util.h"
 #include "new_game.h"
@@ -301,6 +301,23 @@ static const u16 sReceivedGiftFlags[] =
     FLAG_RECEIVED_AURORA_TICKET,
     FLAG_RECEIVED_MYSTIC_TICKET,
     FLAG_RECEIVED_OLD_SEA_MAP,
+    //FLAG_WONDER_CARD_UNUSED_1,
+    //FLAG_WONDER_CARD_UNUSED_2,
+    //FLAG_WONDER_CARD_UNUSED_3,
+    FLAG_WONDER_CARD_UNUSED_4,
+    FLAG_WONDER_CARD_UNUSED_5,
+    FLAG_WONDER_CARD_UNUSED_6,
+    FLAG_WONDER_CARD_UNUSED_7,
+    FLAG_WONDER_CARD_UNUSED_8,
+    FLAG_WONDER_CARD_UNUSED_9,
+    FLAG_WONDER_CARD_UNUSED_10,
+    FLAG_WONDER_CARD_UNUSED_11,
+    FLAG_WONDER_CARD_UNUSED_12,
+    FLAG_WONDER_CARD_UNUSED_13,
+    FLAG_WONDER_CARD_UNUSED_14,
+    FLAG_WONDER_CARD_UNUSED_15,
+    FLAG_WONDER_CARD_UNUSED_16,
+    FLAG_WONDER_CARD_UNUSED_17,
 };
 
 bool32 IsSavedWonderCardGiftNotReceived(void)

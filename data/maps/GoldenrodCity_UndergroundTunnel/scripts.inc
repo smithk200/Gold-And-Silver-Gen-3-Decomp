@@ -156,7 +156,7 @@ GoldenrodUnderground_EventScript_Brother_Haircut1::
 GoldenrodUnderground_EventScript_Haircut1::
 	msgbox GoldenrodUnderground_Text_OlderBrotherAskWhich
 	special ChoosePartyMon
-	waitstate
+	@waitstate
 	showmoneybox 0, 0
 	lock
 	faceplayer
@@ -218,7 +218,7 @@ GoldenrodUnderground_EventScript_Brother_Haircut2::
 GoldenrodUnderground_EventScript_Haircut2::
 	msgbox GoldenrodUnderground_Text_YoungerBrotherAskWhich
 	special ChoosePartyMon
-	waitstate
+	@waitstate
 	showmoneybox 0, 0
 	lock
 	faceplayer
@@ -319,15 +319,15 @@ GoldenrodCity_UndergroundTunnel_EventScript_Item_Antidote::
 
 
 GoldenrodUnderground_Text_YoungerBrotherOffer:
-    .string "Welcome to the POKéMON SALON!\p"
+    .string "Welcome to the Pokémon SALON!\p"
     .string "I'm the younger and less expensive\n"
     .string "of the two HAIRCUT BROTHERS.\p"
-    .string "I'll spiff up your POKéMON for just\n"
+    .string "I'll spiff up your Pokémon for just\n"
     .string "¥300.\p"
     .string "So? How about it?$"
 
 GoldenrodUnderground_Text_YoungerBrotherAskWhich:
-    .string "OK, which POKéMON should I do?$"
+    .string "OK, which Pokémon should I do?$"
 
 GoldenrodUnderground_Text_YoungerBrotherLookCool:
     .string "OK! I'll make it look cool!$"
@@ -349,15 +349,15 @@ GoldenrodUnderground_Text_YoungerBrotherOnePerDay:
 
 GoldenrodUnderground_Text_OlderBrotherOffer:
     .string "Welcome!\p"
-    .string "I run the POKéMON SALON!\p"
+    .string "I run the Pokémon SALON!\p"
     .string "I'm the older and better of the two\n"
     .string "HAIRCUT BROTHERS.\p"
-    .string "I can make your POKéMON beautiful\n"
+    .string "I can make your Pokémon beautiful\n"
     .string "for just ¥500.\p"
     .string "Would you like me to do that?$"
 
 GoldenrodUnderground_Text_OlderBrotherAskWhich:
-    .string "Which POKéMON should I work on?$"
+    .string "Which Pokémon should I work on?$"
 
 GoldenrodUnderground_Text_OlderBrotherWatchItBeautiful:
     .string "OK! Watch it become beautiful!$"
@@ -378,7 +378,7 @@ GoldenrodUnderground_Text_OlderBrotherOnePerDay:
 GoldenrodUnderground_Text_SupernerdEricSeen:
     .string "I got booted out of the GAME CORNER.\p"
     .string "I was trying to cheat using my\n"
-    .string "POKéMON…$"
+    .string "Pokémon…$"
 
 GoldenrodUnderground_Text_SupernerdEricBeaten:
     .string "…Grumble…$"
@@ -397,22 +397,22 @@ GoldenrodUnderground_Text_SupernerdTeruBeaten:
     .string "Ow, ow, ow!$"
 
 GoldenrodUnderground_Text_SupernerdTeruAfterBattle:
-    .string "I know my POKéMON type alignments.\p"
-    .string "But I only use one type of POKéMON.$"
+    .string "I know my Pokémon type alignments.\p"
+    .string "But I only use one type of Pokémon.$"
 
 GoldenrodUnderground_Text_PokemaniacIssacSeen:
-    .string "My POKéMON just got a haircut!\p"
+    .string "My Pokémon just got a haircut!\p"
     .string "I'll show you how strong it is!$"
 
 GoldenrodUnderground_Text_PokemaniacIssacBeaten:
     .string "Aiyeeee!$"
 
 GoldenrodUnderground_Text_PokemaniacIssacAfterBattle:
-    .string "Your POKéMON will like you more if\n"
+    .string "Your Pokémon will like you more if\n"
     .string "you give them haircuts.$"
 
 GoldenrodUnderground_Text_PokemaniacDonaldSeen:
-    .string "I think you have some rare POKéMON\n"
+    .string "I think you have some rare Pokémon\n"
     .string "with you.\p"
     .string "Let me see them!$"
 
@@ -430,7 +430,7 @@ GoldenrodUnderground_Text_PokemaniacDonaldAfterBattleOld:
     .string "The HIKER on ROUTE 33, ANTHONY, is a\n"
     .string "good guy.\p"
     .string "He'll phone you if he sees any rare\n"
-    .string "POKéMON.$"
+    .string "Pokémon.$"
 
 GoldenrodUnderground_Text_DoorsLocked:
     .string "The door's locked…$"

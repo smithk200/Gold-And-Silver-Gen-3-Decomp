@@ -79,12 +79,12 @@ NationalPark_Normal_Text_Teacher1:
 	.string "Pay attention, please!\p"
 	.string "…Oops, I have to quit thinking like\n"
 	.string "a teacher all the time.\p"
-	.string "You must be a POKéMON trainer.\p"
+	.string "You must be a Pokémon trainer.\p"
 	.string "Since you're working so hard, I\n"
 	.string "want you to have this.$"
 
 NationalPark_Normal_Text_Teacher1_QuickClaw:
-	.string "Let a POKéMON hold that QUICK CLAW.\p"
+	.string "Let a Pokémon hold that QUICK CLAW.\p"
 	.string "Sometimes it will strike first\n"
 	.string "during battle.$"
 
@@ -101,7 +101,7 @@ NationalPark_Normal_Text_Teacher2:
 	.string "never go into the grass.\p"
 	.string "Trainers always want to battle…\p"
 	.string "You must have been in many battles.\n"
-	.string "Let me heal your POKéMON for you.$"
+	.string "Let me heal your Pokémon for you.$"
 
 NationalPark_Normal_Text_Persian:
 	.string "PERSIAN: Fufushaa!$"
@@ -135,7 +135,7 @@ NationalPark_Normal_EventScript_Item_Soothe_Bell::
 	end
 
 NationalPark_Normal_Text_SchoolboyJack1_Seen:
-	.string "The world of POKéMON is deep.\p"
+	.string "The world of Pokémon is deep.\p"
 	.string "There are still lots of things we\n"
 	.string "don't know.\p"
 	.string "But I know more than you do!$"
@@ -147,10 +147,10 @@ NationalPark_Normal_Text_SchoolboyJack_After:
 	.string "There is a lot to learn.\p"
 	.string "For example…\p"
 	.string "There are 50 kinds of TMs.\p"
-	.string "Traded POKéMON level up faster.$"
+	.string "Traded Pokémon level up faster.$"
 
 NationalPark_Normal_Text_PokefanFBeverly1_Seen:
-	.string "My POKéMON are simply darling.\p"
+	.string "My Pokémon are simply darling.\p"
 	.string "Let me tell you how proud my\n"
 	.string "darlings make me.$"
 
@@ -158,19 +158,19 @@ NationalPark_Normal_Text_PokefanFBeverly1_Beaten:
 	.string "I can beat you in pride, but…$"
 
 NationalPark_Normal_Text_PokefanFBeverly_After:
-	.string "I must say, your POKéMON are quite\n"
+	.string "I must say, your Pokémon are quite\n"
 	.string "cute, too.$"
 
 NationalPark_Normal_Text_PokefanmWilliam_Seen:
-	.string "We adore our POKéMON, even if they\n"
+	.string "We adore our Pokémon, even if they\n"
 	.string "dislike us.\p"
 	.string "That's what being a FAN is about.$"
 
 NationalPark_Normal_Text_PokefanmWilliam_Beaten:
-	.string "M-my POKéMON!$"
+	.string "M-my Pokémon!$"
 
 NationalPark_Normal_Text_PokefanmWilliam_After:
-	.string "I lost the battle, but my POKéMON win\n"
+	.string "I lost the battle, but my Pokémon win\n"
 	.string "the prize for being most lovely.$"
 
 NationalPark_Normal_Text_LassKrise_Seen:

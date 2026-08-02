@@ -31,8 +31,8 @@ FuchsiaCity_House2_Text_WardensGranddaughter2:
 
 FuchsiaCity_House2_Text_WardenPhoto:
 	.string "It's a photo of a grinning old man\n"
-	.string "who's surrounded by POKéMON.$"
+	.string "who's surrounded by Pokémon.$"
 
 FuchsiaCity_House2_Text_SafariZonePhoto:
 	.string "It's a photo of a huge grassy plain\n"
-	.string "with rare POKéMON frolicking in it.$"
+	.string "with rare Pokémon frolicking in it.$"

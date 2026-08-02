@@ -86,7 +86,7 @@ FallarborTown_PokemonCenter_1F_Text_LanetteGreeting:
 	.string "You are?\p"
 	.string "Okay, your name's {PLAYER}{KUN}.\n"
 	.string "I can see that you're a TRAINER.\p"
-	.string "So that means you use the POKéMON\n"
+	.string "So that means you use the Pokémon\n"
 	.string "Storage System I developed.\p"
 	.string "How I arrived at that conclusion is\n"
 	.string "a simple deductive process.\p"
@@ -99,7 +99,7 @@ FallarborTown_PokemonCenter_1F_Text_LanetteGreeting:
 	.string "My house is on ROUTE 114.$"
 
 FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown:
-	.string "I wonder what POKéMON looked like\n"
+	.string "I wonder what Pokémon looked like\n"
 	.string "long, long ago?\p"
 	.string "Maybe the FOSSIL MANIAC at the edge\n"
 	.string "of town will know.$"

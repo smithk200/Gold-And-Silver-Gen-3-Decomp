@@ -97,7 +97,7 @@ IslandCave_EventScript_Regice::
 	setwildbattle SPECIES_REGICE, 40
 	setflag FLAG_GARBAGEFLAG
 	special StartRegiBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_GARBAGEFLAG
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, IslandCave_EventScript_DefeatedRegice

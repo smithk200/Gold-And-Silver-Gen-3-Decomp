@@ -24,10 +24,10 @@ BugContest_EventScript_TimesUp::
 	closemessage
 	BugContest_EventScript_TimesUp2::
 	special ChoosePartyMon
-	waitstate
-	copyvar VAR_0x800A, VAR_0x8004
+
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, BugContest_EventScript_WrongChoiceMon
-	goto_if_eq VAR_0x8004, 0, BugContest_EventScript_WrongChoiceMon
+	special ValidateBugContestSelectedMon
+	goto_if_eq VAR_RESULT, FALSE, BugContest_EventScript_WrongChoiceMon
 	fadescreen FADE_TO_BLACK
 	warp MAP_NATIONAL_PARK_BUG_CONTEST, 5
 	delay 90

@@ -297,7 +297,7 @@ IlexForest_EventScript_Celebi_Event::
 	waitmoncry
 	seteventmon SPECIES_CELEBI, 40
 	special BattleSetup_StartLegendaryBattle
-waitstate
+@waitstate
 	specialvar VAR_RESULT, GetBattleOutcome
 	call_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, IlexForest_EventScript_Shrine_Caught
 	fadescreenswapbuffers FADE_TO_BLACK
@@ -338,7 +338,7 @@ IlexForest_EventScript_SecondCelebi::
 	waitmoncry
 	seteventmon SPECIES_CELEBI, 40
 	special BattleSetup_StartLegendaryBattle
-waitstate
+@waitstate
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, IlexForest_EventScript_SecondCelebiRan
 	fadescreenswapbuffers FADE_TO_BLACK
@@ -708,11 +708,11 @@ IlexForest_Text_ApprenticeIntro:
 
 IlexForest_Text_ApprenticeAfter:
 	.string "Wow! Thanks a whole bunch!\p"
-	.string "My boss's POKéMON won't obey me\n"
+	.string "My boss's Pokémon won't obey me\n"
 	.string "because I don't have a BADGE.$"
 
 IlexForest_Text_ItsTheMissingPokemon:
-	.string "It's the missing POKéMON!$"
+	.string "It's the missing Pokémon!$"
 
 IlexForest_Text_Kwaaaa:
 	.string "FARFETCH'D: Kwaa!$"
@@ -728,7 +728,7 @@ IlexForest_Text_CharcoalMasterIntro:
 
 IlexForest_Text_CharcoalMasterOutro:
 	.string "That's the CUT HM.\n"
-	.string "Teach that to a POKéMON to clear\l"
+	.string "Teach that to a Pokémon to clear\l"
 	.string "small trees.\p"
 	.string "Of course, you have to have the\n"
 	.string "GYM BADGE from AZALEA to use it.$"
@@ -741,14 +741,14 @@ IlexForest_Text_CharcoalMasterTalkAfter:
 MoveTutor_Text_HeadbuttTeach:
 	.string "What am I doing?\p"
 	.string "I'm shaking trees using HEADBUTT.\p"
-	.string "Do you think your POKéMON will\n"
+	.string "Do you think your Pokémon will\n"
 	.string "want to HEADBUTT, too?\p"
 	.string "I can teach one the move HEADBUTT\n"
 	.string "if you'd like. It's fun!$"
 	
 MoveTutor_Text_HeadbuttWhichMon:
 	.string "Ehehe, sure thing! It'd be great if\n"
-	.string "the POKéMON looked like me.$"
+	.string "the Pokémon looked like me.$"
 
 MoveTutor_Text_HeadbuttDeclined:
 	.string "You don't need to be shy about it.\n"
@@ -756,7 +756,7 @@ MoveTutor_Text_HeadbuttDeclined:
 
 MoveTutor_Text_HeadbuttTaught:
 	.string "Rattle trees with HEADBUTT.\n"
-	.string "Sometimes, sleeping POKéMON fall out.$"
+	.string "Sometimes, sleeping Pokémon fall out.$"
 
 IlexForest_Text_Lass:
 	.string "Did something happen to the\n"
@@ -797,13 +797,13 @@ IlexForest_Text_KurtCaughtCelebi:
 
 IlexForest_Text_BugCatcherWayneSeen:
 	.string "Don't sneak up on me like that!\p"
-	.string "You frightened a POKéMON away!$"
+	.string "You frightened a Pokémon away!$"
 
 IlexForest_Text_BugCatcherWayneBeaten:
-	.string "I hadn't seen that POKéMON before…$"
+	.string "I hadn't seen that Pokémon before…$"
 
 IlexForest_Text_BugCatcherWayneAfter:
-	.string "A POKéMON I've never seen before\n"
+	.string "A Pokémon I've never seen before\n"
 	.string "fell out of the tree when I used\l"
 	.string "HEADBUTT.\p"
 	.string "I ought to use HEADBUTT in other\n"
@@ -827,7 +827,7 @@ IlexForest_Text_Kimono_Girl3:
 IlexForest_Text_Kimono_Girl4:
 	.string "Wow! Are you going to show me how\n"
 	.string "to get out?\p"
-	.string "You are such a smart POKéMON!$"
+	.string "You are such a smart Pokémon!$"
 
 IlexForest_Text_Kimono_Girl5:
 	.string "See you.$"

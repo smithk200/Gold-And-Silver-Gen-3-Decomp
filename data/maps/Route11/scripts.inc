@@ -33,12 +33,12 @@ Route11_EventScript_Engineer::
 	end
 
 Route11_Text_Engineer:
-	.string "I saw a strange POKéMON climbing\n"
+	.string "I saw a strange Pokémon climbing\n"
 	.string "in the trees, but it didn't\l"
 	.string "look like MANKEY...$"
 
 Route11_Text_YoungsterOwenSeen:
-	.string "There's no cheating in POKéMON.\p"
+	.string "There's no cheating in Pokémon.\p"
 	.string "Let's keep it fair and square!$"
 
 Route11_Text_YoungsterOwenBeaten:
@@ -57,7 +57,7 @@ Route11_Text_YoungsterJasonBeaten:
 	.string "Aiyaaah! I got stomped!$"
 
 Route11_Text_YoungsterJasonAfterBattle:
-	.string "I'm going to catch more POKéMON in\n"
+	.string "I'm going to catch more Pokémon in\n"
 	.string "the grass.$"
 
 Route11_Text_PsychicHermanSeen:
@@ -80,7 +80,7 @@ Route11_Text_PsychicFidelBeaten:
 Route11_Text_PsychicFidelAfterBattle:
 	.string "Strength in conviction…\p"
 	.string "You're strong because you believe\n"
-	.string "in your POKéMON.$"
+	.string "in your Pokémon.$"
 
 Route11_Text_Sign:
 	.string "ROUTE 11$"

@@ -268,12 +268,12 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "Hey, how's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
 	.string "SLATEPORT's GYM LEADER WALLACE commands\n"
-	.string "WATER-type POKéMON.\p"
+	.string "WATER-type Pokémon.\p"
 	.string "You'd better not bring a FIRE-type\n"
-	.string "POKéMON, otherwise you're in for a\l"
+	.string "Pokémon, otherwise you're in for a\l"
 	.string "serious splashing!\p"
-	.string "Though if you bring in a GRASS POKéMON\n"
-	.string "or an ELECTRIC POKéMON, you can take on\n"
+	.string "Though if you bring in a GRASS Pokémon\n"
+	.string "or an ELECTRIC Pokémon, you can take on\n"
 	.string "the powerful WALLACE!\p"
 	.string "However, the GYM is a winding,\n"
 	.string "long maze and you don't know what awaits!\p"
@@ -308,7 +308,7 @@ DewfordTown_Gym_Text_JocelynPostBattle:
 	.string "I'm not going to waste this loss.\n"
 	.string "I'll use it to motivate me to train!\p"
 	.string "One day I'll become a GYM LEADER…\p"
-	.string "No, I'll become the POKéMON LEAGUE\n"
+	.string "No, I'll become the Pokémon LEAGUE\n"
 	.string "CHAMPION!$"
 
 DewfordTown_Gym_Text_LauraIntro:
@@ -374,7 +374,7 @@ DewfordTown_Gym_Text_BrawlyIntro:
 
 DewfordTown_Gym_Text_BrawlyDefeat:
 	.string "Well played, and elegant too!\n"
-	.string "Your POKéMON were well raised!\p"
+	.string "Your Pokémon were well raised!\p"
 	.string "You have earned this GYM BADGE!$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
@@ -382,7 +382,7 @@ DewfordTown_Gym_Text_ReceivedKnuckleBadge:
 	.string "from WALLACE.$"
 
 DewfordTown_Gym_Text_WallacePostBattle_1:
-	.string "The WAVE BADGE makes all POKéMON\n"
+	.string "The WAVE BADGE makes all Pokémon\n"
 	.string "up to Level 30, even those you get in\l"
 	.string "trades, obey without question.\p"
 	.string "And, you'll be able to use the HM move\n"
@@ -407,10 +407,10 @@ DewfordTown_Gym_Text_BrawlyPostBattle:
 	.string "Good luck on your future endeavors!$"
 
 DewfordTown_Gym_Text_GymStatue:
-	.string "SLATEPORT CITY POKéMON GYM$"
+	.string "SLATEPORT CITY Pokémon GYM$"
 
 DewfordTown_Gym_Text_GymStatueCertified:
-	.string "SLATEPORT CITY POKéMON GYM\p"
+	.string "SLATEPORT CITY Pokémon GYM\p"
 	.string "WALLACE'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
@@ -436,7 +436,7 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 	.string "always returns to the shore.\p"
 	.string "A giant wave of a talent like you…\n"
 	.string "I knew you would return!\p"
-	.string "Oh? You only have one POKéMON\n"
+	.string "Oh? You only have one Pokémon\n"
 	.string "that can battle.\p"
 	.string "I'm sorry, but I'd like you to come back\n"
-	.string "with at least two POKéMON.$"
+	.string "with at least two Pokémon.$"

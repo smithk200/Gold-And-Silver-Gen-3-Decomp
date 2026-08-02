@@ -126,7 +126,7 @@ GoldenrodCity_RadioTower_4F4_Text_DJMaryPinkBow:
 
 GoldenrodCity_RadioTower_4F4_Text_DJMaryAfter:
 	.string "MARY: Please tune into me on PROF.\n"
-	.string "OAK'S POKéMON TALK show!$"
+	.string "OAK'S Pokémon TALK show!$"
 
 GoldenrodCity_RadioTower_4F4_Text_Meowth:
 	.string "MEOWTH: Meowth…$"
@@ -157,8 +157,8 @@ GoldenrodCity_RadioTower_4F4_Text_ExecutiveM2After:
 	.string "back.$"
 
 GoldenrodCity_RadioTower_4F4_Text_GruntF4Seen:
-	.string "Don't I think POKéMON are cute?\p"
-	.string "I'll think my POKéMON are cute--\p"
+	.string "Don't I think Pokémon are cute?\p"
+	.string "I'll think my Pokémon are cute--\p"
 	.string "after they beat yours!$"
 
 GoldenrodCity_RadioTower_4F4_Text_GruntF4Beaten:
@@ -166,7 +166,7 @@ GoldenrodCity_RadioTower_4F4_Text_GruntF4Beaten:
 
 GoldenrodCity_RadioTower_4F4_Text_GruntF4After:
 	.string "I love my beautiful self!\p"
-	.string "Who cares about POKéMON?$"
+	.string "Who cares about Pokémon?$"
 
 GoldenrodCity_RadioTower_4F4_Text_ScientistRichSeen:
 	.string "Most excellent.\p"

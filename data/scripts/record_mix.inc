@@ -9,7 +9,7 @@ EventScript_MixRecordsPrompt::
 
 EventScript_MixRecords::
 	special RecordMixingPlayerSpotTriggered
-	waitstate
+	@waitstate
 	lock
 	faceplayer
 EventScript_EndMixRecords::

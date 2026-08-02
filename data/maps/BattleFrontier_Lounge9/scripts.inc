@@ -16,7 +16,7 @@ BattleFrontier_Lounge9_Heal::
 
 BattleFrontier_Lounge9_Heal_TEXT:
 	.string "Hi! Welcome to the FIGHTING DOJO!\n"
-	.string "I will heal your POKéMON.$"
+	.string "I will heal your Pokémon.$"
 
 BattleFrontier_Lounge9_Heal_TEXT2:
 	.string "We hope to see you again!$"

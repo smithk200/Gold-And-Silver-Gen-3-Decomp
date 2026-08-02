@@ -231,7 +231,7 @@ MahoganyMart1F_Text_BlackBelt:
 
 MahoganyMart1F_Text_BlackBelt_Lance:
     .string "Urrgh…\p"
-    .string "That guy's POKéMON are tough…$"
+    .string "That guy's Pokémon are tough…$"
 
 MahoganyMart1F_Text_Lance_HyperBeam:
     .string "LANCE: DRAGONITE, HYPER BEAM.$"

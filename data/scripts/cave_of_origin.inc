@@ -32,7 +32,7 @@ CaveOfOrigin_EventScript_Shake::
 	setvar VAR_0x8006, 8  @ num shakes
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	releaseall
 	end
 

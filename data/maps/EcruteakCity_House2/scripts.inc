@@ -3,7 +3,7 @@ EcruteakCity_House2_MapScripts::
 
 Ecruteak_Text_ItemfinderAdventure:
 	.string "Ah. You're on an adventure with\n"
-	.string "your POKéMON?\p"
+	.string "your Pokémon?\p"
 	.string "Well, what's an adventure without\n"
 	.string "treasure hunting?\p"
 	.string "Am I right, or am I right?$"
@@ -66,16 +66,16 @@ Ecruteak_Text_HistoryBook:
 Ecruteak_Text_TwoTowers:
 	.string "In ECRUTEAK, there were two towers.\p"
 	.string "Each tower was the roost of\n"
-	.string "powerful flying POKéMON.\p"
+	.string "powerful flying Pokémon.\p"
 	.string "But one of the towers burned to\n"
 	.string "the ground.\p"
-	.string "The two POKéMON haven't been seen\n"
+	.string "The two Pokémon haven't been seen\n"
 	.string "since…\p"
 	.string "Keep reading?$"
 
 Ecruteak_Text_ThreeMon:
 	.string "ECRUTEAK was also home to three\n"
-	.string "POKéMON that raced around the town.\p"
+	.string "Pokémon that raced around the town.\p"
 	.string "They were said to have been born\n"
 	.string "of water, lightning and fire.\p"
 	.string "But they could not contain their\n"

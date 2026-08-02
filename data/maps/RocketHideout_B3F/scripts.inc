@@ -289,12 +289,12 @@ RocketHideout_B3F_Text_Rival:
     .string "Didn't I tell you that I was\n"
     .string "going to destroy TEAM ROCKET?\p"
     .string "…Tell me, who was the guy in the\n"
-    .string "cape who used dragon POKéMON?\p"
-    .string "My POKéMON were no match at all.\p"
+    .string "cape who used dragon Pokémon?\p"
+    .string "My Pokémon were no match at all.\p"
     .string "It's what he said that bothers\n"
     .string "me…\p"
     .string "He told me that I don't love and\n"
-    .string "trust my POKéMON enough.\p"
+    .string "trust my Pokémon enough.\p"
     .string "It's not my fault my team is so\n"
     .string "useless.\p"
     .string "I'm furious that I lost to a\n"
@@ -681,14 +681,14 @@ RocketHideout_B3F_Text_ScientistRossBeaten:
 
 RocketHideout_B3F_Text_ScientistRossAfter:
     .string "A radio signal that drives\n"
-    .string "POKéMON mad…\p"
+    .string "Pokémon mad…\p"
     .string "My experiment is a complete\n"
     .string "success.\p"
     .string "My promotion is assured. This\n"
     .string "loss means absolutely nothing.$"
 
 RocketHideout_B3F_Text_ScientistMitchSeen:
-    .string "I don't care that POKéMON are hurt\n"
+    .string "I don't care that Pokémon are hurt\n"
     .string "by our experiment.$"
 
 RocketHideout_B3F_Text_ScientistMitchBeaten:

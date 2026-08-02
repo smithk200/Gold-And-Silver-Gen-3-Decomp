@@ -34,7 +34,7 @@ Route26_EventScript_Richard::
 
 Route26_Text_CooltrainermJakeSeen:
     .string "I'm making my final preparations\n"
-    .string "for the POKéMON LEAGUE.$"
+    .string "for the Pokémon LEAGUE.$"
 
 Route26_Text_CooltrainermJakeBeaten:
     .string "I blew it!$"
@@ -54,7 +54,7 @@ Route26_Text_CooltrainermGavenBeaten:
     .string "Gaah! Life is even tougher!$"
 
 Route26_Text_CooltrainermGavenAfter:
-    .string "To get to POKéMON LEAGUE, you have\n"
+    .string "To get to Pokémon LEAGUE, you have\n"
     .string "to get through VICTORY ROAD.\p"
     .string "But VICTORY ROAD is tough.\p"
     .string "Practically nobody goes there!$"
@@ -78,13 +78,13 @@ Route26_Text_CooltrainerfBethSeen:
     .string "He was really strong, but…\p"
     .string "It was as if he absolutely had to\n"
     .string "win at any cost.\p"
-    .string "I felt sorry for his POKéMON.$"
+    .string "I felt sorry for his Pokémon.$"
 
 Route26_Text_CooltrainerfBethBeaten:
-    .string "POKéMON aren't tools of war.$"
+    .string "Pokémon aren't tools of war.$"
 
 Route26_Text_CooltrainerfBethAfter:
-    .string "POKéMON are in-valuable, lifelong\n"
+    .string "Pokémon are in-valuable, lifelong\n"
     .string "partners.$"
 
 Route26_Text_PsychicRichardSeen:
@@ -97,12 +97,12 @@ Route26_Text_PsychicRichardBeaten:
     .string "Good battle!$"
 
 Route26_Text_PsychicRichardAfter:
-    .string "People and POKéMON grow from their\n"
+    .string "People and Pokémon grow from their\n"
     .string "experiences.\p"
     .string "Don't get lazy and complacent.$"
 
 Route26_Text_Sign:
     .string "ROUTE 26\p"
-    .string "POKéMON LEAGUE\n"
+    .string "Pokémon LEAGUE\n"
     .string "RECEPTION GATE$"
 

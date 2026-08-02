@@ -80,7 +80,7 @@ Route104_MrBrineysHouse_EventScript_SailToDewford::
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_HIDE_ROUTE_104_RIVAL
 	warp MAP_ROUTE104, 13, 51
-	waitstate
+	@waitstate
 	releaseall
 	end
 

@@ -44,7 +44,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	setvar VAR_0x8006, 8  @ num shakes
 	setvar VAR_0x8007, 3  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	delay 40
 	msgbox SkyPillar_Outside_Text_EarthquakeNotMomentToWaste, MSGBOX_DEFAULT
 	closemessage
@@ -56,7 +56,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	setvar VAR_0x8006, 20  @ num shakes
 	setvar VAR_0x8007, 5   @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	delay 20
 	applymovement LOCALID_SKY_PILLAR_WALLACE, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
@@ -73,7 +73,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	setweather WEATHER_ABNORMAL
 	doweather
 	special WaitWeather
-	waitstate
+	@waitstate
 	delay 30
 	msgbox SkyPillar_Outside_Text_GotToGoBackForSootopolis, MSGBOX_DEFAULT
 	closemessage

@@ -31,10 +31,10 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	setweather WEATHER_NONE
 	doweather
 	special Script_FadeOutMapMusic
-	waitstate
+	@waitstate
 	msgbox SeafloorCavern_Room9_Text_RedOrbShinesByItself, MSGBOX_DEFAULT
 	special WaitWeather
-	waitstate
+	@waitstate
 	setvar VAR_RESULT, 1
 	playse SE_M_DETECT
 	dofieldeffectsparkle 16, 42, 0
@@ -50,18 +50,18 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	delay 150
 	removeobject LOCALID_SEAFLOOR_CAVERN_KYOGRE_SLEEPING
 	addobject LOCALID_SEAFLOOR_CAVERN_KYOGRE
-	waitstate
+	@waitstate
 	delay 60
 	applymovement LOCALID_SEAFLOOR_CAVERN_KYOGRE, SeafloorCavern_Room9_Movement_KyogreApproach
 	waitmovement 0
 	special FadeOutOrbEffect
-	waitstate
+	@waitstate
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 1  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	applymovement LOCALID_SEAFLOOR_CAVERN_KYOGRE, SeafloorCavern_Room9_Movement_KyogreExit
 	waitmovement 0
 	removeobject LOCALID_SEAFLOOR_CAVERN_KYOGRE
@@ -71,7 +71,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	setvar VAR_0x8006, 8  @ num shakes
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	delay 30
 	setvar VAR_0x8004, LOCALID_SEAFLOOR_CAVERN_ARCHIE
 	setvar VAR_0x8005, LOCALID_SEAFLOOR_CAVERN_MAXIE
@@ -139,7 +139,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	setflag FLAG_GARBAGEFLAG
 	setflag FLAG_GARBAGEFLAG
 	warp MAP_ROUTE128, 38, 22
-	waitstate
+	@waitstate
 	releaseall
 	end
 
@@ -228,7 +228,7 @@ SeafloorCavern_Room9_Text_ArchieSoItWasYou:
 SeafloorCavern_Room9_Text_ArchieBeholdKyogre:
 	.string "ARCHIE: Behold!\p"
 	.string "See how beautiful it is, the sleeping\n"
-	.string "form of the ancient POKéMON KYOGRE!\p"
+	.string "form of the ancient Pokémon KYOGRE!\p"
 	.string "I have waited so long for this day to\n"
 	.string "come…$"
 

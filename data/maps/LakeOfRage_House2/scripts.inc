@@ -27,7 +27,7 @@ LakeOfRage_House2_EventScript_FisherAfterRockets::
 	getpartysize
 	goto_if_eq VAR_RESULT, 1, LakeOfRage_House2_EventScript_LastMon
 	special ChoosePartyMon
-	waitstate
+	@waitstate
 	lock
 	showmoneybox 0, 0
 	copyvar VAR_0x800A, VAR_0x8004
@@ -75,7 +75,7 @@ LakeOfRage_House2_EventScript_FisherAnotherMagikarp::
 	getpartysize
 	goto_if_eq VAR_RESULT, 1, LakeOfRage_House2_EventScript_LastMon
 	special ChoosePartyMon
-	waitstate
+	@waitstate
 	lock
 	showmoneybox 0, 0
 	copyvar VAR_0x800A, VAR_0x8004
@@ -120,7 +120,7 @@ LakeOfRage_House2_Text_MenInBlack:
 
 LakeOfRage_House2_Text_LastMon:
     .string "Well don't let me take your last\n"
-    .string "POKéMON!$"
+    .string "Pokémon!$"
 
 LakeOfRage_House2_Text_WorldsLargest:
     .string "LAKE OF RAGE is back to normal.\p"

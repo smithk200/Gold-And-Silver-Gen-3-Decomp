@@ -129,7 +129,7 @@ FallarborTown_BattleTentLobby_EventScript_TryEnterChallenge::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
 	special ChoosePartyForBattleFrontier
-	waitstate
+	@waitstate
 	goto_if_eq VAR_RESULT, 0, FallarborTown_BattleTentLobby_EventScript_LoadPartyCancelChallenge
 	msgbox FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge, MSGBOX_YESNO
 	switch VAR_RESULT
@@ -157,7 +157,7 @@ FallarborTown_BattleTentLobby_EventScript_EnterChallenge::
 	call FallarborTown_BattleTentLobby_EventScript_WalkToDoor
 	warp MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR, 2, 7
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
-	waitstate
+	@waitstate
 	end
 
 FallarborTown_BattleTentLobby_EventScript_ExplainChallenge::
@@ -314,7 +314,7 @@ FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite:
 	.string "TENT in FALLARBOR TOWN.\p"
 	.string "I think it's fantastic how TRAINERS\n"
 	.string "try to win with all their faith in\l"
-	.string "their POKéMON.$"
+	.string "their Pokémon.$"
 
 FallarborTown_BattleTentLobby_Text_CameToCampOut:
 	.string "I heard something about some tent,\n"

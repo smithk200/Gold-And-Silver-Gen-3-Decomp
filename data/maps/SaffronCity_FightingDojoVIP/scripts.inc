@@ -502,7 +502,7 @@ BattleTower_Outside_EventScript_ChooseLeftTutorMove::
 	setvar VAR_0x8004, SCROLL_MULTI_BF_MOVE_TUTOR_1
 	setvar VAR_0x8006, 0
 	special ShowScrollableMultichoice
-	waitstate
+	@waitstate
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	switch VAR_RESULT
 	case 0, BattleTower_Outside_EventScript_Softboiled
@@ -526,7 +526,7 @@ BattleTower_Outside_EventScript_ChooseNewLeftTutorMove::
 	setvar VAR_0x8004, SCROLL_MULTI_BF_MOVE_TUTOR_1
 	setvar VAR_0x8006, 1
 	special ShowScrollableMultichoice
-	waitstate
+	@waitstate
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	switch VAR_RESULT
 	case 0, BattleTower_Outside_EventScript_Softboiled
@@ -616,7 +616,7 @@ BattleTower_Outside_EventScript_ChooseRightTutorMove::
 	setvar VAR_0x8004, SCROLL_MULTI_BF_MOVE_TUTOR_2
 	setvar VAR_0x8006, 0
 	special ShowScrollableMultichoice
-	waitstate
+	@waitstate
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	switch VAR_RESULT
 	case 0, BattleTower_Outside_EventScript_DefenseCurl
@@ -640,7 +640,7 @@ BattleTower_Outside_EventScript_ChooseNewRightTutorMove::
 	setvar VAR_0x8004, SCROLL_MULTI_BF_MOVE_TUTOR_2
 	setvar VAR_0x8006, 1
 	special ShowScrollableMultichoice
-	waitstate
+	@waitstate
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	switch VAR_RESULT
 	case 0, BattleTower_Outside_EventScript_DefenseCurl
@@ -730,7 +730,7 @@ BattleTower_Outside_EventScript_ChooseElementalTutorMove::
 	setvar VAR_0x8004, SCROLL_MULTI_BF_MOVE_TUTOR_3
 	setvar VAR_0x8006, 0
 	special ShowScrollableMultichoice
-	waitstate
+	@waitstate
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	switch VAR_RESULT
 	case 0, BattleTower_Outside_EventScript_FrenzyPlant
@@ -747,7 +747,7 @@ BattleTower_Outside_EventScript_ChooseNewElementalTutorMove::
 	setvar VAR_0x8004, SCROLL_MULTI_BF_MOVE_TUTOR_3
 	setvar VAR_0x8006, 1
 	special ShowScrollableMultichoice
-	waitstate
+	@waitstate
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	switch VAR_RESULT
 	case 0, BattleTower_Outside_EventScript_FrenzyPlant
@@ -809,7 +809,7 @@ BattleTower_Outside_EventScript_TeachTutorMove::
 	special CloseBattlePointsWindow
 	special CloseBattleFrontierTutorWindow
 	special ChooseMonForMoveTutor
-	waitstate
+	@waitstate
 	goto_if_eq VAR_RESULT, FALSE, BattleTower_Outside_EventScript_CancelChooseMon
 	msgbox BattleTower_Outside_Text_IllTakeBattlePoints, MSGBOX_DEFAULT
 	copyvar VAR_0x8004, VAR_0x8008
@@ -1117,7 +1117,7 @@ BattleTower_Outside_ExchangeServiceCorner_EventScript_ChooseDecor1::
 	setvar VAR_0x8004, SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_1
 	special ShowFrontierExchangeCornerItemIconWindow
 	special ShowScrollableMultichoice
-	waitstate
+	@waitstate
 	special CloseFrontierExchangeCornerItemIconWindow
 	switch VAR_RESULT
 	case 0, BattleTower_Outside_ExchangeServiceCorner_EventScript_KissPoster
@@ -1226,7 +1226,7 @@ BattleTower_Outside_ExchangeServiceCorner_EventScript_ChooseDecor2::
 	setvar VAR_0x8004, SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2
 	special ShowFrontierExchangeCornerItemIconWindow
 	special ShowScrollableMultichoice
-	waitstate
+	@waitstate
 	special CloseFrontierExchangeCornerItemIconWindow
 	switch VAR_RESULT
 	case 0, BattleTower_Outside_ExchangeServiceCorner_EventScript_LaprasDoll
@@ -1290,7 +1290,7 @@ BattleTower_Outside_ExchangeServiceCorner_EventScript_ChooseVitamin::
 	setvar VAR_0x8004, SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR
 	special ShowFrontierExchangeCornerItemIconWindow
 	special ShowScrollableMultichoice
-	waitstate
+	@waitstate
 	special CloseFrontierExchangeCornerItemIconWindow
 	switch VAR_RESULT
 	case 0, BattleTower_Outside_ExchangeServiceCorner_EventScript_Protein
@@ -1369,7 +1369,7 @@ BattleTower_Outside_ExchangeServiceCorner_EventScript_ChooseHoldItem::
 	setvar VAR_0x8004, SCROLL_MULTI_BF_EXCHANGE_CORNER_HOLD_ITEM_VENDOR
 	special ShowFrontierExchangeCornerItemIconWindow
 	special ShowScrollableMultichoice
-	waitstate
+	@waitstate
 	special CloseFrontierExchangeCornerItemIconWindow
 	switch VAR_RESULT
 	case 0, BattleTower_Outside_ExchangeServiceCorner_EventScript_Leftovers
@@ -1803,7 +1803,7 @@ SaffronCity_FightingDojoVIP_Text_Falkner_Rematch:
 	.string "Congratulations on defeating\n"
 	.string "the ELITE 4!\p"
 	.string "I've been training my\n"
-	.string "FLYING-type POKéMON even harder.\p"
+	.string "FLYING-type Pokémon even harder.\p"
 	.string "Think you can take on the power\n"
 	.string "of the skies again?$"
 
@@ -1846,7 +1846,7 @@ SaffronCity_FightingDojoVIP_Text_Morty_Rematch:
 	.string "skill, but have you improved\l"
 	.string "since our last battle?\p"
 	.string "I've been training with my\n"
-	.string "GHOST-type POKéMON.\p"
+	.string "GHOST-type Pokémon.\p"
 	.string "Let's see if you can overcome\n"
 	.string "the shadows once again.\p"
 	.string "Want to have a rematch with me?$"
@@ -1922,7 +1922,7 @@ SaffronCity_FightingDojoVIP_Text_Brock_Rematch:
 	.string "Want to have a rematch with me?$"
 
 SaffronCity_FightingDojoVIP_Text_Brock_RematchDefeat:
-	.string "BROCK: Your POKéMON once again\n"
+	.string "BROCK: Your Pokémon once again\n"
 	.string "overcame my rock-hard defense…$"
 
 SaffronCity_FightingDojoVIP_Text_Misty_Rematch:
@@ -1971,7 +1971,7 @@ SaffronCity_FightingDojoVIP_Text_Sabrina_Rematch:
 
 SaffronCity_FightingDojoVIP_Text_Sabrina_RematchDefeat:
 	.string "SABRINA: Your love for your\n"
-	.string "POKéMON again overwhelmed my\l"
+	.string "Pokémon again overwhelmed my\l"
 	.string "psychic power…$"
 
 SaffronCity_FightingDojoVIP_Text_Janine_Rematch:

@@ -12,22 +12,22 @@ static void FakeRtc_CalcTimeDifference(struct Time *result, struct SiiRtcInfo *t
 
 void FakeRtc_Reset(void)
 {
-#if OW_USE_FAKE_RTC
+//#if OW_USE_FAKE_RTC
     memset(&gSaveBlock3Ptr->fakeRTC, 0, sizeof(gSaveBlock3Ptr->fakeRTC));
     gSaveBlock3Ptr->fakeRTC.year = 0; // offset by gGen3Epoch.year
     gSaveBlock3Ptr->fakeRTC.month = gGen3Epoch.month;
     gSaveBlock3Ptr->fakeRTC.day = gGen3Epoch.day;
     gSaveBlock3Ptr->fakeRTC.dayOfWeek = gGen3Epoch.dayOfWeek;
-#endif
+//#endif
 }
 
 struct SiiRtcInfo *FakeRtc_GetCurrentTime(void)
 {
-#if OW_USE_FAKE_RTC
+//#if OW_USE_FAKE_RTC
     return &gSaveBlock3Ptr->fakeRTC;
-#else
-    return NULL;
-#endif
+//#else
+    //return NULL;
+//#endif
 }
 
 void FakeRtc_GetRawInfo(struct SiiRtcInfo *rtc)
@@ -41,6 +41,9 @@ void FakeRtc_TickTimeForward(void)
 {
     if (!OW_USE_FAKE_RTC)
         return;
+    
+    if (gSaveBlock1Ptr->tx_Features_RTCType == 0) // real rtc
+        return;
 
     if (FlagGet(OW_FLAG_PAUSE_TIME))
         return;
@@ -50,6 +53,12 @@ void FakeRtc_TickTimeForward(void)
 
 void FakeRtc_AdvanceTimeBy(u32 days, u32 hours, u32 minutes, u32 seconds)
 {
+    if (!OW_USE_FAKE_RTC)
+        return;
+
+    if (gSaveBlock1Ptr->tx_Features_RTCType == 0) // real rtc
+        return;
+
     struct DateTime dateTime;
     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
 
@@ -63,6 +72,12 @@ void FakeRtc_AdvanceTimeBy(u32 days, u32 hours, u32 minutes, u32 seconds)
 
 void FakeRtc_ForwardTimeTo(u32 hour, u32 minute, u32 second)
 {
+    if (!OW_USE_FAKE_RTC)
+        return;
+
+    if (gSaveBlock1Ptr->tx_Features_RTCType == 0) // real rtc
+        return;
+
     Script_PauseFakeRtc();
     struct Time diff, target;
     struct SiiRtcInfo *fakeRtc = FakeRtc_GetCurrentTime();

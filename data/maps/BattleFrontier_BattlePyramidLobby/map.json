@@ -3,6 +3,7 @@
   "name": "BattleFrontier_BattlePyramidLobby",
   "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY",
   "music": "MUS_B_PYRAMID",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_BATTLE_FRONTIER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -12,9 +13,10 @@
   "allow_running": false,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
+      "local_id": "LOCALID_PYRAMID_LOBBY_ATTENDANT",
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
       "x": 7,
       "y": 12,
@@ -28,7 +30,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CHANNELER",
+      "local_id": "LOCALID_PYRAMID_LOBBY_HINT_GIVER",
+      "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
       "x": 14,
       "y": 13,
       "elevation": 4,
@@ -41,7 +44,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
       "x": 2,
       "y": 15,
       "elevation": 4,
@@ -76,9 +79,7 @@
       "dest_warp_id": "3"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

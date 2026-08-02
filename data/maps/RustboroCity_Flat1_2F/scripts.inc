@@ -10,7 +10,7 @@ RustboroCity_Flat1_2F_EventScript_WaldasDad::
 
 RustboroCity_Flat1_2F_EventScript_GivePhrase::
 	special DoWaldaNamingScreen
-	waitstate
+	@waitstate
 	goto_if_eq VAR_0x8004, 1, RustboroCity_Flat1_2F_EventScript_CancelGivePhrase
 	goto_if_eq VAR_0x8004, 2, RustboroCity_Flat1_2F_EventScript_CancelGiveFirstPhrase
 	specialvar VAR_RESULT, TryGetWallpaperWithWaldaPhrase
@@ -165,12 +165,12 @@ RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper:
 	.string "for you?\p"
 	.string "I know, I'll add some new wallpaper\n"
 	.string "patterns for the BOXES in the PC\l"
-	.string "POKéMON Storage System.\p"
+	.string "Pokémon Storage System.\p"
 	.string "In the wallpaper pattern menu,\n"
 	.string "select “FRIENDS.”\p"
 	.string "That will give you access to the new\n"
 	.string "wallpaper patterns.$"
 
 RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll:
-	.string "It's a POKéMON plush DOLL!$"
+	.string "It's a Pokémon plush DOLL!$"
 

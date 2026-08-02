@@ -85,9 +85,10 @@ Route112_Text_CantLetAnyonePassUntilTheyreBack:
 	.string "we're not to let anyone pass, right.$"
 
 Route112_Text_NotEasyToGetBackToLavaridge:
-	.string "Eh, I'd like to get to MAUVILLE, but if\n"
-	.string "I went down these ledges, it'd be no\l"
-	.string "easy matter to get back to LAVARIDGE.$"
+	.string "Thank goodness someone finally decided\n"
+	.string "to do something about these ledges!\p"
+	.string "Now it's an easy matter to get back\n"
+	.string "and forth to LAVARIDGE.$"
 
 Route112_Text_MtChimneyCableCarSign:
 	.string "MT. CHIMNEY CABLE CAR\n"

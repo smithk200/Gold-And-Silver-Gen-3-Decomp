@@ -212,7 +212,7 @@ SaffronCity_CopyCatsHouse_2F_EventScript_CopycatAfterDollReturned_Female::
 	end
 
 Copycat_Text_Male_1:
-	.string "{PLAYER}: Hi! Do you like POKéMON?\p"
+	.string "{PLAYER}: Hi! Do you like Pokémon?\p"
 	.string "{PLAYER}: Uh, no, I just asked you.\p"
 	.string "{PLAYER}: Huh? You're strange!$"
 
@@ -271,5 +271,5 @@ Copycat_Text_Dodrio2:
 	.string "WHO'S THE FAIREST ONE OF ALL?$"
 
 Copycat_Text_2FDoll:
-	.string "This is a rare POKéMON! Huh?\p"
+	.string "This is a rare Pokémon! Huh?\p"
 	.string "It's only a doll…$"

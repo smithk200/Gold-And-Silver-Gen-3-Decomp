@@ -326,8 +326,8 @@ SlatePort_EventScript_ChoseBattleFrontier::
 SlatePort_EventScript_ChoseVermilion::
 	closemessage
 	delay 20
-	checkitem ITEM_SS_TICKET
-	bufferitemname STR_VAR_1, ITEM_SS_TICKET
+	@checkitem ITEM_SS_TICKET
+	@bufferitemname STR_VAR_1, ITEM_SS_TICKET
 	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
 	call SlatePort_EventScript_EnterShip
 	warpsilent MAP_VERMILION_CITY_PORT_INSIDE, 8, 9
@@ -337,8 +337,8 @@ SlatePort_EventScript_ChoseVermilion::
 SlatePort_EventScript_ChoseSouthernIsland::
 	closemessage
 	delay 20
-	checkitem ITEM_EON_TICKET
-	bufferitemname STR_VAR_1, ITEM_EON_TICKET
+	@checkitem ITEM_EON_TICKET
+	@bufferitemname STR_VAR_1, ITEM_EON_TICKET
 	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
 	call SlatePort_EventScript_EnterShip
 	warpsilent MAP_SOUTHERN_ISLAND_EXTERIOR, 13, 22
@@ -348,8 +348,8 @@ SlatePort_EventScript_ChoseSouthernIsland::
 SlatePort_EventScript_ChoseBirthIsland::
 	closemessage
 	delay 20
-	checkitem ITEM_AURORA_TICKET
-	bufferitemname STR_VAR_1, ITEM_AURORA_TICKET
+	@checkitem ITEM_AURORA_TICKET
+	@bufferitemname STR_VAR_1, ITEM_AURORA_TICKET
 	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
 	call SlatePort_EventScript_EnterShip
 	warpsilent MAP_BIRTH_ISLAND_EXTERIOR, 13, 23
@@ -359,8 +359,8 @@ SlatePort_EventScript_ChoseBirthIsland::
 SlatePort_EventScript_ChoseFarawayIsland::
 	closemessage
 	delay 20
-	checkitem ITEM_OLD_SEA_MAP
-	bufferitemname STR_VAR_1, ITEM_OLD_SEA_MAP
+	@checkitem ITEM_OLD_SEA_MAP
+	@bufferitemname STR_VAR_1, ITEM_OLD_SEA_MAP
 	goto_if_eq VAR_RESULT, FALSE, OlivinePort_EventScript_Sailor_NoCredentials
 	call SlatePort_EventScript_EnterShip
 	warpsilent MAP_FARAWAY_ISLAND_ENTRANCE, 13, 38
@@ -649,7 +649,7 @@ Route109_Text_LittleKidsDartAround:
 	.string "Little kids can dart around so quickly…\p"
 	.string "You don't dare take your eyes off them\n"
 	.string "for an instant. It's very taxing.\p"
-	.string "Mine are with my POKéMON, so they\n"
+	.string "Mine are with my Pokémon, so they\n"
 	.string "should be okay, but…$"
 
 Route109_Text_SandCastleTakingLongTime:
@@ -685,10 +685,10 @@ Route109_Text_SeashoreHouseSign:
 
 Route109_Text_TrainerTipsSign:
 	.string "TRAINER TIPS\p"
-	.string "POKéMON at the same level may not\n"
+	.string "Pokémon at the same level may not\n"
 	.string "always have identical stats.\p"
-	.string "POKéMON raised by TRAINERS are said\n"
-	.string "to grow stronger than wild POKéMON.$"
+	.string "Pokémon raised by TRAINERS are said\n"
+	.string "to grow stronger than wild Pokémon.$"
 
 SlatePort_Text_WhereSail::
 	.string "Where do you want to\n"

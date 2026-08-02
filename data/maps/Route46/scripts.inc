@@ -35,7 +35,7 @@ Route46_EventScript_Item_Revive::
 
 Route46_Text_HikerBaileySeen:
 	.string "Awright! I'll show you the\n"
-	.string "power of mountain POKéMON!$"
+	.string "power of mountain Pokémon!$"
 
 Route46_Text_HikerBaileyBeaten:
 	.string "Mercy! You showed me your\n"
@@ -46,7 +46,7 @@ Route46_Text_HikerBaileyAfterBattle:
 	.string "We HIKERS are like that.$"
 
 Route46_Text_CamperTedSeen:
-	.string "I'm raising POKéMON too!\p"
+	.string "I'm raising Pokémon too!\p"
 	.string "Will you battle with me?$"
 
 Route46_Text_CamperTedBeaten:
@@ -58,7 +58,7 @@ Route46_Text_CamperTedAfterBattle:
 	.string "No excuses--I admit I lost.$"
 
 Route46_Text_PicnickerErinSeen:
-	.string "I raise POKéMON too!\p"
+	.string "I raise Pokémon too!\p"
 	.string "Will you battle with me?$"
 
 Route46_Text_PicnickerErinBeaten:

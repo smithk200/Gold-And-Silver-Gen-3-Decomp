@@ -35,7 +35,7 @@ GoldenrodCity_DepartmentStore_6F_EventScript_Jose::
 	msgbox GoldenrodCity_DepartmentStore_6F_Text_YouWillTradeWontYou, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, GoldenrodCity_DepartmentStore_6F_EventScript_DeclineTrade
 	special ChoosePartyMon
-	waitstate
+	@waitstate
 	copyvar VAR_0x800A, VAR_0x8004
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, GoldenrodCity_DepartmentStore_6F_EventScript_DeclineTrade
 	copyvar VAR_0x8005, VAR_0x800A
@@ -46,7 +46,7 @@ GoldenrodCity_DepartmentStore_6F_EventScript_Jose::
 	copyvar VAR_0x8005, VAR_0x800A
 	special CreateInGameTradePokemon
 	special DoInGameTradeScene
-	waitstate
+	@waitstate
 	bufferspeciesname STR_VAR_1, VAR_0x8009
 	msgbox GoldenrodCity_DepartmentStore_6F_Text_MonYouTakeCare, MSGBOX_DEFAULT
 	closemessage
@@ -71,7 +71,7 @@ GoldenrodCity_DepartmentStore_6F_EventScript_TradeCompleted::
 	end
 
 GoldenrodCity_DepartmentStore_6F_Text_YouWillTradeWontYou:
-	.string "I collect POKéMON!\n"
+	.string "I collect Pokémon!\n"
 	.string "Do you have a {STR_VAR_1}?\p"
 	.string "Want to trade it for my\n"
 	.string "{STR_VAR_2}?$"
@@ -117,14 +117,14 @@ GoldenrodDeptStore6_EventScript_Sign::
 
 GoldenrodDeptStore_Text_6FLass:
     .string "Do you listen to LUCKY CHANNEL?\p"
-    .string "If you want to win, trade POKéMON\n"
+    .string "If you want to win, trade Pokémon\n"
     .string "with as many people as possible to\l"
     .string "get different ID numbers.$"
 
 GoldenrodDeptStore_Text_6FSuperNerd:
     .string "If you're tired, try the vending\n"
     .string "machine's drinks.\p"
-    .string "Your POKéMON will love them too.$"
+    .string "Your Pokémon will love them too.$"
 
 GoldenrodDeptStore_Text_6FDirectory:
     .string "Take a Break from Shopping!\p"

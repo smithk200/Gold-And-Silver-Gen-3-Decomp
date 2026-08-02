@@ -21,7 +21,7 @@
 
 static bool32 IsMonValidSpecies(struct Pokemon *pokemon)
 {
-    u16 species = GetMonData(pokemon, MON_DATA_SPECIES_OR_EGG);
+    enum Species species = GetMonData(pokemon, MON_DATA_SPECIES_OR_EGG);
     if (species == SPECIES_NONE || species == SPECIES_EGG)
         return FALSE;
 
@@ -31,7 +31,7 @@ static bool32 IsMonValidSpecies(struct Pokemon *pokemon)
 static bool32 AllMonsFainted(void)
 {
     int i;
-    struct Pokemon *pokemon = gPlayerParty;
+    struct Pokemon *pokemon = gParties[B_TRAINER_PLAYER];
 
     for (i = 0; i < PARTY_SIZE; i++, pokemon++)
     {
@@ -43,10 +43,12 @@ static bool32 AllMonsFainted(void)
 
 static void FaintFromFieldPoison(u8 partyIdx)
 {
-    struct Pokemon *pokemon = &gPlayerParty[partyIdx];
+    struct Pokemon *pokemon = &gParties[B_TRAINER_PLAYER][partyIdx];
     u32 status = STATUS1_NONE;
 
-    if (OW_POISON_DAMAGE < GEN_4)
+    //if (OW_POISON_DAMAGE < GEN_4)
+        //AdjustFriendship(pokemon, FRIENDSHIP_EVENT_FAINT_FIELD_PSN);
+    if (gSaveBlock1Ptr->tx_Mode_PoisonSurvive == 0)
         AdjustFriendship(pokemon, FRIENDSHIP_EVENT_FAINT_FIELD_PSN);
 
     SetMonData(pokemon, MON_DATA_STATUS, &status);
@@ -56,8 +58,12 @@ static void FaintFromFieldPoison(u8 partyIdx)
 
 static bool32 MonFaintedFromPoison(u8 partyIdx)
 {
-    struct Pokemon *pokemon = &gPlayerParty[partyIdx];
-    if (IsMonValidSpecies(pokemon) && GetMonData(pokemon, MON_DATA_HP) == ((OW_POISON_DAMAGE < GEN_4) ? 0 : 1) && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN)
+    struct Pokemon *pokemon = &gParties[B_TRAINER_PLAYER][partyIdx];
+    //if (IsMonValidSpecies(pokemon) && GetMonData(pokemon, MON_DATA_HP) == ((OW_POISON_DAMAGE < GEN_4) ? 0 : 1) && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN)
+        //return TRUE;
+    if (IsMonValidSpecies(pokemon) && GetMonData(pokemon, MON_DATA_HP) == 0 && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN && (gSaveBlock1Ptr->tx_Mode_PoisonSurvive == 0))
+        return TRUE;
+    if (IsMonValidSpecies(pokemon) && GetMonData(pokemon, MON_DATA_HP) == 1 && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN && (gSaveBlock1Ptr->tx_Mode_PoisonSurvive == 1))
         return TRUE;
 
     return FALSE;
@@ -74,10 +80,17 @@ static void Task_TryFieldPoisonWhiteOut(u8 taskId)
     case 0:
         for (; tPartyIdx < PARTY_SIZE; tPartyIdx++)
         {
-            if (MonFaintedFromPoison(tPartyIdx))
+            if ((MonFaintedFromPoison(tPartyIdx)) && (gSaveBlock1Ptr->tx_Mode_PoisonSurvive == 0))
             {
                 FaintFromFieldPoison(tPartyIdx);
                 ShowFieldMessage(gText_PkmnFainted_FldPsn);
+                tState++;
+                return;
+            }
+            else if ((MonFaintedFromPoison(tPartyIdx)) && (gSaveBlock1Ptr->tx_Mode_PoisonSurvive == 1))
+            {
+                FaintFromFieldPoison(tPartyIdx);
+                ShowFieldMessage(gText_PkmnSurvived_FldPsn);
                 tState++;
                 return;
             }
@@ -126,7 +139,7 @@ s32 DoPoisonFieldEffect(void)
 {
     int i;
     u32 hp;
-    struct Pokemon *pokemon = gPlayerParty;
+    struct Pokemon *pokemon = gParties[B_TRAINER_PLAYER];
     u32 numPoisoned = 0;
     u32 numFainted = 0;
 
@@ -136,16 +149,20 @@ s32 DoPoisonFieldEffect(void)
         {
             // Apply poison damage
             hp = GetMonData(pokemon, MON_DATA_HP);
-            if (OW_POISON_DAMAGE < GEN_4 && (hp == 0 || --hp == 0))
+            if (gSaveBlock1Ptr->tx_Mode_PoisonSurvive == 0)
             {
-                TryFormChange(i, B_SIDE_PLAYER, FORM_CHANGE_FAINT);
-                numFainted++;
+                if (hp == 0 || --hp == 0)
+                    numFainted++;
+                SetMonData(pokemon, MON_DATA_HP, &hp);
+                numPoisoned++;
             }
-            else if (OW_POISON_DAMAGE >= GEN_4 && (hp == 1 || --hp == 1))
-                numFainted++;
-
-            SetMonData(pokemon, MON_DATA_HP, &hp);
-            numPoisoned++;
+            else if (gSaveBlock1Ptr->tx_Mode_PoisonSurvive == 1)
+            {
+                if (hp == 1 || --hp == 1)
+                    numFainted++;
+                SetMonData(pokemon, MON_DATA_HP, &hp);
+                numPoisoned++;    
+            }        
         }
         pokemon++;
     }

@@ -54,7 +54,7 @@ NavelRock_Bottom_EventScript_Lugia::
 	seteventmon SPECIES_LUGIA, 70
 	setflag FLAG_GARBAGEFLAG
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_GARBAGEFLAG
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, NavelRock_Bottom_EventScript_DefeatedLugia

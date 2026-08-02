@@ -54,13 +54,13 @@ Cherrygrove_Pokemart_Text_CooltrainerM:
 	.string "When will they get more of them?$"
 
 Cherrygrove_Pokemart_Text_CooltrainerM_PokeBallsInStock:
-	.string "POKé BALLS are in stock!\n"
-	.string "Now I can catch POKéMON!$"
+	.string "Poké Balls are in stock!\n"
+	.string "Now I can catch Pokémon!$"
 
 Cherrygrove_Pokemart_Text_Youngster:
 	.string "When I was walking in the grass, a\n"
-	.string "bug POKéMON poisoned my POKéMON!\p"
+	.string "bug Pokémon poisoned my Pokémon!\p"
 	.string "I just kept going, but then my\n"
-	.string "POKéMON fainted.\p"
+	.string "Pokémon fainted.\p"
 	.string "You should keep an ANTIDOTE\n"
 	.string "with you.$"

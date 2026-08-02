@@ -44,7 +44,7 @@ CherryGrove_Pokecenter_Chansey::
 
 CherryGrove_Pokecenter_Text_Fisher:
 	.string "It's great. I can store any number\n"
-	.string "of POKéMON, and it's all free.$"
+	.string "of Pokémon, and it's all free.$"
 
 CherryGrove_Pokecenter_Text_Gentleman:
 	.string "That PC is free for any\n"

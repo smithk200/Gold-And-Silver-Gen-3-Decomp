@@ -55,18 +55,18 @@ UnionCave_B1F_Text_HikerLeonardAfter:
 
 UnionCave_B1F_Text_PokemaniacAndrewSeen:
 	.string "Who's there?\p"
-	.string "Leave me and my POKéMON alone!$"
+	.string "Leave me and my Pokémon alone!$"
 
 UnionCave_B1F_Text_PokemaniacAndrewBeaten:
 	.string "Go… Go away!$"
 
 UnionCave_B1F_Text_PokemaniacAndrewAfter:
-	.string "Just me and my POKéMON. I'm de-\n"
+	.string "Just me and my Pokémon. I'm de-\n"
 	.string "lirious with joy.$"
 
 UnionCave_B1F_Text_PokemaniacCalvinSeen:
 	.string "I came all the way here to conduct\n"
-	.string "my POKéMON research.\p"
+	.string "my Pokémon research.\p"
 	.string "Let me demonstrate my findings in a\n"
 	.string "real battle!$"
 

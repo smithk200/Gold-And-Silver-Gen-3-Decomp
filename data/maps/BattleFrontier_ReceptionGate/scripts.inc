@@ -143,7 +143,7 @@ BattleFrontier_ReceptionGate_EventScript_ChooseFacilityToLearnAbout::
 	waitmessage
 	setvar VAR_0x8004, SCROLL_MULTI_BF_RECEPTIONIST
 	special ShowScrollableMultichoice
-	waitstate
+	@waitstate
 	switch VAR_RESULT
 	case 0, BattleFrontier_ReceptionGate_EventScript_BattleTower
 	case 1, BattleFrontier_ReceptionGate_EventScript_BattleDome
@@ -303,7 +303,7 @@ BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay:
 	.string "Please step this way!$"
 
 BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier:
-	.string "The front lines of POKéMON battling!\n"
+	.string "The front lines of Pokémon battling!\n"
 	.string "Welcome to the BATTLE FRONTIER!$"
 
 BattleFrontier_ReceptionGate_Text_IssueFrontierPass:
@@ -397,7 +397,7 @@ BattleFrontier_ReceptionGate_Text_BattleFactoryInfo:
 
 BattleFrontier_ReceptionGate_Text_BattlePikeInfo:
 	.string "The BATTLE PIKE is the building shaped\n"
-	.string "like a POKéMON at the center-left of\l"
+	.string "like a Pokémon at the center-left of\l"
 	.string "the BATTLE FRONTIER.\p"
 	.string "An event called the Battle Choice\n"
 	.string "is conducted there.$"
@@ -439,7 +439,7 @@ BattleFrontier_ReceptionGate_Text_LevelModeInfo:
 
 BattleFrontier_ReceptionGate_Text_Level50Info:
 	.string "The NORMAL course is now open!\n"
-	.string "All POKéMON will be set to Lv. 50.\p"
+	.string "All Pokémon will be set to Lv. 50.\p"
 	.string "This course serves as the entry level\n"
 	.string "for battles at the BATTLE FRONTIER.\p"
 	.string "To begin, we hope you’ll challenge\n"
@@ -447,28 +447,28 @@ BattleFrontier_ReceptionGate_Text_Level50Info:
 
 BattleFrontier_ReceptionGate_Text_OpenLevelInfo:
 	.string "The HARD course is now open!\n"
-	.string "All POKéMON will be set to Lv. 50.\p"
+	.string "All Pokémon will be set to Lv. 50.\p"
 	.string "This course offers a greater challenge\n"
 	.string "for experienced trainers.\p"
 	.string "We encourage you to enter this course\n"
 	.string "if you seek a true challenge!$"
 
 BattleFrontier_ReceptionGate_Text_MonEntryInfo:
-	.string "Virtually any kind of POKéMON may take\n"
+	.string "Virtually any kind of Pokémon may take\n"
 	.string "on the challenges at all facilities.\p"
-	.string "EGGS and certain kinds of POKéMON,\n"
+	.string "EGGS and certain kinds of Pokémon,\n"
 	.string "however, are not permitted.\p"
-	.string "The numbers of POKéMON required for\n"
+	.string "The numbers of Pokémon required for\n"
 	.string "challenges will depend on the facility.\p"
 	.string "At all facilities, however, two or more\n"
-	.string "of the same kind of POKéMON are not\l"
+	.string "of the same kind of Pokémon are not\l"
 	.string "permitted.$"
 
 BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
 	.string "When entering a challenge at a BATTLE\n"
-	.string "FRONTIER facility, POKéMON may not\l"
+	.string "FRONTIER facility, Pokémon may not\l"
 	.string "be holding the same kind of item.\p"
-	.string "Please make sure that all POKéMON\n"
+	.string "Please make sure that all Pokémon\n"
 	.string "entering a challenge are holding\l"
 	.string "different items.$"
 

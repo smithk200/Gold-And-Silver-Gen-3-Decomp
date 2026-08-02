@@ -227,7 +227,7 @@ Route25_EventScript_Suicune::
 	waitmoncry
 	seteventmon SPECIES_SUICUNE, 50
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route25_EventScript_SuicuneRan
 	fadescreenswapbuffers FADE_TO_BLACK
@@ -488,7 +488,7 @@ Route25_Text_CooltrainerKevinBeaten:
 
 Route25_Text_CooltrainerKevinAfter:
 	.string "That was a great battle!\p"
-	.string "You and your POKéMON are truly\n"
+	.string "You and your Pokémon are truly\n"
 	.string "outstanding!$"
 
 Route25_Text_BillsHouseSign:

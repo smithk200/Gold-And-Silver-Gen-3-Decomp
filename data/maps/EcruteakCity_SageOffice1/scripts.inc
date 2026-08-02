@@ -143,10 +143,10 @@ EcruteakTinTowerEntrance_Text_WanderingSage:
 	.string "see it.$"
 
 EcruteakTinTowerEntrance_Text_WanderingSageClearBell:
-	.string "The TIN TOWER shook! A POKéMON must\n"
+	.string "The TIN TOWER shook! A Pokémon must\n"
 	.string "have returned to the top!$"
 
 EcruteakTinTowerEntrance_Text_Gramps:
-	.string "Two towers… Two POKéMON…\p"
+	.string "Two towers… Two Pokémon…\p"
 	.string "But when one burned down, both\n"
-	.string "POKéMON flew away, never to return.$"
+	.string "Pokémon flew away, never to return.$"

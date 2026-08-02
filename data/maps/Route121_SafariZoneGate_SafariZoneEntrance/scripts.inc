@@ -77,7 +77,7 @@ Route121_SafariZoneEntrance_EventScript_TryEnterSafariZone::
 	setvar VAR_SAFARI_ZONE_STATE, 2
 	clearflag FLAG_GOOD_LUCK_SAFARI_ZONE
 	warp MAP_SAFARI_ZONE_SOUTH, 32, 33
-	waitstate
+	@waitstate
 	end
 
 Route121_SafariZoneEntrance_EventScript_CheckHasRoomForPokemon::

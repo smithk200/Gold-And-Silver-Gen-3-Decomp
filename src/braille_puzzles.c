@@ -93,91 +93,15 @@ bool8 CheckRelicanthWailord(void)
 {
     // Emerald change: why did they flip it?
     // First comes Wailord
-    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_WAILORD)
+    if (GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_WAILORD)
     {
         CalculatePlayerPartyCount();
         // Last comes Relicanth
-        if (GetMonData(&gPlayerParty[gPlayerPartyCount - 1], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_RELICANTH)
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][gPartiesCount[B_TRAINER_PLAYER] - 1], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_RELICANTH)
             return TRUE;
     }
     return FALSE;
 }
-
-bool8 CheckHooh(void)
-{
- 
-    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_HO_OH)
-    {
-        return TRUE;
-    }
-    return FALSE;
-}
-
-bool8 CheckAerodactyl(void)
-{
- 
-    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_AERODACTYL)
-    {
-        return TRUE;
-    }
-    return FALSE;
-}
-
-bool8 CheckKabuto(void)
-{
- 
-    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_KABUTO)
-    {
-        return TRUE;
-    }
-    return FALSE;
-}
-
-bool8 CheckOmanyte(void)
-{
- 
-    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_OMANYTE)
-    {
-        return TRUE;
-    }
-    return FALSE;
-}
-
-bool8 CheckTogepi(void)
-{
- 
-    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_TOGEPI
-    || GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_TOGETIC
-    || GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_TOGEKISS){
-        return TRUE;
-    }
-    return FALSE;
-}
-
-bool8 CheckCelebi(void)
-{
-    struct Pokemon *mon = &gPlayerParty[0];
-
-    // Lead must be Celebi
-    if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG, NULL) != SPECIES_CELEBI)
-        return FALSE;
-
-    // Must be full HP
-    u16 hp    = GetMonData(mon, MON_DATA_HP, NULL);
-    u16 maxHp = GetMonData(mon, MON_DATA_MAX_HP, NULL);
-    if (hp != maxHp)
-        return FALSE;
-
-    // Follower must be visible
-    {
-        struct ObjectEvent *obj = GetFollowerObject();
-        if (obj == NULL || obj->invisible)
-            return FALSE;
-    }
-
-    return TRUE;
-}
-
 
 // THEORY: this was caused by block commenting out all of the older R/S braille functions but leaving the call to it itself, which creates the nullsub.
 void ShouldDoBrailleRegirockEffectOld(void)
@@ -418,4 +342,79 @@ bool8 ShouldDoBrailleRegicePuzzle(void)
     }
 
     return FALSE;
+}
+
+bool8 CheckHooh(void)
+{
+ 
+    if (GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_HO_OH)
+    {
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool8 CheckAerodactyl(void)
+{
+ 
+    if (GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_AERODACTYL)
+    {
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool8 CheckKabuto(void)
+{
+ 
+    if (GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_KABUTO)
+    {
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool8 CheckOmanyte(void)
+{
+ 
+    if (GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_OMANYTE)
+    {
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool8 CheckTogepi(void)
+{
+ 
+    if (GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_TOGEPI
+    || GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_TOGETIC
+    || GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_TOGEKISS){
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool8 CheckCelebi(void)
+{
+    struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][0];
+
+    // Lead must be Celebi
+    if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG, NULL) != SPECIES_CELEBI)
+        return FALSE;
+
+    // Must be full HP
+    u16 hp    = GetMonData(mon, MON_DATA_HP, NULL);
+    u16 maxHp = GetMonData(mon, MON_DATA_MAX_HP, NULL);
+    if (hp != maxHp)
+        return FALSE;
+
+    // Follower must be visible
+    {
+        struct ObjectEvent *obj = GetFollowerObject();
+        if (obj == NULL || obj->invisible)
+            return FALSE;
+    }
+
+    return TRUE;
 }

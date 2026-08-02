@@ -187,7 +187,7 @@ WhirlIslands_LugiaChamber_EventScript_Lugia::
 	seteventmon SPECIES_LUGIA, 50
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	setvar VAR_LAST_TALKED, LOCALID_LUGIA
 	specialvar VAR_RESULT, GetBattleOutcome
@@ -214,7 +214,7 @@ WhirlIslands_LugiaChamber_EventScript_LugiaPostgame::
 	seteventmon SPECIES_LUGIA, 70
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
-	waitstate
+	@waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	setvar VAR_LAST_TALKED, LOCALID_LUGIA
 	specialvar VAR_RESULT, GetBattleOutcome

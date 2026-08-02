@@ -77,7 +77,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 	waitmovement 0
 	setflag FLAG_DEFEATED_CHAMPION_HOENN
 	warp MAP_EVER_GRANDE_CITY_HALL_OF_FAME, 7, 16
-	waitstate
+	@waitstate
 	end
 
 EverGrandeCity_ChampionsRoom_EventScript_PlayMayMusic::
@@ -150,7 +150,7 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 	waitmovement 0
 	setflag FLAG_GARBAGEFLAG
 	warp MAP_EVER_GRANDE_CITY_HALL_OF_FAME, 7, 16
-	waitstate
+	@waitstate
 	releaseall
 	end
 
@@ -240,7 +240,7 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "{RIVAL}: Hmph. It's you.\n"
 	.string "Haven't seen you since MT. MOON.\p"
-	.string "I've been training my POKéMON all\n"
+	.string "I've been training my Pokémon all\n"
 	.string "across KANTO and HOENN so that I can\l"
 	.string "be the strongest trainer I can be.\p"
 	.string "All by myself!\p"
@@ -255,7 +255,7 @@ EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
 	.string "Hmph.\p"
-	.string "After getting all of HOENN'S badges,\n"
+	.string "After getting all of HOENN's badges,\n"
 	.string "I've lost to you again.\p"
 	.string "Well, that's that.\p"
 	.string "Congratulations on your victory,\n"
@@ -271,9 +271,9 @@ EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "I kept asking myself “How does {PLAYER}\n"
 	.string "keep beating me every time?”\p"
 	.string "Now I understand…\p"
-	.string "It's not the power of POKéMON that\n"
+	.string "It's not the power of Pokémon that\n"
 	.string "make one great.\p"
-	.string "It's the bond POKéMON have with their\n"
+	.string "It's the bond Pokémon have with their\n"
 	.string "Trainers that makes them special.\p"
 	.string "And you seemed to possess that power.\p"
 	.string "Congratulations, CHAMPION {PLAYER}.$"

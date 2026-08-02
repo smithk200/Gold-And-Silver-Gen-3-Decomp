@@ -75,7 +75,7 @@ VictoryRoadGate_Text_Officer:
 VictoryRoadGate_Text_Kimono:
     .string "Sorry kid, this way is closed until\n"
     .string "someone deals with that LEGENDARY\l"
-    .string "POKéMON...$"
+    .string "Pokémon...$"
 
 VictoryRoadGate_Text_NotEnoughBadges:
     .string "You don't have all the GYM BADGES\n"
@@ -89,10 +89,10 @@ VictoryRoadGate_Text_EightBadges:
 
 VictoryRoadGate_Text_LeftBlackBelt:
     .string "This way leads to MT.SILVER.\p"
-    .string "You'll see scary-strong POKéMON out\n"
+    .string "You'll see scary-strong Pokémon out\n"
     .string "there.$"
 
 VictoryRoadGate_Text_RightBlackBelt:
-    .string "Off to the POKéMON LEAGUE, are you?\p"
+    .string "Off to the Pokémon LEAGUE, are you?\p"
     .string "The ELITE FOUR are so strong it's\n"
     .string "scary, and they're ready for you!$"

@@ -34,7 +34,7 @@ Route41_EventScript_George::
 
 Route41_Text_SwimmermGeorgeSeen:
 	.string "I'm a bit tired.\n"
-	.string "If I win, lend me your POKéMON.$"
+	.string "If I win, lend me your Pokémon.$"
 
 Route41_Text_SwimmermGeorgeBeaten:
 	.string "Pant, pant…$"
@@ -61,7 +61,7 @@ Route41_Text_SwimmermBerkeBeaten:
 
 Route41_Text_SwimmermBerkeAfter:
 	.string "It was a dark and stormy night…\p"
-	.string "I saw this giant POKéMON flying\n"
+	.string "I saw this giant Pokémon flying\n"
 	.string "from the islands.\p"
 	.string "It was scattering feathers\n"
 	.string "from its silver wings.$"
@@ -113,7 +113,7 @@ Route41_Text_SwimmerfKayleeBeaten:
 
 Route41_Text_SwimmerfKayleeAfter:
 	.string "There's supposed to be a big\n"
-	.string "POKéMON deep beneath WHIRL ISLANDS.\p"
+	.string "Pokémon deep beneath WHIRL ISLANDS.\p"
 	.string "I wonder what it could be?$"
 
 Route41_EventScript_Susie::
@@ -123,7 +123,7 @@ Route41_EventScript_Susie::
 
 Route41_Text_SwimmerfSusieSeen:
 	.string "You look so elegant,\n"
-	.string "riding your POKéMON.$"
+	.string "riding your Pokémon.$"
 
 Route41_Text_SwimmerfSusieBeaten:
 	.string "I'm crushed…$"

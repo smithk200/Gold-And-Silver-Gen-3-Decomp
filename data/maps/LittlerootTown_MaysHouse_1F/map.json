@@ -17,8 +17,8 @@
     {
       "local_id": "LOCALID_PLAYERS_HOUSE_1F_MOM",
       "graphics_id": "OBJ_EVENT_GFX_MOM",
-      "x": 8,
-      "y": 6,
+      "x": -5,
+      "y": -2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -30,8 +30,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY",
-      "x": 6,
-      "y": 5,
+      "x": -5,
+      "y": -2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 0,
@@ -43,8 +43,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VIGOROTH_CARRYING_BOX",
-      "x": 9,
-      "y": 3,
+      "x": -5,
+      "y": -2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
       "movement_range_x": 3,
@@ -71,8 +71,8 @@
     {
       "local_id": "LOCALID_PLAYERS_HOUSE_1F_DAD",
       "graphics_id": "OBJ_EVENT_GFX_NORMAN",
-      "x": 5,
-      "y": 6,
+      "x": -5,
+      "y": -2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -98,8 +98,8 @@
     {
       "local_id": "LOCALID_RIVALS_HOUSE_1F_RIVAL",
       "graphics_id": "OBJ_EVENT_GFX_RIVAL_MAY_NORMAL",
-      "x": 2,
-      "y": 8,
+      "x": -6,
+      "y": -3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -136,8 +136,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 2,
-      "y": 8,
+      "x": -5,
+      "y": -2,
       "elevation": 0,
       "var": "VAR_GARBAGEVAR",
       "var_value": "4",
@@ -145,8 +145,8 @@
     },
     {
       "type": "trigger",
-      "x": 1,
-      "y": 3,
+      "x": -6,
+      "y": -5,
       "elevation": 0,
       "var": "VAR_GARBAGEVAR",
       "var_value": "2",
@@ -154,8 +154,8 @@
     },
     {
       "type": "trigger",
-      "x": 2,
-      "y": 4,
+      "x": -6,
+      "y": -4,
       "elevation": 0,
       "var": "VAR_GARBAGEVAR",
       "var_value": "2",
@@ -163,8 +163,8 @@
     },
     {
       "type": "trigger",
-      "x": 3,
-      "y": 3,
+      "x": -6,
+      "y": -3,
       "elevation": 0,
       "var": "VAR_GARBAGEVAR",
       "var_value": "2",

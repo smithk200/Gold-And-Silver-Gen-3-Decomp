@@ -412,7 +412,7 @@ KurtsHouse_Text_KurtMakingBallsMustWait:
 	.string "Ah, don't worry.\p"
 	.string "I'll tell you anyhow.\p"
 	.string "TEAM ROCKET's an evil gang that\n"
-	.string "uses POKéMON for their dirty work.\p"
+	.string "uses Pokémon for their dirty work.\p"
 	.string "They're supposed to have disbanded\n"
 	.string "three years ago.\p"
 	.string "Anyway, they're at the WELL,\n"
@@ -451,7 +451,7 @@ KurtsHouse_Text_KurtJustFinishedYourBall:
 
 KurtsHouse_Text_KurtTurnedOutGreat:
 	.string "KURT: That turned out great.\p"
-	.string "Try catching POKéMON with it.$"
+	.string "Try catching Pokémon with it.$"
 
 KurtsHouse_Text_KurtWhatIsThat:
 	.string "Wh-what is that?\p"

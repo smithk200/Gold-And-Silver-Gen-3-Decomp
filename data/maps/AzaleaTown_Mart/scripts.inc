@@ -28,7 +28,7 @@ AzaleaMart_Text_CooltrainerM:
 
 AzaleaMart_Text_BugCatcher:
 	.string "A GREAT BALL is better for catch-\n"
-	.string "ing POKéMON than a POKé BALL.\p"
+	.string "ing Pokémon than a POKé BALL.\p"
 	.string "But KURT's might be better some-\n"
 	.string "times.$"
 

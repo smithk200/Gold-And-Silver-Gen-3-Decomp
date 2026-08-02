@@ -12,7 +12,7 @@ EmbeddedTower_EventScript_Groudon::
 	waitmoncry
 	seteventmon SPECIES_GROUDON, 70
 	special BattleSetup_StartLegendaryBattle
-waitstate
+@waitstate
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, EmbeddedTower_EventScript_GroudonRan
 	fadescreenswapbuffers FADE_TO_BLACK
@@ -33,7 +33,7 @@ EmbeddedTower_EventScript_Kyogre::
 	waitmoncry
 	seteventmon SPECIES_KYOGRE, 70
 	special BattleSetup_StartLegendaryBattle
-waitstate
+@waitstate
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, EmbeddedTower_EventScript_KyogreRan
 	fadescreenswapbuffers FADE_TO_BLACK
@@ -55,7 +55,7 @@ EmbeddedTower_EventScript_Rayquaza::
 	waitmoncry
 	seteventmon SPECIES_RAYQUAZA, 70
 	special BattleSetup_StartLegendaryBattle
-waitstate
+@waitstate
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, EmbeddedTower_EventScript_RayquazaRan
 	fadescreenswapbuffers FADE_TO_BLACK

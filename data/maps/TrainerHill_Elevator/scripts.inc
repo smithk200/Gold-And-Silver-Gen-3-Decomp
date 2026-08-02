@@ -14,7 +14,7 @@ TrainerHill_Elevator_EventScript_ExitToRoof::
 	waitmovement 0
 	releaseall
 	warp MAP_TRAINER_HILL_ROOF, 15, 5
-	waitstate
+	@waitstate
 	end
 
 TrainerHill_Elevator_EventScript_EnterElevator::
@@ -35,7 +35,7 @@ TrainerHill_Elevator_EventScript_EnterElevator::
 	applymovement LOCALID_PLAYER, TrainerHill_Elevator_Movement_PlayerExitElevator
 	waitmovement 0
 	warp MAP_TRAINER_HILL_ENTRANCE, 17, 8
-	waitstate
+	@waitstate
 	end
 
 @ Unused
@@ -52,7 +52,7 @@ TrainerHill_Elevator_EventScript_CloseFloorSelect::
 TrainerHill_Elevator_EventScript_MoveElevator::
 	waitse
 	special MoveElevator
-	waitstate
+	@waitstate
 	return
 
 TrainerHill_Elevator_Movement_PlayerMoveToCenterOfElevator:

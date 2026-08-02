@@ -87,7 +87,7 @@ GoldenrodDeptStore5_EventScript_Receptionist_Already::
 
 
 GoldenrodDeptStore_Text_5FReceptionistOhYourMon:
-    .string "Hello. Oh, your POKéMON…$"
+    .string "Hello. Oh, your Pokémon…$"
 
 GoldenrodDeptStore_Text_5FReceptionistWait:
     .string "Wait, I already gave you that TM!$"
@@ -110,23 +110,23 @@ GoldenrodDeptStore_Text_5FReceptionistItLooksEvilHowAboutThisTM:
 
 GoldenrodDeptStore_Text_5FReceptionistThereAreTMsPerfectForMon:
     .string "There are sure to be TMs that are\n"
-    .string "just perfect for your POKéMON.$"
+    .string "just perfect for your Pokémon.$"
 
 GoldenrodDeptStore_Text_5FLass:
     .string "During the day, a lady comes to check\n"
-    .string "out POKéMON.\p"
+    .string "out Pokémon.\p"
     .string "She even gives away TMs!$"
 
 GoldenrodDeptStore_Text_5FPokefanM:
-    .string "You can't rename a POKéMON you get\n"
+    .string "You can't rename a Pokémon you get\n"
     .string "in a trade.\p"
     .string "The name is a reflection of the\n"
     .string "original trainer's feelings for it.$"
 
 GoldenrodDeptStore_Text_Girl:
 	.string "The lady gave me RETURN!\n"
-    .string "My POKéMON must really like me!$"
+    .string "My Pokémon must really like me!$"
 
 GoldenrodDeptStore_Text_5FDirectory:
-    .string "Customize Your POKéMON\p"
+    .string "Customize Your Pokémon\p"
     .string "5F TM CORNER$"

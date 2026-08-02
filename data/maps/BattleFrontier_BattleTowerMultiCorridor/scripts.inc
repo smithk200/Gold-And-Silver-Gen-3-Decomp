@@ -95,18 +95,18 @@ BattleFrontier_BattleTowerMultiCorridor_EventScript_WarpToBattleRoom::
 
 BattleFrontier_BattleTowerMultiCorridor_EventScript_WarpToNormalBattleRoom::
 	warp MAP_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM, 4, 8
-	waitstate
+	@waitstate
 	return
 
 BattleFrontier_BattleTowerMultiCorridor_EventScript_WarpToMultiBattleRoom::
 	warp MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_BATTLE_ROOM, 4, 5
-	waitstate
+	@waitstate
 	return
 
 @ Unnecessary duplicate of the above
 BattleFrontier_BattleTowerMultiCorridor_EventScript_WarpToLinkMultiBattleRoom::
 	warp MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_BATTLE_ROOM, 4, 5
-	waitstate
+	@waitstate
 	return
 
 BattleFrontier_BattleTowerMultiCorridor_Movement_PlayerWalkToDoor:

@@ -64,7 +64,7 @@ Route32_Pokecenter_Text_FishingGuruAfter:
 	.string "Yo, kid. How are they biting?$"
 
 Route32_Pokecenter_Text_CooltrainerF:
-	.string "What should I make my POKéMON hold?\p"
+	.string "What should I make my Pokémon hold?\p"
 	.string "Maybe an item that increases\n"
 	.string "ATTACK power…$"
 

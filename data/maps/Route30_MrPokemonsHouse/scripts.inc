@@ -160,11 +160,11 @@ MrPokemonHouse_Text_GotEgg:
 
 MrPokemonHouse_Text_Intro3:
 	.string "I know a couple who run a\n"
-	.string "POKéMON DAY-CARE service.\p"
+	.string "Pokémon DAY-CARE service.\p"
 	.string "They gave me that EGG.\p"
 	.string "I was intrigued, so I sent\n"
 	.string "mail to PROF.ELM.\p"
-	.string "For POKéMON evolution,\n"
+	.string "For Pokémon evolution,\n"
 	.string "PROF.ELM is the authority.$"
 
 
@@ -178,7 +178,7 @@ MrPokemonHouse_Text_Intro5:
 
 MrPokemonHouse_Text_Heal:
 	.string "You are returning to PROF.ELM?\p"
-	.string "Here. Your POKéMON should have\n"
+	.string "Here. Your Pokémon should have\n"
 	.string "some rest.$"
 
 MrPokemonHouse_Text_DependingOnYou:
@@ -190,27 +190,27 @@ MrPokemonHouse_Text_AlwaysNewDiscoveries:
 
 MrPokemonHouse_Text_OakIntro:
 	.string "OAK: Aha! So you're {PLAYER}!\p"
-	.string "I'm OAK! A POKéMON researcher.\p"
+	.string "I'm OAK! A Pokémon researcher.\p"
 	.string "I was just visiting my old friend\n"
-	.string "MR. POKéMON.\p"
+	.string "MR. Pokémon.\p"
 	.string "I heard you were running an errand\n"
 	.string "for PROF.ELM, so I waited here.\p"
-	.string "Oh! What's this? A rare POKéMON!\p"
+	.string "Oh! What's this? A rare Pokémon!\p"
 	.string "Let's see…\n"
 	.string "Hm, I see!\p"
 	.string "I understand why PROF.ELM gave\n"
-	.string "you a POKéMON for this errand.\p"
+	.string "you a Pokémon for this errand.\p"
 	.string "To researchers like PROF.ELM and\n"
-	.string "I, POKéMON are our friends.\p"
+	.string "I, Pokémon are our friends.\p"
 	.string "He saw that you would treat your\n"
-	.string "POKéMON with love and care.\p"
+	.string "Pokémon with love and care.\p"
 	.string "…Ah!\p"
 	.string "You seem to be dependable. How\n"
 	.string "would you like to help me out?\p"
 	.string "See? This is the latest version of\n"
 	.string "the POKéDEX.\p"
 	.string "It automatically records data on\n"
-	.string "POKéMON you've seen or caught.\p"
+	.string "Pokémon you've seen or caught.\p"
 	.string "It's a hi-tech encyclopedia!\p"
 	.string "It shows their habitats, how\n"
 	.string "they evolve, and their moves.$"
@@ -219,7 +219,7 @@ MrPokemonHouse_Text_GetDex:
 	.string "{PLAYER} received POKéDEX!$"
 
 MrPokemonHouse_Text_OakParting:
-	.string "Go meet many kinds of POKéMON and\n"
+	.string "Go meet many kinds of Pokémon and\n"
 	.string "complete that POKéDEX!\p"
 	.string "But I've stayed too long.\p"
 	.string "I have to get to GOLDENROD\n"

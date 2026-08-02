@@ -38,7 +38,7 @@ Gate_NationalPark_EventScript_AttendantStart::
 	special EnterBugContestMode
 	setvar VAR_BUG_CONTEST_STATE, 1
 	warp MAP_NATIONAL_PARK_BUG_CONTEST, 1
-	waitstate
+	@waitstate
 	end
 
 Gate_NationalPark_EventScript_OnlyOneMon::
@@ -56,7 +56,7 @@ Gate_NationalPark_EventScript_OnlyOneMon::
 	special EnterBugContestMode
 	setvar VAR_BUG_CONTEST_STATE, 1
 	warp MAP_NATIONAL_PARK_BUG_CONTEST, 1
-	waitstate
+	@waitstate
 	end
 
 Gate_NationalPark_EventScript_AttendantEnterTop::
@@ -149,7 +149,7 @@ Gate_NationalPark_EventScript_BAttendantStart::
 	setflag FLAG_HIDE_BUG_CONTEST_ATTENDANT_SIDE
 	setvar VAR_BUG_CONTEST_STATE, 5
 	warp MAP_NATIONAL_PARK_BUG_CONTEST, 40, 19
-	waitstate
+	@waitstate
 	end
 
 Gate_NationalPark_EventScript_OnlyOneMonB::
@@ -167,7 +167,7 @@ Gate_NationalPark_EventScript_OnlyOneMonB::
 	setflag FLAG_HIDE_BUG_CONTEST_ATTENDANT_SIDE
 	setvar VAR_BUG_CONTEST_STATE, 5
 	warp MAP_NATIONAL_PARK_BUG_CONTEST, 40, 19
-	waitstate
+	@waitstate
 	end
 
 Gate_NationalPark_EventScript_AttendantBEnterTop::
@@ -208,12 +208,12 @@ Route35NationalParkGate_Text_OfficerAskToParticipate:
 	.string "Hello Trainer! The Bug-Catching\n"
 	.string "Contest is on today.\p"
 	.string "The rules are simple.\p"
-	.string "Using one of your POKéMON, catch a\n"
-	.string "bug POKéMON to be judged.\p"
+	.string "Using one of your Pokémon, catch a\n"
+	.string "bug Pokémon to be judged.\p"
 	.string "Would you like to give it a try?$"
 
 Route35NationalParkGate_Text_OfficerGiveParkBalls:
-	.string "Any EXP your POKéMON gains during\n"
+	.string "Any EXP your Pokémon gains during\n"
 	.string "the contest will be reverted when\l"
 	.string "you leave.\p"
 	.string "Here are the SAFARI BALLS for the\n"
@@ -224,31 +224,31 @@ Route35NationalParkGate_Text_ReceivedParkBalls:
 
 Route35NationalParkGate_Text_OfficerExplainRules:
 	.string "The person who gets the strongest\n"
-	.string "bug POKéMON is the winner.\p"
+	.string "bug Pokémon is the winner.\p"
 	.string "If you run out of SAFARI BALLS,\n"
 	.string "you're done.\p"
-	.string "You can catch up to 5 POKéMON. The\n"
+	.string "You can catch up to 5 Pokémon. The\n"
 	.string "last one caught will be the only\l"
 	.string "one kept and placed in the contest.\p"
 	.string "Go out and catch the strongest bug\n"
-	.string "POKéMON you can find!$"
+	.string "Pokémon you can find!$"
 
 Route35NationalParkGate_Text_OfficerAskToUseFirstMon:
-	.string "If you have more than one POKéMON,\n"
+	.string "If you have more than one Pokémon,\n"
 	.string "you'll have to use the\l"
-	.string "first POKéMON in your party.\p"
+	.string "first Pokémon in your party.\p"
 	.string "Is that OK with you?$"
 
 Route35NationalParkGate_Text_OfficerHoldYourMon:
-	.string "Fine, we'll hold your other POKéMON\n"
+	.string "Fine, we'll hold your other Pokémon\n"
 	.string "while you compete.$"
 
 Route35NationalParkGate_Text_MonLeftWithHelper:
-	.string "{PLAYER}'s POKéMON were left with the\n"
+	.string "{PLAYER}'s Pokémon were left with the\n"
 	.string "CONTEST HELPER.$"
 
 Route35NationalParkGate_Text_ChooseMonAndComeBack:
-	.string "Please choose the POKéMON to be used\n"
+	.string "Please choose the Pokémon to be used\n"
 	.string "in the Contest, then come see me.$"
 
 Route35NationalParkGate_Text_TakePartInFuture:
@@ -256,23 +256,23 @@ Route35NationalParkGate_Text_TakePartInFuture:
 	.string "future.$"
 
 Route35NationalParkGate_Text_FirstMonCantBattle:
-	.string "Uh-oh… The first POKéMON in your\n"
+	.string "Uh-oh… The first Pokémon in your\n"
 	.string "party can't battle.\p"
-	.string "Please switch it with the POKéMON\n"
+	.string "Please switch it with the Pokémon\n"
 	.string "you want to use, then come see me.$"
 
 Route35NationalParkGate_Text_MakeRoom:
 	.string "Uh-oh… Both your party and your\n"
 	.string "PC BOX are full.\p"
 	.string "You have no room to put the bug\n"
-	.string "POKéMON you catch.\p"
+	.string "Pokémon you catch.\p"
 	.string "Please make room in your party or\n"
 	.string "your PC BOX, then come see me.$"
 
 Route35NationalParkGate_Text_EggAsFirstMon:
 	.string "Uh-oh… You have an EGG as the first\n"
-	.string "POKéMON in your party.\p"
-	.string "Please switch it with the POKéMON\n"
+	.string "Pokémon in your party.\p"
+	.string "Please switch it with the Pokémon\n"
 	.string "you want to use, then come see me.$"
 
 Route35NationalParkGate_Text_ContestIsOver:
@@ -320,7 +320,7 @@ Route35NationalParkGate_EventScript_Beauty::
 	end
 
 Route35NationalParkGate_Text_Rocker:
-	.string "I love bird POKéMON! I found a\n"
+	.string "I love bird Pokémon! I found a\n"
 	.string "DARK-TYPE bird in the park\l"
 	.string "last night!$"
 
@@ -343,5 +343,5 @@ Route35NationalParkGate_Text_ContestExplanation:
 	.string "Tuesday, Thursday and Saturday.\p"
 	.string "Not only do you earn a prize just\n"
 	.string "for participating,\p"
-	.string "you also get to keep the bug POKéMON\n"
+	.string "you also get to keep the bug Pokémon\n"
 	.string "you may have at the end of the contest.$"

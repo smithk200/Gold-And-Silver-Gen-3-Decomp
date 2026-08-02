@@ -284,7 +284,7 @@ VermilionCity_Text_Teacher:
 	.string "world dock here.$"
 
 VermilionCity_Text_MachopOwner:
-	.string "My POKéMON is preparing the land\n"
+	.string "My Pokémon is preparing the land\n"
 	.string "for construction.\p"
 	.string "But I have no money to start the\n"
 	.string "project…$"
@@ -299,7 +299,7 @@ VermilionCity_Text_Machop2:
 VermilionCity_Text_SuperNerd:
 	.string "There are eight GYMS in KANTO.\p"
 	.string "That big building is VERMILION's\n"
-	.string "POKéMON GYM.$"
+	.string "Pokémon GYM.$"
 
 VermilionCity_Text_SnorlaxSleeping:
 	.string "SNORLAX is snoring peacefully…$"
@@ -333,7 +333,7 @@ VermilionCity_Text_BadgeGuy_AllBadges:
 	.string "I've got a reward for your efforts.$"
 
 VermilionCity_Text_BadgeGuy_BattleEdge:
-	.string "Having a variety of POKéMON types\n"
+	.string "Having a variety of Pokémon types\n"
 	.string "should give you an edge in battle.\p"
 	.string "I'm sure the KANTO GYM BADGES will\n"
 	.string "help you.$"
@@ -357,13 +357,13 @@ VermilionCity_Text_Sign:
 
 VermilionCity_Text_GymSign:
 	.string "VERMILION CITY\n"
-	.string "POKéMON GYM\p"
+	.string "Pokémon GYM\p"
 	.string "LEADER: LT.SURGE\p"
 	.string "The Lightning American$"
 
 VermilionCity_Text_FanClubSign:
-	.string "POKéMON FAN CLUB\p"
-	.string "All POKéMON Fans Welcome!$"
+	.string "Pokémon FAN CLUB\p"
+	.string "All Pokémon Fans Welcome!$"
 
 VermilionCity_Text_DiglettsCaveSign:
 	.string "DIGLETT'S CAVE$"

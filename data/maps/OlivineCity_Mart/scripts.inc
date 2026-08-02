@@ -18,7 +18,7 @@ OlivineCity_EventScript_Lass::
 	end
 
 OlivineCity_Text_MartCooltrainerF:
-	.string "Do your POKéMON already know\n"
+	.string "Do your Pokémon already know\n"
 	.string "the move for carrying people\l"
 	.string "across water?$"
 

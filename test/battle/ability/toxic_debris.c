@@ -9,10 +9,10 @@ ASSUMPTIONS
 
 SINGLE_BATTLE_TEST("Toxic Debris sets Toxic Spikes on the opposing side if hit by a physical attack")
 {
-    u32 move;
+    enum Move move;
 
-    PARAMETRIZE { move = MOVE_SCRATCH;}
-    PARAMETRIZE { move = MOVE_SWIFT;}
+    PARAMETRIZE { move = MOVE_SCRATCH; }
+    PARAMETRIZE { move = MOVE_SWIFT; }
 
     GIVEN {
         PLAYER(SPECIES_GLIMMORA) { Ability(ABILITY_TOXIC_DEBRIS); }
@@ -100,9 +100,9 @@ SINGLE_BATTLE_TEST("Toxic Debris activates if user faints after physical hit")
         TURN { MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
-        MESSAGE("Glimmora fainted!");
         ABILITY_POPUP(player, ABILITY_TOXIC_DEBRIS);
         MESSAGE("Poison spikes were scattered on the ground all around the opposing team!");
+        MESSAGE("Glimmora fainted!");
     }
 }
 
@@ -138,5 +138,26 @@ DOUBLE_BATTLE_TEST("Toxic Debris sets Toxic Spikes on the opposing side even whe
     } SCENE {
         ABILITY_POPUP(playerLeft, ABILITY_TOXIC_DEBRIS);
         MESSAGE("Poison spikes were scattered on the ground all around the opposing team!");
+    }
+}
+
+DOUBLE_BATTLE_TEST("Toxic Debris does not activate if two layers of Toxic Spikes are already up on the opposing side of the field")
+{
+    GIVEN {
+        PLAYER(SPECIES_GLIMMORA) { Ability(ABILITY_TOXIC_DEBRIS); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WYNAUT);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_TOXIC_SPIKES), MOVE(playerRight, MOVE_TOXIC_SPIKES); }
+        TURN { MOVE(playerRight, MOVE_SCRATCH, target: playerLeft); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, playerLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, playerRight);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerRight);
+        NONE_OF {
+            ABILITY_POPUP(playerLeft, ABILITY_TOXIC_DEBRIS);
+            MESSAGE("Poison spikes were scattered on the ground all around the opposing team!");
+        }
     }
 }

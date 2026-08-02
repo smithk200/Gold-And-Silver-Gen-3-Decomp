@@ -39,7 +39,7 @@ PokemonLeague_KarensRoom_EventScript_KarenOnDefeat::
 	setvar VAR_0x8006, 4  @ num shakes
 	setvar VAR_0x8007, 4  @ shake delay
 	special ShakeCamera
-	waitstate
+	@waitstate
 	special DrawWholeMapView
 	setvar VAR_LEAGUE_STATE, 5
 	release
@@ -56,19 +56,19 @@ PokemonLeague_KarensRoom_Text_RematchBefore:
     .string "I trust you haven't forgotten\n"
     .string "my belief:\p"
     .string "True strength arises from trust\n"
-    .string "in one's POKéMON.\p"
+    .string "in one's Pokémon.\p"
     .string "Since our last encounter, my\n"
-    .string "bond with my POKéMON has\l"
+    .string "bond with my Pokémon has\l"
     .string "deepened further.\p"
     .string "Are you ready to face a team\n"
     .string "united by an unbreakable bond?\p"
     .string "Show me the power of the bond\n"
-    .string "with your POKéMON.$"
+    .string "with your Pokémon.$"
 
 PokemonLeague_KarensRoom_Text_Before:
     .string "I am KAREN of the ELITE FOUR.\p"
     .string "You're {PLAYER}? How amusing.\p"
-    .string "I love DARK-type POKéMON.\p"
+    .string "I love DARK-type Pokémon.\p"
     .string "I find their wild, tough image\n"
     .string "to be so appealing. And they're\l"
     .string "so strong.\p"
@@ -81,8 +81,8 @@ PokemonLeague_KarensRoom_Text_Beaten:
     .string "in a trainer.$"
 
 PokemonLeague_KarensRoom_Text_Defeat:
-    .string "Strong POKéMON.\p"
-    .string "Weak POKéMON.\p"
+    .string "Strong Pokémon.\p"
+    .string "Weak Pokémon.\p"
     .string "That is only the selfish\n"
     .string "perception of people.\p"
     .string "Truly skilled trainers should\n"

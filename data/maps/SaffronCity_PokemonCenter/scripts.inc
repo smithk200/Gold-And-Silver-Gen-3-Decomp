@@ -25,7 +25,7 @@ SaffronCity_PokemonCenter_EventScript_Youngster::
 	end
 
 SaffronCity_PokemonCenter1F_Text_Teacher:
-	.string "What are JOHTO's POKéMON CENTERS\n"
+	.string "What are JOHTO's Pokémon CENTERS\n"
 	.string "like?\p"
 	.string "…Oh, I see. So they're not much\n"
 	.string "different from the ones in KANTO.\p"

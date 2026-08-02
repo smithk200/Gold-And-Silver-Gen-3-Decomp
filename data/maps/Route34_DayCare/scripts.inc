@@ -26,11 +26,11 @@ Route34_DayCare_Text_Bookshelf1:
 	.string "{PLAYER} put away the dictionary.$"
 
 Route34_DayCare_Text_Bookshelf2:
-	.string "A book about POKéMON!\p"
+	.string "A book about Pokémon!\p"
 	.string "{PLAYER} flipped through\n"
 	.string "the book.\p"
 	.string "It must have the word\n"
-	.string "POKéMON written on every page.\p"
+	.string "Pokémon written on every page.\p"
 	.string "{PLAYER} put away the book.$"
 
 Route34_DayCare_Text_Bookshelf3:
@@ -47,7 +47,7 @@ Route34_DayCare_Text_Bookshelf3:
 	.string "{PLAYER} put away the book.$"
 
 Route34_DayCare_Text_Bookshelf4:
-	.string "A book of POKéMON natures!\p"
+	.string "A book of Pokémon natures!\p"
 	.string "{PLAYER} flipped through\n"
 	.string "the book.\p"
 	.string "PICHU -> STATIC\l"
@@ -88,31 +88,38 @@ Route34_DayCare_EventScript_Clerk::
 
 Route34_DayCare_EventScript_GivePichu::
 	giveoddegg 1
-	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	goto_if_eq VAR_RESULT, MON_CANT_GIVE, Route34_DayCare_EventScript_ClerkPartyFull
+    goto Route34_DayCare_EventScript_Clerk_GaveEgg
 
 Route34_DayCare_EventScript_GiveCleffa::
 	giveoddegg 2
-	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	goto_if_eq VAR_RESULT, MON_CANT_GIVE, Route34_DayCare_EventScript_ClerkPartyFull
+    goto Route34_DayCare_EventScript_Clerk_GaveEgg
 
 Route34_DayCare_EventScript_GiveIgglybuff::
 	giveoddegg 3
-	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	goto_if_eq VAR_RESULT, MON_CANT_GIVE, Route34_DayCare_EventScript_ClerkPartyFull
+    goto Route34_DayCare_EventScript_Clerk_GaveEgg
 
 Route34_DayCare_EventScript_GiveTyrogue::
 	giveoddegg 4
-	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	goto_if_eq VAR_RESULT, MON_CANT_GIVE, Route34_DayCare_EventScript_ClerkPartyFull
+    goto Route34_DayCare_EventScript_Clerk_GaveEgg
 
 Route34_DayCare_EventScript_GiveSmoochum::
 	giveoddegg 5
-	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	goto_if_eq VAR_RESULT, MON_CANT_GIVE, Route34_DayCare_EventScript_ClerkPartyFull
+    goto Route34_DayCare_EventScript_Clerk_GaveEgg
 
 Route34_DayCare_EventScript_GiveElekid::
 	giveoddegg 6
-	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	goto_if_eq VAR_RESULT, MON_CANT_GIVE, Route34_DayCare_EventScript_ClerkPartyFull
+    goto Route34_DayCare_EventScript_Clerk_GaveEgg
 
 Route34_DayCare_EventScript_GiveMagby::
 	giveoddegg 7
-	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	goto_if_eq VAR_RESULT, MON_CANT_GIVE, Route34_DayCare_EventScript_ClerkPartyFull
+    goto Route34_DayCare_EventScript_Clerk_GaveEgg
 
 Route34_DayCare_EventScript_Clerk_GaveEgg::
 	msgbox Route34_DayCare_Text_TakeCare, MSGBOX_DEFAULT
@@ -147,14 +154,14 @@ Route34_DayCare_EventScript_ClerkAfter::
 Route34_DayCare_Text_ClerkBefore:
 	.string "I'm the DAYCARE couple's son.\p"
 	.string "An ODD EGG was found with a trainer's\n"
-	.string "POKéMON, but they didn't want it...\p"
+	.string "Pokémon, but they didn't want it...\p"
 	.string "I'd offer it to you...\n"
 	.string "But how can I know you'll take good\l"
 	.string "care of it?$"
 
 Route34_DayCare_Text_ClerkNoRoom:
 	.string "It looks like you can't carry another\n"
-	.string "POKéMON anyway.$"
+	.string "Pokémon anyway.$"
 
 Route34_DayCare_Text_ClerkQuestion:
 	.string "Answer this question for me.\n"
@@ -217,9 +224,8 @@ Route34_EventScript_DaycareEggWaiting::
 	end
 
 Route34_EventScript_DaycareAcceptEgg::
-	@specialvar VAR_0x8004, GetMaxPartySize @ tx_randomizer_and_challenges
-	specialvar VAR_RESULT, CalculatePlayerPartyCount
-	goto_if_ne VAR_RESULT, VAR_0x8004, Route34_EventScript_DaycareReceiveEgg
+	specialvar VAR_0x8008, GiveEggFromDaycare
+	goto_if_ne VAR_0x8008, MON_CANT_GIVE, Route34_EventScript_DaycareReceiveEgg
 	msgbox Route34_Text_YouHaveNoRoomForIt, MSGBOX_DEFAULT
 	release
 	end
@@ -230,7 +236,7 @@ Route34_EventScript_DaycareReceiveEgg::
 	waitfanfare
 	waitbuttonpress
 	msgbox Route34_Text_TakeGoodCareOfIt, MSGBOX_DEFAULT
-	special GiveEggFromDaycare
+	call_if_eq VAR_0x8008, MON_GIVEN_TO_PC, Route34_EventScript_DaycareEggSentToPC
 	clearflag FLAG_PENDING_DAYCARE_EGG
 	release
 	end
@@ -287,7 +293,7 @@ Route34_DayCare_EventScript_GiveMonToRaise::
 	msgbox Route34_DayCare_Text_WhichMonShouldWeRaise, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
 	special ChooseSendDaycareMon
-	waitstate
+	@waitstate
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, Route34_DayCare_EventScript_ComeAgain
 	specialvar VAR_RESULT, CountPartyAliveNonEggMons_IgnoreVar0x8004Slot
 	goto_if_eq VAR_RESULT, 0, Route34_DayCare_EventScript_OnlyOneAliveMon
@@ -356,14 +362,13 @@ Route34_DayCare_EventScript_OneMonInDaycare::
 	end
 
 Route34_DayCare_EventScript_TryRetrieveMon::
-	@specialvar VAR_0x8004, GetMaxPartySize @ tx_randomizer_and_challenges
 	specialvar VAR_RESULT, CalculatePlayerPartyCount
-	goto_if_eq VAR_RESULT, VAR_0x8004, Route34_DayCare_EventScript_NoRoom
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Route34_DayCare_EventScript_NoRoom
 	specialvar VAR_RESULT, GetDaycareState
 	setvar VAR_0x8004, 0
 	goto_if_eq VAR_RESULT, DAYCARE_ONE_MON, Route34_DayCare_EventScript_CostPrompt
 	special ShowDaycareLevelMenu
-	waitstate
+	@waitstate
 	copyvar VAR_0x8004, VAR_RESULT
 	goto_if_eq VAR_RESULT, DAYCARE_EXITED_LEVEL_MENU, Route34_DayCare_EventScript_ComeAgain
 	goto Route34_DayCare_EventScript_CostPrompt
@@ -451,17 +456,17 @@ Route34_DayCare_EventScript_TwoMonsInDaycare::
 Route34_Text_SeeWifeIfYoudLikeMeToRaiseMon:
 	.string "I'm the DAY-CARE MAN.\p"
 	.string "I help take care of the precious\n"
-	.string "POKéMON of TRAINERS.\p"
-	.string "If you'd like me to raise your POKéMON,\n"
+	.string "Pokémon of TRAINERS.\p"
+	.string "If you'd like me to raise your Pokémon,\n"
 	.string "have a word with my wife.$"
 
 Route34_Text_DoYouWantEgg:
 	.string "Ah, it's you!\p"
-	.string "We were raising your POKéMON,\n"
+	.string "We were raising your Pokémon,\n"
 	.string "and my goodness, were we surprised!\p"
-	.string "Your POKéMON had an EGG!\p"
+	.string "Your Pokémon had an EGG!\p"
 	.string "We don't know how it got there,\n"
-	.string "but your POKéMON had it.\p"
+	.string "but your Pokémon had it.\p"
 	.string "You do want it, yes?$"
 
 Route34_Text_YourMonIsDoingFine:
@@ -492,7 +497,7 @@ Route34_Text_FriendlyWithOtherTrainersMon:
 
 @ Unused
 Route34_Text_SeeWifeIfYouWantToPickUpMon:
-	.string "If you want to pick up your POKéMON,\n"
+	.string "If you want to pick up your Pokémon,\n"
 	.string "have a word with my wife.$"
 
 Route34_Text_YourMonsAreDoingFine:
@@ -505,11 +510,11 @@ Route34_Text_IWillKeepDoYouWantIt:
 
 Route34_DayCare_Text_WouldYouLikeUsToRaiseAMon:
 	.string "I'm the DAY-CARE LADY.\p"
-	.string "We can raise POKéMON for you.\p"
+	.string "We can raise Pokémon for you.\p"
 	.string "Would you like us to raise one?$"
 
 Route34_DayCare_Text_WhichMonShouldWeRaise:
-	.string "Which POKéMON should we raise for\n"
+	.string "Which Pokémon should we raise for\n"
 	.string "you?$"
 
 Route34_DayCare_Text_WellRaiseYourMon:
@@ -518,7 +523,7 @@ Route34_DayCare_Text_WellRaiseYourMon:
 	.string "Come back for it later.$"
 
 Route34_DayCare_Text_WeCanRaiseOneMore:
-	.string "We can raise two of your POKéMON.\n"
+	.string "We can raise two of your Pokémon.\n"
 	.string "Would you like us to raise one more?$"
 
 Route34_DayCare_Text_HusbandWasLookingForYou:
@@ -541,19 +546,23 @@ Route34_DayCare_Text_ComeAgain:
 
 Route34_DayCare_Text_GoodToSeeYou:
 	.string "Ah, it's you! Good to see you.\n"
-	.string "Your POKéMON can only be doing good!$"
+	.string "Your Pokémon can only be doing good!$"
 
 Route34_DayCare_Text_YourMonHasGrownXLevels:
 	.string "By level, your {STR_VAR_1} has\n"
 	.string "grown by {STR_VAR_2}.$"
 
 Route34_DayCare_Text_YourTeamIsFull:
-	.string "Your POKéMON team is full.\n"
+	.string "Your Pokémon team is full.\n"
 	.string "Make room, then come see me.$"
+
+Route34_EventScript_DaycareEggSentToPC:
+	.string "Your party was full, so the Egg was\n"
+	.string "sent to your PC."
 
 @ Unused
 Route34_DayCare_Text_TakeBackWhichMon:
-	.string "Which POKéMON will you take back?$"
+	.string "Which Pokémon will you take back?$"
 
 Route34_DayCare_Text_ItWillCostX:
 	.string "If you want your {STR_VAR_1} back,\n"
@@ -561,7 +570,7 @@ Route34_DayCare_Text_ItWillCostX:
 
 Route34_DayCare_Text_HeresYourMon:
 	.string "Perfect!\n"
-	.string "Here's your POKéMON.$"
+	.string "Here's your Pokémon.$"
 
 Route34_DayCare_Text_TookBackMon:
 	.string "{PLAYER} took back {STR_VAR_1} from\n"
@@ -569,21 +578,21 @@ Route34_DayCare_Text_TookBackMon:
 
 Route34_DayCare_Text_YouHaveJustOneMon:
 	.string "Oh? But you have just one\n"
-	.string "POKéMON.\p"
+	.string "Pokémon.\p"
 	.string "Come back another time.$"
 
 Route34_DayCare_Text_TakeYourMonBack:
-	.string "Will you take your POKéMON back?$"
+	.string "Will you take your Pokémon back?$"
 
 Route34_DayCare_Text_WhatWillYouBattleWith:
-	.string "If you leave me that POKéMON,\n"
+	.string "If you leave me that Pokémon,\n"
 	.string "what will you battle with?\p"
 	.string "Come back another time.$"
 
 Route34_DayCare_Text_YoullBeLeftWithJustOne:
 	.string "Huh?\n"
 	.string "Now, now.\p"
-	.string "If you leave that POKéMON with\n"
+	.string "If you leave that Pokémon with\n"
 	.string "me, you'll be left with just one.\p"
 	.string "You will be better off if you catch\n"
 	.string "some more, I dare say.$"

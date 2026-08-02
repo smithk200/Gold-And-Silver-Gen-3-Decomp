@@ -5,6 +5,7 @@ Common_EventScript_PkmnCenterNurse::
 	setvar VAR_0x8004, 0
 	specialvar VAR_RESULT, CountPlayerTrainerStars
 	goto_if_eq VAR_RESULT, 4, EventScript_PkmnCenterNurse_GoldCard
+	goto_if_set FLAG_EVEN_FASTER_JOY, EventScript_PkmnCenterNurse_HealPkmnReallyFast
 	goto EventScript_PkmnCenterNurse_HealPkmn
 	end
 
@@ -20,6 +21,12 @@ EventScript_PkmnCenterNurse_HealPkmn::
 	waitmessage
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
 	goto EventScript_PkmnCenterNurse_ReturnPkmn
+	end
+
+EventScript_PkmnCenterNurse_HealPkmnReallyFast::
+	playse SE_PIN
+	special HealPlayerParty
+	goto EventScript_PkmnCenterNurse_PlayerTurn
 	end
 
 EventScript_PkmnCenterNurse_IllTakeYourPkmn::

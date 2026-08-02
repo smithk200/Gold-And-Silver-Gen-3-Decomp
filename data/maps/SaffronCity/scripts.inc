@@ -141,7 +141,7 @@ SaffronCity_Text_CooltrainerM:
 
 SaffronCity_Text_CooltrainerF:
 	.string "This is SILPH CO., famous for\n"
-	.string "POKéMON merchandise.\p"
+	.string "Pokémon merchandise.\p"
 	.string "In the past, TEAM ROCKET wanted\n"
 	.string "the company because of that.$"
 
@@ -179,9 +179,9 @@ SaffronCity_Text_Sign:
 
 SaffronCity_Text_GymSign:
 	.string "SAFFRON CITY\n"
-	.string "POKéMON GYM\l"
+	.string "Pokémon GYM\l"
 	.string "LEADER: SABRINA\p"
-	.string "The Master of Psychic POKéMON!$"
+	.string "The Master of Psychic Pokémon!$"
 
 SaffronCity_Text_FightingDojoSign:
 	.string "Everyone Welcome!\n"

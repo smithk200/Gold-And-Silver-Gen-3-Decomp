@@ -24,7 +24,7 @@ sText_MysteryGiftVisitingTrainerInstructions:
 	.string "GIFT System.\p"
 	.string "By holding this WONDER CARD, you\n"
 	.string "may take part in a survey at a\l"
-	.string "POKéMON MART.\p"
+	.string "Pokémon MART.\p"
 	.string "Use these surveys to invite\n"
 	.string "TRAINERS to SOOTOPOLIS CITY.\p"
 	.string "…Let me give you a secret\n"

@@ -63,7 +63,7 @@ CeladonMansionRoofHouse_Text_PharmacistStory:
 
 CeladonMansionRoofHouse_Text_PharmacistCurse:
 	.string "TM44 is REST.\p"
-	.string "It will allow your POKéMON to nap\n"
+	.string "It will allow your Pokémon to nap\n"
 	.string "mid-battle and regain health.\p"
 	.string "But good luck sleeping after that\n"
 	.string "terrifying tale!$"

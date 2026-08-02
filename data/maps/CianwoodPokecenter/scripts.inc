@@ -31,13 +31,13 @@ CianwoodPokemoncenter_EventScript_FisherGiveTentacool::
 	end
 
 CianwoodPokemoncenter_Text_Fisher1:
-	.string "As far as water POKéMON go,\n"
+	.string "As far as water Pokémon go,\n"
 	.string "tentacool is the best by a nautical\l"
 	.string "mile!$"
 
 CianwoodPokemoncenter_Text_Fisher2:
 	.string "You seem like you need a water\n"
-	.string "POKéMON.\p"
+	.string "Pokémon.\p"
 	.string "Here, take this one, I have plenty.$"
 
 CianwoodPokecenter_EventScript_Lass::
@@ -51,7 +51,7 @@ CianwoodPokecenter_EventScript_Lass::
 CianwoodCity_Text_PokecenterLass:
 	.string "Did you meet the POKéMANIAC?\p"
 	.string "He's always bragging about his\n"
-	.string "rare POKéMON.$"
+	.string "rare Pokémon.$"
 
 
 CianwoodGym_EventScript_GymGuide::
@@ -70,15 +70,15 @@ CianwoodGym_EventScript_GymGuideAfter::
 	end
 
 CianwoodCity_Text_GymGuide:
-	.string "The POKéMON GYM trainers here are\n"
+	.string "The Pokémon GYM trainers here are\n"
 	.string "macho bullies.\p"
 	.string "If I stick around, they might\n"
 	.string "come after me.\p"
 	.string "Here's some advice: the GYM LEADER\n"
 	.string "uses the FIGHTING-type.\p"
 	.string "So you should confound him with\n"
-	.string "psychic POKéMON.\p"
-	.string "Wipe out his POKéMON before they\n"
+	.string "psychic Pokémon.\p"
+	.string "Wipe out his Pokémon before they\n"
 	.string "can use their physical strength.\p"
 	.string "And those boulders in the middle\n"
 	.string "of the GYM?\p"
@@ -99,8 +99,8 @@ CianwoodPokecenter_EventScript_Nerd::
 	end
 
 CianwoodCity_Text_PokecenterSuperNerd:
-	.string "I love showing off the POKéMON\n"
+	.string "I love showing off the Pokémon\n"
 	.string "that I've raised.\p"
 	.string "Don't you?\p"
 	.string "I'm going to get into a bunch of\n"
-	.string "battles, and show off my POKéMON!$"
+	.string "battles, and show off my Pokémon!$"
