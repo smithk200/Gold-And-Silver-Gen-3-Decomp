@@ -13,12 +13,9 @@ Implemented
 - Generation 6 EXP Share from the menu.
 - Ability to toggle between the backgrounds used for HnS or the default ones from Hoenn.
 - Auto-HMs from Pokémon Clover, where you don't need a prompt in order to use a field move.
-- Difficulty mode. Easy gives double the EXP, Normal is normal EXP, and Hard mode is having a level cap which the highest level you can reach is the Gym Leader's ace Pokémon. Defeat the Gym Leaders to lift the cap.
 - Battle Frontier! (After defeating Red, you gain the option of traveling to the Battle Frontier. You can leave from either Olivine or Vermilion. However, leaving the Battle Frontier takes you to Vermilion.)
 - Bug catching contest (albeit with a few bugs)
-- Optional Nuzlocke Mode. Note that this will use a no overleveling rule. If you use ANY item during combat, the only thing that will be different is that it will show a "Nuzlocke Complete!" at the Hall of Fame screen rather than "Hardcore Nuzlocked!"
-- Options to run: Button Combo (L+A), (B), or Default. The reason why it's (L+A) is because of expansion's new feature where you select a Pokeball with the (R) button.
-- An item that makes the Pokémon sprites look like their GBA-era sprites. It's called the Silly Scope. It's based on DS Sounds from BDSP.
+- Nuzlocke and challenge modes from the original HnS have been implemented! The only challenges that aren't in play are the One Type Challenge, the Pokecenter challenge, and any challenge that was on the last menu.
 - Also, VS Seeker functionality has been implemented.
 
 Note: this uses 94.51% of ROM space, last I checked. Mega cries have been removed to save on space.
