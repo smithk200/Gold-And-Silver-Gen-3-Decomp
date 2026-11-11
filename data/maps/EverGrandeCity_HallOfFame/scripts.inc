@@ -18,7 +18,6 @@ EverGrandeCity_HallOfFame_OnFrame:
 EverGrandeCity_HallOfFame_EventScript_EnterHallOfFame::
 	lockall
 	applymovement LOCALID_PLAYER, EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame1
-	applymovement LOCALID_PLAYER, EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame2
 	waitmovement 0
 	delay 20
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp

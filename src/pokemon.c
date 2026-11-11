@@ -5440,9 +5440,7 @@ u16 GetBattleBGM(void)
             }
             return MUS_VS_AQUA_MAGMA;
         case TRAINER_CLASS_LEADER:
-            if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_CLAIR_DRAGONS_DEN)
-                return MUS_HG_VS_TRAINER;
-            else if (gMapHeader.region == REGION_HOENN)
+            if (gMapHeader.region == REGION_HOENN)
                 return MUS_VS_GYM_LEADER;
             else if (gMapHeader.region == REGION_KANTO)
                 return MUS_HG_VS_GYM_LEADER_KANTO;
@@ -5471,7 +5469,9 @@ u16 GetBattleBGM(void)
             }
             return MUS_HG_VS_GYM_LEADER;
         case TRAINER_CLASS_CHAMPION:
-            if (gSaveBlock2Ptr->optionsTrainerBattleMusic == 0)
+            if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_LANCE_DRAGONS_DEN_SILVER)
+                return MUS_HG_VS_TRAINER;
+            else if (gSaveBlock2Ptr->optionsTrainerBattleMusic == 0)
                 return MUS_HG_VS_CHAMPION;
             else if (gSaveBlock2Ptr->optionsTrainerBattleMusic == 1)
                 return MUS_RG_VS_CHAMPION;
@@ -5494,7 +5494,10 @@ u16 GetBattleBGM(void)
             }
             return MUS_VS_CHAMPION;
         case TRAINER_CLASS_RIVAL:
-            //if ((gBattleTypeFlags & BATTLE_TYPE_FRONTIER) || (!StringCompare(gTrainers[gTrainerBattleOpponent_A].trainerName, gText_BattleWallyName)))
+            if ((TRAINER_BATTLE_PARAM.opponentA == TRAINER_SILVER_CHAMPION_CHIKORITA) || (TRAINER_BATTLE_PARAM.opponentA == TRAINER_SILVER_CHAMPION_TOTODILE) \
+                    || (TRAINER_BATTLE_PARAM.opponentA == TRAINER_SILVER_CHAMPION_CYNDAQUIL))
+                        return MUS_HG_VS_CHAMPION;
+            else
             {
                 if (gSaveBlock2Ptr->optionsTrainerBattleMusic == 0)
                     return MUS_HG_VS_RIVAL;
@@ -5518,7 +5521,13 @@ u16 GetBattleBGM(void)
             }
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_PKMN_TRAINER_1:
-            return MUS_HG_VS_CHAMPION;
+            if ((TRAINER_BATTLE_PARAM.opponentA == TRAINER_WALLY_VR_1) || (TRAINER_BATTLE_PARAM.opponentA == TRAINER_WALLY_MAUVILLE) \
+                    || (TRAINER_BATTLE_PARAM.opponentA == TRAINER_WALLY_VR_2) || (TRAINER_BATTLE_PARAM.opponentA == TRAINER_WALLY_VR_3) || \
+                      (TRAINER_BATTLE_PARAM.opponentA == TRAINER_WALLY_VR_4) || (TRAINER_BATTLE_PARAM.opponentA == TRAINER_WALLY_VR_5) \
+                    )
+                        return MUS_VS_TRAINER;
+            else
+                return MUS_VS_TRAINER;
         case TRAINER_CLASS_ELITE_FOUR:
             if (gMapHeader.region == REGION_HOENN)
                 return MUS_VS_ELITE_FOUR;

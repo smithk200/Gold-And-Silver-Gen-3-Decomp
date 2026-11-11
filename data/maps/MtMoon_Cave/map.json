@@ -29,7 +29,7 @@
       "flag": "FLAG_HIDE_MTMOON_SILVER"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_GEODUDE)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GEODUDE)",
       "x": 14,
       "y": 10,
       "elevation": 0,
@@ -42,7 +42,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_SOLROCK)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SOLROCK)",
       "x": 36,
       "y": 12,
       "elevation": 0,
@@ -55,7 +55,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_CLEFAIRY)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY)",
       "x": 25,
       "y": 31,
       "elevation": 0,
@@ -68,7 +68,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_LUNATONE)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LUNATONE)",
       "x": 35,
       "y": 12,
       "elevation": 0,
@@ -107,7 +107,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_GEODUDE)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GEODUDE)",
       "x": 15,
       "y": 4,
       "elevation": 0,
@@ -120,7 +120,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_GEODUDE)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GEODUDE)",
       "x": 16,
       "y": 5,
       "elevation": 0,
@@ -133,7 +133,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_GEODUDE)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GEODUDE)",
       "x": 16,
       "y": 3,
       "elevation": 0,
@@ -146,7 +146,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_SANDSHREW)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SANDSHREW)",
       "x": 46,
       "y": 19,
       "elevation": 0,
@@ -159,7 +159,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_CLEFAIRY)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY)",
       "x": 31,
       "y": 32,
       "elevation": 0,
@@ -172,7 +172,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_PARAS)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PARAS)",
       "x": 14,
       "y": 33,
       "elevation": 0,
@@ -185,7 +185,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_PARAS)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PARAS)",
       "x": 21,
       "y": 18,
       "elevation": 0,
@@ -198,7 +198,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_PARAS)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PARAS)",
       "x": 48,
       "y": 34,
       "elevation": 0,
@@ -244,14 +244,6 @@
   "coord_events": [],
   "bg_events": [
     {
-      "type": "hidden_item",
-      "x": 26,
-      "y": 21,
-      "elevation": 0,
-      "item": "ITEM_REVIVE",
-      "flag": "FLAG_HIDDEN_ITEM_MT_MOON_CAVE_REVIVE"
-    },
-    {
       "type": "sign",
       "x": 15,
       "y": 14,
@@ -259,7 +251,5 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MtMoon_Cave_EventScript_Sign"
     }
-  ],
-  "game_version": "hns",
-  "region": "REGION_KANTO"
+  ]
 }

@@ -38,6 +38,7 @@
 #include "constants/field_effects.h"
 #include "constants/flags.h"
 #include "constants/metatile_behaviors.h"
+#include "constants/regions.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
 
@@ -1189,7 +1190,10 @@ bool8 FldEff_HallOfFameRecord(void)
     task = &gTasks[CreateTask(Task_HallOfFameRecord, 0xff)];
     task->tNumMons = nPokemon;
     task->tFirstBallX = 117;
-    task->tFirstBallY = 60;
+    if (gMapHeader.region == REGION_HOENN)
+        task->tFirstBallY = 52;
+    else
+        task->tFirstBallY = 60;
     return FALSE;
 }
 

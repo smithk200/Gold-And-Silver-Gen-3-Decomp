@@ -3447,6 +3447,7 @@ bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
     static const u8 sShuckieNickname[] = _("SHUCKIE");
     static const u8 sShuckieOtName[]   = _("KIRK");
     static const u8 sEeveeOtName[]     = _("BILL");
+    static const u8 sVoltorbOtName[]     = _("WATTSON");
 
     // Use actual Easy Chat word constants
     static const u16 sKenyaMailWords[MAIL_WORDS_COUNT] = {
@@ -3499,6 +3500,15 @@ bool8 ScrCmd_givenamedmon(struct ScriptContext *ctx)
         otName = gSaveBlock2Ptr->playerName;
         otId = gSaveBlock2Ptr->playerTrainerId[0];
         personality = 0x00000003; 
+        break;
+    case 5: // VOLTORB
+        species = SPECIES_VOLTORB;
+        level = 35;
+        item = ITEM_NONE;
+        nickname = NULL;
+        otName = sVoltorbOtName;
+        otId = 55346;
+        personality = Random32();
         break;
     default:
         gSpecialVar_Result = MON_CANT_GIVE;

@@ -46,7 +46,7 @@ EVs: 252 Atk / 252 SpD / 6 Spe
 === PARTNER_SILVER_TOTODILE ===
 Name: {RIVAL}
 Class: Rival
-Pic: Wally
+Pic: Silver
 Gender: Male
 Music: Male
 AI: Basic Trainer
@@ -78,7 +78,7 @@ Ability: Levitate
 === PARTNER_SILVER_CHIKORITA ===
 Name: {RIVAL}
 Class: Rival
-Pic: Wally
+Pic: Silver
 Gender: Male
 Music: Male
 AI: Basic Trainer
@@ -111,7 +111,7 @@ Ability: Levitate
 === PARTNER_SILVER_CYNDAQUIL ===
 Name: {RIVAL}
 Class: Rival
-Pic: Wally
+Pic: Silver
 Gender: Male
 Music: Male
 AI: Basic Trainer

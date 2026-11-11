@@ -494,7 +494,6 @@
     "SafariZone3",
     "SafariZoneIndoor",
     "Saffron_Temp",
-    "MtMoon_Cave",
     "SeafoamIslands_1F",
     "SeafoamIslands_Gym",
     "SeafoamIslands_B1F",
@@ -1048,6 +1047,7 @@
     "IcePath_B1F",
     "IcePath_B2F",
     "IcePath_B3F",
-    "IcePath_B4F"
+    "IcePath_B4F",
+    "MtMoon_Cave"
   ]
 }

@@ -4,11 +4,9 @@ Route128_MapScripts::
 	.byte 0
 
 Route128_OnTransition:
-	call_if_set FLAG_GARBAGEFLAG, Common_EventScript_SetAbnormalWeather
 	end
 
 Route128_OnFrame:
-	map_script_2 VAR_GARBAGEVAR, 1, Route128_EventScript_KyogreAwakenedScene
 	.2byte 0
 
 Route128_EventScript_KyogreAwakenedScene::
@@ -195,9 +193,7 @@ Route128_EventScript_RematchIsaiah::
 	end
 
 Route128_EventScript_Katelyn::
-	trainerbattle_single TRAINER_KATELYN_1, Route128_Text_KatelynIntro, Route128_Text_KatelynDefeat, Route128_EventScript_RegisterKatelyn
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route128_EventScript_RematchKatelyn
+	trainerbattle_single TRAINER_KATELYN_1, Route128_Text_KatelynIntro, Route128_Text_KatelynDefeat
 	msgbox Route128_Text_KatelynPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -215,7 +211,6 @@ Route128_EventScript_RematchKatelyn::
 	end
 
 Route128_EventScript_Alexa::
-	trainerbattle_single TRAINER_NONE, Route128_Text_AlexaIntro, Route128_Text_AlexaDefeat
 	msgbox Route128_Text_AlexaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -229,12 +224,10 @@ Route128_EventScript_Wayne::
 	end
 
 Route128_EventScript_Harrison::
-	trainerbattle_single TRAINER_NONE, Route128_Text_HarrisonIntro, Route128_Text_HarrisonDefeat
 	msgbox Route128_Text_HarrisonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route128_EventScript_Carlee::
-	trainerbattle_single TRAINER_NONE, Route128_Text_CarleeIntro, Route128_Text_CarleeDefeat
 	msgbox Route128_Text_CarleePostBattle, MSGBOX_AUTOCLOSE
 	end
 

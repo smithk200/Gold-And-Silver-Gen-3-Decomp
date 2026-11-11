@@ -3,7 +3,6 @@ Route124_MapScripts::
 	.byte 0
 
 Route124_OnTransition:
-	call_if_set FLAG_GARBAGEFLAG, Common_EventScript_SetAbnormalWeather
 	end
 
 Route124_EventScript_HuntersHouseSign::

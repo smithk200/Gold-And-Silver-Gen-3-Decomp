@@ -78,7 +78,7 @@ static const struct MenuAction MultichoiceList_StatusInfo[] =
 
 static const struct MenuAction MultichoiceList_BrineyOffDewford[] =
 {
-    {COMPOUND_STRING("DEWFORD")},
+    {COMPOUND_STRING("Dewford")},
     {gText_Exit},
 };
 
@@ -1164,7 +1164,7 @@ static const struct MenuAction MultichoiceList_Islands[] =
 static const struct MenuAction MultichoiceList_OlivineHarborRed[] =
 {
     {gText_Vermilion},
-    {COMPOUND_STRING("Slateport")},
+    {COMPOUND_STRING("SLATEPORT")},
     {gText_BattleFrontier},
     {gText_Next2},
     {gText_Exit},
@@ -1180,7 +1180,7 @@ static const struct MenuAction MultichoiceList_VermilionHarbor[] =
 static const struct MenuAction MultichoiceList_VermilionHarborRed[] =
 {
     {gText_Olivine},
-    {COMPOUND_STRING("Slateport")},
+    {COMPOUND_STRING("SLATEPORT")},
     {gText_BattleFrontier},
     {gText_Next2},
     {gText_Exit},

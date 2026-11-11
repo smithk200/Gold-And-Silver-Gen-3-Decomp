@@ -76,7 +76,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 	applymovement LOCALID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExit
 	waitmovement 0
 	setflag FLAG_DEFEATED_CHAMPION_HOENN
-	warp MAP_EVER_GRANDE_CITY_HALL_OF_FAME, 7, 16
+	warp MAP_EVER_GRANDE_CITY_HALL_OF_FAME, 7, 11
 	@waitstate
 	end
 
@@ -148,8 +148,7 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 	applymovement LOCALID_CHAMPIONS_ROOM_WALLACE, EverGrandeCity_ChampionsRoom_Movement_WallaceExit
 	applymovement LOCALID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExit
 	waitmovement 0
-	setflag FLAG_GARBAGEFLAG
-	warp MAP_EVER_GRANDE_CITY_HALL_OF_FAME, 7, 16
+	warp MAP_EVER_GRANDE_CITY_HALL_OF_FAME, 7, 11
 	@waitstate
 	releaseall
 	end
@@ -180,10 +179,12 @@ EverGrandeCity_ChampionsRoom_Movement_PlayerExitStart:
 	step_end
 
 EverGrandeCity_ChampionsRoom_Movement_PlayerExit:
+	walk_left
 	walk_up
-	delay_16
 	walk_up
-	delay_8
+	walk_right
+	walk_up
+	walk_up
 	set_invisible
 	step_end
 

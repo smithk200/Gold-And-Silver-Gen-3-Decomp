@@ -211,6 +211,7 @@ NewBarkTown_Lab_EventScript_TotodileBall_Choice::
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
 	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
 	msgbox NewBarkTown_Lab_Text_ChooseTotodile, MSGBOX_YESNO
+	setvar VAR_STARTER_MON, 2
 	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
 	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
 	end

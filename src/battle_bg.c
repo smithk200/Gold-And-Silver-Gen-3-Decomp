@@ -928,7 +928,7 @@ static u8 GetBattleEnvironmentOverride(void)
     else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         u32 trainerClass = GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA);
-        if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_CLAIR_DRAGONS_DEN)
+        if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_LANCE_DRAGONS_DEN_SILVER)
             return BATTLE_ENVIRONMENT_CAVE;
         else if (trainerClass == TRAINER_CLASS_LEADER)
             return BATTLE_ENVIRONMENT_LEADER;

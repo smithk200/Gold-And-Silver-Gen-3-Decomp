@@ -1101,11 +1101,11 @@
 #define FLAG_ITEM_WHIRL_ISLANDS_1F_RARE_CANDY                       0x417
 #define FLAG_ITEM_WHIRL_ISLANDS_1F_FULL_RESTORE                     0x418
 #define FLAG_ITEM_WHIRL_ISLANDS_1F_GUARD_SPEC                       0x419
-#define FLAG_ITEM_WHIRL_ISLANDS_B1F_MAX_REVIVE                      0x41A
+#define FLAG_ITEM_WHIRL_ISLANDS_B1F_PEARL                           0x41A
 #define FLAG_ITEM_WHIRL_ISLANDS_B1F_FULL_RESTORE                    0x41B
 #define FLAG_ITEM_WHIRL_ISLANDS_B1F_PP_MAX                          0x41C
 #define FLAG_ITEM_WHIRL_ISLANDS_B2F_BIG_NUGGET                      0x41D
-#define FLAG_ITEM_WHIRL_ISLANDS_B2F_FULL_RESTORE                    0x41E
+#define FLAG_ITEM_WHIRL_ISLANDS_B2F_REVIVE                          0x41E
 #define FLAG_ITEM_WHIRL_ISLANDS_B2F_CARBOS                          0x41F
 #define FLAG_ITEM_WHIRL_ISLANDS_B2F_CALCIUM                         0x420
 #define FLAG_ITEM_WHIRL_ISLANDS_B2F_ESCAPE_ROPE                     0x421

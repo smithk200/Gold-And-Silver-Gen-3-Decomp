@@ -353,7 +353,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_SAILOR] = { _("Sailor"), 8 },
     [TRAINER_CLASS_COOLTRAINER_2] = { _("Cooltrainer"), 5, BALL_ULTRA },
     [TRAINER_CLASS_MAGMA_ADMIN] = { _("Magma Admin"), 10 },
-    [TRAINER_CLASS_RIVAL] = { _("{PKMN} Trainer"), 15 },
+    [TRAINER_CLASS_RIVAL] = { _("Rival"), 15 },
     [TRAINER_CLASS_BUG_CATCHER] = { _("Bug Catcher"), 4 },
     [TRAINER_CLASS_PKMN_RANGER] = { _("{PKMN} Ranger"), 12 },
     [TRAINER_CLASS_MAGMA_LEADER] = { _("Magma leader"), 20, BALL_MASTER },
@@ -2056,7 +2056,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                     if (speciesInfo->abilities[abilityNum] == partyData[monIndex].ability)
                         break;
                 }
-                assertf(abilityNum < maxAbilityNum, "illegal ability %S for %S", gAbilitiesInfo[partyData[monIndex].ability].name, speciesInfo->speciesName);
+                //assertf(abilityNum < maxAbilityNum, "illegal ability %S for %S", gAbilitiesInfo[partyData[monIndex].ability].name, speciesInfo->speciesName);
             }
             else if (B_TRAINER_MON_RANDOM_ABILITY)
             {
@@ -5534,7 +5534,9 @@ static void HandleEndTurn_BattleWon(void)
             break;
         case TRAINER_CLASS_CHAMPION:
             {
-                if ((gSaveBlock2Ptr->optionsTrainerBattleMusic == 0) || (gSaveBlock2Ptr->optionsTrainerBattleMusic == 1) || (gSaveBlock2Ptr->optionsTrainerBattleMusic == 3) || (gSaveBlock2Ptr->optionsTrainerBattleMusic == 4))
+                if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_LANCE_DRAGONS_DEN_SILVER)
+                    PlayBGM(MUS_HG_VICTORY_TRAINER);
+                else if ((gSaveBlock2Ptr->optionsTrainerBattleMusic == 0) || (gSaveBlock2Ptr->optionsTrainerBattleMusic == 1) || (gSaveBlock2Ptr->optionsTrainerBattleMusic == 3) || (gSaveBlock2Ptr->optionsTrainerBattleMusic == 4))
                     PlayBGM(MUS_DP_VICTORY_CHAMPION);
                 else if (gSaveBlock2Ptr->optionsTrainerBattleMusic == 2)
                     PlayBGM(MUS_DP_VICTORY_CHAMPION);

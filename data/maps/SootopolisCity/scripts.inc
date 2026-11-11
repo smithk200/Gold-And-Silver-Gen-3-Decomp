@@ -163,8 +163,6 @@ SootopolisCity_OnResume:
 	end
 
 SootopolisCity_OnFrame:
-	map_script_2 VAR_GARBAGEVAR, 1, SootopolisCity_EventScript_StartLegendariesScene
-	map_script_2 VAR_SKY_PILLAR_STATE, 1, SootopolisCity_EventScript_StartRayquazaScene
 	.2byte 0
 
 @ If not at PokeCenter, assumed to have arrived via Dive

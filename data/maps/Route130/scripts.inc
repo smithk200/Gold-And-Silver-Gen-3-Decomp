@@ -30,7 +30,6 @@ Route130_EventScript_SetMirageIslandLayout::
 	end
 
 Route130_EventScript_CheckSetAbnormalWeather::
-	call_if_set FLAG_GARBAGEFLAG, Common_EventScript_SetAbnormalWeather
 	return
 
 Route130_EventScript_Rodney::

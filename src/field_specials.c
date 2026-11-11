@@ -1032,6 +1032,11 @@ static bool32 IsBuildingPCTileFrlg(u32 tileId)
     return FALSE;
 }
 
+static bool32 IsBuildingPCTileHoenn(u32 tileId)
+{
+    return gMapHeader.mapLayout->primaryTileset == &gTileset_Building && (tileId == METATILE_Building_PC_On_Hoenn || tileId == METATILE_Building_PC_Off_Hoenn);
+}
+
 static bool32 IsPlayerHousePCTile(u32 tileId)
 {
     if (IS_FRLG)
@@ -1064,7 +1069,8 @@ static bool8 IsPlayerInFrontOfPC(void)
     return IsBuildingPCTile(tileInFront)
         || IsBuildingPCTileFrlg(tileInFront)
         || IsPlayerHousePCTile(tileInFront)
-        || IsPlayerHousePCTileFrlg(tileInFront);
+        || IsPlayerHousePCTileFrlg(tileInFront)
+        || IsBuildingPCTileHoenn(tileInFront);
 }
 
 // Task data for Task_PCTurnOnEffect and Task_LotteryCornerComputerEffect
@@ -1207,7 +1213,12 @@ static void PCTurnOffEffect(void)
     }
 
     if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
-        metatileId = IS_FRLG ? METATILE_BuildingFrlg_PCOff : METATILE_Building_PC_Off;
+        {
+            if (gMapHeader.region == REGION_HOENN)
+                metatileId = METATILE_Building_PC_Off_Hoenn;
+            else
+                metatileId = IS_FRLG ? METATILE_BuildingFrlg_PCOn : METATILE_Building_PC_On;
+        }
     else if (gSpecialVar_0x8004 == PC_LOCATION_BRENDANS_HOUSE)
         metatileId = METATILE_BrendansMaysHouse_BrendanPC_Off;
     else if (gSpecialVar_0x8004 == PC_LOCATION_MAYS_HOUSE)

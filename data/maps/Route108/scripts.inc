@@ -21,16 +21,11 @@ Route108_EventScript_Missy::
 	end
 
 Route108_EventScript_Carolina::
-	trainerbattle_single TRAINER_NONE, Route108_Text_CarolinaIntro, Route108_Text_CarolinaDefeated
 	msgbox Route108_Text_CarolinaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route108_EventScript_Cory::
-	trainerbattle_single TRAINER_NONE, Route108_Text_CoryIntro, Route108_Text_CoryDefeated, Route108_EventScript_CoryRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route108_EventScript_CoryRematch
 	msgbox Route108_Text_CoryPostBattle, MSGBOX_DEFAULT
-	release
 	end
 
 Route108_EventScript_CoryRegisterMatchCallAfterBattle::

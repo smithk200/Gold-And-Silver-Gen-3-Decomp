@@ -12,7 +12,6 @@ Route131_EventScript_SetLayout::
 	return
 
 Route131_EventScript_CheckSetAbnormalWeather::
-	call_if_set FLAG_GARBAGEFLAG, Common_EventScript_SetAbnormalWeather
 	return
 
 Route131_EventScript_Richard::

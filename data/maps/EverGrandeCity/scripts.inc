@@ -3,7 +3,6 @@ EverGrandeCity_MapScripts::
 	.byte 0
 
 EverGrandeCity_OnTransition:
-	call_if_set FLAG_GARBAGEFLAG, Common_EventScript_SetAbnormalWeather
 	end
 
 EverGrandeCity_EventScript_VictoryRoadSign::

@@ -53,11 +53,15 @@ MtMoon_Cave_EventScript_SilverAfterBattle::
 	removeobject LOCALID_MTMOON_SILVER
 	setflag FLAG_HIDE_MTMOON_SILVER
 	clearflag FLAG_HIDE_INDIGO_PLATEAU_SILVER
-	clearflag FLAG_HIDE_DRAGONS_DEN_CAVERN_SILVER
-	setvar VAR_SILVER_POSTGAME_STATE, 1
 	setvar VAR_PEWTER_CITY_STATE, 2
+	setvar VAR_SILVER_POSTGAME_STATE, 1
+	clearflag FLAG_HIDE_DRAGONS_DEN_CAVERN_SILVER
 	fadedefaultbgm
 	release
+	end
+
+MtMoon_Cave_EventScript_Sign::
+	msgbox MtMoon_Cave_Text_Sign, MSGBOX_SIGN
 	end
 
 MtMoon_Cave_Movement_WalkToPlayer:
@@ -107,3 +111,5 @@ MtMoon_Cave_Text_Rival_Loss:
 	.string "CHAMPION and become the world's greatest\n"
 	.string "trainer.$"
 
+MtMoon_Cave_Text_Sign:
+	.string "Mt. Moon Square ->$"

@@ -5,8 +5,6 @@ SkyPillar_Outside_MapScripts::
 	.byte 0
 
 SkyPillar_Outside_OnTransition:
-	call_if_eq VAR_GARBAGEVAR, 3, SkyPillar_Outside_EventScript_HideMapNamePopup
-	call_if_ge VAR_GARBAGEVAR, 4, SkyPillar_Outside_EventScript_CheckSetAbnormalWeather
 	end
 
 SkyPillar_Outside_EventScript_HideMapNamePopup::
@@ -14,7 +12,6 @@ SkyPillar_Outside_EventScript_HideMapNamePopup::
 	return
 
 SkyPillar_Outside_EventScript_CheckSetAbnormalWeather::
-	call_if_set FLAG_GARBAGEFLAG, Common_EventScript_SetAbnormalWeather
 	return
 
 SkyPillar_Outside_OnLoad:

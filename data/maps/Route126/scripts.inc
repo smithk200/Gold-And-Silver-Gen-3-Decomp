@@ -3,7 +3,6 @@ Route126_MapScripts::
 	.byte 0
 
 Route126_OnTransition:
-	call_if_set FLAG_GARBAGEFLAG, Common_EventScript_SetAbnormalWeather
 	end
 
 Route126_EventScript_Barry::
